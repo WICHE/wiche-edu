@@ -1,0 +1,7 @@
+name = "Xstandard WYSIWYG Editor"
+description = "Incorpoarates the xstandard module only into content types you specify"
+package = "Core - Enhancements"
+dependencies = "core_enhancements"
+
+version = "5.x-1.x-dev"
+project = "Core - Enhancements"

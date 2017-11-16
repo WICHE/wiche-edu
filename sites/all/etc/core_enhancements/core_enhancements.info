@@ -1,0 +1,6 @@
+name = "Core Enhancements"
+description = "This is a set of modules that handle any core changes to drupal. This is so you don't have to go changing everything in the core."
+package = "Core - Enhancements"
+
+version = "5.x-1.x-dev"
+project = "Community Directory"

@@ -1,0 +1,274 @@
+<?php
+/**
+* Custom Enhancements Module
+*	Xstandard Integrator
+*	This allows the xstandard WYSIWYG editor to incorpoarate into content types you select from the setting menu
+*/
+
+function xstandard_main() {
+	$output = '<p>The Xstandard Module is an extensions of the core enhancemetns module. It allows the Xstandard editor to be placed on any content type that has a body component. This does not work for CCK fields yet, sorry.</p><p>There are some caveats using xstandard. Xstandard exhibits some problems with charater encoding and using php code. When using php code on a block, or node when one combines the php tags with the "&amp;" sign, it produces an error. Lastly, javascript has to alter php code in order for it to display properly withouth ahacking the drupal core. Blocks do not degrade successfully without javascript, nodes do.</p>';
+	$form['xstandard']['main'] = array(
+	'#type' => 'markup',
+	'#value' => $output,
+	'#weight' => 0,
+	);
+	return $form;
+}
+
+function xstandard_customize() {
+	$output = '<p><strong>Select Which Content Types Xstandard should be activated on. You can also activate blocks.</strong></p>';
+	$form['xstandard']['customize'] = array(
+	'#type' => 'markup',
+	'#value' => $output,
+	'#weight' => 0,
+	);
+	
+	//each enhancement is a field set
+	
+	//Show Content Types
+	$form['xstandard']['content_types'] = array(
+		'#type' => 'fieldset',
+		'#title' => t('Content Types & Blocks'),
+		'#collapsible' => TRUE,
+		'#collapsed' => FALSE,
+	);
+	$options = x_get_content_types();
+	$form['xstandard']['content_types']['x_content_types'] = array(
+		'#type' => 'select',
+		'#title' => t('Select Content Types for Xstandard to be active on. NOTE: You Can Also Activate Blocks from this menu'),
+		'#default_value' => variable_get('x_content_types', '') ? variable_get('x_content_types', '') : '',
+		'#options' => $options,
+		'#description' => $description,
+		'#multiple' => 'multiple',
+	);
+	
+  return system_settings_form($form);
+}
+
+//Hook Form alter
+function xstandard_form_alter($form_id, &$form) {
+	//print_r($form['block_settings']['body_filter']['body']['#default_value']);
+	
+	//This adds the xstandard editor to the form and adds the on submit handler for the rest of the submission process
+	//print variable_get('x_content_types', '');
+	if (is_array(variable_get('x_content_types', ''))) {
+	if (in_array($form['type']['#value'],variable_get('x_content_types', '')) || in_array($form['module']['#value'],variable_get('x_content_types', ''))) {
+		//print 'USE XSTANDARD!';
+		$path = drupal_get_path('module', 'xstandard') .'/xstandard.js';
+		drupal_add_js($path);
+		
+		//check for if it's a block or a node
+		if (!empty($form['block_settings'])) {
+			$item = $form['block_settings']['body_filter']['body']['#default_value'];
+		} else {
+			$item = $form['body_filter']['body']['#default_value'];
+		}
+		
+		// check for if this is php code and if it is, use check plain instead of html and convert all line breaks back to br tags so xstandard can read it
+		if (preg_match("/\?php/i", $item)) {
+			$str = $str2 = $content = "";
+			$str = $item;
+			$str = explode("<?php", $str);
+			//print_r($str);
+			foreach ($str as $key => $value) {
+				if (strpos($value, "?>", 0) != false) {
+					$str2 = str_replace("?>","?&gt;",$value);
+					$value = '&lt;?php' .$str2;
+					$converted = preg_replace("[\n]", "<br />", $value);
+					$converted = $converted;
+					$content .= $converted;
+				}
+				else {
+					$converted = $value;
+					$content .= $converted;
+				}
+			}
+		}
+		else {
+			//if not php code, just take the original value
+			//get content from body
+			$content = $item;
+		}
+		//print $content;
+		
+		//there are some update issues with xstandard 2.0, so the object needs to be modified for mozilla/IE differences - it has to check the code base for IE pages, and run some javascript for the mozilla update.
+		
+		$browser = browser_check();
+		//print $browser_type;
+		if ($browser['type'] == 'IE') {
+			  			$xstandard = '<object classid="clsid:0EED7206-1661-11D7-84A3-00606744831D" id="X-editor" width="100%" height="500" codebase="http://wiche.edu/xstandard/XStandard.cab#Version=2,0,0,0">
+						<param name="Base" value="http://'. $_SERVER['HTTP_HOST'] .'/drupal/" />
+						<param name="Value" value="'. htmlspecialchars($content, ENT_COMPAT, 'UTF-8') .'" />
+						<param name="Lang" value="en" />
+						<param name="License" value="http://wiche.edu/xstandard/license.txt" />
+						<param name="ImageLibraryURL" value="http://wiche.edu/xstandard/imagelibrary.php" />
+						<param name="AttachmentLibraryURL" value="http://wiche.edu/xstandard/attachmentlibrary.php"/>
+						<param name="DirectoryURL" value="http://wiche.edu/xstandard/directory.php"/>
+						<param name="SpellCheckerURL" value="http://wiche.edu/xstandard/spellchecker.asp" />
+						<param name="Styles" value="http://wiche.edu/xstandard/styles.xml" />
+						<param name="CSS" value="http://wiche.edu/xstandard/format.css" />
+						<param name="ToolbarWysiwyg" value="ordered-list, unordered-list, definition-list,, draw-layout-table, draw-data-table, image, separator, hyperlink, attachment,, spellchecker,, wysiwyg, source, preview, screen-reader, help" />
+						<param name="EnablePasteMarkup" value="yes" />
+						<param name="EnableTimestamp" value="no" />
+						<param name="Options" value="32768" />
+						<param name="LatestVersion" value="2.0" />
+						</object>
+						<input type="hidden" name="copy-data" id="copy-data" value="" />';
+		}
+		else {
+			  			$xstandard = '<object type="application/x-xstandard" id="X-editor" width="100%" height="500">
+						<param name="Base" value="http://'. $_SERVER['HTTP_HOST'] .'/drupal/" />
+						<param name="Value" value="'. htmlspecialchars($content, ENT_COMPAT, 'UTF-8') .'" />
+						<param name="Lang" value="en" />
+						<param name="License" value="http://wiche.edu/xstandard/license.txt" />
+						<param name="ImageLibraryURL" value="http://wiche.edu/xstandard/imagelibrary.php" />
+						<param name="AttachmentLibraryURL" value="http://wiche.edu/xstandard/attachmentlibrary.php"/>
+						<param name="DirectoryURL" value="http://wiche.edu/xstandard/directory.php"/>
+						<param name="SpellCheckerURL" value="http://wiche.edu/xstandard/spellchecker.asp" />
+						<param name="Styles" value="http://wiche.edu/xstandard/styles.xml" />
+						<param name="CSS" value="http://wiche.edu/xstandard/format.css" />
+						<param name="ToolbarWysiwyg" value="ordered-list, unordered-list, definition-list,, draw-layout-table, draw-data-table, image, separator, hyperlink, attachment,, spellchecker,, wysiwyg, source, preview, screen-reader, help" />
+						<param name="EnablePasteMarkup" value="yes" />
+						<param name="EnableTimestamp" value="no" />
+						<param name="Options" value="32768" />
+						<param name="LatestVersion" value="2.0" />
+						</object>
+						<input type="hidden" name="copy-data" id="copy-data" value="" />';
+		}
+		
+		//have to check if it's a block or not again
+		//check for if it's a block or a node
+		if (!empty($form['block_settings'])) {
+			$form['block_settings']['body_filter']['body']['#type'] = 'hidden';
+			$form['block_settings']['body_filter']['temp']['#type'] = 'markup';
+			$form['block_settings']['body_filter']['temp']['#prefix'] = '<label for="edit-body"><strong>Body: <span class="form-required" title="This field is required.">*</span></strong></label>';
+			$form['block_settings']['body_filter']['temp']['#value'] = $xstandard;
+		} else {
+			$form['body_filter']['body']['#type'] = 'markup';
+			$form['body_filter']['body']['#prefix'] = '<label for="edit-body"><strong>Body: <span class="form-required" title="This field is required.">*</span></strong></label>';
+			$form['body_filter']['body']['#value'] = $xstandard;
+		}
+		
+	$form['#attributes'] = array('onsubmit'=>'myOnSubmitEventHandler()');
+	}
+	}
+
+	//print_r($form['body_filter']);
+}
+
+function x_get_content_types() {
+	$types = node_get_types();
+	$key = 'block';
+	$type["$key"] = $key;
+	foreach ($types as $key => $name) {
+		$type["$key"] = $key;
+	}
+	return $type;
+}
+
+/**
+ * Implementation of hook_nodeapi().
+ */
+function xstandard_nodeapi(&$node, $op, $teaser, $page) {
+  switch ($op) {
+	case 'load':
+	break;
+	
+	case 'prepare':
+	break;
+	
+	case 'view':
+	break;
+	
+	case 'validate':
+	break;
+	
+	case 'submit':
+		 	//begin edit
+	/**
+  	*	Date: 06/21/2007
+  	* 	ID: xstandard
+  	*	Created By: Paul Huntsbegrer
+  	* 	Version: 1.0
+  	*	Revision: none
+	*	NOTES: This is to account for the data being submitted by xstandard so it determines, if it is php code, or standard html/xhtml
+	*	What happens is that the data that comes from xstandard is converted to the copy-data hidden field via javascript, xstandard.js.
+	*	This converts that data, if it exists and has a value, into the body variable, and that updates into the drupal DB.
+	*/
+	
+	//get the format, if php - run the conversion
+	$query = "SELECT * FROM {filter_formats} WHERE format = '%s'";
+	$result = db_query($query, $_POST["format"]);
+	while ($content = db_fetch_array($result)) {
+		$input_name = $content['name'];
+	}
+	//print 'input name: ' .$input_name.'<br />';
+	if (isset($_POST["copy-data"])){
+		if ($_POST["copy-data"] != "") {
+			if (strpos($input_name, "PHP")>=0) {
+			//print "post format" .$_POST["format"];
+					$_POST['body'] = "";
+					//print "Copy Data: " .$_POST["copy-data"];
+					$str = $_POST["copy-data"];
+					$str = explode("&lt;?php", $str);
+					foreach ($str as $key => $value) {
+						if (preg_match("/\?&gt;/", $value)) {
+							$value = '&lt;?php' .$value;
+							//print $key .' converted: ' .$value;
+							$converted = preg_replace("[<br />]", "\n", $value);
+							$var=iconv("UTF-8","ISO-8859-1",$converted);
+							$var=html_entity_decode($var, ENT_QUOTES, 'ISO-8859-1');
+							$converted=iconv("ISO-8859-1","UTF-8",$var);
+							$_POST['body'] .= $converted;
+						}
+						else {
+							//print $key .' not converted: ' .$value;
+							$_POST['body'] .= $value;
+						}
+					}
+				//print 'Body: ' .$_POST['body'].'<br />';
+			}
+			else {
+				$_POST['body'] = $_POST["copy-data"];
+			}
+		}
+	}
+	$node->body = $_POST['body'];
+	$node->teaser = $_POST['body'];
+	//print phpinfo();
+	break;
+	
+	case 'insert':
+	case 'update':
+	//print_r($node);
+	break;
+  }
+}
+
+
+//Keep menu at bottom It's easier to find that way
+
+function xstandard_menu($may_cache) {
+$items = array();
+	if($may_cache) {
+		$items[] = array(
+			'path' => 'admin/settings/core_enhancements/xstandard/main',
+			'title' => t('X-standard Main'),
+			'description' => t('Extends the core enhancements module to incorporate the xstandard WYSIWYG editor to any content type with a body.'),
+			'callback' => 'drupal_get_form',
+			'callback arguments' => 'xstandard_main',
+			'access' => user_access('administer site configuration'),
+			'type' => MENU_LOCAL_TASK,
+			'weight' => 10
+		);
+		$items[] = array('path' => 'admin/settings/core_enhancements/xstandard/customize',
+			'title' => t('Xstandard - Select Content Types'),
+			'callback' => 'drupal_get_form',
+			'callback arguments' => 'xstandard_customize',
+			'type' => MENU_LOCAL_TASK,
+			'weight' => 11);
+	} else {
+		//god knows what this needs to be
+	}
+return $items;
+}

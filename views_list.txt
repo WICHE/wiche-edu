@@ -1,0 +1,131 @@
+ Machine name             Description                                                            Type        Status    Tag                     
+ Adult_learner_pubs       Pubs related to adult learners                                         Overridden  Enabled   working                 
+ AgendaBookArchive        Links to past Agenda Books for WICHE Commission meetings               Overridden  Enabled   working, needs-template 
+ AgendaBookLastFive       Links to past Agenda Books for WICHE Commission meetings               Overridden  Enabled   recreated on Dev2       
+                                                                                                                       because added after     
+                                                                                                                       first migration         
+ Commission_Block_View    WICHE Commissioners for State Specific pages                           Overridden  Enabled                           
+ Commission_Page_View     WICHE governing board                                                  Overridden  Enabled   working, themed with    
+                                                                                                                       template                
+ Commissioner_Edit_View   Add, edit WICHE commissioners                                          Overridden  Enabled   working, themed         
+ Content_Update_History                                                                          Normal      Enabled                           
+ LAC_Block_View           Page / Block to insert state-specific LAC members. / Admin editing     Overridden  Enabled   working, needs-template 
+                          page for LAC members                                                                                                 
+ MHstates_projects        State-specific projects of the Mental Health Program                   Default     Enabled   working, needs-template 
+ MHstates_projects_side   State-specific projects of the Mental Health Program                   Default     Enabled   working, needs-template 
+ Media_release_list       Links to media releases throughout the site                            Overridden  Enabled   working                 
+ Newscap                  News feed, November 2011                                               Overridden  Enabled   working, needs-template 
+ Node_Update_History                                                                             Normal      Enabled                           
+ PSEP_links               PSEP Publications and Reports                                          Overridden  Enabled   working, needs-template 
+ STAS_links                                                                                      Overridden  Enabled   working                 
+ Staff_Alpha_View         Directory of WICHE staff                                               Overridden  Enabled   working, needs-template 
+ Staff_Project_View       Directory of WICHE staff -- by Project                                 Default     Enabled   tested, unsure          
+ Staff_Unit_All           Directory of WICHE staff -- by Department (contains each department    Overridden  Enabled   working,                
+                          view)                                                                                        needs-template,         
+                                                                                                                       reworked                
+ admin_content            Emulates the Drupal content administration page.                       Overridden  Enabled                           
+ admin_testimonial_page   Testimonials from Higher Ed Administrators                             Overridden  Enabled   working, needs-template 
+ admin_testimonial_publi                                                                         Default     Enabled   working                 
+ shed                                                                                                                                          
+ admin_testimonial_unpub                                                                         Default     Enabled   working                 
+ lished                                                                                                                                        
+ admin_users              Emulates the Drupal user administration page.                          Overridden  Enabled                           
+ bhMain                   Links related to the Mental Health Program                             Default     Enabled   working                 
+ bio                      Optional bio info for staff and other registered users                 Overridden  Enabled                           
+ calendar_webinar_block                                                                          Default     Enabled   working                 
+ changingDirectionPublic                                                                         Overridden  Enabled   DELETE THIS --          
+ ations                                                                                                                INCORPORATED INTO       
+                                                                                                                       PUBLICATIONS VIEW       
+ delicious_home                                                                                  Normal      Enabled                           
+ events                   Listing of WICHE events and meetings (includes editEvents)             Overridden  Enabled   themed                  
+ events_by_taxonomy       Event listings block for dept, priority, and constituent pages         Normal      Enabled                           
+ former_commissioners     Former WICHE commissioners from this state.                            Default     Enabled   working, needs-template 
+ image_gallery            The default gallery of image nodes from Image gallery module.          Default     Enabled   image_gallery           
+ image_gallery_terms      The default list of descendant galleries from Image gallery module.    Default     Enabled   image_gallery           
+                          Displayed within the image gallery view.                                                                             
+ initiatives_alpha_all                                                                           Overridden  Enabled                           
+ knowledge_base_page      FAQs (Block view and Page view)                                        Overridden  Enabled   working, needs-template 
+ legal_terms              Legal terms & Conditions                                               Default     Enabled   Legal                   
+ legal_users                                                                                     Default     Enabled                           
+ legislative_advisory_co                                                                         Normal      Enabled                           
+ mmittee                                                                                                                                       
+ list_alliance_members    List of WACCAL members                                                 Normal      Enabled   working, themed         
+ list_ice_exec_committee  List of ICE executive committee members / List of ICE PICS / List of   Default     Enabled   working, themed         
+                          ICE steering board members                                                                                           
+ list_waccal_exec_commit  List of WACCAL executive committee members                             Overridden  Enabled   working, themed         
+ tee                                                                                                                                           
+ list_waccal_members      List of WACCAL members                                                 Overridden  Enabled   working, themed         
+ list_walf_exec_committe  List of WALF executive committee members                               Overridden  Enabled   working, themed         
+ e                                                                                                                                             
+ list_walf_members        List of WALF members                                                   Overridden  Enabled   working, themed         
+ manage_associates        A view to filter and edit users with the Associate role                Normal      Enabled                           
+ manage_testimonials                                                                             Overridden  Enabled   new in Dev2             
+ mh_past_projects         Archive of selected Mental Health past projects                        Normal      Enabled                           
+ onlineFAQ                knowledge base view specifically for Online Learning                   Overridden  Enabled   working, needs-template 
+ passport_instate                                                                                Normal      Enabled                           
+ passport_region_block    To call the state name                                                 Normal      Enabled                           
+ passport_state_rank_tot  Admin page for state rank totals data                                  Normal      Enabled                           
+ als                                                                                                                                           
+ passport_yearly_student                                                                         Normal      Enabled                           
+ _transfer                                                                                                                                     
+ policyExchanges          List of Western Policy Exchanges                                       Overridden  Enabled   working, needs-template 
+ policyInsights           List of Policy Insights issues                                         Overridden  Enabled   working, needs-template 
+ posts_by_term            Shows group posts categorized by taxonomy term                         Default     Enabled   og                      
+ publication_blocks       List of publications for sidebars on various pages                     Overridden  Enabled   New view                
+ publications             Views for all Publications (contains multiple displays)                Overridden  Enabled   working,                
+                                                                                                                       needs-template,         
+                                                                                                                       reworked                
+ state_specifics_fig1     Student savings chart for state highlights pages                       Overridden  Enabled   working, needs-template 
+ state_specifics_view     State specific content for state highlights pages                      Overridden  Enabled   tested, unsure          
+ state_view               WICHE member states highlights                                         Default     Enabled   whoops                  
+ states_projects          State-specific projects                                                Overridden  Enabled   working, themed         
+ student_testimonial_fea                                                                         Overridden  Enabled   working, themed         
+ tured                                                                                                                                         
+ taxonomy_resources       List tagged "Policy and Data Resources."                               Default     Enabled   working, themed         
+ taxonomy_resources_bloc  List tagged "Policy and Data Resources"                                Default     Enabled   working, needs-template 
+ k                                                                                                                                             
+ test_fields                                                                                     Default     Enabled   test                    
+ test_php_info            Returns phpinfo for server diagnostic usage                            Default     Enabled   test                    
+ wiche_tags               This allows you to select tags by tag ID, not term name.               Overridden  Enabled   working, uncertain if   
+                                                                                                                       used -- see the         
+                                                                                                                       taxonomy_term view      
+ archive                  Display a list of months that link to content for that month.          Default     Disabled  default                 
+ backlinks                Displays a list of nodes that link to the node, using the search       Default     Disabled  default                 
+                          backlinks table.                                                                                                     
+ comments_recent          Contains a block and a page to list recent comments; the block will    Default     Disabled  default                 
+                          automatically link to the page, which displays the comment body as                                                   
+                          well as a link to the node.                                                                                          
+ date_browser             Browse through nodes by year, month, day, or week. Date browser        Default     Disabled  Date                    
+                          attachment adds back/next navigation to the top of the page.                                                         
+ frontpage                Emulates the default Drupal front page; you may set the default home   Default     Disabled  default                 
+                          page path to this view to make it your front page.                                                                   
+ glossary                 A list of all content, by letter.                                      Default     Disabled  default                 
+ og                       Groups directory                                                       Default     Disabled  og                      
+ og_gen_announcement                                                                             Default     Disabled  og                      
+ og_gen_discussion                                                                               Default     Disabled  og                      
+ og_ghp_ron               OG: Group home page - River of news. Default                           Default     Disabled  og                      
+ og_ice_poll              Polls for general ICE group                                            Default     Disabled  og                      
+ og_members               Member listing                                                         Default     Disabled  og                      
+ og_members_block         Member listing block                                                   Default     Disabled  og                      
+ og_members_faces         Member listing in grid with user pictures                              Default     Disabled  og                      
+ og_my                    List user's subscribed groups and provide link to manage subscription  Default     Disabled  og                      
+ og_myGroupsBlock         List user's subscribed groups                                          Default     Disabled  og                      
+ og_mytracker             Shows all activity in subscribed groups.                               Default     Disabled  og                      
+ og_recent_type_term      Recent posts for current term filtered by node type and/or taxonomy    Default     Disabled  og                      
+                          term                                                                                                                 
+ og_search                Search within a particular group.                                      Default     Disabled  og                      
+ og_tracker               Shows active posts across the whole site.                              Default     Disabled  og                      
+ og_unread                Shows unread posts in subscribed groups.                               Default     Disabled  og                      
+ og_yourGroupsBlock       List user's subscribed groups                                          Default     Disabled  og                      
+ popular                  Shows the most-viewed nodes on the site. This requires the statistics  Default     Disabled  default                 
+                          to be enabled at administer >> reports >> access log settings.                                                       
+ taxonomy_term            A view to emulate Drupal core's handling of taxonomy/term; it also     Default     Disabled  default                 
+                          emulates Views 1's handling by having two possible feeds.                                                            
+ tracker                  Shows all new activity on system.                                      Default     Disabled  default                 
+
+A total of 92 views were found in this Drupal installation:
+  12 views reside only in the database
+  36 views are overridden
+  44 views are in their default state
+  25 views are disabled
+

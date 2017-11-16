@@ -1,0 +1,436 @@
+<?php
+/**
+* Custom Enhancements Module
+*	This is a catch all module for eveything I can think of that enhance the user experience, that I have added custom attributes etc for.
+*	This module will incorporate many modules I imagine in the long run
+*/
+
+/**
+*	Date: 06/21/2007
+* ID: browser_check
+*	Created By: Paul Huntsbegrer
+* Version: 1.0
+*	Revision: none
+*	Dependencies: none
+*	Notes: This is to check for browser differences and use the approriate xstandard object for either IE or Mozilla/Netscape browsers
+*/
+
+function browser_check() {
+$useragent = $_SERVER['HTTP_USER_AGENT'];
+if (preg_match('|MSIE ([0-9].[0-9]{1,2})|',$useragent,$matched)) {
+	$browser['version'] =$matched[1];
+	$browser['type'] = 'IE';
+} 
+elseif (preg_match('|Opera ([0-9].[0-9]{1,2})|',$useragent,$matched)) {
+	$browser['version'] =$matched[1];
+	$browser['type'] = 'Opera';
+} 
+elseif(preg_match('|Firefox/([0-9\.]+)|',$useragent,$matched)) {
+	$browser['version'] =$matched[1];
+	$browser['type'] = 'Firefox';
+} 
+elseif(preg_match('|Safari/([0-9\.]+)|',$useragent,$matched)) {
+	$browser['version'] =$matched[1];
+	$browser['type'] = 'Safari';
+} 
+else {
+// browser not recognized!
+	$browser['version']  = 0;
+	$browser['type']= 'other';
+}
+return $browser;
+}
+//end edit
+  
+//theming of welcome message - YOU HAVER TO HACK THE node.module to get this to work!!!!!
+function theme_default_message($message) {
+	//This theme allows the administrator to disable the welcome screen implicitly
+	if (variable_get('hide_welcome', '') != 1) {
+		return $message;
+	}
+}
+
+function core_enhancements_main() {
+	$output = '<p>The Core Enhanacements Module adds many kinds of functionality and customizeable settings to the Core of Drupal. This allows the core modules of Drupal to remain intact, so that it is easier to upgrade the site to a newer version. To customize, enable or disable any of the enhancements, click on <em>Customize Core Enhancements</em></p><p><strong>Enhancements List:</strong></p><ul><li><strong>Hide Welcome Message</strong>: This allows the administrator to turn off the annoying <em>Welcome To Your New Drupal Site</em> without having to promote a node to the front page.</li></ul>';
+	$form['core_enhancements']['main'] = array(
+	'#type' => 'markup',
+	'#value' => $output,
+	'#weight' => 0,
+	);
+	return $form;
+}
+
+function core_enhancements_customize() {
+	$output = '<p><strong>Customize Core Enhancements</strong>: Each Enhancement is placed inside it\'s own collapsable fieldset, referenced by it\'s name on the main page.</p>';
+	$form['core_enhancements']['customize'] = array(
+	'#type' => 'markup',
+	'#value' => $output,
+	'#weight' => 0,
+	);
+	
+	//each enhancement is a field set
+	
+	//Hide Welcome Message
+	$form['core_enhancements']['hide_welcome'] = array(
+		'#type' => 'fieldset',
+		'#title' => t('Hide Welcome Message'),
+		'#collapsible' => TRUE,
+		'#collapsed' => TRUE,
+	);
+	$php_code = 'if (module_exists(\'core_enhancements\')) {$default_message = theme(\'default_message\',$default_message);}';
+	$php_code2 = '$output = \'<div id="first-time">\'. $default_message .\'</div>\';';
+		$output = '<p>In order to make this enhancement work, you must add this code to your node.module</p><p>ADD THIS:<br /><code>'.$php_code.'</code></p><br /><p>ON THE LINE BEFORE: <xmp>'.$php_code2.'</xmp> Approximately Line 2458</p>';
+	$form['core_enhancements']['hide_welcome']['info'] = array(
+	'#type' => 'markup',
+	'#value' => $output,
+	'#weight' => 0,
+	);
+	$options = array('SHOW','HIDE');
+	$form['core_enhancements']['hide_welcome']['hide_welcome'] = array(
+	  '#title' => 'Hide Welcome Message',
+	  '#description' => 'Show or Hide The Welcome on the main page entirely. This relies on you hacking the node.module.',
+	  '#type' => 'radios', 
+	  '#default_value' => variable_get('hide_welcome', '') ? variable_get('hide_welcome', '') : 0,
+	  '#options' => $options,
+	);
+	
+	//Fix Teasers
+	$form['core_enhancements']['fix_teasers'] = array(
+		'#type' => 'fieldset',
+		'#title' => t('Fix Teasers'),
+		'#collapsible' => TRUE,
+		'#collapsed' => TRUE,
+	);
+	$output = '<p>There are some problems with teasers not teasing the html markup cleanly. This adds the php function strip_tags() to all teasers, so they successfully display without breaking the layout of the page or adding invalid markup</p>';
+	$form['core_enhancements']['fix_teasers']['info'] = array(
+	'#type' => 'markup',
+	'#value' => $output,
+	'#weight' => 0,
+	);
+	$options = array('DIASBLE FIX','ENABLE FIX');
+	$form['core_enhancements']['fix_teasers']['fix_teasers'] = array(
+	  '#title' => 'Fix Teasers',
+	  '#description' => 'Enable or Disable strip_tags on all teasers',
+	  '#type' => 'radios', 
+	  '#default_value' => variable_get('fix_teasers', '') ? variable_get('fix_teasers', '') : 0,
+	  '#options' => $options,
+	);
+	
+	//Collapse System Modules
+	$form['core_enhancements']['collapse_system_modules'] = array(
+		'#type' => 'fieldset',
+		'#title' => t('Collapse System Modules fieldsets'),
+		'#collapsible' => TRUE,
+		'#collapsed' => TRUE,
+	);
+	$output = '<p>This setting allows you to collapse all the fieldsets that are made in the system module page. Having many modules makes this page very hard to keep a track of, and this simply collapses all the field sets so the form is more manageable</p>';
+	$form['core_enhancements']['collapse_system_modules']['info'] = array(
+	'#type' => 'markup',
+	'#value' => $output,
+	'#weight' => 0,
+	);
+	$options = array('DISABLE','ENABLE');
+	$form['core_enhancements']['collapse_system_modules']['collapse_system_modules'] = array(
+	  '#title' => 'Collapse System Modules Fieldsets',
+	  '#description' => 'Make the system module fieldsets collapse',
+	  '#type' => 'radios', 
+	  '#default_value' => variable_get('collapse_system_modules', '') ? variable_get('collapse_system_modules', '') : 0,
+	  '#options' => $options,
+	);
+	
+	//Rename Comment Link and Add Image
+	$form['core_enhancements']['rename_comment_link'] = array(
+		'#type' => 'fieldset',
+		'#title' => t('Comment Link Override'),
+		'#collapsible' => TRUE,
+		'#collapsed' => TRUE,
+	);
+	$output = '<p>This setting allows you to alter the comments link to any text you wish to apply. The recommended change would be to use \'Reply\' instead of the default. Also, there is an option to add a comment image to your comments, to keep it similar to the new printer friendly version (which allows you to add in an icon).</p>';
+	$form['core_enhancements']['rename_comment_link']['info'] = array(
+	'#type' => 'markup',
+	'#value' => $output,
+	'#weight' => 0,
+	);
+	$options = array('DISABLE','ENABLE');
+	$form['core_enhancements']['rename_comment_link']['rename_comment_link'] = array(
+	  '#title' => 'Enable or Disable Comment Link override',
+	  '#description' => '',
+	  '#type' => 'radios', 
+	  '#default_value' => variable_get('rename_comment_link', '') ? variable_get('rename_comment_link', '') : 0,
+	  '#options' => $options,
+	);
+	$form['core_enhancements']['rename_comment_link']['rename_comment_link_title'] = array(
+	  '#title' => 'New Link Title',
+	  '#description' => 'Enter your text to rename the comment link to.',
+	  '#type' => 'textfield', 
+	  '#default_value' => variable_get('rename_comment_link_title', '') ? variable_get('rename_comment_link_title', '') : '',
+	);
+	$options = array('Hide Icon','Show Icon');
+	$form['core_enhancements']['rename_comment_link']['comment_show_icon'] = array(
+	  '#title' => 'Show comment icon?',
+	  '#description' => 'Add an icon to the left side of the comment link.',
+	  '#type' => 'radios', 
+	  '#default_value' => variable_get('comment_show_icon', '') ? variable_get('comment_show_icon', '') : 0,
+	  '#options' => $options,
+	);
+	$form['core_enhancements']['rename_comment_link']['comment_icon_locale'] = array(
+	  '#title' => 'Image location and name',
+	  '#description' => 'Enter the location of the image file you are using',
+	  '#type' => 'textfield', 
+	  '#default_value' => variable_get('comment_icon_locale', '') ? variable_get('comment_icon_locale', '') : '',
+	);
+	
+	//Add image to Subscribe Link
+	$form['core_enhancements']['subscribe_link'] = array(
+		'#type' => 'fieldset',
+		'#title' => t('Subscribe Link Override'),
+		'#collapsible' => TRUE,
+		'#collapsed' => TRUE,
+	);
+	$output = '<p>This setting allows you to alter the subscribe link aby adding an icon to the subscribe link. The Print module allows you to add an icon, and this setting allows you to do the same.</p>';
+	$form['core_enhancements']['subscribe_link']['info'] = array(
+	'#type' => 'markup',
+	'#value' => $output,
+	'#weight' => 0,
+	);
+	$options = array('DISABLE','ENABLE');
+	$form['core_enhancements']['subscribe_link']['subscribe_link'] = array(
+	  '#title' => 'Enable or Disable Subscribe Link override',
+	  '#description' => '',
+	  '#type' => 'radios', 
+	  '#default_value' => variable_get('subscribe_link', '') ? variable_get('subscribe_link', '') : 0,
+	  '#options' => $options,
+	);
+	$options = array('Hide Icon','Show Icon');
+	$form['core_enhancements']['subscribe_link']['subscribe_show_icon'] = array(
+	  '#title' => 'Show subscribe icon?',
+	  '#description' => 'Add an icon to the left side of the subscribe link.',
+	  '#type' => 'radios', 
+	  '#default_value' => variable_get('subscribe_show_icon', '') ? variable_get('subscribe_show_icon', '') : 0,
+	  '#options' => $options,
+	);
+	$form['core_enhancements']['subscribe_link']['subscribe_icon_locale'] = array(
+	  '#title' => 'Image location and name',
+	  '#description' => 'Enter the location of the image file you are using',
+	  '#type' => 'textfield', 
+	  '#default_value' => variable_get('subscribe_icon_locale', '') ? variable_get('subscribe_icon_locale', '') : '',
+	);
+	
+	//Disable The Page Count Entirely
+	$form['core_enhancements']['node_count_override'] = array(
+		'#type' => 'fieldset',
+		'#title' => t('Node Count Override'),
+		'#collapsible' => TRUE,
+		'#collapsed' => TRUE,
+	);
+	$output = '<p>One of my biggest pet peeves about drupal is that the page count from the statistics module for a node shows up every where, and usually it is unwanted. You can set this setting to not display in Access Control (and there are a few hacks), but user 1 always see this, so does the admin, and the hacks are no good (why would I want to empty a whole table of valuable statistics data), and sometimes it\'s just better to disable the darn thing entirely. This solves a hack I put into the node.module.</p>';
+	$form['core_enhancements']['node_count_override']['info'] = array(
+	'#type' => 'markup',
+	'#value' => $output,
+	'#weight' => 0,
+	);
+	$options = array('DISABLE','ENABLE');
+	$form['core_enhancements']['node_count_override']['node_count_override'] = array(
+	  '#title' => 'Enable or disable page counts for the links for each node',
+	  '#description' => '',
+	  '#type' => 'radios', 
+	  '#default_value' => variable_get('node_count_override', '') ? variable_get('node_count_override', '') : 0,
+	  '#options' => $options,
+	);
+
+	//Take you to XStandard if it's enabled
+	if (module_exists('xstandard')) {
+		$form['core_enhancements']['xstandard'] = array(
+		'#type' => 'fieldset',
+		'#title' => t('Xstandard WYSIWYG Editor'),
+		'#collapsible' => TRUE,
+		'#collapsed' => FALSE,
+		);
+		$output = '<p>'.theme('image','misc/watchdog-ok.png').' <strong>Xstandard is installed</strong></p>';
+		$output .= '<p>XStandard is the leading standards-compliant plug-in WYSIWYG editor for desktop applications and browser-based content management systems (IE/Firefox/Safari/Opera). The editor generates clean XHTML Strict or 1.1, and uses CSS for formatting, to ensure the clean separation of content from presentation. The editor is keyboard accessible, and markup generated by XStandard meets the most demanding accessibility requirements. The editor\'s cool features include drag & drop file upload, spell checking and an image library that integrates tightly with your CMS.</p>';
+		$form['core_enhancements']['xstandard']['info'] = array(
+		'#type' => 'markup',
+		'#value' => $output,
+		'#weight' => 0,
+		);
+	}
+	
+  return system_settings_form($form);
+}
+
+/**
+ * Implementation of hook_nodeapi().
+ */
+function core_enhancements_nodeapi(&$node, $op, $teaser, $page) {
+  switch ($op) {
+	case 'load':
+	break;
+	
+	case 'prepare':
+	break;
+	
+	case 'view':
+	//Fix Teasers here
+	if (variable_get('fix_teasers', '') == 1) {
+		$node->teaser = '<p>' .strip_tags($node->teaser) .'...</p>';
+		$teaser = '<p>' .strip_tags($teaser) .'...</p>';
+	}
+	break;
+	
+	case 'validate':
+	break;
+	
+	case 'submit':
+	break;
+	
+	case 'update':
+	break;
+  }
+}
+
+//Hook link alter
+function core_enhancements_link_alter(&$node, &$links) {
+	
+	foreach ($links as $module => $link) {
+		//print $module .' - ' .$link .'<br />';
+		
+		//This alters the Comment link to the text that you enter in core enhancements page
+		if ($module == 'comment_add' && variable_get('rename_comment_link', '') == 1) {
+		//find out if the image should be put in
+			if (variable_get('comment_show_icon', '') == 1) {
+				$img = base_path() .variable_get('comment_icon_locale', '');
+				$img = '<img width="16px" height="16px" style="vertical-align:middle" src="'. $img .'" alt="Add a new comment to this page." />'.' ';
+			}
+			$links[$module]['html'] = TRUE;
+			$links[$module]['title'] = variable_get('rename_comment_link_title', '') ? $img .variable_get('rename_comment_link_title', '') : 'Add new comment';
+		}
+		
+		//This alters the Subscribe link to add an image to the link
+		if ($module == 'subscriptions-subscribe' && variable_get('subscribe_link', '') == 1) {
+		//find out if the image should be put in
+			if (variable_get('subscribe_show_icon', '') == 1) {
+				$img = base_path() .variable_get('subscribe_icon_locale', '');
+				$img = '<img width="16px" height="16px" style="vertical-align:middle" src="'. $img .'" alt="Receive notifications about changes and/or comments to this page (and possibly similar pages)." />'.' ';
+			}
+			$links[$module]['html'] = TRUE;
+			$links[$module]['title'] = $img ? $img .$links[$module]['title'] : $links[$module]['title'];
+		}
+		
+		//This unsets the page count from the links entirely, this is a global setting, not permissions based.
+		if ($module == 'statistics_counter' && variable_get('node_count_override', '') == 1) {
+			unset($links[$module]);
+		}
+		
+	}
+}
+
+//Hook Form alter
+function core_enhancements_form_alter($form_id, &$form) {
+	
+	//This alters the system modules form to collapse all fieldsets
+	if ($form_id == 'system_modules' && variable_get('collapse_system_modules', '') == 1) {
+		$form['#theme'] = 'collapsed_system_modules';
+	}
+	
+}
+
+//This overrides Drupal's main theme for the system modules, and turns all the fieldsets to collapse
+function theme_collapsed_system_modules($form) {
+  if (isset($form['confirm'])) {
+    return drupal_render($form);
+  }
+
+  // Individual table headers.
+  $header = array(t('Enabled'));
+  if (module_exists('throttle')) {
+    $header[] = t('Throttle');
+  }
+  $header[] = t('Name');
+  $header[] = t('Version');
+  $header[] = t('Description');
+
+  // Pull package information from module list and start grouping modules.
+  $modules = $form['validation_modules']['#value'];
+  foreach ($modules as $module) {
+    if (!isset($module->info['package']) || !$module->info['package']) {
+      $module->info['package'] = 'Other';
+    }
+    $packages[$module->info['package']][$module->name] = $module->info;
+  }
+  ksort($packages);
+
+  // Display packages.
+  $output = '';
+  foreach ($packages as $package => $modules) {
+    $rows = array();
+    foreach ($modules as $key => $module) {
+      $row = array();
+      $row[] = array('data' => drupal_render($form['status'][$key]), 'align' => 'center');
+
+      if (module_exists('throttle')) {
+        $row[] = array('data' => drupal_render($form['throttle'][$key]), 'align' => 'center');
+      }
+      $row[] = '<strong>'. drupal_render($form['name'][$key]) .'</strong>';
+      $row[] = drupal_render($form['version'][$key]);
+      $row[] = array('data' => drupal_render($form['description'][$key]), 'class' => 'description');
+      $rows[] = $row;
+    }
+    
+	/*
+	* Modified Core change fieldsets to collapse - 08/02/2007 -pth ID:administer_modules
+	*/
+	//begin edit
+	/* Commented out old array
+	$fieldset = array(
+      '#title' => t($package),
+      '#collapsible' => TRUE,
+      '#collapsed' => ($package == 'Core - required'),
+      '#value' => theme('table', $header, $rows, array('class' => 'package')),
+    );
+	*/
+	$fieldset = array(
+      '#title' => t($package),
+      '#collapsible' => TRUE,
+      '#collapsed' => TRUE,
+      '#value' => theme('table', $header, $rows, array('class' => 'package')),
+    );
+	//end edit
+    $output .= theme('fieldset', $fieldset);
+  }
+
+  $output .= drupal_render($form);
+  return $output;
+}
+
+
+
+//Keep menu at bottom It's easier to find that way
+
+function core_enhancements_menu($may_cache) {
+$items = array();
+	if($may_cache) {
+		$items[] = array(
+		  'path' => 'admin/settings/core_enhancements',
+		  'title' => t('Core Enhancements'),
+		  'description' => t('Allows administrators to change the core of drupal without hacking the core files.'),
+		  'callback' => 'drupal_get_form',
+		  'callback arguments' => 'core_enhancements_main',
+		  'access' => user_access('administer site configuration'),
+		  'type' => MENU_NORMAL_ITEM,
+		);
+		$items[] = array(
+			'path' => 'admin/settings/core_enhancements/main',
+			'title' => t('Main'),
+			'type' => MENU_DEFAULT_LOCAL_TASK,
+			'weight' => -10
+		);
+		$items[] = array('path' => 'admin/settings/core_enhancements/customize',
+			'title' => t('Customize Core Enhancements'),
+			'callback' => 'drupal_get_form',
+			'callback arguments' => 'core_enhancements_customize',
+			'type' => MENU_LOCAL_TASK);
+			
+	} else {
+	}
+return $items;
+}
