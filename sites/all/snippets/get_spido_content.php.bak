@@ -1,0 +1,328 @@
+<?php
+//declare includes - this gets us the functions for running the users - you have to use ../ to traverse the file tree
+// and add the full bootstrap to get drupals functions
+//chdir('../../../');
+//require_once('./includes/bootstrap.inc');
+//drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
+
+function get_spido_content($type='spido_policy') {
+//print "<p>start get_spido_content:" . arg(0) . "</p>";
+
+//get the args() from the address bar
+
+if (arg(0) == 'spido') {
+
+$str = explode(",",$type);
+$type='';
+foreach ($str as $item) {
+	$type .= '\''.$item.'\', ';
+}
+$type = substr($type,0,strlen($type)-2);
+
+//the issues array has to be dynamic, so that it knows if htere is a filter invovled
+
+//so, we needs to say if there is more than one state, go back to the summary view.
+//print_r("filter0:" . $_GET['filter0']);
+
+if (count($_GET['filter0'])>1) {
+	//we need to redirect this back to the summary if there is more than one state in the filter - so the user can go back and forth
+	$filters='';
+	if ($_GET['filter0'] && $_GET['filter0']!="**ALL**") {
+		foreach ($_GET['filter0'] as $key => $value) {
+			$filter[] .= 'filter0%5B%5D=' .$value;
+		}
+	}
+	
+	if ($_GET['filter1']) {
+		foreach ($_GET['filter1'] as $key => $value) {
+			$filter[] .= 'filter1%5B%5D=' .$value;
+		}
+	}
+	
+	$filters = implode($filter,'&');
+	
+	if ($_GET['q'] !='spido') {
+		//print_r("leaving page:");
+		drupal_goto('spido',$filters);
+	}	
+}
+
+//issues array needs to become dynamic, so that the search defines what the issues array is
+	//print_r("arg(2):" . arg(2));
+	//print_r("filter1:" . $_GET['filter1']);
+	
+	//summary page processing
+	if ($_GET['filter1'] && $_GET['filter1']!="**ALL**") {
+		foreach ($_GET['filter1'] as $key => $value) {
+		//print_r(" key: " . $key . "value:" . $value);
+			$issues["$value"] = '';
+		}
+	} else if (arg(2)  && (arg(2) != "*")) {
+		//arg2 - policy
+		//print_r("arg2:" . arg(2));
+		//detail page processing - add parent tid to issues
+		
+		//@todo this broke when we moved to Linux.
+		//$arg2_arr = explode("+",arg(2));
+		
+		$arg2_arr = explode(" ",arg(2));
+		//key = index
+		//value = tid
+		foreach ($arg2_arr as $key => $value) {
+			//print "key:" . $key . " value:" . $value .'<br />';
+			$parent = taxonomy_get_parents($value);
+			$parent_key = key($parent);
+			$str = $parent["$parent_key"]->tid;
+			//print "parent: " .$str .'<br />';
+			//add parent category			
+			if (empty($parent)) {
+				$parents["$value"] = '';
+			} else {
+				//add subcategory
+				$issues["$value"] = '';
+			}
+		}
+	} else {
+		//default search to all parent tids when none are provided.
+		//TODO read policy taxonomy nodes from the db
+		//print_r("all issues processing");
+		$issues = array(16=>'',23=>'',31=>'',45=>'',46=>'',47=>'',48=>'',49=>'',50=>'',51=>'',52=>'',53=>'');
+		$parents = array(16=>'',23=>'',31=>'',45=>'',46=>'',47=>'',48=>'',49=>'',50=>'',51=>'',52=>'',53=>'');
+	}
+	
+	//then you got to get the keys into an array
+	foreach ($issues as $key=>$value) {
+		$filtered_issues[] = $key;
+	}
+	$filtered_issues = implode(",",$filtered_issues);
+
+	foreach ($parents as $key=>$value) {
+		$parent_issues[] = $key;
+	}
+	$parent_issues = implode(",",$parent_issues);
+	
+	
+	//print 'Filtered Issues:'.$filtered_issues .'<br />';
+	//print 'Parent Issues:'.$parent_issues .'<br />';
+	//print 'arg1:' . arg(1);
+		
+//So, the arguments have to piped into here arg(0) = spido, arg(1) = state, arg(2) = the terms is is in
+//The start query is always the same, find the state - then look at the
+
+		//1) get policy nodes 
+		$sql = "SELECT * FROM ((SELECT * FROM (SELECT nr.title, nr.nid, tn.tid, n.type FROM wiche_node n INNER JOIN wiche_node_revisions nr ON nr.nid = n.nid LEFT JOIN wiche_term_node tn ON nr.nid = tn.nid LEFT JOIN wiche_term_data td ON tn.tid = td.tid LEFT JOIN wiche_content_type_spido_policy ctsp ON ctsp.nid = n.nid WHERE status = 1 AND n.type IN ('spido_policy') AND field_states_value IN ('".arg(1)."') AND tn.tid IN (".$filtered_issues.") ) AS table1) UNION ALL (SELECT * FROM (SELECT nr.title, nr.nid, tn.tid, n.type FROM wiche_node n INNER JOIN wiche_node_revisions nr ON nr.nid = n.nid LEFT JOIN wiche_term_node tn ON nr.nid = tn.nid LEFT JOIN wiche_term_data td ON tn.tid = td.tid LEFT JOIN wiche_content_type_spido_summary ctss ON ctss.nid = n.nid WHERE status = 1 AND n.type IN ('spido_summary') AND field_states_0_value IN ('".arg(1)."') AND tn.tid IN (".$parent_issues.") ) AS table1) ) AS all_policies ORDER BY tid ASC, type DESC"; //this has to interact with the pager, so there are 60 nodes set right now
+		//print "sql:" . $sql . '<br />';	
+		//print $sql;
+		$res = pager_query($sql,60);
+		
+		$num_rows = db_num_rows($res);
+		//print "results:" . $num_rows;
+		//if (num_rows > 0) {
+			$allowed_ids = array();
+			while ($nodes = db_fetch_array($res)){
+				$allowed_nids[] = $nodes['nid'];
+			}
+		
+			$nids = implode(",",$allowed_nids);
+			
+			//does this need to happen twice?
+			$res = pager_query($sql,60);
+		//}
+		
+		//print $num_rows;
+
+		//2) get state other links
+		$qryState = "SELECT n.type, nr.nid, nr.title, nr.teaser, nr.body, n.created, ctss.* FROM wiche_node n INNER JOIN wiche_node_revisions nr ON nr.nid = n.nid INNER JOIN wiche_content_type_spido_states ctss ON nr.nid = ctss.nid WHERE status = 1 AND type IN ('spido_states') AND field_short_name_value IN ('".arg(1)."') "; //this has to interact with the pager, so there are 60 nodes set right now
+		//print $qryState.'<br />';
+		$rsStates = db_query($qryState);
+		
+		while ($states = db_fetch_object($rsStates)){
+			$last_updated = $states->field_update_year_value .' ';
+			$last_updated .= 'Legislative Session';
+		}
+		
+		
+		//3) statue links
+		$qryStatuteLinks = "SELECT n.type, nr.nid, nr.title, nr.teaser, nr.body, n.created, ctsl.* FROM wiche_node n INNER JOIN wiche_node_revisions nr ON nr.nid = n.nid INNER JOIN wiche_content_type_spido_statute_links ctsl ON nr.nid = ctsl.nid WHERE status = 1 AND type IN ('spido_statute_links') AND field_state_1_value IN ('".arg(1)."') "; //this has to interact with the pager, so there are 60 nodes set right now
+		//print $qryStatuteLinks.'<br />';
+		$rsStatutes = db_query($qryStatuteLinks);
+		
+		while ($statutes = db_fetch_object($rsStatutes)){
+			//print_r($statutes);
+			$statute_links .= '&#9679; '. l($statutes->title,$statutes->field_link_url_url,array('target'=>'_blank')) .'<br />';
+		}
+		
+		//governance
+		$qryGovernance = "SELECT n.type, nr.nid, nr.title, nr.teaser, nr.body, n.created, ctsg.* FROM wiche_node n INNER JOIN wiche_node_revisions nr ON nr.nid = n.nid INNER JOIN wiche_content_type_spido_governance ctsg ON nr.nid = ctsg.nid WHERE status = 1 AND type IN ('spido_governance') AND field_state_2_value IN ('".arg(1)."') "; //this has to interact with the pager, so there are 60 nodes set right now
+		//print $qryGovernance.'<br />';
+		$rsGovernance = db_query($qryGovernance);
+		$num_rows_gov = db_num_rows($rsGovernance);
+		if ($num_rows_gov>0) {
+			//put in the flag and point to governance
+			$state_gov = str_replace(" ","",strtolower(getState(arg(1))));
+			//print $state_gov;
+			//$pic = theme('image','misc/state_icons/flag_'.$state_gov.'.gif');
+			//print $pic;
+			$governance = l(getState(arg(1)).' State Governance >>>','spido/governance/'.arg(1),array('target'=>'_blank','style'=>'color:#cb644c;'));
+			//print $governance;
+		}
+		$output .= "<INPUT TYPE='button' VALUE='Refine Search' onClick='window.history.go(-2);'>&nbsp;&nbsp;<INPUT TYPE='button' VALUE='New Search' onClick='window.location=\"/spido\";'><br><br><br>"; 
+		$output.='<div style="width:100%;padding:15px 0px 0px 0px;"><span style="font-size:16px;float:right;color:#cb644c;">'.$governance.'<br /></span><span style="font-size:20px;"><strong>State: </strong> '.getState(arg(1)).'</span><br /><div style="padding:15px 0px 0px 0px;">'.$statute_links.'</div><span style="float:right;font-size:12px;color:#cb644c">Last Updated: '.$last_updated.'</span></div>';
+		
+		
+		//display policy data
+		while ($row = db_fetch_object($res)){
+			//print_r($row);
+			//print '<br />';
+			$node = node_load($row->nid);
+			$term = taxonomy_get_term($row->tid);
+			$parent = taxonomy_get_parents($row->tid);
+			
+			//asort($node->taxonomy);
+			//print_r($node->taxonomy);
+			//print '<br />';
+			//print '<br />';
+
+			
+			if ($term->name != $last_term) {
+				
+			if ($node->type == 'spido_summary') {
+				$output.='<div style="width:100%;padding:15px 0px 0px 0px;"><hr /><span style="font-size:16px;"><strong>'.$term->name.'</strong></span></div>';
+				$output.='<div style="width:100%;padding:0px 0px 0px 0px;">'.theme('get_summary',$row,$node).'</div>';
+			}//get childern for this tid
+			
+			/* refactor - returns too many results */
+				$arr = array();
+				//read term children (why?)
+				$children = taxonomy_get_children($row->tid);
+				//print("children" . count($children) );
+				$last_tid = $row->tid;
+				foreach ($children as $child) { 
+					//print "<br>Arg2:" . arg(2) . "<br>";
+					//no policy or policy input and no parent for data row
+					if (!arg(2) || arg(2) && empty($parent)) {
+						//print "  if arg2 and empty parent:  " . $child->tid . " parent: " . $parent; 
+						$arr[] = $child->tid;
+					} else {
+						//arg2_arr has parent and child cats.
+						
+						if (in_array($child->tid, $filtered_issues)) {
+						//if (in_array($child->tid, $arg2_arr)) {
+							$arr[] = $child->tid;
+							//print "else test:" . $child->tid; 
+						}
+					}
+				}
+				$children = implode(",",$arr);
+				//print $children;
+				
+				if ($children.length > 0) {
+				$sql2 = "SELECT n.type, nr.nid, nr.title, nr.teaser, nr.body, n.created, ctsp.*, tn.*, td.* FROM wiche_node n INNER JOIN wiche_node_revisions nr ON nr.nid = n.nid INNER JOIN wiche_content_type_spido_policy ctsp ON nr.nid = ctsp.nid LEFT JOIN wiche_term_node tn ON nr.nid = tn.nid LEFT JOIN wiche_term_data td ON tn.tid = td.tid WHERE nr.nid IN (".$nids.") AND status = 1 AND type IN ('spido_policy') AND field_states_value IN ('".arg(1)."') AND tn.tid IN (".$children.") ORDER BY td.name ASC "; //this has to interact with the pager, so there are 60 nodes set right now
+				
+			
+				//if ($filtered_issues.length > 0) {
+				//$sql2 = "SELECT n.type, nr.nid, nr.title, nr.teaser, nr.body, n.created, ctsp.*, tn.*, td.* FROM wiche_node n INNER JOIN wiche_node_revisions nr ON nr.nid = n.nid INNER JOIN wiche_content_type_spido_policy ctsp ON nr.nid = ctsp.nid LEFT JOIN wiche_term_node tn ON nr.nid = tn.nid LEFT JOIN wiche_term_data td ON tn.tid = td.tid WHERE nr.nid IN (".$nids.") AND status = 1 AND type IN ('spido_policy') AND field_states_value IN ('".arg(1)."') AND tn.tid IN (".$filtered_issues.") ORDER BY td.name ASC "; //this has to interact with the pager, so there are 60 nodes set right now
+			    //print $sql2.'<br />';
+				$rsSubcats = db_query($sql2);
+				while ($policy = db_fetch_object($rsSubcats)){
+					$node2 = node_load($policy->nid);
+					$term2 = taxonomy_get_term($policy->tid);
+					//main terms first
+					if ($term2->name != $last_term2) {
+						$output.='<div style="width:100%;margin-left:15px;padding:15px 0px 0px 0px;"><span style="font-size:14px;color:#cb644c"><strong>'.$term2->name.'</strong></span><br />'.theme('get_content',$policy,$node2).'</div>';
+					} else {
+						$output.='<div style="width:100%;margin-left:15px;padding:0px 0px 0px 0px;">'.theme('get_content',$policy,$node2).'</div>';
+					}
+					$last_term2 = $term2->name;		
+					
+				}
+			}
+				//links
+				$sql3 = "SELECT n.type, nr.nid, nr.title, nr.teaser, nr.body, n.created, ctsp.*, tn.*, td.* FROM wiche_node n INNER JOIN wiche_node_revisions nr ON nr.nid = n.nid INNER JOIN wiche_content_type_spido_links ctsp ON nr.nid = ctsp.nid LEFT JOIN wiche_term_node tn ON nr.nid = tn.nid LEFT JOIN wiche_term_data td ON tn.tid = td.tid WHERE status = 1 AND type IN ('spido_links') AND field_state_0_value IN ('".arg(1)."') AND tn.tid IN (".$row->tid.")"; //
+				//print $sql3.'<br />';
+				$rsLinks = db_query($sql3);
+				$num_rows2 = db_num_rows($rsLinks);
+				if ($num_rows2>0) {
+				$output.='<div style="width:100%;margin-left:15px;padding:0px 0px 0px 0px;"><br /><span style="font-size:14px;color:#cb644c"><strong>'.getState($node->field_states[0]['value']).getState($node->field_states_0[0]['value']).' state links for '.$term->name.'</strong></span>';
+				}
+				while ($link = db_fetch_object($rsLinks)){
+					$node3 = node_load($link->nid);
+					//print_r($node3);
+						$output.=''.theme('clearinghouse',$link,$node3).'';
+				}
+				if ($num_rows2>0) {
+				$output.='</div>';
+				}
+				
+					//Clearninghouse summaries
+				$sql4 = "SELECT n.type, nr.nid, nr.title, nr.teaser, nr.body, n.created, ctsp.*, tn.*, td.* FROM wiche_node n INNER JOIN wiche_node_revisions nr ON nr.nid = n.nid INNER JOIN wiche_content_type_clearinghouse_summary ctsp ON nr.nid = ctsp.nid LEFT JOIN wiche_term_node tn ON nr.nid = tn.nid LEFT JOIN wiche_term_data td ON tn.tid = td.tid WHERE status = 1 AND type IN ('clearinghouse_summary') AND td.name LIKE '%".$term->name."%' "; //
+				//print $sql4.'<br />';
+				$rsClearinghouse = db_query($sql4);
+				$num_rows3 = db_num_rows($rsClearinghouse);
+				if ($num_rows3>0) {
+				$output.='<div style="width:100%;margin-left:15px;padding:0px 0px 0px 0px;"><br /><span style="font-size:14px;color:#cb644c"><strong>Other Resources</strong></span>';
+				}
+				while ($chs = db_fetch_object($rsClearinghouse)){
+					$node4 = node_load($chs->nid);
+					//print_r($node4);
+						$output.=''.theme('clearinghouse',$chs,$node4).'';
+				}
+				if ($num_rows3>0) {
+				$output.='</div>';
+				}
+				
+				//end of initial while loop
+
+			}
+			
+			$last_term = $term->name;
+			
+		}
+
+
+
+
+		$output .= theme('pager',NULL,60,0);
+		
+
+return $output;
+
+}
+}
+
+function theme_get_content($row,$node) {
+	$output = '<div style="margin:5px 0px 5px 50px;"><span style="font-size:12px;">'.l($node->title,$node->field_link[0]['url'].$node->field_link_0[0]['url'].$node->field_link_1[0]['url'],array('target'=>'_blank')).' - ';
+	//$output .= $node->field_states[0]['value'] .'<br />';
+	$output .= ''.$node->field_policy_description[0]['value'] .'</span>';
+	//$output .= '<strong>Policy Source: </strong>'.$node->field_source[0]['value'] .'<br />';
+	$output .=  '</div>';
+	//$term = taxonomy_get_term($key);
+	//$output .= '<strong>Domain: </strong>'.$term->name.'<br />';
+	return $output ;
+}
+
+function theme_get_summary($row,$node) {
+	$output = '<div style="margin:5px 0px 5px 0px;"><span style="font-size:12px;">';
+	//$output .= $node->field_states[0]['value'] .'<br />';
+	$output .= ''.$node->field_summary[0]['value'] .'</span>';
+	//$output .= '<strong>Policy Source: </strong>'.$node->field_source[0]['value'] .'<br />';
+	$output .=  '</div>';
+	//$term = taxonomy_get_term($key);
+	//$output .= '<strong>Domain: </strong>'.$term->name.'<br />';
+	return $output ;
+}
+
+function theme_clearinghouse($row,$node) {
+	$output = '<div style="margin:5px 0px 5px 50px;"><span style="font-size:12px;">'.$node->title.'<br />'.l($node->field_link[0]['url'].$node->field_link_0[0]['url'].$node->field_link_1[0]['url'],$node->field_link[0]['url'].$node->field_link_0[0]['url'].$node->field_link_1[0]['url'],array('target'=>'_blank')).'</span><br />';
+	//$output .= $node->field_states[0]['value'] .'<br />';
+	$output .= ''.$node->field_policy_description[0]['value'] .'';
+	//$output .= '<strong>Policy Source: </strong>'.$node->field_source[0]['value'] .'<br />';
+	$output .=  '</div>';
+	//$term = taxonomy_get_term($key);
+	//$output .= '<strong>Domain: </strong>'.$term->name.'<br />';
+	return $output ;
+}
+
+//$output = get_content('spido_policy');
+//print $output;
+?>

@@ -1,0 +1,748 @@
+<?php
+/**
+ * wiche_passport module
+ *
+ * Features
+ *
+ * Region Map Page - This module supports dynamic html behavior on the passport region map page.
+ * The drupal page has HTML with filter a click event that make a server side ajax call (see wiche_passport.js)
+ * to a hook_menu url callback method.
+ * The callback method will return a drupal_json object to the client side with data for display
+ * without leaving the page. A second click event will show and hide content on the client side and this
+ * is also in the wiche_passport.js file.
+ *
+ */
+
+
+/**
+ *
+ * Implementation of hook_menu
+ * Assign event handers for passport pages
+ *
+ */
+
+// get state parameter from url and pass to javascript with Drupal.settings
+$url_comp = explode('/', request_path());
+if (isset($url_comp[3])) {
+  $arg = $url_comp[3];
+  drupal_add_js(array('wiche_passport' => array('state' => $arg)), 'setting');
+}
+
+function wiche_passport_menu() {
+
+  $items = array();
+
+
+  //region page onload and on-click callback function (ajax)
+  $items['passport/studentTransfers/region-filter-action'] = array(
+    'title' => 'Student Transfers',
+    'page callback' => 'wiche_passport_region_filter_action',
+    'access arguments' => array('access wiche_passport content'),
+    'type' => MENU_CALLBACK
+  );
+
+  //within page block load callback function (ajax)
+  $items['passport/studentTransfers/within-page-load'] = array(
+    'title' => 'Student Transfers',
+    'page callback' => 'wiche_passport_within_page_load',
+    'access arguments' => array('access wiche_passport content'),
+    'type' => MENU_CALLBACK
+  );
+
+  return $items;
+
+}
+
+
+function wiche_passport_within_page_load($state_id) {
+
+  $data = array();
+
+  if ($state_id <> NULL) {
+
+    //read table data for page
+    $result = wiche_passport_get_yearly_totals($state_id);
+//		while ($row = db_fetch_array($result)) {
+    foreach ($result as $row) {
+      $key = $row->div_id;
+      $value = $row->value;
+
+      //when value is null return no observations
+      if ($value == NULL) {
+        $value = 'No Observations';
+      }
+      $data[$key] = $value;
+    }
+
+    //read sum totals for page - list values
+    $result = wiche_passport_get_yearly_sum_totals($state_id);
+    $total_transfered = 0;
+    $count = 0;
+//		while ($row = db_fetch_array($result)) {
+    foreach ($result as $row) {
+      $key = $row->div_id;
+
+      //build the div id as list_tafmXtoY
+      $key = 'list_' . $key;
+      $value = $row->value;
+      //when value is null return no observations
+      if ($value == NULL) {
+        $value = 'No Observations';
+
+      }
+      {
+        $total_transfered = $total_transfered + $value;
+        //increment total value count when we have a non-zero value
+        if ($value != 0) {
+          $count++;
+        }
+      }
+
+      $data[$key] = $value;
+    }
+
+    //add total value
+    $data['total_transfered'] = $total_transfered;
+
+    $isExceptionToRule = FALSE;
+    if ($state_id == 'HI' || $state_id == 'ND' || $state_id == 'MT' || $state_id == 'SD') {
+      $isExceptionToRule = TRUE;
+    }
+
+    //clear the less_than_20 text span when total values exist for all paths
+    if ($count == 4 && $isExceptionToRule == FALSE) {
+      $data['less_than_20'] = '';
+    }
+
+    //build json result array
+    return drupal_json_output($data);
+  }
+  else {
+    return $data;
+  }
+  drupal_exit();
+}
+
+
+/**
+ * Callback for region-filter page that queries the database and returns key/value pairs read from db for the filter
+ * and state criteria passed in.
+ *
+ * Called from onLoad and onclick
+ *
+ * @param String $state_id url input parameter
+ * @param input filters to search passport data by are in $_POST
+ *
+ */
+function wiche_passport_region_filter_action($state_id) {
+
+  $data = array();
+
+  if ($state_id <> NULL) {
+
+    $filters = wiche_passport_get_filter_parameters($_POST);
+
+    //debug
+//		$data['filters'] = $filters;
+
+
+    //Add State id and state name parameters
+    $data['state_id'] = $state_id;
+
+    if ($state_id != '') {
+      $result = wiche_passport_get_state_name($state_id);
+      //expect 1 record
+//			if ($row = db_fetch_array($result)){		
+      foreach ($result as $row) {
+        //description column holds the state name for passport states taxonomy
+        $data['state_name'] = $row->description;
+      }
+    }
+
+
+    //get data
+
+    //T1 - 'total-2006-2010' for state - 1 row
+    $total1 = 0;
+    $result = wiche_passport_get_transfer_out_of_region_total($state_id);
+
+//		while ($row = db_fetch_array($result)) {
+    foreach ($result as $row) {
+      $key = $row->div_id;
+      $value = $row->value;
+      $total1 = $total1 + $value;
+      //$data[$key] = $value;
+    }
+
+    //T2 - 1 row, adds out of region total to non_wiche state total and returns the cohort year grand total.
+    $result = wiche_passport_get_transfer_totals_to_non_wiche($state_id);
+//		while ($row = db_fetch_array($result)) {
+    foreach ($result as $row) {
+      $key = $row->div_id;
+      $value = $row->value;
+      $total1 = $total1 + $value;
+
+      //out of region total
+      $data[$key] = $value;
+
+      //total-2006-2010
+      $data['total-2006-2010'] = $total1;
+    }
+
+
+    //Q1
+    $total1 = 0;
+    $result = wiche_passport_get_transfer_totals_from($state_id, $filters);
+//		while ($row = db_fetch_array($result)) {
+    foreach ($result as $row) {
+      $key = $row->div_id;
+      $value = $row->value;
+      $total1 = $total1 + $value;
+      $data[$key] = $value;
+
+    }
+    $data['fromtotal-div'] = $total1;
+
+    //Q2
+    $total2 = 0;
+    $result = wiche_passport_get_transfer_totals_from_to_10($state_id, $filters);
+//		while ($row = db_fetch_array($result)) {
+    foreach ($result as $row) {
+      $key = $row->div_id;
+      $value = $row->value;
+      $total2 = $total2 + $value;
+      $data[$key] = $value;
+    }
+    $data['fromtotal-nonwiche-div'] = $total2;
+
+    //Q3
+    $total3 = 0;
+    $result = wiche_passport_get_transfer_totals_to($state_id, $filters);
+//		while ($row = db_fetch_array($result)) {
+    foreach ($result as $row) {
+      $key = $row->div_id;
+      $value = $row->value;
+      $total3 = $total3 + $value;
+      $data[$key] = $value;
+    }
+    $data['tototal-div'] = $total3;
+
+    //Q4
+    $total4 = 0;
+    $result = wiche_passport_get_transfer_totals_within($state_id, $filters);
+//		while ($row = db_fetch_array($result)) {
+    foreach ($result as $row) {
+      $key = $row->div_id;
+      $value = $row->value;
+      $total4 = $total4 + $value;
+      $data[$key] = $value;
+    }
+    $data['withintotal-div'] = $total4;
+
+    //Map from values
+    $result = wiche_passport_get_map_transfer_totals_from($state_id, $filters);
+//		while ($row = db_fetch_array($result)) {
+    foreach ($result as $row) {
+      $key = $row->div_id;
+      $value = $row->value;
+      $data[$key] = $value;
+    }
+
+    //overwrite the map from-div value for the current state
+    //with the current calculated withintotal based on checkboxes.
+    $data[$state_id . '-from-div'] = $total4;
+
+    //Map to values
+    $result = wiche_passport_get_map_transfer_totals_to($state_id, $filters);
+//		while ($row = db_fetch_array($result)) {
+    foreach ($result as $row) {
+      $key = $row->div_id;
+      $value = $row->value;
+      $data[$key] = $value;
+    }
+
+    //build json result array string
+    return drupal_json_output($data);
+  }
+  else {
+
+    return $data;
+  }
+  drupal_exit();
+}
+
+
+/**
+ *
+ * Implementation of hook_perm
+ * Returns perms for this module.
+ *
+ */
+function wiche_passport_perm() {
+  return array('access wiche_passport content');
+}
+
+
+/**
+ *
+ * Implementation of hook_theme
+ * Add javascript variable to wiche_passport theme.
+ */
+function wiche_passport_theme() {
+  return array(
+    'wiche_passport_javascript' => array(
+      'arguments' => array(),
+    ),
+  );
+}
+
+/**
+ *
+ * Implementation of hook_init
+ *
+ */
+function wiche_passport_init() {
+  theme('wiche_passport_javascript');
+}
+
+
+/**
+ *
+ * theme method for this module
+ * todo - add this js file to just the pages that need it.
+ *
+ */
+function theme_wiche_passport_javascript() {
+  drupal_add_js(drupal_get_path('module', 'wiche_passport') . '/wiche_passport.js');
+}
+
+/**
+ * Helper function that builds 2 where clauses used by this application
+ * and returns them in a filters array.
+ *
+ * @param unknown_type $args
+ */
+function wiche_passport_get_filter_parameters($args) {
+  /* where clause looks like this:
+  " and ( ".
+  "   (from_path = '2 yr' and to_path = '2 yr')".
+  " or (from_path = '2 yr' and to_path = '4 yr')".
+  " or (from_path = '4 yr' and to_path = '2 yr')".
+  " or (from_path = '4 yr' and to_path = '4 yr')".
+  " ) ".
+  */
+
+  /*
+   * TODO - consider making these globals but worried about other code
+   *
+   */
+  $q1 = 'q1';
+  $q2 = 'q2';
+  $q3 = 'q3';
+  $q4 = 'q4';
+  $map1 = 'm1';
+  $map2 = 'm2';
+
+  $startwhere = ' and ( ';
+  $endwhere = ' ) ';
+  $or = ' or ';
+
+  $filters = array();
+  $argCount = count($args);
+
+  if ($argCount > 0) {
+
+    //build q1 and map1
+    $isSet = FALSE;
+    $where = '';
+
+    if ($args['from2to2-checkbox'] != NULL) {
+      $where = $where . "   (from_path = '2 yr' and to_path = '2 yr')";
+      $isSet = TRUE;
+    }
+    if ($args['from2to4-checkbox'] != NULL) {
+      if ($isSet) {
+        $where = $where . $or;
+      }
+      $where = $where . "(from_path = '2 yr' and to_path = '4 yr')";
+      $isSet = TRUE;
+    }
+    if ($args['from4to2-checkbox'] != NULL) {
+      if ($isSet) {
+        $where = $where . $or;
+      }
+      $where = $where . "(from_path = '4 yr' and to_path = '2 yr')";
+      $isSet = TRUE;
+    }
+    if ($args['from4to4-checkbox'] != NULL) {
+      if ($isSet) {
+        $where = $where . $or;
+      }
+      $where = $where . "(from_path = '4 yr' and to_path = '4 yr')";
+      $isSet = TRUE;
+    }
+
+    if ($isSet) {
+      $where = $startwhere . $where . $endwhere;
+      $filters[$q1] = $where;
+      $filters[$map1] = $where;
+    }
+    else {
+      $filters[$q1] = '';
+      $filters[$map1] = '';
+    }
+
+    //build q2
+    $isSet = FALSE;
+    $where = '';
+
+    if ($args['from2to10-checkbox'] != NULL) {
+      $where = $where . "   (from_path = '2 yr' )";
+      $isSet = TRUE;
+    }
+    if ($args['from4to10-checkbox'] != NULL) {
+      if ($isSet) {
+        $where = $where . $or;
+      }
+      $where = $where . "(from_path = '4 yr' )";
+      $isSet = TRUE;
+    }
+
+    if ($isSet) {
+      $where = $startwhere . $where . $endwhere;
+      $filters[$q2] = $where;
+    }
+    else {
+      $filters[$q2] = '';
+    }
+
+    //build q3
+    $isSet = FALSE;
+    $where = '';
+
+    if ($args['to2to2-checkbox'] != NULL) {
+      $where = $where . "   (from_path = '2 yr' and to_path = '2 yr')";
+      $isSet = TRUE;
+    }
+    if ($args['to2to4-checkbox'] != NULL) {
+      if ($isSet) {
+        $where = $where . $or;
+      }
+      $where = $where . "(from_path = '2 yr' and to_path = '4 yr')";
+      $isSet = TRUE;
+    }
+    if ($args['to4to2-checkbox'] != NULL) {
+      if ($isSet) {
+        $where = $where . $or;
+      }
+      $where = $where . "(from_path = '4 yr' and to_path = '2 yr')";
+      $isSet = TRUE;
+    }
+    if ($args['to4to4-checkbox'] != NULL) {
+      if ($isSet) {
+        $where = $where . $or;
+      }
+      $where = $where . "(from_path = '4 yr' and to_path = '4 yr')";
+      $isSet = TRUE;
+    }
+
+    if ($isSet) {
+      $where = $startwhere . $where . $endwhere;
+      $filters[$q3] = $where;
+      $filters[$map2] = $where;
+
+    }
+    else {
+      $filters[$q3] = '';
+      $filters[$map2] = '';
+    }
+
+    //build q4
+    $isSet = FALSE;
+    $where = '';
+
+    if ($args['within2to2-checkbox'] != NULL) {
+      $where = $where . "   (from_path = '2 yr' and to_path = '2 yr')";
+      $isSet = TRUE;
+    }
+    if ($args['within2to4-checkbox'] != NULL) {
+      if ($isSet) {
+        $where = $where . $or;
+      }
+      $where = $where . "(from_path = '2 yr' and to_path = '4 yr')";
+      $isSet = TRUE;
+    }
+    if ($args['within4to2-checkbox'] != NULL) {
+      if ($isSet) {
+        $where = $where . $or;
+      }
+      $where = $where . "(from_path = '4 yr' and to_path = '2 yr')";
+      $isSet = TRUE;
+    }
+    if ($args['within4to4-checkbox'] != NULL) {
+      if ($isSet) {
+        $where = $where . $or;
+      }
+      $where = $where . "(from_path = '4 yr' and to_path = '4 yr')";
+      $isSet = TRUE;
+    }
+
+    if ($isSet) {
+      $where = $startwhere . $where . $endwhere;
+      $filters[$q4] = $where;
+    }
+    else {
+      $filters[$q4] = '';
+    }
+
+  }
+
+  return $filters;
+}
+
+
+/**
+ *  T1 - out or region total transfers
+ */
+function wiche_passport_get_transfer_out_of_region_total($state_id) {
+
+//	$query = "select 'total-2006-2010' as div_id, sum(transfers) as value" .
+//	" from wiche_passport_student_transfers_view" .
+//	" where from_state='%s' and to_state != '10'" .
+//	" group by from_state";
+//	$result = db_query($query,$state_id);
+
+  $result = db_query('SELECT \'total-2006-2010\' AS div_id, SUM(v.transfers) AS value
+	FROM {passport_student_transfers_view} v 
+	WHERE v.from_state = :f_state
+	AND v.to_state != :t_state', array(
+    ':f_state' => $state_id,
+    ':t_state' => '10'
+  ));
+
+  return $result;
+
+}
+
+/**
+ *  T2 - total transfers to non-wiche, added to out of region gives total for cohort.
+ */
+function wiche_passport_get_transfer_totals_to_non_wiche($state_id) {
+
+//	$query = "select  'out-of-region-total' as div_id,sum(transfers) as value,from_state as state" .
+//	" from wiche_passport_student_transfers_view" .
+//	" where from_state = '%s' and to_state = '10'" .
+//	" group by from_state";
+//	$result = db_query($query,$state_id);
+
+  $result = db_query('SELECT \'out-of-region-total\' AS div_id, SUM(v.transfers) AS value,
+	v.from_state AS state 
+	FROM {passport_student_transfers_view} v 
+	WHERE v.from_state = :f_state
+	AND v.to_state = :t_state
+	GROUP BY v.from_state', array(':f_state' => $state_id, ':t_state' => '10'));
+
+  return $result;
+
+}
+
+
+/**
+ * Q1 - region page queries
+ *
+ * @param String $state_id like CO
+ */
+function wiche_passport_get_transfer_totals_from($state_id, $filters) {
+
+  if ($filters['q1'] == '') {
+    return NULL;
+  }
+
+  //TODO - add filter logic
+//	$query = "select CONCAT('from',substr(from_path,1,1),'to',substr(to_path,1,1),'-div') as div_id, sum(transfers) as value" .
+//	" from wiche_passport_student_transfers_view" .
+//	" where from_state='%s' and to_state != '10'" .
+//	" ". $filters['q1'].
+//	" ".
+//	" group by from_state,from_path,to_path";
+//	$result = db_query($query,$state_id);
+
+  $result = db_query('SELECT CONCAT(\'from\',substr(v.from_path,1,1),\'to\',substr(v.to_path,1,1),\'-div\') AS div_id, SUM(v.transfers) AS value
+	FROM {passport_student_transfers_view} v 
+	WHERE v.from_state = :f_state
+	AND v.to_state != :t_state' . $filters["q1"] .
+    'GROUP BY v.from_state, v.from_path, v.to_path', array(
+      ':f_state' => $state_id,
+      ':t_state' => '10'
+    ));
+  return $result;
+
+}
+
+/* q2 outof_to_non_wiche */
+function wiche_passport_get_transfer_totals_from_to_10($state_id, $filters) {
+
+  if ($filters['q2'] == '') {
+    return NULL;
+  }
+
+  //TODO - add filter logic
+//	$query = "select CONCAT('from',substr(from_path,1,1),'to',substr(to_state,1,2),'-div') as div_id,sum(transfers) as value,from_state as state" .
+//	" from wiche_passport_student_transfers_view" .
+//	" where from_state = '%s' and to_state = '10'" .
+//	" ". $filters['q2'].
+//	" group by from_state,from_path";
+//	$result = db_query($query,$state_id);
+
+  $result = db_query('SELECT CONCAT(\'from\',substr(v.from_path,1,1),\'to\',substr(v.to_state,1,2),\'-div\') AS div_id, SUM(v.transfers) AS value, v.from_state AS state
+	FROM {passport_student_transfers_view} v 
+	WHERE v.from_state = :f_state
+	AND v.to_state = :t_state' . $filters["q2"] .
+    'GROUP BY v.from_state, v.from_path', array(
+      ':f_state' => $state_id,
+      ':t_state' => '10'
+    ));
+  return $result;
+
+}
+
+/* q3 */
+function wiche_passport_get_transfer_totals_to($state_id, $filters) {
+  if ($filters['q3'] == '') {
+    return NULL;
+  }
+
+//	$query = "select CONCAT('to',substr(from_path,1,1),'to',substr(to_path,1,1),'-div') as div_id,sum(transfers) as value".
+//	" from wiche_passport_student_transfers_view" .
+//	" where to_state = '%s'".
+//	" ". $filters['q3'].
+//	" group by from_path,to_path";
+
+//	$result = db_query($query,$state_id);
+
+  $result = db_query('SELECT CONCAT(\'to\',substr(v.from_path,1,1),\'to\',substr(v.to_path,1,1),\'-div\') AS div_id, SUM(v.transfers) AS value
+	FROM {passport_student_transfers_view} v 
+	WHERE v.to_state = :t_state' . $filters["q3"] .
+    'GROUP BY v.from_path, v.to_path', array(':t_state' => $state_id));
+
+  return $result;
+}
+
+/* q4 */
+function wiche_passport_get_transfer_totals_within($state_id, $filters = NULL) {
+
+  if ($filters['q4'] == '') {
+    return NULL;
+  }
+
+//	$query = "select CONCAT('within',substr(from_path,1,1),'to',substr(to_path,1,1),'-div') as div_id,sum(transfers) as value".
+//	" from wiche_passport_student_transfers_view".
+//	" where to_state = '%s' and from_state = '%s'".
+//	" ". $filters['q4'].
+//	" group by to_state,from_path,to_path";
+
+//	$result = db_query($query,$state_id,$state_id);
+
+  $result = db_query('SELECT CONCAT(\'within\',substr(v.from_path,1,1),\'to\',substr(v.to_path,1,1),\'-div\') AS div_id, SUM(v.transfers) AS value
+	FROM {passport_student_transfers_view} v 
+	WHERE v.to_state = :state AND v.from_state = :state' . $filters["q4"] .
+    'GROUP BY v.to_state, v.from_path, v.to_path', array(':state' => $state_id));
+
+  return $result;
+
+}
+
+/* m1 */
+function wiche_passport_get_map_transfer_totals_from($state_id, $filters) {
+
+  if ($filters['m1'] == '') {
+    return NULL;
+  }
+
+//	$query = "select CONCAT(to_state,'-from-div') as div_id,sum(transfers) as value".
+//	" from wiche_passport_student_transfers_view".
+//	" where from_state = '%s' and to_state != '10'".
+//	" ". $filters['m1'].
+//	" group by to_state ".
+//	" order by to_state ";
+
+//	$result = db_query($query,$state_id);
+
+  $result = db_query('SELECT CONCAT(v.to_state,\'-from-div\') AS div_id,
+		SUM(v.transfers) AS value
+	FROM {passport_student_transfers_view} v 
+	WHERE v.from_state = :f_state AND v.to_state != :t_state' . $filters["m1"] .
+    'GROUP BY v.to_state
+    ORDER BY v.to_state', array(':f_state' => $state_id, ':t_state' => '10'));
+
+  return $result;
+
+}
+
+/* m2 */
+function wiche_passport_get_map_transfer_totals_to($state_id, $filters) {
+
+  if ($filters['m2'] == '') {
+    return NULL;
+  }
+
+//	$query = "select CONCAT(from_state,'-to-div') as div_id,sum(transfers) as value".
+//	" from wiche_passport_student_transfers_view".
+//	" where to_state = '%s' and to_state != '10'".
+//	" ". $filters['m2'].
+//	" group by from_state".
+//	" order by from_state";
+
+//	$result = db_query($query,$state_id);
+
+  $result = db_query('SELECT CONCAT(v.from_state,\'-to-div\') AS div_id,
+		SUM(v.transfers) AS value
+	FROM {passport_student_transfers_view} v 
+	WHERE v.to_state = :f_state AND v.to_state != :t_state' . $filters["m2"] .
+    'GROUP BY v.from_state
+    ORDER BY v.from_state', array(':f_state' => $state_id, ':t_state' => '10'));
+  return $result;
+
+}
+
+/* Returns the state description (ie state name) from the taxonomy table for Passport States vocabulary with a vid of 13. */
+function wiche_passport_get_state_name($state_id) {
+
+//	$query = "SELECT UPPER(description) as description FROM wiche_term_data where vid = 13 and name = '%s'"; 	
+//	$result = db_query($query,$state_id);
+  $result = db_query('SELECT UPPER(v.description) as description
+	FROM {taxonomy_term_data} v 
+	WHERE v.vid = :vid AND v.name = :state', array(
+    ':vid' => 13,
+    ':state' => $state_id
+  ));
+  return $result;
+
+}
+
+/* within page query */
+function wiche_passport_get_yearly_totals($state_id) {
+
+//	$query = "select div_id,value from wiche_passport_within_state_transfers_view where state = '%s'";
+//	$result = db_query($query,$state_id);
+  $result = db_query('SELECT v.div_id, v.value
+	FROM {passport_within_state_transfers_view} v 
+	WHERE v.state = :state', array(':state' => $state_id));
+
+  return $result;
+}
+
+function wiche_passport_get_yearly_sum_totals($state_id) {
+
+//	$query = "select div_id,value from wiche_passport_within_state_transfers_view where state = '%s' and div_id like 'ta%'";
+//	$result = db_query($query,$state_id);	
+  $result = db_query('SELECT v.div_id, v.value
+	FROM {passport_within_state_transfers_view} v 
+	WHERE v.state = :state
+	AND v.div_id LIKE :divid', array(
+    ':state' => $state_id,
+    ':divid' => db_like('ta') . '%'
+  ));
+  return $result;
+}
+

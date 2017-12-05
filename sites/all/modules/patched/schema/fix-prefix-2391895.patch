@@ -1,0 +1,22 @@
+diff --git a/schema.module b/schema.module
+index ad1a5cc..178b465 100755
+--- a/schema.module
++++ b/schema.module
+@@ -351,9 +351,16 @@ function schema_unprefix_table($name, $connection = NULL) {
+     }
+   }
+ 
+-  return !empty($prefixes[$key]) ? strtr($name, $prefixes[$key]) : $name;
++  if (!empty($prefixes[$key])) {
++    foreach ($prefixes[$key] as $prefix => $replacement) {
++      $name = preg_replace('/' . $prefix . '/', $replacement, $name, 1);
++    }
++  }
++
++  return $name;
+ }
+ 
++
+ /**
+  * Converts a column's Schema type into an engine-specific data type.
+  */

@@ -1,0 +1,10 @@
+#!/bin/sh
+#This script appends 'views-view--' to everything matching the second argument to everything in the directory of the first argument.
+#07/19/11 pmitchell
+cd $1
+j=1
+for i in `ls $2`
+do
+mv $i views-view--$i
+j=`expr $j + 1`
+done

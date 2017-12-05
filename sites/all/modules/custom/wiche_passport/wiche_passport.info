@@ -1,0 +1,5 @@
+; $Id$
+name = "WICHE Passport"
+description = "Module to support passport pages on the WICHE site"
+core = 7.x
+package = "Wiche Custom"
