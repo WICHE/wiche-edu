@@ -1,0 +1,213 @@
+.wrapper {
+	width: 100%;
+}
+.sara-state-status {
+	overflow: hidden;
+	padding:0;
+}
+
+.table-header-state{
+	background-color: #002d5c;
+	color: #fff;
+	display:table;
+	width:100%;
+	font-weight:700;
+	text-transform:uppercase;
+}
+.sara-state-status ul.table-header-state{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.sara-state-status ul.table-header-state li{
+	padding:2%;
+	word-break: break-all;
+}
+.td-name{
+	display:table-cell;
+}
+.td-leg-intro{
+	display:table-cell;
+}
+
+.td-leg-passed{
+	display:table-cell;
+}
+
+.td-application{
+	display:table-cell;
+}
+
+.td-approved{
+	display:table-cell;
+}
+
+.wrapper ul.state{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper .ss-content ul.state li {
+	margin-top: 0!important;
+	margin-bottom: 0!important;
+}
+
+.wrapper .sidebar1 h3 {
+	padding-left: 15px;
+}
+.wrapper .content h3 {
+	padding-left: 15px;
+}
+.wrapper p {
+	margin-top: 15px;
+	padding-left: 15px;
+}
+
+ @media all and (max-width: 767px){
+	 .sara-state-status {
+	overflow: hidden;
+	width: 100%;
+}
+
+.table-header-state{
+	font-size:65%;
+	font-weight:normal;
+	text-transform:none;
+}
+
+
+.sara-state-status ul.state {
+	list-style: outside none none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.sara-state-status ul.state .name, .sara-state-status ul.state .leg-intro, .sara-state-status ul.state .leg-passed, .sara-state-status ul.state .application, .sara-state-status ul.state .approved {
+	display: inline-block;
+	float: left;
+}
+
+.sara-state-status ul.state .leg-intro, .sara-state-status ul.state .leg-passed, .sara-state-status ul.state .application, .sara-state-status ul.state .approved {
+	width:100%;
+	text-align: center;
+}
+
+.sidebar1 {
+	float: left;
+	padding-bottom: 10px;
+	width: 30%;
+}
+.ss-content {
+	float: left;
+	padding: 0 0 10px;
+	width: 100%;
+}
+.ss-content ul.state {
+	list-style: outside none none;
+	overflow: hidden;
+	padding: 0 0 0 8px;
+	border-bottom:1px solid #ccc;
+}
+
+.ss-content ul.state:last-child{
+	border-bottom:2px solid #002d5c;
+}
+
+.ss-content ul.state > li.name, .ss-content ul.state > li.leg-intro, .ss-content ul.state > li.leg-passed, .ss-content ul.state > li.application, .ss-content ul.state > li.approved {
+	display: inline-block;
+	float: left;
+	text-align: center;
+	width: 15%;
+	font-size: 0.7em;
+	line-height:2em;
+}
+.ss-content ul.state > li.name {
+	font-size: 0.7em;
+	padding:0;
+	width: 30%;
+	text-align:left;
+}
+
+.ss-content ul.state:nth-child(2n+1) > li.leg-intro, .ss-content ul.state:nth-child(2n+1) > li.application {
+	/*border-right:1px solid #ccc;
+	border-left:1px solid #ccc;*/
+}
+
+ }
+
+
+ @media all and (min-width: 768px){
+	 .sara-state-status {
+	overflow: hidden;
+	width: 100%;
+}
+.sara-state-status ul.state {
+	list-style: outside none none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+.sara-state-status ul.state li {
+	font-size: 0.9em;
+	line-height: 1.2em;
+}
+.sara-state-status ul.state .name, .sara-state-status ul.state .leg-intro, .sara-state-status ul.state .leg-passed, .sara-state-status ul.state .application, .sara-state-status ul.state .approved {
+	display: inline-block;
+	float: left;
+}
+
+.sara-state-status ul.state .leg-intro, .sara-state-status ul.state .leg-passed, .sara-state-status ul.state .application, .sara-state-status ul.state .approved {
+	width:100%;
+	max-width:150px;
+	text-align: center;
+}
+
+.sidebar1 {
+	float: left;
+	padding-bottom: 10px;
+	width: 30%;
+}
+.ss-content {
+	float: left;
+	padding: 0 0 10px;
+	width: 100%;
+}
+.ss-content ul.state {
+	list-style: outside none none;
+	overflow: hidden;
+	padding: 0 0 0 8px;
+}
+
+.ss-content ul.state:last-child{
+	border-bottom:2px solid #002d5c;
+}
+
+.ss-content ul.state > li {
+	line-height: 1.5em;
+}
+.ss-content ul.state > li.name, .ss-content ul.state > li.leg-intro, .ss-content ul.state > li.leg-passed, .ss-content ul.state > li.application, .ss-content ul.state > li.approved {
+	display: inline-block;
+	float: left;
+}
+.ss-content ul.state > li.name {
+	font-size: 0.9em;
+	line-height: 1em !important;
+	padding: 2px 0;
+	width: 28%;
+}
+.ss-content ul.state > li.leg-intro, .ss-content ul.state > li.leg-passed, .ss-content ul.state > li.application, .ss-content ul.state > li.approved {
+	min-width: 10px;
+	text-align: center;
+	width: 18%;
+}
+.ss-content ul.state:nth-child(2n+1) > li.leg-intro, .ss-content ul.state:nth-child(2n+1) > li.application {
+	background: none repeat scroll 0 0 #9499a5;
+	padding: 2px 0;
+}
+.ss-content ul.state:nth-child(2n) {
+	background: none repeat scroll 0 0 #ccced3;
+	padding: 2px 0 0 8px;
+}
+
+ }

@@ -1,0 +1,464 @@
+/*====================================
+		MUCHO MENU STYLING
+======================================*/
+.muchomenu-menu .muchomenu-parent {
+  position: static !important; }
+
+#navigation .region-navigation {
+  position: relative;
+  max-width: 1186px !important; }
+  #navigation .region-navigation .muchomenu-menu .muchomenu-bin, #navigation .region-navigation muchomenu-1 {
+    left: 0 !important;
+    overflow: hidden;
+    position: absolute;
+    top: -9000px;
+    z-index: 10000; }
+  #navigation .region-navigation .menu li {
+    float: none; }
+  #navigation .region-navigation ul#muchomenu-1 {
+    margin: 0 0 0 0; }
+    #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent {
+      /*border-right:1px solid transparent;
+       border-left:1px solid transparent;*/
+      border: none;
+      margin: 0 16px 0 0;
+      line-height: 1.3em;
+      /*newscap ul styling*/
+      overflow: hidden; }
+      #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent span.muchomenu-parent-title a, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent span.muchomenu-parent-title a:visited, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent span.muchomenu-parent-title a:active, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .views-field-field-pub-year a, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .views-field-field-pub-year a:visited, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .views-field-field-pub-year a:active, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .lac-megamenu-meeting a, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .lac-megamenu-meeting a:visited, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .lac-megamenu-meeting a:active {
+        background: none;
+        border: none !important;
+        color: #fff;
+        display: inline-block;
+        font-style: normal;
+        padding: 4px 8px 6px;
+        text-decoration: none;
+        text-transform: uppercase !important;
+        font-weight: normal !important;
+        font-size: .9em;
+        outline: none !important;
+        letter-spacing: 1px; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent span.muchomenu-parent-title a:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent span.muchomenu-parent-title a:visited:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent span.muchomenu-parent-title a:active:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .views-field-field-pub-year a:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .views-field-field-pub-year a:visited:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .views-field-field-pub-year a:active:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .lac-megamenu-meeting a:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .lac-megamenu-meeting a:visited:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .lac-megamenu-meeting a:active:hover {
+          color: #fff;
+          border: none !important; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent span.muchomenu-parent-title a:focus, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent span.muchomenu-parent-title a:visited:focus, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent span.muchomenu-parent-title a:active:focus, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .views-field-field-pub-year a:focus, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .views-field-field-pub-year a:visited:focus, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .views-field-field-pub-year a:active:focus, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .lac-megamenu-meeting a:focus, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .lac-megamenu-meeting a:visited:focus, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .lac-megamenu-meeting a:active:focus {
+          border: none !important;
+          /*border:1px solid #ccc;*/
+          /*padding:2px;*/ }
+      #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .panel-pane ul.newscap li {
+        background: url(images/white-arrow-bullet.png) 0 5px no-repeat !important;
+        color: #fff;
+        font-size: 85%;
+        margin: 6px 0;
+        display: block;
+        padding-left: 20px; }
+      #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .view-calendar-2 ul li {
+        margin: 12px 0 0 0;
+        padding: 0 0 12px 0;
+        border-bottom: 1px solid #fff; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .view-calendar-2 ul li h3.field-content {
+          font-weight: 100;
+          letter-spacing: 1px; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .view-calendar-2 ul li h2.field-content {
+          font-weight: normal;
+          font-size: 1.2em !important;
+          line-height: 1.2em;
+          margin: 0; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .view-calendar-2 ul li .field-content {
+          color: #fff;
+          font-size: .9em;
+          line-height: 1.1em; }
+          #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .view-calendar-2 ul li .field-content a {
+            margin: 0;
+            display: inline-block; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .view-calendar-2 ul li .views-field-field-wiche-initiatives em {
+          padding: 0;
+          margin: 0 0 8px;
+          font-size: .9em;
+          display: block; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .view-calendar-2 ul li .views-field-field-location {
+          padding: 8px 0 8px; }
+      #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .view-calendar-2 ul li:last-child {
+        border-bottom: none; }
+      #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .pane-taxonomy-resources h1 {
+        color: #fff;
+        font-size: 1.1em;
+        line-height: 1.3em;
+        font-weight: normal !important; }
+      #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin {
+        background-color: #245eac;
+        width: 100%;
+        height: auto;
+        /*min-height:260px;*/
+        top: 2em !important;
+        border-bottom: 2px solid #ccc; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-11518 .form-item input {
+          max-width: 45%; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-11518 label, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-11518 .form-required {
+          color: #ffffff !important; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-11518 legend span {
+          color: #ffffff; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-11518 .fieldset-description {
+          color: #ffffff;
+          max-width: 45%; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-11518 .mollom-image-captcha-instructions {
+          color: #ffffff !important; }
+          #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-11518 .mollom-image-captcha-instructions a:link, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-11518 .mollom-image-captcha-instructions a:visited, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-11518 .mollom-image-captcha-instructions a:active {
+            color: #fff;
+            text-decoration: underline; }
+            #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-11518 .mollom-image-captcha-instructions a:link:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-11518 .mollom-image-captcha-instructions a:visited:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-11518 .mollom-image-captcha-instructions a:active:hover {
+              font-weight: bold; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .form-item {
+          max-width: 100%; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 label, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .form-required {
+          color: #ffffff !important; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 legend span {
+          color: #ffffff; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .fieldset-description {
+          color: #ffffff;
+          max-width: 45%; }
+        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .mollom-image-captcha-instructions {
+          color: #ffffff !important; }
+          #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .mollom-image-captcha-instructions a:link, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .mollom-image-captcha-instructions a:visited, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .mollom-image-captcha-instructions a:active {
+            color: #fff;
+            text-decoration: underline; }
+            #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .mollom-image-captcha-instructions a:link:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .mollom-image-captcha-instructions a:visited:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .mollom-image-captcha-instructions a:active:hover {
+              font-weight: bold; }
+    #navigation .region-navigation ul#muchomenu-1 li.hovering {
+      background-color: #245eac;
+      border-top: none;
+      /*border-right:1px solid #13315a;
+      border-left:1px solid #13315a;*/ }
+  #navigation .region-navigation ul.muchomenu-bin-2 {
+    left: 0 !important; }
+  #navigation .region-navigation .mm-canvas {
+    overflow: hidden; }
+    #navigation .region-navigation .mm-canvas .mm-columns {
+      width: 24% !important;
+      border-right: 1px solid #ffffff;
+      padding-right: 4px;
+      padding-left: 4px;
+      margin-bottom: -999em !important;
+      padding-bottom: 999em !important; }
+      #navigation .region-navigation .mm-canvas .mm-columns hr {
+        border-top: 1px solid #ffffff;
+        margin: 12px 0;
+        padding: 0; }
+      #navigation .region-navigation .mm-canvas .mm-columns p {
+        color: #fff;
+        font-size: .8em;
+        line-height: 1.4em; }
+        #navigation .region-navigation .mm-canvas .mm-columns p a {
+          color: #fff; }
+      #navigation .region-navigation .mm-canvas .mm-columns fieldset#webform-component-subscribe {
+        border: none;
+        color: #fff;
+        font-size: 1em; }
+        #navigation .region-navigation .mm-canvas .mm-columns fieldset#webform-component-subscribe legend span.fieldset-legend {
+          margin-top: 8px;
+          font-weight: bold;
+          display: block; }
+        #navigation .region-navigation .mm-canvas .mm-columns fieldset#webform-component-subscribe .form-type-checkbox input {
+          width: 10%; }
+        #navigation .region-navigation .mm-canvas .mm-columns fieldset#webform-component-subscribe input {
+          width: 100%; }
+      #navigation .region-navigation .mm-canvas .mm-columns ul, #navigation .region-navigation .mm-canvas .mm-columns ul.menu {
+        margin-left: 0;
+        padding: 0;
+        list-style: none; }
+        #navigation .region-navigation .mm-canvas .mm-columns ul li .field-content a:link, #navigation .region-navigation .mm-canvas .mm-columns ul li .field-content a:visited, #navigation .region-navigation .mm-canvas .mm-columns ul li .field-content a:active, #navigation .region-navigation .mm-canvas .mm-columns ul.menu li .field-content a:link, #navigation .region-navigation .mm-canvas .mm-columns ul.menu li .field-content a:visited, #navigation .region-navigation .mm-canvas .mm-columns ul.menu li .field-content a:active {
+          color: #fff;
+          font-size: .8em;
+          text-decoration: none;
+          display: block;
+          margin: 12px 0; }
+        #navigation .region-navigation .mm-canvas .mm-columns ul li .field-content a:hover, #navigation .region-navigation .mm-canvas .mm-columns ul.menu li .field-content a:hover {
+          text-decoration: underline; }
+        #navigation .region-navigation .mm-canvas .mm-columns ul li .field-content:focus, #navigation .region-navigation .mm-canvas .mm-columns ul.menu li .field-content:focus {
+          border: 1px solid #ccc;
+          padding: 2px; }
+      #navigation .region-navigation .mm-canvas .mm-columns .more-link a:link, #navigation .region-navigation .mm-canvas .mm-columns .more-link a:visited, #navigation .region-navigation .mm-canvas .mm-columns .more-link a:active {
+        text-decoration: none;
+        color: #fff; }
+      #navigation .region-navigation .mm-canvas .mm-columns .more-link a:hover {
+        text-decoration: underline; }
+      #navigation .region-navigation .mm-canvas .mm-columns .more-link:focus {
+        border: 1px solid #ccc;
+        padding: 2px; }
+      #navigation .region-navigation .mm-canvas .mm-columns .mm-gen-info {
+        list-style: none;
+        color: #fff;
+        font-size: .8em; }
+    #navigation .region-navigation .mm-canvas .mm-columns:last-child {
+      border-right: none;
+      padding-right: 0; }
+  #navigation .region-navigation .region-state {
+    border-right: 1px solid #fff;
+    overflow: hidden; }
+
+/*==============================
+		END MUCHO MENU STYLING
+=================================*/
+/*custom rules for mini-panel in mucho-menu nav
+=======================================================
+*/
+.mini-mega-menu, .pane-menu-menu-states-1, .pane-menu-menu-states-2, .panel-flexible {
+  padding: 1% 2% 1%;
+  margin-bottom: 1em;
+  border: 0;
+  overflow: hidden; }
+  .mini-mega-menu #wiche-map p, .pane-menu-menu-states-1 #wiche-map p, .pane-menu-menu-states-2 #wiche-map p, .panel-flexible #wiche-map p {
+    margin: 0;
+    padding: 0; }
+    .mini-mega-menu #wiche-map p img.wiche-map, .pane-menu-menu-states-1 #wiche-map p img.wiche-map, .pane-menu-menu-states-2 #wiche-map p img.wiche-map, .panel-flexible #wiche-map p img.wiche-map {
+      margin-left: 25px; }
+  .mini-mega-menu h2, .pane-menu-menu-states-1 h2, .pane-menu-menu-states-2 h2, .panel-flexible h2 {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    margin: 0 0 6px;
+    padding: 0;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    font-weight: 700 !important;
+    border-bottom: none; }
+    .mini-mega-menu h2 a, .pane-menu-menu-states-1 h2 a, .pane-menu-menu-states-2 h2 a, .panel-flexible h2 a {
+      color: #fff;
+      text-decoration: none; }
+      .mini-mega-menu h2 a:hover, .pane-menu-menu-states-1 h2 a:hover, .pane-menu-menu-states-2 h2 a:hover, .panel-flexible h2 a:hover {
+        text-decoration: underline; }
+      .mini-mega-menu h2 a:focus, .pane-menu-menu-states-1 h2 a:focus, .pane-menu-menu-states-2 h2 a:focus, .panel-flexible h2 a:focus {
+        border: 1px solid #ccc;
+        padding: 2px; }
+  .mini-mega-menu h3, .pane-menu-menu-states-1 h3, .pane-menu-menu-states-2 h3, .panel-flexible h3 {
+    color: #fff;
+    font-size: 1em;
+    margin: 0 0 6px;
+    letter-spacing: 1px;
+    /*font-weight:200;*/ }
+    .mini-mega-menu h3 a, .pane-menu-menu-states-1 h3 a, .pane-menu-menu-states-2 h3 a, .panel-flexible h3 a {
+      color: #fff !important;
+      text-decoration: none; }
+      .mini-mega-menu h3 a:hover, .pane-menu-menu-states-1 h3 a:hover, .pane-menu-menu-states-2 h3 a:hover, .panel-flexible h3 a:hover {
+        text-decoration: underline; }
+      .mini-mega-menu h3 a:focus, .pane-menu-menu-states-1 h3 a:focus, .pane-menu-menu-states-2 h3 a:focus, .panel-flexible h3 a:focus {
+        border: 1px solid #ccc;
+        padding: 2px; }
+  .mini-mega-menu .views-field-field-media-release-headline h3, .pane-menu-menu-states-1 .views-field-field-media-release-headline h3, .pane-menu-menu-states-2 .views-field-field-media-release-headline h3, .panel-flexible .views-field-field-media-release-headline h3 {
+    font-family: 'humnst777_cn_btregular';
+    color: #fff;
+    font-size: .9em;
+    margin: 0 0 6px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    line-height: 1.3em; }
+  .mini-mega-menu p, .pane-menu-menu-states-1 p, .pane-menu-menu-states-2 p, .panel-flexible p {
+    color: #13315a;
+    line-height: 1em;
+    font-size: .9em; }
+  .mini-mega-menu ul.menu, .pane-menu-menu-states-1 ul.menu, .pane-menu-menu-states-2 ul.menu, .panel-flexible ul.menu {
+    list-style: none; }
+    .mini-mega-menu ul.menu li, .pane-menu-menu-states-1 ul.menu li, .pane-menu-menu-states-2 ul.menu li, .panel-flexible ul.menu li {
+      margin: 6px 0;
+      clear: left;
+      padding: 0 16px 0;
+      margin: 16px 0 0; }
+      .mini-mega-menu ul.menu li a, .pane-menu-menu-states-1 ul.menu li a, .pane-menu-menu-states-2 ul.menu li a, .panel-flexible ul.menu li a {
+        color: #e1e1e1;
+        text-decoration: underline;
+        display: block;
+        line-height: 1.1em;
+        font-size: .9em;
+        margin: 0; }
+        .mini-mega-menu ul.menu li a:hover, .pane-menu-menu-states-1 ul.menu li a:hover, .pane-menu-menu-states-2 ul.menu li a:hover, .panel-flexible ul.menu li a:hover {
+          color: #fff;
+          text-decoration: underline; }
+        .mini-mega-menu ul.menu li a:focus, .pane-menu-menu-states-1 ul.menu li a:focus, .pane-menu-menu-states-2 ul.menu li a:focus, .panel-flexible ul.menu li a:focus {
+          border: 1px solid #ccc;
+          padding: 2px; }
+    .mini-mega-menu ul.menu li.menu--leaf, .pane-menu-menu-states-1 ul.menu li.menu--leaf, .pane-menu-menu-states-2 ul.menu li.menu--leaf, .panel-flexible ul.menu li.menu--leaf {
+      margin: 0 0 6px 0;
+      clear: left; }
+      .mini-mega-menu ul.menu li.menu--leaf a, .pane-menu-menu-states-1 ul.menu li.menu--leaf a, .pane-menu-menu-states-2 ul.menu li.menu--leaf a, .panel-flexible ul.menu li.menu--leaf a {
+        color: #13315a;
+        text-decoration: none;
+        display: block;
+        padding: 0 0 4px 0;
+        line-height: .9em;
+        font-size: .9em;
+        margin: 0 0 4px 0;
+        text-transform: uppercase; }
+        .mini-mega-menu ul.menu li.menu--leaf a:hover, .pane-menu-menu-states-1 ul.menu li.menu--leaf a:hover, .pane-menu-menu-states-2 ul.menu li.menu--leaf a:hover, .panel-flexible ul.menu li.menu--leaf a:hover {
+          color: #1C4884; }
+        .mini-mega-menu ul.menu li.menu--leaf a:focus, .pane-menu-menu-states-1 ul.menu li.menu--leaf a:focus, .pane-menu-menu-states-2 ul.menu li.menu--leaf a:focus, .panel-flexible ul.menu li.menu--leaf a:focus {
+          border: 1px solid #ccc;
+          padding: 2px; }
+
+/*kill vertical border on last menu column*/
+.col-four ul.menu {
+  border: none; }
+
+/*separate news room mega menu items with thin bottom border*/
+.view-wiche-in-the-news-mega-menu .item-list ul li .field-content a, .media-releases .item-list ul li .field-content a, .higher-education-news .item-list ul li .field-content a, .wiche-newscap .item-list ul li .field-content a {
+  padding-bottom: 12px;
+  border-bottom: thin solid #fff; }
+.view-wiche-in-the-news-mega-menu .item-list ul li:last-child .field-content a, .media-releases .item-list ul li:last-child .field-content a, .higher-education-news .item-list ul li:last-child .field-content a, .wiche-newscap .item-list ul li:last-child .field-content a {
+  border-bottom: none !important; }
+
+/*CSS styling for calendar block in mega-menu*/
+.pane-events ul li h1 {
+  font-family: 'humnst777_cn_btbold',sans-serif;
+  font-size: 1.1em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
+  .pane-events ul li h1 a {
+    margin: 0;
+    padding: 0; }
+
+.wiche-bylaws {
+  border-top: 1px solid #fff;
+  padding-top: 8px; }
+
+.workplan-annual-report {
+  border-top: 1px solid #fff;
+  padding-top: 8px; }
+
+.hr-openings {
+  padding-top: 8px; }
+
+/*end custom rules for mini-panel mega-menu nav
+========================================================
+*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin {
+    top: 1.8em !important; }
+
+  ul#muchomenu-1 li.muchomenu-parent span.muchomenu-parent-title {
+    padding: 4px 8px 8px !important; } }
+.map-wrapper {
+  background: url(images/wiche-region-map.png) 0 0 no-repeat;
+  width: 407px;
+  height: 207px;
+  position: relative; }
+  .map-wrapper a:link, .map-wrapper a:active, .map-wrapper a:visited {
+    font-size: .6em;
+    font-weight: bold;
+    text-decoration: none; }
+    .map-wrapper a:link:hover, .map-wrapper a:active:hover, .map-wrapper a:visited:hover {
+      text-decoration: underline; }
+    .map-wrapper a:link:focus, .map-wrapper a:active:focus, .map-wrapper a:visited:focus {
+      border: 1px solid #ccc;
+      padding: 2px; }
+  .map-wrapper a.s1 {
+    left: 7.3%;
+    top: 25.5%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #fff; }
+  .map-wrapper a.s2 {
+    line-height: 1em;
+    left: 9%;
+    top: 48%;
+    width: 8%;
+    height: 4%;
+    position: absolute;
+    color: #fff; }
+  .map-wrapper a.s3 {
+    left: 17%;
+    top: 70%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #fff; }
+  .map-wrapper a.s4 {
+    left: 31%;
+    top: 6%;
+    width: 4.5%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }
+  .map-wrapper a.s5 {
+    left: 29.5%;
+    top: 19%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }
+  .map-wrapper a.s6 {
+    left: 28.5%;
+    top: 46.5%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }
+  .map-wrapper a.s7 {
+    left: 37.7%;
+    top: 22.7%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }
+  .map-wrapper a.s8 {
+    left: 33.2%;
+    top: 38%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }
+  .map-wrapper a.s9 {
+    left: 43.2%;
+    top: 12.6%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }
+  .map-wrapper a.s10 {
+    left: 46.2%;
+    top: 28%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }
+  .map-wrapper a.s11 {
+    left: 40%;
+    top: 42.6%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }
+  .map-wrapper a.s12 {
+    left: 38.5%;
+    top: 60%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }
+  .map-wrapper a.s13 {
+    left: 56.5%;
+    top: 11%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }
+  .map-wrapper a.s14 {
+    left: 56.5%;
+    top: 23%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }
+  .map-wrapper a.s15 {
+    left: 47.9%;
+    top: 44.5%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }
+  .map-wrapper a.s16 {
+    left: 46.3%;
+    top: 61%;
+    width: 4%;
+    height: 6%;
+    position: absolute;
+    color: #1c4884; }

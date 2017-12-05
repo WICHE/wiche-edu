@@ -1,0 +1,926 @@
+/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* normalize.scss v2.1.0 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
+
+/* =============================================================================
+   Normalize.css is intended to be used as an alternative to CSS resets.
+
+   It's suggested that you read the normalize.scss file and customise it to meet
+   your needs, rather then including the file in your project and overriding the
+   defaults later in your CSS.
+   @see http://nicolasgallagher.com/about-normalize-css/
+
+   Also: @see http://meiert.com/en/blog/20080419/reset-style-sheets-are-bad/
+         @see http://snook.ca/archives/html_and_css/no_css_reset/
+   ========================================================================== */
+@font-face {
+    font-family: 'humnst777_lt_btlight';
+    src: url('../fonts/hum777l-webfont.eot');
+    src: url('../fonts/hum777l-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hum777l-webfont.woff') format('woff'),
+         url('../fonts/hum777l-webfont.ttf') format('truetype'),
+         url('../fonts/hum777l-webfont.svg#humnst777_lt_btlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'humnst777_lt_btlight_italic';
+    src: url('../fonts/hum777li-webfont.eot');
+    src: url('../fonts/hum777li-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hum777li-webfont.woff') format('woff'),
+         url('../fonts/hum777li-webfont.ttf') format('truetype'),
+         url('../fonts/hum777li-webfont.svg#humnst777_lt_btlight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'humnst777_cn_btregular';
+    src: url('../fonts/tt1159m-webfont.eot');
+    src: url('../fonts/tt1159m-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tt1159m-webfont.woff') format('woff'),
+         url('../fonts/tt1159m-webfont.ttf') format('truetype'),
+         url('../fonts/tt1159m-webfont.svg#humnst777_cn_btregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'humnst777_cn_btbold';
+    src: url('../fonts/tt1160m-webfont.eot');
+    src: url('../fonts/tt1160m-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tt1160m-webfont.woff') format('woff'),
+         url('../fonts/tt1160m-webfont.ttf') format('truetype'),
+         url('../fonts/tt1160m-webfont.svg#humnst777_cn_btbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'humnst777_blkcn_btblack';
+    src: url('../fonts/tt1161m-webfont.eot');
+    src: url('../fonts/tt1161m-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tt1161m-webfont.woff') format('woff'),
+         url('../fonts/tt1161m-webfont.ttf') format('truetype'),
+         url('../fonts/tt1161m-webfont.svg#humnst777_blkcn_btblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'flexslider-icon';
+    src: url('../fonts/flexslider-icon.eot');
+    src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flexslider-icon.woff') format('woff'),
+         url('../fonts/flexslider-icon.ttf') format('truetype'),
+         url('../fonts/flexslider-icon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    *display: inline;
+    *zoom: 1;
+  }
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/* Instead of relying on the fonts that are available on a user's computer, you
+   can use web fonts which, like images, are resources downloaded to the user's
+   browser. Because of the bandwidth and rendering resources required, web fonts
+   should be used with care.
+
+   Numerous resources for web fonts can be found on Google. Here are a few
+   websites where you can find Open Source fonts to download:
+   - http://www.fontsquirrel.com/fontface
+   - http://www.theleagueofmoveabletype.com
+
+   In order to use these fonts, you will need to convert them into formats
+   suitable for web fonts. We recommend the free-to-use Font Squirrel's
+   Font-Face Generator:
+     http://www.fontsquirrel.com/fontface/generator
+
+   The following is an example @font-face declaration. This font can then be
+   used in any ruleset using a property like this:  font-family: Example, serif;
+
+   Since we're using Sass, you'll need to declare your font faces here, then you
+   can add them to the font variables in the _base.scss partial.
+*/
+
+/*
+@font-face {
+  font-family: 'Example';
+  src: url('../fonts/example.eot');
+  src: url('../fonts/example.eot?iefix') format('eot'),
+    url('../fonts/example.woff') format('woff'),
+    url('../fonts/example.ttf') format('truetype'),
+    url('../fonts/example.svg#webfontOkOndcij') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ */
+
+html {
+  font-family: $base-font-family; /* 1 */
+  font-size: 90% * ($base-font-size / 16px); /* 3 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
+ /* // Establish a vertical rhythm unit using $base-line-height.
+  @include adjust-leading-to(1);*/
+}
+
+@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+  /**
+   * Address `font-family` inconsistency between `textarea` and other form
+   * elements in IE 6/7.
+   */
+
+  button,
+  input,
+  select,
+  textarea {
+    font-family: $base-font-family;
+  }
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  background:#f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+
+a:link, a:visited, a:active, a:focus {
+	color:#1c4884;
+	text-decoration:underline;
+	
+	&:hover{
+		color:#e01c1c;
+	}
+}
+
+#page h2 > a:link, a:visited, a:active, a:focus,
+.wiche-publications ul li .info-left a:link, a:visited, a:active, a:focus{
+	text-decoration:none;
+}
+
+.lac-megamenu-meeting{
+	border:1px solid #fff;
+	 a:link {
+		color:#e1e1e1;
+		text-decoration:none;	
+	}
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+
+   To achieve a pleasant vertical rhythm, we use Compass' Vertical Rhythm mixins
+   so that the line height of our base font becomes the basic unit of vertical
+   measurement. We use multiples of that unit to set the top and bottom margins
+   for our block level elements and to set the line heights of any fonts.
+   For more information, see http://24ways.org/2006/compose-to-a-vertical-rhythm
+   ========================================================================== */
+
+/**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+
+p,
+pre {
+  margin: rhythm(1) 0;
+}
+
+#content p, #wiche-mission, #delicious-posts-wiche_edu{
+   /*font-size:12px;*/
+   margin:.5em 0 1em 0;
+}
+
+blockquote {
+  /* Set 1 unit of vertical rhythm on the top and bottom margin. */
+  margin: rhythm(1) $indent-amount;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+  /*font-family: 'Lora', serif;*/
+  /*font-family: 'Droid Serif', serif;*/
+  font-family: 'humnst777_blkcn_btblack',sans-serif;
+  /*font-weight:700px;*/
+  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
+  @include adjust-font-size-to( $h1-font-size );
+
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  @include leader(1, $h1-font-size);
+  @include trailer(1, $h1-font-size);
+  line-height:1.1em;
+  color:#1c4884;
+  text-transform:uppercase;
+}
+
+.page-user{
+	h1#page-title{
+		display:none;
+	}
+}
+
+#content .breadcrumb {
+	margin:0 0 0 .5em;
+}
+
+h2 {
+	font-family: 'humnst777_cn_btbold',sans-serif;
+	line-height:1.2em;
+	font-size:1.4em;
+	color:#1c4884;
+	font-weight:400;
+	/*margin:.4em 0 .8em;*/
+	margin:.4em 0;
+	/*padding-bottom:8px;*/
+}
+
+#main-front #content h2 {
+	border-bottom: 1px solid #b75515;
+	padding-bottom:8px;
+}
+
+
+
+.faux-three-col-table .trow h2,
+.view .view-content ul li h2,
+table tr td h2
+{
+	border-bottom:none;
+}
+
+.view-mh-past-projects .item-list ul{
+	list-style:none;
+	padding:0;
+}
+
+.sidebars h2{
+	border-bottom:none;
+}
+
+.mission h2{
+	 font-family: 'humnst777_cn_btregular';
+	 letter-spacing:1px;
+}
+
+h3 {
+	font-family: 'humnst777_cn_btbold',sans-serif;
+  font-weight:normal;
+ /* @include adjust-font-size-to( $h3-font-size );*/
+ /* @include leader(1, $h3-font-size);*/
+  /*@include trailer(1, $h3-font-size);*/
+	font-size:1.1em;
+  line-height:1.2em;
+  color:#1c4884;
+   /*color:#000;*/
+   margin-bottom:0;
+}
+
+article.node-media-release h3 {
+   margin-bottom:12px;
+}
+
+h3.home-delicious{
+		 	 margin-bottom:8px;
+		  }
+
+h4 {
+  @include adjust-font-size-to( $h4-font-size );
+  @include leader(1, $h4-font-size);
+  @include trailer(1, $h4-font-size);
+}
+
+h5 {
+  @include adjust-font-size-to( $h5-font-size );
+  @include leader(1, $h5-font-size);
+  @include trailer(1, $h5-font-size);
+}
+
+h6 {
+  @include adjust-font-size-to( $h6-font-size );
+  @include leader(1, $h6-font-size);
+  @include trailer(1, $h6-font-size);
+}
+
+.caption{
+	margin-bottom:12px;
+	font-style:italic;
+	text-align:center;
+}
+
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+article strong.small{
+	font-size:75%!important;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+  @include box-sizing(border-box);
+  height: 1px;
+  border: 1px solid #666;
+  padding-bottom: -1px;
+  margin: rhythm(1) 0;
+}
+
+hr.style-two { border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+margin:0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp,
+tt,
+var {
+  font-family: $font-monospace; // The value of $font-monospace ends with ", serif".
+  @if $legacy-support-for-ie6 {
+    _font-family: 'courier new', monospace;
+  }
+  @include adjust-font-size-to( 1 * $base-font-size );
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Set 1 unit of vertical rhythm and a consistent indentation.
+ */
+
+dl,
+menu,
+ol,
+ul {
+  margin: rhythm(1) 0;
+  padding: 0 0 0 $indent-amount; /* LTR */
+}
+
+ul, ol {
+  ul, ol {
+    margin: 0; /* Turn off margins on nested lists. */
+  }
+}
+
+ol{
+	 font-size:.9em;
+	 
+	 li{
+		 margin-bottom:12px;
+	 }
+}
+
+dl {
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 0 $indent-amount; /* LTR */
+}
+
+@if $legacy-support-for-ie7 {
+  /**
+   * Correct list images handled incorrectly in IE 7.
+   */
+
+  nav ul,
+  nav ol {
+    list-style: none;
+    list-style-image: none;
+  }
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+  border: 0;
+  @if $legacy-support-for-ie7 {
+    /* Improve image quality when scaled in IE 7. */
+    -ms-interpolation-mode: bicubic;
+  }
+
+  /* vertical-align: bottom; */ /* Suppress the space beneath the baseline */
+
+  /* Responsive images */
+  /* @todo Look into adding responsive embedded video. */
+  max-width: 100%;
+  height: auto;
+  @if $legacy-support-for-ie8 {
+    width: auto; /* Correct IE 8 not scaling image height when resized. */
+  }
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+  /**
+   * Correct margin displayed oddly in IE 6/7.
+   */
+
+  form {
+    margin: 0;
+  }
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+	border:none;
+  /*border-color: #c0c0c0;*/
+  margin: 0 2px;
+  /* Apply borders and padding that keep the vertical rhythm. */
+ /* @include apply-side-rhythm-border(top,    $width: 1px, $lines: 0.35);
+  @include apply-side-rhythm-border(bottom, $width: 1px, $lines: 0.65);
+  @include apply-side-rhythm-border(left,  $width: 1px, $lines: 0.65);
+  @include apply-side-rhythm-border(right, $width: 1px, $lines: 0.65);*/
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    *margin-left: -7px; /* 3 */ /* LTR */
+  }
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ * 4. Improve appearance and consistency with IE 6/7.
+ */
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 2 */
+  margin: 0; /* 3 */
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    vertical-align: baseline; /* 4 */
+    *vertical-align: middle; /* 4 */
+  }
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+  @if $legacy-support-for-ie7 {
+    *overflow: visible; /* 4 */
+  }
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  @include box-sizing(border-box); /* 1 */
+  padding: 0; /* 2 */
+  @if $legacy-support-for-ie7 {
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+  }
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  @include box-sizing(content-box); /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* width: 100%; */ /* Prevent cramped-looking tables */
+  /* Add vertical rhythm margins. */
+  @include leader(1);
+  @include trailer(1);
+  
+  					.reg-online-table{
+							background:#e01c1c;
+							border:1px solid #000;
+							padding:8px 16px;
+							width:50%;
+							margin:0 auto;
+							border-radius:8px;
+							text-align:center;
+								  &:hover{
+									   background:#fc2424;
+										}
+								a:link, a:visited, a:active{
+									color:#fff;
+									font-weight:bold;
+									text-decoration:none;
+										&:hover{
+										   color:#fff!important;
+											}
+								}
+						}//end reg-online
+}
+
+/*tab widget*/
+
+.field-items .ui-widget-content{
+    background:none;
+	border:none;
+}
+
+.field-items #tabs-0 ul.ui-widget-header{
+	background:none;
+	border-top:none;
+	border-right:none;
+	border-left:none;
+}
+
+.field-items #tabs-0 ul.ui-corner-all{
+	border-radius:0;
+}
+
+.field-items #tabs-0 ul.ui-tabs-nav{
+	padding:0;
+}
+
+.field-items #tabs-0 .ui-tabs-panel{
+	border:1px solid #aaaaaa;
+	border-radius:0 6px 6px 6px;
+}
+
+.field-items #tabs-0 .ui-widget-header{
+	border:none;
+}
+
+.ui-tabs .ui-tabs-nav li, li.ui-tabs-selected {
+    border-bottom: 0 none !important;
+    float: left;
+    list-style: none outside none;
+    margin: 0 0.2em 1px 0;
+    padding: 0;
+    position: relative;
+    top: 1px;
+    white-space: nowrap;
+}
+
+.field-items #tabs-0 ul li a:focus{
+	outline:none;
+}
+
+/*svg Benchmarks 2015 styles
+OK -- this experiment had problems. There are 12+ InDesign slides in the presentation. InDesign does not export SVG directly -- the Workflow has to be InDesign to PDF, Then PDF to Illustrator, (one slide at a time.) Each slide is exported indivdually as a SVG. The biggest issue is the styles. Each slide has it's own classes. Putting the classes in an external style sheet means manually editing the class names on each slide. That could be done. But these are charts originally designed for print. When translated to SVG they are div based, not table based. So they are not in an accessible table format with TH 'scope' attributes "Col" or "Row" -- these SVGs would drive folks using a screen reader nuts. Better to run as PNG using their companion Excel tables as a 'text-based' alternative */
+	/*.st0{fill:#939598;}
+	.st1{fill:#b9cb95;}
+	.st2{fill:#B0B47B;}
+	.st3{fill:#D8D960;}
+	.st4{fill:#24A78F;}
+	.st5{fill:none;stroke:#00539B;stroke-width:1.484;}
+	.st6{clip-path:url(#SVGID_2_);}
+	.st7{font-family:'humnst777_lt_btlight';}
+	.st8{font-size:28px;}
+	.st9{font-size:15px;}
+	.st10{letter-spacing:-1;}
+	.st11{font-family:'humnst777_cn_btbold';}
+	.st12{font-size:12px;}
+	.st13{font-size:24px;}
+	.st14{fill:#FFFFFF;}
+	.st15{font-size:18px;}
+	.st16{font-size:25px;}
+	.st17{clip-path:url(#SVGID_4_);}
+	.st18{font-size:10px;}
+	.st19{font-family:'humnst777_lt_btlight_italic';}
+	.st20{clip-path:url(#SVGID_6_);}
+	.st21{fill:#000000;}*/
+	
+/*Benchmarks title slide*/
+
+	/*.st0{clip-path:url(#SVGID_2_);}
+	.title-st1{font-family:'Open Sans Condensed', sans-serif;font-weight:700;}
+	.title-st2{font-size:35px;}
+	.title-st3{fill:#003E7E;}
+	.st4{clip-path:url(#SVGID_6_);fill:#003E7E;}
+	.st5{clip-path:url(#SVGID_6_);fill-rule:evenodd;clip-rule:evenodd;fill:#003E7E;}*/
