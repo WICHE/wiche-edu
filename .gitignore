@@ -35,4 +35,5 @@ sites/*/private
 /themes
 /modules
 /sites/all/modules/contrib
+*.sql
 
