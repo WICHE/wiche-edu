@@ -2861,7 +2861,9 @@ article table#psep-support-fees{
 	.Tagline{
 			position:absolute;
 			top:178px;
-			left:50px;
+			width:100%;
+			display:table-cell;
+			text-align:center;
 		
 		h3.newstag{
 			font-family:Verdana, sans-serif;
@@ -3578,8 +3580,10 @@ article table#psep-support-fees{
 	
 	.Tagline{
 			position:absolute;
-			top:225px;
-			left:56px;
+			top:226px;
+			width:100%;
+			display:table-cell;
+			text-align:center;
 		
 		h3.newstag{
 			font-family:Verdana, sans-serif;
@@ -3932,7 +3936,7 @@ article table#psep-support-fees{
 	  width:72%;
 	  margin-left:26%;
 	  padding:0 1%;	
-	  border-left:1px solid #ccc;
+	 border-left:1px solid #ccc;
 	  
 	  .region-highlighted{
 			#block-multiblock-2, p.passport-phone-header{
@@ -6606,12 +6610,14 @@ article .field-name-field-state-investment{
 	
 	.Tagline{
 			position:absolute;
-			top:280px;
-			left:100px;
+			top:279px;
+			width:100%;
+			display:table-cell;
+			text-align:center;
+			/*left:100px;*/
 		
 		h3.newstag{
 			font-family:Verdana, sans-serif;
-			text-align:center;
 			color:#666;
 			font-size:1.4em;
 			line-heightL:1.1em;
@@ -10026,3 +10032,16 @@ ol.sep-by-numbers > li:before {
 .sidebar-first #content .one-col-newscap .view-content article header h2.node-title a{
 	display:none;
 }
+
+#block-views-newscap-archive-block-1 .view-newscap-archive{
+	padding-top:4px;
+}
+
+#block-views-newscap-archive-block > div.view.view-newscap-archive.view-id-newscap_archive.view-display-id-block{
+	text-align:right;
+	padding-top:9px;
+	position: relative;
+	right: -20px;
+}
+
+

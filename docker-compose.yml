@@ -18,6 +18,8 @@ services:
       APC: 1
 
       VIRTUAL_HOST: *hostname
+      
+      AMAZEEIO_HASH_SALT: UY6bPLsdQG8dUE7sqKTUivHJuJgkta903KFqiySUhlg
 
       # If index.php is not in the root of your repo, uncomment and set the
       # webroot directory here, for composer projects this is usually 'web'
