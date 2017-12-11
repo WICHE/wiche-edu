@@ -22,14 +22,10 @@ ini_set('session.use_only_cookies', 1);
 ini_set('session.use_trans_sid',    0);
 ini_set('url_rewriter.tags',        '');
 
-### Temp directory
-if (getenv('AMAZEEIO_TMP_PATH')) {
-  $conf['file_temporary_path'] = getenv('AMAZEEIO_TMP_PATH');
-}
+# Enables Clean urls
+$conf['clean_url'] = 1; // 1 enables, 0 clears clean_url
 
-if (getenv('AMAZEEIO_HASH_SALT')) {
-  $drupal_hash_salt = getenv('AMAZEEIO_HASH_SALT');
-}
+$conf['drupal_http_request_fails'] = FALSE;
 
 if(getenv('AMAZEEIO_SITENAME')) {
   $databases['default']['default'] = array(
@@ -43,8 +39,12 @@ if(getenv('AMAZEEIO_SITENAME')) {
   );
 }
 
-### amazee.io Base URL
+### Base URL
 if (getenv('AMAZEEIO_BASE_URL')) {
-  $base_url = getenv('AMAZEEIO_BASE_URL');
-  $cookie_domain = getenv('AMAZEEIO_BASE_URL');
+	$base_url = getenv('AMAZEEIO_BASE_URL');
+}
+
+### Temp directory
+if (getenv('AMAZEEIO_TMP_PATH')) {
+  $conf['file_temporary_path'] = getenv('AMAZEEIO_TMP_PATH');
 }
