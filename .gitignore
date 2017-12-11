@@ -29,7 +29,4 @@ sites/*/private
 /Thumbs.db
 /web.config
 /wichestyle-new.css
-/themes
-/modules
-/sites/all/modules/contrib
 *.sql
