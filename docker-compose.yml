@@ -18,7 +18,7 @@ services:
       APC: 1
 
       VIRTUAL_HOST: *hostname
-      
+
       AMAZEEIO_HASH_SALT: UY6bPLsdQG8dUE7sqKTUivHJuJgkta903KFqiySUhlg
 
       # If index.php is not in the root of your repo, uncomment and set the
@@ -27,7 +27,7 @@ services:
 
     # Choose which version of php you will use by setting the image. Current options
     # are 'amazeeio/drupal:php56-basic' and 'amazeeio/drupal:php70-basic'
-    image: amazeeio/drupal:php70-basic
+    image: amazeeio/drupal:php56-basic
     volumes:
       - .:/var/www/drupal/public_html:delegated
     volumes_from:
