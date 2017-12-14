@@ -48,3 +48,20 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 if (getenv('AMAZEEIO_TMP_PATH')) {
   $conf['file_temporary_path'] = getenv('AMAZEEIO_TMP_PATH');
 }
+
+// Loading settings for all environment types.
+if (file_exists(__DIR__ . '/all.settings.php')) {
+  include __DIR__ . '/all.settings.php';
+}
+
+// Environment specific settings files.
+if(getenv('AMAZEEIO_SITE_ENVIRONMENT')){
+  if (file_exists(__DIR__ . '/' . getenv('AMAZEEIO_SITE_ENVIRONMENT') . '.settings.php')) {
+    include __DIR__ . '/' . getenv('AMAZEEIO_SITE_ENVIRONMENT') . '.settings.php';
+  }
+}
+
+// Last: this servers specific settings files.
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+}
