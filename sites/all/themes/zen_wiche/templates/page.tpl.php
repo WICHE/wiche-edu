@@ -85,7 +85,6 @@
   </div>
 
  <footer id="footer" class="<?php print $classes; ?> clearfix">
-    <!--<?php/* print $content; */?>-->
     
     <div class="header-foot">
        <img id="foot-logo" src="<?php print base_path() . path_to_theme(); ?>/images/wiche-logo-footer.png" width="261" height="41" alt="WICHE, Western Interstate Commision For Higher Education" />

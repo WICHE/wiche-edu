@@ -235,10 +235,11 @@ body {
 
 a:link, a:visited, a:active, a:focus {
 	color:#1c4884;
-	text-decoration:underline;
+	text-decoration:none;
 	
 	&:hover{
 		color:#e01c1c;
+		text-decoration:underline;
 	}
 }
 
