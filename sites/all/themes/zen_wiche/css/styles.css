@@ -1753,7 +1753,7 @@ ul.social-media li.delicious a {
 /* line 941, ../sass/_layout-responsive.scss */
 table.alliance-exec-temp tbody tr td {
   vertical-align: top !important;
-  max-width: 86px;
+  /*max-width:86px;*/
   padding: 6px 12px 6px 0;
 }
 

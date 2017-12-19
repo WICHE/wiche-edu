@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="_normalize.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131577636271448577" remote="131577636420000000" Dst="1" />
-<file name="_layout-responsive.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131572478957130200" remote="131572479010000000" Dst="1" />
+<file name="_normalize.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131577636420000000" remote="131577636420000000" Dst="1" />
+<file name="_layout-responsive.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131581945049388306" remote="131581945140000000" Dst="1" />
 <file name="_print.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131463561750000000" remote="131463561750000000" Dst="1" />
 <file name="README.txt" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="130753380910000000" remote="130753380910000000" Dst="1" />
 <file name="_modular-styles.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131469432240000000" remote="131469432240000000" Dst="1" />
@@ -12,6 +12,6 @@
 <file name="zen-mucho.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131472058180000000" remote="131472058180000000" Dst="1" />
 <file name="_modular-styles.scss.old" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="130589917930000000" remote="130589917930000000" Dst="1" />
 <file name="styles.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131466195560000000" remote="131466195560000000" Dst="1" />
-<file name="styles.css" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131577636291351376" remote="131577636420000000" Dst="1" />
+<file name="styles.css" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131581945055238314" remote="131581945140000000" Dst="1" />
 <file name="zen-mucho.css" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131568838180000000" remote="131568838180000000" Dst="1" />
 </dwsync>
