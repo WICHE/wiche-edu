@@ -39,6 +39,18 @@ if(getenv('AMAZEEIO_SITENAME')) {
   );
 }
 
+### amazee.io Varnish & reverse proxy settings
+if (getenv('AMAZEEIO_VARNISH_HOSTS') && getenv('AMAZEEIO_VARNISH_SECRET')) {
+  $varnish_hosts = explode(',', getenv('AMAZEEIO_VARNISH_HOSTS'));
+  array_walk($varnish_hosts, function(&$value, $key) { $value .= ':6082'; });
+
+  $conf['reverse_proxy'] = TRUE;
+  $conf['reverse_proxy_addresses'] = array_merge(explode(',', getenv('AMAZEEIO_VARNISH_HOSTS')), array('127.0.0.1'));
+  $conf['varnish_control_terminal'] = implode($varnish_hosts, " ");
+  $conf['varnish_control_key'] = getenv('AMAZEEIO_VARNISH_SECRET');
+  $conf['varnish_version'] = 4;
+}
+
 ### Base URL
 if (getenv('AMAZEEIO_BASE_URL')) {
 	$base_url = getenv('AMAZEEIO_BASE_URL');
@@ -47,4 +59,21 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 ### Temp directory
 if (getenv('AMAZEEIO_TMP_PATH')) {
   $conf['file_temporary_path'] = getenv('AMAZEEIO_TMP_PATH');
+}
+
+// Loading settings for all environment types.
+if (file_exists(__DIR__ . '/all.settings.php')) {
+  include __DIR__ . '/all.settings.php';
+}
+
+// Environment specific settings files.
+if(getenv('AMAZEEIO_SITE_ENVIRONMENT')){
+  if (file_exists(__DIR__ . '/' . getenv('AMAZEEIO_SITE_ENVIRONMENT') . '.settings.php')) {
+    include __DIR__ . '/' . getenv('AMAZEEIO_SITE_ENVIRONMENT') . '.settings.php';
+  }
+}
+
+// Last: this servers specific settings files.
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
 }
