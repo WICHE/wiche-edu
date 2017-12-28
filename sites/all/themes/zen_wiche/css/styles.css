@@ -10217,6 +10217,12 @@ ol.sep-by-numbers > li:before {
   right: -20px;
 }
 
+/* line 10048, ../sass/_layout-responsive.scss */
+.view-wiche-media-mentions .view-content .views-row {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 12px;
+}
+
 /*====================================
 		MUCHO MENU STYLING
 ======================================*/
