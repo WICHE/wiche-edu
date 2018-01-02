@@ -940,7 +940,7 @@ ul.social-media{
 table.alliance-exec-temp{
 	tbody tr td{
 		vertical-align:top!important;
-		max-width:86px;
+		/*max-width:86px;*/
 		padding:6px 12px 6px 0;
 	}
 }
@@ -10042,6 +10042,12 @@ ol.sep-by-numbers > li:before {
 	padding-top:9px;
 	position: relative;
 	right: -20px;
+}
+
+
+.view-wiche-media-mentions .view-content .views-row{
+	border-bottom:1px solid #ccc;
+	margin-bottom:12px;
 }
 
 
