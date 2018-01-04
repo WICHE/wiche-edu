@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="_normalize.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131577636420000000" remote="131577636420000000" Dst="1" />
-<file name="_layout-responsive.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131589502257291348" remote="131589502310000000" Dst="1" />
-<file name="_print.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131463561750000000" remote="131463561750000000" Dst="1" />
-<file name="README.txt" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="130753380910000000" remote="130753380910000000" Dst="1" />
-<file name="_modular-styles.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131469432240000000" remote="131469432240000000" Dst="1" />
-<file name="_layout-fixed.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="130753380910000000" remote="130753380910000000" Dst="1" />
-<file name="_base.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="130589917930000000" remote="130589917930000000" Dst="1" />
-<file name="_global-states.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="130753380910000000" remote="130753380910000000" Dst="1" />
-<file name="hide_contentType_label.txt" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="130589917930000000" remote="130589917930000000" Dst="1" />
-<file name="zen-mucho.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131472058180000000" remote="131472058180000000" Dst="1" />
-<file name="_modular-styles.scss.old" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="130589917930000000" remote="130589917930000000" Dst="1" />
-<file name="styles.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131466195560000000" remote="131466195560000000" Dst="1" />
-<file name="styles.css" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131589502263401285" remote="131589502310000000" Dst="1" />
-<file name="zen-mucho.css" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131568838180000000" remote="131568838180000000" Dst="1" />
+<file name="_normalize.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131593865211667320" remote="131595538350000000" Dst="1" />
+<file name="_layout-responsive.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131595682983823607" remote="131595683010000000" Dst="1" />
+<file name="_print.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131593865210987275" remote="131595538350000000" Dst="1" />
+<file name="README.txt" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131593865210927293" remote="131595538340000000" Dst="1" />
+<file name="_modular-styles.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131593865210967294" remote="131595538350000000" Dst="1" />
+<file name="_layout-fixed.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131593865210957269" remote="131595538350000000" Dst="1" />
+<file name="_base.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131593865210937289" remote="131595538350000000" Dst="1" />
+<file name="_global-states.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131593865210947467" remote="131595538350000000" Dst="1" />
+<file name="hide_contentType_label.txt" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131593865210997288" remote="131595538340000000" Dst="1" />
+<file name="zen-mucho.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131593865211047267" remote="131595538350000000" Dst="1" />
+<file name="_modular-styles.scss.old" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131593865210977271" remote="131595538350000000" Dst="1" />
+<file name="styles.scss" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131593865211027268" remote="131595538340000000" Dst="1" />
+<file name="styles.css" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131595682994113640" remote="131595683010000000" Dst="1" />
+<file name="zen-mucho.css" server="wwwlive//var/www/wiche/sites/all/themes/zen_wiche/" local="131593865211037304" remote="131595538340000000" Dst="1" />
 </dwsync>

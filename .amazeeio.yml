@@ -14,3 +14,15 @@ shared:
   production:
     - src: files
       dst: sites/default/files
+    - src: root_files
+      dst: files
+    - src: info
+      dst: info
+    - src: MentalHealth
+      dst: MentalHealth
+    - src: Policy
+      dst: Policy
+    - src: PPT
+      dst: PPT
+    - src: spd
+      dst: spd

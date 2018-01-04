@@ -1623,6 +1623,17 @@ article table#psep-support-fees{
 			}
 			
 		}//end .view-wiche-staff
+		
+		
+		.pub-list ul li .pub-image{
+				display:none;
+			}
+		
+		.pub-list ul li .pub-description{
+				display:block;
+				width:100%;
+			    float:none;
+			}
 
 }//end #content
 				
@@ -2656,18 +2667,17 @@ article table#psep-support-fees{
 					position:absolute;
 					left:14px;
 					top:-10px;
-					color:yellow;
 					font-weight:bold;
-					font-size:.9em;
+					font-size:1.3em;
 					text-shadow: 1px 1px #000;
 					letter-spacing:1px;
 					
 					
 					a:link, a:active, a:visited{
-							color:yellow;
+							color:#fff;
 						
 							&:hover{
-								color:#fff;
+								text-decoration:underline;
 							}
 						}
 					
@@ -2941,6 +2951,7 @@ article table#psep-support-fees{
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
       @include zen-grid-item(1, 1);
 		   font-size:90%;
+		    width:23.5%;
 			h2{
 			 margin:0;
 		 }
@@ -3339,18 +3350,18 @@ article table#psep-support-fees{
 					position:absolute;
 					left:14px;
 					top:-10px;
-					color:yellow;
 					font-weight:bold;
-					font-size:1em;
+					font-size:1.4em;
 					text-shadow: 1px 1px #000;
 					letter-spacing:1px;
 					
 					
 					a:link, a:active, a:visited{
-							color:yellow;
+							color:#fff;
 						
 							&:hover{
 								color:#fff;
+								text-decoration:underline;
 							}
 						}
 					
@@ -3685,6 +3696,7 @@ article table#psep-support-fees{
 
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
       @include zen-grid-item(1, 1);
+		width:23.5%!important;
 		
 		ul.newscap-menu{
 			position:fixed;
@@ -5516,7 +5528,7 @@ table.cheo-institutions{
 				float:left;
 				margin-right:12px;
 				display:inline-block;
-				width:30%;
+				width:14%;
 			}
 			
 			.pub-description{
@@ -5539,7 +5551,7 @@ table.cheo-institutions{
 				
 				p{
 				margin:0!important;
-				font-weight:normal;
+				/*font-weight:normal;*/
 				a:link, a:visited, a:active{
 					color:#1c4884;
 					text-decoration:none;
@@ -6371,13 +6383,14 @@ article .field-name-field-state-investment{
 					a:link, a:active, a:visited{
 						 font-family:"Arial Black", Gadget, sans-serif;
 						 font-weight:bold;
-						 font-size:1.1em;
-						 text-shadow: 1px 1px #666;
+						 font-size:1.5em;
+						 text-shadow: 1px 1px #000;
 						 letter-spacing:1px;
-						 color:yellow;
+						 color:#fff;
 						
 							&:hover{
 								color:#fff;
+								text-decoration:underline;
 							}
 						}
 					
@@ -6523,55 +6536,6 @@ article .field-name-field-state-investment{
 	
 }//#views-exposed-form-Staff-Alpha-View-page-3
 
-/*publications list on front page*/ /*redundant*/
-
-/*.wiche-publications{
-		display:table;border-collapse:separate;border-spacing:5px;
-				ul{
-					display:table-row;
-					list-style:none;
-					margin:16px 0 0 0;
-					padding:0;
-					/*overflow:hidden;*/
-					/*li{
-						display:table-cell;
-						width:18%;
-						padding:8px;
-						margin-left:16px;
-						
-						.views-field-title{
-							width:100%;
-							padding-left:0;
-							
-							.field-content{
-								a:link,a:visited{
-									color:#000;
-									text-decoration:none;
-									font-weight:600;
-									line-height:1.2em;
-								}
-								a:hover{
-									text-decoration:underline;
-								}
-							}
-							
-						}
-						
-						figcaption.field-tag{
-									clear:left;
-									font-style:italic;
-									font-size:.8em;
-									line-height:1.2em;
-									padding-top:8px;
-									margin-top:8px;
-								}
-					}
-				}//en li
-				
-				li:first-child{
-						margin-left:0px;
-					}
-			}*///end wiche pubs
 	
 	.header{
 		 .region-phone-nav{
@@ -6692,11 +6656,12 @@ article .field-name-field-state-investment{
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
       @include zen-grid-item(1, 1);
 		padding-left:16px;
+		width:23.5%;
 		ul.newscap-menu{
 			position:fixed;
 			list-style:none;
 			background:#fff;
-			width:17%;
+			width:100%;
 			max-width:275px;
 			z-index:25;
 			padding:0;
@@ -6719,7 +6684,7 @@ article .field-name-field-state-investment{
 				text-transform: uppercase;
 			}
 		}//end ul.newscap-menu
-     }
+     }//end .region-sidebar-first
 	}
 
 
@@ -8368,7 +8333,7 @@ table.waccal-exec-comm, table.walf-exec-comm{
 				float:left;
 				margin-right:12px;
 				display:inline-block;
-				width:30%;
+				width:14%;
 			}
 			
 			.pub-description{
@@ -8391,10 +8356,11 @@ table.waccal-exec-comm, table.walf-exec-comm{
 				
 				p{
 				margin:0!important;
-				font-weight:normal;
+				/*font-weight:normal;*/
 				a:link, a:visited, a:active{
 					color:#1c4884;
 					text-decoration:none;
+					font-weight:bold;
 				}
 				a:hover{
 					text-decoration:underline;
@@ -9539,10 +9505,10 @@ table.passport-blocks{
 
 .flex-direction-nav{
 	li a{
-		color:yellow;
+		/*color:yellow;*/
 		
 		&:hover{
-		 color: #fff;
+		 color:#000!important;
 		}
 	}
 }
@@ -10051,3 +10017,17 @@ ol.sep-by-numbers > li:before {
 }
 
 
+.flex-direction-nav a{
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+
+.sidebar-first .pub-list ul li{
+	border-bottom: 1px solid #ccc;
+    padding-bottom: 12px;
+	margin-bottom:12px;
+	
+	div > strong.pub-title a{
+		font-weight:bold!important;
+		margin:12px 0!important;
+	}
+}
