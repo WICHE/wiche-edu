@@ -26,3 +26,5 @@ shared:
       dst: PPT
     - src: spd
       dst: spd
+    - src: images
+      dst: images
