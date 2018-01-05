@@ -921,7 +921,7 @@ OK -- this experiment had problems. There are 12+ InDesign slides in the present
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  border: 1px solid #ccc;
+  /*border:1px solid #ccc;*/
   /*copyright*/
 }
 /* line 49, ../sass/_layout-responsive.scss */
@@ -957,9 +957,10 @@ OK -- this experiment had problems. There are 12+ InDesign slides in the present
 
 /* line 78, ../sass/_layout-responsive.scss */
 #page {
-  background: white url(../images/page-bg.png) repeat-x 0 0;
+  /*background: #fff url(../images/page-bg.png) repeat-x 0 0;*/
   /*font-size: 0.9em;
 line-height: 1.5em;*/
+  padding-top: 4px;
   /*style unordered lists in views*/
   /*staff table*/
 }
@@ -1545,7 +1546,7 @@ line-height: 1.5em;*/
 /* line 725, ../sass/_layout-responsive.scss */
 #tag {
   padding-left: 10px;
-  margin: 6px 0;
+  margin: 0px 0px 6px;
 }
 
 /* line 730, ../sass/_layout-responsive.scss */
@@ -3353,29 +3354,30 @@ table#physics-lab-activities tr:nth-child(even) {
     position: absolute;
     left: 14px;
     top: -10px;
+  }
+  /* line 2671, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 {
+    margin-bottom: 0;
+  }
+  /* line 2673, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:link, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:active, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:visited {
+    font-family: "Arial Black", Gadget, sans-serif;
     font-weight: bold;
     font-size: 1.3em;
     text-shadow: 1px 1px #000;
     letter-spacing: 1px;
-  }
-  /* line 2676, ../sass/_layout-responsive.scss */
-  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:link, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:active, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:visited {
     color: #fff;
   }
-  /* line 2679, ../sass/_layout-responsive.scss */
-  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:link:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:active:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:visited:hover {
+  /* line 2681, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:link:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:active:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:visited:hover {
     text-decoration: underline;
   }
-  /* line 2684, ../sass/_layout-responsive.scss */
-  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 {
-    margin-bottom: 0;
-  }
-  /* line 2687, ../sass/_layout-responsive.scss */
+  /* line 2686, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action p {
     margin: 8px 0 0 0;
     line-height: 1.1em;
   }
-  /* line 2693, ../sass/_layout-responsive.scss */
+  /* line 2692, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-photo-credit {
     width: 100%;
     background: rgba(0, 0, 0, 0.25);
@@ -3390,62 +3392,62 @@ table#physics-lab-activities tr:nth-child(even) {
     color: #fff;
     text-shadow: .5px .5px #000;
   }
-  /* line 2707, ../sass/_layout-responsive.scss */
+  /* line 2706, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-photo-credit .field-content {
     width: 95%;
   }
-  /* line 2717, ../sass/_layout-responsive.scss */
+  /* line 2716, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flex-control-nav {
     display: none;
   }
-  /* line 2725, ../sass/_layout-responsive.scss */
+  /* line 2724, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides img {
     width: 100%;
     max-width: 600px;
     height: auto;
   }
-  /* line 2732, ../sass/_layout-responsive.scss */
+  /* line 2731, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .wiche-mission-self-id {
     display: table-cell;
     max-width: 600px;
     background: #245eac;
     vertical-align: top;
   }
-  /* line 2739, ../sass/_layout-responsive.scss */
+  /* line 2738, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .wiche-mission-self-id .region-self-id .block {
     margin: 0;
   }
-  /* line 2744, ../sass/_layout-responsive.scss */
+  /* line 2743, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .wiche-mission-self-id h2 {
     color: #fff;
     margin: 8px 0 0 6px;
     font-size: 1em;
   }
-  /* line 2750, ../sass/_layout-responsive.scss */
+  /* line 2749, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .wiche-mission-self-id ul {
     margin: 6px 0 0 16px;
     padding: 0 0 0 16px;
     list-style: none;
   }
-  /* line 2755, ../sass/_layout-responsive.scss */
+  /* line 2754, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .wiche-mission-self-id ul li {
     background: url(images/white-arrow-bullet.png) 0 5px no-repeat;
     padding-left: 20px;
     margin: 3px 0;
   }
-  /* line 2759, ../sass/_layout-responsive.scss */
+  /* line 2758, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .wiche-mission-self-id ul li a:link, #slideshow .slide-row .wiche-mission-self-id ul li a:visited, #slideshow .slide-row .wiche-mission-self-id ul li a:active {
     color: #fff;
     display: block;
     font-weight: 200;
     font-size: 70%;
   }
-  /* line 2768, ../sass/_layout-responsive.scss */
+  /* line 2767, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .wiche-mission-self-id .mission {
     background: #ccc;
     width: 100%;
   }
-  /* line 2771, ../sass/_layout-responsive.scss */
+  /* line 2770, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .wiche-mission-self-id .mission h2 {
     font-family: 'humnst777_cn_btregular', sans-serif;
     font-weight: 100;
@@ -3459,7 +3461,7 @@ table#physics-lab-activities tr:nth-child(even) {
   	  /*
      * The layout when there is only one sidebar, the left one.
      */
-  /* line 2794, ../sass/_layout-responsive.scss */
+  /* line 2793, ../sass/_layout-responsive.scss */
   .sidebar-first #content {
     /* Span 3 columns, starting in 2nd column from left. */
     float: left;
@@ -3470,24 +3472,24 @@ table#physics-lab-activities tr:nth-child(even) {
     /*fix for accordion display on iPad*/
     /*passport home faux table*/
   }
-  /* line 2799, ../sass/_layout-responsive.scss */
+  /* line 2798, ../sass/_layout-responsive.scss */
   .sidebar-first #content .region-highlighted #block-multiblock-2, .sidebar-first #content .region-highlighted p.passport-phone-header {
     display: none;
   }
-  /* line 2803, ../sass/_layout-responsive.scss */
+  /* line 2802, ../sass/_layout-responsive.scss */
   .sidebar-first #content h1, .sidebar-first #content h2, .sidebar-first #content h3, .sidebar-first #content p {
     padding: 0 12px !important;
   }
-  /* line 2807, ../sass/_layout-responsive.scss */
+  /* line 2806, ../sass/_layout-responsive.scss */
   .sidebar-first #content .view-content .item-list ul li {
     border-bottom: none;
   }
-  /* line 2812, ../sass/_layout-responsive.scss */
+  /* line 2811, ../sass/_layout-responsive.scss */
   .sidebar-first #content .view-knowledge-base-page .ui-accordion {
     width: 97% !important;
     margin-left: 12px !important;
   }
-  /* line 2818, ../sass/_layout-responsive.scss */
+  /* line 2817, ../sass/_layout-responsive.scss */
   .sidebar-first #content .passport-home {
     background: url(images/passport-girl.jpg) 0 0 no-repeat;
     width: 95%;
@@ -3496,23 +3498,23 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 4% 0;
     display: table;
   }
-  /* line 2826, ../sass/_layout-responsive.scss */
+  /* line 2825, ../sass/_layout-responsive.scss */
   .sidebar-first #content .passport-home td-cell-30 {
     display: table-cell;
     width: 30%;
   }
-  /* line 2831, ../sass/_layout-responsive.scss */
+  /* line 2830, ../sass/_layout-responsive.scss */
   .sidebar-first #content .passport-home .td-cell-60 {
     display: table-cell;
     width: 65%;
     vertical-align: top;
     padding: 0 2.5%;
   }
-  /* line 2837, ../sass/_layout-responsive.scss */
+  /* line 2836, ../sass/_layout-responsive.scss */
   .sidebar-first #content .passport-home .td-cell-60 li {
     list-style-image: url(images/white-arrow-right.png);
   }
-  /* line 2840, ../sass/_layout-responsive.scss */
+  /* line 2839, ../sass/_layout-responsive.scss */
   .sidebar-first #content .passport-home .td-cell-60 li h3 {
     color: #fff;
     text-shadow: 1px 1px #000;
@@ -3520,17 +3522,17 @@ table#physics-lab-activities tr:nth-child(even) {
     line-height: 1.7em;
     font-weight: 400;
   }
-  /* line 2853, ../sass/_layout-responsive.scss */
+  /* line 2852, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap ul li {
     margin-bottom: 12px;
   }
-  /* line 2857, ../sass/_layout-responsive.scss */
+  /* line 2856, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap .views-row {
     border-bottom: 4px solid #1c4884;
     margin-bottom: 20px;
     padding-bottom: 8px;
   }
-  /* line 2863, ../sass/_layout-responsive.scss */
+  /* line 2862, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap .ncbanner {
     background: url("/sites/all/themes/zen_wiche/images/NewsCapWebBAnner768.png") no-repeat;
     width: 550px;
@@ -3538,7 +3540,7 @@ table#physics-lab-activities tr:nth-child(even) {
     position: relative;
     margin: 0 auto 20px auto;
   }
-  /* line 2871, ../sass/_layout-responsive.scss */
+  /* line 2870, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap .Tagline {
     position: absolute;
     top: 178px;
@@ -3546,7 +3548,7 @@ table#physics-lab-activities tr:nth-child(even) {
     display: table-cell;
     text-align: center;
   }
-  /* line 2878, ../sass/_layout-responsive.scss */
+  /* line 2877, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap .Tagline h3.newstag {
     font-family: Verdana, sans-serif;
     text-align: center;
@@ -3554,65 +3556,65 @@ table#physics-lab-activities tr:nth-child(even) {
     font-size: 1em;
     line-heightL: 1.1em;
   }
-  /* line 2887, ../sass/_layout-responsive.scss */
+  /* line 2886, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap h2 {
     margin: 0;
   }
-  /* line 2891, ../sass/_layout-responsive.scss */
+  /* line 2890, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap img.newscap-photo, .sidebar-first #content .one-col-newscap .newscap-photo {
     float: left;
     margin: 4px 16px 0 0px;
     max-width: 220px;
     height: auto;
   }
-  /* line 2897, ../sass/_layout-responsive.scss */
+  /* line 2896, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap img.newscap-photo p.caption, .sidebar-first #content .one-col-newscap .newscap-photo p.caption {
     margin: 0 0 4px !important;
   }
-  /* line 2902, ../sass/_layout-responsive.scss */
+  /* line 2901, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap img.newscap-headshot {
     float: left;
     margin: 4px 16px 0 0px;
     max-width: 125px;
     height: auto;
   }
-  /* line 2908, ../sass/_layout-responsive.scss */
+  /* line 2907, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap img.newscap-headshot p.caption {
     margin: 0 0 4px !important;
     font-size: .8em;
     line-height: .9em;
   }
-  /* line 2915, ../sass/_layout-responsive.scss */
+  /* line 2914, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap img.newscap-headshot-right {
     float: right;
     margin: 4px 0 0 16px;
     max-width: 125px;
     height: auto;
   }
-  /* line 2921, ../sass/_layout-responsive.scss */
+  /* line 2920, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap img.newscap-headshot-right p.caption {
     margin: 0 0 4px !important;
     font-size: .8em;
     line-height: .9em;
   }
-  /* line 2929, ../sass/_layout-responsive.scss */
+  /* line 2928, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap .newscap-photo-horizontal .nc-horizontal-img {
     width: 45%;
     float: left;
     padding: 12px;
   }
-  /* line 2933, ../sass/_layout-responsive.scss */
+  /* line 2932, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap .newscap-photo-horizontal .nc-horizontal-img img {
     width: 300px;
     height: auto;
   }
-  /* line 2941, ../sass/_layout-responsive.scss */
+  /* line 2940, ../sass/_layout-responsive.scss */
   .sidebar-first #content .one-col-newscap .newscap-photo-horizontal .nc-horizontal-img p.caption {
     margin: 0 0 4px !important;
     font-size: .9em;
     line-height: 1.1em;
   }
-  /* line 2951, ../sass/_layout-responsive.scss */
+  /* line 2950, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -3623,11 +3625,11 @@ table#physics-lab-activities tr:nth-child(even) {
     width: 23.5%;
     padding-left: 16px;
   }
-  /* line 2955, ../sass/_layout-responsive.scss */
+  /* line 2954, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first h2 {
     margin: 0;
   }
-  /* line 2961, ../sass/_layout-responsive.scss */
+  /* line 2960, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first ul.newscap-menu {
     position: fixed;
     list-style: none;
@@ -3640,15 +3642,15 @@ table#physics-lab-activities tr:nth-child(even) {
     line-height: 1.1em;
     /*margin:0 0 0 16px;*/
   }
-  /* line 2972, ../sass/_layout-responsive.scss */
+  /* line 2971, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first ul.newscap-menu li {
     margin-bottom: 12px;
   }
-  /* line 2974, ../sass/_layout-responsive.scss */
+  /* line 2973, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first ul.newscap-menu li strong {
     font-weight: 700;
   }
-  /* line 2981, ../sass/_layout-responsive.scss */
+  /* line 2980, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first ul.newscap-menu h2 {
     color: #1c4884;
     border-bottom: 2px solid #ffcc00;
@@ -3658,7 +3660,7 @@ table#physics-lab-activities tr:nth-child(even) {
   /*
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 2998, ../sass/_layout-responsive.scss */
+  /* line 2997, ../sass/_layout-responsive.scss */
   .sidebar-second #content {
     /* Span 2 columns, starting in 1st column from left. */
     float: left;
@@ -3667,15 +3669,15 @@ table#physics-lab-activities tr:nth-child(even) {
     margin-right: -40%;
     font-size: 90%;
   }
-  /* line 3001, ../sass/_layout-responsive.scss */
+  /* line 3000, ../sass/_layout-responsive.scss */
   .sidebar-second #content h1, .sidebar-second #content h2, .sidebar-second #content h3, .sidebar-second #content p {
     padding: 0 12px !important;
   }
-  /* line 3004, ../sass/_layout-responsive.scss */
+  /* line 3003, ../sass/_layout-responsive.scss */
   .sidebar-second #content h2 {
     margin: 0;
   }
-  /* line 3009, ../sass/_layout-responsive.scss */
+  /* line 3008, ../sass/_layout-responsive.scss */
   .sidebar-second .region-sidebar-second {
     /* Span 1 column, starting in 3rd column from left. */
     float: left;
@@ -3684,7 +3686,7 @@ table#physics-lab-activities tr:nth-child(even) {
     margin-right: -60%;
     font-size: 90%;
   }
-  /* line 3012, ../sass/_layout-responsive.scss */
+  /* line 3011, ../sass/_layout-responsive.scss */
   .sidebar-second .region-sidebar-second h2 {
     margin: 0;
   }
@@ -3692,7 +3694,7 @@ table#physics-lab-activities tr:nth-child(even) {
   /*
    * The layout when there are two sidebars.
    */
-  /* line 3023, ../sass/_layout-responsive.scss */
+  /* line 3022, ../sass/_layout-responsive.scss */
   .two-sidebars #content {
     /* Span 3 columns, starting in 2nd column from left. */
     /*@include zen-grid-item(3, 2);*/
@@ -3705,16 +3707,16 @@ table#physics-lab-activities tr:nth-child(even) {
     font-size: 85%;
     /*passport home faux table*/
   }
-  /* line 3035, ../sass/_layout-responsive.scss */
+  /* line 3034, ../sass/_layout-responsive.scss */
   .two-sidebars #content .region-highlighted .flex-control-nav {
     display: block;
     bottom: -52px;
   }
-  /* line 3040, ../sass/_layout-responsive.scss */
+  /* line 3039, ../sass/_layout-responsive.scss */
   .two-sidebars #content .region-highlighted #block-menu-menu-walf-menu, .two-sidebars #content .region-highlighted #block-menu-menu-waccal, .two-sidebars #content .region-highlighted #block-menu-menu-interstate-passport, .two-sidebars #content .region-highlighted #block-menu-menu-ice-public-menu {
     display: none;
   }
-  /* line 3046, ../sass/_layout-responsive.scss */
+  /* line 3045, ../sass/_layout-responsive.scss */
   .two-sidebars #content .passport-home {
     background: url(images/passport-girl.jpg) 0 0 no-repeat;
     width: 100%;
@@ -3724,27 +3726,27 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 4% 0;
     display: table;
   }
-  /* line 3055, ../sass/_layout-responsive.scss */
+  /* line 3054, ../sass/_layout-responsive.scss */
   .two-sidebars #content .passport-home .tr-row {
     display: table-row;
   }
-  /* line 3058, ../sass/_layout-responsive.scss */
+  /* line 3057, ../sass/_layout-responsive.scss */
   .two-sidebars #content .passport-home .tr-row td-cell-30 {
     display: table-cell;
     width: 35%;
   }
-  /* line 3063, ../sass/_layout-responsive.scss */
+  /* line 3062, ../sass/_layout-responsive.scss */
   .two-sidebars #content .passport-home .tr-row .td-cell-60 {
     display: table-cell;
     width: 60%;
     vertical-align: top;
     padding: 0 2.5%;
   }
-  /* line 3069, ../sass/_layout-responsive.scss */
+  /* line 3068, ../sass/_layout-responsive.scss */
   .two-sidebars #content .passport-home .tr-row .td-cell-60 li {
     list-style-image: url(images/white-arrow-right.png);
   }
-  /* line 3072, ../sass/_layout-responsive.scss */
+  /* line 3071, ../sass/_layout-responsive.scss */
   .two-sidebars #content .passport-home .tr-row .td-cell-60 li h3 {
     color: #fff;
     text-shadow: 1px 1px #000;
@@ -3752,34 +3754,34 @@ table#physics-lab-activities tr:nth-child(even) {
     line-height: 1.7em;
     font-weight: 400;
   }
-  /* line 3084, ../sass/_layout-responsive.scss */
+  /* line 3083, ../sass/_layout-responsive.scss */
   .two-sidebars #content h1 {
     font-size: 1.4em;
   }
-  /* line 3087, ../sass/_layout-responsive.scss */
+  /* line 3086, ../sass/_layout-responsive.scss */
   .two-sidebars #content h2 {
     font-size: 1.1em;
   }
-  /* line 3091, ../sass/_layout-responsive.scss */
+  /* line 3090, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-content .item-list ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
   }
-  /* line 3098, ../sass/_layout-responsive.scss */
+  /* line 3097, ../sass/_layout-responsive.scss */
   .two-sidebars #content ul.toggle-view li {
     width: 50px;
   }
-  /* line 3101, ../sass/_layout-responsive.scss */
+  /* line 3100, ../sass/_layout-responsive.scss */
   .two-sidebars #content ul.toggle-view li h3 {
     display: inline-block;
     padding: 0 4px 0 !important;
   }
-  /* line 3105, ../sass/_layout-responsive.scss */
+  /* line 3104, ../sass/_layout-responsive.scss */
   .two-sidebars #content ul.toggle-view li span {
     display: inline-block;
   }
-  /* line 3109, ../sass/_layout-responsive.scss */
+  /* line 3108, ../sass/_layout-responsive.scss */
   .two-sidebars #content ul.toggle-view li p {
     background: none repeat scroll 0 0 #fff;
     border: 1px solid #ccc;
@@ -3793,53 +3795,53 @@ table#physics-lab-activities tr:nth-child(even) {
     width: 500px;
     z-index: 25;
   }
-  /* line 3126, ../sass/_layout-responsive.scss */
+  /* line 3125, ../sass/_layout-responsive.scss */
   .two-sidebars #content .region-highlighted #block-multiblock-2, .two-sidebars #content .region-highlighted p.passport-phone-header, .two-sidebars #content .region-highlighted #block-multiblock-1 {
     display: none;
   }
-  /* line 3131, ../sass/_layout-responsive.scss */
+  /* line 3130, ../sass/_layout-responsive.scss */
   .two-sidebars #content #page .view-wiche-tags .view-content .item-list ul li {
     border-bottom: none;
   }
-  /* line 3136, ../sass/_layout-responsive.scss */
+  /* line 3135, ../sass/_layout-responsive.scss */
   .two-sidebars #content .region-highlighted #block-menu-menu-ice-public-menu {
     display: none;
   }
-  /* line 3142, ../sass/_layout-responsive.scss */
+  /* line 3141, ../sass/_layout-responsive.scss */
   .two-sidebars #content article .faux-four-col-table {
     width: 80%;
     display: table;
     margin: 0 auto;
   }
-  /* line 3147, ../sass/_layout-responsive.scss */
+  /* line 3146, ../sass/_layout-responsive.scss */
   .two-sidebars #content article .faux-four-col-table .four-col-col-one {
     display: table-cell;
     vertical-align: top;
     width: 21%;
     padding: 2% 2% 2% 0;
   }
-  /* line 3154, ../sass/_layout-responsive.scss */
+  /* line 3153, ../sass/_layout-responsive.scss */
   .two-sidebars #content article .faux-four-col-table .four-col-col-two {
     display: table-cell;
     vertical-align: top;
     width: 21%;
     padding: 2%;
   }
-  /* line 3161, ../sass/_layout-responsive.scss */
+  /* line 3160, ../sass/_layout-responsive.scss */
   .two-sidebars #content article .faux-four-col-table .four-col-col-three {
     display: table-cell;
     vertical-align: top;
     width: 21%;
     padding: 2%;
   }
-  /* line 3168, ../sass/_layout-responsive.scss */
+  /* line 3167, ../sass/_layout-responsive.scss */
   .two-sidebars #content article .faux-four-col-table .four-col-col-four {
     display: table-cell;
     vertical-align: top;
     width: 21%;
     padding: 2% 0 2% 2%;
   }
-  /* line 3179, ../sass/_layout-responsive.scss */
+  /* line 3178, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -3849,13 +3851,13 @@ table#physics-lab-activities tr:nth-child(even) {
     font-size: 90%;
     /*quicklinks accordion on front page*/
   }
-  /* line 3189, ../sass/_layout-responsive.scss */
+  /* line 3188, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block .ui-accordion .views-accordion-header .field-content a, .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block-2 .ui-accordion .views-accordion-header .field-content a, .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block-1 .ui-accordion .views-accordion-header .field-content a {
     font-size: .9em;
     display: block;
     /*padding-left:15px;*/
   }
-  /* line 3201, ../sass/_layout-responsive.scss */
+  /* line 3200, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second {
     /* Start a new row and span all 3 columns. */
     float: left;
@@ -3869,161 +3871,163 @@ table#physics-lab-activities tr:nth-child(even) {
     /*student testimonials*/
     /*hide recent policy publications block because it looks awkward*/
   }
-  /* line 3208, ../sass/_layout-responsive.scss */
+  /* line 3207, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .passport-staff .item-list ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  /* line 3212, ../sass/_layout-responsive.scss */
+  /* line 3211, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .passport-staff .item-list ul li {
     width: 100%;
     float: none;
     display: inline;
     padding: 2%;
   }
-  /* line 3222, ../sass/_layout-responsive.scss */
+  /* line 3221, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .view-calendar-2 ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
   }
-  /* line 3229, ../sass/_layout-responsive.scss */
+  /* line 3228, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .testimonial-photo {
     width: 45%;
     height: auto;
     float: left;
     margin-right: 4px;
   }
-  /* line 3236, ../sass/_layout-responsive.scss */
+  /* line 3235, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .student-details {
     width: 45%;
     font-style: italic;
     float: left;
   }
-  /* line 3241, ../sass/_layout-responsive.scss */
+  /* line 3240, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .testimonial-text {
     clear: left;
     /*width:90%;*/
     padding: 4% 5% 0 0;
   }
-  /* line 3249, ../sass/_layout-responsive.scss */
+  /* line 3248, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     /*2nd Sidebar vertical list of publications for departments, initiatves, interest groups and priority pages*/
   }
-  /* line 3253, ../sass/_layout-responsive.scss */
+  /* line 3252, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .block .view-publication-blocks .pubblock-list, .two-sidebars .region-sidebar-second .block .view-id-PSEP_links .pubblock-list {
     display: block !important;
   }
-  /* line 3255, ../sass/_layout-responsive.scss */
+  /* line 3254, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .block .view-publication-blocks .pubblock-list ul, .two-sidebars .region-sidebar-second .block .view-id-PSEP_links .pubblock-list ul {
     display: block !important;
     display: block !important;
   }
-  /* line 3257, ../sass/_layout-responsive.scss */
+  /* line 3256, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .block .view-publication-blocks .pubblock-list ul li, .two-sidebars .region-sidebar-second .block .view-id-PSEP_links .pubblock-list ul li {
     display: block !important;
     width: 90% !important;
   }
-  /* line 3266, ../sass/_layout-responsive.scss */
+  /* line 3265, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second #block-views-210e6048e21942227c4a4d3a48bf8e06 {
     display: none;
   }
 }
 @media all and (min-width: 980px) and (max-width: 1279px) {
-  /* line 3277, ../sass/_layout-responsive.scss */
+  /* line 3276, ../sass/_layout-responsive.scss */
   #main #navigation ul#muchomenu-1 {
     padding: 0;
   }
 
-  /* line 3282, ../sass/_layout-responsive.scss */
+  /* line 3281, ../sass/_layout-responsive.scss */
   #page .view-content .item-list-lac ul li {
     float: left;
     width: 32%;
   }
 
-  /* line 3288, ../sass/_layout-responsive.scss */
+  /* line 3287, ../sass/_layout-responsive.scss */
   .header .phone-nav {
     display: none;
   }
-  /* line 3292, ../sass/_layout-responsive.scss */
+  /* line 3291, ../sass/_layout-responsive.scss */
   .header #block-search-form {
     position: absolute;
     width: 30%;
     top: 53px;
     right: 25px;
   }
-  /* line 3298, ../sass/_layout-responsive.scss */
+  /* line 3297, ../sass/_layout-responsive.scss */
   .header #block-search-form .searchWiche .form-item input.form-text[type="text"] {
     width: 78%;
   }
 
-  /* line 3304, ../sass/_layout-responsive.scss */
+  /* line 3303, ../sass/_layout-responsive.scss */
   #main, #main-front {
     padding-top: 2em;
   }
-  /* line 3307, ../sass/_layout-responsive.scss */
+  /* line 3306, ../sass/_layout-responsive.scss */
   #main .wiche-region, #main-front .wiche-region {
     display: block !important;
   }
-  /* line 3311, ../sass/_layout-responsive.scss */
+  /* line 3310, ../sass/_layout-responsive.scss */
   #main .flexslider .slides > li, #main-front .flexslider .slides > li {
     overflow: hidden;
   }
-  /* line 3316, ../sass/_layout-responsive.scss */
+  /* line 3315, ../sass/_layout-responsive.scss */
   #main .region-highlighted #block-menu-menu-interstate-passport, #main-front .region-highlighted #block-menu-menu-interstate-passport {
     display: none;
   }
 
   /*front-page slide show*/
-  /* line 3324, ../sass/_layout-responsive.scss */
+  /* line 3323, ../sass/_layout-responsive.scss */
   #slideshow {
     display: table;
     width: 100%;
   }
-  /* line 3328, ../sass/_layout-responsive.scss */
+  /* line 3327, ../sass/_layout-responsive.scss */
   #slideshow .slide-row {
     display: table-row;
   }
-  /* line 3331, ../sass/_layout-responsive.scss */
+  /* line 3330, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides {
     background: #245eac;
     display: table-cell;
     width: 600px;
     vertical-align: top;
   }
-  /* line 3338, ../sass/_layout-responsive.scss */
+  /* line 3337, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block {
     margin: 0;
   }
-  /* line 3343, ../sass/_layout-responsive.scss */
+  /* line 3342, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider {
     border: none;
     margin-bottom: 0;
     position: relative;
   }
-  /* line 3349, ../sass/_layout-responsive.scss */
+  /* line 3348, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action {
     position: absolute;
     left: 14px;
     top: -10px;
+    text-shadow: 1px 1px #000;
+    letter-spacing: 1px;
+  }
+  /* line 3356, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 {
+    margin-bottom: 0;
+  }
+  /* line 3358, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:link, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:active, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:visited {
+    font-family: "Arial Black", Gadget, sans-serif;
     font-weight: bold;
     font-size: 1.4em;
     text-shadow: 1px 1px #000;
     letter-spacing: 1px;
-  }
-  /* line 3359, ../sass/_layout-responsive.scss */
-  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:link, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:active, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:visited {
     color: #fff;
   }
-  /* line 3362, ../sass/_layout-responsive.scss */
-  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:link:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:active:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:visited:hover {
-    color: #fff;
+  /* line 3366, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:link:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:active:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:visited:hover {
     text-decoration: underline;
-  }
-  /* line 3368, ../sass/_layout-responsive.scss */
-  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 {
-    margin-bottom: 0;
   }
   /* line 3371, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action p {
@@ -6855,22 +6859,23 @@ article .field-name-field-state-investment {
     top: -10px;
   }
   /* line 6383, ../sass/_layout-responsive.scss */
-  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:link, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:active, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:visited {
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 {
+    margin-bottom: 0;
+  }
+  /* line 6385, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:link, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:active, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:visited {
     font-family: "Arial Black", Gadget, sans-serif;
     font-weight: bold;
     font-size: 1.5em;
+    color: black;
     text-shadow: 1px 1px #000;
     letter-spacing: 1px;
     color: #fff;
   }
-  /* line 6391, ../sass/_layout-responsive.scss */
-  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:link:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:active:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action a:visited:hover {
+  /* line 6394, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:link:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:active:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:visited:hover {
     color: #fff;
     text-decoration: underline;
-  }
-  /* line 6397, ../sass/_layout-responsive.scss */
-  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 {
-    margin-bottom: 0;
   }
   /* line 6400, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action p {
