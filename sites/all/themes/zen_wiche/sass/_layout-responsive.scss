@@ -43,7 +43,7 @@ $zen-auto-include-item-base: false;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  border:1px solid #ccc;
+  /*border:1px solid #ccc;*/
   
   /*copyright*/
 .copyright{
@@ -76,11 +76,11 @@ $zen-auto-include-item-base: false;
 
 
 #page{
-	background: #fff url(../images/page-bg.png) repeat-x 0 0;
+	/*background: #fff url(../images/page-bg.png) repeat-x 0 0;*/
      /*font-size: 0.9em;
    line-height: 1.5em;*/
 	
-	
+	padding-top:4px;
 	/*style unordered lists in views*/
 	
 	.view-wiche-tags{
@@ -724,7 +724,7 @@ table#wiche-table-side-header{
 
 #tag{
     padding-left:10px;
-	margin:6px 0;
+	margin:0px 0px 6px;
 }
 
 #main-menu{
@@ -2667,23 +2667,22 @@ article table#psep-support-fees{
 					position:absolute;
 					left:14px;
 					top:-10px;
-					font-weight:bold;
-					font-size:1.3em;
-					text-shadow: 1px 1px #000;
-					letter-spacing:1px;
 					
-					
-					a:link, a:active, a:visited{
-							color:#fff;
-						
-							&:hover{
-								text-decoration:underline;
+						h3{
+							margin-bottom:0;
+								a:link, a:active, a:visited{
+									font-family: "Arial Black", Gadget, sans-serif;
+									font-weight:bold;
+									font-size:1.3em;
+									text-shadow: 1px 1px #000;
+									letter-spacing:1px;
+									color:#fff;
+
+									&:hover{
+										text-decoration:underline;
+									}
+								}
 							}
-						}
-					
-					h3{
-						margin-bottom:0;
-					}
 					p{
 						margin:8px 0 0 0;
 						line-height:1.1em;
@@ -3350,24 +3349,25 @@ article table#psep-support-fees{
 					position:absolute;
 					left:14px;
 					top:-10px;
-					font-weight:bold;
-					font-size:1.4em;
 					text-shadow: 1px 1px #000;
 					letter-spacing:1px;
 					
 					
-					a:link, a:active, a:visited{
-							color:#fff;
-						
-							&:hover{
-								color:#fff;
-								text-decoration:underline;
-							}
-						}
-					
 					h3{
 						margin-bottom:0;
-					}
+							a:link, a:active, a:visited{
+								font-family: "Arial Black", Gadget, sans-serif;
+								font-weight:bold;
+								font-size:1.4em;
+								text-shadow: 1px 1px #000;
+								letter-spacing:1px;
+								color:#fff;
+
+									&:hover{
+										text-decoration:underline;
+									}
+								}
+							}
 					p{
 						margin:8px 0 0 0;
 						line-height:1.1em;
@@ -6379,29 +6379,29 @@ article .field-name-field-state-investment{
 					position:absolute;
 					left:14px;
 					top:-10px;
-	
-					a:link, a:active, a:visited{
-						 font-family:"Arial Black", Gadget, sans-serif;
-						 font-weight:bold;
-						 font-size:1.5em;
-						 text-shadow: 1px 1px #000;
-						 letter-spacing:1px;
-						 color:#fff;
-						
-							&:hover{
-								color:#fff;
-								text-decoration:underline;
-							}
-						}
 					
-					h3{
-						margin-bottom:0;
-					}
+						h3{
+							margin-bottom:0;
+								a:link, a:active, a:visited{
+									font-family:"Arial Black", Gadget, sans-serif;
+									font-weight:bold;
+									font-size:1.5em;
+									color: black;
+									text-shadow: 1px 1px #000;
+									letter-spacing:1px;
+									color:#fff;
+
+										&:hover{
+											color:#fff;
+											text-decoration:underline;
+										}
+									}
+							}
 					p{
 						margin:8px 0 0 0;
 						line-height:1.1em;
 					}
-				}
+				}//end call to action
 			
 			.views-field-field-photo-credit{
 				background:rgba(0,0,0,.25);
