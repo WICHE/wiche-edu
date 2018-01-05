@@ -10179,7 +10179,7 @@ ol.sep-by-numbers > li:before {
   text-align: right;
   padding-top: 9px;
   position: relative;
-  right: -20px;
+  /*right: -20px;*/
 }
 
 /* line 10014, ../sass/_layout-responsive.scss */
