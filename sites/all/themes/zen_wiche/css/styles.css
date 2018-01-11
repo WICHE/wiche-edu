@@ -10217,7 +10217,7 @@ ol.sep-by-numbers > li:before {
 /* line 10038, ../sass/_layout-responsive.scss */
 .rssfeed .view-header {
   border-bottom: 1px solid #225aa8;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 /* line 10041, ../sass/_layout-responsive.scss */
 .rssfeed .view-header p {
@@ -10225,9 +10225,9 @@ ol.sep-by-numbers > li:before {
 }
 /* line 10045, ../sass/_layout-responsive.scss */
 .rssfeed .views-field-title {
-  padding-bottom: 8px;
+  padding-bottom: 2px;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
 /* line 10050, ../sass/_layout-responsive.scss */
 .rssfeed .views-field-title em {
@@ -10237,7 +10237,7 @@ ol.sep-by-numbers > li:before {
 .rssfeed .views-field-title h3 {
   font-size: 1em;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 /* line 10059, ../sass/_layout-responsive.scss */
 .rssfeed .views-field-title .rss-description {
