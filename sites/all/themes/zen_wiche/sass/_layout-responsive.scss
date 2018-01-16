@@ -3306,7 +3306,7 @@ article table#psep-support-fees{
 	 }
 	 
 	 /*front-page slide show*/
-#slideshow{
+/*#slideshow{
 	display:table;
 	width:100%;
 	
@@ -3334,7 +3334,7 @@ article table#psep-support-fees{
 				.views-field-field-call-to-action{
 					position:absolute;
 					left:14px;
-					top:-10px;
+					bottom: 10px;
 					text-shadow: 1px 1px #000;
 					letter-spacing:1px;
 					
@@ -3454,7 +3454,7 @@ article table#psep-support-fees{
 			}
 		}
 		
-	}// end #slideshow
+	}// end #slideshow*/
 
   /*Page Views, Exposed filters custom css*/
 
@@ -6367,7 +6367,7 @@ article .field-name-field-state-investment{
 			overflow:hidden;
 			position:relative;
 			border-radius:0px;
-			
+			#flexslider_views_slideshow_main_front_page_banner_slides-block_1
 				.views-field-field-call-to-action{
 					position:absolute;
 					left:14px;
