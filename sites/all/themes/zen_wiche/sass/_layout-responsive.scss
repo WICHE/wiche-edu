@@ -3316,7 +3316,8 @@ article table#psep-support-fees{
 			.slides{
 				background:#245eac;
 				display:table-cell;
-				width:600px;
+				width:780px;
+				height:358px;
 				vertical-align:top;
 				
 				.region-slides{
@@ -3347,7 +3348,7 @@ article table#psep-support-fees{
 								font-size: 1.4em;
 								text-shadow: 1px 1px #000;
 								letter-spacing:1px;
-								color:#fff;
+								color:#f3b927;
 
 									&:hover{
 										text-decoration:underline;
@@ -3365,24 +3366,6 @@ article table#psep-support-fees{
 			}
 		}
 		
-		/*.views-field-field-photo-credit{
-					width:100%;
-					background:rgba(0,0,0,.25);
-					position:absolute;
-					left:0;
-					padding-left:14px;
-					bottom:0;
-					font-size:.7em;
-					font-weight:400;
-					letter-spacing:1px;
-					line-height:1.2em;
-					color:#fff;
-					text-shadow: .5px .5px #000;
-			
-				.field-content{
-					width:95%;
-				}
-			}*/
 		
 		.flex-control-nav{
 			display:none;
@@ -3392,11 +3375,6 @@ article table#psep-support-fees{
 }			
 		}
 				
-				img{
-					width:100%;
-					max-width:600px;
-					height:auto;
-				}
 		}
 			
 			.wiche-mission-self-id{
