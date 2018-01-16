@@ -3316,7 +3316,6 @@ article table#psep-support-fees{
 			.slides{
 				display:table-cell;
 				width:780px;
-				height:auto;
 				vertical-align:top;
 				
 				img{
@@ -3339,7 +3338,7 @@ article table#psep-support-fees{
 				.views-field-field-call-to-action{
 					position:absolute;
 					left:14px;
-					top:-10px;
+					bottom:10px;
 					text-shadow: 1px 1px #000;
 					letter-spacing:1px;
 					
@@ -6327,7 +6326,6 @@ article .field-name-field-state-investment{
 				/*background:#245eac;*/
 				display:table-cell;
 				width:780px;
-				height:auto;
 				overflow:hidden;
 				vertical-align:top;
 				
