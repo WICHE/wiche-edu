@@ -3336,7 +3336,7 @@ table#physics-lab-activities tr:nth-child(even) {
   /* line 2649, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides {
     display: table-cell;
-    max-width: 600px;
+    /*max-width:600px;*/
     vertical-align: top;
   }
   /* line 2655, ../sass/_layout-responsive.scss */
@@ -3403,7 +3403,7 @@ table#physics-lab-activities tr:nth-child(even) {
   /* line 2725, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides img {
     width: 100%;
-    max-width: 600px;
+    /*max-width:600px;*/
     height: auto;
   }
   /* line 2732, ../sass/_layout-responsive.scss */
