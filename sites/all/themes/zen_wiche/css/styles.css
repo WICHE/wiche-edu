@@ -3976,7 +3976,7 @@ table#physics-lab-activities tr:nth-child(even) {
   #slideshow .slide-row .slides {
     display: table-cell;
     width: 780px;
-    height: 358px;
+    height: auto;
     vertical-align: top;
   }
   /* line 3322, ../sass/_layout-responsive.scss */
@@ -6802,7 +6802,7 @@ article .field-name-field-state-investment {
     /*background:#245eac;*/
     display: table-cell;
     width: 780px;
-    height: 358px;
+    height: auto;
     overflow: hidden;
     vertical-align: top;
   }
