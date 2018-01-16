@@ -34,7 +34,7 @@ services:
       - container:amazeeio-ssh-agent
     container_name: *hostname
     ports:
-      - "3306"
+      - "3307"
     networks:
       - amazeeio-network
       - default
