@@ -2690,7 +2690,7 @@ article table#psep-support-fees{
 					}
 			}
 			
-			.views-field-field-photo-credit{
+			/*.views-field-field-photo-credit{
 					width:100%;
 					background:rgba(0,0,0,.25);
 					position:absolute;
@@ -2707,7 +2707,7 @@ article table#psep-support-fees{
 				.field-content{
 					width:95%;
 				}
-			}
+			}*/
 			
 			.flex-direction-nav{
 				//display:none;
@@ -2718,7 +2718,7 @@ article table#psep-support-fees{
 			display:none;
 		}
 		
-	}
+	}//end #flexslider_views...
 }			
 		}
 				
@@ -2731,8 +2731,8 @@ article table#psep-support-fees{
 			
 			.wiche-mission-self-id{
 				display:table-cell;
-				max-width:600px;
-				background:#245eac;
+				width:35%;
+				background-color:rgba(33,90,168,0.75);
 				vertical-align:top;
 				
 				.region-self-id{
@@ -2753,7 +2753,7 @@ article table#psep-support-fees{
 					list-style:none;
 					
 					li{
-						background:url(images/white-arrow-bullet.png) 0 5px no-repeat;
+						background:url(images/white-arrow-bullet.png) 0 0 no-repeat;
 						padding-left:20px;
 						margin:3px 0;
 						a:link,a:visited,a:active{
@@ -2764,23 +2764,8 @@ article table#psep-support-fees{
 						}
 					}
 				}
-				
-				.mission{
-								background:#ccc;
-								width:100%;
-								h2{
-									font-family: 'humnst777_cn_btregular', sans-serif;
-									font-weight:100;
-									margin:0;
-									padding:10px;
-									color:#000;
-									font-size:.8em;
-									line-height:1em;
-								}
-								
-							}
-			}
-		}
+			}//end .wiche-mission-self...
+	}//end slide-row
 		
 		
 	}// end #slideshow
@@ -3380,7 +3365,7 @@ article table#psep-support-fees{
 			}
 		}
 		
-		.views-field-field-photo-credit{
+		/*.views-field-field-photo-credit{
 					width:100%;
 					background:rgba(0,0,0,.25);
 					position:absolute;
@@ -3397,7 +3382,7 @@ article table#psep-support-fees{
 				.field-content{
 					width:95%;
 				}
-			}
+			}*/
 		
 		.flex-control-nav{
 			display:none;
@@ -3416,8 +3401,8 @@ article table#psep-support-fees{
 			
 			.wiche-mission-self-id{
 				display:table-cell;
-				max-width:600px;
-				background:#245eac;
+				width:35%;
+				background-color:rgba(33,90,168,0.75);
 				vertical-align:top;
 				
 				.region-self-id{
@@ -6379,7 +6364,7 @@ article .field-name-field-state-investment{
 				.views-field-field-call-to-action{
 					position:absolute;
 					left:14px;
-					top:-10px;
+					bottom:10px;
 					
 						h3{
 							margin-bottom:0;
@@ -6403,7 +6388,7 @@ article .field-name-field-state-investment{
 					}
 				}//end call to action
 			
-			.views-field-field-photo-credit{
+			/*.views-field-field-photo-credit{
 				background:rgba(0,0,0,.25);
 				width:100%;
 				position:absolute;
@@ -6419,7 +6404,7 @@ article .field-name-field-state-investment{
 				.field-content{
 					width:95%;
 				}
-			}
+			}*/
 		
 			
 			.flex-direction-nav{
@@ -6438,15 +6423,16 @@ article .field-name-field-state-investment{
 		}
 				
 				img{
+					background:#000;
 					width:100%;
-					max-width:600px;
+					width:600px;
 					height:auto;
 				}
 		}
 			
 			.wiche-mission-self-id{
 				display:table-cell;
-				max-width:600px;
+				width:35%;
 				background-color:rgba(34,90,168,0.75);
 				vertical-align:top;
 				
@@ -6470,7 +6456,7 @@ article .field-name-field-state-investment{
 					list-style:none;
 					
 					li{
-						background:url(images/white-arrow-bullet-lg.png) 0 8px no-repeat;
+						background:url(images/white-arrow-bullet-lg.png) 0 0 no-repeat;
 						padding-left:20px;
 						margin:6px 0;
 						a:link,a:visited,a:active{
