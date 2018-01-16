@@ -6867,7 +6867,7 @@ article .field-name-field-state-investment {
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action {
     position: absolute;
     left: 14px;
-    bottom: -10px;
+    bottom: 10px;
   }
   /* line 6376, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 {
