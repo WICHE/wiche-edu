@@ -10220,6 +10220,12 @@ ol.sep-by-numbers > li:before {
   padding-top: 0 !important;
 }
 
+/*knocking blurb on front page, bottom right sidebar*/
+/* line 10048, ../sass/_layout-responsive.scss */
+#block-views-publication-blocks-block-15 .views-field-field-pub-notes {
+  margin-top: 0;
+}
+
 /*====================================
 		MUCHO MENU STYLING
 ======================================*/
