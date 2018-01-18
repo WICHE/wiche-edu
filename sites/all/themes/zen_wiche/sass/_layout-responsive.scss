@@ -10041,3 +10041,11 @@ ol.sep-by-numbers > li:before {
 .region-sidebar-first{
 	padding-top:0!important;
 }
+
+
+/*knocking blurb on front page, bottom right sidebar*/
+#block-views-publication-blocks-block-15{
+	.views-field-field-pub-notes{
+		margin-top:0;
+	}
+}
