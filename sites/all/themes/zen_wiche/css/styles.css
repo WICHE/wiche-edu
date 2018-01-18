@@ -10221,8 +10221,8 @@ ol.sep-by-numbers > li:before {
 }
 
 /*knocking blurb on front page, bottom right sidebar*/
-/* line 10048, ../sass/_layout-responsive.scss */
-#block-views-publication-blocks-block-15 .views-field-field-pub-notes {
+/* line 10049, ../sass/_layout-responsive.scss */
+#block-views-publication-blocks-block-15 .views-field-field-pub-notes p {
   margin-top: 0;
 }
 
