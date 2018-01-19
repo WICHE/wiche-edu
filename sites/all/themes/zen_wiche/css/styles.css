@@ -10226,6 +10226,15 @@ ol.sep-by-numbers > li:before {
   margin-top: 0;
 }
 
+/* line 10055, ../sass/_layout-responsive.scss */
+.flexslider-views-slideshow-main-frame-row .views-field-field-call-to-action {
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  position: absolute;
+  padding: 0 14px;
+  bottom: 0;
+}
+
 /*====================================
 		MUCHO MENU STYLING
 ======================================*/
