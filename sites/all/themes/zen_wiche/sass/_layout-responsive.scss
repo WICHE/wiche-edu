@@ -2664,9 +2664,9 @@ article table#psep-support-fees{
 			position:relative;
 			
 				.views-field-field-call-to-action{
-					position:absolute;
+					/*position:absolute;
 					left:14px;
-					top:-10px;
+					top:-10px;*/
 					
 						h3{
 							margin-bottom:0;
@@ -3336,11 +3336,11 @@ article table#psep-support-fees{
 			position:relative;
 			
 				.views-field-field-call-to-action{
-					position:absolute;
+					/*position:absolute;
 					left:14px;
 					bottom:10px;
 					text-shadow: 1px 1px #000;
-					letter-spacing:1px;
+					letter-spacing:1px;*/
 					
 					
 					h3{
@@ -6349,9 +6349,9 @@ article .field-name-field-state-investment{
 			border-radius:0px;
 			
 				.views-field-field-call-to-action{
-					position:absolute;
+					/*position:absolute;
 					left:14px;
-					bottom:10px;
+					bottom:10px;*/
 					
 						h3{
 							margin-bottom:0;
@@ -10056,6 +10056,9 @@ ol.sep-by-numbers > li:before {
 	background: rgba(0,0,0,0.25);
     width: 100%;
     position: absolute;
-    padding: 0 14px;
+    padding: 12px 14px;
     bottom: 0;
+	h3{
+		margin-top:0;
+	}
 }
