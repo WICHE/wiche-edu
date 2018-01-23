@@ -30,3 +30,4 @@ sites/*/private
 /web.config
 /wichestyle-new.css
 *.sql
+exit
