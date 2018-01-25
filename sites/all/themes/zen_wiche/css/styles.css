@@ -9870,11 +9870,10 @@ ol.sep-by-numbers > li:before {
   width: 780px;
   overflow: hidden;
   vertical-align: top;
-}
-/* line 9663, ../sass/_layout-responsive.scss */
-#slideshow .slide-row .slides img {
-  width: 100%;
-  max-width: 780px;
+  /*img{
+  	width:100%;
+  	max-width:780px;
+  }*/
 }
 /* line 9669, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block {
