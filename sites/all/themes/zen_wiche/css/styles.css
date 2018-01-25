@@ -9901,7 +9901,7 @@ ol.sep-by-numbers > li:before {
 }
 /* line 9703, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides {
-  /*background:#245eac;*/
+  background: #245eac;
   display: table-cell;
   max-width: 65%;
   overflow: hidden;
