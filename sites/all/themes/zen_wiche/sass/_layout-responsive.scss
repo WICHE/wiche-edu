@@ -2600,13 +2600,22 @@ article table#psep-support-fees{
 			display:block!important;
 	  		}
 		  
-		   #slideshow .mission {
-			display:none;
-		}
+		  #slideshow{
+			  
+			 .mission {
+					display:none;
+				}
+			  
+			  .slides {
+					max-width:610px;
+				}
+			  
+			  .wiche-mission-self-id{
+				  padding:5px 75px 0 0;
+			  }
+		  }
+		
 		  
-		  #slideshow .slides {
-			max-width:610px;
-		}
 		  
 		  .region-highlighted{
 			  #block-menu-menu-interstate-passport{
