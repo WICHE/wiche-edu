@@ -3180,21 +3180,41 @@ article table#psep-support-fees{
 			display:block!important;
 		  }
 		 
-		  #slideshow{
+		 /* #slideshow{
 			  
 			 .wiche-mission-self-id .region-self-id .mission {
 					font-size: 1em;
 				 	line-height:1.2;
-				}
+				}*/
 			  
 			  /*.slides {
 					max-width:610px;
 				}*/
 			  
-			  .wiche-mission-self-id{
+			  /*.wiche-mission-self-id{
 				  padding:5px 75px 0 0;
 			  }
-		  }
+		  }*/
+		 
+		  #slideshow{
+			  
+			 .wiche-mission-self-id{
+				  padding:5px 75px 0 0;
+				  
+					  ul li a{
+						  	font-size:80%;
+					 	 }
+				.region-self-id{ 
+					 .mission {
+							padding: 8px 0;
+							margin: 10px auto 20px auto;
+							font-size: 1em;
+							line-height:1.2;
+						}
+
+					  }
+				  }
+		     }
 		 
 		 .region-highlighted{
 			  #block-menu-menu-interstate-passport{
@@ -6010,26 +6030,6 @@ article .field-name-field-state-investment{
 				  display:none;
 			  }
 		  }
-		 
-		  #slideshow{
-			  
-			 .wiche-mission-self-id{
-				  padding:5px 75px 0 0;
-				  
-					  ul li a{
-						  	font-size:80%;
-					 	 }
-				.region-self-id{ 
-					 .mission {
-							padding: 8px 0;
-							margin: 10px auto 20px auto;
-							font-size: 1em;
-							line-height:1.2;
-						}
-
-					  }
-				  }
-		     }
 		 
 		 #programs-departments{
 				overflow:hidden;

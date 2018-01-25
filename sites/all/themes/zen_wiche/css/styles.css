@@ -3840,55 +3840,68 @@ table#physics-lab-activities tr:nth-child(even) {
   /* line 3176, ../sass/_layout-responsive.scss */
   #main, #main-front {
     padding-top: 2em;
+   /* #slideshow{
+  	  
+  	 .wiche-mission-self-id .region-self-id .mission {
+  			font-size: 1em;
+  		 	line-height:1.2;
+  		}*/
+  /*.slides {
+		max-width:610px;
+	}*/
+    	  /*.wiche-mission-self-id{
+    		  padding:5px 75px 0 0;
+    	  }
+      }*/
   }
   /* line 3179, ../sass/_layout-responsive.scss */
   #main .wiche-region, #main-front .wiche-region {
     display: block !important;
   }
-  /* line 3183, ../sass/_layout-responsive.scss */
-  #main #slideshow, #main-front #slideshow {
-  /*.slides {
-		max-width:610px;
-	}*/
-  }
-  /* line 3185, ../sass/_layout-responsive.scss */
-  #main #slideshow .wiche-mission-self-id .region-self-id .mission, #main-front #slideshow .wiche-mission-self-id .region-self-id .mission {
-    font-size: 1em;
-    line-height: 1.2;
-  }
-  /* line 3194, ../sass/_layout-responsive.scss */
+  /* line 3201, ../sass/_layout-responsive.scss */
   #main #slideshow .wiche-mission-self-id, #main-front #slideshow .wiche-mission-self-id {
     padding: 5px 75px 0 0;
   }
-  /* line 3200, ../sass/_layout-responsive.scss */
+  /* line 3204, ../sass/_layout-responsive.scss */
+  #main #slideshow .wiche-mission-self-id ul li a, #main-front #slideshow .wiche-mission-self-id ul li a {
+    font-size: 80%;
+  }
+  /* line 3208, ../sass/_layout-responsive.scss */
+  #main #slideshow .wiche-mission-self-id .region-self-id .mission, #main-front #slideshow .wiche-mission-self-id .region-self-id .mission {
+    padding: 8px 0;
+    margin: 10px auto 20px auto;
+    font-size: 1em;
+    line-height: 1.2;
+  }
+  /* line 3220, ../sass/_layout-responsive.scss */
   #main .region-highlighted #block-menu-menu-interstate-passport, #main-front .region-highlighted #block-menu-menu-interstate-passport {
     display: none;
   }
 
   /*Page Views, Exposed filters custom css*/
-  /* line 3210, ../sass/_layout-responsive.scss */
+  /* line 3230, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 {
     position: relative;
   }
-  /* line 3214, ../sass/_layout-responsive.scss */
+  /* line 3234, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form #edit-tid-wrapper {
     float: none;
   }
-  /* line 3218, ../sass/_layout-responsive.scss */
+  /* line 3238, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form #edit-field-bio-projectcontact-tid-wrapper {
     float: none;
   }
-  /* line 3221, ../sass/_layout-responsive.scss */
+  /* line 3241, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form #edit-field-bio-projectcontact-tid-wrapper select {
     width: 100%;
   }
-  /* line 3226, ../sass/_layout-responsive.scss */
+  /* line 3246, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form .views-submit-button {
     /*position:absolute;
     top:85px;
     left:0;*/
   }
-  /* line 3232, ../sass/_layout-responsive.scss */
+  /* line 3252, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form .views-reset-button {
     /*position:absolute;
     top:85px;
@@ -3896,13 +3909,13 @@ table#physics-lab-activities tr:nth-child(even) {
   }
 
   /*publications list on front page*/
-  /* line 3244, ../sass/_layout-responsive.scss */
+  /* line 3264, ../sass/_layout-responsive.scss */
   .wiche-publications {
     display: table;
     border-collapse: separate;
     border-spacing: 5px;
   }
-  /* line 3246, ../sass/_layout-responsive.scss */
+  /* line 3266, ../sass/_layout-responsive.scss */
   .wiche-publications ul {
     display: table-row;
     list-style: none;
@@ -3910,30 +3923,30 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 0;
     /*overflow:hidden;*/
   }
-  /* line 3252, ../sass/_layout-responsive.scss */
+  /* line 3272, ../sass/_layout-responsive.scss */
   .wiche-publications ul li {
     display: table-cell;
     width: 18%;
     padding: 8px;
     margin-left: 16px;
   }
-  /* line 3258, ../sass/_layout-responsive.scss */
+  /* line 3278, ../sass/_layout-responsive.scss */
   .wiche-publications ul li .views-field-title {
     width: 100%;
     padding-left: 0;
   }
-  /* line 3263, ../sass/_layout-responsive.scss */
+  /* line 3283, ../sass/_layout-responsive.scss */
   .wiche-publications ul li .views-field-title .field-content a:link, .wiche-publications ul li .views-field-title .field-content a:visited {
     color: #000;
     text-decoration: none;
     font-weight: 600;
     line-height: 1.2em;
   }
-  /* line 3269, ../sass/_layout-responsive.scss */
+  /* line 3289, ../sass/_layout-responsive.scss */
   .wiche-publications ul li .views-field-title .field-content a:hover {
     text-decoration: underline;
   }
-  /* line 3276, ../sass/_layout-responsive.scss */
+  /* line 3296, ../sass/_layout-responsive.scss */
   .wiche-publications ul li figcaption.field-tag {
     clear: left;
     font-style: italic;
@@ -3942,12 +3955,12 @@ table#physics-lab-activities tr:nth-child(even) {
     padding-top: 8px;
     margin-top: 8px;
   }
-  /* line 3287, ../sass/_layout-responsive.scss */
+  /* line 3307, ../sass/_layout-responsive.scss */
   .wiche-publications li:first-child {
     margin-left: 0px;
   }
 
-  /* line 3293, ../sass/_layout-responsive.scss */
+  /* line 3313, ../sass/_layout-responsive.scss */
   .header .region-phone-nav {
     display: none;
   }
@@ -3955,7 +3968,7 @@ table#physics-lab-activities tr:nth-child(even) {
   /*
   * The layout when there is only one sidebar, the left one.
   */
-  /* line 3305, ../sass/_layout-responsive.scss */
+  /* line 3325, ../sass/_layout-responsive.scss */
   .sidebar-first #content {
     /* Span 2 columns, starting in 2nd column from left. */
     float: left;
@@ -3964,15 +3977,15 @@ table#physics-lab-activities tr:nth-child(even) {
     margin-right: -60%;
     /*hide teaser titles on passport/information-resources*/
   }
-  /* line 3308, ../sass/_layout-responsive.scss */
+  /* line 3328, ../sass/_layout-responsive.scss */
   .sidebar-first #content ul li .field-content p {
     font-size: 80%;
   }
-  /* line 3314, ../sass/_layout-responsive.scss */
+  /* line 3334, ../sass/_layout-responsive.scss */
   .sidebar-first #content .view-passport-information-resources article header .node-title {
     display: none;
   }
-  /* line 3319, ../sass/_layout-responsive.scss */
+  /* line 3339, ../sass/_layout-responsive.scss */
   .sidebar-first #content .ncbanner {
     background: url("/sites/all/themes/zen_wiche/images/NewsCapWebBAnner980.png") no-repeat;
     width: 705px;
@@ -3980,7 +3993,7 @@ table#physics-lab-activities tr:nth-child(even) {
     position: relative;
     margin: 20px auto;
   }
-  /* line 3327, ../sass/_layout-responsive.scss */
+  /* line 3347, ../sass/_layout-responsive.scss */
   .sidebar-first #content .Tagline {
     position: absolute;
     top: 226px;
@@ -3988,7 +4001,7 @@ table#physics-lab-activities tr:nth-child(even) {
     display: table-cell;
     text-align: center;
   }
-  /* line 3334, ../sass/_layout-responsive.scss */
+  /* line 3354, ../sass/_layout-responsive.scss */
   .sidebar-first #content .Tagline h3.newstag {
     font-family: Verdana, sans-serif;
     text-align: center;
@@ -3996,92 +4009,92 @@ table#physics-lab-activities tr:nth-child(even) {
     font-size: 1.2em;
     line-heightL: 1.3em;
   }
-  /* line 3343, ../sass/_layout-responsive.scss */
+  /* line 3363, ../sass/_layout-responsive.scss */
   .sidebar-first #content h2 {
     margin: 0;
   }
-  /* line 3347, ../sass/_layout-responsive.scss */
+  /* line 3367, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-photo, .sidebar-first #content .newscap-photo {
     float: left;
     margin: 4px 16px 0 0px;
     max-width: 220px;
     height: auto;
   }
-  /* line 3353, ../sass/_layout-responsive.scss */
+  /* line 3373, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-photo p.caption, .sidebar-first #content .newscap-photo p.caption {
     margin: 0 0 4px !important;
   }
-  /* line 3358, ../sass/_layout-responsive.scss */
+  /* line 3378, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-headshot {
     float: left;
     margin: 4px 16px 0 0px;
     max-width: 125px;
     height: auto;
   }
-  /* line 3364, ../sass/_layout-responsive.scss */
+  /* line 3384, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-headshot p.caption {
     margin: 0 0 4px !important;
     font-size: .8em;
     line-height: .9em;
   }
-  /* line 3371, ../sass/_layout-responsive.scss */
+  /* line 3391, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-headshot-right {
     float: right;
     margin: 4px 0 0 16px;
     max-width: 125px;
     height: auto;
   }
-  /* line 3377, ../sass/_layout-responsive.scss */
+  /* line 3397, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-headshot-right p.caption {
     margin: 0 0 4px !important;
     font-size: .8em;
     line-height: .9em;
   }
-  /* line 3382, ../sass/_layout-responsive.scss */
+  /* line 3402, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-headshot {
     float: left;
     margin: 4px 16px 0 0px;
     max-width: 125px;
     height: auto;
   }
-  /* line 3388, ../sass/_layout-responsive.scss */
+  /* line 3408, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-headshot p.caption {
     margin: 0 0 4px !important;
     font-size: .8em;
     line-height: .9em;
   }
-  /* line 3395, ../sass/_layout-responsive.scss */
+  /* line 3415, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-headshot-right {
     float: right;
     margin: 4px 0 0 16px;
     max-width: 125px;
     height: auto;
   }
-  /* line 3401, ../sass/_layout-responsive.scss */
+  /* line 3421, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-headshot-right p.caption {
     margin: 0 0 4px !important;
     font-size: .8em;
     line-height: .9em;
   }
-  /* line 3409, ../sass/_layout-responsive.scss */
+  /* line 3429, ../sass/_layout-responsive.scss */
   .sidebar-first #content .newscap-photo-horizontal .nc-horizontal-img {
     width: 45%;
     float: left;
     padding: 12px;
   }
-  /* line 3413, ../sass/_layout-responsive.scss */
+  /* line 3433, ../sass/_layout-responsive.scss */
   .sidebar-first #content .newscap-photo-horizontal .nc-horizontal-img img {
     max-width: 320px;
     height: auto;
     overflow: hidden;
   }
-  /* line 3422, ../sass/_layout-responsive.scss */
+  /* line 3442, ../sass/_layout-responsive.scss */
   .sidebar-first #content .newscap-photo-horizontal .nc-horizontal-img p.caption {
     margin: 0 0 4px !important;
     font-size: .9em;
     line-height: 1.1em;
   }
-  /* line 3432, ../sass/_layout-responsive.scss */
+  /* line 3452, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -4090,7 +4103,7 @@ table#physics-lab-activities tr:nth-child(even) {
     margin-right: -20%;
     width: 23.5% !important;
   }
-  /* line 3436, ../sass/_layout-responsive.scss */
+  /* line 3456, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first ul.newscap-menu {
     position: fixed;
     list-style: none;
@@ -4103,15 +4116,15 @@ table#physics-lab-activities tr:nth-child(even) {
     line-height: 1.1em;
     margin: 0 0 0 16px;
   }
-  /* line 3447, ../sass/_layout-responsive.scss */
+  /* line 3467, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first ul.newscap-menu li {
     margin-bottom: 12px;
   }
-  /* line 3449, ../sass/_layout-responsive.scss */
+  /* line 3469, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first ul.newscap-menu li strong {
     font-weight: 700;
   }
-  /* line 3456, ../sass/_layout-responsive.scss */
+  /* line 3476, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first ul.newscap-menu h2 {
     color: #1c4884;
     border-bottom: 2px solid #ffcc00;
@@ -4121,7 +4134,7 @@ table#physics-lab-activities tr:nth-child(even) {
   /*
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 3471, ../sass/_layout-responsive.scss */
+  /* line 3491, ../sass/_layout-responsive.scss */
   .sidebar-second #content {
     /* Span 2 columns, starting in 1st column from left. */
     float: left;
@@ -4129,7 +4142,7 @@ table#physics-lab-activities tr:nth-child(even) {
     margin-left: 0%;
     margin-right: -40%;
   }
-  /* line 3476, ../sass/_layout-responsive.scss */
+  /* line 3496, ../sass/_layout-responsive.scss */
   .sidebar-second .region-sidebar-second {
     /* Span 1 column, starting in 3rd column from left. */
     float: left;
@@ -4141,13 +4154,13 @@ table#physics-lab-activities tr:nth-child(even) {
   /*
    * The layout when there are two sidebars.
    */
-  /* line 3485, ../sass/_layout-responsive.scss */
+  /* line 3505, ../sass/_layout-responsive.scss */
   .two-sidebars {
     	  /*
        * The layout when there are no sidebars.
        */
   }
-  /* line 3486, ../sass/_layout-responsive.scss */
+  /* line 3506, ../sass/_layout-responsive.scss */
   .two-sidebars #content {
     /* Span 3 columns, starting in 2nd column from left. */
     float: left;
@@ -4155,15 +4168,15 @@ table#physics-lab-activities tr:nth-child(even) {
     margin-left: 20%;
     margin-right: -80%;
   }
-  /* line 3490, ../sass/_layout-responsive.scss */
+  /* line 3510, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-tags li {
     border-bottom: 1px solid #ccc;
   }
-  /* line 3494, ../sass/_layout-responsive.scss */
+  /* line 3514, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-tags li:last-child {
     border-bottom: none;
   }
-  /* line 3506, ../sass/_layout-responsive.scss */
+  /* line 3526, ../sass/_layout-responsive.scss */
   .two-sidebars #main #content {
     float: left;
     width: 60%;
@@ -4175,11 +4188,11 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 0 16px;
     width: 55%;
   }
-  /* line 3508, ../sass/_layout-responsive.scss */
+  /* line 3528, ../sass/_layout-responsive.scss */
   .two-sidebars #main #content h1#page-title {
     margin-left: 16px;
   }
-  /* line 3519, ../sass/_layout-responsive.scss */
+  /* line 3539, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -4187,7 +4200,7 @@ table#physics-lab-activities tr:nth-child(even) {
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 3523, ../sass/_layout-responsive.scss */
+  /* line 3543, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second {
     /* Start a new row and span all 3 columns. */
     float: left;
@@ -4199,156 +4212,156 @@ table#physics-lab-activities tr:nth-child(even) {
     /*@include zen-clear();*/
     /*hide recent policy publications block because it looks awkward*/
   }
-  /* line 3529, ../sass/_layout-responsive.scss */
+  /* line 3549, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second #block-views-210e6048e21942227c4a4d3a48bf8e06 {
     /*display:none;*/
   }
 
-  /* line 3537, ../sass/_layout-responsive.scss */
+  /* line 3557, ../sass/_layout-responsive.scss */
   #content article.view-mode-full, #content .advanced-help-topic {
     padding: 0;
     /*custom css for table on /psep/supp-fees*/
   }
-  /* line 3540, ../sass/_layout-responsive.scss */
+  /* line 3560, ../sass/_layout-responsive.scss */
   #content article.view-mode-full ul li, #content article.view-mode-full ol li, #content .advanced-help-topic ul li, #content .advanced-help-topic ol li {
     /*font-size:12px;*/
     margin: 12px 0;
   }
-  /* line 3545, ../sass/_layout-responsive.scss */
+  /* line 3565, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .faux-four-col-table, #content .advanced-help-topic .faux-four-col-table {
     width: 80%;
     display: table;
     margin: 0 auto;
   }
-  /* line 3550, ../sass/_layout-responsive.scss */
+  /* line 3570, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .faux-four-col-table .four-col-col-one, #content .advanced-help-topic .faux-four-col-table .four-col-col-one {
     display: table-cell;
     vertical-align: top;
     width: 21%;
     padding: 2% 2% 2% 0;
   }
-  /* line 3557, ../sass/_layout-responsive.scss */
+  /* line 3577, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .faux-four-col-table .four-col-col-two, #content .advanced-help-topic .faux-four-col-table .four-col-col-two {
     display: table-cell;
     vertical-align: top;
     width: 21%;
     padding: 2%;
   }
-  /* line 3564, ../sass/_layout-responsive.scss */
+  /* line 3584, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .faux-four-col-table .four-col-col-three, #content .advanced-help-topic .faux-four-col-table .four-col-col-three {
     display: table-cell;
     vertical-align: top;
     width: 21%;
     padding: 2%;
   }
-  /* line 3571, ../sass/_layout-responsive.scss */
+  /* line 3591, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .faux-four-col-table .four-col-col-four, #content .advanced-help-topic .faux-four-col-table .four-col-col-four {
     display: table-cell;
     vertical-align: top;
     width: 21%;
     padding: 2% 0 2% 2%;
   }
-  /* line 3581, ../sass/_layout-responsive.scss */
+  /* line 3601, ../sass/_layout-responsive.scss */
   #content article.view-mode-full #psep-support, #content .advanced-help-topic #psep-support {
     border: 1px solid #ccc;
     padding: 16px;
     width: 80%;
     margin: 0 auto;
   }
-  /* line 3586, ../sass/_layout-responsive.scss */
+  /* line 3606, ../sass/_layout-responsive.scss */
   #content article.view-mode-full #psep-support table, #content .advanced-help-topic #psep-support table {
     margin: 0;
     padding: 0;
     width: 100%;
   }
-  /* line 3587, ../sass/_layout-responsive.scss */
+  /* line 3607, ../sass/_layout-responsive.scss */
   #content article.view-mode-full #psep-support table h2, #content .advanced-help-topic #psep-support table h2 {
     margin: 0 0 16px;
   }
-  /* line 3593, ../sass/_layout-responsive.scss */
+  /* line 3613, ../sass/_layout-responsive.scss */
   #content article.view-mode-full #psep-support table th, #content .advanced-help-topic #psep-support table th {
     border: none;
     color: #fff;
     background: #1c4884;
     font-size: 1.1em;
   }
-  /* line 3599, ../sass/_layout-responsive.scss */
+  /* line 3619, ../sass/_layout-responsive.scss */
   #content article.view-mode-full #psep-support table tr:nth-child(even), #content .advanced-help-topic #psep-support table tr:nth-child(even) {
     background: #ccc;
   }
-  /* line 3605, ../sass/_layout-responsive.scss */
+  /* line 3625, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .pub-top, #content .advanced-help-topic .pub-top {
     overflow: hidden;
   }
-  /* line 3607, ../sass/_layout-responsive.scss */
+  /* line 3627, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .pub-top .pub-left, #content .advanced-help-topic .pub-top .pub-left {
     float: left;
     width: 20%;
     margin: 0;
     padding: 0;
   }
-  /* line 3614, ../sass/_layout-responsive.scss */
+  /* line 3634, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .pub-top .pub-right, #content .advanced-help-topic .pub-top .pub-right {
     font-size: 12px;
     float: left;
     width: 50%;
   }
-  /* line 3621, ../sass/_layout-responsive.scss */
+  /* line 3641, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .pub-description, #content .advanced-help-topic .pub-description {
     /*table styling*/
   }
-  /* line 3625, ../sass/_layout-responsive.scss */
+  /* line 3645, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .pub-description table, #content .advanced-help-topic .pub-description table {
     border-collapse: separate;
     border-spacing: 10px;
   }
-  /* line 3627, ../sass/_layout-responsive.scss */
+  /* line 3647, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .pub-description table td, #content .advanced-help-topic .pub-description table td {
     margin: 4px 0;
     font-size: .9em;
   }
-  /* line 3633, ../sass/_layout-responsive.scss */
+  /* line 3653, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .pub-description table h2, #content .advanced-help-topic .pub-description table h2 {
     margin: 0;
   }
-  /* line 3640, ../sass/_layout-responsive.scss */
+  /* line 3660, ../sass/_layout-responsive.scss */
   #content article.view-mode-full .pub-description table h3 a, #content .advanced-help-topic .pub-description table h3 a {
     margin-top: 0;
   }
-  /* line 3648, ../sass/_layout-responsive.scss */
+  /* line 3668, ../sass/_layout-responsive.scss */
   #content .region-highlighted .hot-mh-pubs {
     display: table;
     width: 100%;
   }
-  /* line 3651, ../sass/_layout-responsive.scss */
+  /* line 3671, ../sass/_layout-responsive.scss */
   #content .region-highlighted .hot-mh-pubs .col-one {
     display: table-cell;
     vertical-align: top;
     padding: 2%;
   }
-  /* line 3656, ../sass/_layout-responsive.scss */
+  /* line 3676, ../sass/_layout-responsive.scss */
   #content .region-highlighted .hot-mh-pubs .col-one .caption {
     font-size: .8em;
     font-style: italic;
   }
-  /* line 3662, ../sass/_layout-responsive.scss */
+  /* line 3682, ../sass/_layout-responsive.scss */
   #content .region-highlighted .hot-mh-pubs .col-two {
     display: table-cell;
     vertical-align: top;
     padding: 2%;
   }
-  /* line 3668, ../sass/_layout-responsive.scss */
+  /* line 3688, ../sass/_layout-responsive.scss */
   #content .region-highlighted .hot-mh-pubs .col-two .caption {
     font-size: .8em;
     font-style: italic;
   }
 
-  /* line 3680, ../sass/_layout-responsive.scss */
+  /* line 3700, ../sass/_layout-responsive.scss */
   .sidebar-first {
     /*testimonial slide show on front page*/
     /*end block-views-testimonial-slider-block*/
   }
-  /* line 3681, ../sass/_layout-responsive.scss */
+  /* line 3701, ../sass/_layout-responsive.scss */
   .sidebar-first #content {
     /* Span 4 columns, starting in 2nd column from left. */
     float: left;
@@ -4360,16 +4373,16 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 0 1%;
     border-left: 1px solid #ccc;
   }
-  /* line 3689, ../sass/_layout-responsive.scss */
+  /* line 3709, ../sass/_layout-responsive.scss */
   .sidebar-first #content .region-highlighted #block-multiblock-2, .sidebar-first #content .region-highlighted p.passport-phone-header {
     display: none;
   }
-  /* line 3694, ../sass/_layout-responsive.scss */
+  /* line 3714, ../sass/_layout-responsive.scss */
   .sidebar-first #content article {
     /*passport home faux table*/
     /*passport banner image*/
   }
-  /* line 3695, ../sass/_layout-responsive.scss */
+  /* line 3715, ../sass/_layout-responsive.scss */
   .sidebar-first #content article ul.page-list {
     border: 1px solid #ccc;
     list-style: none;
@@ -4378,22 +4391,22 @@ table#physics-lab-activities tr:nth-child(even) {
     width: 50%;
     margin: 0 auto;
   }
-  /* line 3703, ../sass/_layout-responsive.scss */
+  /* line 3723, ../sass/_layout-responsive.scss */
   .sidebar-first #content article ul.page-list li {
     border-bottom: 1px solid #ccc;
     padding-right: 20px;
   }
-  /* line 3706, ../sass/_layout-responsive.scss */
+  /* line 3726, ../sass/_layout-responsive.scss */
   .sidebar-first #content article ul.page-list li a {
     display: block;
     padding: 4px 8px;
     line-height: 2em;
   }
-  /* line 3713, ../sass/_layout-responsive.scss */
+  /* line 3733, ../sass/_layout-responsive.scss */
   .sidebar-first #content article ul.page-list li:last-child {
     border: none;
   }
-  /* line 3719, ../sass/_layout-responsive.scss */
+  /* line 3739, ../sass/_layout-responsive.scss */
   .sidebar-first #content article .passport-home {
     background: url(images/passport-girl.jpg) 0 0 no-repeat;
     width: 100%;
@@ -4402,23 +4415,23 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 4% 0;
     display: table;
   }
-  /* line 3727, ../sass/_layout-responsive.scss */
+  /* line 3747, ../sass/_layout-responsive.scss */
   .sidebar-first #content article .passport-home td-cell-30 {
     display: table-cell;
     width: 30%;
   }
-  /* line 3732, ../sass/_layout-responsive.scss */
+  /* line 3752, ../sass/_layout-responsive.scss */
   .sidebar-first #content article .passport-home .td-cell-60 {
     display: table-cell;
     width: 65%;
     vertical-align: top;
     padding: 0 2.5%;
   }
-  /* line 3738, ../sass/_layout-responsive.scss */
+  /* line 3758, ../sass/_layout-responsive.scss */
   .sidebar-first #content article .passport-home .td-cell-60 li {
     list-style-image: url(images/white-arrow-right.png);
   }
-  /* line 3741, ../sass/_layout-responsive.scss */
+  /* line 3761, ../sass/_layout-responsive.scss */
   .sidebar-first #content article .passport-home .td-cell-60 li h3 {
     color: #fff;
     text-shadow: 1px 1px #000;
@@ -4426,7 +4439,7 @@ table#physics-lab-activities tr:nth-child(even) {
     line-height: 1.6em;
     font-weight: 400;
   }
-  /* line 3754, ../sass/_layout-responsive.scss */
+  /* line 3774, ../sass/_layout-responsive.scss */
   .sidebar-first #content article .pass-instutions {
     background: url(images/institutions.jpg) 0 0 no-repeat;
     height: 380px;
@@ -4434,7 +4447,7 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 6% 6% 0 6%;
     overflow: hidden;
   }
-  /* line 3761, ../sass/_layout-responsive.scss */
+  /* line 3781, ../sass/_layout-responsive.scss */
   .sidebar-first #content article .pass-instutions h2 {
     color: #fff;
     text-shadow: 2px 2px #000;
@@ -4444,7 +4457,7 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 0;
     line-height: 1.4em;
   }
-  /* line 3772, ../sass/_layout-responsive.scss */
+  /* line 3792, ../sass/_layout-responsive.scss */
   .sidebar-first #content article .pass-policy {
     background: url(images/policy-researchers.jpg) 0 0 no-repeat;
     height: 380px;
@@ -4453,7 +4466,7 @@ table#physics-lab-activities tr:nth-child(even) {
     overflow: hidden;
     margin-bottom: 16px;
   }
-  /* line 3779, ../sass/_layout-responsive.scss */
+  /* line 3799, ../sass/_layout-responsive.scss */
   .sidebar-first #content article .pass-policy h2 {
     color: #fff;
     text-shadow: 2px 2px #000;
@@ -4463,7 +4476,7 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 0;
     line-height: 1.4em;
   }
-  /* line 3791, ../sass/_layout-responsive.scss */
+  /* line 3811, ../sass/_layout-responsive.scss */
   .sidebar-first #content article .pass-registrar {
     background: url(images/registrar.jpg) 0 0 no-repeat;
     height: 380px;
@@ -4472,7 +4485,7 @@ table#physics-lab-activities tr:nth-child(even) {
     overflow: hidden;
     margin-bottom: 16px;
   }
-  /* line 3798, ../sass/_layout-responsive.scss */
+  /* line 3818, ../sass/_layout-responsive.scss */
   .sidebar-first #content article .pass-registrar h2 {
     color: #fff;
     text-shadow: 2px 2px #000;
@@ -4484,13 +4497,13 @@ table#physics-lab-activities tr:nth-child(even) {
     position: absolute;
     bottom: 35px;
   }
-  /* line 3815, ../sass/_layout-responsive.scss */
+  /* line 3835, ../sass/_layout-responsive.scss */
   .sidebar-first #content .view-passport-contact-page ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  /* line 3820, ../sass/_layout-responsive.scss */
+  /* line 3840, ../sass/_layout-responsive.scss */
   .sidebar-first #content .view-passport-contact-page ul li {
     width: 27%;
     display: inline-block;
@@ -4501,11 +4514,11 @@ table#physics-lab-activities tr:nth-child(even) {
     min-height: 270px;
     line-height: 1.2em;
   }
-  /* line 3837, ../sass/_layout-responsive.scss */
+  /* line 3857, ../sass/_layout-responsive.scss */
   .sidebar-first #main-front #content .node-promoted {
     display: none !important;
   }
-  /* line 3843, ../sass/_layout-responsive.scss */
+  /* line 3863, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -4520,49 +4533,49 @@ table#physics-lab-activities tr:nth-child(even) {
     		max-width:20%;
     	}*/
   }
-  /* line 3851, ../sass/_layout-responsive.scss */
+  /* line 3871, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first p {
     /*color:#fff;*/
   }
-  /* line 3853, ../sass/_layout-responsive.scss */
+  /* line 3873, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first p a:link, .sidebar-first .region-sidebar-first p a:visited, .sidebar-first .region-sidebar-first p a:active {
     /* color:#fff;*/
   }
-  /* line 3862, ../sass/_layout-responsive.scss */
+  /* line 3882, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first h2, .sidebar-first .region-sidebar-first h3, .sidebar-first .region-sidebar-first h4 {
     color: #000;
     padding-bottom: 6px;
     margin-bottom: 8px;
   }
-  /* line 3866, ../sass/_layout-responsive.scss */
+  /* line 3886, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first h2 a:link, .sidebar-first .region-sidebar-first h2 a:visited, .sidebar-first .region-sidebar-first h2 a:active, .sidebar-first .region-sidebar-first h3 a:link, .sidebar-first .region-sidebar-first h3 a:visited, .sidebar-first .region-sidebar-first h3 a:active, .sidebar-first .region-sidebar-first h4 a:link, .sidebar-first .region-sidebar-first h4 a:visited, .sidebar-first .region-sidebar-first h4 a:active {
     color: #fff;
   }
-  /* line 3875, ../sass/_layout-responsive.scss */
+  /* line 3895, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  /* line 3880, ../sass/_layout-responsive.scss */
+  /* line 3900, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first ul li a:link, .sidebar-first .region-sidebar-first ul li a:visited, .sidebar-first .region-sidebar-first ul li a:active {
     /*color:#666;*/
   }
-  /* line 3884, ../sass/_layout-responsive.scss */
+  /* line 3904, ../sass/_layout-responsive.scss */
   .sidebar-first .region-sidebar-first ul li a:hover {
     color: #000;
   }
-  /* line 3899, ../sass/_layout-responsive.scss */
+  /* line 3919, ../sass/_layout-responsive.scss */
   .sidebar-first #block-views-testimonial-slider-block {
     font-size: .8em;
     line-height: 1.2em;
     /*student testimonial custom css starts here*/
   }
-  /* line 3901, ../sass/_layout-responsive.scss */
+  /* line 3921, ../sass/_layout-responsive.scss */
   .sidebar-first #block-views-testimonial-slider-block h2.block-title {
     margin-bottom: 0;
   }
-  /* line 3909, ../sass/_layout-responsive.scss */
+  /* line 3929, ../sass/_layout-responsive.scss */
   .sidebar-first #block-views-testimonial-slider-block .testimonial-wrapper {
     overflow: hidden;
     /*end student details*/
@@ -4576,38 +4589,38 @@ table#physics-lab-activities tr:nth-child(even) {
     	}
     }*/
   }
-  /* line 3911, ../sass/_layout-responsive.scss */
+  /* line 3931, ../sass/_layout-responsive.scss */
   .sidebar-first #block-views-testimonial-slider-block .testimonial-wrapper h3 {
     font-family: 'humnst777_cn_btbold';
     margin: 4px 0;
     padding: 0;
     line-height: 2em;
   }
-  /* line 3918, ../sass/_layout-responsive.scss */
+  /* line 3938, ../sass/_layout-responsive.scss */
   .sidebar-first #block-views-testimonial-slider-block .testimonial-wrapper .testimonial-photo {
     float: left;
     display: inline-block;
     width: 30%;
     margin-right: 9px;
   }
-  /* line 3924, ../sass/_layout-responsive.scss */
+  /* line 3944, ../sass/_layout-responsive.scss */
   .sidebar-first #block-views-testimonial-slider-block .testimonial-wrapper .student-details {
     font-family: 'humnst777_lt_btlight_italic';
     float: left;
     display: inline-block;
     /*width:65%;*/
   }
-  /* line 3930, ../sass/_layout-responsive.scss */
+  /* line 3950, ../sass/_layout-responsive.scss */
   .sidebar-first #block-views-testimonial-slider-block .testimonial-wrapper .student-details h4 {
     margin: 0;
     padding: 0;
   }
-  /* line 3935, ../sass/_layout-responsive.scss */
+  /* line 3955, ../sass/_layout-responsive.scss */
   .sidebar-first #block-views-testimonial-slider-block .testimonial-wrapper .student-details ul {
     margin: 0 0 0 12px;
     padding: 0;
   }
-  /* line 3957, ../sass/_layout-responsive.scss */
+  /* line 3977, ../sass/_layout-responsive.scss */
   .sidebar-first .nice-menu-menu-interstate-passport {
     position: relative;
     z-index: 20;
@@ -4615,20 +4628,20 @@ table#physics-lab-activities tr:nth-child(even) {
 
   /*end region sidebar first*/
   /*Page Views, Exposed filters custom css*/
-  /* line 3967, ../sass/_layout-responsive.scss */
+  /* line 3987, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 {
     position: relative;
   }
-  /* line 3972, ../sass/_layout-responsive.scss */
+  /* line 3992, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form #edit-tid-wrapper {
     float: left;
   }
-  /* line 3976, ../sass/_layout-responsive.scss */
+  /* line 3996, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form #edit-field-bio-projectcontact-tid-wrapper {
     float: left;
     max-width: 400px;
   }
-  /* line 3980, ../sass/_layout-responsive.scss */
+  /* line 4000, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form #edit-field-bio-projectcontact-tid-wrapper select {
     width: 100%;
   }
@@ -4636,7 +4649,7 @@ table#physics-lab-activities tr:nth-child(even) {
   /*
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 4003, ../sass/_layout-responsive.scss */
+  /* line 4023, ../sass/_layout-responsive.scss */
   .sidebar-second #content {
     /* Span 4 columns, starting in 1st column from left. */
     float: left;
@@ -4645,7 +4658,7 @@ table#physics-lab-activities tr:nth-child(even) {
     margin-right: -80%;
     padding-left: 16px;
   }
-  /* line 4009, ../sass/_layout-responsive.scss */
+  /* line 4029, ../sass/_layout-responsive.scss */
   .sidebar-second .region-sidebar-second {
     /* Span 1 column, starting in 5th column from left. */
     float: left;
@@ -4657,7 +4670,7 @@ table#physics-lab-activities tr:nth-child(even) {
   /*
    * The layout when there are two sidebars.
    */
-  /* line 4019, ../sass/_layout-responsive.scss */
+  /* line 4039, ../sass/_layout-responsive.scss */
   .two-sidebars #content {
     /* Span 3 columns, starting in 2nd column from left. */
     float: left;
@@ -4675,47 +4688,47 @@ table#physics-lab-activities tr:nth-child(even) {
     /*Delicious Links on home page*/
     /*tables in ice executive committee view*/
   }
-  /* line 4029, ../sass/_layout-responsive.scss */
+  /* line 4049, ../sass/_layout-responsive.scss */
   .two-sidebars #content ul li .field-content p {
     font-size: 80%;
   }
-  /* line 4033, ../sass/_layout-responsive.scss */
+  /* line 4053, ../sass/_layout-responsive.scss */
   .two-sidebars #content .region-highlighted .flex-control-nav {
     bottom: -50px !important;
   }
-  /* line 4037, ../sass/_layout-responsive.scss */
+  /* line 4057, ../sass/_layout-responsive.scss */
   .two-sidebars #content h2.field-content {
     font-weight: normal;
     /*font-size:1.2em;*/
     margin-bottom: 0px !important;
   }
-  /* line 4044, ../sass/_layout-responsive.scss */
+  /* line 4064, ../sass/_layout-responsive.scss */
   .two-sidebars #content .region-highlighted #block-multiblock-2, .two-sidebars #content .region-highlighted p.passport-phone-header, .two-sidebars #content .region-highlighted #block-multiblock-1, .two-sidebars #content .region-highlighted #block-menu-menu-walf-menu, .two-sidebars #content .region-highlighted #block-menu-menu-waccal {
     display: none;
   }
-  /* line 4050, ../sass/_layout-responsive.scss */
+  /* line 4070, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-states-projects, .two-sidebars #content .view-Newscap, .two-sidebars #content .view-policyInsights, .two-sidebars #content .view-passport-instate {
     /*top- margin removed for /policy_insights*/
   }
-  /* line 4057, ../sass/_layout-responsive.scss */
+  /* line 4077, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-states-projects .item-list h3, .two-sidebars #content .view-Newscap .item-list h3, .two-sidebars #content .view-policyInsights .item-list h3, .two-sidebars #content .view-passport-instate .item-list h3 {
     margin: 8px 0 0;
   }
-  /* line 4061, ../sass/_layout-responsive.scss */
+  /* line 4081, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-states-projects h3.field-content, .two-sidebars #content .view-Newscap h3.field-content, .two-sidebars #content .view-policyInsights h3.field-content, .two-sidebars #content .view-passport-instate h3.field-content {
     margin: 8px 0 0;
   }
-  /* line 4065, ../sass/_layout-responsive.scss */
+  /* line 4085, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-states-projects ul, .two-sidebars #content .view-Newscap ul, .two-sidebars #content .view-policyInsights ul, .two-sidebars #content .view-passport-instate ul {
     list-style: none;
     margin: 0 0 0 0;
     padding-left: 0;
   }
-  /* line 4069, ../sass/_layout-responsive.scss */
+  /* line 4089, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-states-projects ul li, .two-sidebars #content .view-Newscap ul li, .two-sidebars #content .view-policyInsights ul li, .two-sidebars #content .view-passport-instate ul li {
     margin-bottom: 16px;
   }
-  /* line 4076, ../sass/_layout-responsive.scss */
+  /* line 4096, ../sass/_layout-responsive.scss */
   .two-sidebars #content .passport-home {
     background: url(images/passport-girl.jpg) 0 0 no-repeat;
     width: 100%;
@@ -4725,27 +4738,27 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 4% 0;
     display: table;
   }
-  /* line 4085, ../sass/_layout-responsive.scss */
+  /* line 4105, ../sass/_layout-responsive.scss */
   .two-sidebars #content .passport-home .tr-row {
     display: table-row;
   }
-  /* line 4088, ../sass/_layout-responsive.scss */
+  /* line 4108, ../sass/_layout-responsive.scss */
   .two-sidebars #content .passport-home .tr-row td-cell-30 {
     display: table-cell;
     width: 35%;
   }
-  /* line 4093, ../sass/_layout-responsive.scss */
+  /* line 4113, ../sass/_layout-responsive.scss */
   .two-sidebars #content .passport-home .tr-row .td-cell-60 {
     display: table-cell;
     width: 60%;
     vertical-align: top;
     padding: 0 2.5%;
   }
-  /* line 4099, ../sass/_layout-responsive.scss */
+  /* line 4119, ../sass/_layout-responsive.scss */
   .two-sidebars #content .passport-home .tr-row .td-cell-60 li {
     list-style-image: url(images/white-arrow-right.png);
   }
-  /* line 4102, ../sass/_layout-responsive.scss */
+  /* line 4122, ../sass/_layout-responsive.scss */
   .two-sidebars #content .passport-home .tr-row .td-cell-60 li h3 {
     color: #fff;
     text-shadow: 1px 1px #000;
@@ -4753,22 +4766,22 @@ table#physics-lab-activities tr:nth-child(even) {
     line-height: 1.7em;
     font-weight: 400;
   }
-  /* line 4118, ../sass/_layout-responsive.scss */
+  /* line 4138, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-delicious-home ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  /* line 4122, ../sass/_layout-responsive.scss */
+  /* line 4142, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-delicious-home ul li {
     font-size: 12px;
   }
-  /* line 4133, ../sass/_layout-responsive.scss */
+  /* line 4153, ../sass/_layout-responsive.scss */
   .two-sidebars #content article ul li {
     margin-bottom: 12px;
     /*font-size:12px;*/
   }
-  /* line 4139, ../sass/_layout-responsive.scss */
+  /* line 4159, ../sass/_layout-responsive.scss */
   .two-sidebars #content article ul.page-list {
     border: 1px solid #ccc;
     list-style: none;
@@ -4777,64 +4790,64 @@ table#physics-lab-activities tr:nth-child(even) {
     width: 50%;
     margin: 0 auto;
   }
-  /* line 4147, ../sass/_layout-responsive.scss */
+  /* line 4167, ../sass/_layout-responsive.scss */
   .two-sidebars #content article ul.page-list li {
     border-bottom: 1px solid #ccc;
     padding-right: 20px;
   }
-  /* line 4150, ../sass/_layout-responsive.scss */
+  /* line 4170, ../sass/_layout-responsive.scss */
   .two-sidebars #content article ul.page-list li a {
     display: block;
     padding: 4px 8px;
     line-height: 2em;
   }
-  /* line 4157, ../sass/_layout-responsive.scss */
+  /* line 4177, ../sass/_layout-responsive.scss */
   .two-sidebars #content article ul.page-list li:last-child {
     border: none;
   }
-  /* line 4165, ../sass/_layout-responsive.scss */
+  /* line 4185, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-list-ice-exec-committee h4 {
     margin: 0;
   }
-  /* line 4168, ../sass/_layout-responsive.scss */
+  /* line 4188, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-list-ice-exec-committee h3 {
     margin-top: 4px;
   }
-  /* line 4171, ../sass/_layout-responsive.scss */
+  /* line 4191, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-list-ice-exec-committee .ice-pic {
     margin: 0;
   }
-  /* line 4174, ../sass/_layout-responsive.scss */
+  /* line 4194, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-list-ice-exec-committee .ice-pic td {
     font-size: .8em;
     vertical-align: top;
   }
-  /* line 4177, ../sass/_layout-responsive.scss */
+  /* line 4197, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-list-ice-exec-committee .ice-pic td h4 {
     font-size: 1.2em;
     margin: 0;
   }
-  /* line 4182, ../sass/_layout-responsive.scss */
+  /* line 4202, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-list-ice-exec-committee .ice-pic td img {
     width: 100%;
     height: auto;
     max-width: 60px;
     margin-right: 12px;
   }
-  /* line 4194, ../sass/_layout-responsive.scss */
+  /* line 4214, ../sass/_layout-responsive.scss */
   .two-sidebars #content article .col-one {
     float: left;
     width: 30%;
     padding-right: 16px;
     border-right: 1px solid #ccc;
   }
-  /* line 4201, ../sass/_layout-responsive.scss */
+  /* line 4221, ../sass/_layout-responsive.scss */
   .two-sidebars #content article .col-two {
     float: left;
     width: 60%;
     padding-left: 16px;
   }
-  /* line 4208, ../sass/_layout-responsive.scss */
+  /* line 4228, ../sass/_layout-responsive.scss */
   .two-sidebars #content h2.knowledge-base {
     font-weight: 700;
     font-size: 1.4em;
@@ -4842,21 +4855,21 @@ table#physics-lab-activities tr:nth-child(even) {
     border-bottom: 2px solid #1c4884;
     padding-bottom: 4px;
   }
-  /* line 4217, ../sass/_layout-responsive.scss */
+  /* line 4237, ../sass/_layout-responsive.scss */
   .two-sidebars #content .region-highlighted #block-menu-menu-ice-public-menu {
     display: none;
   }
-  /* line 4222, ../sass/_layout-responsive.scss */
+  /* line 4242, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff {
     margin-top: 16px;
   }
-  /* line 4226, ../sass/_layout-responsive.scss */
+  /* line 4246, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff .policy-list ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  /* line 4231, ../sass/_layout-responsive.scss */
+  /* line 4251, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff .policy-list ul li {
     width: 28%;
     display: inline-block;
@@ -4867,37 +4880,37 @@ table#physics-lab-activities tr:nth-child(even) {
     max-height: 250px;
     line-height: 1.3em;
   }
-  /* line 4241, ../sass/_layout-responsive.scss */
+  /* line 4261, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff .policy-list ul li .views-field-field-user-email {
     margin: 6px 0 0;
     font-weight: 600;
     position: relative;
     z-index: 20;
   }
-  /* line 4248, ../sass/_layout-responsive.scss */
+  /* line 4268, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff .policy-list ul li .views-field-field-user-project-contact {
     font-size: .9em;
     position: relative;
     z-index: 20;
   }
-  /* line 4253, ../sass/_layout-responsive.scss */
+  /* line 4273, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff .policy-list ul li .views-field-field-user-project-contact h4.views-label-field-user-project-contact {
     margin-bottom: 0;
   }
-  /* line 4257, ../sass/_layout-responsive.scss */
+  /* line 4277, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff .policy-list ul li .views-field-field-user-project-contact em {
     margin: 3px 0 !important;
   }
-  /* line 4264, ../sass/_layout-responsive.scss */
+  /* line 4284, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff .policy-list ul li .field-content h2 {
     margin: 0 0 4px;
     font-size: 1.2em;
   }
-  /* line 4270, ../sass/_layout-responsive.scss */
+  /* line 4290, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff .policy-list ul li strong {
     letter-spacing: -1px;
   }
-  /* line 4276, ../sass/_layout-responsive.scss */
+  /* line 4296, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff .policy-list ul li ul.toggle-view li {
     cursor: pointer;
     position: relative;
@@ -4905,20 +4918,20 @@ table#physics-lab-activities tr:nth-child(even) {
     top: 80px;
     left: 80px;
   }
-  /* line 4283, ../sass/_layout-responsive.scss */
+  /* line 4303, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff .policy-list ul li ul.toggle-view li h3 {
     font-weight: normal;
     font-size: .9em;
     display: inline-block;
     padding: 2px;
   }
-  /* line 4290, ../sass/_layout-responsive.scss */
+  /* line 4310, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff .policy-list ul li ul.toggle-view li span {
     color: #1c4884;
     position: relative;
     z-index: 1;
   }
-  /* line 4296, ../sass/_layout-responsive.scss */
+  /* line 4316, ../sass/_layout-responsive.scss */
   .two-sidebars #content .view-wiche-staff .policy-list ul li ul.toggle-view li p {
     display: none;
     width: 500px;
@@ -4931,7 +4944,7 @@ table#physics-lab-activities tr:nth-child(even) {
     top: 34px;
     left: -200px;
   }
-  /* line 4316, ../sass/_layout-responsive.scss */
+  /* line 4336, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -4942,41 +4955,41 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 0 1%;
     /*quicklinks accordion on front page*/
   }
-  /* line 4319, ../sass/_layout-responsive.scss */
+  /* line 4339, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first h2 {
     margin: 0 0 16px 0;
     padding-top: 8px;
   }
-  /* line 4328, ../sass/_layout-responsive.scss */
+  /* line 4348, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first ul.nice-menu-right ul {
     /* left: 10.5em!important;*/
   }
-  /* line 4332, ../sass/_layout-responsive.scss */
+  /* line 4352, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first p {
     color: #000;
     font-size: 12px;
     line-height: 1.4em;
   }
-  /* line 4336, ../sass/_layout-responsive.scss */
+  /* line 4356, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first p a:link, .two-sidebars .region-sidebar-first p a:visited, .two-sidebars .region-sidebar-first p a:active {
     color: #1c4884;
     text-decoration: underline;
   }
-  /* line 4341, ../sass/_layout-responsive.scss */
+  /* line 4361, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first p a:hover {
     color: black !important;
   }
-  /* line 4353, ../sass/_layout-responsive.scss */
+  /* line 4373, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block .ui-accordion .views-accordion-header .field-content a, .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block-2 .ui-accordion .views-accordion-header .field-content a, .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block-1 .ui-accordion .views-accordion-header .field-content a {
     font-size: .8em;
     display: block;
     /*padding-left:15px;*/
   }
-  /* line 4365, ../sass/_layout-responsive.scss */
+  /* line 4385, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first .view-commissioner-calendar .item-list ul {
     margin-top: 16px;
   }
-  /* line 4367, ../sass/_layout-responsive.scss */
+  /* line 4387, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first .view-commissioner-calendar .item-list ul li {
     font-size: 1em;
     font-weight: 600;
@@ -4984,18 +4997,18 @@ table#physics-lab-activities tr:nth-child(even) {
     padding-bottom: 8px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 4374, ../sass/_layout-responsive.scss */
+  /* line 4394, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first .view-commissioner-calendar .item-list ul li .location {
     font-size: 0.9em !important;
     font-weight: 100 !important;
   }
-  /* line 4383, ../sass/_layout-responsive.scss */
+  /* line 4403, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first #block-views-testimonial-slider-block {
     border-top: 1px solid #ccc;
     margin-top: 16px;
     padding-top: 8px;
   }
-  /* line 4389, ../sass/_layout-responsive.scss */
+  /* line 4409, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first h2 {
     color: #1c4884;
     border-bottom: 1px solid #fff;
@@ -5003,7 +5016,7 @@ table#physics-lab-activities tr:nth-child(even) {
     margin-bottom: 0px;
     margin-top: 0px !important;
   }
-  /* line 4397, ../sass/_layout-responsive.scss */
+  /* line 4417, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first h3, .two-sidebars .region-sidebar-first h4 {
     color: #000;
     border-bottom: 1px solid #fff;
@@ -5016,28 +5029,28 @@ table#physics-lab-activities tr:nth-child(even) {
 	  
   }*/
   }
-  /* line 4413, ../sass/_layout-responsive.scss */
+  /* line 4433, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  /* line 4418, ../sass/_layout-responsive.scss */
+  /* line 4438, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first ul li a:link, .two-sidebars .region-sidebar-first ul li a:visited, .two-sidebars .region-sidebar-first ul li a:active {
     color: #000;
   }
-  /* line 4432, ../sass/_layout-responsive.scss */
+  /* line 4452, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first #block-views-testimonial-slider-block h2.block-title {
     font-size: 1.4em;
     margin-bottom: 0;
   }
-  /* line 4438, ../sass/_layout-responsive.scss */
+  /* line 4458, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first #block-views-testimonial-slider-block .views-field-field-sep-program H2.sep {
     font-size: 1.2em;
     margin: 8px 0;
     display: inline-block;
   }
-  /* line 4449, ../sass/_layout-responsive.scss */
+  /* line 4469, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first .view-knowledge-base-page ul li a:link, .two-sidebars .region-sidebar-first .view-knowledge-base-page ul li a:visited, .two-sidebars .region-sidebar-first .view-knowledge-base-page ul li a:active {
     font-size: .8em;
     line-height: 1em;
@@ -5045,7 +5058,7 @@ table#physics-lab-activities tr:nth-child(even) {
     background: url(images/blue-arrow-right.png) 0 2px no-repeat;
     padding: 0 0 6px 16px;
   }
-  /* line 4461, ../sass/_layout-responsive.scss */
+  /* line 4481, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second {
     /* Span 1 column, starting in 5th column from left. */
     float: left;
@@ -5063,7 +5076,7 @@ table#physics-lab-activities tr:nth-child(even) {
     padding-top: 16px;
     /*event calendar block on front page*/
   }
-  /* line 4468, ../sass/_layout-responsive.scss */
+  /* line 4488, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second #block-menu-menu-ask-wiche .menu li a {
     font-weight: 600;
     background: #1c4884;
@@ -5075,131 +5088,131 @@ table#physics-lab-activities tr:nth-child(even) {
     text-align: center;
     text-decoration: none;
   }
-  /* line 4480, ../sass/_layout-responsive.scss */
+  /* line 4500, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second #block-menu-menu-ask-wiche .menu li a:hover {
     background: #245eac;
   }
-  /* line 4487, ../sass/_layout-responsive.scss */
+  /* line 4507, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second #block-views-calendar-2-block-2 .view-calendar-2 h3 {
     font-size: 1em;
     line-height: 1.1em;
     margin-bottom: 0;
     margin-top: 1em;
   }
-  /* line 4497, ../sass/_layout-responsive.scss */
+  /* line 4517, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .block-nice-menus {
     position: relative;
     z-index: 20;
   }
-  /* line 4502, ../sass/_layout-responsive.scss */
+  /* line 4522, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second ul.commish-items, .two-sidebars .region-sidebar-second .view-id-passport_contact_page ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  /* line 4507, ../sass/_layout-responsive.scss */
+  /* line 4527, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second ul.commish-items li, .two-sidebars .region-sidebar-second .view-id-passport_contact_page ul li {
     margin-bottom: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 4514, ../sass/_layout-responsive.scss */
+  /* line 4534, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second #block-views-testimonial-slider-block {
     /*student testimonials*/
   }
-  /* line 4516, ../sass/_layout-responsive.scss */
+  /* line 4536, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second #block-views-testimonial-slider-block .testimonial-photo {
     width: 45%;
     height: auto;
     float: left;
     margin-right: 4px;
   }
-  /* line 4523, ../sass/_layout-responsive.scss */
+  /* line 4543, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second #block-views-testimonial-slider-block .student-details {
     width: 45%;
     font-style: italic;
     float: left;
   }
-  /* line 4528, ../sass/_layout-responsive.scss */
+  /* line 4548, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second #block-views-testimonial-slider-block .testimonial-text {
     clear: left;
     /*width:90%;*/
     padding: 4% 3% 0 0;
   }
-  /* line 4535, ../sass/_layout-responsive.scss */
+  /* line 4555, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     /*border-top: 3px solid #1c4884;
     margin-top: 12px;
     padding-top: 12px;*/
     /*2nd Sidebar vertical list of publications for departments, initiatves, interest groups and priority pages*/
   }
-  /* line 4543, ../sass/_layout-responsive.scss */
+  /* line 4563, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .block .view-publication-blocks .pubblock-list, .two-sidebars .region-sidebar-second .block .view-id-PSEP_links .pubblock-list, .two-sidebars .region-sidebar-second .block .view-Adult-learner-pubs .pubblock-list {
     display: block !important;
   }
-  /* line 4545, ../sass/_layout-responsive.scss */
+  /* line 4565, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .block .view-publication-blocks .pubblock-list ul, .two-sidebars .region-sidebar-second .block .view-id-PSEP_links .pubblock-list ul, .two-sidebars .region-sidebar-second .block .view-Adult-learner-pubs .pubblock-list ul {
     display: block !important;
     display: block !important;
   }
-  /* line 4547, ../sass/_layout-responsive.scss */
+  /* line 4567, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .block .view-publication-blocks .pubblock-list ul li, .two-sidebars .region-sidebar-second .block .view-id-PSEP_links .pubblock-list ul li, .two-sidebars .region-sidebar-second .block .view-Adult-learner-pubs .pubblock-list ul li {
     display: block !important;
     width: 100% !important;
   }
-  /* line 4552, ../sass/_layout-responsive.scss */
+  /* line 4572, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .block .view-publication-blocks .pubblock-list ul li .policy-featured-pub a img, .two-sidebars .region-sidebar-second .block .view-id-PSEP_links .pubblock-list ul li .policy-featured-pub a img, .two-sidebars .region-sidebar-second .block .view-Adult-learner-pubs .pubblock-list ul li .policy-featured-pub a img {
     max-width: 150px !important;
   }
-  /* line 4561, ../sass/_layout-responsive.scss */
+  /* line 4581, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .block:first-child {
     border-top: none;
   }
-  /* line 4566, ../sass/_layout-responsive.scss */
+  /* line 4586, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .block #block-views-testimonial-slider-block .student-details {
     padding-left: 16px;
   }
-  /* line 4573, ../sass/_layout-responsive.scss */
+  /* line 4593, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second #block-views-publication-blocks-block-14 {
     border-top: none;
     padding-top: 0;
     margin-top: 0;
   }
-  /* line 4586, ../sass/_layout-responsive.scss */
+  /* line 4606, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second h2 {
     margin: 8px 0;
   }
-  /* line 4590, ../sass/_layout-responsive.scss */
+  /* line 4610, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second p {
     font-size: 12px;
     line-height: 1.5em;
     margin-top: 0;
     font-style: italic;
   }
-  /* line 4599, ../sass/_layout-responsive.scss */
+  /* line 4619, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .view-calendar-2 ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  /* line 4604, ../sass/_layout-responsive.scss */
+  /* line 4624, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .view-calendar-2 ul li {
     margin-bottom: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 4609, ../sass/_layout-responsive.scss */
+  /* line 4629, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .view-calendar-2 ul li:last-child {
     border-bottom: none;
   }
-  /* line 4614, ../sass/_layout-responsive.scss */
+  /* line 4634, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second .view-calendar-2 .adr, .two-sidebars .region-sidebar-second .view-calendar-2 .map-link {
     font-size: 12px;
     line-height: 1.5em;
   }
 
   /*the layout when there are no sidebars -- full width*/
-  /* line 4624, ../sass/_layout-responsive.scss */
+  /* line 4644, ../sass/_layout-responsive.scss */
   article.view-mode-full, .advanced-help-topic {
     padding: 0  1.5%;
     /*PSEP table on /rwsl-experiments*/
@@ -5207,17 +5220,17 @@ table#physics-lab-activities tr:nth-child(even) {
     /*generic table*/
     /*end wiche table class*/
   }
-  /* line 4629, ../sass/_layout-responsive.scss */
+  /* line 4649, ../sass/_layout-responsive.scss */
   article.view-mode-full table#psep-support-fees, .advanced-help-topic table#psep-support-fees {
     font-size: .8em;
   }
-  /* line 4632, ../sass/_layout-responsive.scss */
+  /* line 4652, ../sass/_layout-responsive.scss */
   article.view-mode-full table#psep-support-fees, .advanced-help-topic table#psep-support-fees {
     width: 100%;
     border-bottom: 2px solid #000;
     margin-bottom: 16px;
   }
-  /* line 4639, ../sass/_layout-responsive.scss */
+  /* line 4659, ../sass/_layout-responsive.scss */
   article.view-mode-full table#psep-support-fees th, .advanced-help-topic table#psep-support-fees th {
     background-color: transparent;
     /*color:#fff;*/
@@ -5228,52 +5241,52 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 1% 0;
     font-size: 1.3em;
   }
-  /* line 4650, ../sass/_layout-responsive.scss */
+  /* line 4670, ../sass/_layout-responsive.scss */
   article.view-mode-full table#psep-support-fees th.subhead, .advanced-help-topic table#psep-support-fees th.subhead {
     background: #1c4884;
   }
-  /* line 4654, ../sass/_layout-responsive.scss */
+  /* line 4674, ../sass/_layout-responsive.scss */
   article.view-mode-full table#psep-support-fees th.subhead h3, .advanced-help-topic table#psep-support-fees th.subhead h3 {
     margin: 0;
     color: #fff;
   }
-  /* line 4659, ../sass/_layout-responsive.scss */
+  /* line 4679, ../sass/_layout-responsive.scss */
   article.view-mode-full table#psep-support-fees th:last-child, .advanced-help-topic table#psep-support-fees th:last-child {
     border-right: none;
   }
-  /* line 4663, ../sass/_layout-responsive.scss */
+  /* line 4683, ../sass/_layout-responsive.scss */
   article.view-mode-full table#psep-support-fees td, .advanced-help-topic table#psep-support-fees td {
     padding: 2%;
     border-right: 1px solid #000;
     vertical-align: top;
   }
-  /* line 4669, ../sass/_layout-responsive.scss */
+  /* line 4689, ../sass/_layout-responsive.scss */
   article.view-mode-full table#psep-support-fees tr td:first-child, .advanced-help-topic table#psep-support-fees tr td:first-child {
     font-weight: bold;
     vertical-align: middle;
     text-align: center;
     font-size: 1em;
   }
-  /* line 4677, ../sass/_layout-responsive.scss */
+  /* line 4697, ../sass/_layout-responsive.scss */
   article.view-mode-full table#psep-support-fees td:last-child, .advanced-help-topic table#psep-support-fees td:last-child {
     border-right: none;
   }
-  /* line 4681, ../sass/_layout-responsive.scss */
+  /* line 4701, ../sass/_layout-responsive.scss */
   article.view-mode-full table#psep-support-fees tr:nth-child(even), .advanced-help-topic table#psep-support-fees tr:nth-child(even) {
     background: #ccc;
   }
-  /* line 4685, ../sass/_layout-responsive.scss */
+  /* line 4705, ../sass/_layout-responsive.scss */
   article.view-mode-full table#psep-support-fees tr:first-child th, .advanced-help-topic table#psep-support-fees tr:first-child th {
     border-bottom: 2px solid #fff;
   }
-  /* line 4696, ../sass/_layout-responsive.scss */
+  /* line 4716, ../sass/_layout-responsive.scss */
   article.view-mode-full table#wiche-table, .advanced-help-topic table#wiche-table {
     width: 100%;
     border-bottom: 2px solid #000;
     margin-bottom: 16px;
     font-size: .8em;
   }
-  /* line 4702, ../sass/_layout-responsive.scss */
+  /* line 4722, ../sass/_layout-responsive.scss */
   article.view-mode-full table#wiche-table th, .advanced-help-topic table#wiche-table th {
     background-color: #1c4884;
     color: #fff;
@@ -5283,110 +5296,110 @@ table#physics-lab-activities tr:nth-child(even) {
     border-left: none;
     padding: 1% 0;
   }
-  /* line 4711, ../sass/_layout-responsive.scss */
+  /* line 4731, ../sass/_layout-responsive.scss */
   article.view-mode-full table#wiche-table th:last-child, .advanced-help-topic table#wiche-table th:last-child {
     border-right: none;
   }
-  /* line 4716, ../sass/_layout-responsive.scss */
+  /* line 4736, ../sass/_layout-responsive.scss */
   article.view-mode-full table#wiche-table td, .advanced-help-topic table#wiche-table td {
     padding: 2%;
     border-right: 1px solid #000;
     vertical-align: top;
     width: 50%;
   }
-  /* line 4722, ../sass/_layout-responsive.scss */
+  /* line 4742, ../sass/_layout-responsive.scss */
   article.view-mode-full table#wiche-table td:last-child, .advanced-help-topic table#wiche-table td:last-child {
     border-right: none;
   }
-  /* line 4726, ../sass/_layout-responsive.scss */
+  /* line 4746, ../sass/_layout-responsive.scss */
   article.view-mode-full table#wiche-table td h4, .advanced-help-topic table#wiche-table td h4 {
     font-size: 1.2em;
     margin: 0;
   }
-  /* line 4731, ../sass/_layout-responsive.scss */
+  /* line 4751, ../sass/_layout-responsive.scss */
   article.view-mode-full table#wiche-table td p, .advanced-help-topic table#wiche-table td p {
     margin: 4px 0;
   }
-  /* line 4736, ../sass/_layout-responsive.scss */
+  /* line 4756, ../sass/_layout-responsive.scss */
   article.view-mode-full table#wiche-table tr:first-child th, .advanced-help-topic table#wiche-table tr:first-child th {
     border-bottom: 2px solid #fff;
   }
-  /* line 4744, ../sass/_layout-responsive.scss */
+  /* line 4764, ../sass/_layout-responsive.scss */
   article.view-mode-full table.wiche-table, .advanced-help-topic table.wiche-table {
     width: 100%;
     margin-bottom: 16px;
     font-size: .8em;
   }
-  /* line 4751, ../sass/_layout-responsive.scss */
+  /* line 4771, ../sass/_layout-responsive.scss */
   article.view-mode-full table.wiche-table td, .advanced-help-topic table.wiche-table td {
     padding: 2%;
     vertical-align: top;
     width: 35%;
   }
-  /* line 4761, ../sass/_layout-responsive.scss */
+  /* line 4781, ../sass/_layout-responsive.scss */
   article.view-mode-full table#borderless-no_bgColor td, .advanced-help-topic table#borderless-no_bgColor td {
     padding: 8px;
     vertical-align: top;
   }
-  /* line 4765, ../sass/_layout-responsive.scss */
+  /* line 4785, ../sass/_layout-responsive.scss */
   article.view-mode-full table#borderless-no_bgColor td img, .advanced-help-topic table#borderless-no_bgColor td img {
     max-width: 65px;
     height: auto;
   }
-  /* line 4769, ../sass/_layout-responsive.scss */
+  /* line 4789, ../sass/_layout-responsive.scss */
   article.view-mode-full table#borderless-no_bgColor td p, .advanced-help-topic table#borderless-no_bgColor td p {
     margin: 0;
   }
 }
 /*panels css rules*/
-/* line 4782, ../sass/_layout-responsive.scss */
+/* line 4802, ../sass/_layout-responsive.scss */
 div#wiche-home {
   padding: 0 15px;
 }
 
 /*Mental Health Landing Page Custom*/
-/* line 4790, ../sass/_layout-responsive.scss */
+/* line 4810, ../sass/_layout-responsive.scss */
 .quicktabs-tabpage #block-block-349, .quicktabs-tabpage #block-block-348 {
   overflow: hidden;
 }
-/* line 4792, ../sass/_layout-responsive.scss */
+/* line 4812, ../sass/_layout-responsive.scss */
 .quicktabs-tabpage #block-block-349 .col-one, .quicktabs-tabpage #block-block-348 .col-one {
   float: left;
   display: inline-block;
   margin: 0 20px 0 20px;
   width: 45%;
 }
-/* line 4799, ../sass/_layout-responsive.scss */
+/* line 4819, ../sass/_layout-responsive.scss */
 .quicktabs-tabpage #block-block-349 .col-two, .quicktabs-tabpage #block-block-348 .col-two {
   float: left;
   display: inline-block;
   width: 45%;
 }
-/* line 4805, ../sass/_layout-responsive.scss */
+/* line 4825, ../sass/_layout-responsive.scss */
 .quicktabs-tabpage #block-block-349 ul, .quicktabs-tabpage #block-block-348 ul {
   list-style: square;
 }
-/* line 4808, ../sass/_layout-responsive.scss */
+/* line 4828, ../sass/_layout-responsive.scss */
 .quicktabs-tabpage #block-block-349 ul li, .quicktabs-tabpage #block-block-348 ul li {
   font-size: .8em;
   margin-bottom: 8px;
 }
 
 /*wiche-sep-dept-nav*/
-/* line 4822, ../sass/_layout-responsive.scss */
+/* line 4842, ../sass/_layout-responsive.scss */
 #programs-departments {
   overflow: hidden;
   width: 100%;
   clear: both;
   /*wiche publications block for front page*/
 }
-/* line 4827, ../sass/_layout-responsive.scss */
+/* line 4847, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block {
   background: #ccc;
   overflow: hidden;
   margin-bottom: 0;
 }
-/* line 4831, ../sass/_layout-responsive.scss */
+/* line 4851, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block h2 {
   /*background:#1c4884;*/
   background: #225aa8;
@@ -5394,18 +5407,18 @@ div#wiche-home {
   color: #fff;
   margin: 0;
 }
-/* line 4839, ../sass/_layout-responsive.scss */
+/* line 4859, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list {
   clear: both;
   /*publications list on front page*/
 }
-/* line 4842, ../sass/_layout-responsive.scss */
+/* line 4862, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .wiche-publications {
   display: table;
   border-collapse: separate;
   border-spacing: 5px;
 }
-/* line 4846, ../sass/_layout-responsive.scss */
+/* line 4866, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .wiche-publications ul {
   display: table-row;
   list-style: none;
@@ -5413,30 +5426,30 @@ div#wiche-home {
   padding: 0;
   /*overflow:hidden;*/
 }
-/* line 4852, ../sass/_layout-responsive.scss */
+/* line 4872, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .wiche-publications ul li {
   display: table-cell;
   width: 18%;
   padding: 8px;
   margin-left: 16px;
 }
-/* line 4858, ../sass/_layout-responsive.scss */
+/* line 4878, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .wiche-publications ul li .views-field-title {
   width: 100%;
   padding-left: 0;
 }
-/* line 4863, ../sass/_layout-responsive.scss */
+/* line 4883, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .wiche-publications ul li .views-field-title .field-content a:link, #programs-departments #block-views-publications-list-block .view-publications-list .wiche-publications ul li .views-field-title .field-content a:visited {
   color: #000;
   text-decoration: none;
   font-weight: 600;
   line-height: 1.2em;
 }
-/* line 4869, ../sass/_layout-responsive.scss */
+/* line 4889, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .wiche-publications ul li .views-field-title .field-content a:hover {
   text-decoration: underline;
 }
-/* line 4876, ../sass/_layout-responsive.scss */
+/* line 4896, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .wiche-publications ul li figcaption.field-tag {
   clear: left;
   font-style: italic;
@@ -5445,15 +5458,15 @@ div#wiche-home {
   padding-top: 8px;
   margin-top: 8px;
 }
-/* line 4887, ../sass/_layout-responsive.scss */
+/* line 4907, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .wiche-publications li:first-child {
   margin-left: 0px;
 }
-/* line 4895, ../sass/_layout-responsive.scss */
+/* line 4915, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .view-footer {
   clear: left;
 }
-/* line 4897, ../sass/_layout-responsive.scss */
+/* line 4917, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs {
   list-style: none;
   background: #1c4884;
@@ -5462,34 +5475,34 @@ div#wiche-home {
   overflow: hidden;
   text-align: center;
 }
-/* line 4904, ../sass/_layout-responsive.scss */
+/* line 4924, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs li {
   display: inline-block;
   border-right: 1px solid #fff;
 }
-/* line 4907, ../sass/_layout-responsive.scss */
+/* line 4927, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs li a {
   display: block;
   padding: 2px 12px;
   color: #fff;
 }
-/* line 4913, ../sass/_layout-responsive.scss */
+/* line 4933, ../sass/_layout-responsive.scss */
 #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs li:last-child {
   border-right: none;
 }
 
 /*end programs departments*/
-/* line 4925, ../sass/_layout-responsive.scss */
+/* line 4945, ../sass/_layout-responsive.scss */
 .delicious-posts {
   padding-right: 1%;
 }
 
-/* line 4930, ../sass/_layout-responsive.scss */
+/* line 4950, ../sass/_layout-responsive.scss */
 #content .profile, #content form#user-login {
   padding: 0 1%;
 }
 
-/* line 4934, ../sass/_layout-responsive.scss */
+/* line 4954, ../sass/_layout-responsive.scss */
 .horizontal-divider {
   clear: both;
   /*border-bottom:2px solid #ccc;*/
@@ -5498,7 +5511,7 @@ div#wiche-home {
 }
 
 /*Benchmarks popout slideshow*/
-/* line 4944, ../sass/_layout-responsive.scss */
+/* line 4964, ../sass/_layout-responsive.scss */
 a.popup-element-title {
   color: #1C4884;
   cursor: pointer;
@@ -5509,26 +5522,26 @@ a.popup-element-title {
   font-weight: 600;
 }
 
-/* line 4953, ../sass/_layout-responsive.scss */
+/* line 4973, ../sass/_layout-responsive.scss */
 #popup-active-overlay {
   /*mission statement front page*/
 }
-/* line 4954, ../sass/_layout-responsive.scss */
+/* line 4974, ../sass/_layout-responsive.scss */
 #popup-active-overlay .popup-element-body {
   width: 775px !important;
 }
-/* line 4956, ../sass/_layout-responsive.scss */
+/* line 4976, ../sass/_layout-responsive.scss */
 #popup-active-overlay .popup-element-body .inner {
   width: 775px !important;
 }
-/* line 4958, ../sass/_layout-responsive.scss */
+/* line 4978, ../sass/_layout-responsive.scss */
 #popup-active-overlay .popup-element-body .inner .popup-element-body a.popup-close-button {
   cursor: pointer;
   float: right;
   position: relative;
   z-index: 20;
 }
-/* line 4965, ../sass/_layout-responsive.scss */
+/* line 4985, ../sass/_layout-responsive.scss */
 #popup-active-overlay .popup-element-body .inner p {
   font-size: .8em;
   line-height: 1.4em;
@@ -5536,33 +5549,33 @@ a.popup-element-title {
 }
 
 /*custom css for accordion on front page*/
-/* line 4981, ../sass/_layout-responsive.scss */
+/* line 5001, ../sass/_layout-responsive.scss */
 .view-wiche-sep-departments-initiatives .views-accordion-header {
   background: none !important;
 }
-/* line 4983, ../sass/_layout-responsive.scss */
+/* line 5003, ../sass/_layout-responsive.scss */
 .view-wiche-sep-departments-initiatives .views-accordion-header .field-content {
   display: block;
 }
-/* line 4985, ../sass/_layout-responsive.scss */
+/* line 5005, ../sass/_layout-responsive.scss */
 .view-wiche-sep-departments-initiatives .views-accordion-header .field-content a:link {
   font-family: 'humnst777_lt_btlight_italic';
   color: #1C4884;
   line-height: 1.2em;
 }
 
-/* line 4998, ../sass/_layout-responsive.scss */
+/* line 5018, ../sass/_layout-responsive.scss */
 .ui-accordion .ui-accordion-content[role=tabpanel] {
   border-top: 1px solid #ccc;
 }
 
-/* line 5003, ../sass/_layout-responsive.scss */
+/* line 5023, ../sass/_layout-responsive.scss */
 .quick-link {
   display: block;
 }
 
 /*custom table styling for /forum/membership/current*/
-/* line 5009, ../sass/_layout-responsive.scss */
+/* line 5029, ../sass/_layout-responsive.scss */
 .view-content table.membership {
   width: 100%;
   margin-top: 25px;
@@ -5570,13 +5583,13 @@ a.popup-element-title {
   padding-bottom: 1%;
 }
 
-/* line 5016, ../sass/_layout-responsive.scss */
+/* line 5036, ../sass/_layout-responsive.scss */
 .view-content table.membership td, th {
   margin: 1%;
   border: 1px solid #000;
 }
 
-/* line 5022, ../sass/_layout-responsive.scss */
+/* line 5042, ../sass/_layout-responsive.scss */
 .view-content table.membership caption {
   font-weight: bold;
   font-size: 1.2em;
@@ -5584,19 +5597,19 @@ a.popup-element-title {
   margin-bottom: 4px;
 }
 
-/* line 5030, ../sass/_layout-responsive.scss */
+/* line 5050, ../sass/_layout-responsive.scss */
 .view-content table.membership thead th {
   padding-right: 0;
   border-bottom: 3px solid #1e345b;
 }
 
-/* line 5035, ../sass/_layout-responsive.scss */
+/* line 5055, ../sass/_layout-responsive.scss */
 .view-content table.membership thead th.views-field-title {
   text-align: center;
   padding: 0 1% 0 0;
 }
 
-/* line 5040, ../sass/_layout-responsive.scss */
+/* line 5060, ../sass/_layout-responsive.scss */
 .view-content table.membership thead th.views-field-field-bio-org-value {
   text-align: center;
   padding: 0 0 0 1%;
@@ -5604,7 +5617,7 @@ a.popup-element-title {
 
 /*Table style for forum and alliance membership pages*/
 /*.view-id-list_walf_members & .view-list-alliance-members*/
-/* line 5053, ../sass/_layout-responsive.scss */
+/* line 5073, ../sass/_layout-responsive.scss */
 .view-list-alliance-members .view-content table.views-table tr th.views-field-field-bio-org,
 .view-list-alliance-members .view-content table.views-table tr td.views-field-field-bio-org,
 .view-id-list_walf_members .view-content table.views-table tr th.views-field-field-bio-org,
@@ -5613,7 +5626,7 @@ a.popup-element-title {
   width: 49%;
   padding: 2%;
 }
-/* line 5060, ../sass/_layout-responsive.scss */
+/* line 5080, ../sass/_layout-responsive.scss */
 .view-list-alliance-members .view-content table.views-table tr th.views-field-title,
 .view-list-alliance-members .view-content table.views-table tr td.views-field-title,
 .view-id-list_walf_members .view-content table.views-table tr th.views-field-title,
@@ -5623,31 +5636,31 @@ a.popup-element-title {
   padding: 2%;
 }
 
-/* line 5069, ../sass/_layout-responsive.scss */
+/* line 5089, ../sass/_layout-responsive.scss */
 .view-content table.views-table tr.even {
   background-color: transparent;
 }
 
 /*Alliance Executive Committee*/
-/* line 5075, ../sass/_layout-responsive.scss */
+/* line 5095, ../sass/_layout-responsive.scss */
 table.waccal-exec-comm, table.walf-exec-comm {
   margin: 0;
 }
-/* line 5079, ../sass/_layout-responsive.scss */
+/* line 5099, ../sass/_layout-responsive.scss */
 table.waccal-exec-comm td h3, table.walf-exec-comm td h3 {
   margin: 0;
 }
 
 /*custom table styling Higher Ed Links*/
-/* line 5090, ../sass/_layout-responsive.scss */
+/* line 5110, ../sass/_layout-responsive.scss */
 #higher-ed-links tr:nth-child(odd) {
   background: #ccc;
 }
-/* line 5094, ../sass/_layout-responsive.scss */
+/* line 5114, ../sass/_layout-responsive.scss */
 #higher-ed-links th {
   border: none;
 }
-/* line 5098, ../sass/_layout-responsive.scss */
+/* line 5118, ../sass/_layout-responsive.scss */
 #higher-ed-links td {
   font-size: .9em;
   line-height: 1.4em;
@@ -5655,123 +5668,123 @@ table.waccal-exec-comm td h3, table.walf-exec-comm td h3 {
 }
 
 /*custom table styleing CHEO Participating institutions: nanslo/initiatives-projects/current-initiatives/cheo/cheo-participants*/
-/* line 5108, ../sass/_layout-responsive.scss */
+/* line 5128, ../sass/_layout-responsive.scss */
 table.cheo-institutions {
   font-size: .8em;
 }
-/* line 5110, ../sass/_layout-responsive.scss */
+/* line 5130, ../sass/_layout-responsive.scss */
 table.cheo-institutions tr {
   border-bottom: 1px solid #ccc;
 }
-/* line 5112, ../sass/_layout-responsive.scss */
+/* line 5132, ../sass/_layout-responsive.scss */
 table.cheo-institutions tr th {
   border: none;
   padding: 2%;
   background: #666;
 }
-/* line 5116, ../sass/_layout-responsive.scss */
+/* line 5136, ../sass/_layout-responsive.scss */
 table.cheo-institutions tr th h3 {
   color: #fff;
   text-transform: uppercase;
 }
-/* line 5122, ../sass/_layout-responsive.scss */
+/* line 5142, ../sass/_layout-responsive.scss */
 table.cheo-institutions tr td {
   border-right: 1px solid #ccc;
   border-left: 1px solid #ccc;
 }
-/* line 5126, ../sass/_layout-responsive.scss */
+/* line 5146, ../sass/_layout-responsive.scss */
 table.cheo-institutions tr td img {
   width: 100%;
 }
 
 /*Western Alliance of Community college Academic Leaders*/
-/* line 5135, ../sass/_layout-responsive.scss */
+/* line 5155, ../sass/_layout-responsive.scss */
 .list-waccal-members {
   overflow: hidden;
 }
-/* line 5137, ../sass/_layout-responsive.scss */
+/* line 5157, ../sass/_layout-responsive.scss */
 .list-waccal-members h3 {
   clear: left;
   margin-bottom: 0;
 }
-/* line 5141, ../sass/_layout-responsive.scss */
+/* line 5161, ../sass/_layout-responsive.scss */
 .list-waccal-members ul {
   list-style: none;
   padding: 0;
   margin: 0 0 16px 0;
 }
-/* line 5145, ../sass/_layout-responsive.scss */
+/* line 5165, ../sass/_layout-responsive.scss */
 .list-waccal-members ul li {
   clear: left;
 }
-/* line 5148, ../sass/_layout-responsive.scss */
+/* line 5168, ../sass/_layout-responsive.scss */
 .list-waccal-members ul li .views-field-title {
   float: left;
   margin-right: 12px;
 }
-/* line 5153, ../sass/_layout-responsive.scss */
+/* line 5173, ../sass/_layout-responsive.scss */
 .list-waccal-members ul li .views-field-field-bio-org {
   float: left;
 }
 
 /*custom css snippets*/
 /*Policy_exchanges*/
-/* line 5166, ../sass/_layout-responsive.scss */
+/* line 5186, ../sass/_layout-responsive.scss */
 .view-policyExchanges .item-list h3 {
   margin-bottom: 0;
 }
-/* line 5171, ../sass/_layout-responsive.scss */
+/* line 5191, ../sass/_layout-responsive.scss */
 .view-policyExchanges .item-list ul li h4.field-content {
   margin: 6px 0 6px 0;
 }
 
 /*Policy and Data Resources Block on policy_exchanges in 2nd sidebar*/
-/* line 5181, ../sass/_layout-responsive.scss */
+/* line 5201, ../sass/_layout-responsive.scss */
 .taxon-resource ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 5189, ../sass/_layout-responsive.scss */
+/* line 5209, ../sass/_layout-responsive.scss */
 .taxon-resource ul li.policy-pub .field-content p {
   margin: 0;
   font-size: .9em;
   line-height: 1.2em;
 }
-/* line 5194, ../sass/_layout-responsive.scss */
+/* line 5214, ../sass/_layout-responsive.scss */
 .taxon-resource ul li.policy-pub .field-content p a:link, .taxon-resource ul li.policy-pub .field-content p a:visited, .taxon-resource ul li.policy-pub .field-content p a:active {
   display: block;
   text-decoration: underline;
   font-size: .9em;
   color: #1c4884;
 }
-/* line 5203, ../sass/_layout-responsive.scss */
+/* line 5223, ../sass/_layout-responsive.scss */
 .taxon-resource ul li.policy-pub h1 {
   /*reduce h1 size for 2nd sidebar teaser block*/
   font-weight: normal !important;
   font-size: 1em !important;
   margin-bottom: 0;
 }
-/* line 5208, ../sass/_layout-responsive.scss */
+/* line 5228, ../sass/_layout-responsive.scss */
 .taxon-resource ul li.policy-pub h2 {
   font-weight: normal;
 }
-/* line 5210, ../sass/_layout-responsive.scss */
+/* line 5230, ../sass/_layout-responsive.scss */
 .taxon-resource ul li.policy-pub h2 a:link, .taxon-resource ul li.policy-pub h2 a:visited, .taxon-resource ul li.policy-pub h2 a:active {
   text-decoration: underline;
   font-size: .8em;
   color: #1c4884;
 }
-/* line 5216, ../sass/_layout-responsive.scss */
+/* line 5236, ../sass/_layout-responsive.scss */
 .taxon-resource ul li.policy-pub h3 {
   display: none;
 }
 
-/* line 5225, ../sass/_layout-responsive.scss */
+/* line 5245, ../sass/_layout-responsive.scss */
 .view-taxonomy-resources .more-link {
   text-align: left;
 }
-/* line 5227, ../sass/_layout-responsive.scss */
+/* line 5247, ../sass/_layout-responsive.scss */
 .view-taxonomy-resources .more-link a:link, .view-taxonomy-resources .more-link a:visited, .view-taxonomy-resources .more-link a:active {
   display: block;
   text-decoration: underline;
@@ -5780,90 +5793,90 @@ table.cheo-institutions tr td img {
 }
 
 /*Policy Insights policy_insights*/
-/* line 5242, ../sass/_layout-responsive.scss */
+/* line 5262, ../sass/_layout-responsive.scss */
 .view-policyInsights ul li span h4 {
   margin-bottom: 0;
 }
 
 /*publications/all*/
-/* line 5254, ../sass/_layout-responsive.scss */
+/* line 5274, ../sass/_layout-responsive.scss */
 .pub-list ul {
   /*list-style:none;*/
   margin: 0;
   padding: 0;
 }
-/* line 5259, ../sass/_layout-responsive.scss */
+/* line 5279, ../sass/_layout-responsive.scss */
 .pub-list ul li {
   overflow: hidden;
   /*margin-bottom:20px;*/
 }
-/* line 5263, ../sass/_layout-responsive.scss */
+/* line 5283, ../sass/_layout-responsive.scss */
 .pub-list ul li .pub-image {
   float: left;
   margin-right: 12px;
   display: inline-block;
   width: 14%;
 }
-/* line 5270, ../sass/_layout-responsive.scss */
+/* line 5290, ../sass/_layout-responsive.scss */
 .pub-list ul li .pub-description {
   float: left;
   display: inline-block;
   width: 65%;
 }
-/* line 5275, ../sass/_layout-responsive.scss */
+/* line 5295, ../sass/_layout-responsive.scss */
 .pub-list ul li .pub-description .sm-font {
   font-size: .8em;
 }
-/* line 5279, ../sass/_layout-responsive.scss */
+/* line 5299, ../sass/_layout-responsive.scss */
 .pub-list ul li .pub-description h2, .pub-list ul li .pub-description h5 {
   margin-top: 0;
 }
-/* line 5283, ../sass/_layout-responsive.scss */
+/* line 5303, ../sass/_layout-responsive.scss */
 .pub-list ul li .pub-description .field-content {
   position: relative;
   top: -3px;
 }
-/* line 5288, ../sass/_layout-responsive.scss */
+/* line 5308, ../sass/_layout-responsive.scss */
 .pub-list ul li .pub-description p {
   margin: 0 !important;
   /*font-weight:normal;*/
 }
-/* line 5291, ../sass/_layout-responsive.scss */
+/* line 5311, ../sass/_layout-responsive.scss */
 .pub-list ul li .pub-description p a:link, .pub-list ul li .pub-description p a:visited, .pub-list ul li .pub-description p a:active {
   color: #1c4884;
   text-decoration: none;
 }
-/* line 5295, ../sass/_layout-responsive.scss */
+/* line 5315, ../sass/_layout-responsive.scss */
 .pub-list ul li .pub-description p a:hover {
   text-decoration: underline;
 }
-/* line 5301, ../sass/_layout-responsive.scss */
+/* line 5321, ../sass/_layout-responsive.scss */
 .pub-list ul li .views-field-field-pub-pages {
   clear: left;
   display: block;
 }
-/* line 5306, ../sass/_layout-responsive.scss */
+/* line 5326, ../sass/_layout-responsive.scss */
 .pub-list ul li p.pub-title {
   font-weight: 800;
   margin-bottom: 12px;
   font-style: italic;
 }
-/* line 5311, ../sass/_layout-responsive.scss */
+/* line 5331, ../sass/_layout-responsive.scss */
 .pub-list ul li p.pub-title a:link, .pub-list ul li p.pub-title a:visited, .pub-list ul li p.pub-title a:active {
   color: #1c4884;
   text-decoration: none;
 }
-/* line 5315, ../sass/_layout-responsive.scss */
+/* line 5335, ../sass/_layout-responsive.scss */
 .pub-list ul li p.pub-title a:hover {
   text-decoration: underline;
 }
 
-/* line 5324, ../sass/_layout-responsive.scss */
+/* line 5344, ../sass/_layout-responsive.scss */
 .clearBoth {
   clear: both;
 }
 
-/* line 5329, ../sass/_layout-responsive.scss */
+/* line 5349, ../sass/_layout-responsive.scss */
 .boxwrap {
   padding: 16px;
   border: 2px solid #333;
@@ -5872,28 +5885,28 @@ table.cheo-institutions tr td img {
   margin-bottom: 30px;
   border-radius: 8px;
 }
-/* line 5337, ../sass/_layout-responsive.scss */
+/* line 5357, ../sass/_layout-responsive.scss */
 .boxwrap h2, .boxwrap h3, .boxwrap h4 {
   margin-top: 0;
 }
-/* line 5341, ../sass/_layout-responsive.scss */
+/* line 5361, ../sass/_layout-responsive.scss */
 .boxwrap ul {
   list-style: none;
 }
-/* line 5344, ../sass/_layout-responsive.scss */
+/* line 5364, ../sass/_layout-responsive.scss */
 .boxwrap ul li {
   font-size: .8em;
 }
 
 /*WICE SARA Toggle menu on /sara*/
-/* line 5352, ../sass/_layout-responsive.scss */
+/* line 5372, ../sass/_layout-responsive.scss */
 h2.w-sara {
   padding: 0 0 8px 0;
   font-weight: bold;
   font-size: 1.5em;
 }
 
-/* line 5358, ../sass/_layout-responsive.scss */
+/* line 5378, ../sass/_layout-responsive.scss */
 #wiche-sara-menu {
   font-size: 1em;
   font-weight: normal;
@@ -5901,38 +5914,38 @@ h2.w-sara {
   line-height: 1.5em;
 }
 
-/* line 5365, ../sass/_layout-responsive.scss */
+/* line 5385, ../sass/_layout-responsive.scss */
 #wiche-sara-menu h3 {
   font-style: italic;
   line-height: 1em;
   margin-bottom: 4px;
 }
 
-/* line 5374, ../sass/_layout-responsive.scss */
+/* line 5394, ../sass/_layout-responsive.scss */
 .w-sara-menu .toggle-view li p.sara-menu, .w-sara-menu .toggle-view li p, .w-sara-menu .toggle-view li p.knocking-8, .menu .toggle-view li p.sara-menu, .menu .toggle-view li p, .menu .toggle-view li p.knocking-8 {
   display: none;
 }
 
-/* line 5381, ../sass/_layout-responsive.scss */
+/* line 5401, ../sass/_layout-responsive.scss */
 ul#wiche-sara-menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 5387, ../sass/_layout-responsive.scss */
+/* line 5407, ../sass/_layout-responsive.scss */
 ul#wiche-sara-menu ul.toggle-view li, .content ul#wiche-sara-menu ul li {
   margin-bottom: 0 !important;
 }
 
-/* line 5392, ../sass/_layout-responsive.scss */
+/* line 5412, ../sass/_layout-responsive.scss */
 ul#wiche-sara-menu ul.toggle-view a:link {
   font-size: .8em;
   line-height: 1.6em;
   padding-bottom: 6px;
 }
 
-/* line 5398, ../sass/_layout-responsive.scss */
+/* line 5418, ../sass/_layout-responsive.scss */
 ul#wiche-sara-menu ul.toggle-view span {
   position: relative;
   margin-left: 6px;
@@ -5942,30 +5955,30 @@ ul#wiche-sara-menu ul.toggle-view span {
 
 /*bio toggle on staff pages*/
 /*staff page ul grid*/
-/* line 5416, ../sass/_layout-responsive.scss */
+/* line 5436, ../sass/_layout-responsive.scss */
 .view-Staff-Alpha-View .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-item-field-user-project-contact-tid #edit-field-user-project-contact-tid, .view-wiche-staff .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-item-field-user-project-contact-tid #edit-field-user-project-contact-tid {
   width: 300px;
 }
-/* line 5420, ../sass/_layout-responsive.scss */
+/* line 5440, ../sass/_layout-responsive.scss */
 .view-Staff-Alpha-View .views-exposed-form .views-exposed-widgets .views-exposed-widget input, .view-wiche-staff .views-exposed-form .views-exposed-widgets .views-exposed-widget input {
   position: relative;
   top: -3px;
   right: -4px;
   padding: 0 4px;
 }
-/* line 5432, ../sass/_layout-responsive.scss */
+/* line 5452, ../sass/_layout-responsive.scss */
 .view-Staff-Alpha-View .manage-item-list ul, .view-wiche-staff .manage-item-list ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 5440, ../sass/_layout-responsive.scss */
+/* line 5460, ../sass/_layout-responsive.scss */
 .view-Staff-Alpha-View ul, .view-wiche-staff ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 5445, ../sass/_layout-responsive.scss */
+/* line 5465, ../sass/_layout-responsive.scss */
 .view-Staff-Alpha-View ul li.views-row, .view-wiche-staff ul li.views-row {
   width: 28%;
   display: inline-block;
@@ -5976,16 +5989,16 @@ ul#wiche-sara-menu ul.toggle-view span {
   height: 260px;
   line-height: 1.3em;
 }
-/* line 5456, ../sass/_layout-responsive.scss */
+/* line 5476, ../sass/_layout-responsive.scss */
 .view-Staff-Alpha-View ul li.views-row .field-content h2, .view-wiche-staff ul li.views-row .field-content h2 {
   margin: 0 0 4px;
   font-size: 1.2em;
 }
-/* line 5462, ../sass/_layout-responsive.scss */
+/* line 5482, ../sass/_layout-responsive.scss */
 .view-Staff-Alpha-View ul li.views-row strong, .view-wiche-staff ul li.views-row strong {
   letter-spacing: -1px;
 }
-/* line 5468, ../sass/_layout-responsive.scss */
+/* line 5488, ../sass/_layout-responsive.scss */
 .view-Staff-Alpha-View ul li.views-row ul.toggle-view li, .view-wiche-staff ul li.views-row ul.toggle-view li {
   cursor: pointer;
   position: absolute;
@@ -5993,18 +6006,18 @@ ul#wiche-sara-menu ul.toggle-view span {
   left: 80px;
   height: 30px !important;
 }
-/* line 5475, ../sass/_layout-responsive.scss */
+/* line 5495, ../sass/_layout-responsive.scss */
 .view-Staff-Alpha-View ul li.views-row ul.toggle-view li h3, .view-wiche-staff ul li.views-row ul.toggle-view li h3 {
   font-weight: normal;
   font-size: .9em;
   display: inline-block;
   padding: 2px;
 }
-/* line 5482, ../sass/_layout-responsive.scss */
+/* line 5502, ../sass/_layout-responsive.scss */
 .view-Staff-Alpha-View ul li.views-row ul.toggle-view li span, .view-wiche-staff ul li.views-row ul.toggle-view li span {
   color: #1c4884;
 }
-/* line 5486, ../sass/_layout-responsive.scss */
+/* line 5506, ../sass/_layout-responsive.scss */
 .view-Staff-Alpha-View ul li.views-row ul.toggle-view li p, .view-wiche-staff ul li.views-row ul.toggle-view li p {
   display: none;
   width: 500px;
@@ -6019,7 +6032,7 @@ ul#wiche-sara-menu ul.toggle-view span {
 }
 
 /*right sidebar project and initiative menus*/
-/* line 5510, ../sass/_layout-responsive.scss */
+/* line 5530, ../sass/_layout-responsive.scss */
 #block-menu-menu-wiche-directory ul.menu, #block-menu-menu-lac-menu ul.menu, .box-right ul.menu, #block-menu-menu-wue ul.menu,
 #block-menu-menu-psep-menu ul.menu, #block-menu-menu-ask-wiche ul.menu, #block-menu-menu-ice-public-menu ul.menu, #block-menu-menu-interstate-passport ul.menu,
 #block-menu-menu-initiatives-sor ul.menu, #block-menu-menu-about-us ul.menu, #block-menu-menu-resources ul.menu, #block-menu-menu-statewide-trans ul.menu, #block-menu-menu-facilitating-de ul.menu, #block-menu-menu-news ul.menu, #block-menu-menu-getting-what-yo ul.menu, #knocking-explore-list ul.menu, #block-menu-menu-non-traditional ul.menu, #block-menu-menu-factbook ul.menu, #block-block-263 ul.menu, #block-menu-menu-menu-nanslo-new ul.menu, #block-menu-menu-aboutnanslo ul.menu, #block-menu-menu-menu-nanslo-curr-initiative ul.menu, #block-menu-menu-menu-nanslo-past-initiative ul.menu, #block-menu-menu-menu-nanslo-creative-soluti ul.menu, #block-menu-menu-policy-mega-menu-block ul.menu {
@@ -6028,7 +6041,7 @@ ul#wiche-sara-menu ul.toggle-view span {
   padding: 0 0 16px;
   border-bottom: 1px solid #ccc;
 }
-/* line 5515, ../sass/_layout-responsive.scss */
+/* line 5535, ../sass/_layout-responsive.scss */
 #block-menu-menu-wiche-directory ul.menu li, #block-menu-menu-lac-menu ul.menu li, .box-right ul.menu li, #block-menu-menu-wue ul.menu li,
 #block-menu-menu-psep-menu ul.menu li, #block-menu-menu-ask-wiche ul.menu li, #block-menu-menu-ice-public-menu ul.menu li, #block-menu-menu-interstate-passport ul.menu li,
 #block-menu-menu-initiatives-sor ul.menu li, #block-menu-menu-about-us ul.menu li, #block-menu-menu-resources ul.menu li, #block-menu-menu-statewide-trans ul.menu li, #block-menu-menu-facilitating-de ul.menu li, #block-menu-menu-news ul.menu li, #block-menu-menu-getting-what-yo ul.menu li, #knocking-explore-list ul.menu li, #block-menu-menu-non-traditional ul.menu li, #block-menu-menu-factbook ul.menu li, #block-block-263 ul.menu li, #block-menu-menu-menu-nanslo-new ul.menu li, #block-menu-menu-aboutnanslo ul.menu li, #block-menu-menu-menu-nanslo-curr-initiative ul.menu li, #block-menu-menu-menu-nanslo-past-initiative ul.menu li, #block-menu-menu-menu-nanslo-creative-soluti ul.menu li, #block-menu-menu-policy-mega-menu-block ul.menu li {
@@ -6036,7 +6049,7 @@ ul#wiche-sara-menu ul.toggle-view span {
   padding-bottom: 0;
   margin-bottom: 16px;
 }
-/* line 5520, ../sass/_layout-responsive.scss */
+/* line 5540, ../sass/_layout-responsive.scss */
 #block-menu-menu-wiche-directory ul.menu li a, #block-menu-menu-lac-menu ul.menu li a, .box-right ul.menu li a, #block-menu-menu-wue ul.menu li a,
 #block-menu-menu-psep-menu ul.menu li a, #block-menu-menu-ask-wiche ul.menu li a, #block-menu-menu-ice-public-menu ul.menu li a, #block-menu-menu-interstate-passport ul.menu li a,
 #block-menu-menu-initiatives-sor ul.menu li a, #block-menu-menu-about-us ul.menu li a, #block-menu-menu-resources ul.menu li a, #block-menu-menu-statewide-trans ul.menu li a, #block-menu-menu-facilitating-de ul.menu li a, #block-menu-menu-news ul.menu li a, #block-menu-menu-getting-what-yo ul.menu li a, #knocking-explore-list ul.menu li a, #block-menu-menu-non-traditional ul.menu li a, #block-menu-menu-factbook ul.menu li a, #block-block-263 ul.menu li a, #block-menu-menu-menu-nanslo-new ul.menu li a, #block-menu-menu-aboutnanslo ul.menu li a, #block-menu-menu-menu-nanslo-curr-initiative ul.menu li a, #block-menu-menu-menu-nanslo-past-initiative ul.menu li a, #block-menu-menu-menu-nanslo-creative-soluti ul.menu li a, #block-menu-menu-policy-mega-menu-block ul.menu li a {
@@ -6048,7 +6061,7 @@ ul#wiche-sara-menu ul.toggle-view span {
   display: block;
   line-height: 1.3em;
 }
-/* line 5529, ../sass/_layout-responsive.scss */
+/* line 5549, ../sass/_layout-responsive.scss */
 #block-menu-menu-wiche-directory ul.menu li a:hover, #block-menu-menu-lac-menu ul.menu li a:hover, .box-right ul.menu li a:hover, #block-menu-menu-wue ul.menu li a:hover,
 #block-menu-menu-psep-menu ul.menu li a:hover, #block-menu-menu-ask-wiche ul.menu li a:hover, #block-menu-menu-ice-public-menu ul.menu li a:hover, #block-menu-menu-interstate-passport ul.menu li a:hover,
 #block-menu-menu-initiatives-sor ul.menu li a:hover, #block-menu-menu-about-us ul.menu li a:hover, #block-menu-menu-resources ul.menu li a:hover, #block-menu-menu-statewide-trans ul.menu li a:hover, #block-menu-menu-facilitating-de ul.menu li a:hover, #block-menu-menu-news ul.menu li a:hover, #block-menu-menu-getting-what-yo ul.menu li a:hover, #knocking-explore-list ul.menu li a:hover, #block-menu-menu-non-traditional ul.menu li a:hover, #block-menu-menu-factbook ul.menu li a:hover, #block-block-263 ul.menu li a:hover, #block-menu-menu-menu-nanslo-new ul.menu li a:hover, #block-menu-menu-aboutnanslo ul.menu li a:hover, #block-menu-menu-menu-nanslo-curr-initiative ul.menu li a:hover, #block-menu-menu-menu-nanslo-past-initiative ul.menu li a:hover, #block-menu-menu-menu-nanslo-creative-soluti ul.menu li a:hover, #block-menu-menu-policy-mega-menu-block ul.menu li a:hover {
@@ -6056,49 +6069,49 @@ ul#wiche-sara-menu ul.toggle-view span {
 }
 
 /*how to contact staff box in 1st sidebar*/
-/* line 5538, ../sass/_layout-responsive.scss */
+/* line 5558, ../sass/_layout-responsive.scss */
 .how-contact-staff {
   padding: 8px;
   width: 90%;
 }
 
 /*How to Edit Staff Info*/
-/* line 5547, ../sass/_layout-responsive.scss */
+/* line 5567, ../sass/_layout-responsive.scss */
 .author-box-right h5 {
   margin: 0;
   padding: 0;
 }
-/* line 5551, ../sass/_layout-responsive.scss */
+/* line 5571, ../sass/_layout-responsive.scss */
 .author-box-right ol {
   margin: 0 0 0 16px;
   padding: 0;
 }
-/* line 5554, ../sass/_layout-responsive.scss */
+/* line 5574, ../sass/_layout-responsive.scss */
 .author-box-right ol li {
   font-size: .8em;
 }
 
 /*styling for Student Testimonial list on /studentTestimonials*/
-/* line 5564, ../sass/_layout-responsive.scss */
+/* line 5584, ../sass/_layout-responsive.scss */
 .testimonial-list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 5569, ../sass/_layout-responsive.scss */
+/* line 5589, ../sass/_layout-responsive.scss */
 .testimonial-list ul li:first-child {
   /*border-top:1px solid #cccccc;*/
   margin-top: 0;
   padding-top: 16px;
 }
-/* line 5575, ../sass/_layout-responsive.scss */
+/* line 5595, ../sass/_layout-responsive.scss */
 .testimonial-list ul li {
   padding-bottom: 16px;
   border-bottom: 1px solid #ccc;
   margin-top: 16px;
   overflow: hidden;
 }
-/* line 5581, ../sass/_layout-responsive.scss */
+/* line 5601, ../sass/_layout-responsive.scss */
 .testimonial-list ul li .testimonial-photo {
   float: left;
   margin-right: 8px;
@@ -6106,21 +6119,21 @@ ul#wiche-sara-menu ul.toggle-view span {
   top: 6px;
   width: 10%;
 }
-/* line 5589, ../sass/_layout-responsive.scss */
+/* line 5609, ../sass/_layout-responsive.scss */
 .testimonial-list ul li .testimonial-body {
   float: left;
 }
-/* line 5593, ../sass/_layout-responsive.scss */
+/* line 5613, ../sass/_layout-responsive.scss */
 .testimonial-list ul li .field-content {
   clear: left;
 }
-/* line 5598, ../sass/_layout-responsive.scss */
+/* line 5618, ../sass/_layout-responsive.scss */
 .testimonial-list ul li:last-child {
   border-bottom: none;
 }
 
 /*WICHE /policy_insights page & Western Policy Exchange*/
-/* line 5608, ../sass/_layout-responsive.scss */
+/* line 5628, ../sass/_layout-responsive.scss */
 .view-policyInsights .item-list h3, .view-policyInsights .pub-list h3, .view-policyExchanges .item-list h3, .view-policyExchanges .pub-list h3, .view-publications .item-list h3, .view-publications .pub-list h3 {
   /*clear:left;*/
   font-size: 1.2em;
@@ -6128,7 +6141,7 @@ ul#wiche-sara-menu ul.toggle-view span {
   color: #fff;
   background: #1c4884;
 }
-/* line 5615, ../sass/_layout-responsive.scss */
+/* line 5635, ../sass/_layout-responsive.scss */
 .view-policyInsights .item-list ul, .view-policyInsights .pub-list ul, .view-policyExchanges .item-list ul, .view-policyExchanges .pub-list ul, .view-publications .item-list ul, .view-publications .pub-list ul {
   margin: 0;
   padding: 0;
@@ -6136,7 +6149,7 @@ ul#wiche-sara-menu ul.toggle-view span {
   /*display:table;*/
   width: 100%;
 }
-/* line 5624, ../sass/_layout-responsive.scss */
+/* line 5644, ../sass/_layout-responsive.scss */
 .view-policyInsights .item-list ul li h4 a:link, .view-policyInsights .item-list ul li h4 a:visited, .view-policyInsights .item-list ul li h4 a:active, .view-policyInsights .item-list ul li h4 a:hover, .view-policyInsights .pub-list ul li h4 a:link, .view-policyInsights .pub-list ul li h4 a:visited, .view-policyInsights .pub-list ul li h4 a:active, .view-policyInsights .pub-list ul li h4 a:hover, .view-policyExchanges .item-list ul li h4 a:link, .view-policyExchanges .item-list ul li h4 a:visited, .view-policyExchanges .item-list ul li h4 a:active, .view-policyExchanges .item-list ul li h4 a:hover, .view-policyExchanges .pub-list ul li h4 a:link, .view-policyExchanges .pub-list ul li h4 a:visited, .view-policyExchanges .pub-list ul li h4 a:active, .view-policyExchanges .pub-list ul li h4 a:hover, .view-publications .item-list ul li h4 a:link, .view-publications .item-list ul li h4 a:visited, .view-publications .item-list ul li h4 a:active, .view-publications .item-list ul li h4 a:hover, .view-publications .pub-list ul li h4 a:link, .view-publications .pub-list ul li h4 a:visited, .view-publications .pub-list ul li h4 a:active, .view-publications .pub-list ul li h4 a:hover {
   font-style: italic;
   font-weight: bold;
@@ -6144,7 +6157,7 @@ ul#wiche-sara-menu ul.toggle-view span {
   color: #000;
   line-height: 1.1em;
 }
-/* line 5631, ../sass/_layout-responsive.scss */
+/* line 5651, ../sass/_layout-responsive.scss */
 .view-policyInsights .item-list ul li a:link, .view-policyInsights .item-list ul li a:visited, .view-policyInsights .item-list ul li a:active, .view-policyInsights .pub-list ul li a:link, .view-policyInsights .pub-list ul li a:visited, .view-policyInsights .pub-list ul li a:active, .view-policyExchanges .item-list ul li a:link, .view-policyExchanges .item-list ul li a:visited, .view-policyExchanges .item-list ul li a:active, .view-policyExchanges .pub-list ul li a:link, .view-policyExchanges .pub-list ul li a:visited, .view-policyExchanges .pub-list ul li a:active, .view-publications .item-list ul li a:link, .view-publications .item-list ul li a:visited, .view-publications .item-list ul li a:active, .view-publications .pub-list ul li a:link, .view-publications .pub-list ul li a:visited, .view-publications .pub-list ul li a:active {
   color: #1c4884;
   /*font-size: 0.9em;*/
@@ -6153,45 +6166,45 @@ ul#wiche-sara-menu ul.toggle-view span {
   text-decoration: none;
   /*line-height:.9em!important;*/
 }
-/* line 5640, ../sass/_layout-responsive.scss */
+/* line 5660, ../sass/_layout-responsive.scss */
 .view-policyInsights .item-list ul li a:hover, .view-policyInsights .pub-list ul li a:hover, .view-policyExchanges .item-list ul li a:hover, .view-policyExchanges .pub-list ul li a:hover, .view-publications .item-list ul li a:hover, .view-publications .pub-list ul li a:hover {
   text-decoration: underline;
 }
 
 /*2nd sidebar Commission and LAC blocks for state highlight pages*/
-/* line 5651, ../sass/_layout-responsive.scss */
+/* line 5671, ../sass/_layout-responsive.scss */
 .view-Commission-Block-View ul,
 .view-legislative-advisory-committee-block-view ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 5656, ../sass/_layout-responsive.scss */
+/* line 5676, ../sass/_layout-responsive.scss */
 .view-Commission-Block-View ul li,
 .view-legislative-advisory-committee-block-view ul li {
   border-bottom: 1px solid #ccc;
   margin-top: 16px;
 }
-/* line 5660, ../sass/_layout-responsive.scss */
+/* line 5680, ../sass/_layout-responsive.scss */
 .view-Commission-Block-View ul li .small,
 .view-legislative-advisory-committee-block-view ul li .small {
   font-size: .9em;
   line-height: 1em;
 }
-/* line 5666, ../sass/_layout-responsive.scss */
+/* line 5686, ../sass/_layout-responsive.scss */
 .view-Commission-Block-View ul li:last-child,
 .view-legislative-advisory-committee-block-view ul li:last-child {
   border-bottom: none;
 }
 
 /*override much zen css font-sizes on upcoming events block on home page*/
-/* line 5676, ../sass/_layout-responsive.scss */
+/* line 5696, ../sass/_layout-responsive.scss */
 .region-sidebar-second ul {
   /*li:last-child{
   	border-bottom:none;
   }*/
 }
-/* line 5677, ../sass/_layout-responsive.scss */
+/* line 5697, ../sass/_layout-responsive.scss */
 .region-sidebar-second ul li {
   /*border-bottom:1px solid #ccc;*/
   margin-bottom: 6px;
@@ -6204,14 +6217,14 @@ ul#wiche-sara-menu ul.toggle-view span {
   	}
   }*/
 }
-/* line 5682, ../sass/_layout-responsive.scss */
+/* line 5702, ../sass/_layout-responsive.scss */
 .region-sidebar-second ul li .views-field-field-date-display h3.field-content {
   font-size: 1em;
   font-weight: 100;
   margin: 0;
 }
 
-/* line 5705, ../sass/_layout-responsive.scss */
+/* line 5725, ../sass/_layout-responsive.scss */
 .front-page .region-sidebar-second ul li {
   padding-bottom: 16px;
   border-bottom: 1px solid #ccc;
@@ -6224,29 +6237,29 @@ ul#wiche-sara-menu ul.toggle-view span {
 	}
 }*/
 /*student testimonial slideshow on front page*/
-/* line 5722, ../sass/_layout-responsive.scss */
+/* line 5742, ../sass/_layout-responsive.scss */
 #views_slideshow_cycle_main_testimonial_slider-block {
   width: auto;
   height: auto;
 }
-/* line 5725, ../sass/_layout-responsive.scss */
+/* line 5745, ../sass/_layout-responsive.scss */
 #views_slideshow_cycle_main_testimonial_slider-block .testimonial-wrapper {
   overflow: hidden;
 }
-/* line 5727, ../sass/_layout-responsive.scss */
+/* line 5747, ../sass/_layout-responsive.scss */
 #views_slideshow_cycle_main_testimonial_slider-block .testimonial-wrapper .testimonial-photo {
   float: left;
   margin-right: 8px;
   width: 40%;
 }
-/* line 5733, ../sass/_layout-responsive.scss */
+/* line 5753, ../sass/_layout-responsive.scss */
 #views_slideshow_cycle_main_testimonial_slider-block .testimonial-wrapper .student-details {
   float: left;
   width: 55%;
   font-size: 12px;
   line-height: 1.3em;
 }
-/* line 5740, ../sass/_layout-responsive.scss */
+/* line 5760, ../sass/_layout-responsive.scss */
 #views_slideshow_cycle_main_testimonial_slider-block .testimonial-wrapper .testimonial-text {
   clear: left;
   font-size: 12px;
@@ -6254,89 +6267,89 @@ ul#wiche-sara-menu ul.toggle-view span {
 }
 
 /*misc css*/
-/* line 5749, ../sass/_layout-responsive.scss */
+/* line 5769, ../sass/_layout-responsive.scss */
 .dark_blue {
   color: #1c4884;
   line-height: 1.2em !important;
 }
 
 /*css table code for css based tables with pic on left, text on right*/
-/* line 5756, ../sass/_layout-responsive.scss */
+/* line 5776, ../sass/_layout-responsive.scss */
 .faux-table {
   width: 100%;
   display: table;
   margin-bottom: 16px;
 }
-/* line 5761, ../sass/_layout-responsive.scss */
+/* line 5781, ../sass/_layout-responsive.scss */
 .faux-table h3 {
   margin: 0;
   font-size: 1.2em;
 }
-/* line 5767, ../sass/_layout-responsive.scss */
+/* line 5787, ../sass/_layout-responsive.scss */
 .faux-table .tr-row {
   display: table-row;
 }
-/* line 5770, ../sass/_layout-responsive.scss */
+/* line 5790, ../sass/_layout-responsive.scss */
 .faux-table .td-cell_20 {
   display: table-cell;
   width: 10%;
   vertical-align: top;
 }
-/* line 5776, ../sass/_layout-responsive.scss */
+/* line 5796, ../sass/_layout-responsive.scss */
 .faux-table .td-cell {
   display: table-cell;
   width: 30%;
   vertical-align: top;
 }
-/* line 5782, ../sass/_layout-responsive.scss */
+/* line 5802, ../sass/_layout-responsive.scss */
 .faux-table .td-cell_70 {
   display: table-cell;
   width: 68%;
   padding-left: 16px;
   vertical-align: top;
 }
-/* line 5788, ../sass/_layout-responsive.scss */
+/* line 5808, ../sass/_layout-responsive.scss */
 .faux-table .td-cell_70 span {
   display: block;
 }
 
-/* line 5796, ../sass/_layout-responsive.scss */
+/* line 5816, ../sass/_layout-responsive.scss */
 .faux-three-col-table {
   width: 100%;
   display: table;
 }
-/* line 5801, ../sass/_layout-responsive.scss */
+/* line 5821, ../sass/_layout-responsive.scss */
 .faux-three-col-table .trow {
   width: 100%;
   display: table;
 }
-/* line 5807, ../sass/_layout-responsive.scss */
+/* line 5827, ../sass/_layout-responsive.scss */
 .faux-three-col-table .col-one {
   display: table-cell;
   vertical-align: top;
   width: 187px;
   padding-right: 20px;
 }
-/* line 5814, ../sass/_layout-responsive.scss */
+/* line 5834, ../sass/_layout-responsive.scss */
 .faux-three-col-table .col-two {
   display: table-cell;
   vertical-align: top;
   width: 187px;
   padding-right: 20px;
 }
-/* line 5821, ../sass/_layout-responsive.scss */
+/* line 5841, ../sass/_layout-responsive.scss */
 .faux-three-col-table .col-three {
   display: table-cell;
   vertical-align: top;
   width: 187px;
 }
 
-/* line 5831, ../sass/_layout-responsive.scss */
+/* line 5851, ../sass/_layout-responsive.scss */
 .sara-two-col-table {
   width: 100%;
   display: table;
 }
-/* line 5836, ../sass/_layout-responsive.scss */
+/* line 5856, ../sass/_layout-responsive.scss */
 .sara-two-col-table .sara-col-one {
   display: table-cell;
   vertical-align: top;
@@ -6344,7 +6357,7 @@ ul#wiche-sara-menu ul.toggle-view span {
   padding: 0 12px 0;
   margin: 0 12px 0;
 }
-/* line 5844, ../sass/_layout-responsive.scss */
+/* line 5864, ../sass/_layout-responsive.scss */
 .sara-two-col-table .sara-col-two {
   display: table-cell;
   vertical-align: top;
@@ -6353,18 +6366,18 @@ ul#wiche-sara-menu ul.toggle-view span {
 }
 
 /*hide this thing*/
-/* line 5855, ../sass/_layout-responsive.scss */
+/* line 5875, ../sass/_layout-responsive.scss */
 .node-state-highlights .node-readmore, .node-state-highlights .comment-add {
   display: none;
 }
-/* line 5859, ../sass/_layout-responsive.scss */
+/* line 5879, ../sass/_layout-responsive.scss */
 .node-state-highlights .field-name-field-state-tagline {
   font-style: italic;
   line-height: 1.8em;
   margin-bottom: 10px;
 }
 
-/* line 5866, ../sass/_layout-responsive.scss */
+/* line 5886, ../sass/_layout-responsive.scss */
 .student-savings-box {
   padding: 16px;
   border: 2px solid #333;
@@ -6372,58 +6385,58 @@ ul#wiche-sara-menu ul.toggle-view span {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-/* line 5873, ../sass/_layout-responsive.scss */
+/* line 5893, ../sass/_layout-responsive.scss */
 .student-savings-box legend {
   font-weight: bold;
   font-size: 1.5em;
 }
-/* line 5879, ../sass/_layout-responsive.scss */
+/* line 5899, ../sass/_layout-responsive.scss */
 .student-savings-box .fieldset-wrapper .field-label {
   width: 60%;
 }
-/* line 5883, ../sass/_layout-responsive.scss */
+/* line 5903, ../sass/_layout-responsive.scss */
 .student-savings-box .fieldset-wrapper .field-items {
   text-align: right;
   width: 40%;
 }
-/* line 5889, ../sass/_layout-responsive.scss */
+/* line 5909, ../sass/_layout-responsive.scss */
 .student-savings-box .fieldset-wrapper .field-name-field-state-fig1-total2 {
   border-top: 2px solid #ccc;
   padding-top: 4px;
   margin-top: 4px;
 }
-/* line 5894, ../sass/_layout-responsive.scss */
+/* line 5914, ../sass/_layout-responsive.scss */
 .student-savings-box .fieldset-wrapper .field-name-field-state-fig1-total2 .field-items .field-item {
   font-style: italic;
 }
-/* line 5899, ../sass/_layout-responsive.scss */
+/* line 5919, ../sass/_layout-responsive.scss */
 .student-savings-box .fieldset-wrapper .field-name-field-state-fig1-total {
   border-top: 2px solid #ccc;
   padding-top: 4px;
   margin-top: 4px;
 }
-/* line 5904, ../sass/_layout-responsive.scss */
+/* line 5924, ../sass/_layout-responsive.scss */
 .student-savings-box .fieldset-wrapper .field-name-field-state-fig1-total .field-items .field-item {
   font-style: italic;
 }
 
 /*jquery toggle menu for /knocking-8th/technicalNotes*/
-/* line 5915, ../sass/_layout-responsive.scss */
+/* line 5935, ../sass/_layout-responsive.scss */
 .knocking-dropdown .toggle-view li {
   cursor: pointer;
 }
-/* line 5918, ../sass/_layout-responsive.scss */
+/* line 5938, ../sass/_layout-responsive.scss */
 .knocking-dropdown .toggle-view p {
   display: none;
 }
 
-/* line 5924, ../sass/_layout-responsive.scss */
+/* line 5944, ../sass/_layout-responsive.scss */
 article .field-name-field-state-investment {
   margin-top: 10px;
 }
 
 /*passport info page summary css*/
-/* line 5929, ../sass/_layout-responsive.scss */
+/* line 5949, ../sass/_layout-responsive.scss */
 .passport-summary {
   background: none;
   width: 90%;
@@ -6434,30 +6447,30 @@ article .field-name-field-state-investment {
   padding-bottom: 12px;
   border-bottom: 1px solid #ccc;
 }
-/* line 5939, ../sass/_layout-responsive.scss */
+/* line 5959, ../sass/_layout-responsive.scss */
 .passport-summary .tr {
   display: table-row;
 }
-/* line 5944, ../sass/_layout-responsive.scss */
+/* line 5964, ../sass/_layout-responsive.scss */
 .passport-summary .tr .td-cell-30 {
   display: table-cell;
   vertical-align: top;
   width: 40%;
 }
-/* line 5950, ../sass/_layout-responsive.scss */
+/* line 5970, ../sass/_layout-responsive.scss */
 .passport-summary .tr .td-cell-60 {
   display: table-cell;
   width: 60%;
   vertical-align: top;
 }
-/* line 5956, ../sass/_layout-responsive.scss */
+/* line 5976, ../sass/_layout-responsive.scss */
 .passport-summary .tr .td-cell-60 p {
   margin: 0 !important;
   padding: 0 0 12px;
   position: relative;
   top: -3px;
 }
-/* line 5963, ../sass/_layout-responsive.scss */
+/* line 5983, ../sass/_layout-responsive.scss */
 .passport-summary .tr .td-cell-60 h3 {
   color: #000;
   text-shadow: none;
@@ -6467,55 +6480,40 @@ article .field-name-field-state-investment {
 }
 
 @media all and (min-width: 1280px) {
-  /* line 5979, ../sass/_layout-responsive.scss */
+  /* line 5999, ../sass/_layout-responsive.scss */
   #page .view-content .item-list-lac ul li {
     float: left;
     width: 32%;
   }
 
-  /* line 5985, ../sass/_layout-responsive.scss */
+  /* line 6005, ../sass/_layout-responsive.scss */
   .header .phone-nav {
     display: none;
   }
-  /* line 5989, ../sass/_layout-responsive.scss */
+  /* line 6009, ../sass/_layout-responsive.scss */
   .header #block-search-form {
     position: absolute;
     width: 25%;
     top: 53px;
     right: 25px;
   }
-  /* line 5995, ../sass/_layout-responsive.scss */
+  /* line 6015, ../sass/_layout-responsive.scss */
   .header #block-search-form .searchWiche .form-item input.form-text[type="text"] {
     width: 80%;
   }
 
-  /* line 6001, ../sass/_layout-responsive.scss */
+  /* line 6021, ../sass/_layout-responsive.scss */
   #main, #main-front {
     padding-top: 2em;
     /*end programs departments*/
   }
-  /* line 6004, ../sass/_layout-responsive.scss */
+  /* line 6024, ../sass/_layout-responsive.scss */
   #main .wiche-region, #main-front .wiche-region {
     display: block !important;
   }
-  /* line 6009, ../sass/_layout-responsive.scss */
+  /* line 6029, ../sass/_layout-responsive.scss */
   #main .region-highlighted #block-menu-menu-interstate-passport, #main-front .region-highlighted #block-menu-menu-interstate-passport {
     display: none;
-  }
-  /* line 6016, ../sass/_layout-responsive.scss */
-  #main #slideshow .wiche-mission-self-id, #main-front #slideshow .wiche-mission-self-id {
-    padding: 5px 75px 0 0;
-  }
-  /* line 6019, ../sass/_layout-responsive.scss */
-  #main #slideshow .wiche-mission-self-id ul li a, #main-front #slideshow .wiche-mission-self-id ul li a {
-    font-size: 80%;
-  }
-  /* line 6023, ../sass/_layout-responsive.scss */
-  #main #slideshow .wiche-mission-self-id .region-self-id .mission, #main-front #slideshow .wiche-mission-self-id .region-self-id .mission {
-    padding: 8px 0;
-    margin: 10px auto 20px auto;
-    font-size: 1em;
-    line-height: 1.2;
   }
   /* line 6034, ../sass/_layout-responsive.scss */
   #main #programs-departments, #main-front #programs-departments {
