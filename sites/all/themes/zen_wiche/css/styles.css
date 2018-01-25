@@ -9932,7 +9932,7 @@ ol.sep-by-numbers > li:before {
 }
 /* line 9732, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id {
-  width: 35%;
+  width: 100%;
 }
 /* line 9735, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id .region-self-id .block {
