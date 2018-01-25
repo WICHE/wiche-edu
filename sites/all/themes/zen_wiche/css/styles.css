@@ -9942,8 +9942,8 @@ ol.sep-by-numbers > li:before {
   margin: 20px auto 30px auto;
   padding: 15px 0;
   color: #fff;
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.3em;
   letter-spacing: 1px;
   border-bottom: 2px dashed #fff;
   border-top: 2px dashed #fff;
@@ -9974,8 +9974,8 @@ ol.sep-by-numbers > li:before {
   color: #fff;
   display: block;
   font-weight: 400;
-  font-size: 110%;
-  line-height: 1.5em;
+  font-size: 100%;
+  line-height: 1.4em;
 }
 /* line 9782, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id .mission {
