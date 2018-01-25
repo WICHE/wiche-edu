@@ -3298,8 +3298,8 @@ table#physics-lab-activities tr:nth-child(even) {
     display: block !important;
   }
   /* line 2603, ../sass/_layout-responsive.scss */
-  #main .flexslider .slides > li, #main-front .flexslider .slides > li {
-    overflow: hidden;
+  #main #slideshow .mission, #main-front #slideshow .mission {
+    display: none;
   }
   /* line 2608, ../sass/_layout-responsive.scss */
   #main .region-highlighted #block-menu-menu-interstate-passport, #main-front .region-highlighted #block-menu-menu-interstate-passport {
