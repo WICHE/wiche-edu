@@ -2640,7 +2640,140 @@ article table#psep-support-fees{
 				  
 		}
 	
+<<<<<<< HEAD
 
+=======
+#slideshow{
+	display:table;
+	width:100%;
+	
+		.slide-row{
+			display:table-row;
+			
+			.slides{
+				display:table-cell;
+				/*max-width:600px;*/
+				vertical-align:top;
+				
+				.region-slides{
+					.block{
+						margin:0;
+						
+				/*flex slider css*/
+				
+	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
+		.flexslider{
+			border:none;
+			margin-bottom:0;
+			
+			position:relative;
+			
+				.views-field-field-call-to-action{
+					/*position:absolute;
+					left:14px;
+					top:-10px;*/
+					
+						h3{
+							margin-bottom:0;
+								a:link, a:active, a:visited{
+									font-family: 'humnst777_cn_btbold',sans-serif;
+									line-height: 1.2em;
+									font-size: 1.4em;
+									text-shadow: 1px 1px #000;
+									letter-spacing:1px;
+									color:#f3b927;
+
+									&:hover{
+										text-decoration:underline;
+									}
+								}
+							}
+					p{
+						margin:8px 0 0 0;
+						line-height:1.1em;
+					}
+			}
+			
+			/*.views-field-field-photo-credit{
+					width:100%;
+					background:rgba(0,0,0,.25);
+					position:absolute;
+					left:0;
+					padding-left:10px;
+					bottom:0;
+					font-size:.7em;
+					font-weight:400;
+					letter-spacing:1px;
+					line-height:1.2em;
+					color:#fff;
+					text-shadow: .5px .5px #000;
+				
+				.field-content{
+					width:95%;
+				}
+			}*/
+			
+			.flex-direction-nav{
+				//display:none;
+			}
+		}
+		
+		.flex-control-nav{
+			display:none;
+		}
+		
+	}//end #flexslider_views...
+}			
+		}
+				
+				img{
+					width:100%;
+					/*max-width:600px;*/
+					height:auto;
+				}
+		}
+			
+			.wiche-mission-self-id{
+				display:table-cell;
+				width:35%;
+				background-color:rgba(33,90,168,0.75);
+				vertical-align:top;
+				
+				.region-self-id{
+					.block{
+						margin:0;
+					}
+				}
+				
+				h2{
+					color:#fff;
+					margin:8px 0 0 6px;
+					font-size:1em;
+				}
+				
+				ul{
+					margin:6px 0 0 16px;
+					padding:0 0 0 16px;
+					list-style:none;
+					
+					li{
+						background:url(images/white-arrow-bullet.png) 0 0 no-repeat;
+						padding-left:20px;
+						margin:3px 0;
+						a:link,a:visited,a:active{
+							color:#fff;
+							display:block;
+							font-weight:200;
+							font-size:70%;
+						}
+					}
+				}
+			}//end .wiche-mission-self...
+	}//end slide-row
+		
+		
+	}// end #slideshow
+>>>>>>> 2a0f686af5f27ca896335c763f7d2bd16336e20e
 
 	
 	  /*
@@ -3178,6 +3311,137 @@ article table#psep-support-fees{
 	 }
 	 
 	
+<<<<<<< HEAD
+=======
+		.slide-row{
+			display:table-row;
+			
+			.slides{
+				display:table-cell;
+				width:780px;
+				vertical-align:top;
+				
+				img{
+					width:100%;
+					max-width:780px;
+				}
+				
+				.region-slides{
+					.block{
+						margin:0;
+						height:288px;
+					
+				
+	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
+		.flexslider{
+			border:none;
+			margin-bottom:0;
+			
+			position:relative;
+			
+				.views-field-field-call-to-action{
+					/*position:absolute;
+					left:14px;
+					bottom:10px;
+					text-shadow: 1px 1px #000;
+					letter-spacing:1px;*/
+					
+					
+					h3{
+						margin-bottom:0;
+							a:link, a:active, a:visited{
+								font-family: 'humnst777_cn_btbold',sans-serif;
+								line-height: 1.2em;
+								font-size: 1.4em;
+								text-shadow: 1px 1px #000;
+								letter-spacing:1px;
+								color:#f3b927;
+
+									&:hover{
+										text-decoration:underline;
+									}
+								}
+							}
+					p{
+						margin:8px 0 0 0;
+						line-height:1.1em;
+					}
+				}
+			
+			.flex-direction-nav{
+				//display:none;
+			}
+		}//end flexslider
+		
+		
+		.flex-control-nav{
+			display:none;
+		}
+		
+	}
+}//end region-slides .block			
+		}
+				
+		}
+			
+			.wiche-mission-self-id{
+				display:table-cell;
+				width:35%;
+				background-color:rgba(33,90,168,0.75);
+				vertical-align:top;
+				
+				.region-self-id{
+					.block{
+						margin:0;
+					}
+				}
+				
+				h2{
+					color:#fff;
+					margin:8px 0 0 16px;
+					font-size:1.9em;
+				}
+				
+			
+				ul{
+					margin:12px 0 0 16px;
+					padding:0 0 0 16px;
+					list-style:none;
+					
+					li{
+						background:url(images/white-arrow-bullet-lg.png) 0 5px no-repeat;
+						padding-left:20px;
+						margin:6px 0;
+						a:link,a:visited,a:active{
+							color:#fff;
+							display:block;
+							font-weight:400;
+							font-size:100%;
+							line-height:1.2em;
+						}
+					}
+				}
+				
+				/*.mission{
+								background:#ccc;
+								width:100%;
+								h2{
+									font-family: 'humnst777_cn_btregular', sans-serif;
+									font-weight:200;
+									margin:0;
+									padding:15px;
+									color:#000;
+									font-size:.9em;
+									line-height:1.2em;
+								}
+								
+							}*/
+			}
+		}
+		
+	}// end #slideshow
+
+>>>>>>> 2a0f686af5f27ca896335c763f7d2bd16336e20e
   /*Page Views, Exposed filters custom css*/
 
 #views-exposed-form-Staff-Alpha-View-page-3{
@@ -6055,6 +6319,163 @@ article .field-name-field-state-investment{
 	 }
 	 
 	
+<<<<<<< HEAD
+=======
+		.slide-row{
+			display:table-row;
+			
+			.slides{
+				/*background:#245eac;*/
+				display:table-cell;
+				width:780px;
+				overflow:hidden;
+				vertical-align:top;
+				
+				img{
+					width:100%;
+					max-width:780px;
+				}
+				
+				.region-slides{
+					.block{
+						margin:0;
+						
+				
+				
+	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
+		.flexslider{
+			border:none;
+			margin-bottom:0;
+			overflow:hidden;
+			position:relative;
+			border-radius:0px;
+			
+				.views-field-field-call-to-action{
+					/*position:absolute;
+					left:14px;
+					bottom:10px;*/
+					
+						h3{
+							margin-bottom:0;
+								a:link, a:active, a:visited{
+									font-family: 'humnst777_cn_btbold',sans-serif;
+									line-height: 1.2em;
+									font-size: 1.4em;
+									text-shadow: 1px 1px #000;
+									letter-spacing:1px;
+									color:#f3b927;
+
+										&:hover{
+											text-decoration:underline;
+										}
+									}
+							}
+					p{
+						margin:8px 0 0 0;
+						line-height:1.1em;
+					}
+				}//end call to action
+			
+			/*.views-field-field-photo-credit{
+				background:rgba(0,0,0,.25);
+				width:100%;
+				position:absolute;
+				padding:0 14px;
+				bottom:0;
+				font-size:.7em;
+				font-weight:400;
+				letter-spacing:1px;
+				line-height:1.2em;
+				color:#fff;
+				text-shadow: .5px .5px #000;
+				
+				.field-content{
+					width:95%;
+				}
+			}*/
+		
+			
+			.flex-direction-nav{
+				a.flex-next, a.flex-prev {
+					color:#fff;
+				}
+			}
+		}
+		
+		.flex-control-nav{
+			display:none;
+		}
+		
+	}
+}			
+		}
+				
+				img{
+					/*background:#000;
+					width:100%;
+					width:600px;
+					height:auto;*/
+				}
+		}
+			
+			.wiche-mission-self-id{
+				display:table-cell;
+				width:35%;
+				background-color:rgba(33,90,168,0.75);
+				vertical-align:top;
+				
+				.region-self-id{
+					.block{
+						margin:0;
+					}
+				}
+				
+				h2{
+					color:#fff;
+					margin:8px 0 0 16px;
+					font-size:2em;
+					border-bottom:none;
+				}
+				
+				
+				ul{
+					margin:12px 0 0 16px;
+					padding:0 0 0 16px;
+					list-style:none;
+					
+					li{
+						background:url(images/white-arrow-bullet-lg.png) 0 0 no-repeat;
+						padding-left:20px;
+						margin:6px 0;
+						a:link,a:visited,a:active{
+							color:#fff;
+							display:block;
+							font-weight:400;
+							font-size:110%;
+							line-height:1.5em;
+						}
+					}
+				}
+				
+				/*.mission{
+								background:#ccc;
+								width:100%;
+								h2{
+									font-family: 'humnst777_cn_btregular',sans-serif;
+									font-weight:200;
+									margin:0;
+									padding:15px;
+									color:#000;
+									font-size:1em;
+									line-height:1.4em;
+								}
+								
+							}*/
+			}
+		}
+		
+	}// end #slideshow
+>>>>>>> 2a0f686af5f27ca896335c763f7d2bd16336e20e
 
   /*Page Views, Exposed filters custom css*/
 
@@ -9642,6 +10063,7 @@ ol.sep-by-numbers > li:before {
 	h3{
 		margin-top:0;
 	}
+<<<<<<< HEAD
 }
 
  /*front-page slide show*/
@@ -9796,3 +10218,6 @@ ol.sep-by-numbers > li:before {
 		}
 		
 	}// end #slideshow
+=======
+}
+>>>>>>> 2a0f686af5f27ca896335c763f7d2bd16336e20e
