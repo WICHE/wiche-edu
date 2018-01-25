@@ -9656,7 +9656,7 @@ ol.sep-by-numbers > li:before {
 			.slides{
 				/*background:#245eac;*/
 				display:table-cell;
-				width:780px;
+				max-width:65%;
 				overflow:hidden;
 				vertical-align:top;
 				
