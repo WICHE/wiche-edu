@@ -2002,6 +2002,9 @@ table#physics-lab-activities tr:nth-child(even) {
   /* line 1223, ../sass/_layout-responsive.scss */
   #front-page #main-front, #front-page #main, #page #main-front, #page #main {
     /*margin-top:12px;*/
+    /*#slideshow .slides{
+    		display:none;
+    }*/
     /*this is begin used for Recent Publications*/
     /*alpha staff page*/
   }
@@ -2086,10 +2089,6 @@ table#physics-lab-activities tr:nth-child(even) {
   }
   /* line 1299, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-second #block-nice-menus-21, #front-page #main .sidebars .region-sidebar-second #block-nice-menus-21, #page #main-front .sidebars .region-sidebar-second #block-nice-menus-21, #page #main .sidebars .region-sidebar-second #block-nice-menus-21 {
-    display: none;
-  }
-  /* line 1305, ../sass/_layout-responsive.scss */
-  #front-page #main-front #slideshow .slides, #front-page #main #slideshow .slides, #page #main-front #slideshow .slides, #page #main #slideshow .slides {
     display: none;
   }
   /* line 1310, ../sass/_layout-responsive.scss */
@@ -2801,9 +2800,6 @@ table#physics-lab-activities tr:nth-child(even) {
   /* line 2064, ../sass/_layout-responsive.scss */
   #front-page #main-front, #front-page #main, #page #main-front, #page #main {
     /*margin-top:12px;*/
-    /*#slideshow{
-    		display:none;
-    }*/
     /*this is begin used for Recent Publications*/
   }
   /* line 2066, ../sass/_layout-responsive.scss */
@@ -2863,6 +2859,10 @@ table#physics-lab-activities tr:nth-child(even) {
   /* line 2112, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-second .view-calendar-2 ul li .views-field h3, #front-page #main .sidebars .region-sidebar-second .view-calendar-2 ul li .views-field h3, #page #main-front .sidebars .region-sidebar-second .view-calendar-2 ul li .views-field h3, #page #main .sidebars .region-sidebar-second .view-calendar-2 ul li .views-field h3 {
     margin: 0;
+  }
+  /* line 2124, ../sass/_layout-responsive.scss */
+  #front-page #main-front #slideshow .slides, #front-page #main #slideshow .slides, #page #main-front #slideshow .slides, #page #main #slideshow .slides {
+    display: none;
   }
   /* line 2129, ../sass/_layout-responsive.scss */
   #front-page #main-front #programs-departments, #front-page #main #programs-departments, #page #main-front #programs-departments, #page #main #programs-departments {
