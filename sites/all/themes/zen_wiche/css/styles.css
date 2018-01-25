@@ -9930,6 +9930,10 @@ ol.sep-by-numbers > li:before {
   width:600px;
   height:auto;*/
 }
+/* line 9732, ../sass/_layout-responsive.scss */
+#slideshow .slide-row .wiche-mission-self-id {
+  width: 35%;
+}
 /* line 9735, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id .region-self-id .block {
   margin: 0;
