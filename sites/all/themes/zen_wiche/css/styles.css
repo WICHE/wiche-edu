@@ -6503,31 +6503,46 @@ article .field-name-field-state-investment {
     display: none;
   }
   /* line 6014, ../sass/_layout-responsive.scss */
+  #main #slideshow, #main-front #slideshow {
+  /*.slides {
+		max-width:610px;
+	}*/
+  }
+  /* line 6016, ../sass/_layout-responsive.scss */
+  #main #slideshow .wiche-mission-self-id .region-self-id .mission, #main-front #slideshow .wiche-mission-self-id .region-self-id .mission {
+    font-size: 1em;
+    line-height: 1.2;
+  }
+  /* line 6025, ../sass/_layout-responsive.scss */
+  #main #slideshow .wiche-mission-self-id, #main-front #slideshow .wiche-mission-self-id {
+    padding: 5px 75px 0 0;
+  }
+  /* line 6030, ../sass/_layout-responsive.scss */
   #main #programs-departments, #main-front #programs-departments {
     overflow: hidden;
     width: 100%;
     clear: both;
     /*wiche publications block for front page*/
   }
-  /* line 6019, ../sass/_layout-responsive.scss */
+  /* line 6035, ../sass/_layout-responsive.scss */
   #main #programs-departments #block-views-publications-list-block, #main-front #programs-departments #block-views-publications-list-block {
     background: #ccc;
     overflow: hidden;
     margin-bottom: 0;
     /*publications list on front page*/
   }
-  /* line 6023, ../sass/_layout-responsive.scss */
+  /* line 6039, ../sass/_layout-responsive.scss */
   #main #programs-departments #block-views-publications-list-block h2, #main-front #programs-departments #block-views-publications-list-block h2 {
     padding: 8px 0 8px 14px;
     color: #fff;
     margin: 0;
     border-bottom: none;
   }
-  /* line 6030, ../sass/_layout-responsive.scss */
+  /* line 6046, ../sass/_layout-responsive.scss */
   #main #programs-departments #block-views-publications-list-block .view-publications-list, #main-front #programs-departments #block-views-publications-list-block .view-publications-list {
     clear: both;
   }
-  /* line 6033, ../sass/_layout-responsive.scss */
+  /* line 6049, ../sass/_layout-responsive.scss */
   #main #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs, #main-front #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs {
     list-style: none;
     background: #225aa8;
@@ -6536,72 +6551,72 @@ article .field-name-field-state-investment {
     overflow: hidden;
     text-align: center;
   }
-  /* line 6040, ../sass/_layout-responsive.scss */
+  /* line 6056, ../sass/_layout-responsive.scss */
   #main #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs li, #main-front #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs li {
     display: inline-block;
     border-right: 1px solid #fff;
   }
-  /* line 6043, ../sass/_layout-responsive.scss */
+  /* line 6059, ../sass/_layout-responsive.scss */
   #main #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs li a, #main-front #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs li a {
     display: block;
     padding: 2px 12px;
     color: #fff;
   }
-  /* line 6048, ../sass/_layout-responsive.scss */
+  /* line 6064, ../sass/_layout-responsive.scss */
   #main #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs li a:focus, #main-front #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs li a:focus {
     text-decoration: underline;
   }
-  /* line 6053, ../sass/_layout-responsive.scss */
+  /* line 6069, ../sass/_layout-responsive.scss */
   #main #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs li:last-child, #main-front #programs-departments #block-views-publications-list-block .view-publications-list .view-footer ul.all-wiche-pubs li:last-child {
     border-right: none;
   }
-  /* line 6062, ../sass/_layout-responsive.scss */
+  /* line 6078, ../sass/_layout-responsive.scss */
   #main #programs-departments #block-views-publications-list-block .wiche-publications .thumb-right, #main-front #programs-departments #block-views-publications-list-block .wiche-publications .thumb-right {
     float: left;
     width: 45%;
     padding-right: 12px;
   }
-  /* line 6068, ../sass/_layout-responsive.scss */
+  /* line 6084, ../sass/_layout-responsive.scss */
   #main #programs-departments #block-views-publications-list-block .wiche-publications .info-left, #main-front #programs-departments #block-views-publications-list-block .wiche-publications .info-left {
     float: left;
     width: 45%;
   }
-  /* line 6073, ../sass/_layout-responsive.scss */
+  /* line 6089, ../sass/_layout-responsive.scss */
   #main #programs-departments #block-views-publications-list-block .wiche-publications .info-left .dwn-frnt-pg a, #main-front #programs-departments #block-views-publications-list-block .wiche-publications .info-left .dwn-frnt-pg a {
     font-size: .7em;
   }
 
   /*Page Views, Exposed filters custom css*/
-  /* line 6088, ../sass/_layout-responsive.scss */
+  /* line 6104, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 {
     position: relative;
   }
-  /* line 6092, ../sass/_layout-responsive.scss */
+  /* line 6108, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form #edit-tid-wrapper {
     float: none;
   }
-  /* line 6096, ../sass/_layout-responsive.scss */
+  /* line 6112, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form #edit-field-bio-projectcontact-tid-wrapper {
     float: none;
   }
-  /* line 6099, ../sass/_layout-responsive.scss */
+  /* line 6115, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form #edit-field-bio-projectcontact-tid-wrapper select {
     width: 100%;
   }
-  /* line 6104, ../sass/_layout-responsive.scss */
+  /* line 6120, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form .views-submit-button {
     /*position:absolute;
     top:85px;
     left:0;*/
   }
-  /* line 6110, ../sass/_layout-responsive.scss */
+  /* line 6126, ../sass/_layout-responsive.scss */
   #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form .views-reset-button {
     /*position:absolute;
     top:85px;
     left:75px;*/
   }
 
-  /* line 6122, ../sass/_layout-responsive.scss */
+  /* line 6138, ../sass/_layout-responsive.scss */
   .header .region-phone-nav {
     display: none;
   }
@@ -6609,7 +6624,7 @@ article .field-name-field-state-investment {
   /*
   * The layout when there is only one sidebar, the left one.
   */
-  /* line 6134, ../sass/_layout-responsive.scss */
+  /* line 6150, ../sass/_layout-responsive.scss */
   .sidebar-first #content {
     /* Span 2 columns, starting in 2nd column from left. */
     float: left;
@@ -6618,15 +6633,15 @@ article .field-name-field-state-investment {
     margin-right: -60%;
     /*hide teaser titles on passport/information-resources*/
   }
-  /* line 6137, ../sass/_layout-responsive.scss */
+  /* line 6153, ../sass/_layout-responsive.scss */
   .sidebar-first #content ul li .field-content p {
     font-size: 80%;
   }
-  /* line 6143, ../sass/_layout-responsive.scss */
+  /* line 6159, ../sass/_layout-responsive.scss */
   .sidebar-first #content .view-passport-information-resources article header .node-title {
     display: none;
   }
-  /* line 6148, ../sass/_layout-responsive.scss */
+  /* line 6164, ../sass/_layout-responsive.scss */
   .sidebar-first #content .ncbanner {
     background: url("/sites/all/themes/zen_wiche/images/NewsCapWebBAnner.png") no-repeat;
     max-width: 860px;
@@ -6634,7 +6649,7 @@ article .field-name-field-state-investment {
     position: relative;
     margin: 0 0 20px;
   }
-  /* line 6156, ../sass/_layout-responsive.scss */
+  /* line 6172, ../sass/_layout-responsive.scss */
   .sidebar-first #content .Tagline {
     position: absolute;
     top: 279px;
@@ -6643,74 +6658,74 @@ article .field-name-field-state-investment {
     text-align: center;
     /*left:100px;*/
   }
-  /* line 6164, ../sass/_layout-responsive.scss */
+  /* line 6180, ../sass/_layout-responsive.scss */
   .sidebar-first #content .Tagline h3.newstag {
     font-family: Verdana, sans-serif;
     color: #666;
     font-size: 1.4em;
     line-heightL: 1.1em;
   }
-  /* line 6172, ../sass/_layout-responsive.scss */
+  /* line 6188, ../sass/_layout-responsive.scss */
   .sidebar-first #content h2 {
     margin: 0;
   }
-  /* line 6176, ../sass/_layout-responsive.scss */
+  /* line 6192, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-photo, .sidebar-first #content .newscap-photo {
     float: left;
     margin: 4px 16px 0 0px;
     max-width: 220px;
     height: auto;
   }
-  /* line 6182, ../sass/_layout-responsive.scss */
+  /* line 6198, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-photo p.caption, .sidebar-first #content .newscap-photo p.caption {
     margin: 0 0 4px !important;
   }
-  /* line 6187, ../sass/_layout-responsive.scss */
+  /* line 6203, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-headshot {
     float: left;
     margin: 4px 16px 0 0px;
     max-width: 125px;
     height: auto;
   }
-  /* line 6193, ../sass/_layout-responsive.scss */
+  /* line 6209, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-headshot p.caption {
     margin: 0 0 4px !important;
     font-size: .8em;
     line-height: .9em;
   }
-  /* line 6200, ../sass/_layout-responsive.scss */
+  /* line 6216, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-headshot-right {
     float: right;
     margin: 4px 0 0 16px;
     max-width: 125px;
     height: auto;
   }
-  /* line 6206, ../sass/_layout-responsive.scss */
+  /* line 6222, ../sass/_layout-responsive.scss */
   .sidebar-first #content img.newscap-headshot-right p.caption {
     margin: 0 0 4px !important;
     font-size: .8em;
     line-height: .9em;
   }
-  /* line 6214, ../sass/_layout-responsive.scss */
+  /* line 6230, ../sass/_layout-responsive.scss */
   .sidebar-first #content .newscap-photo-horizontal .nc-horizontal-img {
     width: 45%;
     float: left;
     padding: 12px;
   }
-  /* line 6218, ../sass/_layout-responsive.scss */
+  /* line 6234, ../sass/_layout-responsive.scss */
   .sidebar-first #content .newscap-photo-horizontal .nc-horizontal-img img {
     width: 390px;
     height: 205px;
     overflow: hidden;
   }
-  /* line 6227, ../sass/_layout-responsive.scss */
+  /* line 6243, ../sass/_layout-responsive.scss */
   .sidebar-first #content .newscap-photo-horizontal .nc-horizontal-img p.caption {
     margin: 0 0 4px !important;
     font-size: .9em;
     line-height: 1.1em;
   }
 
-  /* line 6237, ../sass/_layout-responsive.scss */
+  /* line 6253, ../sass/_layout-responsive.scss */
   .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -6720,7 +6735,7 @@ article .field-name-field-state-investment {
     padding-left: 16px;
     width: 23.5%;
   }
-  /* line 6241, ../sass/_layout-responsive.scss */
+  /* line 6257, ../sass/_layout-responsive.scss */
   .region-sidebar-first ul.newscap-menu {
     position: fixed;
     list-style: none;
@@ -6734,15 +6749,15 @@ article .field-name-field-state-investment {
     line-height: 1.1em;
     /*margin:0 0 0 16px;*/
   }
-  /* line 6253, ../sass/_layout-responsive.scss */
+  /* line 6269, ../sass/_layout-responsive.scss */
   .region-sidebar-first ul.newscap-menu li {
     margin-bottom: 12px;
   }
-  /* line 6255, ../sass/_layout-responsive.scss */
+  /* line 6271, ../sass/_layout-responsive.scss */
   .region-sidebar-first ul.newscap-menu li strong {
     font-weight: 700;
   }
-  /* line 6262, ../sass/_layout-responsive.scss */
+  /* line 6278, ../sass/_layout-responsive.scss */
   .region-sidebar-first ul.newscap-menu h2 {
     color: #1c4884;
     border-bottom: 2px solid #ffcc00;
@@ -6752,7 +6767,7 @@ article .field-name-field-state-investment {
 /*
  * The layout when there is only one sidebar, the right one.
  */
-/* line 6278, ../sass/_layout-responsive.scss */
+/* line 6294, ../sass/_layout-responsive.scss */
 .sidebar-second #content {
   /* Span 2 columns, starting in 1st column from left. */
   float: left;
@@ -6760,7 +6775,7 @@ article .field-name-field-state-investment {
   margin-left: 0%;
   margin-right: -40%;
 }
-/* line 6283, ../sass/_layout-responsive.scss */
+/* line 6299, ../sass/_layout-responsive.scss */
 .sidebar-second .region-sidebar-second {
   /* Span 1 column, starting in 3rd column from left. */
   float: left;
@@ -6772,7 +6787,7 @@ article .field-name-field-state-investment {
 /*
  * The layout when there are two sidebars.
  */
-/* line 6293, ../sass/_layout-responsive.scss */
+/* line 6309, ../sass/_layout-responsive.scss */
 .two-sidebars #content {
   /* Span 3 columns, starting in 2nd column from left. */
   float: left;
@@ -6784,15 +6799,15 @@ article .field-name-field-state-investment {
   padding: 0 16px;
   width: 55%;
 }
-/* line 6302, ../sass/_layout-responsive.scss */
+/* line 6318, ../sass/_layout-responsive.scss */
 .two-sidebars #content .view-wiche-tags li {
   border-bottom: 1px solid #ccc;
 }
-/* line 6306, ../sass/_layout-responsive.scss */
+/* line 6322, ../sass/_layout-responsive.scss */
 .two-sidebars #content .view-wiche-tags li:last-child {
   border-bottom: none;
 }
-/* line 6320, ../sass/_layout-responsive.scss */
+/* line 6336, ../sass/_layout-responsive.scss */
 .two-sidebars #content .region-highlighted #block-multiblock-2,
 .two-sidebars #content .region-highlighted p.passport-phone-header,
 .two-sidebars #content .region-highlighted #block-multiblock-1,
@@ -6803,7 +6818,7 @@ article .field-name-field-state-investment {
 .two-sidebars #content .region-highlighted #block-menu-menu-aboutnanslo {
   display: none;
 }
-/* line 6327, ../sass/_layout-responsive.scss */
+/* line 6343, ../sass/_layout-responsive.scss */
 .two-sidebars .region-sidebar-first {
   /* Span 1 column, starting in 1st column from left. */
   float: left;
@@ -6814,11 +6829,11 @@ article .field-name-field-state-investment {
   padding: 1%;
   width: 17%;
 }
-/* line 6333, ../sass/_layout-responsive.scss */
+/* line 6349, ../sass/_layout-responsive.scss */
 .two-sidebars .region-sidebar-first #block-nice-menus-2 {
   display: block;
 }
-/* line 6339, ../sass/_layout-responsive.scss */
+/* line 6355, ../sass/_layout-responsive.scss */
 .two-sidebars .region-sidebar-second {
   /* Start a new row and span all 3 columns. */
   float: left;
@@ -6831,17 +6846,17 @@ article .field-name-field-state-investment {
   width: 18%;
   /*hide recent policy publications block because it looks awkward*/
 }
-/* line 6347, ../sass/_layout-responsive.scss */
+/* line 6363, ../sass/_layout-responsive.scss */
 .two-sidebars .region-sidebar-second #block-views-210e6048e21942227c4a4d3a48bf8e06 {
   /*display:none;*/
 }
-/* line 6353, ../sass/_layout-responsive.scss */
+/* line 6369, ../sass/_layout-responsive.scss */
 .two-sidebars .view-passport-contact-page ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 6358, ../sass/_layout-responsive.scss */
+/* line 6374, ../sass/_layout-responsive.scss */
 .two-sidebars .view-passport-contact-page ul li {
   width: 100%;
   display: block;
@@ -6852,14 +6867,14 @@ article .field-name-field-state-investment {
   height: auto;
   line-height: 1.2em;
 }
-/* line 6368, ../sass/_layout-responsive.scss */
+/* line 6384, ../sass/_layout-responsive.scss */
 .two-sidebars .view-passport-contact-page ul li .pp-staff-left {
   width: 35%;
   float: left;
   display: inline-block;
   margin-right: 8px;
 }
-/* line 6374, ../sass/_layout-responsive.scss */
+/* line 6390, ../sass/_layout-responsive.scss */
 .two-sidebars .view-passport-contact-page ul li .pp-staff-right {
   width: 40%;
   float: left;
@@ -6867,156 +6882,156 @@ article .field-name-field-state-investment {
   font-size: .9em;
 }
 
-/* line 6388, ../sass/_layout-responsive.scss */
+/* line 6404, ../sass/_layout-responsive.scss */
 #content {
   /*PSEP table on /rwsl-experiments*/
 }
-/* line 6389, ../sass/_layout-responsive.scss */
+/* line 6405, ../sass/_layout-responsive.scss */
 #content article.view-mode-full, #content .advanced-help-topic {
   padding: 0;
   /*custom css for table on /psep/supp-fees*/
 }
-/* line 6392, ../sass/_layout-responsive.scss */
+/* line 6408, ../sass/_layout-responsive.scss */
 #content article.view-mode-full ul li, #content article.view-mode-full ol li, #content .advanced-help-topic ul li, #content .advanced-help-topic ol li {
   /*font-size:12px;*/
   margin: 12px 0;
 }
-/* line 6397, ../sass/_layout-responsive.scss */
+/* line 6413, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .faux-four-col-table, #content .advanced-help-topic .faux-four-col-table {
   width: 80%;
   display: table;
   margin: 0 auto;
 }
-/* line 6402, ../sass/_layout-responsive.scss */
+/* line 6418, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .faux-four-col-table .four-col-col-one, #content .advanced-help-topic .faux-four-col-table .four-col-col-one {
   display: table-cell;
   vertical-align: top;
   width: 21%;
   padding: 2% 2% 2% 0;
 }
-/* line 6409, ../sass/_layout-responsive.scss */
+/* line 6425, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .faux-four-col-table .four-col-col-two, #content .advanced-help-topic .faux-four-col-table .four-col-col-two {
   display: table-cell;
   vertical-align: top;
   width: 21%;
   padding: 2%;
 }
-/* line 6416, ../sass/_layout-responsive.scss */
+/* line 6432, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .faux-four-col-table .four-col-col-three, #content .advanced-help-topic .faux-four-col-table .four-col-col-three {
   display: table-cell;
   vertical-align: top;
   width: 21%;
   padding: 2%;
 }
-/* line 6423, ../sass/_layout-responsive.scss */
+/* line 6439, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .faux-four-col-table .four-col-col-four, #content .advanced-help-topic .faux-four-col-table .four-col-col-four {
   display: table-cell;
   vertical-align: top;
   width: 21%;
   padding: 2% 0 2% 2%;
 }
-/* line 6433, ../sass/_layout-responsive.scss */
+/* line 6449, ../sass/_layout-responsive.scss */
 #content article.view-mode-full #psep-support, #content .advanced-help-topic #psep-support {
   border: 1px solid #ccc;
   padding: 16px;
   width: 80%;
   margin: 0 auto;
 }
-/* line 6438, ../sass/_layout-responsive.scss */
+/* line 6454, ../sass/_layout-responsive.scss */
 #content article.view-mode-full #psep-support table, #content .advanced-help-topic #psep-support table {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 6439, ../sass/_layout-responsive.scss */
+/* line 6455, ../sass/_layout-responsive.scss */
 #content article.view-mode-full #psep-support table h2, #content .advanced-help-topic #psep-support table h2 {
   margin: 0 0 16px;
 }
-/* line 6445, ../sass/_layout-responsive.scss */
+/* line 6461, ../sass/_layout-responsive.scss */
 #content article.view-mode-full #psep-support table th, #content .advanced-help-topic #psep-support table th {
   border: none;
   color: #fff;
   background: #1c4884;
   font-size: 1.1em;
 }
-/* line 6451, ../sass/_layout-responsive.scss */
+/* line 6467, ../sass/_layout-responsive.scss */
 #content article.view-mode-full #psep-support table tr:nth-child(even), #content .advanced-help-topic #psep-support table tr:nth-child(even) {
   background: #ccc;
 }
-/* line 6457, ../sass/_layout-responsive.scss */
+/* line 6473, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .pub-top, #content .advanced-help-topic .pub-top {
   overflow: hidden;
 }
-/* line 6459, ../sass/_layout-responsive.scss */
+/* line 6475, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .pub-top .pub-left, #content .advanced-help-topic .pub-top .pub-left {
   float: left;
   width: 20%;
   margin: 0;
   padding: 0;
 }
-/* line 6466, ../sass/_layout-responsive.scss */
+/* line 6482, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .pub-top .pub-right, #content .advanced-help-topic .pub-top .pub-right {
   font-size: 12px;
   float: left;
   width: 50%;
 }
-/* line 6473, ../sass/_layout-responsive.scss */
+/* line 6489, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .pub-description, #content .advanced-help-topic .pub-description {
   /*table styling*/
 }
-/* line 6477, ../sass/_layout-responsive.scss */
+/* line 6493, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .pub-description table, #content .advanced-help-topic .pub-description table {
   border-collapse: separate;
   border-spacing: 10px;
 }
-/* line 6479, ../sass/_layout-responsive.scss */
+/* line 6495, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .pub-description table td, #content .advanced-help-topic .pub-description table td {
   margin: 4px 0;
   font-size: .9em;
 }
-/* line 6485, ../sass/_layout-responsive.scss */
+/* line 6501, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .pub-description table h2, #content .advanced-help-topic .pub-description table h2 {
   margin: 0;
 }
-/* line 6492, ../sass/_layout-responsive.scss */
+/* line 6508, ../sass/_layout-responsive.scss */
 #content article.view-mode-full .pub-description table h3 a, #content .advanced-help-topic .pub-description table h3 a {
   margin-top: 0;
 }
-/* line 6500, ../sass/_layout-responsive.scss */
+/* line 6516, ../sass/_layout-responsive.scss */
 #content .region-highlighted .hot-mh-pubs {
   display: table;
   width: 100%;
 }
-/* line 6503, ../sass/_layout-responsive.scss */
+/* line 6519, ../sass/_layout-responsive.scss */
 #content .region-highlighted .hot-mh-pubs .col-one {
   display: table-cell;
   vertical-align: top;
   padding: 2%;
 }
-/* line 6508, ../sass/_layout-responsive.scss */
+/* line 6524, ../sass/_layout-responsive.scss */
 #content .region-highlighted .hot-mh-pubs .col-one .caption {
   font-size: .8em;
   font-style: italic;
 }
-/* line 6514, ../sass/_layout-responsive.scss */
+/* line 6530, ../sass/_layout-responsive.scss */
 #content .region-highlighted .hot-mh-pubs .col-two {
   display: table-cell;
   vertical-align: top;
   padding: 2%;
 }
-/* line 6520, ../sass/_layout-responsive.scss */
+/* line 6536, ../sass/_layout-responsive.scss */
 #content .region-highlighted .hot-mh-pubs .col-two .caption {
   font-size: .8em;
   font-style: italic;
 }
-/* line 6533, ../sass/_layout-responsive.scss */
+/* line 6549, ../sass/_layout-responsive.scss */
 #content article table#psep-support-fees {
   font-size: .8em;
   width: 100%;
   border-bottom: 2px solid #000;
   margin-bottom: 16px;
 }
-/* line 6539, ../sass/_layout-responsive.scss */
+/* line 6555, ../sass/_layout-responsive.scss */
 #content article table#psep-support-fees th {
   background-color: transparent;
   /*color:#fff;*/
@@ -7027,46 +7042,46 @@ article .field-name-field-state-investment {
   padding: 1% 0;
   font-size: 1.3em;
 }
-/* line 6550, ../sass/_layout-responsive.scss */
+/* line 6566, ../sass/_layout-responsive.scss */
 #content article table#psep-support-fees th.subhead {
   background: #1c4884;
 }
-/* line 6554, ../sass/_layout-responsive.scss */
+/* line 6570, ../sass/_layout-responsive.scss */
 #content article table#psep-support-fees th.subhead h3 {
   margin: 0;
   color: #fff;
 }
-/* line 6559, ../sass/_layout-responsive.scss */
+/* line 6575, ../sass/_layout-responsive.scss */
 #content article table#psep-support-fees th:last-child {
   border-right: none;
 }
-/* line 6563, ../sass/_layout-responsive.scss */
+/* line 6579, ../sass/_layout-responsive.scss */
 #content article table#psep-support-fees td {
   padding: 2%;
   border-right: 1px solid #000;
   vertical-align: top;
 }
-/* line 6569, ../sass/_layout-responsive.scss */
+/* line 6585, ../sass/_layout-responsive.scss */
 #content article table#psep-support-fees td:first-child {
   font-weight: bold;
   vertical-align: middle;
   text-align: center;
   font-size: 1em;
 }
-/* line 6577, ../sass/_layout-responsive.scss */
+/* line 6593, ../sass/_layout-responsive.scss */
 #content article table#psep-support-fees td:last-child {
   border-right: none;
 }
-/* line 6581, ../sass/_layout-responsive.scss */
+/* line 6597, ../sass/_layout-responsive.scss */
 #content article table#psep-support-fees tr:nth-child(even) {
   background: #ccc;
 }
-/* line 6585, ../sass/_layout-responsive.scss */
+/* line 6601, ../sass/_layout-responsive.scss */
 #content article table#psep-support-fees tr:first-child th {
   border-bottom: 2px solid #fff;
 }
 
-/* line 6593, ../sass/_layout-responsive.scss */
+/* line 6609, ../sass/_layout-responsive.scss */
 .sidebar-first {
   /*end region sidebar first*/
   /*Page Views, Exposed filters custom css*/
@@ -7129,7 +7144,7 @@ article .field-name-field-state-investment {
   /*WICHE news section on the front page*/
   /*event calendar block on front page*/
 }
-/* line 6594, ../sass/_layout-responsive.scss */
+/* line 6610, ../sass/_layout-responsive.scss */
 .sidebar-first #content {
   /* Span 4 columns, starting in 2nd column from left. */
   float: left;
@@ -7143,7 +7158,7 @@ article .field-name-field-state-investment {
   /*testimonial slide show on front page*/
   /*end block-views-testimonial-slider-block*/
 }
-/* line 6601, ../sass/_layout-responsive.scss */
+/* line 6617, ../sass/_layout-responsive.scss */
 .sidebar-first #content .view-alpha-list-wiche-initiatives h2 {
   /*clear:left;*/
   font-size: 1.2em;
@@ -7151,7 +7166,7 @@ article .field-name-field-state-investment {
   color: #fff;
   background: #1c4884;
 }
-/* line 6614, ../sass/_layout-responsive.scss */
+/* line 6630, ../sass/_layout-responsive.scss */
 .sidebar-first #content .region-highlighted #block-multiblock-2,
 .sidebar-first #content .region-highlighted p.passport-phone-header,
 .sidebar-first #content .region-highlighted #block-multiblock-1, .sidebar-first #content .region-highlighted #block-menu-menu-walf-menu,
@@ -7159,7 +7174,7 @@ article .field-name-field-state-investment {
 .sidebar-first #content .region-highlighted #block-menu-menu-ice-public-menu {
   display: none;
 }
-/* line 6619, ../sass/_layout-responsive.scss */
+/* line 6635, ../sass/_layout-responsive.scss */
 .sidebar-first #content article {
   /*passport home faux table*/
   /*.passport-home{	
@@ -7196,7 +7211,7 @@ article .field-name-field-state-investment {
   }*/
   /*passport banner image*/
 }
-/* line 6620, ../sass/_layout-responsive.scss */
+/* line 6636, ../sass/_layout-responsive.scss */
 .sidebar-first #content article ul.page-list {
   border: 1px solid #ccc;
   list-style: none;
@@ -7205,22 +7220,22 @@ article .field-name-field-state-investment {
   width: 50%;
   margin: 0 auto;
 }
-/* line 6628, ../sass/_layout-responsive.scss */
+/* line 6644, ../sass/_layout-responsive.scss */
 .sidebar-first #content article ul.page-list li {
   border-bottom: 1px solid #ccc;
   padding-right: 20px;
 }
-/* line 6631, ../sass/_layout-responsive.scss */
+/* line 6647, ../sass/_layout-responsive.scss */
 .sidebar-first #content article ul.page-list li a {
   display: block;
   padding: 4px 8px;
   line-height: 2em;
 }
-/* line 6638, ../sass/_layout-responsive.scss */
+/* line 6654, ../sass/_layout-responsive.scss */
 .sidebar-first #content article ul.page-list li:last-child {
   border: none;
 }
-/* line 6679, ../sass/_layout-responsive.scss */
+/* line 6695, ../sass/_layout-responsive.scss */
 .sidebar-first #content article .pass-instutions {
   background: url(images/institutions.jpg) 0 0 no-repeat;
   height: 380px;
@@ -7228,7 +7243,7 @@ article .field-name-field-state-investment {
   padding: 6% 6% 0 6%;
   overflow: hidden;
 }
-/* line 6686, ../sass/_layout-responsive.scss */
+/* line 6702, ../sass/_layout-responsive.scss */
 .sidebar-first #content article .pass-instutions h2 {
   color: #fff;
   text-shadow: 2px 2px #000;
@@ -7238,7 +7253,7 @@ article .field-name-field-state-investment {
   padding: 0;
   line-height: 1.4em;
 }
-/* line 6697, ../sass/_layout-responsive.scss */
+/* line 6713, ../sass/_layout-responsive.scss */
 .sidebar-first #content article .pass-policy {
   background: url(images/policy-researchers.jpg) 0 0 no-repeat;
   height: 380px;
@@ -7247,7 +7262,7 @@ article .field-name-field-state-investment {
   overflow: hidden;
   margin-bottom: 16px;
 }
-/* line 6704, ../sass/_layout-responsive.scss */
+/* line 6720, ../sass/_layout-responsive.scss */
 .sidebar-first #content article .pass-policy h2 {
   color: #fff;
   text-shadow: 2px 2px #000;
@@ -7257,7 +7272,7 @@ article .field-name-field-state-investment {
   padding: 0;
   line-height: 1.4em;
 }
-/* line 6716, ../sass/_layout-responsive.scss */
+/* line 6732, ../sass/_layout-responsive.scss */
 .sidebar-first #content article .pass-registrar {
   background: url(images/registrar.jpg) 0 0 no-repeat;
   height: 380px;
@@ -7266,7 +7281,7 @@ article .field-name-field-state-investment {
   overflow: hidden;
   margin-bottom: 16px;
 }
-/* line 6723, ../sass/_layout-responsive.scss */
+/* line 6739, ../sass/_layout-responsive.scss */
 .sidebar-first #content article .pass-registrar h2 {
   color: #fff;
   text-shadow: 2px 2px #000;
@@ -7278,11 +7293,11 @@ article .field-name-field-state-investment {
   position: absolute;
   bottom: 35px;
 }
-/* line 6745, ../sass/_layout-responsive.scss */
+/* line 6761, ../sass/_layout-responsive.scss */
 .sidebar-first #content #main-front #content .node-promoted {
   display: none !important;
 }
-/* line 6751, ../sass/_layout-responsive.scss */
+/* line 6767, ../sass/_layout-responsive.scss */
 .sidebar-first #content .region-sidebar-first {
   /* Span 1 column, starting in 1st column from left. */
   float: left;
@@ -7294,16 +7309,16 @@ article .field-name-field-state-investment {
   padding: 0 1%;
   margin-left: 1%;
 }
-/* line 6759, ../sass/_layout-responsive.scss */
+/* line 6775, ../sass/_layout-responsive.scss */
 .sidebar-first #content .region-sidebar-first p {
   /*color:#fff;*/
   margin: 0;
 }
-/* line 6761, ../sass/_layout-responsive.scss */
+/* line 6777, ../sass/_layout-responsive.scss */
 .sidebar-first #content .region-sidebar-first p a:link, .sidebar-first #content .region-sidebar-first p a:visited, .sidebar-first #content .region-sidebar-first p a:active {
   /* color:#fff;*/
 }
-/* line 6772, ../sass/_layout-responsive.scss */
+/* line 6788, ../sass/_layout-responsive.scss */
 .sidebar-first #content .region-sidebar-first h2, .sidebar-first #content .region-sidebar-first h3, .sidebar-first #content .region-sidebar-first h4 {
  /* color:#000;
   padding-bottom:6px;
@@ -7316,21 +7331,21 @@ article .field-name-field-state-investment {
 	  
   }*/
 }
-/* line 6785, ../sass/_layout-responsive.scss */
+/* line 6801, ../sass/_layout-responsive.scss */
 .sidebar-first #content .region-sidebar-first ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 6790, ../sass/_layout-responsive.scss */
+/* line 6806, ../sass/_layout-responsive.scss */
 .sidebar-first #content .region-sidebar-first ul li a:link, .sidebar-first #content .region-sidebar-first ul li a:visited, .sidebar-first #content .region-sidebar-first ul li a:active {
   color: #1c4884;
 }
-/* line 6794, ../sass/_layout-responsive.scss */
+/* line 6810, ../sass/_layout-responsive.scss */
 .sidebar-first #content .region-sidebar-first ul li a:hover {
   color: #000;
 }
-/* line 6801, ../sass/_layout-responsive.scss */
+/* line 6817, ../sass/_layout-responsive.scss */
 .sidebar-first #content .region-sidebar-first .newscap-menu {
   background: #fff;
   max-width: 13%;
@@ -7340,86 +7355,86 @@ article .field-name-field-state-investment {
   font-size: 90%;
   line-height: 1.1em;
 }
-/* line 6815, ../sass/_layout-responsive.scss */
+/* line 6831, ../sass/_layout-responsive.scss */
 .sidebar-first #content #block-views-testimonial-slider-block {
   font-size: .8em;
   line-height: 1.2em;
   /*student testimonial custom css starts here*/
 }
-/* line 6817, ../sass/_layout-responsive.scss */
+/* line 6833, ../sass/_layout-responsive.scss */
 .sidebar-first #content #block-views-testimonial-slider-block h2.block-title {
   margin-bottom: 0;
 }
-/* line 6825, ../sass/_layout-responsive.scss */
+/* line 6841, ../sass/_layout-responsive.scss */
 .sidebar-first #content #block-views-testimonial-slider-block .testimonial-wrapper {
   overflow: hidden;
   /*end student details*/
 }
-/* line 6827, ../sass/_layout-responsive.scss */
+/* line 6843, ../sass/_layout-responsive.scss */
 .sidebar-first #content #block-views-testimonial-slider-block .testimonial-wrapper h3 {
   font-family: 'humnst777_cn_btbold';
   margin: 4px 0;
   padding: 0;
   line-height: 2em;
 }
-/* line 6834, ../sass/_layout-responsive.scss */
+/* line 6850, ../sass/_layout-responsive.scss */
 .sidebar-first #content #block-views-testimonial-slider-block .testimonial-wrapper .testimonial-photo {
   float: left;
   display: inline-block;
   width: 30%;
   margin-right: 9px;
 }
-/* line 6840, ../sass/_layout-responsive.scss */
+/* line 6856, ../sass/_layout-responsive.scss */
 .sidebar-first #content #block-views-testimonial-slider-block .testimonial-wrapper .student-details {
   font-family: 'humnst777_lt_btlight_italic';
   float: left;
   display: inline-block;
   width: 65%;
 }
-/* line 6846, ../sass/_layout-responsive.scss */
+/* line 6862, ../sass/_layout-responsive.scss */
 .sidebar-first #content #block-views-testimonial-slider-block .testimonial-wrapper .student-details h4 {
   margin: 0;
   padding: 0;
 }
-/* line 6851, ../sass/_layout-responsive.scss */
+/* line 6867, ../sass/_layout-responsive.scss */
 .sidebar-first #content #block-views-testimonial-slider-block .testimonial-wrapper .student-details ul {
   margin: 0 0 0 12px;
   padding: 0;
 }
-/* line 6858, ../sass/_layout-responsive.scss */
+/* line 6874, ../sass/_layout-responsive.scss */
 .sidebar-first #content #block-views-testimonial-slider-block .testimonial-wrapper .testimonial-text {
   clear: left;
   dispay: block;
   width: 100%;
   line-height: 1.5em;
 }
-/* line 6863, ../sass/_layout-responsive.scss */
+/* line 6879, ../sass/_layout-responsive.scss */
 .sidebar-first #content #block-views-testimonial-slider-block .testimonial-wrapper .testimonial-text p {
   margin: 8px 0;
 }
-/* line 6872, ../sass/_layout-responsive.scss */
+/* line 6888, ../sass/_layout-responsive.scss */
 .sidebar-first #content .nice-menu-menu-interstate-passport {
   position: relative;
   z-index: 20;
 }
-/* line 6882, ../sass/_layout-responsive.scss */
+/* line 6898, ../sass/_layout-responsive.scss */
 .sidebar-first #views-exposed-form-Staff-Alpha-View-page-3 {
   position: relative;
 }
-/* line 6887, ../sass/_layout-responsive.scss */
+/* line 6903, ../sass/_layout-responsive.scss */
 .sidebar-first #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form #edit-tid-wrapper {
   float: left;
 }
-/* line 6891, ../sass/_layout-responsive.scss */
+/* line 6907, ../sass/_layout-responsive.scss */
 .sidebar-first #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form #edit-field-bio-projectcontact-tid-wrapper {
   float: left;
   max-width: 400px;
 }
-/* line 6895, ../sass/_layout-responsive.scss */
+/* line 6911, ../sass/_layout-responsive.scss */
 .sidebar-first #views-exposed-form-Staff-Alpha-View-page-3 .views-exposed-form #edit-field-bio-projectcontact-tid-wrapper select {
   width: 100%;
 }
-/* line 6918, ../sass/_layout-responsive.scss */
+/* line 6934, ../sass/_layout-responsive.scss */
 .sidebar-first .sidebar-second #content {
   /* Span 4 columns, starting in 1st column from left. */
   float: left;
@@ -7428,7 +7443,7 @@ article .field-name-field-state-investment {
   margin-right: -80%;
   padding-left: 16px;
 }
-/* line 6925, ../sass/_layout-responsive.scss */
+/* line 6941, ../sass/_layout-responsive.scss */
 .sidebar-first .sidebar-second .region-sidebar-second {
   /* Span 1 column, starting in 5th column from left. */
   float: left;
@@ -7436,11 +7451,11 @@ article .field-name-field-state-investment {
   margin-left: 80%;
   margin-right: -100%;
 }
-/* line 6934, ../sass/_layout-responsive.scss */
+/* line 6950, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars {
   /*the layout when there are no sidebars -- full width*/
 }
-/* line 6935, ../sass/_layout-responsive.scss */
+/* line 6951, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content {
   /* Span 3 columns, starting in 2nd column from left. */
   float: left;
@@ -7458,21 +7473,21 @@ article .field-name-field-state-investment {
   /*Delicious Links on home page*/
   /*tables in ice executive committee view*/
 }
-/* line 6938, ../sass/_layout-responsive.scss */
+/* line 6954, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .region-highlighted .flex-control-nav {
   bottom: -50px;
 }
-/* line 6949, ../sass/_layout-responsive.scss */
+/* line 6965, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content ul li .field-content p {
   font-size: 90%;
 }
-/* line 6953, ../sass/_layout-responsive.scss */
+/* line 6969, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content h2.field-content {
   font-weight: normal;
   /*font-size:1.2em;*/
   margin-bottom: 0px !important;
 }
-/* line 6964, ../sass/_layout-responsive.scss */
+/* line 6980, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .region-highlighted #block-multiblock-2,
 .sidebar-first .two-sidebars #content .region-highlighted p.passport-phone-header,
 .sidebar-first .two-sidebars #content .region-highlighted #block-multiblock-1, .sidebar-first .two-sidebars #content .region-highlighted #block-menu-menu-walf-menu,
@@ -7480,29 +7495,29 @@ article .field-name-field-state-investment {
 .sidebar-first .two-sidebars #content .region-highlighted #block-menu-menu-ice-public-menu {
   display: none;
 }
-/* line 6970, ../sass/_layout-responsive.scss */
+/* line 6986, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-states-projects, .sidebar-first .two-sidebars #content .view-Newscap, .sidebar-first .two-sidebars #content .view-policyInsights, .sidebar-first .two-sidebars #content .view-passport-instate {
   /*top- margin removed for /policy_insights*/
 }
-/* line 6977, ../sass/_layout-responsive.scss */
+/* line 6993, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-states-projects .item-list h3, .sidebar-first .two-sidebars #content .view-Newscap .item-list h3, .sidebar-first .two-sidebars #content .view-policyInsights .item-list h3, .sidebar-first .two-sidebars #content .view-passport-instate .item-list h3 {
   margin: 8px 0 0;
 }
-/* line 6981, ../sass/_layout-responsive.scss */
+/* line 6997, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-states-projects h3.field-content, .sidebar-first .two-sidebars #content .view-Newscap h3.field-content, .sidebar-first .two-sidebars #content .view-policyInsights h3.field-content, .sidebar-first .two-sidebars #content .view-passport-instate h3.field-content {
   margin: 8px 0 0;
 }
-/* line 6985, ../sass/_layout-responsive.scss */
+/* line 7001, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-states-projects ul, .sidebar-first .two-sidebars #content .view-Newscap ul, .sidebar-first .two-sidebars #content .view-policyInsights ul, .sidebar-first .two-sidebars #content .view-passport-instate ul {
   list-style: none;
   margin: 0 0 0 0;
   padding-left: 0;
 }
-/* line 6989, ../sass/_layout-responsive.scss */
+/* line 7005, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-states-projects ul li, .sidebar-first .two-sidebars #content .view-Newscap ul li, .sidebar-first .two-sidebars #content .view-policyInsights ul li, .sidebar-first .two-sidebars #content .view-passport-instate ul li {
   margin-bottom: 16px;
 }
-/* line 6996, ../sass/_layout-responsive.scss */
+/* line 7012, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .passport-home {
   background: url(images/passport-girl.jpg) 0 0 no-repeat;
   width: 100%;
@@ -7512,27 +7527,27 @@ article .field-name-field-state-investment {
   padding: 4% 0;
   display: table;
 }
-/* line 7005, ../sass/_layout-responsive.scss */
+/* line 7021, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .passport-home .tr-row {
   display: table-row;
 }
-/* line 7008, ../sass/_layout-responsive.scss */
+/* line 7024, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .passport-home .tr-row td-cell-30 {
   display: table-cell;
   width: 35%;
 }
-/* line 7013, ../sass/_layout-responsive.scss */
+/* line 7029, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .passport-home .tr-row .td-cell-60 {
   display: table-cell;
   width: 60%;
   vertical-align: top;
   padding: 0 2.5%;
 }
-/* line 7019, ../sass/_layout-responsive.scss */
+/* line 7035, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .passport-home .tr-row .td-cell-60 li {
   list-style-image: url(images/white-arrow-right.png);
 }
-/* line 7022, ../sass/_layout-responsive.scss */
+/* line 7038, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .passport-home .tr-row .td-cell-60 li h3 {
   color: #fff;
   text-shadow: 1px 1px #000;
@@ -7540,22 +7555,22 @@ article .field-name-field-state-investment {
   line-height: 1.7em;
   font-weight: 400;
 }
-/* line 7038, ../sass/_layout-responsive.scss */
+/* line 7054, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-delicious-home ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 7042, ../sass/_layout-responsive.scss */
+/* line 7058, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-delicious-home ul li {
   font-size: 12px;
 }
-/* line 7053, ../sass/_layout-responsive.scss */
+/* line 7069, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content article ul li {
   margin-bottom: 12px;
   /*font-size:12px;*/
 }
-/* line 7059, ../sass/_layout-responsive.scss */
+/* line 7075, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content article ul.page-list {
   border: 1px solid #ccc;
   list-style: none;
@@ -7564,64 +7579,64 @@ article .field-name-field-state-investment {
   width: 50%;
   margin: 0 auto;
 }
-/* line 7067, ../sass/_layout-responsive.scss */
+/* line 7083, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content article ul.page-list li {
   border-bottom: 1px solid #ccc;
   padding-right: 20px;
 }
-/* line 7070, ../sass/_layout-responsive.scss */
+/* line 7086, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content article ul.page-list li a {
   display: block;
   padding: 4px 8px;
   line-height: 2em;
 }
-/* line 7077, ../sass/_layout-responsive.scss */
+/* line 7093, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content article ul.page-list li:last-child {
   border: none;
 }
-/* line 7085, ../sass/_layout-responsive.scss */
+/* line 7101, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-list-ice-exec-committee h4 {
   margin: 0;
 }
-/* line 7088, ../sass/_layout-responsive.scss */
+/* line 7104, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-list-ice-exec-committee h3 {
   margin-top: 4px;
 }
-/* line 7091, ../sass/_layout-responsive.scss */
+/* line 7107, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-list-ice-exec-committee .ice-pic {
   margin: 0;
 }
-/* line 7094, ../sass/_layout-responsive.scss */
+/* line 7110, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-list-ice-exec-committee .ice-pic td {
   font-size: .8em;
   vertical-align: top;
 }
-/* line 7097, ../sass/_layout-responsive.scss */
+/* line 7113, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-list-ice-exec-committee .ice-pic td h4 {
   font-size: 1.2em;
   margin: 0;
 }
-/* line 7102, ../sass/_layout-responsive.scss */
+/* line 7118, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-list-ice-exec-committee .ice-pic td img {
   width: 100%;
   height: auto;
   max-width: 60px;
   margin-right: 12px;
 }
-/* line 7114, ../sass/_layout-responsive.scss */
+/* line 7130, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content article .col-one {
   float: left;
   width: 30%;
   padding-right: 16px;
   border-right: 1px solid #ccc;
 }
-/* line 7121, ../sass/_layout-responsive.scss */
+/* line 7137, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content article .col-two {
   float: left;
   width: 60%;
   padding-left: 16px;
 }
-/* line 7128, ../sass/_layout-responsive.scss */
+/* line 7144, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content h2.knowledge-base {
   font-weight: 700;
   font-size: 1.4em;
@@ -7629,15 +7644,15 @@ article .field-name-field-state-investment {
   border-bottom: 2px solid #1c4884;
   padding-bottom: 4px;
 }
-/* line 7137, ../sass/_layout-responsive.scss */
+/* line 7153, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .region-highlighted #block-menu-menu-ice-public-menu {
   display: none;
 }
-/* line 7142, ../sass/_layout-responsive.scss */
+/* line 7158, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars #content .view-wiche-staff {
   margin-top: 16px;
 }
-/* line 7147, ../sass/_layout-responsive.scss */
+/* line 7163, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first {
   /* Span 1 column, starting in 1st column from left. */
   /*@include zen-grid-item(1, 1);*/
@@ -7650,45 +7665,45 @@ article .field-name-field-state-investment {
   padding: 0 1%;
   /*quicklinks accordion on front page*/
 }
-/* line 7156, ../sass/_layout-responsive.scss */
+/* line 7172, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first h2 {
   margin: 0 0 16px 0;
   padding-top: 8px;
 }
-/* line 7165, ../sass/_layout-responsive.scss */
+/* line 7181, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first p {
   color: #000;
   font-size: 12px;
   line-height: 1.4em;
 }
-/* line 7169, ../sass/_layout-responsive.scss */
+/* line 7185, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first p a:link, .sidebar-first .two-sidebars .region-sidebar-first p a:visited, .sidebar-first .two-sidebars .region-sidebar-first p a:active {
   color: #1c4884;
   text-decoration: underline;
 }
-/* line 7174, ../sass/_layout-responsive.scss */
+/* line 7190, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first p a:hover {
   color: black !important;
 }
-/* line 7186, ../sass/_layout-responsive.scss */
+/* line 7202, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block .ui-accordion .views-accordion-header .field-content a, .sidebar-first .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block-2 .ui-accordion .views-accordion-header .field-content a, .sidebar-first .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block-1 .ui-accordion .views-accordion-header .field-content a {
   font-size: .8em;
   display: block;
   padding: 1px 0 0 0;
 }
-/* line 7191, ../sass/_layout-responsive.scss */
+/* line 7207, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block .ui-accordion .views-accordion-header .field-content a:hover, .sidebar-first .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block-2 .ui-accordion .views-accordion-header .field-content a:hover, .sidebar-first .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block-1 .ui-accordion .views-accordion-header .field-content a:hover {
   text-decoration: underline;
 }
-/* line 7195, ../sass/_layout-responsive.scss */
+/* line 7211, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block .ui-accordion .views-accordion-header .field-content a:focus, .sidebar-first .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block-2 .ui-accordion .views-accordion-header .field-content a:focus, .sidebar-first .two-sidebars .region-sidebar-first #block-views-accordion-quick-links-block-1 .ui-accordion .views-accordion-header .field-content a:focus {
   text-decoration: underline;
 }
-/* line 7206, ../sass/_layout-responsive.scss */
+/* line 7222, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first .view-commissioner-calendar .item-list ul {
   margin-top: 16px;
 }
-/* line 7208, ../sass/_layout-responsive.scss */
+/* line 7224, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first .view-commissioner-calendar .item-list ul li {
   font-size: 1em;
   font-weight: 600;
@@ -7696,18 +7711,18 @@ article .field-name-field-state-investment {
   padding-bottom: 8px;
   border-bottom: 1px solid #ccc;
 }
-/* line 7215, ../sass/_layout-responsive.scss */
+/* line 7231, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first .view-commissioner-calendar .item-list ul li .location {
   font-size: 0.9em !important;
   font-weight: 100 !important;
 }
-/* line 7224, ../sass/_layout-responsive.scss */
+/* line 7240, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first #block-views-testimonial-slider-block {
   border-top: 1px solid #ccc;
   margin-top: 16px;
   padding-top: 8px;
 }
-/* line 7230, ../sass/_layout-responsive.scss */
+/* line 7246, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first h2 {
   color: #1c4884;
   border-bottom: 1px solid #fff;
@@ -7715,39 +7730,39 @@ article .field-name-field-state-investment {
   margin-bottom: 0px;
   margin-top: 0px !important;
 }
-/* line 7238, ../sass/_layout-responsive.scss */
+/* line 7254, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first h3, .sidebar-first .two-sidebars .region-sidebar-first h4 {
   color: #000;
   border-bottom: 1px solid #fff;
   padding-bottom: 6px;
   margin-bottom: 8px;
 }
-/* line 7244, ../sass/_layout-responsive.scss */
+/* line 7260, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first h3 a:link, .sidebar-first .two-sidebars .region-sidebar-first h3 a:visited, .sidebar-first .two-sidebars .region-sidebar-first h3 a:active, .sidebar-first .two-sidebars .region-sidebar-first h4 a:link, .sidebar-first .two-sidebars .region-sidebar-first h4 a:visited, .sidebar-first .two-sidebars .region-sidebar-first h4 a:active {
   color: #000;
 }
-/* line 7254, ../sass/_layout-responsive.scss */
+/* line 7270, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 7259, ../sass/_layout-responsive.scss */
+/* line 7275, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first ul li a:link, .sidebar-first .two-sidebars .region-sidebar-first ul li a:visited, .sidebar-first .two-sidebars .region-sidebar-first ul li a:active {
   color: #000;
 }
-/* line 7273, ../sass/_layout-responsive.scss */
+/* line 7289, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first #block-views-testimonial-slider-block h2.block-title {
   font-size: 1.4em;
   margin-bottom: 0;
 }
-/* line 7279, ../sass/_layout-responsive.scss */
+/* line 7295, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first #block-views-testimonial-slider-block .views-field-field-sep-program H2.sep {
   font-size: 1.2em;
   margin: 8px 0;
   display: inline-block;
 }
-/* line 7290, ../sass/_layout-responsive.scss */
+/* line 7306, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-first .view-knowledge-base-page ul li a:link, .sidebar-first .two-sidebars .region-sidebar-first .view-knowledge-base-page ul li a:visited, .sidebar-first .two-sidebars .region-sidebar-first .view-knowledge-base-page ul li a:active {
   font-size: .8em;
   line-height: 1em;
@@ -7755,7 +7770,7 @@ article .field-name-field-state-investment {
   background: url(images/blue-arrow-right.png) 0 2px no-repeat;
   padding: 0 0 6px 16px;
 }
-/* line 7302, ../sass/_layout-responsive.scss */
+/* line 7318, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second {
   /* Span 1 column, starting in 5th column from left. */
   float: left;
@@ -7772,7 +7787,7 @@ article .field-name-field-state-investment {
         padding-bottom: 999em !important;*/
   padding-top: 16px;
 }
-/* line 7309, ../sass/_layout-responsive.scss */
+/* line 7325, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second #block-menu-menu-ask-wiche .menu li a {
   font-weight: 600;
   background: #1c4884;
@@ -7784,11 +7799,11 @@ article .field-name-field-state-investment {
   text-align: center;
   text-decoration: none;
 }
-/* line 7321, ../sass/_layout-responsive.scss */
+/* line 7337, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second #block-menu-menu-ask-wiche .menu li a:hover {
   background: #245eac;
 }
-/* line 7327, ../sass/_layout-responsive.scss */
+/* line 7343, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second #block-views-calendar-2-block-2 .view-calendar-2 {
   /* h3 {
   		font-size: 1.2em;
@@ -7797,28 +7812,28 @@ article .field-name-field-state-investment {
   		margin-top: 1em;
   	}*/
 }
-/* line 7335, ../sass/_layout-responsive.scss */
+/* line 7351, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second #block-views-calendar-2-block-2 .view-calendar-2 strong {
   color: #1c4884;
 }
-/* line 7342, ../sass/_layout-responsive.scss */
+/* line 7358, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second .block-nice-menus {
   position: relative;
   z-index: 20;
 }
-/* line 7347, ../sass/_layout-responsive.scss */
+/* line 7363, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second ul.commish-items, .sidebar-first .two-sidebars .region-sidebar-second .view-id-passport_contact_page ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 7352, ../sass/_layout-responsive.scss */
+/* line 7368, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second ul.commish-items li, .sidebar-first .two-sidebars .region-sidebar-second .view-id-passport_contact_page ul li {
   margin-bottom: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ccc;
 }
-/* line 7359, ../sass/_layout-responsive.scss */
+/* line 7375, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second .block {
   				/*.front-featured-pub .pubblock-list ul li h2.field-content{
   					background-color:transparent;
@@ -7835,94 +7850,94 @@ article .field-name-field-state-investment {
   						}*/
   /*2nd Sidebar vertical list of publications for departments, initiatves, interest groups and priority pages*/
 }
-/* line 7379, ../sass/_layout-responsive.scss */
+/* line 7395, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second .block .view-publication-blocks .pubblock-list, .sidebar-first .two-sidebars .region-sidebar-second .block .view-id-PSEP_links .pubblock-list, .sidebar-first .two-sidebars .region-sidebar-second .block .view-Adult-learner-pubs .pubblock-list {
   display: block !important;
 }
-/* line 7381, ../sass/_layout-responsive.scss */
+/* line 7397, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second .block .view-publication-blocks .pubblock-list ul, .sidebar-first .two-sidebars .region-sidebar-second .block .view-id-PSEP_links .pubblock-list ul, .sidebar-first .two-sidebars .region-sidebar-second .block .view-Adult-learner-pubs .pubblock-list ul {
   display: block !important;
   display: block !important;
 }
-/* line 7383, ../sass/_layout-responsive.scss */
+/* line 7399, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second .block .view-publication-blocks .pubblock-list ul li, .sidebar-first .two-sidebars .region-sidebar-second .block .view-id-PSEP_links .pubblock-list ul li, .sidebar-first .two-sidebars .region-sidebar-second .block .view-Adult-learner-pubs .pubblock-list ul li {
   display: block !important;
   width: 100% !important;
   margin-bottom: 12px;
 }
-/* line 7392, ../sass/_layout-responsive.scss */
+/* line 7408, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second .block .front-featured-pub {
   /*border-bottom:1px solid #ccc;*/
 }
-/* line 7398, ../sass/_layout-responsive.scss */
+/* line 7414, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second #block-views-testimonial-slider-block .view-testimonial-slider .view-content .testimonial-wrapper {
   /*student testimonials*/
 }
-/* line 7400, ../sass/_layout-responsive.scss */
+/* line 7416, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second #block-views-testimonial-slider-block .view-testimonial-slider .view-content .testimonial-wrapper .testimonial-photo {
   width: 45%;
   height: auto;
   float: left;
   margin-right: 4px;
 }
-/* line 7407, ../sass/_layout-responsive.scss */
+/* line 7423, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second #block-views-testimonial-slider-block .view-testimonial-slider .view-content .testimonial-wrapper .student-details {
   width: 45%;
   font-style: italic;
   float: left;
 }
-/* line 7412, ../sass/_layout-responsive.scss */
+/* line 7428, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second #block-views-testimonial-slider-block .view-testimonial-slider .view-content .testimonial-wrapper .testimonial-text {
   clear: left;
   /*width:90%;*/
   padding: 4% 3% 0 0;
 }
-/* line 7427, ../sass/_layout-responsive.scss */
+/* line 7443, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second h2 {
   margin: 8px 0;
 }
-/* line 7431, ../sass/_layout-responsive.scss */
+/* line 7447, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second p {
   margin-top: 8px;
   /*font-style:italic;*/
 }
-/* line 7437, ../sass/_layout-responsive.scss */
+/* line 7453, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second #block-views-newscap-archive-block-1 .view-newscap-archive {
   overflow: hidden;
 }
-/* line 7441, ../sass/_layout-responsive.scss */
+/* line 7457, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second #block-views-newscap-archive-block-1 .view-newscap-archive .views-field-field-pub-image {
   display: inline-block;
   float: left;
   width: 22%;
   margin-right: 3%;
 }
-/* line 7447, ../sass/_layout-responsive.scss */
+/* line 7463, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second #block-views-newscap-archive-block-1 .view-newscap-archive .views-field-field-pub-image .newsCapImage {
   position: relative;
   top: 12px;
 }
-/* line 7453, ../sass/_layout-responsive.scss */
+/* line 7469, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars .region-sidebar-second #block-views-newscap-archive-block-1 .view-newscap-archive .views-field-field-pub-description {
   display: inline-block;
   float: left;
   width: 75%;
 }
-/* line 7466, ../sass/_layout-responsive.scss */
+/* line 7482, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full, .sidebar-first .two-sidebars .advanced-help-topic {
   padding: 0  1.5%;
   /*generic table*/
   /*generic table*/
   /*end wiche table class*/
 }
-/* line 7472, ../sass/_layout-responsive.scss */
+/* line 7488, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table#wiche-table, .sidebar-first .two-sidebars article.view-mode-full table.wiche-table, .sidebar-first .two-sidebars .advanced-help-topic table#wiche-table, .sidebar-first .two-sidebars .advanced-help-topic table.wiche-table {
   width: 100%;
   border-bottom: 2px solid #000;
   margin-bottom: 16px;
   font-size: .8em;
 }
-/* line 7478, ../sass/_layout-responsive.scss */
+/* line 7494, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table#wiche-table th, .sidebar-first .two-sidebars article.view-mode-full table.wiche-table th, .sidebar-first .two-sidebars .advanced-help-topic table#wiche-table th, .sidebar-first .two-sidebars .advanced-help-topic table.wiche-table th {
   background-color: #1c4884;
   color: #fff;
@@ -7932,106 +7947,106 @@ article .field-name-field-state-investment {
   border-left: none;
   padding: 1% 0;
 }
-/* line 7487, ../sass/_layout-responsive.scss */
+/* line 7503, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table#wiche-table th:last-child, .sidebar-first .two-sidebars article.view-mode-full table.wiche-table th:last-child, .sidebar-first .two-sidebars .advanced-help-topic table#wiche-table th:last-child, .sidebar-first .two-sidebars .advanced-help-topic table.wiche-table th:last-child {
   border-right: none;
 }
-/* line 7492, ../sass/_layout-responsive.scss */
+/* line 7508, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table#wiche-table td, .sidebar-first .two-sidebars article.view-mode-full table.wiche-table td, .sidebar-first .two-sidebars .advanced-help-topic table#wiche-table td, .sidebar-first .two-sidebars .advanced-help-topic table.wiche-table td {
   padding: 2%;
   border-right: 1px solid #000;
   vertical-align: top;
   width: auto;
 }
-/* line 7499, ../sass/_layout-responsive.scss */
+/* line 7515, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table#wiche-table td:last-child, .sidebar-first .two-sidebars article.view-mode-full table.wiche-table td:last-child, .sidebar-first .two-sidebars .advanced-help-topic table#wiche-table td:last-child, .sidebar-first .two-sidebars .advanced-help-topic table.wiche-table td:last-child {
   border-right: none;
 }
-/* line 7503, ../sass/_layout-responsive.scss */
+/* line 7519, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table#wiche-table td h4, .sidebar-first .two-sidebars article.view-mode-full table.wiche-table td h4, .sidebar-first .two-sidebars .advanced-help-topic table#wiche-table td h4, .sidebar-first .two-sidebars .advanced-help-topic table.wiche-table td h4 {
   font-size: 1.2em;
   margin: 0;
 }
-/* line 7508, ../sass/_layout-responsive.scss */
+/* line 7524, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table#wiche-table td p, .sidebar-first .two-sidebars article.view-mode-full table.wiche-table td p, .sidebar-first .two-sidebars .advanced-help-topic table#wiche-table td p, .sidebar-first .two-sidebars .advanced-help-topic table.wiche-table td p {
   margin: 4px 0;
 }
-/* line 7513, ../sass/_layout-responsive.scss */
+/* line 7529, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table#wiche-table tr:first-child th, .sidebar-first .two-sidebars article.view-mode-full table.wiche-table tr:first-child th, .sidebar-first .two-sidebars .advanced-help-topic table#wiche-table tr:first-child th, .sidebar-first .two-sidebars .advanced-help-topic table.wiche-table tr:first-child th {
   border-bottom: 1px solid #000;
 }
-/* line 7522, ../sass/_layout-responsive.scss */
+/* line 7538, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table.wiche-table, .sidebar-first .two-sidebars .advanced-help-topic table.wiche-table {
   width: 100%;
   margin-bottom: 16px;
   font-size: .8em;
 }
-/* line 7529, ../sass/_layout-responsive.scss */
+/* line 7545, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table.wiche-table td, .sidebar-first .two-sidebars .advanced-help-topic table.wiche-table td {
   padding: 2%;
   vertical-align: top;
   width: 35%;
 }
-/* line 7539, ../sass/_layout-responsive.scss */
+/* line 7555, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table#borderless-no_bgColor td, .sidebar-first .two-sidebars .advanced-help-topic table#borderless-no_bgColor td {
   padding: 8px;
   vertical-align: top;
 }
-/* line 7543, ../sass/_layout-responsive.scss */
+/* line 7559, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table#borderless-no_bgColor td img, .sidebar-first .two-sidebars .advanced-help-topic table#borderless-no_bgColor td img {
   max-width: 65px;
   height: auto;
 }
-/* line 7547, ../sass/_layout-responsive.scss */
+/* line 7563, ../sass/_layout-responsive.scss */
 .sidebar-first .two-sidebars article.view-mode-full table#borderless-no_bgColor td p, .sidebar-first .two-sidebars .advanced-help-topic table#borderless-no_bgColor td p {
   margin: 0;
 }
-/* line 7559, ../sass/_layout-responsive.scss */
+/* line 7575, ../sass/_layout-responsive.scss */
 .sidebar-first div#wiche-home {
   padding: 0 15px;
 }
-/* line 7567, ../sass/_layout-responsive.scss */
+/* line 7583, ../sass/_layout-responsive.scss */
 .sidebar-first .quicktabs-tabpage #block-block-349, .sidebar-first .quicktabs-tabpage #block-block-348 {
   overflow: hidden;
 }
-/* line 7569, ../sass/_layout-responsive.scss */
+/* line 7585, ../sass/_layout-responsive.scss */
 .sidebar-first .quicktabs-tabpage #block-block-349 .col-one, .sidebar-first .quicktabs-tabpage #block-block-348 .col-one {
   float: left;
   display: inline-block;
   margin: 0 20px 0 20px;
   width: 45%;
 }
-/* line 7576, ../sass/_layout-responsive.scss */
+/* line 7592, ../sass/_layout-responsive.scss */
 .sidebar-first .quicktabs-tabpage #block-block-349 .col-two, .sidebar-first .quicktabs-tabpage #block-block-348 .col-two {
   float: left;
   display: inline-block;
   width: 45%;
 }
-/* line 7582, ../sass/_layout-responsive.scss */
+/* line 7598, ../sass/_layout-responsive.scss */
 .sidebar-first .quicktabs-tabpage #block-block-349 ul, .sidebar-first .quicktabs-tabpage #block-block-348 ul {
   list-style: square;
 }
-/* line 7585, ../sass/_layout-responsive.scss */
+/* line 7601, ../sass/_layout-responsive.scss */
 .sidebar-first .quicktabs-tabpage #block-block-349 ul li, .sidebar-first .quicktabs-tabpage #block-block-348 ul li {
   font-size: .8em;
   margin-bottom: 8px;
 }
-/* line 7602, ../sass/_layout-responsive.scss */
+/* line 7618, ../sass/_layout-responsive.scss */
 .sidebar-first .delicious-posts {
   padding-right: 1%;
 }
-/* line 7607, ../sass/_layout-responsive.scss */
+/* line 7623, ../sass/_layout-responsive.scss */
 .sidebar-first #content .profile, .sidebar-first #content form#user-login {
   padding: 0 1%;
 }
-/* line 7611, ../sass/_layout-responsive.scss */
+/* line 7627, ../sass/_layout-responsive.scss */
 .sidebar-first .horizontal-divider {
   clear: both;
   /*border-bottom:2px solid #ccc;*/
   width: 98%;
   margin: 0 auto;
 }
-/* line 7621, ../sass/_layout-responsive.scss */
+/* line 7637, ../sass/_layout-responsive.scss */
 .sidebar-first a.popup-element-title {
   color: #1C4884;
   cursor: pointer;
@@ -8041,88 +8056,88 @@ article .field-name-field-state-investment {
   font-size: 1.1em;
   font-weight: 600;
 }
-/* line 7630, ../sass/_layout-responsive.scss */
+/* line 7646, ../sass/_layout-responsive.scss */
 .sidebar-first #popup-active-overlay {
   /*mission statement front page*/
 }
-/* line 7631, ../sass/_layout-responsive.scss */
+/* line 7647, ../sass/_layout-responsive.scss */
 .sidebar-first #popup-active-overlay .popup-element-body {
   width: 775px !important;
 }
-/* line 7633, ../sass/_layout-responsive.scss */
+/* line 7649, ../sass/_layout-responsive.scss */
 .sidebar-first #popup-active-overlay .popup-element-body .inner {
   width: 775px !important;
 }
-/* line 7635, ../sass/_layout-responsive.scss */
+/* line 7651, ../sass/_layout-responsive.scss */
 .sidebar-first #popup-active-overlay .popup-element-body .inner .popup-element-body a.popup-close-button {
   cursor: pointer;
   float: right;
   position: relative;
   z-index: 20;
 }
-/* line 7642, ../sass/_layout-responsive.scss */
+/* line 7658, ../sass/_layout-responsive.scss */
 .sidebar-first #popup-active-overlay .popup-element-body .inner p {
   font-size: .8em;
   line-height: 1.4em;
   color: #1C4884;
 }
-/* line 7658, ../sass/_layout-responsive.scss */
+/* line 7674, ../sass/_layout-responsive.scss */
 .sidebar-first .view-wiche-sep-departments-initiatives .views-accordion-header {
   background: none !important;
 }
-/* line 7660, ../sass/_layout-responsive.scss */
+/* line 7676, ../sass/_layout-responsive.scss */
 .sidebar-first .view-wiche-sep-departments-initiatives .views-accordion-header .field-content {
   display: block;
 }
-/* line 7662, ../sass/_layout-responsive.scss */
+/* line 7678, ../sass/_layout-responsive.scss */
 .sidebar-first .view-wiche-sep-departments-initiatives .views-accordion-header .field-content a:link {
   font-family: 'humnst777_lt_btlight_italic';
   color: #1C4884;
   line-height: 1.2em;
 }
-/* line 7675, ../sass/_layout-responsive.scss */
+/* line 7691, ../sass/_layout-responsive.scss */
 .sidebar-first .ui-accordion .ui-accordion-content[role=tabpanel] {
   border-top: 1px solid #ccc;
 }
-/* line 7680, ../sass/_layout-responsive.scss */
+/* line 7696, ../sass/_layout-responsive.scss */
 .sidebar-first .quick-link {
   display: block;
 }
-/* line 7686, ../sass/_layout-responsive.scss */
+/* line 7702, ../sass/_layout-responsive.scss */
 .sidebar-first .view-content table.membership {
   width: 100%;
   margin-top: 25px;
   border-bottom: 1px solid #1e345b;
   padding-bottom: 1%;
 }
-/* line 7693, ../sass/_layout-responsive.scss */
+/* line 7709, ../sass/_layout-responsive.scss */
 .sidebar-first .view-content table.membership td, .sidebar-first th {
   margin: 1%;
   border: 1px solid #000;
 }
-/* line 7699, ../sass/_layout-responsive.scss */
+/* line 7715, ../sass/_layout-responsive.scss */
 .sidebar-first .view-content table.membership caption {
   font-weight: bold;
   font-size: 1.2em;
   letter-spacing: 1px;
   margin-bottom: 4px;
 }
-/* line 7707, ../sass/_layout-responsive.scss */
+/* line 7723, ../sass/_layout-responsive.scss */
 .sidebar-first .view-content table.membership thead th {
   padding-right: 0;
   border-bottom: 3px solid #1e345b;
 }
-/* line 7712, ../sass/_layout-responsive.scss */
+/* line 7728, ../sass/_layout-responsive.scss */
 .sidebar-first .view-content table.membership thead th.views-field-title {
   text-align: center;
   padding: 0 1% 0 0;
 }
-/* line 7717, ../sass/_layout-responsive.scss */
+/* line 7733, ../sass/_layout-responsive.scss */
 .sidebar-first .view-content table.membership thead th.views-field-field-bio-org-value {
   text-align: center;
   padding: 0 0 0 1%;
 }
-/* line 7730, ../sass/_layout-responsive.scss */
+/* line 7746, ../sass/_layout-responsive.scss */
 .sidebar-first .view-list-alliance-members .view-content table.views-table tr th.views-field-field-bio-org,
 .sidebar-first .view-list-alliance-members .view-content table.views-table tr td.views-field-field-bio-org,
 .sidebar-first .view-id-list_walf_members .view-content table.views-table tr th.views-field-field-bio-org,
@@ -8131,7 +8146,7 @@ article .field-name-field-state-investment {
   width: 49%;
   padding: 2%;
 }
-/* line 7737, ../sass/_layout-responsive.scss */
+/* line 7753, ../sass/_layout-responsive.scss */
 .sidebar-first .view-list-alliance-members .view-content table.views-table tr th.views-field-title,
 .sidebar-first .view-list-alliance-members .view-content table.views-table tr td.views-field-title,
 .sidebar-first .view-id-list_walf_members .view-content table.views-table tr th.views-field-title,
@@ -8140,200 +8155,200 @@ article .field-name-field-state-investment {
   width: 49%;
   padding: 2%;
 }
-/* line 7746, ../sass/_layout-responsive.scss */
+/* line 7762, ../sass/_layout-responsive.scss */
 .sidebar-first .view-content table.views-table tr.even {
   background-color: transparent;
 }
-/* line 7752, ../sass/_layout-responsive.scss */
+/* line 7768, ../sass/_layout-responsive.scss */
 .sidebar-first table.waccal-exec-comm, .sidebar-first table.walf-exec-comm {
   margin: 0;
 }
-/* line 7756, ../sass/_layout-responsive.scss */
+/* line 7772, ../sass/_layout-responsive.scss */
 .sidebar-first table.waccal-exec-comm td h3, .sidebar-first table.walf-exec-comm td h3 {
   margin: 0;
 }
-/* line 7767, ../sass/_layout-responsive.scss */
+/* line 7783, ../sass/_layout-responsive.scss */
 .sidebar-first #higher-ed-links tr:nth-child(odd) {
   background: #ccc;
 }
-/* line 7771, ../sass/_layout-responsive.scss */
+/* line 7787, ../sass/_layout-responsive.scss */
 .sidebar-first #higher-ed-links th {
   border: none;
 }
-/* line 7775, ../sass/_layout-responsive.scss */
+/* line 7791, ../sass/_layout-responsive.scss */
 .sidebar-first #higher-ed-links td {
   font-size: .9em;
   line-height: 1.4em;
   padding: 4px 0;
 }
-/* line 7785, ../sass/_layout-responsive.scss */
+/* line 7801, ../sass/_layout-responsive.scss */
 .sidebar-first .list-waccal-members {
   overflow: hidden;
 }
-/* line 7787, ../sass/_layout-responsive.scss */
+/* line 7803, ../sass/_layout-responsive.scss */
 .sidebar-first .list-waccal-members h3 {
   clear: left;
   margin-bottom: 0;
 }
-/* line 7791, ../sass/_layout-responsive.scss */
+/* line 7807, ../sass/_layout-responsive.scss */
 .sidebar-first .list-waccal-members ul {
   list-style: none;
   padding: 0;
   margin: 0 0 16px 0;
 }
-/* line 7795, ../sass/_layout-responsive.scss */
+/* line 7811, ../sass/_layout-responsive.scss */
 .sidebar-first .list-waccal-members ul li {
   clear: left;
 }
-/* line 7798, ../sass/_layout-responsive.scss */
+/* line 7814, ../sass/_layout-responsive.scss */
 .sidebar-first .list-waccal-members ul li .views-field-title {
   float: left;
   margin-right: 12px;
 }
-/* line 7803, ../sass/_layout-responsive.scss */
+/* line 7819, ../sass/_layout-responsive.scss */
 .sidebar-first .list-waccal-members ul li .views-field-field-bio-org {
   float: left;
 }
-/* line 7816, ../sass/_layout-responsive.scss */
+/* line 7832, ../sass/_layout-responsive.scss */
 .sidebar-first .view-policyExchanges .item-list h3 {
   margin-bottom: 0;
 }
-/* line 7821, ../sass/_layout-responsive.scss */
+/* line 7837, ../sass/_layout-responsive.scss */
 .sidebar-first .view-policyExchanges .item-list ul li h4.field-content {
   margin: 6px 0 6px 0;
 }
-/* line 7831, ../sass/_layout-responsive.scss */
+/* line 7847, ../sass/_layout-responsive.scss */
 .sidebar-first .taxon-resource ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 7839, ../sass/_layout-responsive.scss */
+/* line 7855, ../sass/_layout-responsive.scss */
 .sidebar-first .taxon-resource ul li.policy-pub .field-content p {
   margin: 0;
   font-size: .9em;
   line-height: 1.2em;
 }
-/* line 7844, ../sass/_layout-responsive.scss */
+/* line 7860, ../sass/_layout-responsive.scss */
 .sidebar-first .taxon-resource ul li.policy-pub .field-content p a:link, .sidebar-first .taxon-resource ul li.policy-pub .field-content p a:visited, .sidebar-first .taxon-resource ul li.policy-pub .field-content p a:active {
   display: block;
   text-decoration: underline;
   font-size: .9em;
   color: #1c4884;
 }
-/* line 7853, ../sass/_layout-responsive.scss */
+/* line 7869, ../sass/_layout-responsive.scss */
 .sidebar-first .taxon-resource ul li.policy-pub h1 {
   /*reduce h1 size for 2nd sidebar teaser block*/
   font-weight: normal !important;
   font-size: 1em !important;
   margin-bottom: 0;
 }
-/* line 7858, ../sass/_layout-responsive.scss */
+/* line 7874, ../sass/_layout-responsive.scss */
 .sidebar-first .taxon-resource ul li.policy-pub h2 {
   font-weight: normal;
 }
-/* line 7860, ../sass/_layout-responsive.scss */
+/* line 7876, ../sass/_layout-responsive.scss */
 .sidebar-first .taxon-resource ul li.policy-pub h2 a:link, .sidebar-first .taxon-resource ul li.policy-pub h2 a:visited, .sidebar-first .taxon-resource ul li.policy-pub h2 a:active {
   text-decoration: underline;
   font-size: .8em;
   color: #1c4884;
 }
-/* line 7866, ../sass/_layout-responsive.scss */
+/* line 7882, ../sass/_layout-responsive.scss */
 .sidebar-first .taxon-resource ul li.policy-pub h3 {
   display: none;
 }
-/* line 7875, ../sass/_layout-responsive.scss */
+/* line 7891, ../sass/_layout-responsive.scss */
 .sidebar-first .view-taxonomy-resources .more-link {
   text-align: left;
 }
-/* line 7877, ../sass/_layout-responsive.scss */
+/* line 7893, ../sass/_layout-responsive.scss */
 .sidebar-first .view-taxonomy-resources .more-link a:link, .sidebar-first .view-taxonomy-resources .more-link a:visited, .sidebar-first .view-taxonomy-resources .more-link a:active {
   display: block;
   text-decoration: underline;
   font-size: .8em;
   color: #1c4884;
 }
-/* line 7892, ../sass/_layout-responsive.scss */
+/* line 7908, ../sass/_layout-responsive.scss */
 .sidebar-first .view-policyInsights ul li span h4 {
   margin-bottom: 0;
 }
-/* line 7904, ../sass/_layout-responsive.scss */
+/* line 7920, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 7909, ../sass/_layout-responsive.scss */
+/* line 7925, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li {
   overflow: hidden;
   margin-bottom: 20px;
 }
-/* line 7913, ../sass/_layout-responsive.scss */
+/* line 7929, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li .pub-image {
   float: left;
   margin-right: 12px;
   display: inline-block;
   width: 14%;
 }
-/* line 7920, ../sass/_layout-responsive.scss */
+/* line 7936, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li .pub-description {
   float: left;
   display: inline-block;
   width: 65%;
 }
-/* line 7925, ../sass/_layout-responsive.scss */
+/* line 7941, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li .pub-description .sm-font {
   font-size: .8em;
 }
-/* line 7929, ../sass/_layout-responsive.scss */
+/* line 7945, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li .pub-description h2, .sidebar-first .pub-list ul li .pub-description h5 {
   margin-top: 0;
 }
-/* line 7933, ../sass/_layout-responsive.scss */
+/* line 7949, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li .pub-description .field-content {
   position: relative;
   top: -3px;
 }
-/* line 7938, ../sass/_layout-responsive.scss */
+/* line 7954, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li .pub-description p {
   margin: 0 !important;
   /*font-weight:normal;*/
 }
-/* line 7941, ../sass/_layout-responsive.scss */
+/* line 7957, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li .pub-description p a:link, .sidebar-first .pub-list ul li .pub-description p a:visited, .sidebar-first .pub-list ul li .pub-description p a:active {
   color: #1c4884;
   text-decoration: none;
   font-weight: bold;
 }
-/* line 7946, ../sass/_layout-responsive.scss */
+/* line 7962, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li .pub-description p a:hover {
   text-decoration: underline;
 }
-/* line 7952, ../sass/_layout-responsive.scss */
+/* line 7968, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li .views-field-field-pub-pages {
   clear: left;
   display: block;
 }
-/* line 7957, ../sass/_layout-responsive.scss */
+/* line 7973, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li p.pub-title {
   font-weight: 800;
   margin-bottom: 12px;
   font-style: italic;
 }
-/* line 7962, ../sass/_layout-responsive.scss */
+/* line 7978, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li p.pub-title a:link, .sidebar-first .pub-list ul li p.pub-title a:visited, .sidebar-first .pub-list ul li p.pub-title a:active {
   color: #1c4884;
   text-decoration: none;
 }
-/* line 7966, ../sass/_layout-responsive.scss */
+/* line 7982, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li p.pub-title a:hover {
   text-decoration: underline;
 }
-/* line 7975, ../sass/_layout-responsive.scss */
+/* line 7991, ../sass/_layout-responsive.scss */
 .sidebar-first .clearBoth {
   clear: both;
 }
-/* line 7980, ../sass/_layout-responsive.scss */
+/* line 7996, ../sass/_layout-responsive.scss */
 .sidebar-first .boxwrap {
   padding: 16px;
   border: 2px solid #333;
@@ -8342,88 +8357,88 @@ article .field-name-field-state-investment {
   margin-bottom: 30px;
   border-radius: 8px;
 }
-/* line 7988, ../sass/_layout-responsive.scss */
+/* line 8004, ../sass/_layout-responsive.scss */
 .sidebar-first .boxwrap h2, .sidebar-first .boxwrap h3, .sidebar-first .boxwrap h4 {
   margin-top: 0;
 }
-/* line 7992, ../sass/_layout-responsive.scss */
+/* line 8008, ../sass/_layout-responsive.scss */
 .sidebar-first .boxwrap ul {
   list-style: none;
 }
-/* line 7995, ../sass/_layout-responsive.scss */
+/* line 8011, ../sass/_layout-responsive.scss */
 .sidebar-first .boxwrap ul li {
   font-size: .8em;
 }
-/* line 8003, ../sass/_layout-responsive.scss */
+/* line 8019, ../sass/_layout-responsive.scss */
 .sidebar-first h2.w-sara {
   padding: 0 0 8px 0;
   font-weight: bold;
   font-size: 1.5em;
 }
-/* line 8009, ../sass/_layout-responsive.scss */
+/* line 8025, ../sass/_layout-responsive.scss */
 .sidebar-first #wiche-sara-menu {
   font-size: 1em;
   font-weight: normal;
   color: #000;
   line-height: 1.5em;
 }
-/* line 8016, ../sass/_layout-responsive.scss */
+/* line 8032, ../sass/_layout-responsive.scss */
 .sidebar-first #wiche-sara-menu h3 {
   font-style: italic;
   line-height: 1em;
   margin-bottom: 4px;
 }
-/* line 8025, ../sass/_layout-responsive.scss */
+/* line 8041, ../sass/_layout-responsive.scss */
 .sidebar-first .w-sara-menu .toggle-view li p.sara-menu, .sidebar-first .w-sara-menu .toggle-view li p, .sidebar-first .w-sara-menu .toggle-view li p.knocking-8, .sidebar-first .menu .toggle-view li p.sara-menu, .sidebar-first .menu .toggle-view li p, .sidebar-first .menu .toggle-view li p.knocking-8 {
   display: none;
 }
-/* line 8032, ../sass/_layout-responsive.scss */
+/* line 8048, ../sass/_layout-responsive.scss */
 .sidebar-first ul#wiche-sara-menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 8038, ../sass/_layout-responsive.scss */
+/* line 8054, ../sass/_layout-responsive.scss */
 .sidebar-first ul#wiche-sara-menu ul.toggle-view li, .sidebar-first .content ul#wiche-sara-menu ul li {
   margin-bottom: 0 !important;
 }
-/* line 8043, ../sass/_layout-responsive.scss */
+/* line 8059, ../sass/_layout-responsive.scss */
 .sidebar-first ul#wiche-sara-menu ul.toggle-view a:link {
   font-size: .8em;
   line-height: 1.6em;
   padding-bottom: 6px;
 }
-/* line 8049, ../sass/_layout-responsive.scss */
+/* line 8065, ../sass/_layout-responsive.scss */
 .sidebar-first ul#wiche-sara-menu ul.toggle-view span {
   position: relative;
   margin-left: 6px;
   top: -2px;
   cursor: pointer;
 }
-/* line 8067, ../sass/_layout-responsive.scss */
+/* line 8083, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Staff-Alpha-View .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-item-field-user-project-contact-tid #edit-field-user-project-contact-tid, .sidebar-first .view-wiche-staff .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-item-field-user-project-contact-tid #edit-field-user-project-contact-tid {
   width: 300px;
 }
-/* line 8071, ../sass/_layout-responsive.scss */
+/* line 8087, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Staff-Alpha-View .views-exposed-form .views-exposed-widgets .views-exposed-widget input, .sidebar-first .view-wiche-staff .views-exposed-form .views-exposed-widgets .views-exposed-widget input {
   position: relative;
   top: -3px;
   right: -4px;
   padding: 0 4px;
 }
-/* line 8083, ../sass/_layout-responsive.scss */
+/* line 8099, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Staff-Alpha-View .manage-item-list ul, .sidebar-first .view-wiche-staff .manage-item-list ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 8091, ../sass/_layout-responsive.scss */
+/* line 8107, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Staff-Alpha-View ul, .sidebar-first .view-wiche-staff ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 8096, ../sass/_layout-responsive.scss */
+/* line 8112, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Staff-Alpha-View ul li, .sidebar-first .view-wiche-staff ul li {
   width: 28%;
   display: inline-block;
@@ -8434,16 +8449,16 @@ article .field-name-field-state-investment {
   min-height: 300px;
   line-height: 1.3em;
 }
-/* line 8107, ../sass/_layout-responsive.scss */
+/* line 8123, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Staff-Alpha-View ul li .field-content h2, .sidebar-first .view-wiche-staff ul li .field-content h2 {
   margin: 0 0 4px;
   font-size: 1.2em;
 }
-/* line 8113, ../sass/_layout-responsive.scss */
+/* line 8129, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Staff-Alpha-View ul li strong, .sidebar-first .view-wiche-staff ul li strong {
   letter-spacing: -1px;
 }
-/* line 8119, ../sass/_layout-responsive.scss */
+/* line 8135, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Staff-Alpha-View ul li ul.toggle-view li, .sidebar-first .view-wiche-staff ul li ul.toggle-view li {
   cursor: pointer;
   position: relative;
@@ -8451,18 +8466,18 @@ article .field-name-field-state-investment {
   top: 80px;
   left: 80px;
 }
-/* line 8126, ../sass/_layout-responsive.scss */
+/* line 8142, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Staff-Alpha-View ul li ul.toggle-view li h3, .sidebar-first .view-wiche-staff ul li ul.toggle-view li h3 {
   font-weight: normal;
   font-size: .9em;
   display: inline-block;
   padding: 2px;
 }
-/* line 8133, ../sass/_layout-responsive.scss */
+/* line 8149, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Staff-Alpha-View ul li ul.toggle-view li span, .sidebar-first .view-wiche-staff ul li ul.toggle-view li span {
   color: #1c4884;
 }
-/* line 8137, ../sass/_layout-responsive.scss */
+/* line 8153, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Staff-Alpha-View ul li ul.toggle-view li p, .sidebar-first .view-wiche-staff ul li ul.toggle-view li p {
   display: none;
   width: 500px;
@@ -8475,7 +8490,7 @@ article .field-name-field-state-investment {
   top: 34px;
   left: -200px;
 }
-/* line 8161, ../sass/_layout-responsive.scss */
+/* line 8177, ../sass/_layout-responsive.scss */
 .sidebar-first #block-menu-menu-wiche-directory ul.menu, .sidebar-first #block-menu-menu-lac-menu ul.menu, .sidebar-first .box-right ul.menu, .sidebar-first #block-menu-menu-wue ul.menu,
 .sidebar-first #block-menu-menu-psep-menu ul.menu, .sidebar-first #block-menu-menu-ask-wiche ul.menu, .sidebar-first #block-menu-menu-ice-public-menu ul.menu, .sidebar-first #block-menu-menu-interstate-passport ul.menu,
 .sidebar-first #block-menu-menu-initiatives-sor ul.menu, .sidebar-first #block-menu-menu-about-us ul.menu, .sidebar-first #block-menu-menu-resources ul.menu, .sidebar-first #block-menu-menu-statewide-trans ul.menu, .sidebar-first #block-menu-menu-facilitating-de ul.menu, .sidebar-first #block-menu-menu-news ul.menu, .sidebar-first #block-menu-menu-getting-what-yo ul.menu, .sidebar-first #knocking-explore-list ul.menu, .sidebar-first #block-menu-menu-non-traditional ul.menu, .sidebar-first #block-menu-menu-factbook ul.menu, .sidebar-first #block-block-263 ul.menu, .sidebar-first #block-menu-menu-menu-nanslo-new ul.menu, .sidebar-first #block-menu-menu-aboutnanslo ul.menu, .sidebar-first #block-menu-menu-menu-nanslo-curr-initiative ul.menu, .sidebar-first #block-menu-menu-menu-nanslo-past-initiative ul.menu, .sidebar-first #block-menu-menu-menu-nanslo-creative-soluti ul.menu, .sidebar-first #block-menu-menu-policy-mega-menu-block ul.menu {
@@ -8484,7 +8499,7 @@ article .field-name-field-state-investment {
   padding: 0 0 16px;
   border-bottom: 1px solid #ccc;
 }
-/* line 8166, ../sass/_layout-responsive.scss */
+/* line 8182, ../sass/_layout-responsive.scss */
 .sidebar-first #block-menu-menu-wiche-directory ul.menu li, .sidebar-first #block-menu-menu-lac-menu ul.menu li, .sidebar-first .box-right ul.menu li, .sidebar-first #block-menu-menu-wue ul.menu li,
 .sidebar-first #block-menu-menu-psep-menu ul.menu li, .sidebar-first #block-menu-menu-ask-wiche ul.menu li, .sidebar-first #block-menu-menu-ice-public-menu ul.menu li, .sidebar-first #block-menu-menu-interstate-passport ul.menu li,
 .sidebar-first #block-menu-menu-initiatives-sor ul.menu li, .sidebar-first #block-menu-menu-about-us ul.menu li, .sidebar-first #block-menu-menu-resources ul.menu li, .sidebar-first #block-menu-menu-statewide-trans ul.menu li, .sidebar-first #block-menu-menu-facilitating-de ul.menu li, .sidebar-first #block-menu-menu-news ul.menu li, .sidebar-first #block-menu-menu-getting-what-yo ul.menu li, .sidebar-first #knocking-explore-list ul.menu li, .sidebar-first #block-menu-menu-non-traditional ul.menu li, .sidebar-first #block-menu-menu-factbook ul.menu li, .sidebar-first #block-block-263 ul.menu li, .sidebar-first #block-menu-menu-menu-nanslo-new ul.menu li, .sidebar-first #block-menu-menu-aboutnanslo ul.menu li, .sidebar-first #block-menu-menu-menu-nanslo-curr-initiative ul.menu li, .sidebar-first #block-menu-menu-menu-nanslo-past-initiative ul.menu li, .sidebar-first #block-menu-menu-menu-nanslo-creative-soluti ul.menu li, .sidebar-first #block-menu-menu-policy-mega-menu-block ul.menu li {
@@ -8492,7 +8507,7 @@ article .field-name-field-state-investment {
   padding-bottom: 0;
   margin-bottom: 16px;
 }
-/* line 8171, ../sass/_layout-responsive.scss */
+/* line 8187, ../sass/_layout-responsive.scss */
 .sidebar-first #block-menu-menu-wiche-directory ul.menu li a, .sidebar-first #block-menu-menu-lac-menu ul.menu li a, .sidebar-first .box-right ul.menu li a, .sidebar-first #block-menu-menu-wue ul.menu li a,
 .sidebar-first #block-menu-menu-psep-menu ul.menu li a, .sidebar-first #block-menu-menu-ask-wiche ul.menu li a, .sidebar-first #block-menu-menu-ice-public-menu ul.menu li a, .sidebar-first #block-menu-menu-interstate-passport ul.menu li a,
 .sidebar-first #block-menu-menu-initiatives-sor ul.menu li a, .sidebar-first #block-menu-menu-about-us ul.menu li a, .sidebar-first #block-menu-menu-resources ul.menu li a, .sidebar-first #block-menu-menu-statewide-trans ul.menu li a, .sidebar-first #block-menu-menu-facilitating-de ul.menu li a, .sidebar-first #block-menu-menu-news ul.menu li a, .sidebar-first #block-menu-menu-getting-what-yo ul.menu li a, .sidebar-first #knocking-explore-list ul.menu li a, .sidebar-first #block-menu-menu-non-traditional ul.menu li a, .sidebar-first #block-menu-menu-factbook ul.menu li a, .sidebar-first #block-block-263 ul.menu li a, .sidebar-first #block-menu-menu-menu-nanslo-new ul.menu li a, .sidebar-first #block-menu-menu-aboutnanslo ul.menu li a, .sidebar-first #block-menu-menu-menu-nanslo-curr-initiative ul.menu li a, .sidebar-first #block-menu-menu-menu-nanslo-past-initiative ul.menu li a, .sidebar-first #block-menu-menu-menu-nanslo-creative-soluti ul.menu li a, .sidebar-first #block-menu-menu-policy-mega-menu-block ul.menu li a {
@@ -8504,51 +8519,51 @@ article .field-name-field-state-investment {
   display: block;
   line-height: 1.3em;
 }
-/* line 8180, ../sass/_layout-responsive.scss */
+/* line 8196, ../sass/_layout-responsive.scss */
 .sidebar-first #block-menu-menu-wiche-directory ul.menu li a:hover, .sidebar-first #block-menu-menu-lac-menu ul.menu li a:hover, .sidebar-first .box-right ul.menu li a:hover, .sidebar-first #block-menu-menu-wue ul.menu li a:hover,
 .sidebar-first #block-menu-menu-psep-menu ul.menu li a:hover, .sidebar-first #block-menu-menu-ask-wiche ul.menu li a:hover, .sidebar-first #block-menu-menu-ice-public-menu ul.menu li a:hover, .sidebar-first #block-menu-menu-interstate-passport ul.menu li a:hover,
 .sidebar-first #block-menu-menu-initiatives-sor ul.menu li a:hover, .sidebar-first #block-menu-menu-about-us ul.menu li a:hover, .sidebar-first #block-menu-menu-resources ul.menu li a:hover, .sidebar-first #block-menu-menu-statewide-trans ul.menu li a:hover, .sidebar-first #block-menu-menu-facilitating-de ul.menu li a:hover, .sidebar-first #block-menu-menu-news ul.menu li a:hover, .sidebar-first #block-menu-menu-getting-what-yo ul.menu li a:hover, .sidebar-first #knocking-explore-list ul.menu li a:hover, .sidebar-first #block-menu-menu-non-traditional ul.menu li a:hover, .sidebar-first #block-menu-menu-factbook ul.menu li a:hover, .sidebar-first #block-block-263 ul.menu li a:hover, .sidebar-first #block-menu-menu-menu-nanslo-new ul.menu li a:hover, .sidebar-first #block-menu-menu-aboutnanslo ul.menu li a:hover, .sidebar-first #block-menu-menu-menu-nanslo-curr-initiative ul.menu li a:hover, .sidebar-first #block-menu-menu-menu-nanslo-past-initiative ul.menu li a:hover, .sidebar-first #block-menu-menu-menu-nanslo-creative-soluti ul.menu li a:hover, .sidebar-first #block-menu-menu-policy-mega-menu-block ul.menu li a:hover {
   text-decoration: underline;
 }
-/* line 8189, ../sass/_layout-responsive.scss */
+/* line 8205, ../sass/_layout-responsive.scss */
 .sidebar-first .how-contact-staff {
   padding: 8px;
   width: 90%;
 }
-/* line 8198, ../sass/_layout-responsive.scss */
+/* line 8214, ../sass/_layout-responsive.scss */
 .sidebar-first .author-box-right h5 {
   margin: 0;
   padding: 0;
 }
-/* line 8202, ../sass/_layout-responsive.scss */
+/* line 8218, ../sass/_layout-responsive.scss */
 .sidebar-first .author-box-right ol {
   margin: 0 0 0 16px;
   padding: 0;
 }
-/* line 8205, ../sass/_layout-responsive.scss */
+/* line 8221, ../sass/_layout-responsive.scss */
 .sidebar-first .author-box-right ol li {
   font-size: .8em;
 }
-/* line 8215, ../sass/_layout-responsive.scss */
+/* line 8231, ../sass/_layout-responsive.scss */
 .sidebar-first .testimonial-list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 8220, ../sass/_layout-responsive.scss */
+/* line 8236, ../sass/_layout-responsive.scss */
 .sidebar-first .testimonial-list ul li:first-child {
   /*border-top:1px solid #cccccc;*/
   margin-top: 0;
   padding-top: 16px;
 }
-/* line 8226, ../sass/_layout-responsive.scss */
+/* line 8242, ../sass/_layout-responsive.scss */
 .sidebar-first .testimonial-list ul li {
   padding-bottom: 16px;
   border-bottom: 1px solid #ccc;
   margin-top: 16px;
   overflow: hidden;
 }
-/* line 8232, ../sass/_layout-responsive.scss */
+/* line 8248, ../sass/_layout-responsive.scss */
 .sidebar-first .testimonial-list ul li .testimonial-photo {
   float: left;
   margin-right: 8px;
@@ -8556,19 +8571,19 @@ article .field-name-field-state-investment {
   top: 6px;
   width: 10%;
 }
-/* line 8240, ../sass/_layout-responsive.scss */
+/* line 8256, ../sass/_layout-responsive.scss */
 .sidebar-first .testimonial-list ul li .testimonial-body {
   float: left;
 }
-/* line 8244, ../sass/_layout-responsive.scss */
+/* line 8260, ../sass/_layout-responsive.scss */
 .sidebar-first .testimonial-list ul li .field-content {
   clear: left;
 }
-/* line 8249, ../sass/_layout-responsive.scss */
+/* line 8265, ../sass/_layout-responsive.scss */
 .sidebar-first .testimonial-list ul li:last-child {
   border-bottom: none;
 }
-/* line 8258, ../sass/_layout-responsive.scss */
+/* line 8274, ../sass/_layout-responsive.scss */
 .sidebar-first .pubblock-list ul, .sidebar-first .view-taxonomy-resources-block ul {
   margin: 0;
   padding: 0;
@@ -8590,11 +8605,11 @@ article .field-name-field-state-investment {
   }*/
   /*}*/
 }
-/* line 8284, ../sass/_layout-responsive.scss */
+/* line 8300, ../sass/_layout-responsive.scss */
 .sidebar-first .pubblock-list ul li:last-child, .sidebar-first .view-taxonomy-resources-block ul li:last-child {
   border-bottom: none;
 }
-/* line 8295, ../sass/_layout-responsive.scss */
+/* line 8311, ../sass/_layout-responsive.scss */
 .sidebar-first .view-policyInsights .item-list ul, .sidebar-first .view-policyInsights .pub-list ul, .sidebar-first .view-policyExchanges .item-list ul, .sidebar-first .view-policyExchanges .pub-list ul, .sidebar-first .view-publications .item-list ul, .sidebar-first .view-publications .pub-list ul {
   margin: 0;
   padding: 0;
@@ -8602,7 +8617,7 @@ article .field-name-field-state-investment {
   /*display:table;*/
   width: 100%;
 }
-/* line 8303, ../sass/_layout-responsive.scss */
+/* line 8319, ../sass/_layout-responsive.scss */
 .sidebar-first .view-policyInsights .item-list ul li a:link, .sidebar-first .view-policyInsights .item-list ul li a:visited, .sidebar-first .view-policyInsights .item-list ul li a:active, .sidebar-first .view-policyInsights .pub-list ul li a:link, .sidebar-first .view-policyInsights .pub-list ul li a:visited, .sidebar-first .view-policyInsights .pub-list ul li a:active, .sidebar-first .view-policyExchanges .item-list ul li a:link, .sidebar-first .view-policyExchanges .item-list ul li a:visited, .sidebar-first .view-policyExchanges .item-list ul li a:active, .sidebar-first .view-policyExchanges .pub-list ul li a:link, .sidebar-first .view-policyExchanges .pub-list ul li a:visited, .sidebar-first .view-policyExchanges .pub-list ul li a:active, .sidebar-first .view-publications .item-list ul li a:link, .sidebar-first .view-publications .item-list ul li a:visited, .sidebar-first .view-publications .item-list ul li a:active, .sidebar-first .view-publications .pub-list ul li a:link, .sidebar-first .view-publications .pub-list ul li a:visited, .sidebar-first .view-publications .pub-list ul li a:active {
   color: #1c4884;
   font-size: 0.9em;
@@ -8611,41 +8626,41 @@ article .field-name-field-state-investment {
   text-decoration: underline;
   line-height: 0.9em !important;
 }
-/* line 8312, ../sass/_layout-responsive.scss */
+/* line 8328, ../sass/_layout-responsive.scss */
 .sidebar-first .view-policyInsights .item-list ul li a:hover, .sidebar-first .view-policyInsights .pub-list ul li a:hover, .sidebar-first .view-policyExchanges .item-list ul li a:hover, .sidebar-first .view-policyExchanges .pub-list ul li a:hover, .sidebar-first .view-publications .item-list ul li a:hover, .sidebar-first .view-publications .pub-list ul li a:hover {
   color: #000;
 }
-/* line 8323, ../sass/_layout-responsive.scss */
+/* line 8339, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Commission-Block-View ul,
 .sidebar-first .view-legislative-advisory-committee-block-view ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 8328, ../sass/_layout-responsive.scss */
+/* line 8344, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Commission-Block-View ul li,
 .sidebar-first .view-legislative-advisory-committee-block-view ul li {
   border-bottom: 1px solid #ccc;
   margin-top: 16px;
 }
-/* line 8332, ../sass/_layout-responsive.scss */
+/* line 8348, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Commission-Block-View ul li .small,
 .sidebar-first .view-legislative-advisory-committee-block-view ul li .small {
   font-size: .9em;
   line-height: 1em;
 }
-/* line 8338, ../sass/_layout-responsive.scss */
+/* line 8354, ../sass/_layout-responsive.scss */
 .sidebar-first .view-Commission-Block-View ul li:last-child,
 .sidebar-first .view-legislative-advisory-committee-block-view ul li:last-child {
   border-bottom: none;
 }
-/* line 8348, ../sass/_layout-responsive.scss */
+/* line 8364, ../sass/_layout-responsive.scss */
 .sidebar-first .region-sidebar-second ul {
   /*li:last-child{
   	border-bottom:none;
   }*/
 }
-/* line 8349, ../sass/_layout-responsive.scss */
+/* line 8365, ../sass/_layout-responsive.scss */
 .sidebar-first .region-sidebar-second ul li {
   /*border-bottom:1px solid #ccc;*/
   /*margin-bottom:6px;
@@ -8658,119 +8673,119 @@ article .field-name-field-state-investment {
   	}
   }*/
 }
-/* line 8354, ../sass/_layout-responsive.scss */
+/* line 8370, ../sass/_layout-responsive.scss */
 .sidebar-first .region-sidebar-second ul li .views-field-field-date-display h3.field-content {
   font-size: 1em;
   font-weight: 100;
   margin: 0;
 }
-/* line 8383, ../sass/_layout-responsive.scss */
+/* line 8399, ../sass/_layout-responsive.scss */
 .sidebar-first #views_slideshow_cycle_main_testimonial_slider-block {
   width: auto;
   height: auto;
 }
-/* line 8386, ../sass/_layout-responsive.scss */
+/* line 8402, ../sass/_layout-responsive.scss */
 .sidebar-first #views_slideshow_cycle_main_testimonial_slider-block .testimonial-wrapper {
   overflow: hidden;
 }
-/* line 8388, ../sass/_layout-responsive.scss */
+/* line 8404, ../sass/_layout-responsive.scss */
 .sidebar-first #views_slideshow_cycle_main_testimonial_slider-block .testimonial-wrapper .testimonial-photo {
   float: left;
   margin-right: 8px;
   width: 40%;
 }
-/* line 8394, ../sass/_layout-responsive.scss */
+/* line 8410, ../sass/_layout-responsive.scss */
 .sidebar-first #views_slideshow_cycle_main_testimonial_slider-block .testimonial-wrapper .student-details {
   float: left;
   width: 55%;
   font-size: 12px;
   line-height: 1.3em;
 }
-/* line 8401, ../sass/_layout-responsive.scss */
+/* line 8417, ../sass/_layout-responsive.scss */
 .sidebar-first #views_slideshow_cycle_main_testimonial_slider-block .testimonial-wrapper .testimonial-text {
   clear: left;
   font-size: 12px;
   line-height: 1.4em;
 }
-/* line 8410, ../sass/_layout-responsive.scss */
+/* line 8426, ../sass/_layout-responsive.scss */
 .sidebar-first .dark_blue {
   color: #1c4884;
   line-height: 1.2em !important;
 }
-/* line 8417, ../sass/_layout-responsive.scss */
+/* line 8433, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-table {
   width: 100%;
   display: table;
   margin-bottom: 16px;
 }
-/* line 8422, ../sass/_layout-responsive.scss */
+/* line 8438, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-table h3 {
   margin: 0;
   font-size: 1.2em;
 }
-/* line 8428, ../sass/_layout-responsive.scss */
+/* line 8444, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-table .tr-row {
   display: table-row;
 }
-/* line 8431, ../sass/_layout-responsive.scss */
+/* line 8447, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-table .td-cell_20 {
   display: table-cell;
   width: 10%;
   vertical-align: top;
 }
-/* line 8437, ../sass/_layout-responsive.scss */
+/* line 8453, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-table .td-cell {
   display: table-cell;
   width: 30%;
   vertical-align: top;
 }
-/* line 8443, ../sass/_layout-responsive.scss */
+/* line 8459, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-table .td-cell_70 {
   display: table-cell;
   width: 68%;
   padding-left: 16px;
   vertical-align: top;
 }
-/* line 8449, ../sass/_layout-responsive.scss */
+/* line 8465, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-table .td-cell_70 span {
   display: block;
 }
-/* line 8457, ../sass/_layout-responsive.scss */
+/* line 8473, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-three-col-table {
   width: 100%;
   display: table;
 }
-/* line 8462, ../sass/_layout-responsive.scss */
+/* line 8478, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-three-col-table .trow {
   width: 100%;
   display: table;
 }
-/* line 8468, ../sass/_layout-responsive.scss */
+/* line 8484, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-three-col-table .col-one {
   display: table-cell;
   vertical-align: top;
   width: 187px;
   padding-right: 20px;
 }
-/* line 8475, ../sass/_layout-responsive.scss */
+/* line 8491, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-three-col-table .col-two {
   display: table-cell;
   vertical-align: top;
   width: 187px;
   padding-right: 20px;
 }
-/* line 8482, ../sass/_layout-responsive.scss */
+/* line 8498, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-three-col-table .col-three {
   display: table-cell;
   vertical-align: top;
   width: 187px;
 }
-/* line 8492, ../sass/_layout-responsive.scss */
+/* line 8508, ../sass/_layout-responsive.scss */
 .sidebar-first .sara-two-col-table {
   width: 100%;
   display: table;
 }
-/* line 8497, ../sass/_layout-responsive.scss */
+/* line 8513, ../sass/_layout-responsive.scss */
 .sidebar-first .sara-two-col-table .sara-col-one {
   display: table-cell;
   vertical-align: top;
@@ -8778,24 +8793,24 @@ article .field-name-field-state-investment {
   padding: 0 12px 0;
   margin: 0 12px 0;
 }
-/* line 8505, ../sass/_layout-responsive.scss */
+/* line 8521, ../sass/_layout-responsive.scss */
 .sidebar-first .sara-two-col-table .sara-col-two {
   display: table-cell;
   vertical-align: top;
   width: 45%;
   padding: 0;
 }
-/* line 8516, ../sass/_layout-responsive.scss */
+/* line 8532, ../sass/_layout-responsive.scss */
 .sidebar-first .node-state-highlights .node-readmore, .sidebar-first .node-state-highlights .comment-add {
   display: none;
 }
-/* line 8521, ../sass/_layout-responsive.scss */
+/* line 8537, ../sass/_layout-responsive.scss */
 .sidebar-first .node-state-highlights .field-name-field-state-tagline {
   font-style: italic;
   line-height: 1.8em;
   margin-bottom: 10px;
 }
-/* line 8528, ../sass/_layout-responsive.scss */
+/* line 8544, ../sass/_layout-responsive.scss */
 .sidebar-first .student-savings-box {
   padding: 16px;
   border: 2px solid #333;
@@ -8803,53 +8818,53 @@ article .field-name-field-state-investment {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-/* line 8535, ../sass/_layout-responsive.scss */
+/* line 8551, ../sass/_layout-responsive.scss */
 .sidebar-first .student-savings-box legend {
   font-weight: bold;
   font-size: 1.5em;
 }
-/* line 8541, ../sass/_layout-responsive.scss */
+/* line 8557, ../sass/_layout-responsive.scss */
 .sidebar-first .student-savings-box .fieldset-wrapper .field-label {
   width: 60%;
 }
-/* line 8545, ../sass/_layout-responsive.scss */
+/* line 8561, ../sass/_layout-responsive.scss */
 .sidebar-first .student-savings-box .fieldset-wrapper .field-items {
   text-align: right;
   width: 40%;
 }
-/* line 8551, ../sass/_layout-responsive.scss */
+/* line 8567, ../sass/_layout-responsive.scss */
 .sidebar-first .student-savings-box .fieldset-wrapper .field-name-field-state-fig1-total2 {
   border-top: 2px solid #ccc;
   padding-top: 4px;
   margin-top: 4px;
 }
-/* line 8556, ../sass/_layout-responsive.scss */
+/* line 8572, ../sass/_layout-responsive.scss */
 .sidebar-first .student-savings-box .fieldset-wrapper .field-name-field-state-fig1-total2 .field-items .field-item {
   font-style: italic;
 }
-/* line 8561, ../sass/_layout-responsive.scss */
+/* line 8577, ../sass/_layout-responsive.scss */
 .sidebar-first .student-savings-box .fieldset-wrapper .field-name-field-state-fig1-total {
   border-top: 2px solid #ccc;
   padding-top: 4px;
   margin-top: 4px;
 }
-/* line 8566, ../sass/_layout-responsive.scss */
+/* line 8582, ../sass/_layout-responsive.scss */
 .sidebar-first .student-savings-box .fieldset-wrapper .field-name-field-state-fig1-total .field-items .field-item {
   font-style: italic;
 }
-/* line 8577, ../sass/_layout-responsive.scss */
+/* line 8593, ../sass/_layout-responsive.scss */
 .sidebar-first .knocking-dropdown .toggle-view li {
   cursor: pointer;
 }
-/* line 8580, ../sass/_layout-responsive.scss */
+/* line 8596, ../sass/_layout-responsive.scss */
 .sidebar-first .knocking-dropdown .toggle-view p {
   display: none;
 }
-/* line 8586, ../sass/_layout-responsive.scss */
+/* line 8602, ../sass/_layout-responsive.scss */
 .sidebar-first article .field-name-field-state-investment {
   margin-top: 10px;
 }
-/* line 8591, ../sass/_layout-responsive.scss */
+/* line 8607, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-summary {
   background: none;
   width: 90%;
@@ -8860,30 +8875,30 @@ article .field-name-field-state-investment {
   padding-bottom: 12px;
   border-bottom: 1px solid #ccc;
 }
-/* line 8601, ../sass/_layout-responsive.scss */
+/* line 8617, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-summary .tr {
   display: table-row;
 }
-/* line 8606, ../sass/_layout-responsive.scss */
+/* line 8622, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-summary .tr .td-cell-30 {
   display: table-cell;
   vertical-align: top;
   width: 40%;
 }
-/* line 8612, ../sass/_layout-responsive.scss */
+/* line 8628, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-summary .tr .td-cell-60 {
   display: table-cell;
   width: 60%;
   vertical-align: top;
 }
-/* line 8618, ../sass/_layout-responsive.scss */
+/* line 8634, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-summary .tr .td-cell-60 p {
   margin: 0 !important;
   padding: 0 0 12px;
   position: relative;
   top: -3px;
 }
-/* line 8625, ../sass/_layout-responsive.scss */
+/* line 8641, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-summary .tr .td-cell-60 h3 {
   color: #000;
   text-shadow: none;
@@ -8891,67 +8906,67 @@ article .field-name-field-state-investment {
   line-height: 1.5em;
   font-weight: 400;
 }
-/* line 8637, ../sass/_layout-responsive.scss */
+/* line 8653, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-table {
   border: 1px solid #333;
   width: 100%;
   font-size: .9em;
 }
-/* line 8641, ../sass/_layout-responsive.scss */
+/* line 8657, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-table th {
   font-weight: bold;
   text-transform: uppercase;
   border: 1px solid #333;
 }
-/* line 8647, ../sass/_layout-responsive.scss */
+/* line 8663, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-table caption {
   background: #973365;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 8654, ../sass/_layout-responsive.scss */
+/* line 8670, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-table th {
   border: 1px solid #333;
   padding: 8px;
   font-size: .9em;
 }
-/* line 8659, ../sass/_layout-responsive.scss */
+/* line 8675, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-table th:last-child {
   border-right: none;
 }
-/* line 8665, ../sass/_layout-responsive.scss */
+/* line 8681, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-table td {
   border-right: 1px solid #333;
   padding: 8px;
   font-size: .8em;
 }
-/* line 8670, ../sass/_layout-responsive.scss */
+/* line 8686, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-table td:last-child {
   border-right: none;
 }
-/* line 8674, ../sass/_layout-responsive.scss */
+/* line 8690, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-table td ol {
   padding-left: 8px;
   margin-top: 0;
 }
-/* line 8677, ../sass/_layout-responsive.scss */
+/* line 8693, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-table td ol li ul {
   margin-left: 9px;
   padding-left: 0;
   list-style: disc;
 }
-/* line 8682, ../sass/_layout-responsive.scss */
+/* line 8698, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-table td ol li ul li {
   margin: 4px 0 4px;
 }
-/* line 8688, ../sass/_layout-responsive.scss */
+/* line 8704, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-table td p {
   font-size: .7em;
   margin: 0;
   line-height: 1.2em;
 }
-/* line 8699, ../sass/_layout-responsive.scss */
+/* line 8715, ../sass/_layout-responsive.scss */
 .sidebar-first table.passport-blocks {
   border: none;
   width: 100%;
@@ -8959,14 +8974,14 @@ article .field-name-field-state-investment {
   border-collapse: separate;
   border: 1px solid #ccc;
 }
-/* line 8707, ../sass/_layout-responsive.scss */
+/* line 8723, ../sass/_layout-responsive.scss */
 .sidebar-first table.passport-blocks caption {
   background: #973365;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 8714, ../sass/_layout-responsive.scss */
+/* line 8730, ../sass/_layout-responsive.scss */
 .sidebar-first table.passport-blocks th {
   border: none;
   padding: 8px;
@@ -8974,48 +8989,48 @@ article .field-name-field-state-investment {
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-/* line 8721, ../sass/_layout-responsive.scss */
+/* line 8737, ../sass/_layout-responsive.scss */
 .sidebar-first table.passport-blocks th:last-child {
   border-right: none;
 }
-/* line 8727, ../sass/_layout-responsive.scss */
+/* line 8743, ../sass/_layout-responsive.scss */
 .sidebar-first table.passport-blocks td {
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 8px;
   font-size: .8em;
 }
-/* line 8733, ../sass/_layout-responsive.scss */
+/* line 8749, ../sass/_layout-responsive.scss */
 .sidebar-first table.passport-blocks td:last-child {
   border-right: none;
 }
-/* line 8737, ../sass/_layout-responsive.scss */
+/* line 8753, ../sass/_layout-responsive.scss */
 .sidebar-first table.passport-blocks td ol {
   padding-left: 8px;
   margin-top: 0;
 }
-/* line 8740, ../sass/_layout-responsive.scss */
+/* line 8756, ../sass/_layout-responsive.scss */
 .sidebar-first table.passport-blocks td ol li ul {
   margin-left: 9px;
   padding-left: 0;
   list-style: disc;
 }
-/* line 8745, ../sass/_layout-responsive.scss */
+/* line 8761, ../sass/_layout-responsive.scss */
 .sidebar-first table.passport-blocks td ol li ul li {
   margin: 4px 0 4px;
 }
-/* line 8751, ../sass/_layout-responsive.scss */
+/* line 8767, ../sass/_layout-responsive.scss */
 .sidebar-first table.passport-blocks td p {
   font-size: .7em;
   margin: 0;
   line-height: 1.2em;
 }
-/* line 8763, ../sass/_layout-responsive.scss */
+/* line 8779, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-meeting-table {
   border: 1px solid #333;
   width: 100%;
 }
-/* line 8767, ../sass/_layout-responsive.scss */
+/* line 8783, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-meeting-table caption {
   background: #973365;
   color: #fff;
@@ -9024,11 +9039,11 @@ article .field-name-field-state-investment {
   font-size: 1.6em;
   padding: 4px;
 }
-/* line 8776, ../sass/_layout-responsive.scss */
+/* line 8792, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-meeting-table tr {
   border-bottom: 1px solid #ccc;
 }
-/* line 8780, ../sass/_layout-responsive.scss */
+/* line 8796, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-meeting-table tr th {
   border: none;
   border-right: 1px solid #ccc;
@@ -9036,39 +9051,39 @@ article .field-name-field-state-investment {
   font-size: .8em;
   width: 30%;
 }
-/* line 8787, ../sass/_layout-responsive.scss */
+/* line 8803, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-meeting-table tr th strong {
   font-size: 1.4em;
 }
-/* line 8793, ../sass/_layout-responsive.scss */
+/* line 8809, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-meeting-table tr td {
   padding: 8px;
   font-size: .8em;
   width: 70%;
 }
-/* line 8798, ../sass/_layout-responsive.scss */
+/* line 8814, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-meeting-table tr td ul {
   margin-left: 20px;
   padding-left: 0;
   list-style: disc;
 }
-/* line 8803, ../sass/_layout-responsive.scss */
+/* line 8819, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-meeting-table tr td ul li {
   margin: 4px 0 4px;
 }
-/* line 8812, ../sass/_layout-responsive.scss */
+/* line 8828, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-meeting-table .small-layout tr {
   border-bottom: 1px solid #000;
 }
-/* line 8814, ../sass/_layout-responsive.scss */
+/* line 8830, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-meeting-table .small-layout tr td {
   width: 25%;
 }
-/* line 8818, ../sass/_layout-responsive.scss */
+/* line 8834, ../sass/_layout-responsive.scss */
 .sidebar-first .passport-meeting-table .small-layout tr:last-child {
   border-bottom: none;
 }
-/* line 8828, ../sass/_layout-responsive.scss */
+/* line 8844, ../sass/_layout-responsive.scss */
 .sidebar-first .workshop .workshop-facilitator {
   max-width: 88px;
   height: auto;
@@ -9077,17 +9092,17 @@ article .field-name-field-state-investment {
   position: relative;
   top: 4px;
 }
-/* line 8837, ../sass/_layout-responsive.scss */
+/* line 8853, ../sass/_layout-responsive.scss */
 .sidebar-first .workshop p {
   line-height: 1.5em;
 }
-/* line 8841, ../sass/_layout-responsive.scss */
+/* line 8857, ../sass/_layout-responsive.scss */
 .sidebar-first .workshop hr {
   color: #ccc;
   background-color: #ccc;
   height: 1px;
 }
-/* line 8848, ../sass/_layout-responsive.scss */
+/* line 8864, ../sass/_layout-responsive.scss */
 .sidebar-first .fig-five {
   width: 100%;
   max-width: 601px;
@@ -9095,35 +9110,35 @@ article .field-name-field-state-investment {
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 8857, ../sass/_layout-responsive.scss */
+/* line 8873, ../sass/_layout-responsive.scss */
 .sidebar-first .fig-five-table {
   width: 80%;
   float: left;
   padding: 0;
 }
-/* line 8862, ../sass/_layout-responsive.scss */
+/* line 8878, ../sass/_layout-responsive.scss */
 .sidebar-first .fig-five-table td, .sidebar-first .fig-five-table th {
   border: 1px solid black;
 }
-/* line 8865, ../sass/_layout-responsive.scss */
+/* line 8881, ../sass/_layout-responsive.scss */
 .sidebar-first .fig-five-table td p, .sidebar-first .fig-five-table th p {
   margin-top: 0;
 }
-/* line 8869, ../sass/_layout-responsive.scss */
+/* line 8885, ../sass/_layout-responsive.scss */
 .sidebar-first .fig-five-table td ul.student-speakers, .sidebar-first .fig-five-table th ul.student-speakers {
   list-style: square;
 }
-/* line 8871, ../sass/_layout-responsive.scss */
+/* line 8887, ../sass/_layout-responsive.scss */
 .sidebar-first .fig-five-table td ul.student-speakers li, .sidebar-first .fig-five-table th ul.student-speakers li {
   padding-left: 4px;
 }
-/* line 8880, ../sass/_layout-responsive.scss */
+/* line 8896, ../sass/_layout-responsive.scss */
 .sidebar-first .fig-five:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 8888, ../sass/_layout-responsive.scss */
+/* line 8904, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-two-col-table {
   background: none;
   width: 100%;
@@ -9132,30 +9147,30 @@ article .field-name-field-state-investment {
   padding: 0;
   display: table;
 }
-/* line 8896, ../sass/_layout-responsive.scss */
+/* line 8912, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-two-col-table .td-cell-50 {
   display: table-cell;
   width: 40%;
   vertical-align: top;
   padding: 0 2%;
 }
-/* line 8902, ../sass/_layout-responsive.scss */
+/* line 8918, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-two-col-table .td-cell-50 h2 {
   text-align: center;
   margin-top: 12px;
 }
-/* line 8907, ../sass/_layout-responsive.scss */
+/* line 8923, ../sass/_layout-responsive.scss */
 .sidebar-first .faux-two-col-table .td-cell-50 em {
   font-size: 75%;
   line-height: .9em;
 }
-/* line 8916, ../sass/_layout-responsive.scss */
+/* line 8932, ../sass/_layout-responsive.scss */
 .sidebar-first .policy-indicators {
   border: 1px solid #ccc;
   margin-bottom: 16px;
   width: 100%;
 }
-/* line 8921, ../sass/_layout-responsive.scss */
+/* line 8937, ../sass/_layout-responsive.scss */
 .sidebar-first .policy-indicators tr:first-child th {
   background: #ccc;
   color: #000;
@@ -9163,32 +9178,32 @@ article .field-name-field-state-investment {
   border: none;
   padding: 6px;
 }
-/* line 8929, ../sass/_layout-responsive.scss */
+/* line 8945, ../sass/_layout-responsive.scss */
 .sidebar-first .policy-indicators tr:nth-child(even) {
   background: #fff;
 }
-/* line 8933, ../sass/_layout-responsive.scss */
+/* line 8949, ../sass/_layout-responsive.scss */
 .sidebar-first .policy-indicators tr:nth-child(odd) {
   background: #f1f1f1;
 }
-/* line 8937, ../sass/_layout-responsive.scss */
+/* line 8953, ../sass/_layout-responsive.scss */
 .sidebar-first .policy-indicators tr td, .sidebar-first .policy-indicators th {
   padding: 6px;
 }
-/* line 8941, ../sass/_layout-responsive.scss */
+/* line 8957, ../sass/_layout-responsive.scss */
 .sidebar-first .policy-indicators tr td {
   border-left: 1px solid #ccc;
 }
-/* line 8945, ../sass/_layout-responsive.scss */
+/* line 8961, ../sass/_layout-responsive.scss */
 .sidebar-first .policy-indicators tr th {
   border: none;
 }
-/* line 8950, ../sass/_layout-responsive.scss */
+/* line 8966, ../sass/_layout-responsive.scss */
 .sidebar-first .policy-indicators tr th.last-updated {
   font-style: italic;
   font-size: .8em;
 }
-/* line 8958, ../sass/_layout-responsive.scss */
+/* line 8974, ../sass/_layout-responsive.scss */
 .sidebar-first .link-promo-box {
   overflow: hidden;
   border: 4px solid #e01c1c;
@@ -9197,7 +9212,7 @@ article .field-name-field-state-investment {
   margin: 8px auto;
   padding: 16px;
 }
-/* line 8972, ../sass/_layout-responsive.scss */
+/* line 8988, ../sass/_layout-responsive.scss */
 .sidebar-first .sidebars #block-views-calendar-2-block-4 .forum-event
 .views-row, .sidebar-first .sidebars #block-views-calendar-2-block-6 .forum-event
 .views-row {
@@ -9206,22 +9221,22 @@ article .field-name-field-state-investment {
   margin: 16px 0 16px;
   padding: 16px;
 }
-/* line 8978, ../sass/_layout-responsive.scss */
+/* line 8994, ../sass/_layout-responsive.scss */
 .sidebar-first .sidebars #block-views-calendar-2-block-4 .forum-event
 .views-row h3, .sidebar-first .sidebars #block-views-calendar-2-block-6 .forum-event
 .views-row h3 {
   margin-top: 0;
 }
-/* line 8985, ../sass/_layout-responsive.scss */
+/* line 9001, ../sass/_layout-responsive.scss */
 .sidebar-first .loc-com {
   position: relative;
   left: -2px;
 }
-/* line 8992, ../sass/_layout-responsive.scss */
+/* line 9008, ../sass/_layout-responsive.scss */
 .sidebar-first .meeting-webinar .view-content ul {
   list-style: none;
 }
-/* line 8995, ../sass/_layout-responsive.scss */
+/* line 9011, ../sass/_layout-responsive.scss */
 .sidebar-first .meeting-webinar .view-content ul li {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -9229,7 +9244,7 @@ article .field-name-field-state-investment {
   width: 60%;
   margin: 0 auto 16px auto;
 }
-/* line 9007, ../sass/_layout-responsive.scss */
+/* line 9023, ../sass/_layout-responsive.scss */
 .sidebar-first #main-front .attention {
   border: 2px solid #b75515;
   border-radius: 8px;
@@ -9237,127 +9252,127 @@ article .field-name-field-state-investment {
   margin: 12px 0 12px;
   text-align: center;
 }
-/* line 9014, ../sass/_layout-responsive.scss */
+/* line 9030, ../sass/_layout-responsive.scss */
 .sidebar-first #main-front .attention h2 {
   margin: 0;
   padding: 0;
   line-height: 1.2em;
   font-size: 1.1em;
 }
-/* line 9020, ../sass/_layout-responsive.scss */
+/* line 9036, ../sass/_layout-responsive.scss */
 .sidebar-first #main-front .attention h2 a:link, .sidebar-first #main-front .attention h2 a:active, .sidebar-first #main-front .attention h2 a:visited {
   color: #1c4884 !important;
 }
-/* line 9022, ../sass/_layout-responsive.scss */
+/* line 9038, ../sass/_layout-responsive.scss */
 .sidebar-first #main-front .attention h2 a:link:hover, .sidebar-first #main-front .attention h2 a:active:hover, .sidebar-first #main-front .attention h2 a:visited:hover {
   color: #b75515 !important;
 }
-/* line 9033, ../sass/_layout-responsive.scss */
+/* line 9049, ../sass/_layout-responsive.scss */
 .sidebar-first .wiche-news ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 9039, ../sass/_layout-responsive.scss */
+/* line 9055, ../sass/_layout-responsive.scss */
 .sidebar-first .wiche-news ul li {
   padding-bottom: 12px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 16px;
 }
-/* line 9045, ../sass/_layout-responsive.scss */
+/* line 9061, ../sass/_layout-responsive.scss */
 .sidebar-first .wiche-news ul li .views-field-field-link {
   font-weight: bold;
 }
-/* line 9049, ../sass/_layout-responsive.scss */
+/* line 9065, ../sass/_layout-responsive.scss */
 .sidebar-first .wiche-news ul li .views-field-field-publication-title {
   margin: 2px 0 2px;
 }
-/* line 9053, ../sass/_layout-responsive.scss */
+/* line 9069, ../sass/_layout-responsive.scss */
 .sidebar-first .wiche-news ul li .views-field-field-publication-date {
   font-size: .8em;
 }
-/* line 9057, ../sass/_layout-responsive.scss */
+/* line 9073, ../sass/_layout-responsive.scss */
 .sidebar-first .wiche-news ul li .views-field-body {
   font-size: 1.1em;
 }
-/* line 9062, ../sass/_layout-responsive.scss */
+/* line 9078, ../sass/_layout-responsive.scss */
 .sidebar-first .wiche-news ul li:last-child {
   padding-bottom: 0;
   margin-bottom: 0;
   border: none;
 }
-/* line 9071, ../sass/_layout-responsive.scss */
+/* line 9087, ../sass/_layout-responsive.scss */
 .sidebar-first .wiche-news .view-footer {
   font-weight: bold;
   font-style: italic;
   text-align: center;
 }
-/* line 9079, ../sass/_layout-responsive.scss */
+/* line 9095, ../sass/_layout-responsive.scss */
 .sidebar-first .wiche-notes hr {
   border: 0;
   height: 1px;
   background: #ccc;
 }
-/* line 9087, ../sass/_layout-responsive.scss */
+/* line 9103, ../sass/_layout-responsive.scss */
 .sidebar-first .flex-direction-nav li a {
   /*color:yellow;*/
 }
-/* line 9090, ../sass/_layout-responsive.scss */
+/* line 9106, ../sass/_layout-responsive.scss */
 .sidebar-first .flex-direction-nav li a:hover {
   color: black !important;
 }
-/* line 9100, ../sass/_layout-responsive.scss */
+/* line 9116, ../sass/_layout-responsive.scss */
 .sidebar-first .sidebars .commission-event ul, .sidebar-first .sidebars .front-page-events ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 9105, ../sass/_layout-responsive.scss */
+/* line 9121, ../sass/_layout-responsive.scss */
 .sidebar-first .sidebars .commission-event ul li, .sidebar-first .sidebars .front-page-events ul li {
   margin-bottom: 20px;
   /*padding:16px;
   border:1px solid #ccc;
   border-radius:8px;*/
 }
-/* line 9111, ../sass/_layout-responsive.scss */
+/* line 9127, ../sass/_layout-responsive.scss */
 .sidebar-first .sidebars .commission-event ul li .views-field-field-location, .sidebar-first .sidebars .front-page-events ul li .views-field-field-location {
   margin-top: 6px;
 }
-/* line 9115, ../sass/_layout-responsive.scss */
+/* line 9131, ../sass/_layout-responsive.scss */
 .sidebar-first .sidebars .commission-event ul li h3, .sidebar-first .sidebars .front-page-events ul li h3 {
   margin: 0 0 8px !important;
 }
-/* line 9120, ../sass/_layout-responsive.scss */
+/* line 9136, ../sass/_layout-responsive.scss */
 .sidebar-first .sidebars .commission-event .adr, .sidebar-first .sidebars .commission-event .map-link, .sidebar-first .sidebars .front-page-events .adr, .sidebar-first .sidebars .front-page-events .map-link {
   font-size: 12px;
   line-height: 1.5em;
 }
 
-/* line 9128, ../sass/_layout-responsive.scss */
+/* line 9144, ../sass/_layout-responsive.scss */
 .region-sidebar-second #block-views-calendar-2-block-2 h2 {
   border-bottom: 1px solid #b75515;
   padding-bottom: 8px;
 }
 
-/* line 9133, ../sass/_layout-responsive.scss */
+/* line 9149, ../sass/_layout-responsive.scss */
 .front-page-events, .view-calendar-2 {
   border-bottom: 1px solid #b75515;
 }
-/* line 9134, ../sass/_layout-responsive.scss */
+/* line 9150, ../sass/_layout-responsive.scss */
 .front-page-events .views-row, .view-calendar-2 .views-row {
   margin: 0 0 8px;
   padding: 0 0 8px;
   border-bottom: 1px solid #ccc;
 }
-/* line 9139, ../sass/_layout-responsive.scss */
+/* line 9155, ../sass/_layout-responsive.scss */
 .front-page-events .views-row h3, .view-calendar-2 .views-row h3 {
   margin-top: 0;
 }
-/* line 9143, ../sass/_layout-responsive.scss */
+/* line 9159, ../sass/_layout-responsive.scss */
 .front-page-events .views-row p, .view-calendar-2 .views-row p {
   margin: 0;
 }
-/* line 9147, ../sass/_layout-responsive.scss */
+/* line 9163, ../sass/_layout-responsive.scss */
 .front-page-events .views-row .views-field-field-register a, .view-calendar-2 .views-row .views-field-field-register a {
   display: block;
   background: #1c4884;
@@ -9373,18 +9388,18 @@ article .field-name-field-state-investment {
   letter-spacing: 1px;
   font-size: .8em;
 }
-/* line 9162, ../sass/_layout-responsive.scss */
+/* line 9178, ../sass/_layout-responsive.scss */
 .front-page-events .views-row .views-field-field-register a:hover, .view-calendar-2 .views-row .views-field-field-register a:hover {
   background: #245eac;
 }
 
-/* line 9171, ../sass/_layout-responsive.scss */
+/* line 9187, ../sass/_layout-responsive.scss */
 .view-calendar-2 {
   border-bottom: none;
 }
 
 /*attention box*/
-/* line 9178, ../sass/_layout-responsive.scss */
+/* line 9194, ../sass/_layout-responsive.scss */
 .attention_2 {
   width: 45%;
   margin: 0 auto 25px auto;
@@ -9394,7 +9409,7 @@ article .field-name-field-state-investment {
   text-align: left;
 }
 
-/* line 9187, ../sass/_layout-responsive.scss */
+/* line 9203, ../sass/_layout-responsive.scss */
 .attention_3 {
   width: 75%;
   margin: 0 auto 25px auto;
@@ -9404,7 +9419,7 @@ article .field-name-field-state-investment {
   text-align: left;
 }
 
-/* line 9196, ../sass/_layout-responsive.scss */
+/* line 9212, ../sass/_layout-responsive.scss */
 ul.page-list {
   border: 1px solid #ccc;
   list-style: none;
@@ -9413,29 +9428,29 @@ ul.page-list {
   width: 50%;
   margin: 0 auto;
 }
-/* line 9204, ../sass/_layout-responsive.scss */
+/* line 9220, ../sass/_layout-responsive.scss */
 ul.page-list li {
   border-bottom: 1px solid #ccc;
   padding-right: 20px;
 }
-/* line 9207, ../sass/_layout-responsive.scss */
+/* line 9223, ../sass/_layout-responsive.scss */
 ul.page-list li a {
   display: block;
   padding: 4px 8px;
   line-height: 2em;
 }
-/* line 9214, ../sass/_layout-responsive.scss */
+/* line 9230, ../sass/_layout-responsive.scss */
 ul.page-list li:last-child {
   border: none;
 }
 
 /*custom css for '/old-pages' view*/
-/* line 9222, ../sass/_layout-responsive.scss */
+/* line 9238, ../sass/_layout-responsive.scss */
 .view-old-pages ul {
   margin: 0;
   padding: 0;
 }
-/* line 9225, ../sass/_layout-responsive.scss */
+/* line 9241, ../sass/_layout-responsive.scss */
 .view-old-pages ul li {
   list-style: none;
   padding: 12px;
@@ -9443,13 +9458,13 @@ ul.page-list li:last-child {
   margin-bottom: 16px;
 }
 
-/* line 9233, ../sass/_layout-responsive.scss */
+/* line 9249, ../sass/_layout-responsive.scss */
 .view-old-pages ul.pager li {
   border: none;
 }
 
 /*FOR RESPONSIVE EMBEDDED YOUTUBE VIDEOS*/
-/* line 9239, ../sass/_layout-responsive.scss */
+/* line 9255, ../sass/_layout-responsive.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -9457,7 +9472,7 @@ ul.page-list li:last-child {
   height: 0;
   overflow: hidden;
 }
-/* line 9246, ../sass/_layout-responsive.scss */
+/* line 9262, ../sass/_layout-responsive.scss */
 .video-container iframe, .video-container .video-container object, .video-container .video-container embed {
   position: absolute;
   top: 0;
@@ -9467,13 +9482,13 @@ ul.page-list li:last-child {
 }
 
 /*student exchange menusunordered list custom css*/
-/* line 9257, ../sass/_layout-responsive.scss */
+/* line 9273, ../sass/_layout-responsive.scss */
 ul.sep-menu {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 9262, ../sass/_layout-responsive.scss */
+/* line 9278, ../sass/_layout-responsive.scss */
 ul.sep-menu li {
   float: left;
   display: inline-block;
@@ -9481,7 +9496,7 @@ ul.sep-menu li {
   margin: 0 8px;
   width: 30%;
 }
-/* line 9269, ../sass/_layout-responsive.scss */
+/* line 9285, ../sass/_layout-responsive.scss */
 ul.sep-menu li a:link, ul.sep-menu li a:visited, ul.sep-menu li a:active {
   background: #1c4884;
   display: block;
@@ -9493,26 +9508,26 @@ ul.sep-menu li a:link, ul.sep-menu li a:visited, ul.sep-menu li a:active {
   text-decoration: none;
   letter-spacing: 1px;
 }
-/* line 9280, ../sass/_layout-responsive.scss */
+/* line 9296, ../sass/_layout-responsive.scss */
 ul.sep-menu li a:link:hover, ul.sep-menu li a:visited:hover, ul.sep-menu li a:active:hover {
   background: #245eac;
 }
-/* line 9284, ../sass/_layout-responsive.scss */
+/* line 9300, ../sass/_layout-responsive.scss */
 ul.sep-menu li a:link strong, ul.sep-menu li a:visited strong, ul.sep-menu li a:active strong {
   font-size: 1.5em;
 }
 
 /*Mental Health Form '/content/order-your-hardcopy-human-services-program-evaluation'*/
-/* line 9294, ../sass/_layout-responsive.scss */
+/* line 9310, ../sass/_layout-responsive.scss */
 #webform-client-form-17359 .human-services-form legend {
   font-weight: bold;
 }
 
-/* line 9300, ../sass/_layout-responsive.scss */
+/* line 9316, ../sass/_layout-responsive.scss */
 ul.wiche-pubs-resources {
   list-style: none;
 }
-/* line 9304, ../sass/_layout-responsive.scss */
+/* line 9320, ../sass/_layout-responsive.scss */
 ul.wiche-pubs-resources li a:link, ul.wiche-pubs-resources li a:visited, ul.wiche-pubs-resources li a:active {
   display: block;
   padding: 12px;
@@ -9523,31 +9538,31 @@ ul.wiche-pubs-resources li a:link, ul.wiche-pubs-resources li a:visited, ul.wich
   text-decoration: none;
   margin: 8px 0;
 }
-/* line 9314, ../sass/_layout-responsive.scss */
+/* line 9330, ../sass/_layout-responsive.scss */
 ul.wiche-pubs-resources li a:link:hover, ul.wiche-pubs-resources li a:visited:hover, ul.wiche-pubs-resources li a:active:hover {
   text-decoration: underline;
 }
 
-/* line 9322, ../sass/_layout-responsive.scss */
+/* line 9338, ../sass/_layout-responsive.scss */
 .view-display-id-publications_all ul.newscap-archive-bullets {
   list-style: disk;
 }
-/* line 9324, ../sass/_layout-responsive.scss */
+/* line 9340, ../sass/_layout-responsive.scss */
 .view-display-id-publications_all ul.newscap-archive-bullets li {
   margin: 0 0 8px 20px;
   overflow: visible;
 }
 
 /*experimental css for full-width slideshow*/
-/* line 9334, ../sass/_layout-responsive.scss */
+/* line 9350, ../sass/_layout-responsive.scss */
 #full-rotator .region-slideshow .block {
   margin-bottom: 0;
 }
-/* line 9337, ../sass/_layout-responsive.scss */
+/* line 9353, ../sass/_layout-responsive.scss */
 #full-rotator .region-slideshow .block .flex-direction-nav li a {
   color: #fff;
 }
-/* line 9342, ../sass/_layout-responsive.scss */
+/* line 9358, ../sass/_layout-responsive.scss */
 #full-rotator .region-slideshow .block .WUE-banner-slide .flexslider {
   height: 250px;
   width: 1200px;
@@ -9558,7 +9573,7 @@ ul.wiche-pubs-resources li a:link:hover, ul.wiche-pubs-resources li a:visited:ho
   position: relative;
   margin: 0;
 }
-/* line 9354, ../sass/_layout-responsive.scss */
+/* line 9370, ../sass/_layout-responsive.scss */
 #full-rotator .region-slideshow .block .WUE-banner-slide .flexslider ul li .banner {
   position: absolute;
   height: 250px;
@@ -9566,7 +9581,7 @@ ul.wiche-pubs-resources li a:link:hover, ul.wiche-pubs-resources li a:visited:ho
   width: 100%;
   max-width: 975px;
 }
-/* line 9362, ../sass/_layout-responsive.scss */
+/* line 9378, ../sass/_layout-responsive.scss */
 #full-rotator .region-slideshow .block .WUE-banner-slide .flexslider ul li .banner p.quote {
   font-size: 1.6em;
   line-height: 1.2em;
@@ -9576,14 +9591,14 @@ ul.wiche-pubs-resources li a:link:hover, ul.wiche-pubs-resources li a:visited:ho
   color: #fff;
   font-weight: 700;
 }
-/* line 9371, ../sass/_layout-responsive.scss */
+/* line 9387, ../sass/_layout-responsive.scss */
 #full-rotator .region-slideshow .block .WUE-banner-slide .flexslider ul li .banner p.quote span.name {
   font-size: .8em;
   font-weight: 900;
   line-height: .9em;
   text-shadow: 1px 1px #000;
 }
-/* line 9384, ../sass/_layout-responsive.scss */
+/* line 9400, ../sass/_layout-responsive.scss */
 #full-rotator .region-slideshow .block .WUE-banner-slide .flexslider ul li .banner p.quote a:link, #full-rotator .region-slideshow .block .WUE-banner-slide .flexslider ul li .banner p.quote a:active, #full-rotator .region-slideshow .block .WUE-banner-slide .flexslider ul li .banner p.quote a:visited {
   position: absolute;
   bottom: 30px;
@@ -9600,11 +9615,11 @@ ul.wiche-pubs-resources li a:link:hover, ul.wiche-pubs-resources li a:visited:ho
   width: 23%;
   text-align: center;
 }
-/* line 9400, ../sass/_layout-responsive.scss */
+/* line 9416, ../sass/_layout-responsive.scss */
 #full-rotator .region-slideshow .block .WUE-banner-slide .flexslider ul li .banner p.quote a:link:hover, #full-rotator .region-slideshow .block .WUE-banner-slide .flexslider ul li .banner p.quote a:active:hover, #full-rotator .region-slideshow .block .WUE-banner-slide .flexslider ul li .banner p.quote a:visited:hover {
   background: rgba(0, 0, 0, 0.75);
 }
-/* line 9406, ../sass/_layout-responsive.scss */
+/* line 9422, ../sass/_layout-responsive.scss */
 #full-rotator .region-slideshow .block .WUE-banner-slide .flexslider ul li .banner .views-field-field-image .field-content img {
   position: absolute;
   top: 0;
@@ -9613,7 +9628,7 @@ ul.wiche-pubs-resources li a:link:hover, ul.wiche-pubs-resources li a:visited:ho
   max-width: 1200px;
 }
 
-/* line 9420, ../sass/_layout-responsive.scss */
+/* line 9436, ../sass/_layout-responsive.scss */
 .alliance .flexslider {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
 }
@@ -9623,13 +9638,13 @@ ul.wiche-pubs-resources li a:link:hover, ul.wiche-pubs-resources li a:visited:ho
 }*/
 /*student exchange menusunordered list custom css*/
 /*3 buttons accross set up for main content area with left sidebar only*/
-/* line 9433, ../sass/_layout-responsive.scss */
+/* line 9449, ../sass/_layout-responsive.scss */
 ul.sep-menu {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 9438, ../sass/_layout-responsive.scss */
+/* line 9454, ../sass/_layout-responsive.scss */
 ul.sep-menu li {
   float: left;
   display: inline-block;
@@ -9637,7 +9652,7 @@ ul.sep-menu li {
   margin: 0 8px !important;
   width: 30%;
 }
-/* line 9445, ../sass/_layout-responsive.scss */
+/* line 9461, ../sass/_layout-responsive.scss */
 ul.sep-menu li a:link, ul.sep-menu li a:visited, ul.sep-menu li a:active {
   background: #1c4884;
   display: block;
@@ -9650,17 +9665,17 @@ ul.sep-menu li a:link, ul.sep-menu li a:visited, ul.sep-menu li a:active {
   letter-spacing: 1px;
   height: 52px;
 }
-/* line 9457, ../sass/_layout-responsive.scss */
+/* line 9473, ../sass/_layout-responsive.scss */
 ul.sep-menu li a:link:hover, ul.sep-menu li a:visited:hover, ul.sep-menu li a:active:hover {
   background: #245eac;
 }
-/* line 9461, ../sass/_layout-responsive.scss */
+/* line 9477, ../sass/_layout-responsive.scss */
 ul.sep-menu li a:link strong, ul.sep-menu li a:visited strong, ul.sep-menu li a:active strong {
   font-size: 1.5em;
 }
 
 /*4 buttons accross set up for main content area with left sidebar only*/
-/* line 9469, ../sass/_layout-responsive.scss */
+/* line 9485, ../sass/_layout-responsive.scss */
 ul.sep-menu-four-col {
   list-style: none;
   padding: 0;
@@ -9668,7 +9683,7 @@ ul.sep-menu-four-col {
   width: 90%;
   margin: 0 auto;
 }
-/* line 9476, ../sass/_layout-responsive.scss */
+/* line 9492, ../sass/_layout-responsive.scss */
 ul.sep-menu-four-col li {
   padding: 0;
   margin: 0 8px !important;
@@ -9676,7 +9691,7 @@ ul.sep-menu-four-col li {
   float: left;
   margin-right: 16px;
 }
-/* line 9483, ../sass/_layout-responsive.scss */
+/* line 9499, ../sass/_layout-responsive.scss */
 ul.sep-menu-four-col li a:link, ul.sep-menu-four-col li a:visited, ul.sep-menu-four-col li a:active {
   display: block;
   background: #1c4884;
@@ -9689,21 +9704,21 @@ ul.sep-menu-four-col li a:link, ul.sep-menu-four-col li a:visited, ul.sep-menu-f
   text-decoration: none;
   line-height: 2.2em;
 }
-/* line 9495, ../sass/_layout-responsive.scss */
+/* line 9511, ../sass/_layout-responsive.scss */
 ul.sep-menu-four-col li a:link:hover, ul.sep-menu-four-col li a:visited:hover, ul.sep-menu-four-col li a:active:hover {
   background: #245eac;
 }
-/* line 9499, ../sass/_layout-responsive.scss */
+/* line 9515, ../sass/_layout-responsive.scss */
 ul.sep-menu-four-col li a:link strong, ul.sep-menu-four-col li a:visited strong, ul.sep-menu-four-col li a:active strong {
   font-size: 1.5em;
 }
-/* line 9502, ../sass/_layout-responsive.scss */
+/* line 9518, ../sass/_layout-responsive.scss */
 ul.sep-menu-four-col li:last-child {
   margin-right: none;
 }
 
 /*1 column for left sidebar only*/
-/* line 9509, ../sass/_layout-responsive.scss */
+/* line 9525, ../sass/_layout-responsive.scss */
 ul.sep-menu-one-col {
   list-style: none;
   padding: 0;
@@ -9711,14 +9726,14 @@ ul.sep-menu-one-col {
   width: 90%;
   margin: 0 auto;
 }
-/* line 9516, ../sass/_layout-responsive.scss */
+/* line 9532, ../sass/_layout-responsive.scss */
 ul.sep-menu-one-col li {
   display: block;
   padding: 0;
   margin: 0 !important;
   width: 100%;
 }
-/* line 9522, ../sass/_layout-responsive.scss */
+/* line 9538, ../sass/_layout-responsive.scss */
 ul.sep-menu-one-col li a:link, ul.sep-menu-one-col li a:visited, ul.sep-menu-one-col li a:active {
   background: #1c4884;
   display: block;
@@ -9731,22 +9746,22 @@ ul.sep-menu-one-col li a:link, ul.sep-menu-one-col li a:visited, ul.sep-menu-one
   letter-spacing: 1px;
   line-height: 2em;
 }
-/* line 9534, ../sass/_layout-responsive.scss */
+/* line 9550, ../sass/_layout-responsive.scss */
 ul.sep-menu-one-col li a:link:hover, ul.sep-menu-one-col li a:visited:hover, ul.sep-menu-one-col li a:active:hover {
   background: #245eac;
 }
-/* line 9538, ../sass/_layout-responsive.scss */
+/* line 9554, ../sass/_layout-responsive.scss */
 ul.sep-menu-one-col li a:link strong, ul.sep-menu-one-col li a:visited strong, ul.sep-menu-one-col li a:active strong {
   font-size: 1.5em;
 }
 
-/* line 9547, ../sass/_layout-responsive.scss */
+/* line 9563, ../sass/_layout-responsive.scss */
 ol.sep-by-numbers {
   margin: 0 0 1.5em;
   padding: 0;
   counter-reset: item;
 }
-/* line 9552, ../sass/_layout-responsive.scss */
+/* line 9568, ../sass/_layout-responsive.scss */
 ol.sep-by-numbers li {
   margin: 0;
   padding: 0 0 0 2em;
@@ -9755,7 +9770,7 @@ ol.sep-by-numbers li {
   counter-increment: item;
 }
 
-/* line 9561, ../sass/_layout-responsive.scss */
+/* line 9577, ../sass/_layout-responsive.scss */
 ol.sep-by-numbers > li:before {
   display: inline-block;
   width: 1em;
@@ -9765,23 +9780,23 @@ ol.sep-by-numbers > li:before {
   content: counter(item) ".";
 }
 
-/* line 9571, ../sass/_layout-responsive.scss */
+/* line 9587, ../sass/_layout-responsive.scss */
 #block-nice-menus-14 {
   position: relative;
   top: -4px;
 }
 
-/* line 9578, ../sass/_layout-responsive.scss */
+/* line 9594, ../sass/_layout-responsive.scss */
 .sidebar-first #content .one-col-newscap .view-content article header h2.node-title a {
   display: none;
 }
 
-/* line 9582, ../sass/_layout-responsive.scss */
+/* line 9598, ../sass/_layout-responsive.scss */
 #block-views-newscap-archive-block-1 .view-newscap-archive {
   padding-top: 4px;
 }
 
-/* line 9586, ../sass/_layout-responsive.scss */
+/* line 9602, ../sass/_layout-responsive.scss */
 #block-views-newscap-archive-block > div.view.view-newscap-archive.view-id-newscap_archive.view-display-id-block {
   text-align: right;
   padding-top: 9px;
@@ -9789,80 +9804,80 @@ ol.sep-by-numbers > li:before {
   /*right: -20px;*/
 }
 
-/* line 9594, ../sass/_layout-responsive.scss */
+/* line 9610, ../sass/_layout-responsive.scss */
 .view-wiche-media-mentions .view-content .views-row {
   border-bottom: 1px solid #ccc;
   margin-bottom: 12px;
 }
 
-/* line 9600, ../sass/_layout-responsive.scss */
+/* line 9616, ../sass/_layout-responsive.scss */
 .flex-direction-nav a {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 9604, ../sass/_layout-responsive.scss */
+/* line 9620, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li {
   border-bottom: 1px solid #ccc;
   padding-bottom: 12px;
   margin-bottom: 12px;
 }
-/* line 9609, ../sass/_layout-responsive.scss */
+/* line 9625, ../sass/_layout-responsive.scss */
 .sidebar-first .pub-list ul li div > strong.pub-title a {
   font-weight: bold !important;
   margin: 12px 0 !important;
 }
 
-/* line 9615, ../sass/_layout-responsive.scss */
+/* line 9631, ../sass/_layout-responsive.scss */
 .rssfeed {
   border-top: 1px solid #225aa8;
 }
-/* line 9618, ../sass/_layout-responsive.scss */
+/* line 9634, ../sass/_layout-responsive.scss */
 .rssfeed .view-header {
   border-bottom: 1px solid #225aa8;
   margin-bottom: 2px;
 }
-/* line 9621, ../sass/_layout-responsive.scss */
+/* line 9637, ../sass/_layout-responsive.scss */
 .rssfeed .view-header p {
   margin: 6px 0;
 }
-/* line 9625, ../sass/_layout-responsive.scss */
+/* line 9641, ../sass/_layout-responsive.scss */
 .rssfeed .views-field-title {
   padding-bottom: 2px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 4px;
 }
-/* line 9630, ../sass/_layout-responsive.scss */
+/* line 9646, ../sass/_layout-responsive.scss */
 .rssfeed .views-field-title em {
   font-size: 85%;
 }
-/* line 9633, ../sass/_layout-responsive.scss */
+/* line 9649, ../sass/_layout-responsive.scss */
 .rssfeed .views-field-title h3 {
   font-size: 1em;
   margin-top: 0;
   margin-bottom: 4px;
 }
-/* line 9639, ../sass/_layout-responsive.scss */
+/* line 9655, ../sass/_layout-responsive.scss */
 .rssfeed .views-field-title .rss-description {
   height: 20px;
   overflow: hidden;
 }
-/* line 9640, ../sass/_layout-responsive.scss */
+/* line 9656, ../sass/_layout-responsive.scss */
 .rssfeed .views-field-title .rss-description .wp-caption-text {
   display: none;
 }
 
-/* line 9649, ../sass/_layout-responsive.scss */
+/* line 9665, ../sass/_layout-responsive.scss */
 .region-sidebar-first {
   padding-top: 0 !important;
 }
 
 /*knocking blurb on front page, bottom right sidebar*/
-/* line 9657, ../sass/_layout-responsive.scss */
+/* line 9673, ../sass/_layout-responsive.scss */
 #block-views-publication-blocks-block-15 .views-field-field-pub-notes p {
   margin-top: 0;
 }
 
-/* line 9663, ../sass/_layout-responsive.scss */
+/* line 9679, ../sass/_layout-responsive.scss */
 .flexslider-views-slideshow-main-frame-row .views-field-field-call-to-action {
   background: rgba(0, 0, 0, 0.25);
   width: 100%;
@@ -9870,23 +9885,23 @@ ol.sep-by-numbers > li:before {
   padding: 12px 14px;
   bottom: 0;
 }
-/* line 9669, ../sass/_layout-responsive.scss */
+/* line 9685, ../sass/_layout-responsive.scss */
 .flexslider-views-slideshow-main-frame-row .views-field-field-call-to-action h3 {
   margin-top: 0;
 }
 
 /*front-page slide show*/
-/* line 9675, ../sass/_layout-responsive.scss */
+/* line 9691, ../sass/_layout-responsive.scss */
 #slideshow {
   background-color: rgba(33, 90, 168, 0.75);
   display: table;
   width: 100%;
 }
-/* line 9680, ../sass/_layout-responsive.scss */
+/* line 9696, ../sass/_layout-responsive.scss */
 #slideshow .slide-row {
   display: table-row;
 }
-/* line 9683, ../sass/_layout-responsive.scss */
+/* line 9699, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides {
   /*background:#245eac;*/
   display: table-cell;
@@ -9898,11 +9913,11 @@ ol.sep-by-numbers > li:before {
   	max-width:780px;
   }*/
 }
-/* line 9696, ../sass/_layout-responsive.scss */
+/* line 9712, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block {
   margin: 0;
 }
-/* line 9702, ../sass/_layout-responsive.scss */
+/* line 9718, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider {
   border: none;
   margin-bottom: 0;
@@ -9910,17 +9925,17 @@ ol.sep-by-numbers > li:before {
   position: relative;
   border-radius: 0px;
 }
-/* line 9709, ../sass/_layout-responsive.scss */
+/* line 9725, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action {
   /*position:absolute;
   left:14px;
   bottom:10px;*/
 }
-/* line 9714, ../sass/_layout-responsive.scss */
+/* line 9730, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 {
   margin-bottom: 0;
 }
-/* line 9716, ../sass/_layout-responsive.scss */
+/* line 9732, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:link, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:active, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:visited {
   font-family: 'humnst777_cn_btbold',sans-serif;
   line-height: 1.2em;
@@ -9929,39 +9944,39 @@ ol.sep-by-numbers > li:before {
   letter-spacing: 1px;
   color: #f3b927;
 }
-/* line 9724, ../sass/_layout-responsive.scss */
+/* line 9740, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:link:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:active:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:visited:hover {
   text-decoration: underline;
 }
-/* line 9729, ../sass/_layout-responsive.scss */
+/* line 9745, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action p {
   margin: 8px 0 0 0;
   line-height: 1.1em;
 }
-/* line 9737, ../sass/_layout-responsive.scss */
+/* line 9753, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .flex-direction-nav a.flex-next, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .flex-direction-nav a.flex-prev {
   color: #fff;
 }
-/* line 9743, ../sass/_layout-responsive.scss */
+/* line 9759, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flex-control-nav {
   display: none;
 }
-/* line 9751, ../sass/_layout-responsive.scss */
+/* line 9767, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides img {
   /*background:#000;
   width:100%;
   width:600px;
   height:auto;*/
 }
-/* line 9759, ../sass/_layout-responsive.scss */
+/* line 9775, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id {
   width: 100%;
 }
-/* line 9762, ../sass/_layout-responsive.scss */
+/* line 9778, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id .region-self-id .block {
   margin: 0;
 }
-/* line 9766, ../sass/_layout-responsive.scss */
+/* line 9782, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id .region-self-id .mission {
   width: 80%;
   font-weight: 400;
@@ -9975,7 +9990,7 @@ ol.sep-by-numbers > li:before {
   border-top: 2px dashed #fff;
   text-align: center;
 }
-/* line 9781, ../sass/_layout-responsive.scss */
+/* line 9797, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id h2 {
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -9983,19 +9998,19 @@ ol.sep-by-numbers > li:before {
   font-size: 1.1em;
   border-bottom: none;
 }
-/* line 9790, ../sass/_layout-responsive.scss */
+/* line 9806, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id ul {
   margin: 12px 0 0 16px;
   padding: 0 0 0 16px;
   list-style: none;
 }
-/* line 9795, ../sass/_layout-responsive.scss */
+/* line 9811, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id ul li {
   background: url(images/white-arrow-bullet-lg.png) 0 5px no-repeat;
   padding-left: 20px;
   margin: 6px 0;
 }
-/* line 9799, ../sass/_layout-responsive.scss */
+/* line 9815, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id ul li a:link, #slideshow .slide-row .wiche-mission-self-id ul li a:visited, #slideshow .slide-row .wiche-mission-self-id ul li a:active {
   color: #fff;
   display: block;
@@ -10003,7 +10018,7 @@ ol.sep-by-numbers > li:before {
   font-size: 100%;
   line-height: 1.4em;
 }
-/* line 9809, ../sass/_layout-responsive.scss */
+/* line 9825, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id .mission {
   width: 80%;
   font-weight: 400;
