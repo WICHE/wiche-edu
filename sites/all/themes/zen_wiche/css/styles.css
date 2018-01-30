@@ -9890,19 +9890,19 @@ ol.sep-by-numbers > li:before {
 #slideshow .slide-row .slides {
   background: #245eac;
   display: table-cell;
-  max-width: 65%;
   overflow: hidden;
   vertical-align: top;
-  /*img{
-  	width:100%;
-  	max-width:780px;
-  }*/
 }
-/* line 9701, ../sass/_layout-responsive.scss */
+/* line 9694, ../sass/_layout-responsive.scss */
+#slideshow .slide-row .slides img {
+  width: 100%;
+  max-width: 780px;
+}
+/* line 9700, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block {
   margin: 0;
 }
-/* line 9707, ../sass/_layout-responsive.scss */
+/* line 9706, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider {
   border: none;
   margin-bottom: 0;
@@ -9910,17 +9910,17 @@ ol.sep-by-numbers > li:before {
   position: relative;
   border-radius: 0px;
 }
-/* line 9714, ../sass/_layout-responsive.scss */
+/* line 9713, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action {
   /*position:absolute;
   left:14px;
   bottom:10px;*/
 }
-/* line 9719, ../sass/_layout-responsive.scss */
+/* line 9718, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 {
   margin-bottom: 0;
 }
-/* line 9721, ../sass/_layout-responsive.scss */
+/* line 9720, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:link, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:active, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:visited {
   font-family: 'humnst777_cn_btbold',sans-serif;
   line-height: 1.2em;
@@ -9929,33 +9929,34 @@ ol.sep-by-numbers > li:before {
   letter-spacing: 1px;
   color: #f3b927;
 }
-/* line 9729, ../sass/_layout-responsive.scss */
+/* line 9728, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:link:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:active:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:visited:hover {
   text-decoration: underline;
 }
-/* line 9734, ../sass/_layout-responsive.scss */
+/* line 9733, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action p {
   margin: 8px 0 0 0;
   line-height: 1.1em;
 }
-/* line 9742, ../sass/_layout-responsive.scss */
+/* line 9741, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .flex-direction-nav a.flex-next, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .flex-direction-nav a.flex-prev {
   color: #fff;
 }
-/* line 9748, ../sass/_layout-responsive.scss */
+/* line 9747, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flex-control-nav {
   display: none;
 }
-/* line 9756, ../sass/_layout-responsive.scss */
+/* line 9755, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides img {
   /*background:#000;
   width:100%;
   width:600px;
   height:auto;*/
 }
-/* line 9764, ../sass/_layout-responsive.scss */
+/* line 9763, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id {
-  width: 100%;
+  display: table-cell;
+  width: 35%;
 }
 /* line 9767, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id .region-self-id .block {

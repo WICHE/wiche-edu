@@ -9688,14 +9688,13 @@ ol.sep-by-numbers > li:before {
 			.slides{
 				background:#245eac;
 				display:table-cell;
-				max-width:65%;
 				overflow:hidden;
 				vertical-align:top;
 				
-				/*img{
+				img{
 					width:100%;
 					max-width:780px;
-				}*/
+				}
 				
 				.region-slides{
 					.block{
@@ -9762,7 +9761,8 @@ ol.sep-by-numbers > li:before {
 		}
 			
 			.wiche-mission-self-id{
-				width:100%;
+				display:table-cell;
+				width:35%;
 				.region-self-id{
 					.block{
 						margin:0;
