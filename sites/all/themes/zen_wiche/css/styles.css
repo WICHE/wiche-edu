@@ -10019,6 +10019,14 @@ ol.sep-by-numbers > li:before {
   text-align: center;
 }
 
+/* line 9834, ../sass/_layout-responsive.scss */
+h3.front-page-banner-text {
+  font-size: 1.4em;
+  text-shadow: 1px 1px #000;
+  letter-spacing: 1px;
+  color: #f3b927;
+}
+
 /*====================================
 		MUCHO MENU STYLING
 ======================================*/
