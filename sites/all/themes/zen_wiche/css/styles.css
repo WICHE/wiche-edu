@@ -3847,11 +3847,11 @@ table#physics-lab-activities tr:nth-child(even) {
   }
   /* line 3186, ../sass/_layout-responsive.scss */
   #main #slideshow .wiche-mission-self-id, #main-front #slideshow .wiche-mission-self-id {
-    padding: 5px 75px 0 0;
+    /*padding:5px 75px 0 0;*/
   }
   /* line 3189, ../sass/_layout-responsive.scss */
   #main #slideshow .wiche-mission-self-id ul li a, #main-front #slideshow .wiche-mission-self-id ul li a {
-    font-size: 80%;
+    /*font-size:80%;*/
   }
   /* line 3193, ../sass/_layout-responsive.scss */
   #main #slideshow .wiche-mission-self-id .region-self-id .mission, #main-front #slideshow .wiche-mission-self-id .region-self-id .mission {
@@ -5321,7 +5321,7 @@ table#physics-lab-activities tr:nth-child(even) {
   article.view-mode-full table.wiche-table td, .advanced-help-topic table.wiche-table td {
     padding: 2%;
     vertical-align: top;
-    width: 35%;
+    width: 36%;
   }
   /* line 4766, ../sass/_layout-responsive.scss */
   article.view-mode-full table#borderless-no_bgColor td, .advanced-help-topic table#borderless-no_bgColor td {
@@ -9993,7 +9993,7 @@ ol.sep-by-numbers > li:before {
 /* line 9800, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id ul li {
   background: url(images/white-arrow-bullet-lg.png) 0 5px no-repeat;
-  padding-left: 20px;
+  padding: 0 0 0 20px;
   margin: 6px 0;
 }
 /* line 9804, ../sass/_layout-responsive.scss */

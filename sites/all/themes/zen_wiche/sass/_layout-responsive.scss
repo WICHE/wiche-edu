@@ -3184,10 +3184,10 @@ article table#psep-support-fees{
 		  #slideshow{
 			  
 			 .wiche-mission-self-id{
-				  padding:5px 75px 0 0;
+				  /*padding:5px 75px 0 0;*/
 				  
 					  ul li a{
-						  	font-size:80%;
+						  	/*font-size:80%;*/
 					 	 }
 				.region-self-id{ 
 					 .mission {
@@ -4756,7 +4756,7 @@ table.wiche-table{
 table.wiche-table td{
 	padding:2%;
 	vertical-align:top;
-	width:35%;
+	width:36%;
 }
 
 
@@ -9799,7 +9799,7 @@ ol.sep-by-numbers > li:before {
 					
 					li{
 						background:url(images/white-arrow-bullet-lg.png) 0 5px no-repeat;
-						padding-left:20px;
+						padding:0 0 0 20px;
 						margin:6px 0;
 						a:link,a:visited,a:active{
 							color:#fff;
