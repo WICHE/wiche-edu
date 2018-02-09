@@ -122,6 +122,10 @@
 					.views-field-field-location{
 						padding:8px 0 8px;
 					}
+					 
+					 &:hover{
+						  background-color:#2a70d0;
+					 }
 				 }//end li
 				 
 				 li:last-child{
@@ -142,7 +146,7 @@
 		  
 		overflow:hidden;
 		   div.muchomenu-bin{
-			   background-color:#245eac;
+			   background-color:#2a70d0;
 			   width:100%;
 			   height:auto;
 			   /*min-height:260px;*/
@@ -219,7 +223,7 @@
 		
 		//background hover effect for li in top level
 		 li.hovering{
-			  background-color:#245eac;
+			  background-color:#2a70d0;
 			  border-top:none;
 			  /*border-right:1px solid #13315a;
 			  border-left:1px solid #13315a;*/

@@ -30,4 +30,5 @@ sites/*/private
 /web.config
 /wichestyle-new.css
 *.sql
+/.sass-cache
 exit
