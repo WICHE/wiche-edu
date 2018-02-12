@@ -6890,20 +6890,6 @@ article .field-name-field-state-investment {
     width: 35%;
     background-color: rgba(33, 90, 168, 0.75);
     vertical-align: top;
-    /*.mission{
-    				background:#ccc;
-    				width:100%;
-    				h2{
-    					font-family: 'humnst777_cn_btregular',sans-serif;
-    					font-weight:200;
-    					margin:0;
-    					padding:15px;
-    					color:#000;
-    					font-size:1em;
-    					line-height:1.4em;
-    				}
-    				
-    			}*/
   }
   /* line 6430, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .wiche-mission-self-id .region-self-id .block {
@@ -6935,6 +6921,21 @@ article .field-name-field-state-investment {
     font-weight: 400;
     font-size: 110%;
     line-height: 1.5em;
+  }
+  /* line 6462, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .wiche-mission-self-id .mission {
+    background: #ccc;
+    width: 100%;
+  }
+  /* line 6465, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .wiche-mission-self-id .mission h2 {
+    font-family: 'humnst777_cn_btregular',sans-serif;
+    font-weight: 200;
+    margin: 0;
+    padding: 15px;
+    color: #000;
+    font-size: 1em;
+    line-height: 1.4em;
   }
 
   /*Page Views, Exposed filters custom css*/
