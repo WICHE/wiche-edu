@@ -170,3 +170,16 @@ settings[zen_wireframes]           = 0
 ; To add a Panels layout (which can also be used by Display Suite), uncomment
 ; the line below and see the documentation at: http://drupal.org/node/495654
 ;plugins[panels][layouts] = panels-layouts
+
+; For Picture 1.x
+breakpoints[mobile] = (min-width: 0px)
+breakpoints[narrow] = (min-width: 560px)
+breakpoints[wide] = (min-width: 851px)
+breakpoints[tv] = only screen and (min-width: 3456px)
+
+; For Picture 2.x
+breakpoints[tv] = only screen and (min-width: 3456px)
+breakpoints[wide] = (min-width: 851px)
+breakpoints[narrow] = (min-width: 560px)
+breakpoints[mobile] = (min-width: 0px)
+
