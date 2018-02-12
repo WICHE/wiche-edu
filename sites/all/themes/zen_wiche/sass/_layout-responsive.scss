@@ -43,7 +43,7 @@ $zen-auto-include-item-base: false;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  /*border:1px solid #ccc;*/
+  border:1px solid #ccc;
   
   /*copyright*/
 .copyright{
@@ -76,11 +76,11 @@ $zen-auto-include-item-base: false;
 
 
 #page{
-	/*background: #fff url(../images/page-bg.png) repeat-x 0 0;*/
+	background: #fff url(../images/page-bg.png) repeat-x 0 0;
      /*font-size: 0.9em;
    line-height: 1.5em;*/
 	
-	padding-top:4px;
+	
 	/*style unordered lists in views*/
 	
 	.view-wiche-tags{
@@ -724,7 +724,7 @@ table#wiche-table-side-header{
 
 #tag{
     padding-left:10px;
-	margin:0px 0px 6px;
+	margin:6px 0;
 }
 
 #main-menu{
@@ -940,7 +940,7 @@ ul.social-media{
 table.alliance-exec-temp{
 	tbody tr td{
 		vertical-align:top!important;
-		/*max-width:86px;*/
+		max-width:86px;
 		padding:6px 12px 6px 0;
 	}
 }
@@ -1185,7 +1185,6 @@ table#physics-lab-activities{
   }
   
   #navigation {
-	background-color:225aa8!important;
     position: absolute;
     top: 0; /* Move the navbar up inside #main's padding. */
     height: 2em;
@@ -1624,17 +1623,6 @@ article table#psep-support-fees{
 			}
 			
 		}//end .view-wiche-staff
-		
-		
-		.pub-list ul li .pub-image{
-				display:none;
-			}
-		
-		.pub-list ul li .pub-description{
-				display:block;
-				width:100%;
-			    float:none;
-			}
 
 }//end #content
 				
@@ -2648,7 +2636,7 @@ article table#psep-support-fees{
 			
 			.slides{
 				display:table-cell;
-				/*max-width:600px;*/
+				max-width:600px;
 				vertical-align:top;
 				
 				.region-slides{
@@ -2668,22 +2656,24 @@ article table#psep-support-fees{
 					position:absolute;
 					left:14px;
 					top:-10px;
+					color:yellow;
+					font-weight:bold;
+					font-size:.9em;
+					text-shadow: 1px 1px #000;
+					letter-spacing:1px;
 					
-						h3{
-							margin-bottom:0;
-								a:link, a:active, a:visited{
-									font-family: 'humnst777_cn_btbold',sans-serif;
-									line-height: 1.2em;
-									font-size: 1.4em;
-									text-shadow: 1px 1px #000;
-									letter-spacing:1px;
-									color:#fff;
-
-									&:hover{
-										text-decoration:underline;
-									}
-								}
+					
+					a:link, a:active, a:visited{
+							color:yellow;
+						
+							&:hover{
+								color:#fff;
 							}
+						}
+					
+					h3{
+						margin-bottom:0;
+					}
 					p{
 						margin:8px 0 0 0;
 						line-height:1.1em;
@@ -2718,21 +2708,21 @@ article table#psep-support-fees{
 			display:none;
 		}
 		
-	}//end #flexslider_views...
+	}
 }			
 		}
 				
 				img{
 					width:100%;
-					/*max-width:600px;*/
+					max-width:600px;
 					height:auto;
 				}
 		}
 			
 			.wiche-mission-self-id{
 				display:table-cell;
-				width:35%;
-				background-color:rgba(33,90,168,0.75);
+				max-width:600px;
+				background:#245eac;
 				vertical-align:top;
 				
 				.region-self-id{
@@ -2753,7 +2743,7 @@ article table#psep-support-fees{
 					list-style:none;
 					
 					li{
-						background:url(images/white-arrow-bullet.png) 0 0 no-repeat;
+						background:url(images/white-arrow-bullet.png) 0 5px no-repeat;
 						padding-left:20px;
 						margin:3px 0;
 						a:link,a:visited,a:active{
@@ -2764,8 +2754,23 @@ article table#psep-support-fees{
 						}
 					}
 				}
-			}//end .wiche-mission-self...
-	}//end slide-row
+				
+				.mission{
+								background:#ccc;
+								width:100%;
+								h2{
+									font-family: 'humnst777_cn_btregular', sans-serif;
+									font-weight:100;
+									margin:0;
+									padding:10px;
+									color:#000;
+									font-size:.8em;
+									line-height:1em;
+								}
+								
+							}
+			}
+		}
 		
 		
 	}// end #slideshow
@@ -2856,9 +2861,7 @@ article table#psep-support-fees{
 	.Tagline{
 			position:absolute;
 			top:178px;
-			width:100%;
-			display:table-cell;
-			text-align:center;
+			left:50px;
 		
 		h3.newstag{
 			font-family:Verdana, sans-serif;
@@ -2936,7 +2939,6 @@ article table#psep-support-fees{
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
       @include zen-grid-item(1, 1);
 		   font-size:90%;
-		    width:23.5%;
 			h2{
 			 margin:0;
 		 }
@@ -3314,20 +3316,15 @@ article table#psep-support-fees{
 			display:table-row;
 			
 			.slides{
+				background:#245eac;
 				display:table-cell;
-				width:780px;
-				height:auto;
+				width:600px;
 				vertical-align:top;
-				
-				img{
-					width:100%;
-					max-width:780px;
-				}
 				
 				.region-slides{
 					.block{
 						margin:0;
-					
+						
 				
 	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
 		.flexslider{
@@ -3339,26 +3336,25 @@ article table#psep-support-fees{
 				.views-field-field-call-to-action{
 					position:absolute;
 					left:14px;
-					bottom:380px;
+					top:-10px;
+					color:yellow;
+					font-weight:bold;
+					font-size:1em;
 					text-shadow: 1px 1px #000;
 					letter-spacing:1px;
 					
 					
+					a:link, a:active, a:visited{
+							color:yellow;
+						
+							&:hover{
+								color:#fff;
+							}
+						}
+					
 					h3{
 						margin-bottom:0;
-							a:link, a:active, a:visited{
-								font-family: 'humnst777_cn_btbold',sans-serif;
-								line-height: 1.2em;
-								font-size: 1.4em;
-								text-shadow: 1px 1px #000;
-								letter-spacing:1px;
-								color:#f3b927;
-
-									&:hover{
-										text-decoration:underline;
-									}
-								}
-							}
+					}
 					p{
 						margin:8px 0 0 0;
 						line-height:1.1em;
@@ -3368,23 +3364,46 @@ article table#psep-support-fees{
 			.flex-direction-nav{
 				//display:none;
 			}
-		}//end flexslider
+		}
 		
+		.views-field-field-photo-credit{
+					width:100%;
+					background:rgba(0,0,0,.25);
+					position:absolute;
+					left:0;
+					padding-left:14px;
+					bottom:0;
+					font-size:.7em;
+					font-weight:400;
+					letter-spacing:1px;
+					line-height:1.2em;
+					color:#fff;
+					text-shadow: .5px .5px #000;
+			
+				.field-content{
+					width:95%;
+				}
+			}
 		
 		.flex-control-nav{
 			display:none;
 		}
 		
 	}
-}//end region-slides .block			
+}			
 		}
 				
+				img{
+					width:100%;
+					max-width:600px;
+					height:auto;
+				}
 		}
 			
 			.wiche-mission-self-id{
 				display:table-cell;
-				width:35%;
-				background-color:rgba(33,90,168,0.75);
+				max-width:600px;
+				background:#245eac;
 				vertical-align:top;
 				
 				.region-self-id{
@@ -3437,8 +3456,6 @@ article table#psep-support-fees{
 		}
 		
 	}// end #slideshow
-	
-	
 
   /*Page Views, Exposed filters custom css*/
 
@@ -3561,10 +3578,8 @@ article table#psep-support-fees{
 	
 	.Tagline{
 			position:absolute;
-			top:226px;
-			width:100%;
-			display:table-cell;
-			text-align:center;
+			top:225px;
+			left:56px;
 		
 		h3.newstag{
 			font-family:Verdana, sans-serif;
@@ -3660,13 +3675,13 @@ article table#psep-support-fees{
 					line-height:1.1em;
 				}
 	}
+
 	
 
     }//end .sidebar first #content
 
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
       @include zen-grid-item(1, 1);
-		width:23.5%!important;
 		
 		ul.newscap-menu{
 			position:fixed;
@@ -3918,7 +3933,7 @@ article table#psep-support-fees{
 	  width:72%;
 	  margin-left:26%;
 	  padding:0 1%;	
-	 border-left:1px solid #ccc;
+	  border-left:1px solid #ccc;
 	  
 	  .region-highlighted{
 			#block-multiblock-2, p.passport-phone-header{
@@ -5064,8 +5079,7 @@ div#wiche-home{
 			overflow:hidden;
 			margin-bottom:0;
 				h2{
-					/*background:#1c4884;*/
-					background:#225aa8;
+					background:#1c4884;
 					padding:8px 0 8px 14px;
 					color:#fff;
 					margin:0;
@@ -5499,7 +5513,7 @@ table.cheo-institutions{
 				float:left;
 				margin-right:12px;
 				display:inline-block;
-				width:14%;
+				width:30%;
 			}
 			
 			.pub-description{
@@ -5522,7 +5536,7 @@ table.cheo-institutions{
 				
 				p{
 				margin:0!important;
-				/*font-weight:normal;*/
+				font-weight:normal;
 				a:link, a:visited, a:active{
 					color:#1c4884;
 					text-decoration:none;
@@ -6257,6 +6271,7 @@ article .field-name-field-state-investment{
 			overflow:hidden;
 			margin-bottom:0;
 				h2{
+					background:#1c4884;
 					padding:8px 0 8px 14px;
 					color:#fff;
 					margin:0;
@@ -6268,7 +6283,7 @@ article .field-name-field-state-investment{
 					.view-footer{
 							ul.all-wiche-pubs{
 								list-style:none;
-								background:#225aa8;
+								background:#1c4884;
 								margin:0;
 								padding:8px;
 								overflow:hidden;
@@ -6326,17 +6341,10 @@ article .field-name-field-state-investment{
 			display:table-row;
 			
 			.slides{
-				/*background:#245eac;*/
+				background:#245eac;
 				display:table-cell;
-				width:780px;
-				height:auto;
-				overflow:hidden;
+				width:600px;
 				vertical-align:top;
-				
-				img{
-					width:100%;
-					max-width:780px;
-				}
 				
 				.region-slides{
 					.block{
@@ -6355,28 +6363,29 @@ article .field-name-field-state-investment{
 				.views-field-field-call-to-action{
 					position:absolute;
 					left:14px;
-					bottom:395px;
-					
-						h3{
-							margin-bottom:0;
-								a:link, a:active, a:visited{
-									font-family: 'humnst777_cn_btbold',sans-serif;
-									line-height: 1.2em;
-									font-size: 1.4em;
-									text-shadow: 1px 1px #000;
-									letter-spacing:1px;
-									color:#f3b927;
-
-										&:hover{
-											text-decoration:underline;
-										}
-									}
+					top:-10px;
+	
+					a:link, a:active, a:visited{
+						 font-family:"Arial Black", Gadget, sans-serif;
+						 font-weight:bold;
+						 font-size:1.1em;
+						 text-shadow: 1px 1px #666;
+						 letter-spacing:1px;
+						 color:yellow;
+						
+							&:hover{
+								color:#fff;
 							}
+						}
+					
+					h3{
+						margin-bottom:0;
+					}
 					p{
 						margin:8px 0 0 0;
 						line-height:1.1em;
 					}
-				}//end call to action
+				}
 			
 			.views-field-field-photo-credit{
 				background:rgba(0,0,0,.25);
@@ -6413,17 +6422,16 @@ article .field-name-field-state-investment{
 		}
 				
 				img{
-					/*background:#000;
 					width:100%;
-					width:600px;
-					height:auto;*/
+					max-width:600px;
+					height:auto;
 				}
 		}
 			
 			.wiche-mission-self-id{
 				display:table-cell;
-				width:35%;
-				background-color:rgba(33,90,168,0.75);
+				max-width:600px;
+				background:#245eac;
 				vertical-align:top;
 				
 				.region-self-id{
@@ -6435,7 +6443,7 @@ article .field-name-field-state-investment{
 				h2{
 					color:#fff;
 					margin:8px 0 0 16px;
-					font-size:1em;
+					font-size:2em;
 					border-bottom:none;
 				}
 				
@@ -6446,7 +6454,7 @@ article .field-name-field-state-investment{
 					list-style:none;
 					
 					li{
-						background:url(images/white-arrow-bullet-lg.png) 0 0 no-repeat;
+						background:url(images/white-arrow-bullet-lg.png) 0 8px no-repeat;
 						padding-left:20px;
 						margin:6px 0;
 						a:link,a:visited,a:active{
@@ -6512,6 +6520,55 @@ article .field-name-field-state-investment{
 	
 }//#views-exposed-form-Staff-Alpha-View-page-3
 
+/*publications list on front page*/ /*redundant*/
+
+/*.wiche-publications{
+		display:table;border-collapse:separate;border-spacing:5px;
+				ul{
+					display:table-row;
+					list-style:none;
+					margin:16px 0 0 0;
+					padding:0;
+					/*overflow:hidden;*/
+					/*li{
+						display:table-cell;
+						width:18%;
+						padding:8px;
+						margin-left:16px;
+						
+						.views-field-title{
+							width:100%;
+							padding-left:0;
+							
+							.field-content{
+								a:link,a:visited{
+									color:#000;
+									text-decoration:none;
+									font-weight:600;
+									line-height:1.2em;
+								}
+								a:hover{
+									text-decoration:underline;
+								}
+							}
+							
+						}
+						
+						figcaption.field-tag{
+									clear:left;
+									font-style:italic;
+									font-size:.8em;
+									line-height:1.2em;
+									padding-top:8px;
+									margin-top:8px;
+								}
+					}
+				}//en li
+				
+				li:first-child{
+						margin-left:0px;
+					}
+			}*///end wiche pubs
 	
 	.header{
 		 .region-phone-nav{
@@ -6550,14 +6607,12 @@ article .field-name-field-state-investment{
 	
 	.Tagline{
 			position:absolute;
-			top:279px;
-			width:100%;
-			display:table-cell;
-			text-align:center;
-			/*left:100px;*/
+			top:280px;
+			left:100px;
 		
 		h3.newstag{
 			font-family:Verdana, sans-serif;
+			text-align:center;
 			color:#666;
 			font-size:1.4em;
 			line-heightL:1.1em;
@@ -6632,12 +6687,11 @@ article .field-name-field-state-investment{
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
       @include zen-grid-item(1, 1);
 		padding-left:16px;
-		width:23.5%;
 		ul.newscap-menu{
 			position:fixed;
 			list-style:none;
 			background:#fff;
-			width:100%;
+			width:17%;
 			max-width:275px;
 			z-index:25;
 			padding:0;
@@ -6660,7 +6714,7 @@ article .field-name-field-state-investment{
 				text-transform: uppercase;
 			}
 		}//end ul.newscap-menu
-     }//end .region-sidebar-first
+     }
 	}
 
 
@@ -8309,7 +8363,7 @@ table.waccal-exec-comm, table.walf-exec-comm{
 				float:left;
 				margin-right:12px;
 				display:inline-block;
-				width:14%;
+				width:30%;
 			}
 			
 			.pub-description{
@@ -8332,11 +8386,10 @@ table.waccal-exec-comm, table.walf-exec-comm{
 				
 				p{
 				margin:0!important;
-				/*font-weight:normal;*/
+				font-weight:normal;
 				a:link, a:visited, a:active{
 					color:#1c4884;
 					text-decoration:none;
-					font-weight:bold;
 				}
 				a:hover{
 					text-decoration:underline;
@@ -9481,10 +9534,10 @@ table.passport-blocks{
 
 .flex-direction-nav{
 	li a{
-		/*color:yellow;*/
+		color:yellow;
 		
 		&:hover{
-		 color:#000!important;
+		 color: #fff;
 		}
 	}
 }
@@ -9973,75 +10026,4 @@ ol.sep-by-numbers > li:before {
 
 .sidebar-first #content .one-col-newscap .view-content article header h2.node-title a{
 	display:none;
-}
-
-#block-views-newscap-archive-block-1 .view-newscap-archive{
-	padding-top:4px;
-}
-
-#block-views-newscap-archive-block > div.view.view-newscap-archive.view-id-newscap_archive.view-display-id-block{
-	text-align:right;
-	padding-top:9px;
-	position: relative;
-	/*right: -20px;*/
-}
-
-
-.view-wiche-media-mentions .view-content .views-row{
-	border-bottom:1px solid #ccc;
-	margin-bottom:12px;
-}
-
-
-.flex-direction-nav a{
-	text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
-}
-
-.sidebar-first .pub-list ul li{
-	border-bottom: 1px solid #ccc;
-    padding-bottom: 12px;
-	margin-bottom:12px;
-	
-	div > strong.pub-title a{
-		font-weight:bold!important;
-		margin:12px 0!important;
-	}
-}
-
-.rssfeed{
-	border-top: 1px solid #225aa8;
-	
-	.view-header{
-			border-bottom:1px solid #225aa8;
-		    margin-bottom:2px;
-			p{
-				margin:6px 0;
-			}
-		}
-	.views-field-title{
-		padding-bottom:2px;
-		border-bottom:1px solid #ccc;
-		margin-bottom:4px;
-
-		em{
-			font-size:85%;
-		}
-		h3{
-			font-size:1em;
-			margin-top:0;
-			margin-bottom:4px;
-		}
-		
-		.rss-description{
-			.wp-caption-text{
-				display:none;
-			}
-			height:20px;
-			overflow:hidden;
-		}
-	}
-}
-
-.region-sidebar-first{
-	padding-top:0!important;
 }
