@@ -9876,33 +9876,33 @@ ol.sep-by-numbers > li:before {
 }
 
 /*front-page slide show*/
-/* line 9680, ../sass/_layout-responsive.scss */
+/* line 9686, ../sass/_layout-responsive.scss */
 #slideshow {
   background-color: rgba(33, 90, 168, 0.75);
   display: table;
   width: 100%;
 }
-/* line 9685, ../sass/_layout-responsive.scss */
+/* line 9691, ../sass/_layout-responsive.scss */
 #slideshow .slide-row {
   display: table-row;
 }
-/* line 9688, ../sass/_layout-responsive.scss */
+/* line 9694, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides {
   background: #245eac;
   display: table-cell;
   overflow: hidden;
   vertical-align: top;
 }
-/* line 9694, ../sass/_layout-responsive.scss */
+/* line 9700, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides img {
   width: 100%;
   max-width: 780px;
 }
-/* line 9700, ../sass/_layout-responsive.scss */
+/* line 9706, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block {
   margin: 0;
 }
-/* line 9706, ../sass/_layout-responsive.scss */
+/* line 9712, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider {
   border: none;
   margin-bottom: 0;
@@ -9910,17 +9910,17 @@ ol.sep-by-numbers > li:before {
   position: relative;
   border-radius: 0px;
 }
-/* line 9713, ../sass/_layout-responsive.scss */
+/* line 9719, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action {
   /*position:absolute;
   left:14px;
   bottom:10px;*/
 }
-/* line 9718, ../sass/_layout-responsive.scss */
+/* line 9724, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 {
   margin-bottom: 0;
 }
-/* line 9720, ../sass/_layout-responsive.scss */
+/* line 9726, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:link, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:active, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:visited {
   font-family: 'humnst777_cn_btbold',sans-serif;
   line-height: 1.2em;
@@ -9929,40 +9929,40 @@ ol.sep-by-numbers > li:before {
   letter-spacing: 1px;
   color: #f3b927;
 }
-/* line 9728, ../sass/_layout-responsive.scss */
+/* line 9734, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:link:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:active:hover, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 a:visited:hover {
   text-decoration: underline;
 }
-/* line 9733, ../sass/_layout-responsive.scss */
+/* line 9739, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action p {
   margin: 8px 0 0 0;
   line-height: 1.1em;
 }
-/* line 9741, ../sass/_layout-responsive.scss */
+/* line 9747, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .flex-direction-nav a.flex-next, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .flex-direction-nav a.flex-prev {
   color: #fff;
 }
-/* line 9747, ../sass/_layout-responsive.scss */
+/* line 9753, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flex-control-nav {
   display: none;
 }
-/* line 9755, ../sass/_layout-responsive.scss */
+/* line 9761, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .slides img {
   /*background:#000;
   width:100%;
   width:600px;
   height:auto;*/
 }
-/* line 9763, ../sass/_layout-responsive.scss */
+/* line 9769, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id {
   display: table-cell;
   width: 36%;
 }
-/* line 9767, ../sass/_layout-responsive.scss */
+/* line 9773, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id .region-self-id .block {
   margin: 0;
 }
-/* line 9771, ../sass/_layout-responsive.scss */
+/* line 9777, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id .region-self-id .mission {
   width: 80%;
   font-weight: 400;
@@ -9976,7 +9976,7 @@ ol.sep-by-numbers > li:before {
   border-top: 2px dashed #fff;
   text-align: center;
 }
-/* line 9786, ../sass/_layout-responsive.scss */
+/* line 9792, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id h2 {
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -9984,19 +9984,19 @@ ol.sep-by-numbers > li:before {
   font-size: 1.1em;
   border-bottom: none;
 }
-/* line 9795, ../sass/_layout-responsive.scss */
+/* line 9801, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id ul {
   margin: 12px 0 0 16px;
   padding: 0 0 0 16px;
   list-style: none;
 }
-/* line 9800, ../sass/_layout-responsive.scss */
+/* line 9806, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id ul li {
   background: url(images/white-arrow-bullet-lg.png) 0 5px no-repeat;
   padding: 0 0 0 20px;
   margin: 6px 0;
 }
-/* line 9804, ../sass/_layout-responsive.scss */
+/* line 9810, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id ul li a:link, #slideshow .slide-row .wiche-mission-self-id ul li a:visited, #slideshow .slide-row .wiche-mission-self-id ul li a:active {
   color: #fff;
   display: block;
@@ -10004,7 +10004,7 @@ ol.sep-by-numbers > li:before {
   font-size: 100%;
   line-height: 1.4em;
 }
-/* line 9814, ../sass/_layout-responsive.scss */
+/* line 9820, ../sass/_layout-responsive.scss */
 #slideshow .slide-row .wiche-mission-self-id .mission {
   width: 80%;
   font-weight: 400;
@@ -10019,7 +10019,7 @@ ol.sep-by-numbers > li:before {
   text-align: center;
 }
 
-/* line 9834, ../sass/_layout-responsive.scss */
+/* line 9840, ../sass/_layout-responsive.scss */
 h3.front-page-banner-text {
   font-size: 1.4em;
   text-shadow: 1px 1px #000;
