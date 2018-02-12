@@ -1,0 +1,10030 @@
+/**
+ * @file
+ * Positioning for responsive layout .
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+ 
+ /*r:upgrade\sites\all\themes\zen_wiche*/
+
+
+// We are going to create a 980px wide, 5 column grid with 20px gutters between
+// columns (applied as 10px of left/right padding on each column).
+$zen-column-count:  5;
+$zen-gutter-width:  20px;
+
+// If you need IE6/7 support for box-sizing: border-box (default), see _base.scss
+//$zen-box-sizing: content-box;
+
+
+// You can generate more efficient CSS if you manually apply the
+// zen-grid-item-base mixin to all grid items from within a single ruleset.
+$zen-auto-include-item-base: false;
+// $zen-auto-include-flow-item-base: false;
+
+
+// Suppress this section of CSS for RTL layouts since it contains no LTR-specific styles.
+//@if $zen-reverse-all-floats == false {
+
+/*
+ * Center the page.
+ */
+
+
+
+#page,
+.region-bottom {
+  background:#fff;
+  /* For screen sizes larger than 1200px, prevent excessively long lines of text
+     by setting a max-width. */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  /*border:1px solid #ccc;*/
+  
+  /*copyright*/
+.copyright{
+	margin:0 auto;
+	overflow:hidden;
+	/*padding-left:100px;*/
+	width:90%;
+
+  p.left{
+	    float:left;
+		margin:0 1.8em 0 0;
+		width:50%;
+	    color:#666;
+	    font-size:.7em;
+	    line-height:1.2em;
+	}
+
+   p.right{
+      float:left;
+	  border-left:1px solid #ccc;
+	  padding-left:1.8em; 
+	  width:42%;
+	  color:#666;
+	  font-size:.7em;
+	  line-height:1.2em;
+	  margin:0 0 0 .6em;
+   }
+  }
+}
+
+
+#page{
+	/*background: #fff url(../images/page-bg.png) repeat-x 0 0;*/
+     /*font-size: 0.9em;
+   line-height: 1.5em;*/
+	
+	padding-top:4px;
+	/*style unordered lists in views*/
+	
+	.view-wiche-tags{
+		.view-content .item-list ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+			
+			li span h2.field-content{
+				font-size:1.2em;
+				font-weight:100;
+				margin-bottom:0;
+				
+				 a:link, a:visited, a:active{
+					text-decoration:none;
+				 }
+				 
+				  a:hover{
+					text-decoration:underline;
+				 }
+			}
+		}	
+	}// end view-wiche-tags
+	
+	.view-content{
+		
+		.front-page-promo-box{
+			    overflow:hidden;
+				border:4px solid #e01c1c;
+				border-radius:12px;
+				width:90%;
+				margin:16px auto;
+				text-align:left!important;
+				padding:16px;
+				
+				h3{
+					text-align:center!important;
+					margin:0 0 16px;
+					color:#000;
+					font-size:1.5em;
+					font-weight:600;
+				}
+				
+				h4{
+					font-size:1.1em;
+					margin:0 0 12px 0;
+				}
+		}
+		
+		.item-list-lac{
+			/*overflow:hidden;*/
+			clear:both;
+			width:100%;
+			/*display:table;*/
+
+			h3{
+				margin:0;
+				background:#1c4884;
+				padding:0 0 4px 8px;
+				
+				a:link, a:active, a:visited{
+					color:#fff;
+					
+					&:hover{
+						color:#e2e41a;
+						text-decoration:none;
+					}
+					
+					&:focus{
+						border:1px solid #ccc;
+						padding:2px;
+					}
+				}
+			}// end 1st h3
+			
+			
+			
+			ul{
+				list-style:none;
+				position:relative;
+				margin:8px 0;
+				padding:0;
+				overflow:hidden;
+				
+				li{
+					/*display:table-cell;*/
+					vertical-align:top;
+					width:100%;
+					
+					.commish-group, .lac-group{
+						overflow:hidden;
+
+						.picture, .lac-photo{
+							float:left;
+							display:inline-block;
+							width:85px;
+							height:110px;
+							padding:0;
+						}
+						
+						.lac-photo{
+							margin-right:8px;
+						}
+						
+						.lac-info{
+							display:inline-block;
+							float:left;
+							max-width:50%;
+							font-size:.9em;
+								font-weight:100;
+								line-height:1.2em;
+
+							
+							strong{
+								margin:0 0 6px;
+								padding:0;
+								line-height:1em;
+							}
+							
+						 }
+						
+						ul.comm-lac{
+							float:left;
+							width:48%;
+							padding-left:8px;
+							display:inline-block;
+							margin:0;
+							.block{
+								margin:0;
+							}
+							
+							li.mem-info{
+							display:block;
+							width:100%;
+							font-size:.9em;
+								font-weight:100;
+								line-height:1.2em;
+
+							
+							strong{
+								margin:0 0 6px;
+								padding:0;
+								line-height:1em;
+							}
+							
+						 }
+							
+						}
+						
+					}//end commish-group
+				}// end li
+			}
+			
+			
+		}//end pubblock-list, .item-list-lac
+		
+		
+				
+	}// end view-content
+	
+	
+	
+	#main{
+			.sidebars{ 
+				#block-views-passport-contact-page-block .view-passport-contact-page{
+					ul{
+						li{
+							width:100%;
+								.pp-staff-right {
+								/*nothing here*/	
+								}
+						}
+					}
+				}
+		
+				#block-nice-menus-2{
+					
+				}
+				
+			}
+		
+	
+	ul.media{
+			list-style:none;
+			margin:0;
+			padding:0;
+			}
+			
+		
+	.wiche-region{
+		display:none;
+	}
+		
+		/*.node-mech-tech-vendor-contracts{
+			padding-bottom:12px;
+			border-bottom:1px solid #ccc;
+		}*/
+		
+	/*policy quick links center menu*/
+	
+	#content{
+		
+		.forum-event{
+			    overflow:hidden;
+				border:4px solid #e01c1c;
+				border-radius:12px;
+				width:90%;
+				margin:16px auto;
+				text-align:center;
+				padding:16px;
+				
+				h3{
+					text-align:center!important;
+					margin:0 0 16px;
+					color:#000;
+					font-size:1.5em;
+					font-weight:600;
+				}
+				
+				h4{
+					font-size:1.1em;
+					margin:0 0 12px 0;
+				}
+		}
+		.region-highlighted{
+			
+			#block-menu-menu-policy-center-region-top-me{
+					background:#f0f0f0;
+					/*border:1px solid #1c4884;*/
+					border-radius:8px;
+					padding:16px;
+					margin-top:16px;
+						h2{
+							margin-top:0;
+							color:#000;
+							padding-bottom:4px;
+							border-bottom:2px solid #000;
+						}
+				ul.menu{
+					list-style:none;
+					margin:0 0 0 20px;;
+					padding:0;
+					
+					li {
+					  margin:4px 0;	
+							a:link, a:active, a:visited{
+							background:url(images/black-arrow-right.png) 0 6px no-repeat;
+							padding-left:14px;
+							color:#666;
+							letter-spacing:1px;
+							font-weight:600;
+							display:block;
+							height:20px;
+							overflow:hidden;
+								&:hover{
+									background:url(images/black-arrow-right.png) 0 -11px no-repeat;
+									color:#000;
+								}
+						}
+					}
+				}
+			}//end block-menu-menu-policy-center-region-top-me
+		#block-block-363{
+					border:2px solid #1c4884;
+					border-radius:8px;
+					padding:16px;
+					margin-top:16px;
+				}
+	
+		}//end region-highlighted
+		
+	}
+		
+		/*ask WICHE list*/
+				/*.view-knowledge-base-page{
+					ul, li{
+						list-style:none;
+						margin:0;
+						padding:0;
+					}
+					ol, li{
+						list-style:decimal!important;
+						margin:0;
+						padding:0;
+						font-size:1.1em;
+					}
+				}*/
+				
+				.rounded-box{
+					border-radius:8px;
+					border:2px solid #1c4884;
+					padding:16px;
+					text-align:center;
+					width:75%;
+					margin:0 auto;
+					
+					h2{
+						margin-top:0!important;
+						padding:0;
+						font-size:1.1em;
+						line-height:1.6em!important;
+						font-weight:normal;
+					}
+					
+					h3{
+						margin-top:0!important;
+						padding:0;
+					}
+				}
+				
+				article{
+					.field-name-field-media-release-date{
+						font-style:italic;
+					}
+					
+					.statistics_counter{
+						display:none;
+					}
+
+				.promo-box{
+					
+					border:2px solid #e01c1c;
+					border-radius:12px;
+					width:75%;
+					margin:0 auto;
+					text-align:center;
+					
+					h2{
+						color:#e01c1c;
+						font-size:1.8em;
+					}
+					
+						.reg-online{
+							background:#e01c1c;
+							border:1px solid #000;
+							padding:8px 16px;
+							width:50%;
+							margin:16px auto 0 auto;
+							border-radius:8px;
+							text-align:center;
+								  &:hover{
+									   background:#fc2424;
+										}
+								a:link, a:visited, a:active{
+									color:#fff;
+									font-weight:bold;
+									text-decoration:none;
+										&:hover{
+										   color:#fff!important;
+											}
+								}
+						}//end reg-online
+						ul{
+							list-style:none;
+						}
+					}//end promo-box										
+					
+					
+			
+				}//end content
+				
+				.view-state-highlights-view{
+					article.node-state-highlights{
+						.field-name-field-printable-pdf-state-factsh{
+							margin:6px 0;
+							}
+					}
+				}
+				
+				.region-sidebar-first{
+						.policy-staff-contact{
+							background:#245eac;
+							border:1px solid #000;
+							padding:8px 16px;
+							width:70%;
+							margin:0 auto;
+							border-radius:8px;
+							text-align:center;
+								  &:hover{
+									   background:#1c4884;
+										}
+								a:link, a:visited, a:active{
+									color:#fff;
+									font-weight:bold;
+									text-decoration:none;
+										&:hover{
+										   color:#fff!important;
+											}
+								}
+						}
+						
+					}
+					
+					.view-accordion-quick-links{
+						.ui-accordion .ui-accordion-icons {
+								padding-left:0!important;
+							}
+					}
+				
+
+/*generic table with headers in first column*/
+table#wiche-table-side-header{
+	width:100%;
+	border:1px solid #000;
+	margin-bottom:16px;
+	font-size:.8em;
+	
+		th{
+			background-color:#1c4884;
+			color:#fff;
+			text-align:center;
+			border-right:1px solid #000;
+			border-bottom:1px solid #fff;
+			width:11%;
+			padding:1% 1%;
+		}
+		
+		tr:last-child th{
+			border-bottom:none;
+		}
+		
+		td{
+			padding:2%;
+			border-right:1px solid #000;
+			vertical-align:top;
+		}
+		
+		tr:nth-child(odd){
+			background:#e1e1e1;
+		}
+
+
+}//end #wiche-table
+/*WICHE table class*/
+						
+	}//end main
+	
+	/*staff table*/
+				.view-Staff-Unit-All, .view-wiche-policy-unit-staff{
+					table.views-view-grid{
+						width:100%;
+						height:auto;
+						
+						td.policy-staff{
+							vertical-align:top;
+							padding:10px;
+							font-size:80%;
+							
+							h3{
+								font-size:1.6em;
+								margin-bottom:8px;
+							}
+							
+							img{
+								width:100%;
+								max-width:65px;
+								height:auto;
+							}
+							.views-field-field-staff-position{
+								font-weight:600;
+							}
+							.views-label-field-bio-projectcontact{
+								font-style:italic;
+							}
+							
+							.views-field-field-bio-projectcontact{
+								ul{
+									margin:0;
+									padding:0;
+									 li{
+											list-style:none;
+										}
+								}
+							}
+						}
+					}
+				}// end view-Staff-Unit-All
+	
+}// end page
+
+/*move content down a bit from the nav bar on inside pages*/
+.not-front, #main-front{
+	#content{
+		/*margin-top:16px;*/
+		
+		h1{
+			margin-top:6px;
+			/*width: 80%;*/
+		}
+	}
+	
+}
+/*
+ * Apply the shared properties of grid items in a single, efficient ruleset.
+ */
+// See the note about $zen-auto-include-item-base above.
+
+
+#footer {
+  @include zen-grid-item-base();
+  padding-bottom:10px;
+  margin-top:12px;
+  
+  .block {
+    margin:0;
+	}
+  
+  .header-foot{
+     position:relative;
+	 border:1px solid #999;
+	 overflow:hidden;
+	 padding:4px 0;
+	  
+	  img#foot-logo{
+	   float:left;
+	   padding-right:1.5em;
+	   margin-right:1.5em;
+	   border-right:1px solid #999;
+	  }
+	  
+	  h2#foot-tag{
+	    float:left;
+		padding:0;
+		color:#666;
+		font-weight:700;
+		font-size:1.2em;
+		margin:1.4em 0 0;
+		text-transform:uppercase;
+		letter-spacing:2px;
+		border-bottom:none;
+	 }
+	 
+.foot-menu{
+	 ul.menu{
+	 	clear:both;
+		border-top:1px solid #999;
+		border-bottom:1px solid #999;
+		margin:45px 0 0 0;
+		padding:0;
+		list-style:none; 
+		overflow:hidden;
+		padding-bottom:4px;
+		
+		li{
+		   float:left;
+		   margin:6px 4px 0 4px;
+		   padding-right:8px;
+		   border-right:1px solid #ccc;
+		   
+		   &:last-child{
+		   	   border:none;
+		   }
+		   a{
+			   color:#666;
+			   display:block;
+			   text-decoration:none;
+			   font-size:.8em;
+			   font-weight:600;
+			   letter-spacing:1px;
+		   
+		   &:hover{
+		  	 text-decoration:underline;
+		   }
+		   
+		    &:focus{
+		  	 text-decoration:underline;
+		   }
+		   
+		   }
+		   
+		 }
+		 
+		 
+		   
+		}// end .header-foot
+			
+	}//end .foot-menu
+		
+}// end #footer
+
+}
+
+.footer-columns{
+   clear:both;
+   overflow:hidden;
+   padding:.8%;
+   
+	.foot-col{
+		float:left;
+		width:13%;
+		padding:0 .5%;
+		font-size:.8em;
+		line-height:.9em;
+	}
+   
+   
+	.ft-one, .ft-two, .ft-three, .ft-four, .ft-five, .ft-six{
+		border-right:1px solid #ccc;
+	}
+   
+}
+
+#header{
+	margin-bottom:10px;
+	position:relative;
+	overflow:hidden;
+	padding:0;
+	
+	#logo{
+		img{
+			width:100%;
+			height:auto;
+			max-width:229px;
+		}
+		
+	}
+				
+		#secondary-menu, #block-menu-menu-wiche-directory{
+			ul.menu{
+				list-style:none;
+			  margin-right:15px;
+			   li{
+				   float:left;
+				   margin-right:16px;
+				  a{
+					 text-decoration:none;
+					 font-weight:400;
+					 color:#666;
+					 text-transform:uppercase;
+					 font-size:.8em;
+				  }
+				  a:hover{
+					 text-decoration:underline;
+				  }
+			   
+			   }
+		}
+}//end secondary menu
+
+}
+
+#tag{
+    padding-left:10px;
+	margin:0px 0px 6px;
+}
+
+#main-menu{
+	float:right;
+}
+ul.links{
+   li.first, li.last{
+      
+	  a{
+	     text-decoration:none;
+		 font-weight:700;
+		 color:#444;
+		 text-transform:uppercase;
+		 font-size:.8em;
+		 
+		 &:hover{
+		 text-decoration:underline;
+		 }
+	  }
+   
+   }
+}
+
+
+/*custom styling for search box*/
+
+#block-search-form{
+	position:absolute;
+	top:53px;
+	right:25px;
+}
+
+.region-header{
+
+	#block-search-form{
+		
+		background:#f0f0f0;
+		border-radius:8px;
+		 height:22px;
+		 /*width:25.58333333%;*/
+		 
+		form#search-block-form{
+		
+		   .searchWiche{
+		        position:relative;
+				top:-2px;
+				
+			.form-item{
+			
+				input.form-text[type="text"]{
+					border:none;
+					background:none;
+					/*width:80%;*/
+					padding:3px 2px 0 10px;
+					font-size:.8em;
+					line-height:.9em;
+					outline: none;
+					position:relative;
+					top:3px;
+				}
+				
+				}
+				
+			 #edit-actions, #edit-actions--2{
+			 
+			        input.form-submit[type="submit"], input#edit-submit--2[type="submit"]{
+						background:none;
+						border:none;
+						text-transform:uppercase;
+						font-size:.7em;
+						padding:0 0 0 6px;
+						color:#666;
+						margin:0;
+						
+						&:hover{
+							color:#000;
+						}
+				}
+			 
+			 
+			 }
+			
+		  }//end searchWiche
+		  
+		}//end form#search-block-form
+	
+	}//end #block-search-form
+
+}//end .header--region
+
+
+//Drupal View & Edit tabs
+
+#content ul.primary{
+	list-style:none;
+	width:98%;
+	border-bottom:2px solid #ccc;
+	padding:0 1%;;
+}
+
+#content ul.primary li{
+	display:inline-block;
+}
+
+#content ul.primary li a{
+	text-decoration:none;
+	display:block;
+	padding:4px 12px;
+	border-radius:6px 6px 0 0;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	color:#666;
+}
+
+#content ul.primary li a:hover, #content ul.primary li a.active{
+   background:#999;
+   color:#fff;
+}
+
+//social media
+
+ul.social-media{
+    position:absolute;
+	right:0;
+	top:26px;
+    /*background:url(../images/social-media.png) no-repeat 0 0;*/
+	height:16px;
+	width:119px;
+	list-style:none;
+	margin:0;
+	padding:0;
+	
+	li.facebook{
+	display:inline-block;
+	margin-left:50px;
+		a{
+		    text-decoration:none;
+			display:block;
+			height:16px;
+			width:16px;
+			cursor:pointer;	
+		}
+	}
+	
+	li.twitter{
+	display:inline-block;
+	margin-left:4px;
+		a{
+		    text-decoration:none;
+			display:block;
+			height:16px;
+			width:16px;
+			cursor:pointer;
+		}
+	}
+ 
+	li.delicious{
+	display:inline-block;
+	margin-left:4px;
+		a{
+		    text-decoration:none;
+			display:block;
+			height:16px;
+			width:16px;
+			cursor:pointer;
+		}
+	}
+}
+
+#tag h2{
+    font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+	font-weight:700;
+	color:#666;
+	text-transform:uppercase;
+	margin:0;
+	padding:0;
+	border-bottom:none;
+}
+/*
+ * Containers for grid items and flow items.
+ */
+
+#header,
+#main, #main-front
+#footer {
+  @include zen-grid-container();
+}
+#views-exposed-form-Staff-Alpha-View-page-3{
+	position:relative;
+	z-index:50;
+	
+	#edit-field-bio-projectcontact-tid-wrapper, #edit-tid-wrapper{
+		position:relative;
+		z-index:25;
+	}
+	
+	.views-submit-button, .views-reset-button{
+		position:relative;
+		z-index:1;
+	}
+}
+
+/*************************************************/
+.temporary-table{
+	td{
+		padding:0 4px!important;
+		/*width:100%;*/
+	}
+}
+
+table.alliance-exec-temp{
+	tbody tr td{
+		vertical-align:top!important;
+		/*max-width:86px;*/
+		padding:6px 12px 6px 0;
+	}
+}
+
+
+	/*Flexslider css styles for passport/home banner*/				
+					
+#block-views-passport-rotating-banner-block .view-passport-rotating-banner .skin-default .flexslider{
+	
+	background:#000;
+	color:#fff;
+	padding:12px;
+	
+	ul.flex-direction-nav{
+			li a.flex-prev, li a.flex-next{
+				color:#fff!important;
+			}
+		}
+	ul#flexslider_views_slideshow_passport_rotating_banner-block_1{
+		
+		li article {
+			header{
+					h2.node-title{
+						text-align:center;
+						margin-top:0;
+						 a{
+							color:#fff!important;
+						  }
+					}
+				
+				}//end header
+			
+			.faux-two-col-table .td-cell-50{
+				
+				 display: table-cell;
+				 padding: 0 2%;
+				 vertical-align: top;
+				 width: 40%;
+				
+				h3{
+					text-align:center;
+					 margin-bottom:12px;
+						 a{
+							color:#fff;
+							text-align:center;
+						}
+					}
+			}// end table
+		}//end li article
+
+	}// end ul#flexslider_views
+	
+}// end #block-views-passport-rotating-banner-block 
+					
+/*end Flexslider css styles for passport/home banner*/	
+
+/*NANSLO tables on /rwsl-experiments*/
+table#chem-allied-health, table#bio-allied-health, table#physics-lab-activities{
+	font-size:.8em;
+}
+	table#bio-allied-health{
+	width:100%;
+	border-bottom:2px solid #000;
+	margin-bottom:16px;
+		
+		tr{	
+		
+					&:first-child th{
+							border-bottom:2px solid #fff;
+						}
+					
+					&:nth-child(even){
+							background:#ccc;
+						}		
+			th{
+				background-color:#000;
+				color:#fff;
+				text-align:center;
+				border-right:1px solid #fff;
+				border-top:none;
+				border-left:none;
+				padding:1% 0;
+				
+							&:last-child{
+					border-right:none;
+				}
+			
+				}//end th
+
+				td{
+						padding:2%;
+						border-right:1px solid #000;
+						vertical-align:top;
+						
+						&:first-child{
+							font-weight:normal!important;
+							vertical-align:middle;
+							text-align:center;
+							font-size:1em;
+						}
+						
+						&:last-child{
+							border-right:none;
+						}
+					}//end td
+					
+					
+				}//end tr
+		
+}// end bio-allied-health table
+
+/*NANSLO chem allied health table*/
+
+table#chem-allied-health{
+	width:100%;
+	border-bottom:2px solid #000;
+	margin-bottom:16px;
+		tr{
+			th{
+				width:100%;
+				background:#4f81bd;
+				color:#fff;
+				padding:1% 0;
+				text-align:center;
+				vertical-align:top;
+				border-right:1px solid #fff;
+				border-top:none;
+				border-left:none;
+				border-bottom:2px solid #fff;
+				
+				&:last-child{
+					border-right:none;
+				}
+				
+					h4{
+					font-size:1.2em;
+					margin:0;
+					padding:0;
+					line-height:1.25em;
+				}
+			}// end th
+			
+				td{
+						border-right:1px solid #000;
+						padding:2%;
+						
+						&:first-child{
+							font-weight:regular;
+							vertical-align:middle;
+							text-align:center;
+							font-size:1em;
+						}
+						
+						&:last-child{
+							border-right:none;
+						}
+					}//end td
+					
+					&:nth-child(even){
+							background:#d3dfee;
+						}
+		}//end tr
+}// end #chem-allied-health
+
+/*nanslo -- physics lab activities table*/
+
+table#physics-lab-activities{
+	width:100%;
+	border-bottom:2px solid #9bbb59;
+	margin-bottom:16px;
+	
+	th{
+			background-color:#006600;
+			color:#fff;
+			text-align:center;
+			border-right:1px solid #fff;
+			border-bottom:2px solid #fff;
+			border-top:none;
+			border-left:none;
+			padding:1% 0;
+			
+				&:last-child{
+				border-right:none;
+			}
+			
+			h4{
+				font-size:1.2em;
+				margin:0;
+				padding:0;
+				line-height:1.25em;
+			}
+	}//end th
+	
+	tr{
+		td{
+				padding:2%;
+				border-right:1px solid #087908;
+				vertical-align:top;
+				
+				&:first-child{
+					/*font-weight:bold;*/
+					vertical-align:middle;
+					text-align:center;
+					font-size:1em;
+				}
+				
+				&:last-child{
+					border-right:none;
+				}
+			}//end td
+		
+			&:nth-child(even){background:#9ad49a;
+			}
+		}//end tr
+}//end physics-lab-activities
+
+/*
+ * Navigation bar
+ */
+
+@media all and (min-width: 480px) {
+/*Page Views, Exposed filters custom css*/
+
+
+	
+  #main {
+    padding-top: 2em; /* Move all the children of #main down to make room. */
+    position: relative;
+	margin-bottom:16px;
+	
+	/*overflow:hidden;*/
+	
+
+  }
+  
+  #main-front {
+    position:relative;
+  	/*padding-top:2em;*/
+	overflow:hidden;
+	
+	
+  }
+  
+  #navigation {
+	background-color:#225aa8;
+    position: absolute;
+    top: 0; /* Move the navbar up inside #main's padding. */
+    height: 2em;
+    width: $zen-grid-width;
+  }
+  
+  
+
+}
+
+//} // End of @if $zen-reverse-all-floats == true
+
+/*Additional Media Query added by Fellers. For some unknown reason the following css will not work under the 'min-width:480px' media query*/
+
+@media all and (max-width: 480px) {
+	
+	#front-page, #page{
+		#header{
+			.header--site-name {
+			font-size: .8em;
+			line-height:1.3em;
+			margin-bottom:8px;
+			}
+		}
+		
+		#tag{
+			display:none;
+		}
+		
+		#secondary-menu{
+			display:none;
+		}
+
+		#main-front, #main{
+			/*margin-top:12px;*/
+			#navigation{
+				display:none;
+			}
+			
+			.sidebars .region-sidebar-first{
+				#block-nice-menus-1,
+				#block-nice-menus-2,
+				#block-nice-menus-8,
+				#block-nice-menu-4{
+						display:none;
+				}
+			}
+			
+		.sidebars{
+			width:95%;
+			.region-sidebar-first{
+				clear:both;
+				background:transparent;
+				border:none;
+				margin-left:0px;
+    			margin-right:0px;
+    			padding:0% 2%;
+    			width:100%;
+				
+				#block-block-253{
+					display:none;
+				}
+				
+			}
+				.region-sidebar-second{
+					padding:0 2%;
+					float:none;
+					margin-left:0px;
+					margin-right:0px;
+					width:100%;
+					
+					.view-calendar-2{
+						ul{
+							list-style:none;
+							margin:0 0 0 0;
+							padding:0 0 0 0;
+							
+							li{
+								margin-top:12px;
+								
+								.views-field{
+									h3{
+										margin:0;
+									}
+								}
+								padding-bottom:12px;
+								border-bottom:1px solid #ccc;
+							}
+						}
+					}
+					
+				#block-nice-menus-8, #block-nice-menus-9, #block-views-testimonial-slider-block{
+					display:none;
+				}
+					
+			.passport-staff{
+				.item-list ul{
+					list-style:none;
+					margin:0;
+					padding:0;
+					li{
+						width:45%;
+						float:left;
+						display:inline-block;
+						padding:2%;
+					}
+				}
+			}
+			
+			#block-nice-menus-21{
+				display:none;
+			}
+				}//region-sidebar-second
+			}//end sidebars
+			
+				#slideshow .slides{
+						display:none;
+				}
+			
+			#slideshow .mission{
+						display:none;
+				}
+				
+			/*this is begin used for Recent Publications*/
+			#programs-departments{
+				display:none;
+				
+			}//end programs-departments
+			
+			
+	#content { 
+				  display:block;
+				  float:none;
+				  margin:0;
+				  padding:0 4%;
+				  width:90%;
+				  border-left:none;
+				  border-right:none;
+				  
+				  .region-highlighted{
+		
+					  .flexslider{
+						  margin-bottom:0;
+					  }
+					   .flex-control-nav{
+					  display:none;
+					   }
+				  } 
+				h1#page-title{
+					font-size:1.5em;
+				}
+				
+				article header h2.node-title a{
+					display:none;
+				}
+				
+				p{
+					/*font-size:80%;*/
+				}
+				
+				.hideme{
+					display:none;
+				}
+				
+				#block-multiblock-2{
+					
+					ul.menu{
+						background: #333; 
+						height:auto;
+						width: 100%;
+						overflow:hidden;
+						margin:0;
+						padding:12px 0; 
+						
+						ul {
+							background: #444; 
+							/*display: none; */
+							/*position: absolute;*/
+							padding:0 0 0 16px;
+						}
+						
+						li{
+							
+   							 position: relative;
+							 list-style: none;
+							 
+							 a { 
+								cursor: pointer; 
+								display: block; 
+								color: white; 
+								line-height:1.2em; 
+								padding: 2px 10px;
+								margin:6px 0; 
+							}
+							
+							&:hover, .is-active-trail{
+								background:#555;
+								
+								ul{
+									display:block;
+								}
+							}
+
+						}
+						
+					}
+					
+				}
+				
+/*passport home faux table*/
+.passport-home{	
+	background:none;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	padding:4% 0;
+	display:table;
+	
+		td-cell-30{
+			display:block;
+			width:100%;
+			p{
+				display:none;
+			}
+		}
+		
+		td-cell-50{
+			display:block;
+			width:100%;
+			p{
+				display:none;
+			}
+		}
+	
+		.td-cell-60{
+			display:block;
+			width:100%;
+			vertical-align:top;
+			padding:0;
+			
+			ul{
+				margin:0;
+				padding:0;
+				li{
+					margin-bottom:8px;
+					list-style:none;
+					h3{
+						color:#000;
+						text-shadow:none;
+						font-size:1.3em;
+						line-height:1.5em;
+						font-weight:400;
+						}
+				}
+			}
+	}
+ }//end passport faux table
+ 
+ /*passport info page summary css*/
+.passport-summary{	
+	background:none;
+	width:90%;
+	height:auto;
+	overflow:hidden;
+	display:block;
+    margin-bottom:12px;
+	padding-bottom:12px;
+	border-bottom:1px solid #ccc;
+	
+	   .tr{
+	
+		   display:block;
+
+		   
+		.td-cell-30{
+			display:block;
+			vertical-align:top;
+			width:100%;
+		}//end td
+	
+				.td-cell-60{
+					display:block;
+					width:100%;
+					vertical-align:top;
+					
+					
+					p{
+						margin:0!important;
+						padding:0 0 12px;
+						position:relative;
+						top:-3px;
+					}
+					
+					h3{
+							color:#000;
+							text-shadow:none;
+							font-size:1.3em;
+							line-height:1.5em;
+							font-weight:400;
+							}
+			}//end td
+	   }// end tr
+}//end passport summary
+
+		.view-NewsCap{
+			.newscap-photo-horizontal{
+			  	.nc-horizontal-img{
+				  width:100%;
+				  display:block;
+					padding:12px;
+					img{
+						width:390px;
+						height:auto;
+						overflow:hidden;
+					}
+			  }
+		  }
+		}
+		
+		.one-col-newscap img.newscap-photo, .one-col-newscap .newscap-photo {
+			display:block;
+			float:none;
+			height: auto;
+			margin: 4px auto;
+			max-width: 220px;
+		}
+		
+			/*PSEP table on /rwsl-experiments*/
+	  
+article table#psep-support-fees{
+	font-size:.8em;
+	width:100%;
+	border-bottom:2px solid #000;
+	margin-bottom:16px;
+
+		th{
+			background-color:transparent;
+			/*color:#fff;*/
+			text-align:center;
+			border-right:1px solid #fff;
+			border-top:2px solid #1c4884;
+			border-left:none;
+			padding:1% 0;
+			font-size:1.3em;
+		}
+
+		th.subhead{
+			background:#1c4884;
+		}
+
+		th.subhead h3{
+			margin:0;
+			color:#fff;
+		}
+
+		th:last-child{
+			border-right:none;
+		}
+
+		td{
+			padding:2%;
+			border-right:1px solid #000;
+			vertical-align:top;
+		}
+
+		td:first-child{
+			font-weight:bold;
+			vertical-align:middle;
+			text-align:center;
+			font-size:1em;
+		}
+
+
+		td:last-child{
+			border-right:none;
+		}
+
+		tr:nth-child(even){
+			background:#ccc;
+		}
+
+		tr:first-child th{
+			border-bottom:2px solid #fff;
+		}
+	  
+}
+
+		
+		/*staff page bios*/
+		
+		.view-wiche-staff ul li{
+			margin:1%;
+			width:100%;
+			display:block;
+			float:none;
+			height:165px;
+			
+			.views-field-picture{
+				width:65px;
+				float:left;
+				display:inline-block;
+				height:128px;
+				padding-top:4px;
+			}
+			
+			div.views-field-field-user-last-name{
+				text-align:left;
+			}
+			
+			.views-field-field-user-position-title,
+			.views-field-field-user-wiche-department,
+			.views-field-field-user-position-title-2,
+			.views-field-field-user-wiche-department-2,
+			.views-field-field-user-telephone,
+			.views-field-field-user-telephone,
+			.views-field-field-user-email{
+				width:70%;
+				float:left;
+				display:inline-block;
+				padding-left:12px;
+			}
+			
+			ul.toggle-view{
+				
+				li{
+					margin-top:8px;
+					cursor: pointer;
+    				height: 30px;
+    				left: 12px;
+    				position: absolute;
+   					top: 100px;
+					
+					p{
+						position:relative;
+						left:-10px;
+						top:0;
+						width:240px;
+						font-size:.8em;
+					}
+				}
+			}
+			
+		}//end .view-wiche-staff
+		
+		
+		.pub-list ul li .pub-image{
+				display:none;
+			}
+		
+		.pub-list ul li .pub-description{
+				display:block;
+				width:100%;
+			    float:none;
+			}
+
+}//end #content
+				
+				.faux-three-col-table{
+							width:80%;
+							margin:0 auto;
+							display:block;
+							
+						.trow{
+							width:100%;
+							display:block;
+							}
+							
+							
+						.col-one{
+								display:block;;
+								width:100%;
+								padding-right:20px;
+							}
+							
+						.col-two{
+								display:block;
+								width:100%;
+								padding-right:20px;
+							}
+						
+						.col-three{
+								display:block;
+								width:100%;
+							}
+					
+					}//end 3-col faux table
+					
+		
+					
+					
+	/*alpha staff page*/
+	
+		.view-wiche-staff {
+			display:block;
+			.view-content{
+				.item-list{
+					ul{
+						overflow:hidden;
+						li{
+							width:44%;
+							margin-left:1%;
+						}
+					}
+				}
+			}
+		}//end view-wiche-staff
+			
+			img{
+				display:block;
+				float:none!important;
+				margin:0 auto!important;
+			}
+		
+	}//end #main	
+				  
+					  .region-main-page-content{
+						  
+						  /*hide headlines from mobile*/
+						  #block-block-334, #block-views-delicious-home-block-1{
+							  display:none;
+						  }
+						  .item-list{
+							  ul{
+								  list-style:none;
+								  margin:0;
+								  padding:0;
+							  }
+						  }
+	
+
+			.sidebars{
+				margin-bottom:0px;
+				padding-bottom:0px;
+				
+				.region-sidebar-first { 
+				  display:none;
+				  float:none;
+				   margin:0;
+				  padding:0 2%;
+				   width:auto;
+				   
+				   /*1st sidebar nice menus css: WICHE Student Exchange Programs; WICHE Quick Links and WICHE Departments -- fix flyout menus so they are usable on smart phones*/
+				ul.nice-menu-right, ul.nice-menu-left, ul.nice-menu-right li, ul.nice-menu-left li {
+    width:100%;
+}
+
+				ul.nice-menu-right ul {
+					  width: 75%;
+					  left:0;
+					  top: 25px;
+					  border:2px solid #fff;
+				}
+				
+				ul.nice-menu-right ul ul {
+					  width: 75%;
+					  left:0;
+					  top: 25px;
+					  border:2px solid #fff;
+				}
+				
+				ul.nice-menu-right ul ul ul {
+					  width: 75%;
+					  left:0;
+					  top: 25px;
+					  border:2px solid #fff;
+					  position:relative;
+					  z-index:50;
+				}
+/*end 1st sidebar nice menu responsive css*/
+				}			
+		 	}
+			
+		}//end region-sidebar-first	
+		
+		.region-sidebar-second{
+					#block-nice-menus-12{
+						display:none;
+					}
+				.view-publication-blocks{	
+					.pubblock-list{
+						li {
+								display:block!important;
+								width:100%;
+							}	
+					}
+				  }
+				}
+		
+		#block-views-testimonial-slider-block, #block-views-calendar-2-block-2{
+						margin:0 2%;
+						width: 96%;
+					}
+			
+	}/*end page*/
+	
+	header{
+		margin-bottom:0px!important;
+		#secondary-menu{
+			top:6px;
+		}
+		.wiche-mission{
+			top-border:none;
+			font-size:.8em;
+			line-height:.9em;
+			padding:0 4%;
+		}
+		
+		.phone-nav{
+			display:block;
+			width:100%;
+			background-color: #225aa8;
+			padding:2px 0 12px;
+			overflow:hidden;
+			
+			a:link,a:visited,a:active,a:hover{
+						color:#fff;
+						font-weight:200;
+						letter-spacing:1px;
+						text-decoration:none;
+						margin:0 8px;
+						font-size:1.2em;
+						}
+			
+			color:#fff;
+			.menu{
+				padding:0 0 8px;
+				margin:none;
+				position:relative;
+				top:22px;
+				li{
+					a:link, a:visited, a:active, a:hover{
+						color:#fff;
+						text-decoration:none;
+						line-height:1.8em;
+						display:block;
+						border-bottom:1px solid #fff;
+						padding:0px;
+						margin:0 8px;
+					}
+				}
+			}
+			
+		}//end phone-nav
+		
+		.social-media{
+			display:none;
+		}
+		
+		#block-search-form {
+			display:none;
+		}
+		
+		}/*end header*/
+		
+
+.region-sidebar-first { 
+	  background: #f0f0f0;
+	  padding:0 2%;
+	  border:1px solid #ccc;
+	  margin:none!important;
+		
+}/* end region-sidebar-first*/
+
+.view-Staff-Alpha-View{
+	ul{
+		list-style:none;
+		
+		li{
+			width:100%!important;
+			display:block!important;
+			float:none!important;
+			height:auto!important;
+			padding:1%;
+			position:relative;
+			.toggle-view{
+				position:relative;
+				top:0;
+				left:0;
+				
+				h3{
+					font-weight:normal;
+					font-size:.9em;
+				}
+				p{
+					width:256px;
+					height:auto;
+					background:#fff;
+					border:1px solid #ccc;
+					padding:16px;
+					position:relative;
+					left:0!important;
+					top:0px!important;
+					z-index:25;
+				}
+			}
+		}
+	}
+	
+}//end view-Staff-Alpha-View
+
+/*WICHE /policy_insights page*/
+.view-policyInsights{
+	.item-list{
+		h3{
+			clear:left;
+			font-size:1.2em;
+			padding:6px;
+			color:#fff;
+			background:#000;
+		}
+		
+	ul{
+		display:block!important;
+		width:100%;
+		
+		li{
+			padding:0!important;
+			margin:0!important;
+			
+			float:none!important;
+			width:100%!important;
+			display:block!important;
+			
+			h4 a:link, h4 a:visited, h4 a:active, h4 a:hover{
+				font-style:italic;
+				font-weight:bold;
+				font-size:1em;
+				color:#000;
+				line-height:1.1em;
+				margin-bottom:6px;
+			}
+		}
+		
+	} //end ul
+	}// end .item-list
+}// view-policyInsights
+
+#footer {
+  text-align:center!important;
+  
+  .footer-columns{
+	  .copyright{
+	     padding-left:0;
+	  }
+  }
+  
+  .header-foot{  
+	  img#foot-logo{
+	   border-right:none!important;
+	   float:none!important;
+	   display:block!important;
+	   pading-left:20px;
+	   margin:0 auto;
+	  }
+	  
+	  h2#foot-tag{
+	    float:none;
+		display:block;
+		margin:0;
+		padding:0;
+		color:#ccc;
+		font-weight:200;
+		font-size:.9em;
+		margin-top:1em;
+		text-transform:uppercase;
+	 }
+	 
+.foot-menu{
+	 ul.menu{
+		margin:0;
+	 	text-align:center;
+		li{
+		   float:none;
+		   display:inline-block;
+		   border:none!important;
+		   
+		   a{
+			   color:#ccc;
+			   display:block;
+			   text-decoration:none;
+			   font-size:.8em;
+		   
+		   &:hover{
+		  	 text-decoration:underline;
+			 color:#999;
+		   }//end a
+		   
+		   }//end li
+		   
+		 }//end ul	   
+		}// end header-foot
+			
+	}//end foot-menu
+	
+	.footer-columns{
+		.copyright{
+			width:auto;
+			padding-top:16px;
+			.left, .right{
+				float:none;
+				display:block;
+				border:none;
+				width:auto;
+				margin:0 0 16px 0;
+				padding:0;
+				line-height:1.4em;
+			}
+		}
+	}
+		
+	}
+}// end footer
+
+
+  /*Page Views, Exposed filters custom css*/
+
+#views-exposed-form-Staff-Alpha-View-page-3{
+	position:relative;
+	.views-exposed-form{
+		
+	#edit-tid-wrapper{
+		float:none;
+	}
+	
+	#edit-field-bio-projectcontact-tid-wrapper{
+		
+		float:none;
+		select{
+			width:100%;
+		}
+	}
+	
+	.views-submit-button{
+		position:absolute;
+		top:85px;
+		left:0;
+	}
+	
+	.views-reset-button{
+		position:absolute;
+		top:85px;
+		left:75px;
+	}
+	
+	}//end views-exposed-form
+	
+}//#views-exposed-form-Staff-Alpha-View-page-3
+	
+	.ncbanner{
+		display:none;
+	}
+
+} /*end max width 480*/
+
+
+/*
+ * Use 5 grid columns for larger screens.
+ */
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+	
+	#front-page, #page{
+		#header{
+			.header--site-name {
+			font-size: .8em;
+			line-height:1.3em;
+			margin-bottom:8px;
+			}
+		}
+		
+		#tag{
+			display:none;
+		}
+		
+		#secondary-menu{
+			display:none;
+		}
+
+		#main-front, #main{
+			/*margin-top:12px;*/
+			#navigation{
+				display:none;
+			}
+			
+			
+		.sidebars{
+			
+			.region-sidebar-first{
+				clear:both;
+				background:transparent;
+				
+				float:none;
+				margin-left:0px;
+				margin-right:0px;
+				padding:0;
+				width:100%;
+				
+					#block-nice-menus-1,
+					#block-nice-menus-2,
+				    #block-nice-menu-4{
+						display:none;
+					}
+			}
+				.region-sidebar-second{
+					
+					float:none;
+					margin-left:0px;
+					margin-right:0px;
+					padding:0;
+					width:100%;
+					
+						#block-nice-menus-8,
+						#block-nice-menus-9{
+							display:none;
+						}
+					
+					.view-calendar-2{
+						ul{
+							list-style:none;
+							margin:0 0 0 0;
+							padding:0 0 0 0;
+							
+							li{
+								margin-top:12px;
+								
+								.views-field{
+									h3{
+										margin:0;
+									}
+								}
+								padding-bottom:12px;
+								border-bottom:1px solid #ccc;
+							}
+						}
+					}
+				}//region-sidebar-second
+			}//end sidebars
+			
+				#slideshow .slides{
+						display:none;
+				}
+				
+			/*this is begin used for Recent Publications*/
+			#programs-departments{
+				display:none;
+				
+			}//end programs-departments
+			
+	#content { 
+				  display:block;
+				  float:none;
+				  margin:0;
+				  padding:0 4%;
+					width:90%;
+					
+					.region-highlighted{
+
+					   .flex-control-nav{
+						  display:block;
+						  bottom: -50px;
+					   }
+				  }
+				  
+				h1#page-title{
+					font-size:1.5em;
+				}
+				
+				p{
+					font-size:80%;
+				}
+				
+				.hideme{
+					display:none;
+				}
+				
+/*passport home faux table*/
+.passport-home{	
+	background:none;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	padding:4% 0;
+	display:table;
+	
+		td-cell-30{
+			display:table-cell;
+			width:1%;
+		}
+	
+		.td-cell-60{
+			display:table-cell;
+			width:99%;
+			vertical-align:top;
+			padding:0;
+			
+			li{
+				margin-bottom:8px;
+				list-style:square;
+				h3{
+					color:#000;
+					text-shadow:none;
+					font-size:1.3em;
+					line-height:1.5em;
+					font-weight:400;
+					}
+			}
+	}
+ }//end passport faux table
+}
+				
+				.faux-three-col-table{
+							width:80%;
+							margin:0 auto;
+							display:block;
+							
+						.trow{
+							width:100%;
+							display:block;
+							}
+							
+							
+						.col-one{
+								display:block;;
+								width:100%;
+								padding-right:20px;
+							}
+							
+						.col-two{
+								display:block;
+								width:100%;
+								padding-right:20px;
+							}
+						
+						.col-three{
+								display:block;
+								width:100%;
+							}
+					
+					}//end 3-col faux table
+					
+		
+	}//end content	
+				  
+					  .region-main-page-content{
+						  
+						  /*hide headlines from mobile*/
+						  #block-block-334, #block-views-delicious-home-block-1{
+							  display:none;
+						  }
+						  .item-list{
+							  ul{
+								  list-style:none;
+								  margin:0;
+								  padding:0;
+							  }
+						  }
+	
+
+			.sidebars{
+				margin-bottom:0px;
+				padding-bottom:0px;
+				
+				.region-sidebar-first { 
+				  display:none;
+				  float:none;
+				   margin:0;
+				  padding:0 2%;
+				   width:auto;
+				   
+				   /*1st sidebar nice menus css: WICHE Student Exchange Programs; WICHE Quick Links and WICHE Departments -- fix flyout menus so they are usable on smart phones*/
+				ul.nice-menu-right, ul.nice-menu-left, ul.nice-menu-right li, ul.nice-menu-left li {
+    width:100%;
+}
+
+				ul.nice-menu-right ul {
+					  width: 75%;
+					  left:0;
+					  top: 25px;
+					  border:2px solid #fff;
+				}
+				
+				ul.nice-menu-right ul ul {
+					  width: 75%;
+					  left:0;
+					  top: 25px;
+					  border:2px solid #fff;
+				}
+				
+				ul.nice-menu-right ul ul ul {
+					  width: 75%;
+					  left:0;
+					  top: 25px;
+					  border:2px solid #fff;
+					  position:relative;
+					  z-index:50;
+				}
+/*end 1st sidebar nice menu responsive css*/
+				}			
+		 	}
+			
+		}//end region-sidebar-first	
+		
+		.region-sidebar-second{
+					#block-nice-menus-12{
+						display:none;
+					}
+				.view-publication-blocks{	
+					.pubblock-list{
+						li {
+								display:block!important;
+								width:100%;
+							}	
+					}
+				  }
+				}
+		
+		#block-views-testimonial-slider-block, #block-views-calendar-2-block-2{
+						margin:0 2%;
+						width: 96%;
+					}
+			
+	}/*end page*/
+	
+	header{
+		margin-bottom:0px!important;
+		#secondary-menu{
+			top:6px;
+		}
+		.wiche-mission{
+			top-border:none;
+			font-size:.8em;
+			line-height:.9em;
+			padding:0 4%;
+		}
+		
+		.phone-nav{
+			display:block;
+			width:100%;
+			background-color: #225aa8;
+			padding:2px 0 12px;
+			overflow:hidden;
+			
+			a:link,a:visited,a:active,a:hover{
+						color:#fff;
+						font-weight:200;
+						letter-spacing:1px;
+						text-decoration:none;
+						margin:0 8px;
+						font-size:1.2em;
+						}
+			
+			color:#fff;
+			.menu{
+				padding:0 0 8px;
+				margin:none;
+				position:relative;
+				top:22px;
+				li{
+					a:link, a:visited, a:active, a:hover{
+						color:#fff;
+						text-decoration:none;
+						line-height:1.8em;
+						display:block;
+						border-bottom:1px solid #fff;
+						padding:0px;
+						margin:0 8px;
+					}
+				}
+			}
+			
+		}//end phone-nav
+		
+		.social-media{
+			display:none;
+		}
+		
+		#block-search-form {
+			display:none;
+		}
+		
+		}/*end header*/
+		
+
+.region-sidebar-first { 
+	  background: #f0f0f0;
+	  padding:0 2%;
+	  border:1px solid #ccc;
+	  margin:none!important;
+		
+}/* end region-sidebar-first*/
+
+.view-Staff-Alpha-View{
+	ul{
+		list-style:none;
+		
+		li{
+			width:100%!important;
+			display:block!important;
+			float:none!important;
+			height:auto!important;
+			padding:1%;
+			position:relative;
+			.toggle-view{
+				position:relative;
+				top:0;
+				left:0;
+				
+				h3{
+					font-weight:normal;
+					font-size:.9em;
+				}
+				p{
+					width:256px;
+					height:auto;
+					background:#fff;
+					border:1px solid #ccc;
+					padding:16px;
+					position:relative;
+					left:0!important;
+					top:0px!important;
+					z-index:25;
+				}
+			}
+		}
+	}
+	
+}//end view-Staff-Alpha-View
+
+/*WICHE /policy_insights page*/
+.view-policyInsights{
+	.item-list{
+		h3{
+			clear:left;
+			font-size:1.2em;
+			padding:6px;
+			color:#fff;
+			background:#000;
+		}
+		
+	ul{
+		display:block!important;
+		width:100%;
+		
+		li{
+			padding:0!important;
+			margin:0!important;
+			
+			float:none!important;
+			width:100%!important;
+			display:block!important;
+			
+			h4 a:link, h4 a:visited, h4 a:active, h4 a:hover{
+				font-style:italic;
+				font-weight:bold;
+				font-size:1em;
+				color:#000;
+				line-height:1.1em;
+				margin-bottom:6px;
+			}
+		}
+		
+	} //end ul
+	}// end .item-list
+}// view-policyInsights
+
+#footer {
+  text-align:center!important;
+  
+  .footer-columns{
+	  .copyright{
+	     padding-left:0;
+	  }
+  }
+  
+  .header-foot{  
+	  img#foot-logo{
+	   border-right:none!important;
+	   float:none!important;
+	   display:block!important;
+	   pading-left:20px;
+	   margin:0 auto;
+	  }
+	  
+	  h2#foot-tag{
+	    float:none;
+		display:block;
+		margin:0;
+		padding:0;
+		color:#ccc;
+		font-weight:200;
+		font-size:.9em;
+		margin-top:1em;
+		text-transform:uppercase;
+	 }
+	 
+.foot-menu{
+	 ul.menu{
+		margin:0;
+	 	text-align:center;
+		li{
+		   float:none;
+		   display:inline-block;
+		   border:none!important;
+		   
+		   a{
+			   color:#ccc;
+			   display:block;
+			   text-decoration:none;
+			   font-size:.8em;
+		   
+		   &:hover{
+		  	 text-decoration:underline;
+			 color:#999;
+		   }//end a
+		   
+		   }//end li
+		   
+		 }//end ul	   
+		}// end header-foot
+			
+	}//end foot-menu
+	
+	.footer-columns{
+		.copyright{
+			width:auto;
+			padding-top:16px;
+			.left, .right{
+				float:none;
+				display:block;
+				border:none;
+				width:auto;
+				margin:0 0 16px 0;
+				padding:0;
+				line-height:1.4em;
+			}
+		}
+	}
+		
+	}
+}// end footer
+
+
+  /*Page Views, Exposed filters custom css*/
+
+#views-exposed-form-Staff-Alpha-View-page-3{
+	position:relative;
+	.views-exposed-form{
+		
+	#edit-tid-wrapper{
+		float:none;
+	}
+	
+	#edit-field-bio-projectcontact-tid-wrapper{
+		
+		float:none;
+		select{
+			width:100%;
+		}
+	}
+	
+	.views-submit-button{
+		position:absolute;
+		top:85px;
+		left:0;
+	}
+	
+	.views-reset-button{
+		position:absolute;
+		top:85px;
+		left:75px;
+	}
+	
+	}//end views-exposed-form
+	
+}//#views-exposed-form-Staff-Alpha-View-page-3
+
+} /*end max width 480*/
+
+
+/*
+ * Use 5 grid columns for larger screens.
+ */
+	
+	$zen-column-count: 5;
+  
+  @media all and (min-width: 768px) and (max-width: 979px) {
+		
+	.header{
+		 .phone-nav{
+			 display:none;
+		}//end phone-nav
+		
+		  
+		  #block-search-form{
+			  position:absolute;
+			  width:30%;
+			  top:53px;
+			  right:25px;
+			  
+			.searchWiche .form-item input.form-text[type="text"] {
+						width: 75%;
+				  }
+		  }
+		  
+	 }// end header
+	 
+	  #main, #main-front{
+		 padding-top:2em;
+		 
+		.wiche-region{
+			display:block!important;
+	  		}
+		  
+		  #slideshow{
+			  
+			 .mission {
+					display:none;
+				}
+			  
+			  .slides {
+					max-width:610px;
+				}
+			  
+			  .wiche-mission-self-id{
+				  padding:5px 75px 0 0;
+			  }
+		  }
+		  
+		  .region-highlighted{
+			  #block-menu-menu-interstate-passport{
+				  display:none;
+			  }
+		  }
+	 }
+	 
+	#navigation{
+		ul{
+			
+			li{
+			margin:0 8px 0 0!important;
+			padding:0 3px!important;
+			span.muchomenu-parent-title{
+					a, a:visited, a:focus, a:active {
+      				padding:5px 0!important;
+					font-size:.7em!important;
+					letter-spacing:none!important;
+					text-transform:none!important;
+			   }//end a
+			  }//end span
+		  }//end li
+		  }//end ul
+		  
+
+				  
+				  .mm-columns{
+						#webform-client-form-11518{
+											   .form-item{
+													max-width:32%!important;
+											   }
+						
+											   .fieldset-description{
+												   max-width:32%!important;
+											   }
+										   }
+									   }//end .mm-colums
+				  
+		}
+	
+<<<<<<< HEAD
+#slideshow{
+	display:table;
+	background:#245eac;
+	width:100%;
+	
+		.slide-row{
+			display:table-row;
+			
+			.slides{
+				display:table-cell;
+				max-width:600px;
+				vertical-align:top;
+				
+				.region-slides{
+					.block{
+						margin:0;
+						
+				/*flex slider css*/
+				
+	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
+		.flexslider{
+			border:none;
+			margin-bottom:0;
+			
+			position:relative;
+			
+				.views-field-field-call-to-action{
+					position:absolute;
+					left:14px;
+					top:-10px;
+					
+						h3{
+							margin-bottom:0;
+								a:link, a:active, a:visited{
+									font-family:$arial;
+									font-weight:bold;
+									font-size:1.3em;
+									text-shadow: 1px 1px #000;
+									letter-spacing:1px;
+									color:#fff;
+=======
+>>>>>>> develop
+
+
+	
+	  /*
+   * The layout when there is only one sidebar, the left one.
+   */
+
+  .sidebar-first {
+    #content { /* Span 3 columns, starting in 2nd column from left. */
+     @include zen-grid-item(4, 2);
+	 font-size:90%;
+	 
+	 .region-highlighted{
+			#block-multiblock-2, p.passport-phone-header{
+				display:none;
+			}
+		}
+	 h1,h2,h3,p{
+		   padding:0 12px!important;
+	   }
+	   
+	   .view-content .item-list ul li {
+			border-bottom:none;
+		}
+		
+		/*fix for accordion display on iPad*/
+		 .view-knowledge-base-page .ui-accordion{
+			 width:97%!important;
+			 margin-left:12px!important;
+		 }
+		 
+						  /*passport home faux table*/
+.passport-home{	
+	background:url(images/passport-girl.jpg) 0 0 no-repeat;
+	width:95%;
+	height:auto;
+	overflow:hidden;
+	padding:4% 0;
+	display:table;
+	
+		td-cell-30{
+			display:table-cell;
+			width:30%;
+		}
+	
+		.td-cell-60{
+			display:table-cell;
+			width:65%;
+			vertical-align:top;
+			padding:0 2.5%;
+			
+			li{
+				
+				list-style-image:url(images/white-arrow-right.png);
+				h3{
+					color:#fff;
+					text-shadow:1px 1px #000;
+					font-size:1.5em;
+					line-height:1.7em;
+					font-weight:400;
+					}
+			}
+	}
+}//end passport faux table
+		
+		.one-col-newscap{
+	
+	ul li{
+		margin-bottom:12px;
+	}
+	
+	.views-row{
+		border-bottom:4px solid #1c4884;
+		margin-bottom:20px;
+		padding-bottom:8px;
+	}
+	
+	.ncbanner{
+		background: url("/sites/all/themes/zen_wiche/images/NewsCapWebBAnner768.png") no-repeat;
+		width:550px;
+		height:230px;
+		position:relative;
+		margin:0 auto 20px auto;	
+	}
+	
+	.Tagline{
+			position:absolute;
+			top:178px;
+			width:100%;
+			display:table-cell;
+			text-align:center;
+		
+		h3.newstag{
+			font-family:Verdana, sans-serif;
+			text-align:center;
+			color:#666;
+			font-size:1em;
+			line-heightL:1.1em;
+		}
+	} 
+	
+	h2{
+		margin:0;
+	}
+	
+			img.newscap-photo, .newscap-photo{
+				float: left;
+				margin: 4px 16px 0 0px;
+				max-width: 220px;
+				height:auto;
+				
+				p.caption{
+					margin:0 0 4px!important;
+				}
+			}
+			
+			img.newscap-headshot{
+				float: left;
+				margin: 4px 16px 0 0px;
+				max-width: 125px;
+				height:auto;
+				
+				p.caption{
+					margin:0 0 4px!important;
+					font-size:.8em;
+					line-height:.9em;
+				}
+			}
+		
+			img.newscap-headshot-right{
+				float: right;
+				margin: 4px 0 0 16px;
+				max-width: 125px;
+				height:auto;
+				
+				p.caption{
+					margin:0 0 4px!important;
+					font-size:.8em;
+					line-height:.9em;
+				}
+			}
+	
+	 .newscap-photo-horizontal{
+			  	.nc-horizontal-img{
+				  width:45%;
+				  float:left;
+					padding:12px;
+					img{
+						width:300px;
+						height:auto;
+					}
+			  }
+		  }
+	
+	.newscap-photo-horizontal .nc-horizontal-img{
+		p.caption{
+					margin:0 0 4px!important;
+					font-size:.9em;
+					line-height:1.1em;
+				}
+	}
+	
+}
+    }//end sidebar-first #content
+
+    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+      @include zen-grid-item(1, 1);
+		   font-size:90%;
+		    width:23.5%;
+			h2{
+			 margin:0;
+		 }
+		
+		padding-left:16px;
+		
+		ul.newscap-menu{
+			position:fixed;
+			list-style:none;
+			background:#fff;
+			max-width:20%;
+			z-index:25;
+			padding:0 0 0 12px;
+			border-bottom:1px solid #ccc;
+			font-size:90%;
+			line-height:1.1em;
+			/*margin:0 0 0 16px;*/
+				li{
+					margin-bottom:12px;
+					strong{
+						font-weight:700;
+					}
+					a{
+						
+					}
+				}
+			h2{
+				color: #1c4884;
+				border-bottom:2px solid #ffcc00;
+				text-transform: uppercase;
+			}
+		}//end ul.newscap-menu
+		
+    }
+	  
+	  
+  }//end .sidebar-first
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+
+  .sidebar-second {
+    #content { /* Span 2 columns, starting in 1st column from left. */
+      @include zen-grid-item(2, 1);
+	   font-size:90%;
+	    h1,h2,h3,p{
+		   padding:0 12px!important;
+	   }
+	    h2{
+		 margin:0;
+	 }
+    }
+
+    .region-sidebar-second { /* Span 1 column, starting in 3rd column from left. */
+      @include zen-grid-item(1, 3);
+	   font-size:90%;
+	    h2{
+		 margin:0;
+	 }
+    }
+  }
+
+  /*
+   * The layout when there are two sidebars.
+   */
+
+  .two-sidebars {
+    #content { /* Span 3 columns, starting in 2nd column from left. */
+      /*@include zen-grid-item(3, 2);*/
+	  float: left;
+      font-size: 90%;
+      margin-left: 20%;
+      margin-right: -80%;
+      padding: 0 16px;
+      width: 55%;
+	  font-size:85%;
+	  
+	  			.region-highlighted{
+
+					   .flex-control-nav{
+						  display:block;
+						  bottom: -52px;
+					   }
+					   
+					   #block-menu-menu-walf-menu, #block-menu-menu-waccal, #block-menu-menu-interstate-passport, #block-menu-menu-ice-public-menu{
+						   display:none;
+					   }
+				  }
+	  
+	  		/*passport home faux table*/
+.passport-home{	
+	background:url(images/passport-girl.jpg) 0 0 no-repeat;
+	width:100%;
+	margin:0 auto;
+	height:300px;;
+	overflow:hidden;
+	padding:4% 0;
+	display:table;
+	
+		.tr-row{
+		display:table-row;
+	
+		td-cell-30{
+			display:table-cell;
+			width:36%;
+		}
+	
+		.td-cell-60{
+			display:table-cell;
+			width:60%;
+			vertical-align:top;
+			padding:0 2.5%;
+			
+			li{
+				
+				list-style-image:url(images/white-arrow-right.png);
+				h3{
+					color:#fff;
+					text-shadow:1px 1px #000;
+					font-size:1.5em;
+					line-height:1.7em;
+					font-weight:400;
+					}
+			}
+	}
+	
+  }//end tr-row
+}	//end Passport-home	
+	   h1{
+		 font-size:1.4em;
+	   }
+	    h2{
+		 font-size:1.1em;
+	     }
+		 
+		 .view-content .item-list ul{
+			 list-style:none;
+			 margin-left:0;
+			 padding-left:0;
+		 }
+		 
+		 ul.toggle-view{
+			 li{
+				 
+				 width:50px;
+				 	h3{
+						display:inline-block;
+						padding:0 4px 0!important;
+					}
+					span{
+						display:inline-block;
+					}
+					
+					 p {
+						background: none repeat scroll 0 0 #fff;
+						border: 1px solid #ccc;
+						font-size:85%;
+						display: none;
+						height: auto;
+						left: -200px;
+						padding: 12px!important;
+						position: relative;
+						top: 34px;
+						width: 500px;
+						z-index: 25;
+					}
+			 }
+		 }
+		 
+		 .region-highlighted{
+			#block-multiblock-2, p.passport-phone-header, #block-multiblock-1{
+				display:none;
+			}
+		}
+		 
+	 #page .view-wiche-tags .view-content .item-list ul li {
+				border-bottom:none;
+			}
+			
+			.region-highlighted{
+				#block-menu-menu-ice-public-menu{
+					display:none;
+				}
+			}
+			
+			article{
+				.faux-four-col-table{
+				width:80%;
+				display:table;
+				margin:0 auto;
+		
+			.four-col-col-one{
+					display:table-cell;
+					vertical-align:top;
+					width:21%;
+					padding:2% 2% 2% 0;
+				}
+				
+			.four-col-col-two{
+					display:table-cell;
+					vertical-align:top;
+					width:21%;
+					padding:2%;;
+				}
+			
+			.four-col-col-three{
+					display:table-cell;
+					vertical-align:top;
+					width:21%;
+					padding:2%;
+				}
+				
+			.four-col-col-four{
+					display:table-cell;
+					vertical-align:top;
+					width:21%;
+					padding:2% 0 2% 2%;
+				}
+		
+		}//end 4-col faux table
+			}
+    }//end content
+
+    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+     @include zen-grid-item(1, 1);
+	  font-size:90%;
+	  
+	  	  /*quicklinks accordion on front page*/
+	  
+#block-views-accordion-quick-links-block, #block-views-accordion-quick-links-block-2, #block-views-accordion-quick-links-block-1{
+		  .ui-accordion{
+			  .views-accordion-header{
+				  .field-content{
+					  a{
+						  font-size:.9em;
+						  display:block;
+						  /*padding-left:15px;*/
+					  }
+				  }
+			  }
+		  }
+	  }//end #block-views-accordion-quick-links-block
+	  
+    }
+
+    .region-sidebar-second { /* Start a new row and span all 3 columns. */
+      @include zen-grid-item(1, 5);
+      @include zen-nested-container(); // Since we're making every block in this region be a grid item.
+      /*@include zen-clear();*/
+	   font-size:80%;
+	   
+	   	.passport-staff{
+				.item-list ul{
+					list-style:none;
+					margin:0;
+					padding:0;
+					li{
+						width:100%;
+						float:none;
+						display:inline;
+						padding:2%;
+					}
+				}
+			}
+	    
+	 
+	 .view-calendar-2 ul{
+		 list-style:none;
+		 margin-left:0;
+		 padding-left:0;
+	 }
+	 
+	 /*student testimonials*/
+	 .testimonial-photo{
+		 width:45%;
+		 height:auto;
+		 float:left;
+		 margin-right:4px;
+	 }
+		
+		.student-details{
+			width:45%;
+			font-style:italic;
+			float:left;
+		}
+	.testimonial-text{
+		clear:left;
+		/*width:90%;*/
+		padding:4% 5% 0 0;
+	}
+		
+		
+	
+	.block{
+		
+		/*2nd Sidebar vertical list of publications for departments, initiatves, interest groups and priority pages*/		
+		.view-publication-blocks, .view-id-PSEP_links{
+			.pubblock-list{
+				display:block!important;
+				ul{display:block!important;
+					display:block!important;
+					li{
+						display:block!important;
+						width:90%!important;
+					}
+				}//und ul
+			}//end pubblock-list
+		}//end view-publication-blocks
+	}//end block
+/*hide recent policy publications block because it looks awkward*/
+#block-views-210e6048e21942227c4a4d3a48bf8e06{
+	display:none;
+}
+    }
+  }
+	 
+
+}
+
+@media all and (min-width: 980px) and (max-width: 1279px) {
+	
+	#main #navigation ul#muchomenu-1{
+		padding:0;
+	}
+	
+	
+	 #page .view-content .item-list-lac ul li{
+			float:left;
+			width:32%;
+		}
+	  
+.header{
+		 .phone-nav{
+			 display:none;
+		  }
+	
+	  #block-search-form{
+			  position:absolute;
+			  width:30%;
+			  top:53px;
+			  right:25px;
+			  
+			.searchWiche .form-item input.form-text[type="text"] {
+						width: 78%;
+				  }
+		  }
+	 }// end header
+	 
+	 #main, #main-front{
+		 padding-top:2em;
+		 
+		.wiche-region{
+			display:block!important;
+		  }
+		 
+		 
+		  #slideshow{
+			  
+			 .wiche-mission-self-id{
+				  /*padding:5px 75px 0 0;*/
+				  
+					  ul li a{
+						  	/*font-size:80%;*/
+					 	 }
+				.region-self-id{ 
+					 .mission {
+							padding: 8px 0;
+							margin: 10px auto 20px auto;
+							font-size: 1em;
+							line-height:1.2;
+						}
+
+					  }
+				  }
+		     }
+		 
+		 .region-highlighted{
+			  #block-menu-menu-interstate-passport{
+				  display:none;
+			  }
+		  }
+
+	 }
+	 
+	
+<<<<<<< HEAD
+		.slide-row{
+			display:table-row;
+			
+			.slides{
+				background:#245eac;
+				display:table-cell;
+				width:600px;
+				vertical-align:top;
+				
+				.region-slides{
+					.block{
+						margin:0;
+						
+				
+	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
+		.flexslider{
+			border:none;
+			margin-bottom:0;
+			
+			position:relative;
+			
+				.views-field-field-call-to-action{
+					position:absolute;
+					left:14px;
+					top:-10px;
+					text-shadow: 1px 1px #000;
+					letter-spacing:1px;
+					
+					
+					h3{
+						margin-bottom:0;
+							a:link, a:active, a:visited{
+								font-family:$arial;
+								font-weight:bold;
+								font-size:1.4em;
+								text-shadow: 1px 1px #000;
+								letter-spacing:1px;
+								color:#fff;
+
+									&:hover{
+										text-decoration:underline;
+									}
+								}
+							}
+					p{
+						margin:8px 0 0 0;
+						line-height:1.1em;
+					}
+				}
+			
+			.flex-direction-nav{
+				//display:none;
+			}
+		}
+		
+		.views-field-field-photo-credit{
+					width:100%;
+					background:rgba(0,0,0,.25);
+					position:absolute;
+					left:0;
+					padding-left:14px;
+					bottom:0;
+					font-size:.7em;
+					font-weight:400;
+					letter-spacing:1px;
+					line-height:1.2em;
+					color:#fff;
+					text-shadow: .5px .5px #000;
+			
+				.field-content{
+					width:95%;
+				}
+			}
+		
+		.flex-control-nav{
+			display:none;
+		}
+		
+	}
+}			
+		}
+				
+				img{
+					width:100%;
+					max-width:600px;
+					height:auto;
+				}
+		}
+			
+			.wiche-mission-self-id{
+				display:table-cell;
+				max-width:600px;
+				background:#245eac;
+				vertical-align:top;
+				
+				.region-self-id{
+					.block{
+						margin:0;
+					}
+				}
+				
+				h2{
+					color:#fff;
+					margin:8px 0 0 16px;
+					font-size:1.9em;
+				}
+				
+			
+				ul{
+					margin:12px 0 0 16px;
+					padding:0 0 0 16px;
+					list-style:none;
+					
+					li{
+						background:url(images/white-arrow-bullet-lg.png) 0 5px no-repeat;
+						padding-left:20px;
+						margin:6px 0;
+						a:link,a:visited,a:active{
+							color:#fff;
+							display:block;
+							font-weight:400;
+							font-size:100%;
+							line-height:1.2em;
+						}
+					}
+				}
+				
+				.mission{
+								background:#ccc;
+								width:100%;
+								h2{
+									font-family: 'humnst777_cn_btregular', sans-serif;
+									font-weight:200;
+									margin:0;
+									padding:15px;
+									color:#000;
+									font-size:.9em;
+									line-height:1.2em;
+								}
+								
+							}
+			}
+		}
+		
+	}// end #slideshow
+
+=======
+>>>>>>> develop
+  /*Page Views, Exposed filters custom css*/
+
+#views-exposed-form-Staff-Alpha-View-page-3{
+	position:relative;
+	.views-exposed-form{
+		
+	#edit-tid-wrapper{
+		float:none;
+	}
+	
+	#edit-field-bio-projectcontact-tid-wrapper{
+		
+		float:none;
+		select{
+			width:100%;
+		}
+	}
+	
+	.views-submit-button{
+		/*position:absolute;
+		top:85px;
+		left:0;*/
+	}
+	
+	.views-reset-button{
+		/*position:absolute;
+		top:85px;
+		left:75px;*/
+	}
+	
+	}//end views-exposed-form
+	
+}//#views-exposed-form-Staff-Alpha-View-page-3
+
+/*publications list on front page*/
+
+	.wiche-publications{
+		display:table;border-collapse:separate;border-spacing:5px;
+				ul{
+					display:table-row;
+					list-style:none;
+					margin:16px 0 0 0;
+					padding:0;
+					/*overflow:hidden;*/
+					li{
+						display:table-cell;
+						width:18%;
+						padding:8px;
+						margin-left:16px;
+						
+						.views-field-title{
+							width:100%;
+							padding-left:0;
+							
+							.field-content{
+								a:link,a:visited{
+									color:#000;
+									text-decoration:none;
+									font-weight:600;
+									line-height:1.2em;
+								}
+								a:hover{
+									text-decoration:underline;
+								}
+							}
+							
+						}
+						
+						figcaption.field-tag{
+									clear:left;
+									font-style:italic;
+									font-size:.8em;
+									line-height:1.2em;
+									padding-top:8px;
+									margin-top:8px;
+								}
+					}
+				}//en li
+				
+				li:first-child{
+						margin-left:0px;
+					}
+			}
+	
+	.header{
+		 .region-phone-nav{
+			 display:none;
+		  }//end region-phone-nav
+		  
+	 }// end header
+ 
+ 
+   /*
+   * The layout when there is only one sidebar, the left one.
+   */
+
+  .sidebar-first {
+    #content { /* Span 2 columns, starting in 2nd column from left. */
+     @include zen-grid-item(2, 2);
+	 
+	 ul li .field-content p{
+			font-size:80%;
+		}
+		
+		/*hide teaser titles on passport/information-resources*/
+		.view-passport-information-resources{
+			article header .node-title{
+				display:none;
+			}
+		}
+		
+		.ncbanner{
+			background: url("/sites/all/themes/zen_wiche/images/NewsCapWebBAnner980.png") no-repeat;
+			width:705px;
+			height:295px;
+			position:relative;
+			margin:20px auto;	
+			 }
+	
+	.Tagline{
+			position:absolute;
+			top:226px;
+			width:100%;
+			display:table-cell;
+			text-align:center;
+		
+		h3.newstag{
+			font-family:Verdana, sans-serif;
+			text-align:center;
+			color:#666;
+			font-size:1.2em;
+			line-heightL:1.3em;
+		}
+	} 
+	
+	h2{
+		margin:0;
+	}
+	
+			img.newscap-photo, .newscap-photo{
+				float: left;
+				margin: 4px 16px 0 0px;
+				max-width: 220px;
+				height:auto;
+				
+				p.caption{
+					margin:0 0 4px!important;
+				}
+			}
+			
+			img.newscap-headshot{
+				float: left;
+				margin: 4px 16px 0 0px;
+				max-width: 125px;
+				height:auto;
+				
+				p.caption{
+					margin:0 0 4px!important;
+					font-size:.8em;
+					line-height:.9em;
+				}
+			}
+		
+			img.newscap-headshot-right{
+				float: right;
+				margin: 4px 0 0 16px;
+				max-width: 125px;
+				height:auto;
+				
+				p.caption{
+					margin:0 0 4px!important;
+					font-size:.8em;
+					line-height:.9em;
+				}
+			}img.newscap-headshot{
+				float: left;
+				margin: 4px 16px 0 0px;
+				max-width: 125px;
+				height:auto;
+				
+				p.caption{
+					margin:0 0 4px!important;
+					font-size:.8em;
+					line-height:.9em;
+				}
+			}
+		
+			img.newscap-headshot-right{
+				float: right;
+				margin: 4px 0 0 16px;
+				max-width: 125px;
+				height:auto;
+				
+				p.caption{
+					margin:0 0 4px!important;
+					font-size:.8em;
+					line-height:.9em;
+				}
+			}
+	
+	 .newscap-photo-horizontal{
+			  	.nc-horizontal-img{
+				  width:45%;
+				  float:left;
+					padding:12px;
+					img{
+						max-width:320px;
+						height:auto;
+						overflow:hidden;
+					}
+			  }
+		  }
+	
+	.newscap-photo-horizontal .nc-horizontal-img{
+		p.caption{
+					margin:0 0 4px!important;
+					font-size:.9em;
+					line-height:1.1em;
+				}
+	}
+	
+
+    }//end .sidebar first #content
+
+    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+      @include zen-grid-item(1, 1);
+		width:23.5%!important;
+		
+		ul.newscap-menu{
+			position:fixed;
+			list-style:none;
+			background:#fff;
+			max-width:21%;
+			z-index:25;
+			padding:0;
+			border-bottom:1px solid #ccc;
+			font-size:90%;
+			line-height:1.1em;
+			margin:0 0 0 16px;
+				li{
+					margin-bottom:12px;
+					strong{
+						font-weight:700;
+					}
+					a{
+						
+					}
+				}
+			h2{
+				color: #1c4884;
+				border-bottom:2px solid #ffcc00;
+				text-transform: uppercase;
+			}
+		}//end ul.newscap-menu
+	  
+    }
+  }
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+
+  .sidebar-second {
+    #content { /* Span 2 columns, starting in 1st column from left. */
+      @include zen-grid-item(2, 1);
+
+    }
+
+    .region-sidebar-second { /* Span 1 column, starting in 3rd column from left. */
+      @include zen-grid-item(1, 3);
+    }
+  }
+
+  /*
+   * The layout when there are two sidebars.
+   */
+
+  .two-sidebars {
+    #content { /* Span 3 columns, starting in 2nd column from left. */
+      @include zen-grid-item(3, 2);
+		
+	  	.view-wiche-tags{
+			  li{
+						border-bottom:1px solid #ccc;
+							}
+							
+					li:last-child{
+							border-bottom:none;
+							}		
+			}
+			
+		}//end wiche tags
+	  
+	  /*
+   * The layout when there are no sidebars.
+   */
+	  
+	 
+	  #main #content{
+		  @include zen-grid-item(3, 1);
+		  h1#page-title{
+			  margin-left:16px;
+		  }
+		  
+		  	float: left;
+			margin-left: 20%;
+			margin-right: -80%;
+			padding: 0 16px;
+			width: 55%;
+	  }// end #main #content
+
+    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+     @include zen-grid-item(1, 1);
+    }
+
+    .region-sidebar-second { /* Start a new row and span all 3 columns. */
+      @include zen-grid-item(1, 5);
+      @include zen-nested-container(); // Since we're making every block in this region be a grid item.
+      /*@include zen-clear();*/
+
+/*hide recent policy publications block because it looks awkward*/
+#block-views-210e6048e21942227c4a4d3a48bf8e06{
+	/*display:none;*/
+}
+    }
+  }
+
+
+#content {  	
+	article.view-mode-full, .advanced-help-topic{
+	padding:0;
+
+		ul li, ol li{
+			/*font-size:12px;*/
+			margin:12px 0;
+		}
+		
+		.faux-four-col-table{
+				width:80%;
+				display:table;
+				margin:0 auto;
+		
+			.four-col-col-one{
+					display:table-cell;
+					vertical-align:top;
+					width:21%;
+					padding:2% 2% 2% 0;
+				}
+				
+			.four-col-col-two{
+					display:table-cell;
+					vertical-align:top;
+					width:21%;
+					padding:2%;;
+				}
+			
+			.four-col-col-three{
+					display:table-cell;
+					vertical-align:top;
+					width:21%;
+					padding:2%;
+				}
+				
+			.four-col-col-four{
+					display:table-cell;
+					vertical-align:top;
+					width:21%;
+					padding:2% 0 2% 2%;
+				}
+		
+		}//end 4-col faux table
+		
+/*custom css for table on /psep/supp-fees*/	
+	#psep-support{
+		border:1px solid #ccc;
+		padding:16px;
+		width:80%;
+		margin:0 auto;
+		table{
+			h2{
+				margin:0 0 16px;
+			}
+			margin:0;
+			padding:0;
+			width:100%;
+			th{
+				border:none;
+				color:#fff;
+				background:#1c4884;
+				font-size:1.1em;
+			}
+			tr:nth-child(even){
+				background:#ccc;
+			}
+		}
+	}
+
+	.pub-top {
+		overflow:hidden;
+			.pub-left{
+				float:left;
+				width:20%;
+				margin:0;
+				padding:0;
+			}
+		
+			.pub-right{
+				font-size:12px;
+				float:left;
+				width:50%;
+			}
+		}// end pub top
+		
+		.pub-description{
+			/*table styling*/
+			
+				
+				table{
+					
+					td{
+						margin:4px 0;
+						
+						font-size:.9em;
+					}
+					
+					h2{
+						margin:0;
+					}
+					
+					border-collapse: separate;
+    				border-spacing: 10px;
+					
+					h3 a{
+						margin-top:0;
+					}
+			}
+	}
+  }
+  
+  .region-highlighted{
+	  .hot-mh-pubs{
+		  display:table;
+			width:100%;
+			.col-one{
+				display:table-cell;
+			
+				vertical-align:top;
+				padding:2%;
+				.caption{
+					font-size:.8em;
+					font-style:italic;
+				}
+			}
+			
+			.col-two{
+				display:table-cell;
+			
+				vertical-align:top;
+				padding:2%;
+				
+				.caption{
+					font-size:.8em;
+					font-style:italic;
+				}
+			
+			}
+			
+			
+	  	}
+  	}
+}// end content
+
+  .sidebar-first {
+    #content { /* Span 4 columns, starting in 2nd column from left. */
+      @include zen-grid-item(4, 2);
+	  width:72%;
+	  margin-left:26%;
+	  padding:0 1%;	
+	 border-left:1px solid #ccc;
+	  
+	  .region-highlighted{
+			#block-multiblock-2, p.passport-phone-header{
+				display:none;
+			}
+		}
+	  
+	  article{
+		  ul.page-list{
+						border:1px solid #ccc;
+						list-style:none;
+						padding:0;
+						margin:0;
+						width:50%;
+						margin:0 auto;
+						
+						li{
+							border-bottom:1px solid #ccc;
+							padding-right:20px;
+							a{
+								display:block;
+								padding:4px 8px;
+								line-height:2em;
+							}
+						}
+						
+						li:last-child{
+							border:none;
+						}
+					}
+					
+									  /*passport home faux table*/
+.passport-home{	
+	background:url(images/passport-girl.jpg) 0 0 no-repeat;
+	width:100%;
+	height:300px;
+	overflow:hidden;
+	padding:4% 0;
+	display:table;
+	
+		td-cell-30{
+			display:table-cell;
+			width:30%;
+		}
+	
+		.td-cell-60{
+			display:table-cell;
+			width:65%;
+			vertical-align:top;
+			padding:0 2.5%;
+			
+			li{
+				
+				list-style-image:url(images/white-arrow-right.png);
+				h3{
+					color:#fff;
+					text-shadow:1px 1px #000;
+					font-size:1.4em;
+					line-height:1.6em;
+					font-weight:400;
+					}
+			}
+	}
+}//end passport faux table
+
+/*passport banner image*/
+
+		.pass-instutions{
+			background:url(images/institutions.jpg) 0 0  no-repeat;
+			height:380px;
+			position:relative;
+			padding:6% 6% 0 6%;
+			overflow:hidden;
+			
+			h2{
+				color:#fff;
+				text-shadow:2px 2px #000;
+				font-size:3em;
+				font-weight:700;
+				margin:0;
+				padding:0;
+				line-height:1.4em;
+			}
+		}// end pass-instuitions
+
+.pass-policy{
+			background:url(images/policy-researchers.jpg) 0 0  no-repeat;
+			height:380px;
+			position:relative;
+			padding:6% 6% 0 6%;
+			overflow:hidden;
+			margin-bottom:16px;
+			h2{
+				color:#fff;
+				text-shadow:2px 2px #000;
+				font-size:3em;
+				font-weight:700;
+				margin:0;
+				padding:0;
+				line-height:1.4em;
+			}
+
+		}// end pass-instuitions
+		
+		.pass-registrar{
+			background:url(images/registrar.jpg) 0 0  no-repeat;
+			height:380px;
+			position:relative;
+			padding:6% 6% 0 6%;
+			overflow:hidden;
+			margin-bottom:16px;
+			h2{
+				color:#fff;
+				text-shadow:2px 2px #000;
+				font-size:3em;
+				font-weight:700;
+				margin:0;
+				padding:0;
+				line-height:1.4em;
+				position:absolute;
+				bottom:35px;
+			}
+		}// end pass-registrar
+		
+	  }//end article
+	  
+	  
+	  //css rules for /passport/passport-contact-page
+	  .view-passport-contact-page ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		 
+		li{
+			width:27%;
+			display:inline-block;
+			float:left;
+			padding:2%;
+			position:relative;
+			height:auto;
+			min-height:270px;
+			line-height:1.2em;
+			
+		}
+}//end .sidebar-first #content
+
+    }
+	
+#main-front{
+	#content{
+		.node-promoted{
+			display:none!important;
+		 }
+	}
+}
+
+.region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+      @include zen-grid-item(1, 1);
+	
+	  /*width:21%;*/	
+	 /* background: #666666;*/
+	  padding:0 1%;
+	  margin-left:1%;
+	  
+	  p{
+		  /*color:#fff;*/
+		  a:link, a:visited, a:active{
+			  /* color:#fff;*/
+		  }
+		  
+		  a:hover{
+			  
+		  }
+	  }
+	  
+	  h2, h3, h4{
+		  color:#000;
+		  padding-bottom:6px;
+		  margin-bottom:8px;
+		  a:link, a:visited, a:active{
+			   color:#fff;
+		  }
+		  
+		  a:hover{
+			  
+		  }
+	  }
+	  
+	  ul{
+		  list-style:none;
+		  margin:0;
+		  padding:0;
+		  li{
+			   a:link, a:visited, a:active{
+			   /*color:#666;*/
+		  }
+		  
+		  a:hover{
+			  color:#000;
+		  }
+			  
+		  }
+	  }
+	
+	/*.newscap-menu{
+			max-width:20%;
+		}*/
+    }//end .region-sidebar-first
+
+	
+	/*testimonial slide show on front page*/
+
+	#block-views-testimonial-slider-block{
+		
+		h2.block-title{
+			margin-bottom:0;
+		}
+		font-size:.8em;
+		line-height:1.2em;
+		
+		/*student testimonial custom css starts here*/
+		
+		.testimonial-wrapper{
+			overflow:hidden;
+			h3{
+				font-family: 'humnst777_cn_btbold';
+				margin:4px 0;
+				padding:0;
+				line-height:2em;
+			}
+			
+			.testimonial-photo{
+				float:left;
+				display:inline-block;
+				width:30%;
+				margin-right:9px;
+			}
+			.student-details{
+				font-family:'humnst777_lt_btlight_italic';
+				float:left;
+				display:inline-block;
+				/*width:65%;*/
+				
+				h4{
+					margin:0;
+					padding:0;
+				}
+				
+				ul{
+					margin:0 0 0 12px;
+					padding:0;
+					
+				}
+				
+			}/*end student details*/
+			
+			/*.testimonial-text{
+				clear:left;
+				dispay:block;
+				width:100%;
+				line-height:1.5em;
+				p{
+					margin:8px 0;
+				}
+			}*/
+			
+		}
+		
+	}/*end block-views-testimonial-slider-block*/
+
+			.nice-menu-menu-interstate-passport{
+					position:relative;
+					z-index:20;
+				}
+
+  }/*end region sidebar first*/
+
+  
+/*Page Views, Exposed filters custom css*/
+
+#views-exposed-form-Staff-Alpha-View-page-3{
+	position:relative;
+	
+	.views-exposed-form{
+		
+		#edit-tid-wrapper{
+			float:left;
+		}
+		
+		#edit-field-bio-projectcontact-tid-wrapper{
+			
+			float:left;
+			max-width:400px;
+			select{
+				width:100%;
+			}
+		}
+		
+		.views-submit-button{
+			
+		}
+		
+		.views-reset-button{
+			
+		}
+	
+	}//end views-exposed-form
+	
+}//#views-exposed-form-Staff-Alpha-View-page-3
+
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+
+  .sidebar-second {
+    #content { /* Span 4 columns, starting in 1st column from left. */
+      @include zen-grid-item(4, 1);
+	  
+	  padding-left:16px;
+    }
+
+    .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
+      @include zen-grid-item(1, 5);
+    }
+  }
+
+  /*
+   * The layout when there are two sidebars.
+   */
+
+  .two-sidebars {
+    #content { /* Span 3 columns, starting in 2nd column from left. */
+      @include zen-grid-item(2, 3);
+		
+		margin-left:20%;
+		margin-right:-78%;
+		width:55%;
+		padding:0 16px;
+		border-right:1px solid #ccc;
+		border-left:1px solid #ccc;
+		
+		ul li .field-content p{
+			font-size:80%;
+		}
+		
+		.region-highlighted .flex-control-nav {
+			bottom: -50px!important;
+		}
+		
+		h2.field-content{
+			font-weight:normal;
+			/*font-size:1.2em;*/
+			margin-bottom:0px!important;
+		}
+		
+		.region-highlighted{
+			#block-multiblock-2, p.passport-phone-header, #block-multiblock-1,#block-menu-menu-walf-menu, #block-menu-menu-waccal{
+				display:none;
+			}
+		}
+		
+		/*kill bullets on specific lists & remove h3 bottom margin*/
+		.view-states-projects, .view-Newscap, .view-policyInsights, .view-passport-instate{
+			
+			.item-list:nth-child(odd)
+				{
+					
+				} 
+			
+			.item-list h3{
+				margin:8px 0 0;
+			}
+			/*top- margin removed for /policy_insights*/
+			h3.field-content{
+				margin:8px 0 0;
+			}
+			
+			ul{
+				list-style:none;
+				margin:0 0 0 0;
+				padding-left:0;
+					li{
+						margin-bottom:16px;
+					}
+			}//end ul
+		}//end view-states-projects
+		
+		/*passport home faux table*/
+.passport-home{	
+	background:url(images/passport-girl.jpg) 0 0 no-repeat;
+	width:100%;
+	margin:0 auto;
+	height:300px;;
+	overflow:hidden;
+	padding:4% 0;
+	display:table;
+	
+		.tr-row{
+		display:table-row;
+	
+		td-cell-30{
+			display:table-cell;
+			width:36%;
+		}
+	
+		.td-cell-60{
+			display:table-cell;
+			width:60%;
+			vertical-align:top;
+			padding:0 2.5%;
+			
+			li{
+				
+				list-style-image:url(images/white-arrow-right.png);
+				h3{
+					color:#fff;
+					text-shadow:1px 1px #000;
+					font-size:1.5em;
+					line-height:1.7em;
+					font-weight:400;
+					}
+			}
+	}
+	
+  }//end tr-row
+}	//end Passport-home	
+		
+		/*Delicious Links on home page*/
+		
+		.view-delicious-home{
+			ul{
+				list-style:none;
+				margin:0;
+				padding:0;
+				li{
+					font-size:12px;
+				}
+			}
+		}
+
+				article{	
+				
+
+					
+					ul{
+						li{
+							margin-bottom:12px;
+							/*font-size:12px;*/
+						}
+					}
+					
+					ul.page-list{
+						border:1px solid #ccc;
+						list-style:none;
+						padding:0;
+						margin:0;
+						width:50%;
+						margin:0 auto;
+						
+						li{
+							border-bottom:1px solid #ccc;
+							padding-right:20px;
+							a{
+								display:block;
+								padding:4px 8px;
+								line-height:2em;
+							}
+						}
+						
+						li:last-child{
+							border:none;
+						}
+					}
+				}
+
+/*tables in ice executive committee view*/		
+		.view-list-ice-exec-committee{
+			h4{
+				margin:0;
+			}
+			h3{
+				margin-top:4px;
+			}
+			.ice-pic{
+				margin:0;
+				
+				td{
+					font-size:.8em;
+					vertical-align:top;
+					h4{
+						font-size:1.2em;
+						margin:0;
+					}
+					
+					img{
+						width:100%;
+						height:auto;
+						max-width:60px;
+						margin-right:12px;
+					}
+				}
+			}
+		}
+		
+		article{
+					
+					.col-one{
+						float:left;
+						width:30%;
+						padding-right:16px;
+						border-right:1px solid #ccc;
+					}
+					
+					.col-two{
+						float:left;
+						width:60%;
+						padding-left:16px;
+					}
+		}
+		
+		h2.knowledge-base{
+			font-weight:700;
+			font-size:1.4em;
+			letter-spacing:1px;
+			border-bottom:2px solid #1c4884;
+			padding-bottom:4px;
+		}
+		
+		.region-highlighted{
+				#block-menu-menu-ice-public-menu{
+					display:none;
+				}
+			}
+		
+		.view-wiche-staff{
+			margin-top:16px;
+			
+			.policy-list{
+				ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		 
+		li{
+			width:28%;
+			display:inline-block;
+			float:left;
+			padding:0 2%;
+			position:relative;
+			height:auto;
+			max-height:250px;
+			line-height:1.3em;
+			
+			.views-field-field-user-email{
+				margin:6px 0 0;
+				font-weight:600;
+				position:relative;
+				z-index:20;
+			}
+	
+				.views-field-field-user-project-contact{
+						font-size:.9em;
+						position:relative;
+				        z-index:20;
+						
+						h4.views-label-field-user-project-contact{
+							margin-bottom:0;
+						}
+						
+						em{
+							margin:3px 0!important;
+						}
+						
+					}
+							
+			.field-content{
+				h2{
+					margin:0 0 4px;
+					font-size:1.2em;
+					}
+			}
+			
+			strong{
+				letter-spacing:-1px;
+			}
+			
+			ul.toggle-view{
+				
+					li{
+						cursor:pointer;
+						position:relative;
+						position:absolute;
+						top:80px;
+						left:80px;
+						
+						h3{
+							font-weight:normal;
+							font-size:.9em;
+							display:inline-block;
+							padding:2px;
+							}
+							
+						span{
+							color:#1c4884;
+							position:relative;
+							z-index:1;
+						}
+						
+						p{
+							display:none;
+							width:500px;
+							height:auto;
+							background:#fff;
+							border:1px solid #ccc;
+							padding:16px;
+							position:relative;
+							z-index:25;
+							top:34px;
+							left:-200px;
+						}
+			  }
+		}
+		}//end li
+	}
+			}
+		}
+    }//end content
+	  
+    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+      @include zen-grid-item(1, 1);
+	  
+	  h2{
+			margin:0 0 16px 0;
+			padding-top:8px;
+		}
+	 
+	
+	  width:17%;
+	  padding:0 1%;
+	  
+	  ul.nice-menu-right ul  {
+			 /* left: 10.5em!important;*/
+			}
+	
+	  p{
+		  color:#000;
+		  font-size:12px;
+		  line-height:1.4em;
+			  a:link, a:visited, a:active{
+				   color:#1c4884;
+				   text-decoration:underline;
+			  }
+			  
+			  a:hover{
+				 color:#000!important; 
+			  }
+	  }
+	  
+	  
+	  /*quicklinks accordion on front page*/
+	  
+#block-views-accordion-quick-links-block, #block-views-accordion-quick-links-block-2, #block-views-accordion-quick-links-block-1{
+		  .ui-accordion{
+			  .views-accordion-header{
+				  .field-content{
+					  a{
+						  font-size:.8em;
+						  display:block;
+						  /*padding-left:15px;*/
+					  }
+				  }
+			  }
+		  }
+	  }//end #block-views-accordion-quick-links-block
+	  
+	    .view-commissioner-calendar{
+			  .item-list{
+				  ul{
+					  margin-top:16px;
+					  li{
+						  font-size:1em;
+						  font-weight:600;
+						  margin-bottom:8px;
+						  padding-bottom:8px;
+						  border-bottom:1px solid #ccc;
+						  
+						  .location{
+							  font-size:.9em!important;
+							  font-weight:100!important;
+						  }
+					  }
+				  }
+			  }
+		  }
+	  
+	  #block-views-testimonial-slider-block{
+			  border-top:1px solid #ccc;
+			  margin-top:16px;
+			  padding-top:8px;
+		  }
+	  	  
+	h2{
+		  color:#1c4884;
+		  border-bottom:1px solid #fff;
+		  padding-bottom:3px;
+		  margin-bottom:0px;
+		  margin-top:0px!important;
+		  }
+		  
+	  h3, h4{
+		  color:#000;
+		  border-bottom:1px solid #fff;
+		  padding-bottom:6px;
+		  margin-bottom:8px;
+		  
+		  /*a:link, a:visited, a:active{
+			   color:#000;
+		  }*/
+	
+		  
+		  /*a:hover{
+			  
+		  }*/
+		  	  }
+	  
+		  ul{
+			  list-style:none;
+			  margin:0;
+			  padding:0;
+				  li{
+					   a:link, a:visited, a:active{
+					   color:#000;
+				  }
+				  
+				  a:hover{
+					  
+				  }
+				  
+			  }
+			  
+			  
+		  }
+	 
+	#block-views-testimonial-slider-block{
+       h2.block-title{
+	     font-size:1.4em;
+		 margin-bottom:0;
+	   }
+	   
+	   .views-field-field-sep-program{
+			H2.sep{
+				font-size:1.2em;
+				margin:8px 0;
+				display:inline-block;
+			}
+	   }
+      }
+	  
+	  .view-knowledge-base-page{
+		  ul{
+			  li{
+				  a:link, a:visited, a:active{
+					  font-size:.8em;
+					  line-height:1em;
+					  display:block;
+					  background:url(images/blue-arrow-right.png) 0 2px no-repeat;
+					  padding: 0 0 6px 16px;
+				  }
+			  }
+		  }
+	  }
+	} // end region-sidebar-first
+	
+    .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
+     @include zen-grid-item(1, 5);
+	  
+	  padding-top:0!important;
+	  /*width:16%!important;*/
+	  float: left;
+	  
+	  #block-menu-menu-ask-wiche .menu li a{
+					font-weight:600;
+					background:#1c4884;
+					color:#fff;
+					margin-top:16px;
+					font-size:1.1em;
+					border-radius:10px;
+					padding:6px;
+					text-align:center;
+					text-decoration:none
+				} 
+				
+				 #block-menu-menu-ask-wiche .menu li a:hover{
+					background:#245eac;
+				 }
+				
+	  
+			#block-views-calendar-2-block-2{
+				.view-calendar-2{
+					 h3 {
+							font-size: 1em;
+							line-height: 1.1em;
+							margin-bottom:0;
+							margin-top: 1em;
+						}
+				}//end view-calendar-2 
+				
+			}//endlock-views-cal
+			
+			.block-nice-menus{
+				position:relative;
+				z-index:20;
+			}
+   
+  ul.commish-items, .view-id-passport_contact_page ul {
+				list-style:none;
+				margin:0;
+				padding:0;
+				
+				li{
+					margin-bottom:16px;
+					padding-bottom:16px;
+					border-bottom:1px solid #ccc;
+				  }
+			}
+		
+		#block-views-testimonial-slider-block{
+			 /*student testimonials*/
+			 .testimonial-photo{
+				 width:45%;
+				 height:auto;
+				 float:left;
+				 margin-right:4px;
+			 }
+
+				.student-details{
+					width:45%;
+					font-style:italic;
+					float:left;
+				}
+			.testimonial-text{
+				clear:left;
+				/*width:90%;*/
+				padding:4% 3% 0 0;
+			}
+		}
+	
+	.block{
+		
+				/*border-top: 3px solid #1c4884;
+				margin-top: 12px;
+				padding-top: 12px;*/
+		
+		/*2nd Sidebar vertical list of publications for departments, initiatves, interest groups and priority pages*/		
+		.view-publication-blocks, .view-id-PSEP_links, .view-Adult-learner-pubs{
+			.pubblock-list{
+				display:block!important;
+				ul{display:block!important;
+					display:block!important;
+					li{
+						display:block!important;
+						width:100%!important;
+						
+						.policy-featured-pub{
+							a img{
+								max-width:150px!important;
+							}
+						}
+					}
+				}//und ul
+			}//end pubblock-list
+		}//end view-publication-blocks
+		
+		&:first-child{
+			border-top:none;
+		}
+		
+		#block-views-testimonial-slider-block{
+			.student-details{
+				padding-left:16px;
+			}
+		}
+		
+	}//end block
+	
+	#block-views-publication-blocks-block-14{
+		border-top:none;
+		padding-top:0;
+		margin-top:0;
+	}
+
+	  /*border-left: 1px solid #ccc;*/
+	  margin-right:0;
+	  width:18%;
+	 /* margin-bottom: -999em !important;
+      padding-bottom: 999em !important;*/
+	  padding-top:16px;
+	 
+		 h2{
+			margin:8px 0;
+		}
+		
+		p{
+			font-size:12px;
+			line-height:1.5em;
+			margin-top:0;
+			font-style:italic;
+		}
+		/*event calendar block on front page*/
+		.view-calendar-2{
+			
+			ul{
+				list-style:none;
+				margin:0;
+				padding:0;
+				
+				li{
+					margin-bottom:16px;
+					padding-bottom:16px;
+					border-bottom:1px solid #ccc;
+					
+					&:last-child{
+						border-bottom:none;
+					}
+				}
+			}
+			.adr, .map-link{
+				font-size:12px;
+				line-height:1.5em;
+			}
+		}
+    }
+  }
+  
+  /*the layout when there are no sidebars -- full width*/
+  
+    article.view-mode-full, .advanced-help-topic{
+	padding:0  1.5%;
+	
+
+	/*PSEP table on /rwsl-experiments*/
+table#psep-support-fees{
+	font-size:.8em;
+}
+	table#psep-support-fees{
+	width:100%;
+	border-bottom:2px solid #000;
+	margin-bottom:16px;
+}
+
+
+table#psep-support-fees th{
+	background-color:transparent;
+	/*color:#fff;*/
+	text-align:center;
+	border-right:1px solid #fff;
+	border-top:2px solid #1c4884;
+	border-left:none;
+	padding:1% 0;
+	font-size:1.3em;
+}
+
+table#psep-support-fees th.subhead{
+	background:#1c4884;
+}
+
+table#psep-support-fees th.subhead h3{
+	margin:0;
+	color:#fff;
+}
+
+table#psep-support-fees th:last-child{
+	border-right:none;
+}
+
+table#psep-support-fees td{
+	padding:2%;
+	border-right:1px solid #000;
+	vertical-align:top;
+}
+
+table#psep-support-fees tr td:first-child{
+	font-weight:bold;
+	vertical-align:middle;
+	text-align:center;
+	font-size:1em;
+}
+
+
+table#psep-support-fees td:last-child{
+	border-right:none;
+}
+
+table#psep-support-fees tr:nth-child(even){
+	background:#ccc;
+}
+
+table#psep-support-fees tr:first-child th{
+	border-bottom:2px solid #fff;
+}
+
+
+
+
+
+
+
+/*generic table*/
+table#wiche-table{
+	width:100%;
+	border-bottom:2px solid #000;
+	margin-bottom:16px;
+	font-size:.8em;
+	
+		th{
+			background-color:#1c4884;
+			color:#fff;
+			text-align:center;
+			border-right:1px solid #fff;
+			border-top:none;
+			border-left:none;
+			padding:1% 0;
+			
+			&:last-child{
+					border-right:none;
+				}
+		}
+		
+		td{
+			padding:2%;
+			border-right:1px solid #000;
+			vertical-align:top;
+			width:50%;
+			
+			&:last-child{
+				border-right:none;
+				}
+				
+				h4{
+					font-size:1.2em;
+					margin:0;
+				}
+				
+				p{
+					margin:4px 0;
+				}
+		}
+		
+		tr:first-child th{
+	border-bottom:2px solid #fff;
+}
+
+
+}//end #wiche-table
+
+/*generic table*/
+table.wiche-table{
+	width:100%;
+	margin-bottom:16px;
+	font-size:.8em;
+}
+
+
+table.wiche-table td{
+	padding:2%;
+	vertical-align:top;
+	width:36%;
+}
+
+
+/*end wiche table class*/
+
+table#borderless-no_bgColor{
+	td{
+		padding:8px;
+		vertical-align:top;
+		
+		img{
+			max-width:65px;
+			height:auto;
+		}
+			p{
+				margin:0;
+			}
+	}
+}
+
+  }
+  
+}
+
+
+
+/*panels css rules*/
+div#wiche-home{
+	padding:0 15px;
+}
+
+	 
+/*Mental Health Landing Page Custom*/
+
+.quicktabs-tabpage{
+	#block-block-349, #block-block-348{
+		overflow:hidden;
+			.col-one{
+				float:left;
+				display:inline-block;
+				margin:0 20px 0 20px;
+				width:45%;
+			}
+			
+			.col-two{
+				float:left;
+				display:inline-block;
+				width:45%;
+			}
+			
+			ul{
+				list-style:square;
+				
+					li{
+						font-size:.8em;
+						margin-bottom:8px;
+					}
+			}
+	}
+}
+
+
+
+
+
+/*wiche-sep-dept-nav*/
+
+#programs-departments{
+	overflow:hidden;
+	width:100%;
+	clear:both;
+		/*wiche publications block for front page*/
+		#block-views-publications-list-block{
+			background:#ccc;
+			overflow:hidden;
+			margin-bottom:0;
+				h2{
+					/*background:#1c4884;*/
+					background:#225aa8;
+					padding:8px 0 8px 14px;
+					color:#fff;
+					margin:0;
+				}
+				
+.view-publications-list{
+					clear:both;
+			/*publications list on front page*/		
+	.wiche-publications{
+			
+			
+		display:table;border-collapse:separate;border-spacing:5px;
+				ul{
+					display:table-row;
+					list-style:none;
+					margin:16px 0 0 0;
+					padding:0;
+					/*overflow:hidden;*/
+					li{
+						display:table-cell;
+						width:18%;
+						padding:8px;
+						margin-left:16px;
+						
+						.views-field-title{
+							width:100%;
+							padding-left:0;
+							
+							.field-content{
+								a:link,a:visited{
+									color:#000;
+									text-decoration:none;
+									font-weight:600;
+									line-height:1.2em;
+								}
+								a:hover{
+									text-decoration:underline;
+								}
+							}
+							
+						}
+						
+						figcaption.field-tag{
+									clear:left;
+									font-style:italic;
+									font-size:.8em;
+									line-height:1.2em;
+									padding-top:8px;
+									margin-top:8px;
+								}
+					}
+				}//en li
+				
+				li:first-child{
+						margin-left:0px;
+					}
+			}//end wiche publications
+		
+		
+					
+					
+					.view-footer{
+						clear:left;
+							ul.all-wiche-pubs{
+								list-style:none;
+								background:#1c4884;
+								margin:0;
+								padding:0;
+								overflow:hidden;
+								text-align:center;
+									li{
+										display:inline-block;
+										border-right:1px solid #fff;
+											a{
+												display:block;
+												padding:2px 12px;
+												color:#fff;
+											}
+											
+										&:last-child{
+											border-right:none;
+										}
+									}
+						}//end all wiche pubs
+					}//end view footer
+				
+			}// end view pub list
+	}
+}/*end programs departments*/
+
+
+.delicious-posts{
+	padding-right:1%;
+}
+
+
+#content .profile, #content form#user-login {
+    padding:0 1%;
+}
+
+.horizontal-divider{
+	clear:both;
+    /*border-bottom:2px solid #ccc;*/
+	width:98%;
+	margin:0 auto;
+	}
+
+	
+/*Benchmarks popout slideshow*/
+	
+a.popup-element-title {
+    color:#1C4884;
+    cursor: pointer;
+    display: inline-block;
+    padding:0px;
+    position: relative;
+	font-size:1.1em;
+	font-weight:600;
+}
+#popup-active-overlay{	
+	.popup-element-body{
+		width:775px!important;	
+			.inner{
+				width:775px!important;	
+				   .popup-element-body a.popup-close-button {
+						cursor: pointer;
+						float: right;
+						position:relative;
+						z-index:20;
+					}
+				
+				p{
+					font-size:.8em;
+					line-height:1.4em;
+					color:#1C4884;
+				}
+			}
+		}
+		
+		/*mission statement front page*/
+		
+}
+
+/*custom css for accordion on front page*/
+
+.view-wiche-sep-departments-initiatives{
+	
+	.views-accordion-header{
+			background:none!important;
+		.field-content{
+			display:block;
+			a:link{
+				font-family: 'humnst777_lt_btlight_italic';
+				color:#1C4884;
+				line-height:1.2em;
+			}
+		}
+		
+		
+	}
+	
+}
+
+.ui-accordion{
+			.ui-accordion-content[role=tabpanel] {
+				border-top: 1px solid #ccc;
+			}
+		}
+
+.quick-link{
+	display:block;
+}
+
+/*custom table styling for /forum/membership/current*/
+
+.view-content table.membership{
+	width:100%;
+	margin-top:25px;
+	border-bottom: 1px solid #1e345b;
+	padding-bottom:1%;
+}
+
+.view-content table.membership td, th{
+	margin:1%;
+	border:1px solid #000;
+}
+
+
+.view-content table.membership caption{
+	font-weight:bold;
+	font-size:1.2em;
+	letter-spacing:1px;
+	margin-bottom:4px;
+}
+
+
+.view-content table.membership thead th{
+	padding-right:0;
+	border-bottom: 3px solid #1e345b;
+}
+
+.view-content table.membership thead th.views-field-title{
+	text-align:center;
+	padding: 0 1% 0 0;
+}
+
+.view-content table.membership thead th.views-field-field-bio-org-value{
+	text-align:center;
+	padding: 0 0 0 1%;
+}
+
+/*Table style for forum and alliance membership pages*/
+
+/*.view-id-list_walf_members & .view-list-alliance-members*/
+.view-list-alliance-members .view-content table.views-table tr,
+.view-id-list_walf_members .view-content table.views-table tr
+{
+	
+		th.views-field-field-bio-org,
+		td.views-field-field-bio-org{
+			text-align:left;
+			width:49%;
+			padding:2%;
+		}
+		
+		th.views-field-title,
+		td.views-field-title{
+			text-align:right!important;
+			width:49%;
+			padding:2%;
+		}
+		
+}
+
+
+.view-content table.views-table tr.even{
+	background-color:transparent;
+}
+
+/*Alliance Executive Committee*/
+
+table.waccal-exec-comm, table.walf-exec-comm{
+	margin:0;
+	
+	td{
+		h3{
+			margin:0;
+		}
+	}
+}//end table
+
+
+/*custom table styling Higher Ed Links*/
+
+#higher-ed-links{
+	
+	tr:nth-child(odd){
+		background:#ccc;
+	}
+	
+	th{
+		border:none;
+	}
+	
+	td{
+		font-size:.9em;
+		line-height:1.4em;
+		padding:4px 0;
+	}
+	
+}
+
+/*custom table styleing CHEO Participating institutions: nanslo/initiatives-projects/current-initiatives/cheo/cheo-participants*/
+
+table.cheo-institutions{
+	font-size:.8em;
+	tr{
+		border-bottom:1px solid #ccc;
+		th{
+			border:none;
+			padding: 2%;
+			background:#666;
+				h3{
+					color:#fff;
+					text-transform:uppercase;
+				}
+		   }
+		   
+		td{
+			border-right:1px solid #ccc;
+			border-left:1px solid #ccc;
+			
+			img{
+				width:100%;
+			}
+		}
+	}//end tr
+}//end table
+
+/*Western Alliance of Community college Academic Leaders*/
+
+.list-waccal-members{
+			overflow:hidden;
+	h3{
+		clear:left;
+		margin-bottom:0;
+	}
+	ul{
+		list-style:none;
+		padding:0;
+		margin:0 0 16px 0;
+		li{
+			
+			clear:left;
+			.views-field-title{
+				float:left;
+				margin-right:12px;
+			}
+			
+			.views-field-field-bio-org{
+				float:left;
+			}	
+		}
+	}
+}// end list-waccal-members
+
+/*custom css snippets*/
+
+/*Policy_exchanges*/
+.view-policyExchanges{
+	.item-list{
+		
+		h3{
+			margin-bottom:0;
+		}
+		ul{
+			li{
+				h4.field-content{
+					margin:6px 0 6px 0;
+				}
+			}
+		}
+	}
+}
+/*Policy and Data Resources Block on policy_exchanges in 2nd sidebar*/
+
+.taxon-resource{
+	ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		
+		li.policy-pub{
+			
+			.field-content{
+					p{
+						margin:0;
+						font-size:.9em;
+						line-height:1.2em;
+						
+						a:link, a:visited, a:active{
+							display:block;
+							text-decoration:underline;
+							font-size:.9em;
+							color:#1c4884;
+							}
+					}
+				}
+			
+			h1{ /*reduce h1 size for 2nd sidebar teaser block*/
+					font-weight:normal!important;
+					font-size:1em!important;
+					margin-bottom:0;
+				}
+			h2{
+				font-weight:normal;
+				a:link, a:visited, a:active{
+					text-decoration:underline;
+					font-size:.8em;
+					color:#1c4884;
+				}
+			}
+			h3{
+				display:none;
+			}
+		}
+	}
+	
+}//end taxon-resource
+
+.view-taxonomy-resources{
+	.more-link{
+		text-align:left;
+		a:link, a:visited, a:active{
+			display:block;
+			text-decoration:underline;
+			font-size:.8em;
+			color:#1c4884;
+			}
+	}
+}
+
+/*Policy Insights policy_insights*/
+
+.view-policyInsights{
+	ul{
+		li{
+			
+			span h4{
+				margin-bottom:0;
+			}
+		}
+		
+	}
+	
+}
+
+/*publications/all*/
+
+.pub-list{
+	ul{
+		/*list-style:none;*/
+		margin:0;
+		padding:0;
+		
+		li{
+			overflow:hidden;
+			/*margin-bottom:20px;*/
+			
+			.pub-image{
+				float:left;
+				margin-right:12px;
+				display:inline-block;
+				width:14%;
+			}
+			
+			.pub-description{
+				float:left;
+				display:inline-block;
+				width:65%;
+				
+				.sm-font{
+					font-size:.8em;
+				}
+				
+				h2, h5{
+					margin-top:0;
+				}
+				
+				.field-content{
+					position:relative;
+					top:-3px;
+				}
+				
+				p{
+				margin:0!important;
+				/*font-weight:normal;*/
+				a:link, a:visited, a:active{
+					color:#1c4884;
+					text-decoration:none;
+				}
+				a:hover{
+					text-decoration:underline;
+				}
+			  }
+			}
+			
+			.views-field-field-pub-pages{
+				clear:left;
+				display:block;
+			}
+			
+			p.pub-title{
+				font-weight:800;
+				margin-bottom:12px;
+				font-style:italic;
+				
+				a:link, a:visited, a:active{
+					color:#1c4884;
+					text-decoration:none;
+				}
+				a:hover{
+					text-decoration:underline;
+				}
+			}
+			
+		}
+	}
+}
+
+.clearBoth{
+	clear:both;
+}
+
+
+.boxwrap{
+	padding:16px;
+	border:2px solid #333;
+	width:88%;
+	margin:0 auto;
+	margin-bottom:30px;
+	border-radius:8px;
+	
+	h2, h3, h4{
+		margin-top:0;
+	}
+	
+	ul{
+		list-style:none;
+		
+		li{
+			font-size:.8em;
+		}
+	}
+}
+
+/*WICE SARA Toggle menu on /sara*/
+
+h2.w-sara{
+	padding: 0 0 8px 0;
+	font-weight: bold;
+	font-size:1.5em;
+}
+
+#wiche-sara-menu{
+	font-size:1em;
+	font-weight:normal;
+	color:#000;
+	line-height:1.5em;
+}
+
+#wiche-sara-menu h3{
+	font-style:italic;
+	line-height:1em;
+	margin-bottom:4px;
+}
+
+.w-sara-menu, .menu {
+    .toggle-view{
+		li{
+			p.sara-menu, p, p.knocking-8{
+				display:none;
+			}
+		}
+	}
+}
+
+ul#wiche-sara-menu {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+ul#wiche-sara-menu  ul.toggle-view li, .content ul#wiche-sara-menu  ul li{
+	margin-bottom:0!important;
+}
+
+
+ul#wiche-sara-menu  ul.toggle-view a:link{
+	font-size:.8em;
+	line-height:1.6em;
+	padding-bottom:6px;
+}
+
+ul#wiche-sara-menu  ul.toggle-view span{
+	position:relative;
+	margin-left:6px;
+	top: -2px;
+	cursor:pointer;
+}
+
+/*bio toggle on staff pages*/
+
+/*staff page ul grid*/
+
+.view-Staff-Alpha-View, .view-wiche-staff{
+	
+.views-exposed-form{
+	.views-exposed-widgets{
+			.views-exposed-widget {
+				
+				.form-item-field-user-project-contact-tid{
+				#edit-field-user-project-contact-tid{
+					width:300px;
+				}
+				}
+					input{
+							position:relative;
+							top: -3px;
+							right:-4px;
+							padding: 0 4px;
+						}
+					}
+				  }//end views-exposed-widgets
+				}
+			
+	
+	.manage-item-list{
+		ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		
+	}
+
+	ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		 
+		li.views-row{
+			width:28%;
+			display:inline-block;
+			float:left;
+			padding:0 2%;
+			position:relative;
+			height:auto;
+			height:260px;
+			line-height:1.3em;
+			
+			.field-content{
+				h2{
+					margin:0 0 4px;
+					font-size:1.2em;
+					}
+			}
+			
+			strong{
+				letter-spacing:-1px;
+			}
+			
+			ul.toggle-view{
+				
+					li{
+						cursor:pointer;
+						position:absolute;
+						top:80px;
+						left:80px;
+						height:30px!important;
+						
+						h3{
+							font-weight:normal;
+							font-size:.9em;
+							display:inline-block;
+							padding:2px;
+							}
+							
+						span{
+							color:#1c4884;
+						}
+						
+						p{
+							display:none;
+							width:500px;
+							height:auto;
+							background:#fff;
+							border:1px solid #ccc;
+							padding:16px;
+							position:relative;
+							z-index:25;
+							top:34px;
+							left:-200px;
+						}
+			  }
+		}
+		}//end li
+	}
+	
+}//end view-Staff-Alpha-View
+
+
+/*right sidebar project and initiative menus*/
+#block-menu-menu-wiche-directory, #block-menu-menu-lac-menu, .box-right, #block-menu-menu-wue,
+#block-menu-menu-psep-menu, #block-menu-menu-ask-wiche, #block-menu-menu-ice-public-menu, #block-menu-menu-interstate-passport,
+#block-menu-menu-initiatives-sor, #block-menu-menu-about-us, #block-menu-menu-resources, #block-menu-menu-statewide-trans, #block-menu-menu-facilitating-de, #block-menu-menu-news, #block-menu-menu-getting-what-yo, #knocking-explore-list, #block-menu-menu-non-traditional, #block-menu-menu-factbook, #block-block-263, #block-menu-menu-menu-nanslo-new, #block-menu-menu-aboutnanslo, #block-menu-menu-menu-nanslo-curr-initiative, #block-menu-menu-menu-nanslo-past-initiative, #block-menu-menu-menu-nanslo-creative-soluti,#block-menu-menu-policy-mega-menu-block{
+			ul.menu{
+			list-style:none;
+			margin:0;
+			padding:0 0 16px;
+			border-bottom:1px solid #ccc;
+			   li{
+				   border-bottom:none;
+				   padding-bottom:0;
+				   margin-bottom:16px;
+				   
+				  a{
+					 text-decoration:none;
+					 font-weight:400;
+					 color:#666;
+					 text-transform:uppercase;
+					 font-size:.8em;
+					 display:block;
+					 line-height:1.3em;
+				  }
+				  a:hover{
+					 text-decoration:underline;
+				  }
+			   
+			   }
+		}
+}//end secondary menu
+
+/*how to contact staff box in 1st sidebar*/
+.how-contact-staff{
+	padding:8px;
+	width: 90%;
+}
+
+/*How to Edit Staff Info*/
+
+.author-box-right{
+	
+	h5{
+		margin:0;
+		padding:0;
+	}
+	ol{
+		margin:0 0 0 16px;
+		padding:0;
+		li{
+			font-size:.8em;
+		}
+	}
+	
+}
+
+/*styling for Student Testimonial list on /studentTestimonials*/
+
+.testimonial-list{
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		
+		li:first-child{
+			/*border-top:1px solid #cccccc;*/
+			margin-top:0;
+			padding-top:16px;
+		}
+		
+		li{
+			padding-bottom:16px;
+			border-bottom:1px solid #ccc;
+			margin-top:16px;
+			overflow:hidden;
+			
+			.testimonial-photo{
+				float:left;
+				margin-right:8px;
+				position:relative;
+				top:6px;
+				width:10%;
+			}
+			
+			.testimonial-body{
+				float:left;
+			}
+			
+			.field-content{
+				clear:left;
+			}
+		}
+		
+		li:last-child{
+			border-bottom:none;
+		}
+	}
+}
+
+
+/*WICHE /policy_insights page & Western Policy Exchange*/
+.view-policyInsights, .view-policyExchanges, .view-publications{
+	.item-list, .pub-list{
+		h3{
+			/*clear:left;*/
+			font-size:1.2em;
+			padding:6px;
+			color:#fff;
+			background:#1c4884;
+		}
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		/*display:table;*/
+		width:100%;
+		
+		li{
+			
+			h4 a:link, h4 a:visited, h4 a:active, h4 a:hover{
+				font-style:italic;
+				font-weight:bold;
+				font-size:1em;
+				color:#000;
+				line-height:1.1em;
+			}
+			a:link, a:visited, a:active {
+				color: #1c4884;
+				/*font-size: 0.9em;*/
+				font-weight: 600;
+				padding:12px 20px 12px 0;
+				text-decoration: none;
+				/*line-height:.9em!important;*/
+			}
+			
+			a:hover{
+				text-decoration:underline;
+			}
+		}
+	} //end ul
+	}// end .item-list
+}// view-policyInsights
+
+/*2nd sidebar Commission and LAC blocks for state highlight pages*/
+.view-Commission-Block-View,
+.view-legislative-advisory-committee-block-view{
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		
+		li{
+			border-bottom:1px solid #ccc;
+			margin-top:16px;
+			
+			.small{
+				font-size:.9em;
+				line-height:1em;
+			}
+		}
+		
+		li:last-child{
+			border-bottom:none;
+		}
+	} //end ul
+	
+}//view-Commission-Block-View
+
+/*override much zen css font-sizes on upcoming events block on home page*/
+
+.region-sidebar-second{
+	ul{
+		li{
+			/*border-bottom:1px solid #ccc;*/
+			margin-bottom:6px;
+			padding-bottom:12px;
+				.views-field-field-date-display{
+					h3.field-content{
+						font-size:1em;
+						font-weight:100;
+						margin:0;
+					}
+				}
+			/*.views-field-title{
+				h2.field-content{
+					font-size:1.2em;
+					font-weight:400;
+					margin:8px 0 8px;
+				}
+			}*/
+		}//end li
+		/*li:last-child{
+			border-bottom:none;
+		}*/
+	}//end ul
+	
+}// end region-sidebar-second column sidebar
+
+.front-page .region-sidebar-second{
+	ul{
+		li{
+			padding-bottom:16px;
+			border-bottom:1px solid #ccc;
+		}
+		
+	}
+	
+}
+
+/*some h2s in the 1st and 2nd sidebar need more top margin but not all of them*/
+/*#block-menu-menu-interstate-passport, #block-menu-menu-initiatives-sor, #block-menu-menu-psep-menu, .region-sidebar-first, #block-menu-menu-resources, #block-block-260, #block-block-264, #block-views-210e6048e21942227c4a4d3a48bf8e06, #block-views-publication-blocks-block-3, #block-views-publication-blocks-block-4, #block-menu-menu-statewide-trans, #block-menu-menu-facilitating-de, #block-menu-menu-getting-what-yo, #block-block-27, #block-block-273, .w-sara-menu, #block-menu-menu-lac-menu, #block-menu-menu-non-traditional, #block-menu-menu-factbook{
+	h2{
+		margin-top:16px!important;
+	}
+}*/
+
+/*student testimonial slideshow on front page*/
+#views_slideshow_cycle_main_testimonial_slider-block{
+		width:auto;
+		height:auto;
+		.testimonial-wrapper{
+			overflow:hidden;
+			.testimonial-photo{
+				float:left;
+				margin-right:8px;
+				width:40%;
+				}
+						   
+			.student-details{
+				float:left;
+				width:55%;
+				font-size:12px;
+				line-height:1.3em;
+				}
+						   
+			.testimonial-text{
+				clear:left;
+				font-size:12px;
+				line-height:1.4em;
+				}
+			 }
+		}//end views_slideshow
+
+/*misc css*/
+.dark_blue{
+	color:#1c4884;
+	line-height:1.2em!important;
+}
+
+/*css table code for css based tables with pic on left, text on right*/
+
+.faux-table{
+	width:100%;
+	display:table;
+	margin-bottom:16px;
+	
+	h3{
+	margin:0;
+	font-size:1.2em;
+	}
+
+	
+	.tr-row{
+		display:table-row;
+	}
+	.td-cell_20{
+		display:table-cell;
+		width:10%;
+		vertical-align:top;
+	}
+	
+	.td-cell{
+		display:table-cell;
+		width:30%;
+		vertical-align:top;
+	}
+	
+	.td-cell_70{
+		display:table-cell;
+		width:68%;
+		padding-left:16px;
+		vertical-align:top;
+		
+		span{
+			display:block;
+		}
+	}
+}//end
+
+
+
+.faux-three-col-table{
+		width:100%;
+		display:table;
+		
+		
+	.trow{
+		width:100%;
+		display:table;
+		}
+		
+		
+	.col-one{
+			display:table-cell;
+			vertical-align:top;
+			width:187px;
+			padding-right:20px;
+		}
+		
+	.col-two{
+			display:table-cell;
+			vertical-align:top;
+			width:187px;
+			padding-right:20px;
+		}
+	
+	.col-three{
+			display:table-cell;
+			vertical-align:top;
+			width:187px;
+		}
+
+}//end 3-col faux table
+
+
+
+.sara-two-col-table{
+		width:100%;
+		display:table;
+		
+		
+	.sara-col-one{
+			display:table-cell;
+			vertical-align:top;
+			width:45%;
+			padding:0 12px 0;
+			margin:0 12px 0;
+		}
+		
+	.sara-col-two{
+			display:table-cell;
+			vertical-align:top;
+			width:45%;
+			padding:0;
+		}
+}//end 2-col faux table
+
+
+/*hide this thing*/
+.node-state-highlights{
+	.node-readmore, .comment-add{
+		display:none;
+	}
+	
+	.field-name-field-state-tagline{
+		font-style:italic;
+		line-height:1.8em;
+		margin-bottom:10px;
+	}
+}
+
+.student-savings-box{
+	padding:16px;
+	border:2px solid #333;
+	width:50%;
+	margin:0 auto;
+	margin-bottom:30px;
+	
+	legend{
+		font-weight:bold;
+		font-size:1.5em;
+	}
+	
+	.fieldset-wrapper{
+		.field-label{
+			width:60%;
+		}
+		
+		.field-items{
+			text-align:right;
+			width:40%;
+		}
+		
+		
+		.field-name-field-state-fig1-total2{
+			border-top:2px solid #ccc;
+			padding-top: 4px;
+			margin-top:4px;
+			
+			.field-items .field-item{
+				font-style:italic;
+			}
+		}
+		
+.field-name-field-state-fig1-total{
+			border-top:2px solid #ccc;
+			padding-top: 4px;
+			margin-top:4px;
+			
+			.field-items .field-item{
+				font-style:italic;
+			}
+		}
+	}
+}
+
+/*jquery toggle menu for /knocking-8th/technicalNotes*/
+
+.knocking-dropdown{
+	.toggle-view{
+		li{
+			cursor:pointer;
+		}
+		p{
+			display:none;
+		}
+	}
+}
+
+article .field-name-field-state-investment{
+	margin-top:10px;
+}
+
+/*passport info page summary css*/
+.passport-summary{	
+	background:none;
+	width:90%;
+	height:auto;
+	overflow:hidden;
+	display:table;
+    margin-bottom:12px;
+	padding-bottom:12px;
+	border-bottom:1px solid #ccc;
+	
+	   .tr{
+	
+		   display:table-row;
+
+		   
+		.td-cell-30{
+			display:table-cell;
+			vertical-align:top;
+			width:40%;
+		}//end td
+	
+				.td-cell-60{
+					display:table-cell;
+					width:60%;
+					vertical-align:top;
+					
+					
+					p{
+						margin:0!important;
+						padding:0 0 12px;
+						position:relative;
+						top:-3px;
+					}
+					
+					h3{
+							color:#000;
+							text-shadow:none;
+							font-size:1.3em;
+							line-height:1.5em;
+							font-weight:400;
+							}
+			}//end td
+	   }// end tr
+}//end passport summary
+
+
+
+
+
+@media all and (min-width: 1280px) {
+	 #page .view-content .item-list-lac ul li{
+			float:left;
+			width:32%;
+		}
+	
+.header{
+		 .phone-nav{
+			 display:none;
+		  }
+	
+			 #block-search-form{
+			  position:absolute;
+			  width:25%;
+			  top:53px;
+			  right:25px;
+			  
+			.searchWiche .form-item input.form-text[type="text"] {
+						width: 80%;
+				  }
+		  }
+	 }// end header
+	 
+	 #main, #main-front{
+		 padding-top:2em;
+		 
+		 .wiche-region{
+			display:block!important;
+		  }
+		 
+		 .region-highlighted{
+			  #block-menu-menu-interstate-passport{
+				  display:none;
+			  }
+		  }
+		 
+		 #programs-departments{
+				overflow:hidden;
+				width:100%;
+				clear:both;
+		/*wiche publications block for front page*/
+		#block-views-publications-list-block{
+			background:#ccc;
+			overflow:hidden;
+			margin-bottom:0;
+				h2{
+					padding:8px 0 8px 14px;
+					color:#fff;
+					margin:0;
+					border-bottom:none;
+				}
+				
+				.view-publications-list{
+					clear:both;
+					.view-footer{
+							ul.all-wiche-pubs{
+								list-style:none;
+								background:#225aa8;
+								margin:0;
+								padding:8px;
+								overflow:hidden;
+								text-align:center;
+									li{
+										display:inline-block;
+										border-right:1px solid #fff;
+											a{
+												display:block;
+												padding:2px 12px;
+												color:#fff;
+												
+												&:focus{
+													text-decoration:underline;
+												}
+											}
+											
+										&:last-child{
+											border-right:none;
+										}
+									}
+						}//end all wiche pubs
+					}//end view footer
+				}
+/*publications list on front page*/
+			
+			.wiche-publications .thumb-right{
+				float:left;
+				width:45%;
+				padding-right:12px;
+			}		
+			
+			.wiche-publications .info-left{
+				float:left;
+				width:45%;
+				
+				.dwn-frnt-pg{
+					a{
+						font-size:.7em;
+					 }
+				}
+			}
+			
+		}
+
+}/*end programs departments*/
+	 }
+	 
+	
+
+  /*Page Views, Exposed filters custom css*/
+
+#views-exposed-form-Staff-Alpha-View-page-3{
+	position:relative;
+	.views-exposed-form{
+		
+	#edit-tid-wrapper{
+		float:none;
+	}
+	
+	#edit-field-bio-projectcontact-tid-wrapper{
+		
+		float:none;
+		select{
+			width:100%;
+		}
+	}
+	
+	.views-submit-button{
+		/*position:absolute;
+		top:85px;
+		left:0;*/
+	}
+	
+	.views-reset-button{
+		/*position:absolute;
+		top:85px;
+		left:75px;*/
+	}
+	
+	}//end views-exposed-form
+	
+}//#views-exposed-form-Staff-Alpha-View-page-3
+
+	
+	.header{
+		 .region-phone-nav{
+			 display:none;
+		  }//end region-phone-nav
+		  
+	 }// end header
+ 
+ 
+   /*
+   * The layout when there is only one sidebar, the left one.
+   */
+
+  .sidebar-first {
+    #content { /* Span 2 columns, starting in 2nd column from left. */
+     @include zen-grid-item(2, 2);
+	 
+	 ul li .field-content p{
+			font-size:80%;
+		}
+		
+		/*hide teaser titles on passport/information-resources*/
+		.view-passport-information-resources{
+			article header .node-title{
+				display:none;
+			}
+		}
+		
+		.ncbanner{
+			background: url("/sites/all/themes/zen_wiche/images/NewsCapWebBAnner.png") no-repeat;
+			max-width:860px;
+			height:360px;
+			position:relative;
+			margin:0 0 20px;	
+			 }
+	
+	.Tagline{
+			position:absolute;
+			top:279px;
+			width:100%;
+			display:table-cell;
+			text-align:center;
+			/*left:100px;*/
+		
+		h3.newstag{
+			font-family:Verdana, sans-serif;
+			color:#666;
+			font-size:1.4em;
+			line-heightL:1.1em;
+		}
+	} 
+	
+	h2{
+		margin:0;
+	}
+	
+			img.newscap-photo, .newscap-photo{
+				float: left;
+				margin: 4px 16px 0 0px;
+				max-width: 220px;
+				height:auto;
+				
+				p.caption{
+					margin:0 0 4px!important;
+				}
+			}
+			
+			img.newscap-headshot{
+				float: left;
+				margin: 4px 16px 0 0px;
+				max-width: 125px;
+				height:auto;
+				
+				p.caption{
+					margin:0 0 4px!important;
+					font-size:.8em;
+					line-height:.9em;
+				}
+			}
+		
+			img.newscap-headshot-right{
+				float: right;
+				margin: 4px 0 0 16px;
+				max-width: 125px;
+				height:auto;
+				
+				p.caption{
+					margin:0 0 4px!important;
+					font-size:.8em;
+					line-height:.9em;
+				}
+			}
+	
+	 .newscap-photo-horizontal{
+			  	.nc-horizontal-img{
+				  width:45%;
+				  float:left;
+					padding:12px;
+					img{
+						width:390px;
+						height:205px;
+						overflow:hidden;
+					}
+			  }
+		  }
+	
+	.newscap-photo-horizontal .nc-horizontal-img{
+		p.caption{
+					margin:0 0 4px!important;
+					font-size:.9em;
+					line-height:1.1em;
+				}
+	}
+	
+}
+    }//end one sidebar layout #content
+
+    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+      @include zen-grid-item(1, 1);
+		padding-left:16px;
+		width:23.5%;
+		ul.newscap-menu{
+			position:fixed;
+			list-style:none;
+			background:#fff;
+			width:100%;
+			max-width:275px;
+			z-index:25;
+			padding:0;
+			border-bottom:1px solid #ccc;
+			font-size:90%;
+			line-height:1.1em;
+			/*margin:0 0 0 16px;*/
+				li{
+					margin-bottom:12px;
+					strong{
+						font-weight:700;
+					}
+					a{
+						
+					}
+				}
+			h2{
+				color: #1c4884;
+				border-bottom:2px solid #ffcc00;
+				text-transform: uppercase;
+			}
+		}//end ul.newscap-menu
+     }//end .region-sidebar-first
+	}
+
+
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+
+  .sidebar-second {
+    #content { /* Span 2 columns, starting in 1st column from left. */
+      @include zen-grid-item(2, 1);
+
+    }
+
+    .region-sidebar-second { /* Span 1 column, starting in 3rd column from left. */
+      @include zen-grid-item(1, 3);
+    }
+  }
+
+  /*
+   * The layout when there are two sidebars.
+   */
+
+  .two-sidebars {
+    #content { /* Span 3 columns, starting in 2nd column from left. */
+      @include zen-grid-item(3, 2);
+		
+		border-left:1px solid #ccc;
+		border-right:1px solid #ccc;
+		padding:0 16px;
+		width:55%;
+	  
+	  	.view-wiche-tags{
+			  li{
+						border-bottom:1px solid #ccc;
+							}
+							
+					li:last-child{
+							border-bottom:none;
+							}
+							
+			}//end wiche tags
+		
+		.region-highlighted{
+			#block-multiblock-2,
+			p.passport-phone-header,
+			#block-multiblock-1,
+			#block-menu-menu-walf-menu,
+			#block-menu-menu-waccal,
+			#block-menu-menu-ice-public-menu,
+			#block-menu-menu-interstate-passport,
+			#block-menu-menu-aboutnanslo{
+				display:none;
+			}
+		}
+			
+		}//end #content
+
+    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+     @include zen-grid-item(1, 1);
+		margin-left: 8px;
+		padding: 1%;
+		width: 17%;
+		
+			#block-nice-menus-2{
+				display:block;
+			}
+		
+		}
+
+    .region-sidebar-second { /* Start a new row and span all 3 columns. */
+      @include zen-grid-item(1, 5);
+      @include zen-nested-container(); // Since we're making every block in this region be a grid item.
+      /*@include zen-clear();*/
+		
+		width:18%;
+
+/*hide recent policy publications block because it looks awkward*/
+#block-views-210e6048e21942227c4a4d3a48bf8e06{
+	/*display:none;*/
+}
+    }
+	 
+	   //css rules for /passport/passport-contact-page
+	 .view-passport-contact-page ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		 
+		li{
+			width:100%;
+			display:block;
+			float:none;
+			padding:0 0 16px;
+			margin:0 0 16px;
+			position:relative;
+			height:auto;
+			line-height:1.2em;
+			
+			.pp-staff-left{
+				width:35%;
+				float:left;
+				display:inline-block;
+				margin-right:8px;
+			}
+			.pp-staff-right{
+				width:40%;
+				float:left;
+				display:inline-block;
+				font-size:.9em;
+			}
+		}
+
+    }//end .view-passport-contact-page
+	  
+	  
+  }//end .two-sidebars
+
+
+#content {  	
+	article.view-mode-full, .advanced-help-topic{
+	padding:0;
+
+		ul li, ol li{
+			/*font-size:12px;*/
+			margin:12px 0;
+		}
+		
+		.faux-four-col-table{
+				width:80%;
+				display:table;
+				margin:0 auto;
+		
+			.four-col-col-one{
+					display:table-cell;
+					vertical-align:top;
+					width:21%;
+					padding:2% 2% 2% 0;
+				}
+				
+			.four-col-col-two{
+					display:table-cell;
+					vertical-align:top;
+					width:21%;
+					padding:2%;;
+				}
+			
+			.four-col-col-three{
+					display:table-cell;
+					vertical-align:top;
+					width:21%;
+					padding:2%;
+				}
+				
+			.four-col-col-four{
+					display:table-cell;
+					vertical-align:top;
+					width:21%;
+					padding:2% 0 2% 2%;
+				}
+		
+		}//end 4-col faux table
+		
+/*custom css for table on /psep/supp-fees*/	
+	#psep-support{
+		border:1px solid #ccc;
+		padding:16px;
+		width:80%;
+		margin:0 auto;
+		table{
+			h2{
+				margin:0 0 16px;
+			}
+			margin:0;
+			padding:0;
+			width:100%;
+			th{
+				border:none;
+				color:#fff;
+				background:#1c4884;
+				font-size:1.1em;
+			}
+			tr:nth-child(even){
+				background:#ccc;
+			}
+		}
+	}
+
+	.pub-top {
+		overflow:hidden;
+			.pub-left{
+				float:left;
+				width:20%;
+				margin:0;
+				padding:0;
+			}
+		
+			.pub-right{
+				font-size:12px;
+				float:left;
+				width:50%;
+			}
+		}// end pub top
+		
+		.pub-description{
+			/*table styling*/
+			
+				
+				table{
+					
+					td{
+						margin:4px 0;
+						
+						font-size:.9em;
+					}
+					
+					h2{
+						margin:0;
+					}
+					
+					border-collapse: separate;
+    				border-spacing: 10px;
+					
+					h3 a{
+						margin-top:0;
+					}
+			}
+	}
+  }
+  
+  .region-highlighted{
+	  .hot-mh-pubs{
+		  display:table;
+			width:100%;
+			.col-one{
+				display:table-cell;
+			
+				vertical-align:top;
+				padding:2%;
+				.caption{
+					font-size:.8em;
+					font-style:italic;
+				}
+			}
+			
+			.col-two{
+				display:table-cell;
+			
+				vertical-align:top;
+				padding:2%;
+				
+				.caption{
+					font-size:.8em;
+					font-style:italic;
+				}
+			
+			}
+			
+			
+	  	}
+  	}
+	
+		/*PSEP table on /rwsl-experiments*/
+	  
+article table#psep-support-fees{
+	font-size:.8em;
+	width:100%;
+	border-bottom:2px solid #000;
+	margin-bottom:16px;
+
+		th{
+			background-color:transparent;
+			/*color:#fff;*/
+			text-align:center;
+			border-right:1px solid #fff;
+			border-top:2px solid #1c4884;
+			border-left:none;
+			padding:1% 0;
+			font-size:1.3em;
+		}
+
+		th.subhead{
+			background:#1c4884;
+		}
+
+		th.subhead h3{
+			margin:0;
+			color:#fff;
+		}
+
+		th:last-child{
+			border-right:none;
+		}
+
+		td{
+			padding:2%;
+			border-right:1px solid #000;
+			vertical-align:top;
+		}
+
+		td:first-child{
+			font-weight:bold;
+			vertical-align:middle;
+			text-align:center;
+			font-size:1em;
+		}
+
+
+		td:last-child{
+			border-right:none;
+		}
+
+		tr:nth-child(even){
+			background:#ccc;
+		}
+
+		tr:first-child th{
+			border-bottom:2px solid #fff;
+		}
+	  
+}
+
+}// end content
+
+  .sidebar-first {
+    #content { /* Span 4 columns, starting in 2nd column from left. */
+      @include zen-grid-item(4, 2);
+	  width:72%;
+	  margin-left:26%;
+	  padding:0 1%;	
+	  border-left:1px solid #ccc;
+		
+	.view-alpha-list-wiche-initiatives h2{
+			/*clear:left;*/
+			font-size:1.2em;
+			padding:6px;
+			color:#fff;
+			background:#1c4884;
+		}
+	  
+	  .region-highlighted{
+			#block-multiblock-2,
+			p.passport-phone-header,
+			#block-multiblock-1,#block-menu-menu-walf-menu,
+			#block-menu-menu-waccal,
+			#block-menu-menu-ice-public-menu{
+				display:none;
+			}
+		}
+	  
+	  article{
+		  ul.page-list{
+						border:1px solid #ccc;
+						list-style:none;
+						padding:0;
+						margin:0;
+						width:50%;
+						margin:0 auto;
+						
+						li{
+							border-bottom:1px solid #ccc;
+							padding-right:20px;
+							a{
+								display:block;
+								padding:4px 8px;
+								line-height:2em;
+							}
+						}
+						
+						li:last-child{
+							border:none;
+						}
+					}
+					
+									  /*passport home faux table*/
+/*.passport-home{	
+	background:url(images/passport-girl.jpg) 0 0 no-repeat;
+	width:100%;
+	height:300px;
+	overflow:hidden;
+	padding:4% 0;
+	display:table;
+	
+		td-cell-30{
+			display:table-cell;
+			width:30%;
+		}
+	
+		.td-cell-60{
+			display:table-cell;
+			width:65%;
+			vertical-align:top;
+			padding:0 2.5%;
+			
+			li{
+				
+				list-style-image:url(images/white-arrow-right.png);
+				h3{
+					color:#fff;
+					text-shadow:1px 1px #000;
+					font-size:1.4em;
+					line-height:1.6em;
+					font-weight:400;
+					}
+			}
+	}
+}*///end passport faux table
+
+/*passport banner image*/
+
+		.pass-instutions{
+			background:url(images/institutions.jpg) 0 0  no-repeat;
+			height:380px;
+			position:relative;
+			padding:6% 6% 0 6%;
+			overflow:hidden;
+			
+			h2{
+				color:#fff;
+				text-shadow:2px 2px #000;
+				font-size:3em;
+				font-weight:700;
+				margin:0;
+				padding:0;
+				line-height:1.4em;
+			}
+		}// end pass-instuitions
+
+.pass-policy{
+			background:url(images/policy-researchers.jpg) 0 0  no-repeat;
+			height:380px;
+			position:relative;
+			padding:6% 6% 0 6%;
+			overflow:hidden;
+			margin-bottom:16px;
+			h2{
+				color:#fff;
+				text-shadow:2px 2px #000;
+				font-size:3em;
+				font-weight:700;
+				margin:0;
+				padding:0;
+				line-height:1.4em;
+			}
+
+		}// end pass-instuitions
+		
+		.pass-registrar{
+			background:url(images/registrar.jpg) 0 0  no-repeat;
+			height:380px;
+			position:relative;
+			padding:6% 6% 0 6%;
+			overflow:hidden;
+			margin-bottom:16px;
+			h2{
+				color:#fff;
+				text-shadow:2px 2px #000;
+				font-size:3em;
+				font-weight:700;
+				margin:0;
+				padding:0;
+				line-height:1.4em;
+				position:absolute;
+				bottom:35px;
+			}
+		}// end pass-registrar
+		  
+		 
+		
+	  }//end article
+	  
+		
+		
+	
+#main-front{
+	#content{
+		.node-promoted{
+			display:none!important;
+		 }
+	}
+}
+
+.region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+      @include zen-grid-item(1, 1);
+	
+	  width:21%;	
+	 /* background: #666666;*/
+	  padding:0 1%;
+	  margin-left:1%;
+	  
+	  p{
+		  /*color:#fff;*/
+		  a:link, a:visited, a:active{
+			  /* color:#fff;*/
+		  }
+		  
+		  a:hover{
+			  
+		  }
+		  
+		  margin:0;
+	  }
+	  
+	  h2, h3, h4{
+		 /* color:#000;
+		  padding-bottom:6px;
+		  margin-bottom:8px;
+		  a:link, a:visited, a:active{
+			   color:#fff;
+		  }
+		  
+		  a:hover{
+			  
+		  }*/
+	  }
+	  
+	  ul{
+		  list-style:none;
+		  margin:0;
+		  padding:0;
+		  li{
+			   a:link, a:visited, a:active{
+			   color:#1c4884;
+		  }
+		  
+		  a:hover{
+			  color:#000;
+		  }
+			  
+		  }
+	  }
+	
+		.newscap-menu{
+			background:#fff;
+			max-width:13%;
+			z-index:25;
+			padding:12px;
+			border-bottom:1px solid #ccc;
+			font-size:90%;
+			line-height:1.1em;
+		}
+    }//end .region-sidebar-first
+
+	
+	/*testimonial slide show on front page*/
+
+	#block-views-testimonial-slider-block{
+		
+		h2.block-title{
+			margin-bottom:0;
+		}
+		font-size:.8em;
+		line-height:1.2em;
+		
+		/*student testimonial custom css starts here*/
+		
+		.testimonial-wrapper{
+			overflow:hidden;
+			h3{
+				font-family: 'humnst777_cn_btbold';
+				margin:4px 0;
+				padding:0;
+				line-height:2em;
+			}
+			
+			.testimonial-photo{
+				float:left;
+				display:inline-block;
+				width:30%;
+				margin-right:9px;
+			}
+			.student-details{
+				font-family:'humnst777_lt_btlight_italic';
+				float:left;
+				display:inline-block;
+				width:65%;
+				
+				h4{
+					margin:0;
+					padding:0;
+				}
+				
+				ul{
+					margin:0 0 0 12px;
+					padding:0;
+					
+				}
+			}/*end student details*/
+			
+			.testimonial-text{
+				clear:left;
+				dispay:block;
+				width:100%;
+				line-height:1.5em;
+				p{
+					margin:8px 0;
+				}
+			}
+			
+		}
+		
+	}/*end block-views-testimonial-slider-block*/
+
+			.nice-menu-menu-interstate-passport{
+					position:relative;
+					z-index:20;
+				}
+
+  }/*end region sidebar first*/
+
+  
+/*Page Views, Exposed filters custom css*/
+
+#views-exposed-form-Staff-Alpha-View-page-3{
+	position:relative;
+	
+	.views-exposed-form{
+		
+		#edit-tid-wrapper{
+			float:left;
+		}
+		
+		#edit-field-bio-projectcontact-tid-wrapper{
+			
+			float:left;
+			max-width:400px;
+			select{
+				width:100%;
+			}
+		}
+		
+		.views-submit-button{
+			
+		}
+		
+		.views-reset-button{
+			
+		}
+	
+	}//end views-exposed-form
+	
+}//#views-exposed-form-Staff-Alpha-View-page-3
+
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+
+  .sidebar-second {
+    #content { /* Span 4 columns, starting in 1st column from left. */
+      @include zen-grid-item(4, 1);
+	  
+	  padding-left:16px;
+	  
+    }
+
+    .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
+      @include zen-grid-item(1, 5);
+    }
+  }
+
+  /*
+   * The layout when there are two sidebars.
+   */
+
+  .two-sidebars {
+    #content { /* Span 3 columns, starting in 2nd column from left. */
+      @include zen-grid-item(2, 3);
+	  
+	  .region-highlighted .flex-control-nav {
+			bottom: -50px;
+		}
+		
+		margin-left:20%;
+		margin-right:-78%;
+		width:55%;
+		padding:0 16px;
+		border-right:1px solid #ccc;
+		border-left:1px solid #ccc;
+		
+		ul li .field-content p{
+			font-size:90%;
+		}
+		
+		h2.field-content{
+			font-weight:normal;
+			/*font-size:1.2em;*/
+			margin-bottom:0px!important;
+		}
+		
+		.region-highlighted{
+			#block-multiblock-2,
+			p.passport-phone-header,
+			#block-multiblock-1,#block-menu-menu-walf-menu,
+			#block-menu-menu-waccal,
+			#block-menu-menu-ice-public-menu{
+				display:none;
+			}
+		}
+		
+		/*kill bullets on specific lists & remove h3 bottom margin*/
+		.view-states-projects, .view-Newscap, .view-policyInsights, .view-passport-instate{
+			
+			.item-list:nth-child(odd)
+				{
+					
+				} 
+			
+			.item-list h3{
+				margin:8px 0 0;
+			}
+			/*top- margin removed for /policy_insights*/
+			h3.field-content{
+				margin:8px 0 0;
+			}
+			
+			ul{
+				list-style:none;
+				margin:0 0 0 0;
+				padding-left:0;
+					li{
+						margin-bottom:16px;
+					}
+			}//end ul
+		}//end view-states-projects
+		
+		/*passport home faux table*/
+.passport-home{	
+	background:url(images/passport-girl.jpg) 0 0 no-repeat;
+	width:100%;
+	margin:0 auto;
+	height:300px;;
+	overflow:hidden;
+	padding:4% 0;
+	display:table;
+	
+		.tr-row{
+		display:table-row;
+	
+		td-cell-30{
+			display:table-cell;
+			width:36%;
+		}
+	
+		.td-cell-60{
+			display:table-cell;
+			width:60%;
+			vertical-align:top;
+			padding:0 2.5%;
+			
+			li{
+				
+				list-style-image:url(images/white-arrow-right.png);
+				h3{
+					color:#fff;
+					text-shadow:1px 1px #000;
+					font-size:1.5em;
+					line-height:1.7em;
+					font-weight:400;
+					}
+			}
+	}
+	
+  }//end tr-row
+}	//end Passport-home	
+		
+		/*Delicious Links on home page*/
+		
+		.view-delicious-home{
+			ul{
+				list-style:none;
+				margin:0;
+				padding:0;
+				li{
+					font-size:12px;
+				}
+			}
+		}
+
+				article{	
+				
+
+					
+					ul{
+						li{
+							margin-bottom:12px;
+							/*font-size:12px;*/
+						}
+					}
+					
+					ul.page-list{
+						border:1px solid #ccc;
+						list-style:none;
+						padding:0;
+						margin:0;
+						width:50%;
+						margin:0 auto;
+						
+						li{
+							border-bottom:1px solid #ccc;
+							padding-right:20px;
+							a{
+								display:block;
+								padding:4px 8px;
+								line-height:2em;
+							}
+						}
+						
+						li:last-child{
+							border:none;
+						}
+					}
+				}
+
+/*tables in ice executive committee view*/		
+		.view-list-ice-exec-committee{
+			h4{
+				margin:0;
+			}
+			h3{
+				margin-top:4px;
+			}
+			.ice-pic{
+				margin:0;
+				
+				td{
+					font-size:.8em;
+					vertical-align:top;
+					h4{
+						font-size:1.2em;
+						margin:0;
+					}
+					
+					img{
+						width:100%;
+						height:auto;
+						max-width:60px;
+						margin-right:12px;
+					}
+				}
+			}
+		}
+		
+		article{
+					
+					.col-one{
+						float:left;
+						width:30%;
+						padding-right:16px;
+						border-right:1px solid #ccc;
+					}
+					
+					.col-two{
+						float:left;
+						width:60%;
+						padding-left:16px;
+					}
+		}
+		
+		h2.knowledge-base{
+			font-weight:700;
+			font-size:1.4em;
+			letter-spacing:1px;
+			border-bottom:2px solid #1c4884;
+			padding-bottom:4px;
+		}
+		
+		.region-highlighted{
+				#block-menu-menu-ice-public-menu{
+					display:none;
+				}
+			}
+		
+		.view-wiche-staff{
+			margin-top:16px;
+		}
+    }//end content
+
+    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+      /*@include zen-grid-item(1, 1);*/
+	  
+		float: left;
+		margin-left: 8px;
+		margin-right: -20%;
+		padding: 0 1%;
+		width: 17%;
+		
+	  h2{
+			margin:0 0 16px 0;
+			padding-top:8px;
+		}
+	 
+	
+	  width:17%;
+	  padding:0 1%;
+	
+	  p{
+		  color:#000;
+		  font-size:12px;
+		  line-height:1.4em;
+			  a:link, a:visited, a:active{
+				   color:#1c4884;
+				   text-decoration:underline;
+			  }
+			  
+			  a:hover{
+				 color:#000!important; 
+			  }
+	  }
+	  
+	  
+	  /*quicklinks accordion on front page*/
+	  
+#block-views-accordion-quick-links-block, #block-views-accordion-quick-links-block-2, #block-views-accordion-quick-links-block-1{
+		  .ui-accordion{
+			  .views-accordion-header{
+				  .field-content{
+					  a{
+						  font-size:.8em;
+						  display:block;
+						  padding:1px 0 0 0;
+						  
+						  &:hover{
+							  text-decoration:underline;
+						  }
+						  
+						  &:focus{
+							  text-decoration:underline;
+						  }
+					  }
+				  }
+			  }
+		  }
+	  }//end #block-views-accordion-quick-links-block
+	  
+	    .view-commissioner-calendar{
+			  .item-list{
+				  ul{
+					  margin-top:16px;
+					  li{
+						  font-size:1em;
+						  font-weight:600;
+						  margin-bottom:8px;
+						  padding-bottom:8px;
+						  border-bottom:1px solid #ccc;
+						  
+						  .location{
+							  font-size:.9em!important;
+							  font-weight:100!important;
+						  }
+					  }
+				  }
+			  }
+		  }
+	  
+	  #block-views-testimonial-slider-block{
+			  border-top:1px solid #ccc;
+			  margin-top:16px;
+			  padding-top:8px;
+		  }
+	  	  
+	h2{
+		  color:#1c4884;
+		  border-bottom:1px solid #fff;
+		  padding-bottom:3px;
+		  margin-bottom:0px;
+		  margin-top:0px!important;
+		  }
+		  
+	  h3, h4{
+		  color:#000;
+		  border-bottom:1px solid #fff;
+		  padding-bottom:6px;
+		  margin-bottom:8px;
+		  
+		  a:link, a:visited, a:active{
+			   color:#000;
+		  }
+	
+		  
+		  a:hover{
+			  
+		  }
+	  }
+	  
+		  ul{
+			  list-style:none;
+			  margin:0;
+			  padding:0;
+				  li{
+					   a:link, a:visited, a:active{
+					   color:#000;
+				  }
+				  
+				  a:hover{
+					  
+				  }
+				  
+			  }
+			  
+			  
+		  }
+	 
+	#block-views-testimonial-slider-block{
+       h2.block-title{
+	     font-size:1.4em;
+		 margin-bottom:0;
+	   }
+	   
+	   .views-field-field-sep-program{
+			H2.sep{
+				font-size:1.2em;
+				margin:8px 0;
+				display:inline-block;
+			}
+	   }
+      }
+	  
+	  .view-knowledge-base-page{
+		  ul{
+			  li{
+				  a:link, a:visited, a:active{
+					  font-size:.8em;
+					  line-height:1em;
+					  display:block;
+					  background:url(images/blue-arrow-right.png) 0 2px no-repeat;
+					  padding: 0 0 6px 16px;
+				  }
+			  }
+		  }
+	  }
+	} // end region-sidebar-first
+	
+    .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
+     @include zen-grid-item(1, 5);
+	  
+	  padding-top:0!important;
+	  /*width:16%!important;*/
+	  float: left;
+	  
+	  #block-menu-menu-ask-wiche .menu li a{
+					font-weight:600;
+					background:#1c4884;
+					color:#fff;
+					margin-top:16px;
+					font-size:1.1em;
+					border-radius:10px;
+					padding:6px;
+					text-align:center;
+					text-decoration:none
+				} 
+				
+				 #block-menu-menu-ask-wiche .menu li a:hover{
+					background:#245eac;
+				 }
+				
+	  
+			#block-views-calendar-2-block-2{
+				.view-calendar-2{
+					/* h3 {
+							font-size: 1.2em;
+							line-height: 1.2em;
+							margin-bottom:0;
+							margin-top: 1em;
+						}*/
+					
+					strong{
+						color:#1c4884;
+					}
+				}//end view-calendar-2 
+				
+			}//endlock-views-cal
+			
+			.block-nice-menus{
+				position:relative;
+				z-index:20;
+			}
+   
+  ul.commish-items, .view-id-passport_contact_page ul {
+				list-style:none;
+				margin:0;
+				padding:0;
+				
+				li{
+					margin-bottom:16px;
+					padding-bottom:16px;
+					border-bottom:1px solid #ccc;
+				}
+			}
+		
+		.block{
+			
+				/*.front-featured-pub .pubblock-list ul li h2.field-content{
+					background-color:transparent;
+						a:link, a:visited, a:active{
+							color:#1c4884;
+							font-size:1.2em;
+							line-height:1.1em;
+							text-align:left;
+
+							&:hover{
+								text-decoration:underline;
+								}
+							}
+						}*/
+
+		/*2nd Sidebar vertical list of publications for departments, initiatves, interest groups and priority pages*/		
+		.view-publication-blocks, .view-id-PSEP_links, .view-Adult-learner-pubs{
+			
+			
+			.pubblock-list{
+				display:block!important;
+				ul{display:block!important;
+					display:block!important;
+					li{
+						display:block!important;
+						width:100%!important;
+						margin-bottom:12px;
+					}
+				}//und ul
+			}//end pubblock-list
+		}//end view-publication-blocks	
+			
+			.front-featured-pub{
+				/*border-bottom:1px solid #ccc;*/
+			}
+		
+	}//end block
+		
+		#block-views-testimonial-slider-block .view-testimonial-slider .view-content .testimonial-wrapper {
+			 /*student testimonials*/
+			 .testimonial-photo{
+				 width:45%;
+				 height:auto;
+				 float:left;
+				 margin-right:4px;
+			 }
+
+				.student-details{
+					width:45%;
+					font-style:italic;
+					float:left;
+				}
+			.testimonial-text{
+				clear:left;
+				/*width:90%;*/
+				padding:4% 3% 0 0;
+			}
+		
+		}
+
+	  /*border-left: 1px solid #ccc;*/
+	  margin-right:0;
+	  width:18%;
+	 /* margin-bottom: -999em !important;
+      padding-bottom: 999em !important;*/
+	  padding-top:16px;
+	 
+		 h2{
+			margin:8px 0;
+		}
+		
+		p{
+			margin-top:8px;
+			/*font-style:italic;*/
+		}
+		
+	
+	#block-views-newscap-archive-block-1 .view-newscap-archive{
+		
+		overflow:hidden;
+		
+		.views-field-field-pub-image{
+			display:inline-block;
+			float:left;
+			width:22%;
+			margin-right:3%;
+			
+			.newsCapImage{
+				position:relative;
+				top:12px;
+			}
+		}
+		
+		.views-field-field-pub-description{
+			display:inline-block;
+			float:left;
+			width:75%;
+		}
+	}
+	
+	
+	
+  }//end two sidebars
+  
+  /*the layout when there are no sidebars -- full width*/
+  
+    article.view-mode-full, .advanced-help-topic{
+	padding:0  1.5%;
+	
+
+
+/*generic table*/
+table#wiche-table, table.wiche-table{
+	width:100%;
+	border-bottom:2px solid #000;
+	margin-bottom:16px;
+	font-size:.8em;
+	
+		th{
+			background-color:#1c4884;
+			color:#fff;
+			text-align:center;
+			border-right:1px solid #fff;
+			border-top:none;
+			border-left:none;
+			padding:1% 0;
+			
+			&:last-child{
+					border-right:none;
+				}
+		}
+		
+		td{
+			padding:2%;
+			border-right:1px solid #000;
+			vertical-align:top;
+			
+			width:auto;
+			
+			&:last-child{
+				border-right:none;
+				}
+				
+				h4{
+					font-size:1.2em;
+					margin:0;
+				}
+				
+				p{
+					margin:4px 0;
+				}
+		}
+		
+		tr:first-child th{
+	border-bottom:1px solid #000;
+}
+
+
+}//end #wiche-table
+
+
+/*generic table*/
+table.wiche-table{
+	width:100%;
+	margin-bottom:16px;
+	font-size:.8em;
+}
+
+
+table.wiche-table td{
+	padding:2%;
+	vertical-align:top;
+	width:36%;
+}
+
+
+/*end wiche table class*/
+
+table#borderless-no_bgColor{
+	td{
+		padding:8px;
+		vertical-align:top;
+		
+		img{
+			max-width:65px;
+			height:auto;
+		}
+			p{
+				margin:0;
+			}
+	}
+}
+
+  }
+  
+}
+
+
+/*panels css rules*/
+div#wiche-home{
+	padding:0 15px;
+}
+
+	 
+/*Mental Health Landing Page Custom*/
+
+.quicktabs-tabpage{
+	#block-block-349, #block-block-348{
+		overflow:hidden;
+			.col-one{
+				float:left;
+				display:inline-block;
+				margin:0 20px 0 20px;
+				width:45%;
+			}
+			
+			.col-two{
+				float:left;
+				display:inline-block;
+				width:45%;
+			}
+			
+			ul{
+				list-style:square;
+				
+					li{
+						font-size:.8em;
+						margin-bottom:8px;
+					}
+			}
+	}
+}
+
+
+
+
+
+/*wiche-sep-dept-nav*/
+
+
+
+
+.delicious-posts{
+	padding-right:1%;
+}
+
+
+#content .profile, #content form#user-login {
+    padding:0 1%;
+}
+
+.horizontal-divider{
+	clear:both;
+    /*border-bottom:2px solid #ccc;*/
+	width:98%;
+	margin:0 auto;
+	}
+
+	
+/*Benchmarks popout slideshow*/
+	
+a.popup-element-title {
+    color:#1C4884;
+    cursor: pointer;
+    display: inline-block;
+    padding:0px;
+    position: relative;
+	font-size:1.1em;
+	font-weight:600;
+}
+#popup-active-overlay{	
+	.popup-element-body{
+		width:775px!important;	
+			.inner{
+				width:775px!important;	
+				   .popup-element-body a.popup-close-button {
+						cursor: pointer;
+						float: right;
+						position:relative;
+						z-index:20;
+					}
+				
+				p{
+					font-size:.8em;
+					line-height:1.4em;
+					color:#1C4884;
+				}
+			}
+		}
+		
+		/*mission statement front page*/
+		
+}
+
+/*custom css for accordion on front page*/
+
+.view-wiche-sep-departments-initiatives{
+	
+	.views-accordion-header{
+			background:none!important;
+		.field-content{
+			display:block;
+			a:link{
+				font-family: 'humnst777_lt_btlight_italic';
+				color:#1C4884;
+				line-height:1.2em;
+			}
+		}
+		
+		
+	}
+	
+}
+
+.ui-accordion{
+			.ui-accordion-content[role=tabpanel] {
+				border-top: 1px solid #ccc;
+			}
+		}
+
+.quick-link{
+	display:block;
+}
+
+/*custom table styling for /forum/membership/current*/
+
+.view-content table.membership{
+	width:100%;
+	margin-top:25px;
+	border-bottom: 1px solid #1e345b;
+	padding-bottom:1%;
+}
+
+.view-content table.membership td, th{
+	margin:1%;
+	border:1px solid #000;
+}
+
+
+.view-content table.membership caption{
+	font-weight:bold;
+	font-size:1.2em;
+	letter-spacing:1px;
+	margin-bottom:4px;
+}
+
+
+.view-content table.membership thead th{
+	padding-right:0;
+	border-bottom: 3px solid #1e345b;
+}
+
+.view-content table.membership thead th.views-field-title{
+	text-align:center;
+	padding: 0 1% 0 0;
+}
+
+.view-content table.membership thead th.views-field-field-bio-org-value{
+	text-align:center;
+	padding: 0 0 0 1%;
+}
+
+/*Table style for forum and alliance membership pages*/
+
+/*.view-id-list_walf_members & .view-list-alliance-members*/
+.view-list-alliance-members .view-content table.views-table tr,
+.view-id-list_walf_members .view-content table.views-table tr
+{
+	
+		th.views-field-field-bio-org,
+		td.views-field-field-bio-org{
+			text-align:left;
+			width:49%;
+			padding:2%;
+		}
+		
+		th.views-field-title,
+		td.views-field-title{
+			text-align:right!important;
+			width:49%;
+			padding:2%;
+		}
+		
+}
+
+
+.view-content table.views-table tr.even{
+	background-color:transparent;
+}
+
+/*Alliance Executive Committee*/
+
+table.waccal-exec-comm, table.walf-exec-comm{
+	margin:0;
+	
+	td{
+		h3{
+			margin:0;
+		}
+	}
+}//end table
+
+
+/*custom table styling Higher Ed Links*/
+
+#higher-ed-links{
+	
+	tr:nth-child(odd){
+		background:#ccc;
+	}
+	
+	th{
+		border:none;
+	}
+	
+	td{
+		font-size:.9em;
+		line-height:1.4em;
+		padding:4px 0;
+	}
+	
+}
+
+/*Western Alliance of Community college Academic Leaders*/
+
+.list-waccal-members{
+			overflow:hidden;
+	h3{
+		clear:left;
+		margin-bottom:0;
+	}
+	ul{
+		list-style:none;
+		padding:0;
+		margin:0 0 16px 0;
+		li{
+			
+			clear:left;
+			.views-field-title{
+				float:left;
+				margin-right:12px;
+			}
+			
+			.views-field-field-bio-org{
+				float:left;
+			}	
+		}
+	}
+}// end list-waccal-members
+
+/*custom css snippets*/
+
+/*Policy_exchanges*/
+.view-policyExchanges{
+	.item-list{
+		
+		h3{
+			margin-bottom:0;
+		}
+		ul{
+			li{
+				h4.field-content{
+					margin:6px 0 6px 0;
+				}
+			}
+		}
+	}
+}
+/*Policy and Data Resources Block on policy_exchanges in 2nd sidebar*/
+
+.taxon-resource{
+	ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		
+		li.policy-pub{
+			
+			.field-content{
+					p{
+						margin:0;
+						font-size:.9em;
+						line-height:1.2em;
+						
+						a:link, a:visited, a:active{
+							display:block;
+							text-decoration:underline;
+							font-size:.9em;
+							color:#1c4884;
+							}
+					}
+				}
+			
+			h1{ /*reduce h1 size for 2nd sidebar teaser block*/
+					font-weight:normal!important;
+					font-size:1em!important;
+					margin-bottom:0;
+				}
+			h2{
+				font-weight:normal;
+				a:link, a:visited, a:active{
+					text-decoration:underline;
+					font-size:.8em;
+					color:#1c4884;
+				}
+			}
+			h3{
+				display:none;
+			}
+		}
+	}
+	
+}//end taxon-resource
+
+.view-taxonomy-resources{
+	.more-link{
+		text-align:left;
+		a:link, a:visited, a:active{
+			display:block;
+			text-decoration:underline;
+			font-size:.8em;
+			color:#1c4884;
+			}
+	}
+}
+
+/*Policy Insights policy_insights*/
+
+.view-policyInsights{
+	ul{
+		li{
+			
+			span h4{
+				margin-bottom:0;
+			}
+		}
+		
+	}
+	
+}
+
+/*publications/all*/
+
+.pub-list{
+	ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		
+		li{
+			overflow:hidden;
+			margin-bottom:20px;
+			
+			.pub-image{
+				float:left;
+				margin-right:12px;
+				display:inline-block;
+				width:14%;
+			}
+			
+			.pub-description{
+				float:left;
+				display:inline-block;
+				width:65%;
+				
+				.sm-font{
+					font-size:.8em;
+				}
+				
+				h2, h5{
+					margin-top:0;
+				}
+				
+				.field-content{
+					position:relative;
+					top:-3px;
+				}
+				
+				p{
+				margin:0!important;
+				/*font-weight:normal;*/
+				a:link, a:visited, a:active{
+					color:#1c4884;
+					text-decoration:none;
+					font-weight:bold;
+				}
+				a:hover{
+					text-decoration:underline;
+				}
+			  }
+			}
+			
+			.views-field-field-pub-pages{
+				clear:left;
+				display:block;
+			}
+			
+			p.pub-title{
+				font-weight:800;
+				margin-bottom:12px;
+				font-style:italic;
+				
+				a:link, a:visited, a:active{
+					color:#1c4884;
+					text-decoration:none;
+				}
+				a:hover{
+					text-decoration:underline;
+				}
+			}
+			
+		}
+	}
+}
+
+.clearBoth{
+	clear:both;
+}
+
+
+.boxwrap{
+	padding:16px;
+	border:2px solid #333;
+	width:88%;
+	margin:0 auto;
+	margin-bottom:30px;
+	border-radius:8px;
+	
+	h2, h3, h4{
+		margin-top:0;
+	}
+	
+	ul{
+		list-style:none;
+		
+		li{
+			font-size:.8em;
+		}
+	}
+}
+
+/*WICE SARA Toggle menu on /sara*/
+
+h2.w-sara{
+	padding: 0 0 8px 0;
+	font-weight: bold;
+	font-size:1.5em;
+}
+
+#wiche-sara-menu{
+	font-size:1em;
+	font-weight:normal;
+	color:#000;
+	line-height:1.5em;
+}
+
+#wiche-sara-menu h3{
+	font-style:italic;
+	line-height:1em;
+	margin-bottom:4px;
+}
+
+.w-sara-menu, .menu {
+    .toggle-view{
+		li{
+			p.sara-menu, p, p.knocking-8{
+				display:none;
+			}
+		}
+	}
+}
+
+ul#wiche-sara-menu {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+ul#wiche-sara-menu  ul.toggle-view li, .content ul#wiche-sara-menu  ul li{
+	margin-bottom:0!important;
+}
+
+
+ul#wiche-sara-menu  ul.toggle-view a:link{
+	font-size:.8em;
+	line-height:1.6em;
+	padding-bottom:6px;
+}
+
+ul#wiche-sara-menu  ul.toggle-view span{
+	position:relative;
+	margin-left:6px;
+	top: -2px;
+	cursor:pointer;
+}
+
+/*bio toggle on staff pages*/
+
+/*staff page ul grid*/
+
+.view-Staff-Alpha-View, .view-wiche-staff{
+	
+.views-exposed-form{
+	.views-exposed-widgets{
+			.views-exposed-widget {
+				
+				.form-item-field-user-project-contact-tid{
+				#edit-field-user-project-contact-tid{
+					width:300px;
+				}
+				}
+					input{
+							position:relative;
+							top: -3px;
+							right:-4px;
+							padding: 0 4px;
+						}
+					}
+				  }//end views-exposed-widgets
+				}
+			
+	
+	.manage-item-list{
+		ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		
+	}
+
+	ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		 
+		li{
+			width:28%;
+			display:inline-block;
+			float:left;
+			padding:0 2%;
+			position:relative;
+			height:auto;
+			min-height:300px;
+			line-height:1.3em;
+			
+			.field-content{
+				h2{
+					margin:0 0 4px;
+					font-size:1.2em;
+					}
+			}
+			
+			strong{
+				letter-spacing:-1px;
+			}
+			
+			ul.toggle-view{
+				
+					li{
+						cursor:pointer;
+						position:relative;
+						position:absolute;
+						top:80px;
+						left:80px;
+						
+						h3{
+							font-weight:normal;
+							font-size:.9em;
+							display:inline-block;
+							padding:2px;
+							}
+							
+						span{
+							color:#1c4884;
+						}
+						
+						p{
+							display:none;
+							width:500px;
+							height:auto;
+							background:#fff;
+							border:1px solid #ccc;
+							padding:16px;
+							position:relative;
+							z-index:25;
+							top:34px;
+							left:-200px;
+						}
+			  }
+		}
+		}//end li
+	}
+	
+}//end view-Staff-Alpha-View
+
+
+/*right sidebar project and initiative menus*/
+#block-menu-menu-wiche-directory, #block-menu-menu-lac-menu, .box-right, #block-menu-menu-wue,
+#block-menu-menu-psep-menu, #block-menu-menu-ask-wiche, #block-menu-menu-ice-public-menu, #block-menu-menu-interstate-passport,
+#block-menu-menu-initiatives-sor, #block-menu-menu-about-us, #block-menu-menu-resources, #block-menu-menu-statewide-trans, #block-menu-menu-facilitating-de, #block-menu-menu-news, #block-menu-menu-getting-what-yo, #knocking-explore-list, #block-menu-menu-non-traditional, #block-menu-menu-factbook, #block-block-263, #block-menu-menu-menu-nanslo-new, #block-menu-menu-aboutnanslo, #block-menu-menu-menu-nanslo-curr-initiative, #block-menu-menu-menu-nanslo-past-initiative, #block-menu-menu-menu-nanslo-creative-soluti,#block-menu-menu-policy-mega-menu-block{
+			ul.menu{
+			list-style:none;
+			margin:0;
+			padding:0 0 16px;
+			border-bottom:1px solid #ccc;
+			   li{
+				   border-bottom:none;
+				   padding-bottom:0;
+				   margin-bottom:16px;
+				   
+				  a{
+					 text-decoration:none;
+					 font-weight:400;
+					 color:#666;
+					 text-transform:uppercase;
+					 font-size:.8em;
+					 display:block;
+					 line-height:1.3em;
+				  }
+				  a:hover{
+					 text-decoration:underline;
+				  }
+			   
+			   }
+		}
+}//end secondary menu
+
+/*how to contact staff box in 1st sidebar*/
+.how-contact-staff{
+	padding:8px;
+	width: 90%;
+}
+
+/*How to Edit Staff Info*/
+
+.author-box-right{
+	
+	h5{
+		margin:0;
+		padding:0;
+	}
+	ol{
+		margin:0 0 0 16px;
+		padding:0;
+		li{
+			font-size:.8em;
+		}
+	}
+	
+}
+
+/*styling for Student Testimonial list on /studentTestimonials*/
+
+.testimonial-list{
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		
+		li:first-child{
+			/*border-top:1px solid #cccccc;*/
+			margin-top:0;
+			padding-top:16px;
+		}
+		
+		li{
+			padding-bottom:16px;
+			border-bottom:1px solid #ccc;
+			margin-top:16px;
+			overflow:hidden;
+			
+			.testimonial-photo{
+				float:left;
+				margin-right:8px;
+				position:relative;
+				top:6px;
+				width:10%;
+			}
+			
+			.testimonial-body{
+				float:left;
+			}
+			
+			.field-content{
+				clear:left;
+			}
+		}
+		
+		li:last-child{
+			border-bottom:none;
+		}
+	}
+}
+
+
+/*2nd sidebar publication list block*/
+.pubblock-list, .view-taxonomy-resources-block{
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		
+		/*li{
+			/*padding-bottom:12px;*/
+			/*border-bottom:1px solid #ccc;*/
+			/*margin-top:16px;*/
+			
+			
+			
+			/*a:link, a:visited, a:active {
+				color: #1c4884;
+				display:block;
+				font-size: 1em;
+				text-align:center;
+				text-decoration:underline;
+				line-height:1.3em;
+			}*/
+			
+			/*a:hover{
+				text-decoration:none;
+			}*/
+		/*}*/
+		
+		li:last-child{
+			border-bottom:none;
+		}
+	} //end ul
+	
+}// end pubblock-list
+
+/*WICHE /policy_insights page & Western Policy Exchange*/
+.view-policyInsights, .view-policyExchanges, .view-publications{
+	.item-list, .pub-list{
+		
+	ul{
+		margin:0;
+		padding:0;
+		/*list-style:none;*/
+		/*display:table;*/
+		width:100%;
+		
+		li{
+			a:link, a:visited, a:active {
+				color: #1c4884;
+				font-size: 0.9em;
+				font-weight:normal;
+				padding:0;
+				text-decoration:underline;
+				line-height:.9em!important;
+			}
+			
+			a:hover{
+				color:#000;
+			}
+		}
+	} //end ul
+	}// end .item-list
+}// view-policyInsights
+
+/*2nd sidebar Commission and LAC blocks for state highlight pages*/
+.view-Commission-Block-View,
+.view-legislative-advisory-committee-block-view{
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		
+		li{
+			border-bottom:1px solid #ccc;
+			margin-top:16px;
+			
+			.small{
+				font-size:.9em;
+				line-height:1em;
+			}
+		}
+		
+		li:last-child{
+			border-bottom:none;
+		}
+	} //end ul
+	
+}//view-Commission-Block-View
+
+/*override much zen css font-sizes on upcoming events block on home page*/
+
+.region-sidebar-second{
+	ul{
+		li{
+			/*border-bottom:1px solid #ccc;*/
+			/*margin-bottom:6px;
+			padding-bottom:6px;*/
+			.views-field-field-date-display{
+				h3.field-content{
+					font-size:1em;
+					font-weight:100;
+					margin:0;
+				}
+			}
+			/*.views-field-title{
+				h2.field-content{
+					font-size:1.2em;
+					font-weight:400;
+					margin:8px 0 8px;
+				}
+			}*/
+		}//end li
+		/*li:last-child{
+			border-bottom:none;
+		}*/
+	}//end ul
+	
+}// end region-sidebar-second column sidebar
+
+/*some h2s in the 1st and 2nd sidebar need more top margin but not all of them*/
+/*#block-menu-menu-interstate-passport, #block-menu-menu-initiatives-sor, #block-menu-menu-psep-menu, .region-sidebar-first, #block-menu-menu-resources, #block-block-260, #block-block-264, #block-views-210e6048e21942227c4a4d3a48bf8e06, #block-views-publication-blocks-block-3, #block-views-publication-blocks-block-4, #block-menu-menu-statewide-trans, #block-menu-menu-facilitating-de, #block-menu-menu-getting-what-yo, #block-block-27, #block-block-273, .w-sara-menu, #block-menu-menu-lac-menu, #block-menu-menu-non-traditional, #block-menu-menu-factbook{
+	h2{
+		margin-top:16px!important;
+	}
+}*/
+
+/*student testimonial slideshow on front page*/
+#views_slideshow_cycle_main_testimonial_slider-block{
+		width:auto;
+		height:auto;
+		.testimonial-wrapper{
+			overflow:hidden;
+			.testimonial-photo{
+				float:left;
+				margin-right:8px;
+				width:40%;
+				}
+						   
+			.student-details{
+				float:left;
+				width:55%;
+				font-size:12px;
+				line-height:1.3em;
+				}
+						   
+			.testimonial-text{
+				clear:left;
+				font-size:12px;
+				line-height:1.4em;
+				}
+			 }
+		}//end views_slideshow
+
+/*misc css*/
+.dark_blue{
+	color:#1c4884;
+	line-height:1.2em!important;
+}
+
+/*css table code for css based tables with pic on left, text on right*/
+
+.faux-table{
+	width:100%;
+	display:table;
+	margin-bottom:16px;
+	
+	h3{
+	margin:0;
+	font-size:1.2em;
+	}
+
+	
+	.tr-row{
+		display:table-row;
+	}
+	.td-cell_20{
+		display:table-cell;
+		width:10%;
+		vertical-align:top;
+	}
+	
+	.td-cell{
+		display:table-cell;
+		width:30%;
+		vertical-align:top;
+	}
+	
+	.td-cell_70{
+		display:table-cell;
+		width:68%;
+		padding-left:16px;
+		vertical-align:top;
+		
+		span{
+			display:block;
+		}
+	}
+}//end
+
+
+
+.faux-three-col-table{
+		width:100%;
+		display:table;
+		
+		
+	.trow{
+		width:100%;
+		display:table;
+		}
+		
+		
+	.col-one{
+			display:table-cell;
+			vertical-align:top;
+			width:187px;
+			padding-right:20px;
+		}
+		
+	.col-two{
+			display:table-cell;
+			vertical-align:top;
+			width:187px;
+			padding-right:20px;
+		}
+	
+	.col-three{
+			display:table-cell;
+			vertical-align:top;
+			width:187px;
+		}
+
+}//end 3-col faux table
+
+
+
+.sara-two-col-table{
+		width:100%;
+		display:table;
+		
+		
+	.sara-col-one{
+			display:table-cell;
+			vertical-align:top;
+			width:45%;
+			padding:0 12px 0;
+			margin:0 12px 0;
+		}
+		
+	.sara-col-two{
+			display:table-cell;
+			vertical-align:top;
+			width:45%;
+			padding:0;
+		}
+}//end 2-col faux table
+
+
+/*hide this thing*/
+.node-state-highlights{
+	.node-readmore, .comment-add{
+		display:none;
+	}
+
+	
+	.field-name-field-state-tagline{
+		font-style:italic;
+		line-height:1.8em;
+		margin-bottom:10px;
+	}
+}
+
+.student-savings-box{
+	padding:16px;
+	border:2px solid #333;
+	width:50%;
+	margin:0 auto;
+	margin-bottom:30px;
+	
+	legend{
+		font-weight:bold;
+		font-size:1.5em;
+	}
+	
+	.fieldset-wrapper{
+		.field-label{
+			width:60%;
+		}
+		
+		.field-items{
+			text-align:right;
+			width:40%;
+		}
+		
+		
+		.field-name-field-state-fig1-total2{
+			border-top:2px solid #ccc;
+			padding-top: 4px;
+			margin-top:4px;
+			
+			.field-items .field-item{
+				font-style:italic;
+			}
+		}
+		
+.field-name-field-state-fig1-total{
+			border-top:2px solid #ccc;
+			padding-top: 4px;
+			margin-top:4px;
+			
+			.field-items .field-item{
+				font-style:italic;
+			}
+		}
+	}
+}
+
+/*jquery toggle menu for /knocking-8th/technicalNotes*/
+
+.knocking-dropdown{
+	.toggle-view{
+		li{
+			cursor:pointer;
+		}
+		p{
+			display:none;
+		}
+	}
+}
+
+article .field-name-field-state-investment{
+	margin-top:10px;
+}
+
+/*passport info page summary css*/
+.passport-summary{	
+	background:none;
+	width:90%;
+	height:auto;
+	overflow:hidden;
+	display:table;
+    margin-bottom:12px;
+	padding-bottom:12px;
+	border-bottom:1px solid #ccc;
+	
+	   .tr{
+	
+		   display:table-row;
+
+		   
+		.td-cell-30{
+			display:table-cell;
+			vertical-align:top;
+			width:40%;
+		}//end td
+	
+				.td-cell-60{
+					display:table-cell;
+					width:60%;
+					vertical-align:top;
+					
+					
+					p{
+						margin:0!important;
+						padding:0 0 12px;
+						position:relative;
+						top:-3px;
+					}
+					
+					h3{
+							color:#000;
+							text-shadow:none;
+							font-size:1.3em;
+							line-height:1.5em;
+							font-weight:400;
+							}
+			}//end td
+	   }// end tr
+}//end passport summary
+
+/*passport table*/
+.passport-table{
+	border:1px solid #333;
+	width:100%;
+	font-size:.9em;
+	th{
+		font-weight:bold;
+		text-transform:uppercase;
+		border:1px solid #333;
+	}
+	
+	caption{
+		background:#973365;
+		color:#fff;
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+	
+	th{
+		border:1px solid #333;
+		padding:8px;
+		font-size:.9em;
+		
+		&:last-child{
+			border-right:none;
+		}
+		
+	}
+	
+	td{
+		border-right:1px solid #333;
+		padding:8px;
+		font-size:.8em;
+		
+		&:last-child{
+			border-right:none;
+		}
+		
+		ol{
+			padding-left:8px;
+			margin-top:0;
+				li ul{
+					margin-left:9px;
+					padding-left:0;
+					list-style:disc;
+					
+					li{
+						margin:4px 0 4px;
+					}
+				}
+		}
+		
+		p{
+			font-size:.7em;
+			margin:0;
+			line-height:1.2em;
+		}
+	}
+	
+	
+}//end passport table
+
+/*passport table -- institution blocks*/
+table.passport-blocks{
+	border:none;
+	width:100%;
+	font-size:.9em;
+	border-collapse:separate;
+	border:1px solid #ccc;
+	
+	
+	caption{
+		background:#973365;
+		color:#fff;
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+	
+	th{
+		border:none;
+		padding:8px;
+		font-size:.9em;
+		border-right:1px solid #ccc;
+		border-bottom:1px solid #ccc;
+		
+		&:last-child{
+			border-right:none;
+		}
+		
+	}
+	
+	td{
+		border-right:1px solid #ccc;
+		border-bottom:1px solid #ccc;
+		padding:8px;
+		font-size:.8em;
+		
+		&:last-child{
+			border-right:none;
+		}
+		
+		ol{
+			padding-left:8px;
+			margin-top:0;
+				li ul{
+					margin-left:9px;
+					padding-left:0;
+					list-style:disc;
+					
+					li{
+						margin:4px 0 4px;
+					}
+				}
+		}
+		
+		p{
+			font-size:.7em;
+			margin:0;
+			line-height:1.2em;
+		}
+	}
+	
+	
+}//end passport table
+
+
+/*passport meeting table for March 2016 meeting*/
+.passport-meeting-table{
+	border:1px solid #333;
+	width:100%;
+	
+	caption{
+		background:#973365;
+		color:#fff;
+		font-weight:bold;
+		text-transform:uppercase;
+		font-size:1.6em;
+		padding:4px;
+	}
+	
+	tr{
+		
+			border-bottom: 1px solid #ccc;
+		
+		th{
+			border:none;
+			border-right:1px solid #ccc;
+			padding:8px;
+			font-size:.8em;
+			width:30%;
+			
+			strong{
+				font-size:1.4em;
+			}
+			
+		}//end th
+		
+		td{
+			padding:8px;
+			font-size:.8em;
+			width:70%;
+			
+				ul{
+						margin-left:20px;
+						padding-left:0;
+						list-style:disc;
+						
+						li{
+							margin:4px 0 4px;
+						}
+					}
+			
+		}// end td
+	} //end tr
+	
+	.small-layout{
+		tr{
+			border-bottom:1px solid #000;
+			td{
+				width:25%;
+			}
+			
+			&:last-child{
+				border-bottom:none;
+			}
+		}
+	}
+}//end passport-meeting-table
+
+/*workshopfacilitators page*/
+
+.workshop{
+	.workshop-facilitator{
+		max-width:88px;
+		height:auto;
+		float:left;
+		margin-right:12px;
+		position:relative;
+		top:4px;
+	}
+	
+	p{
+		line-height:1.5em;
+	}
+	
+	hr{
+		color: #ccc;
+		background-color: #ccc;
+		height: 1px;
+		}
+}
+
+.fig-five {
+	width: 100%;
+	max-width: 601px;
+	height:auto;
+	margin: 0 auto;
+	overflow:hidden;
+}
+
+
+.fig-five-table {
+	width: 80%;
+	float:left;
+	padding:0;
+	
+			td, th {
+			border:1px solid black;
+			
+				p{
+						margin-top:0;
+					}
+					
+			ul.student-speakers{
+				list-style:square;
+					li{
+					padding-left:4px;
+				}
+			}
+	
+	}
+}
+
+ 
+.fig-five:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+ /*passport faux table 2 even columns*/
+.faux-two-col-table{	
+	background:none;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	padding:0;
+	display:table;
+		
+		.td-cell-50{
+			display:table-cell;
+			width:40%;
+			vertical-align:top;
+			padding:0 2%;
+			
+			h2{
+				text-align:center;
+				margin-top:12px;
+			}
+			
+			em{
+				font-size:75%;
+				line-height:.9em;
+			}
+		}
+		
+ }//end passport faux table 2 even columns	
+ 
+ /*policy factbook*/
+ .policy-indicators{
+		border:1px solid #ccc;
+		margin-bottom:16px;
+		width:100%;
+		
+			tr:first-child th{
+				background:#ccc;
+				color:#000;
+				text-align:left;
+				border:none;
+				padding:6px;
+		    }
+			
+			tr:nth-child(even) {
+				background: #fff;
+			}
+	
+			tr:nth-child(odd){
+				background:#f1f1f1;
+			}
+			
+			tr td, th{
+				padding:6px;
+			}
+	
+			tr td{
+				border-left:1px solid #ccc;
+			}
+			
+			tr th{
+				border:none;
+				
+			}
+			
+			tr th.last-updated{
+					font-style:italic;
+					font-size:.8em;
+				}
+	}
+	
+	/*link promo box*/
+	
+	.link-promo-box{
+			    overflow:hidden;
+				border:4px solid #e01c1c;
+				border-radius:12px;
+				width:80%;
+				margin:8px auto;
+				padding:16px;
+	}
+
+/*calendar box on forum and alliance pages, left sidebar*/
+
+
+.sidebars #block-views-calendar-2-block-4 .forum-event
+ .views-row, .sidebars #block-views-calendar-2-block-6 .forum-event
+ .views-row{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 16px 0 16px;
+    padding: 16px;
+	
+	h3{
+		margin-top:0;
+	}
+}
+
+/*fix comma in templates/location.tpl.php*/
+
+.loc-com{
+	position:relative;
+	left:-2px;
+}
+
+/*wiche-events-meetings-webinars*/
+.meeting-webinar .view-content{
+	ul{
+		list-style:none;
+		
+		li{
+			border:1px solid #ccc;
+			border-radius:8px;
+			padding:16px;
+			width:60%;
+			margin:0 auto 16px auto;
+		}
+	}
+}
+
+/*attention box on front page*/
+
+#main-front .attention{
+	 border:2px solid #b75515;
+	 border-radius:8px;
+	 padding:12px;
+	 margin:12px 0 12px;
+	 text-align:center;
+	 
+	 	h2{
+			margin:0;
+			padding:0;
+			line-height:1.2em;
+			font-size:1.1em;
+			
+			a:link, a:active, a:visited{
+				color:#1c4884!important;
+				&:hover{
+					color:#b75515!important;
+				}
+				
+			}
+		}
+}
+
+/*WICHE news section on the front page*/
+.wiche-news{
+	
+	ul{
+		  
+		   list-style:none;
+		   padding:0;
+		   margin:0;
+		   
+		li{	
+		
+			padding-bottom:12px;
+			border-bottom: 1px solid #ccc;
+			margin-bottom:16px;
+					
+				.views-field-field-link{
+					font-weight:bold;
+				}
+				
+				.views-field-field-publication-title{
+					margin:2px 0 2px;
+				}
+			
+				.views-field-field-publication-date{
+					font-size:.8em;
+				}	
+				
+				.views-field-body{
+					font-size:1.1em;
+				}
+			
+			
+					&:last-child{
+						padding-bottom:0;
+						margin-bottom:0;
+						border:none;
+					}
+			
+		}
+}//end ul
+
+.view-footer{
+	font-weight:bold;
+	font-style:italic;
+	text-align:center;
+}
+
+}//end wiche-news
+.wiche-notes{
+	hr{
+		 border: 0;
+		 height: 1px;
+		 background: #ccc;
+	}
+}
+
+.flex-direction-nav{
+	li a{
+		/*color:yellow;*/
+		
+		&:hover{
+		 color:#000!important;
+		}
+	}
+}
+
+
+/*event calendar block on front page*/
+.sidebars .commission-event, .sidebars .front-page-events{
+			
+			ul{
+				list-style:none;
+				margin:0;
+				padding:0;
+				
+				li{
+					margin-bottom:20px;
+					/*padding:16px;
+					border:1px solid #ccc;
+					border-radius:8px;*/
+					
+					.views-field-field-location{
+						margin-top:6px;
+					}
+					
+					h3{
+						margin:0 0 8px!important;
+					}
+				}
+			}
+			.adr, .map-link{
+				font-size:12px;
+				line-height:1.5em;
+			}
+		}
+    }
+
+
+.region-sidebar-second #block-views-calendar-2-block-2 h2{
+		border-bottom:1px solid #b75515;
+	    padding-bottom:8px;
+	}
+
+.front-page-events, .view-calendar-2{
+				.views-row{
+					margin:0 0 8px;
+					padding:0 0 8px;
+					border-bottom:1px solid #ccc;
+					
+					h3{
+						margin-top:0;
+					}
+					
+					p{
+						margin:0;
+					}
+					
+					.views-field-field-register a{
+						display:block;
+						background:#1c4884;
+						border-radius:4px;
+						color:#fff;
+						text-transform:uppercase;
+						padding:2px 4px;
+						width:40%;
+						text-align:center;
+						text-decoration:none;
+						margin:4px 0;
+						font-weight:normal;
+						letter-spacing:1px;
+						font-size:.8em;
+						
+						&:hover{
+							background:#245eac;
+						}
+					}
+					
+				}//end views row
+	       border-bottom:1px solid #b75515;
+		}
+
+.view-calendar-2{
+	 border-bottom:none;
+}
+
+
+/*attention box*/
+
+.attention_2 {
+	width:45%;
+	margin:0 auto 25px auto;
+    border: 2px solid #1c4884;
+    border-radius: 8px;
+    padding: 12px 12px 12px 30px;
+    text-align:left;
+}
+
+.attention_3 {
+	width:75%;
+	margin:0 auto 25px auto;
+    border: 2px solid #1c4884;
+    border-radius: 8px;
+    padding: 12px 12px 12px 30px;
+    text-align:left;
+}
+
+ ul.page-list{
+						border:1px solid #ccc;
+						list-style:none;
+						padding:0;
+						margin:0;
+						width:50%;
+						margin:0 auto;
+						
+						li{
+							border-bottom:1px solid #ccc;
+							padding-right:20px;
+							a{
+								display:block;
+								padding:4px 8px;
+								line-height:2em;
+							}
+						}
+						
+						li:last-child{
+							border:none;
+						}
+					}
+
+
+/*custom css for '/old-pages' view*/
+
+.view-old-pages ul{
+	margin:0;
+	padding:0;
+		li{
+		list-style:none;
+		padding:12px;
+		border:1px solid #ccc;
+		margin-bottom:16px;
+	}
+}
+
+.view-old-pages ul.pager li{
+	border:none;
+}
+
+/*FOR RESPONSIVE EMBEDDED YOUTUBE VIDEOS*/
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+	
+		iframe, .video-container object, .video-container embed {
+		position:absolute;
+		top:0;
+		left:0;
+		width:98%;
+		height:98%;
+	}
+}
+
+/*student exchange menusunordered list custom css*/
+
+ul.sep-menu{
+	list-style:none;
+	padding:0;
+	margin:0;
+	
+	li{
+		float:left;
+		display:inline-block;
+		padding:0;
+		margin:0 8px;
+		width:30%;
+		
+			a:link, a:visited, a:active{
+				background:#1c4884;
+				display:block;
+				padding:16px;
+				font-size:.8em;
+				color:#fff;
+				text-align:center;
+				border-radius:8px;
+				text-decoration:none;
+				letter-spacing:1px;
+
+			&:hover{
+				background:#245eac;
+			}
+				
+				strong{font-size:1.5em;}
+		} // end a
+	} // end li
+}// end sep menu
+
+/*Mental Health Form '/content/order-your-hardcopy-human-services-program-evaluation'*/
+
+#webform-client-form-17359{
+	
+	.human-services-form{
+			legend{
+			font-weight:bold;
+		}
+	}
+}
+
+ul.wiche-pubs-resources{
+	list-style:none;
+	
+	li{
+		a:link, a:visited, a:active{
+			display: block;
+			padding:12px;
+			border-radius:8px;
+			border:1px solid #ccc;
+			width:45%;
+			text-align:center;
+			text-decoration:none;
+			margin:8px 0;
+			
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+}
+
+
+.view-display-id-publications_all ul.newscap-archive-bullets {
+	list-style:disk;
+	li{
+		margin:0 0 8px 20px;
+	    overflow:visible;
+	}
+}
+
+
+
+/*experimental css for full-width slideshow*/
+
+#full-rotator .region-slideshow .block{
+	margin-bottom:0;
+
+	.flex-direction-nav li a{
+		color:#fff;
+	}
+	
+	.WUE-banner-slide{
+		.flexslider{
+			height:250px;
+			width:1200px;
+			border:none;
+			border:none;
+			border-radius:0;
+			overflow:hidden;
+			position:relative;
+			margin:0;
+				ul{
+					li{
+						
+						.banner{
+							position:absolute;
+							height:250px;
+							padding:16px 0 0 190px;
+							width:100%;
+							max-width:975px;
+
+							
+									p.quote{
+										font-size:1.6em;
+										line-height:1.2em;
+										padding:20px 0 0 16px;
+										margin-top:0;
+										text-shadow: 2px 2px #000;
+										color:#fff;
+										font-weight:700;
+										
+										span.name{
+											font-size:.8em;
+											font-weight:900;
+											line-height:.9em;
+											text-shadow: 1px 1px #000;
+											
+											em{
+											
+											}
+										}
+										
+										
+										
+										a:link, a:active, a:visited{
+											position:absolute;
+											bottom:30px;
+											right:30px;
+											font-size:.8em;
+											line-height:.6em;
+											display:block;
+											background:rgba(0,0,0,.50);
+											border-radius:8px;
+											padding:8px 6px;
+											color:#fff;
+											font-weight:100;
+											text-decoration: none;
+											width:23%;
+											text-align:center;
+
+											&:hover{
+												background:rgba(0,0,0,.75);
+												}
+								      }
+							     }
+							
+							.views-field-field-image .field-content img{
+									position:absolute;
+									top:0;
+									left:0;
+									border:2px solid #000;
+									max-width:1200px;
+								}
+							}//end banner
+					} //end li
+				}//end ul
+		}//end flexslider
+	}
+}// end full rotator
+
+.alliance .flexslider{
+		box-shadow: 0 0 0 rgba(0, 0, 0, 0.0)!important;
+	}
+
+
+/*.view-wiche-insights .views-field-field-headline h2{
+	padding-top:16px!important;
+}*/
+
+
+
+/*student exchange menusunordered list custom css*/
+/*3 buttons accross set up for main content area with left sidebar only*/
+ul.sep-menu{
+	list-style:none;
+	padding:0;
+	margin:0;
+	
+	li{
+		float:left;
+		display:inline-block;
+		padding:0;
+		margin:0 8px!important;
+		width:30%;
+		
+			a:link, a:visited, a:active{
+				background:#1c4884;
+				display:block;
+				padding:16px;
+				font-size:.8em;
+				color:#fff;
+				text-align:center;
+				border-radius:8px;
+				text-decoration:none;
+				letter-spacing:1px;
+				height:52px;
+
+			&:hover{
+				background:#245eac;
+			}
+				
+				strong{font-size:1.5em;}
+		} // end a
+	} // end li
+}// end sep menu
+
+
+
+/*4 buttons accross set up for main content area with left sidebar only*/
+ul.sep-menu-four-col{
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:90%;
+	margin:0 auto;
+	
+	li{
+		padding:0;
+		margin:0 8px!important;
+		display:inline-block;
+		float:left;
+		margin-right:16px;
+		
+			a:link, a:visited, a:active{
+				display:block;
+				background:#1c4884;
+				vertical-align:middle;
+				padding:6px 12px;
+				font-size:.9em;
+				color:#fff;
+				text-align:center;
+				border-radius:8px;
+				text-decoration:none;
+				line-height:2.2em;
+
+			&:hover{
+				background:#245eac;
+			}
+				
+				strong{font-size:1.5em;}
+		} // end a
+		
+		&:last-child{
+			margin-right:none;
+		}
+	} // end li
+}// end sep menu
+
+/*1 column for left sidebar only*/
+ul.sep-menu-one-col{
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:90%;
+	margin:0 auto;
+	
+	li{
+		display:block;
+		padding:0;
+		margin:0!important;
+		width:100%;
+		
+			a:link, a:visited, a:active{
+				background:#1c4884;
+				display:block;
+				padding:16px;
+				font-size:.8em;
+				color:#fff;
+				text-align:center;
+				border-radius:8px;
+				text-decoration:none;
+				letter-spacing:1px;
+				line-height:2em;
+
+			&:hover{
+				background:#245eac;
+			}
+				
+				strong{font-size:1.5em;}
+		} // end a
+	} // end li
+}// end sep menu
+
+
+
+//css to make Order List numbers bold
+
+ol.sep-by-numbers{
+	 margin: 0 0 1.5em;
+     padding: 0;
+     counter-reset: item;
+	
+	li{
+		margin: 0;
+		padding: 0 0 0 2em;
+		text-indent: -2em;
+		list-style-type: none;
+		counter-increment: item;
+			}
+}
+
+ol.sep-by-numbers > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+	
+			#block-nice-menus-14{
+			   position:relative;
+			   top:-4px;
+		   }
+
+//make newsCap content title disapear for NewsCap Page View
+
+.sidebar-first #content .one-col-newscap .view-content article header h2.node-title a{
+	display:none;
+}
+
+#block-views-newscap-archive-block-1 .view-newscap-archive{
+	padding-top:4px;
+}
+
+#block-views-newscap-archive-block > div.view.view-newscap-archive.view-id-newscap_archive.view-display-id-block{
+	text-align:right;
+	padding-top:9px;
+	position: relative;
+	/*right: -20px;*/
+}
+
+
+.view-wiche-media-mentions .view-content .views-row{
+	border-bottom:1px solid #ccc;
+	margin-bottom:12px;
+}
+
+
+.flex-direction-nav a{
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+
+.sidebar-first .pub-list ul li{
+	border-bottom: 1px solid #ccc;
+    padding-bottom: 12px;
+	margin-bottom:12px;
+	
+	div > strong.pub-title a{
+		font-weight:bold!important;
+		margin:12px 0!important;
+	}
+}
+
+.rssfeed{
+	border-top: 1px solid #225aa8;
+	
+	.view-header{
+			border-bottom:1px solid #225aa8;
+		    margin-bottom:2px;
+			p{
+				margin:6px 0;
+			}
+		}
+	.views-field-title{
+		padding-bottom:2px;
+		border-bottom:1px solid #ccc;
+		margin-bottom:4px;
+
+		em{
+			font-size:85%;
+		}
+		h3{
+			font-size:1em;
+			margin-top:0;
+			margin-bottom:4px;
+		}
+		
+		.rss-description{
+			.wp-caption-text{
+				display:none;
+			}
+			height:20px;
+			overflow:hidden;
+		}
+	}
+}
+
+.region-sidebar-first{
+	padding-top:0!important;
+}
+
+
+/*knocking blurb on front page, bottom right sidebar*/
+#block-views-publication-blocks-block-15{
+	.views-field-field-pub-notes{	
+		p{
+			margin-top:0;
+		}
+	}
+}//end #block-views...
+
+.flexslider-views-slideshow-main-frame-row .views-field-field-call-to-action{
+	background: rgba(0,0,0,0.25);
+    width: 100%;
+    position: absolute;
+    padding: 12px 14px;
+    bottom: 0;
+	h3{
+		margin-top:0;
+	}
+}
+
+ /*front-page slide show*/
+#slideshow{
+	background-color:rgba(33,90,168,0.75);
+	display:table;
+	width:100%;
+	
+		.slide-row{
+			display:table-row;
+			
+			.slides{
+				background:#245eac;
+				display:table-cell;
+				overflow:hidden;
+				vertical-align:top;
+				
+				img{
+					width:100%;
+					max-width:780px;
+				}
+				
+				.region-slides{
+					.block{
+						margin:0;
+						
+				
+				
+	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
+		.flexslider{
+			border:none;
+			margin-bottom:0;
+			overflow:hidden;
+			position:relative;
+			border-radius:0px;
+			
+				.views-field-field-call-to-action{
+					/*position:absolute;
+					left:14px;
+					bottom:10px;*/
+					
+						h3{
+							margin-bottom:0;
+								a:link, a:active, a:visited{
+									font-family: 'humnst777_cn_btbold',sans-serif;
+									line-height: 1.2em;
+									font-size: 1.4em;
+									text-shadow: 1px 1px #000;
+									letter-spacing:1px;
+									color:#f3b927;
+
+										&:hover{
+											text-decoration:underline;
+										}
+									}
+							}
+					p{
+						margin:8px 0 0 0;
+						line-height:1.1em;
+					}
+				}//end call to action
+		
+			
+			.flex-direction-nav{
+				a.flex-next, a.flex-prev {
+					color:#fff;
+				}
+			}
+		}
+		
+		.flex-control-nav{
+			display:none;
+		}
+		
+	}
+}			
+		}
+				
+				img{
+					/*background:#000;
+					width:100%;
+					width:600px;
+					height:auto;*/
+				}
+		}
+			
+			.wiche-mission-self-id{
+				display:table-cell;
+				width:36%;
+				.region-self-id{
+					.block{
+						margin:0;
+					}
+					
+					.mission{
+							width:80%;
+							font-weight:400;
+							margin:20px auto 20px auto;
+							padding:15px 0;
+							color:#fff;
+							font-size:120%;
+							line-height:1.3em;
+							letter-spacing: 1px;
+							border-bottom:2px dashed #fff;
+							border-top:2px dashed #fff;
+							text-align:center;
+						}
+				}
+				
+				h2{
+					font-family:$openSans;
+					color:#fff;
+					margin:8px 0 0 16px;
+					font-size:1.1em;
+					border-bottom:none;
+				}
+				
+				
+				ul{
+					margin:12px 0 0 16px;
+					padding:0 0 0 16px;
+					list-style:none;
+					
+					li{
+						background:url(images/white-arrow-bullet-lg.png) 0 5px no-repeat;
+						padding:0 0 0 20px;
+						margin:6px 0;
+						a:link,a:visited,a:active{
+							color:#fff;
+							display:block;
+							font-weight:400;
+							font-size:100%;
+							line-height:1.4em;
+						}
+					}
+				}
+				
+						.mission{
+							width:80%;
+							font-weight:400;
+							margin:20px auto 30px auto;
+							padding:15px 0;
+							color:#fff;
+							font-size:120%;
+							line-height:1.6em;
+							letter-spacing: 1px;
+							border-bottom:2px dashed #fff;
+							border-top:2px dashed #fff;
+							text-align:center;
+						}
+			}
+		}
+		
+	}// end #slideshow
+
+//css text effect for front-page banner slide show
+
+h3.front-page-banner-text{
+	font-size: 1.4em;
+	text-shadow: 1px 1px #000;
+	letter-spacing: 1px; color: #f3b927;
+}

@@ -1,0 +1,3 @@
+Hide field labels.
+
+Go to: admin/structure/types/manage/YOUR CONTENT TYPE/display to show your list of fields and under the Label, select <Hidden> from the drop down menu. Click the Save button. 

@@ -78,8 +78,6 @@
           display: block; }
         #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .view-calendar-2 ul li .views-field-field-location {
           padding: 8px 0 8px; }
-        #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .view-calendar-2 ul li:hover {
-          background-color: #2a70d0; }
       #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .view-calendar-2 ul li:last-child {
         border-bottom: none; }
       #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent .pane-taxonomy-resources h1 {
@@ -88,7 +86,7 @@
         line-height: 1.3em;
         font-weight: normal !important; }
       #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin {
-        background-color: #2a70d0;
+        background-color: #245eac;
         width: 100%;
         height: auto;
         /*min-height:260px;*/
@@ -127,7 +125,7 @@
             #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .mollom-image-captcha-instructions a:link:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .mollom-image-captcha-instructions a:visited:hover, #navigation .region-navigation ul#muchomenu-1 li.muchomenu-parent div.muchomenu-bin .mm-columns #webform-client-form-12735 .mollom-image-captcha-instructions a:active:hover {
               font-weight: bold; }
     #navigation .region-navigation ul#muchomenu-1 li.hovering {
-      background-color: #2a70d0;
+      background-color: #245eac;
       border-top: none;
       /*border-right:1px solid #13315a;
       border-left:1px solid #13315a;*/ }

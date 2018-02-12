@@ -35,7 +35,6 @@ $zen-auto-include-item-base: false;
  */
 
 
-
 #page,
 .region-bottom {
   background:#fff;
@@ -1186,7 +1185,7 @@ table#physics-lab-activities{
   }
   
   #navigation {
-	background-color:#225aa8;
+	background-color:225aa8!important;
     position: absolute;
     top: 0; /* Move the navbar up inside #main's padding. */
     height: 2em;
@@ -1302,20 +1301,15 @@ table#physics-lab-activities{
 				}//region-sidebar-second
 			}//end sidebars
 			
-				#slideshow .slides{
+				#slideshow{
 						display:none;
-				}
-			
-			#slideshow .mission{
-						display:none;
-				}
+				}// end #slideshow
 				
 			/*this is begin used for Recent Publications*/
 			#programs-departments{
 				display:none;
 				
 			}//end programs-departments
-			
 			
 	#content { 
 				  display:block;
@@ -1797,7 +1791,7 @@ article table#psep-support-fees{
 		.phone-nav{
 			display:block;
 			width:100%;
-			background-color: #225aa8;
+			background:#1C4884!important;
 			padding:2px 0 12px;
 			overflow:hidden;
 			
@@ -2125,9 +2119,9 @@ article table#psep-support-fees{
 				}//region-sidebar-second
 			}//end sidebars
 			
-				#slideshow .slides{
+				#slideshow{
 						display:none;
-				}
+				}// end #slideshow
 				
 			/*this is begin used for Recent Publications*/
 			#programs-departments{
@@ -2325,7 +2319,7 @@ article table#psep-support-fees{
 		.phone-nav{
 			display:block;
 			width:100%;
-			background-color: #225aa8;
+			background:#1C4884!important;
 			padding:2px 0 12px;
 			overflow:hidden;
 			
@@ -2600,20 +2594,9 @@ article table#psep-support-fees{
 			display:block!important;
 	  		}
 		  
-		  #slideshow{
-			  
-			 .mission {
-					display:none;
-				}
-			  
-			  .slides {
-					max-width:610px;
-				}
-			  
-			  .wiche-mission-self-id{
-				  padding:5px 75px 0 0;
-			  }
-		  }
+		   .flexslider .slides > li {
+			overflow: hidden;
+		}
 		  
 		  .region-highlighted{
 			  #block-menu-menu-interstate-passport{
@@ -2655,7 +2638,6 @@ article table#psep-support-fees{
 				  
 		}
 	
-<<<<<<< HEAD
 #slideshow{
 	display:table;
 	background:#245eac;
@@ -2666,7 +2648,7 @@ article table#psep-support-fees{
 			
 			.slides{
 				display:table-cell;
-				max-width:600px;
+				/*max-width:600px;*/
 				vertical-align:top;
 				
 				.region-slides{
@@ -2690,15 +2672,103 @@ article table#psep-support-fees{
 						h3{
 							margin-bottom:0;
 								a:link, a:active, a:visited{
-									font-family:$arial;
-									font-weight:bold;
-									font-size:1.3em;
+									font-family: 'humnst777_cn_btbold',sans-serif;
+									line-height: 1.2em;
+									font-size: 1.4em;
 									text-shadow: 1px 1px #000;
 									letter-spacing:1px;
 									color:#fff;
-=======
->>>>>>> develop
 
+									&:hover{
+										text-decoration:underline;
+									}
+								}
+							}
+					p{
+						margin:8px 0 0 0;
+						line-height:1.1em;
+					}
+			}
+			
+			/*.views-field-field-photo-credit{
+					width:100%;
+					background:rgba(0,0,0,.25);
+					position:absolute;
+					left:0;
+					padding-left:10px;
+					bottom:0;
+					font-size:.7em;
+					font-weight:400;
+					letter-spacing:1px;
+					line-height:1.2em;
+					color:#fff;
+					text-shadow: .5px .5px #000;
+				
+				.field-content{
+					width:95%;
+				}
+			}*/
+			
+			.flex-direction-nav{
+				//display:none;
+			}
+		}
+		
+		.flex-control-nav{
+			display:none;
+		}
+		
+	}//end #flexslider_views...
+}			
+		}
+				
+				img{
+					width:100%;
+					/*max-width:600px;*/
+					height:auto;
+				}
+		}
+			
+			.wiche-mission-self-id{
+				display:table-cell;
+				width:35%;
+				background-color:rgba(33,90,168,0.75);
+				vertical-align:top;
+				
+				.region-self-id{
+					.block{
+						margin:0;
+					}
+				}
+				
+				h2{
+					color:#fff;
+					margin:8px 0 0 6px;
+					font-size:1em;
+				}
+				
+				ul{
+					margin:6px 0 0 16px;
+					padding:0 0 0 16px;
+					list-style:none;
+					
+					li{
+						background:url(images/white-arrow-bullet.png) 0 0 no-repeat;
+						padding-left:20px;
+						margin:3px 0;
+						a:link,a:visited,a:active{
+							color:#fff;
+							display:block;
+							font-weight:200;
+							font-size:70%;
+						}
+					}
+				}
+			}//end .wiche-mission-self...
+	}//end slide-row
+		
+		
+	}// end #slideshow
 
 	
 	  /*
@@ -2972,7 +3042,7 @@ article table#psep-support-fees{
 	
 		td-cell-30{
 			display:table-cell;
-			width:36%;
+			width:35%;
 		}
 	
 		.td-cell-60{
@@ -3223,26 +3293,9 @@ article table#psep-support-fees{
 			display:block!important;
 		  }
 		 
-		 
-		  #slideshow{
-			  
-			 .wiche-mission-self-id{
-				  /*padding:5px 75px 0 0;*/
-				  
-					  ul li a{
-						  	/*font-size:80%;*/
-					 	 }
-				.region-self-id{ 
-					 .mission {
-							padding: 8px 0;
-							margin: 10px auto 20px auto;
-							font-size: 1em;
-							line-height:1.2;
-						}
-
-					  }
-				  }
-		     }
+		 .flexslider .slides > li {
+			overflow: hidden;
+		}
 		 
 		 .region-highlighted{
 			  #block-menu-menu-interstate-passport{
@@ -3252,21 +3305,29 @@ article table#psep-support-fees{
 
 	 }
 	 
+	 /*front-page slide show*/
+#slideshow{
+	display:table;
+	width:100%;
 	
-<<<<<<< HEAD
 		.slide-row{
 			display:table-row;
 			
 			.slides{
-				background:#245eac;
 				display:table-cell;
-				width:600px;
+				width:780px;
+				height:auto;
 				vertical-align:top;
+				
+				img{
+					width:100%;
+					max-width:780px;
+				}
 				
 				.region-slides{
 					.block{
 						margin:0;
-						
+					
 				
 	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
 		.flexslider{
@@ -3286,12 +3347,12 @@ article table#psep-support-fees{
 					h3{
 						margin-bottom:0;
 							a:link, a:active, a:visited{
-								font-family:$arial;
-								font-weight:bold;
-								font-size:1.4em;
+								font-family: 'humnst777_cn_btbold',sans-serif;
+								line-height: 1.2em;
+								font-size: 1.4em;
 								text-shadow: 1px 1px #000;
 								letter-spacing:1px;
-								color:#fff;
+								color:#f3b927;
 
 									&:hover{
 										text-decoration:underline;
@@ -3307,46 +3368,23 @@ article table#psep-support-fees{
 			.flex-direction-nav{
 				//display:none;
 			}
-		}
+		}//end flexslider
 		
-		.views-field-field-photo-credit{
-					width:100%;
-					background:rgba(0,0,0,.25);
-					position:absolute;
-					left:0;
-					padding-left:14px;
-					bottom:0;
-					font-size:.7em;
-					font-weight:400;
-					letter-spacing:1px;
-					line-height:1.2em;
-					color:#fff;
-					text-shadow: .5px .5px #000;
-			
-				.field-content{
-					width:95%;
-				}
-			}
 		
 		.flex-control-nav{
 			display:none;
 		}
 		
 	}
-}			
+}//end region-slides .block			
 		}
 				
-				img{
-					width:100%;
-					max-width:600px;
-					height:auto;
-				}
 		}
 			
 			.wiche-mission-self-id{
 				display:table-cell;
-				max-width:600px;
-				background:#245eac;
+				width:35%;
+				background-color:rgba(33,90,168,0.75);
 				vertical-align:top;
 				
 				.region-self-id{
@@ -3381,7 +3419,7 @@ article table#psep-support-fees{
 					}
 				}
 				
-				.mission{
+				/*.mission{
 								background:#ccc;
 								width:100%;
 								h2{
@@ -3394,14 +3432,12 @@ article table#psep-support-fees{
 									line-height:1.2em;
 								}
 								
-							}
+							}*/
 			}
 		}
 		
 	}// end #slideshow
 
-=======
->>>>>>> develop
   /*Page Views, Exposed filters custom css*/
 
 #views-exposed-form-Staff-Alpha-View-page-3{
@@ -4284,7 +4320,7 @@ article table#psep-support-fees{
 	
 		td-cell-30{
 			display:table-cell;
-			width:36%;
+			width:35%;
 		}
 	
 		.td-cell-60{
@@ -4948,7 +4984,7 @@ table.wiche-table{
 table.wiche-table td{
 	padding:2%;
 	vertical-align:top;
-	width:36%;
+	width:35%;
 }
 
 
@@ -5785,6 +5821,7 @@ ul#wiche-sara-menu  ul.toggle-view span{
 			
 			.testimonial-body{
 				float:left;
+				width:85%;
 			}
 			
 			.field-content{
@@ -6209,9 +6246,9 @@ article .field-name-field-state-investment{
 		  }
 		 
 		 #programs-departments{
-				overflow:hidden;
-				width:100%;
-				clear:both;
+	overflow:hidden;
+	width:100%;
+	clear:both;
 		/*wiche publications block for front page*/
 		#block-views-publications-list-block{
 			background:#ccc;
@@ -6278,7 +6315,166 @@ article .field-name-field-state-investment{
 }/*end programs departments*/
 	 }
 	 
+	 /*front-page slide show*/
+#slideshow{
+	display:table;
+	width:100%;
 	
+		.slide-row{
+			display:table-row;
+			
+			.slides{
+				/*background:#245eac;*/
+				display:table-cell;
+				width:780px;
+				height:auto;
+				overflow:hidden;
+				vertical-align:top;
+				
+				img{
+					width:100%;
+					max-width:780px;
+				}
+				
+				.region-slides{
+					.block{
+						margin:0;
+						
+				
+				
+	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
+		.flexslider{
+			border:none;
+			margin-bottom:0;
+			overflow:hidden;
+			position:relative;
+			border-radius:0px;
+			
+				.views-field-field-call-to-action{
+					position:absolute;
+					left:14px;
+					bottom:10px;
+					
+						h3{
+							margin-bottom:0;
+								a:link, a:active, a:visited{
+									font-family: 'humnst777_cn_btbold',sans-serif;
+									line-height: 1.2em;
+									font-size: 1.4em;
+									text-shadow: 1px 1px #000;
+									letter-spacing:1px;
+									color:#f3b927;
+
+										&:hover{
+											text-decoration:underline;
+										}
+									}
+							}
+					p{
+						margin:8px 0 0 0;
+						line-height:1.1em;
+					}
+				}//end call to action
+			
+			/*.views-field-field-photo-credit{
+				background:rgba(0,0,0,.25);
+				width:100%;
+				position:absolute;
+				padding:0 14px;
+				bottom:0;
+				font-size:.7em;
+				font-weight:400;
+				letter-spacing:1px;
+				line-height:1.2em;
+				color:#fff;
+				text-shadow: .5px .5px #000;
+				
+				.field-content{
+					width:95%;
+				}
+			}*/
+		
+			
+			.flex-direction-nav{
+				a.flex-next, a.flex-prev {
+					color:#fff;
+				}
+			}
+		}
+		
+		.flex-control-nav{
+			display:none;
+		}
+		
+	}
+}			
+		}
+				
+				img{
+					/*background:#000;
+					width:100%;
+					width:600px;
+					height:auto;*/
+				}
+		}
+			
+			.wiche-mission-self-id{
+				display:table-cell;
+				width:35%;
+				background-color:rgba(33,90,168,0.75);
+				vertical-align:top;
+				
+				.region-self-id{
+					.block{
+						margin:0;
+					}
+				}
+				
+				h2{
+					color:#fff;
+					margin:8px 0 0 16px;
+					font-size:2em;
+					border-bottom:none;
+				}
+				
+				
+				ul{
+					margin:12px 0 0 16px;
+					padding:0 0 0 16px;
+					list-style:none;
+					
+					li{
+						background:url(images/white-arrow-bullet-lg.png) 0 0 no-repeat;
+						padding-left:20px;
+						margin:6px 0;
+						a:link,a:visited,a:active{
+							color:#fff;
+							display:block;
+							font-weight:400;
+							font-size:110%;
+							line-height:1.5em;
+						}
+					}
+				}
+				
+				/*.mission{
+								background:#ccc;
+								width:100%;
+								h2{
+									font-family: 'humnst777_cn_btregular',sans-serif;
+									font-weight:200;
+									margin:0;
+									padding:15px;
+									color:#000;
+									font-size:1em;
+									line-height:1.4em;
+								}
+								
+							}*/
+			}
+		}
+		
+	}// end #slideshow
 
   /*Page Views, Exposed filters custom css*/
 
@@ -7204,7 +7400,7 @@ article table#psep-support-fees{
 	
 		td-cell-30{
 			display:table-cell;
-			width:36%;
+			width:35%;
 		}
 	
 		.td-cell-60{
@@ -7726,7 +7922,7 @@ table.wiche-table{
 table.wiche-table td{
 	padding:2%;
 	vertical-align:top;
-	width:36%;
+	width:35%;
 }
 
 
@@ -8436,6 +8632,7 @@ ul#wiche-sara-menu  ul.toggle-view span{
 			
 			.testimonial-body{
 				float:left;
+				width:85%;
 			}
 			
 			.field-content{
@@ -9845,186 +10042,4 @@ ol.sep-by-numbers > li:before {
 
 .region-sidebar-first{
 	padding-top:0!important;
-}
-
-
-/*knocking blurb on front page, bottom right sidebar*/
-#block-views-publication-blocks-block-15{
-	.views-field-field-pub-notes{	
-		p{
-			margin-top:0;
-		}
-	}
-}//end #block-views...
-
-.flexslider-views-slideshow-main-frame-row .views-field-field-call-to-action{
-	background: rgba(0,0,0,0.25);
-    width: 100%;
-    position: absolute;
-    padding: 12px 14px;
-    bottom: 0;
-	h3{
-		margin-top:0;
-	}
-}
-
- /*front-page slide show*/
-#slideshow{
-	background-color:rgba(33,90,168,0.75);
-	display:table;
-	width:100%;
-	
-		.slide-row{
-			display:table-row;
-			
-			.slides{
-				background:#245eac;
-				display:table-cell;
-				overflow:hidden;
-				vertical-align:top;
-				
-				img{
-					width:100%;
-					max-width:780px;
-				}
-				
-				.region-slides{
-					.block{
-						margin:0;
-						
-				
-				
-	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
-		.flexslider{
-			border:none;
-			margin-bottom:0;
-			overflow:hidden;
-			position:relative;
-			border-radius:0px;
-			
-				.views-field-field-call-to-action{
-					/*position:absolute;
-					left:14px;
-					bottom:10px;*/
-					
-						h3{
-							margin-bottom:0;
-								a:link, a:active, a:visited{
-									font-family: 'humnst777_cn_btbold',sans-serif;
-									line-height: 1.2em;
-									font-size: 1.4em;
-									text-shadow: 1px 1px #000;
-									letter-spacing:1px;
-									color:#f3b927;
-
-										&:hover{
-											text-decoration:underline;
-										}
-									}
-							}
-					p{
-						margin:8px 0 0 0;
-						line-height:1.1em;
-					}
-				}//end call to action
-		
-			
-			.flex-direction-nav{
-				a.flex-next, a.flex-prev {
-					color:#fff;
-				}
-			}
-		}
-		
-		.flex-control-nav{
-			display:none;
-		}
-		
-	}
-}			
-		}
-				
-				img{
-					/*background:#000;
-					width:100%;
-					width:600px;
-					height:auto;*/
-				}
-		}
-			
-			.wiche-mission-self-id{
-				display:table-cell;
-				width:36%;
-				.region-self-id{
-					.block{
-						margin:0;
-					}
-					
-					.mission{
-							width:80%;
-							font-weight:400;
-							margin:20px auto 20px auto;
-							padding:15px 0;
-							color:#fff;
-							font-size:120%;
-							line-height:1.3em;
-							letter-spacing: 1px;
-							border-bottom:2px dashed #fff;
-							border-top:2px dashed #fff;
-							text-align:center;
-						}
-				}
-				
-				h2{
-					font-family:$openSans;
-					color:#fff;
-					margin:8px 0 0 16px;
-					font-size:1.1em;
-					border-bottom:none;
-				}
-				
-				
-				ul{
-					margin:12px 0 0 16px;
-					padding:0 0 0 16px;
-					list-style:none;
-					
-					li{
-						background:url(images/white-arrow-bullet-lg.png) 0 5px no-repeat;
-						padding:0 0 0 20px;
-						margin:6px 0;
-						a:link,a:visited,a:active{
-							color:#fff;
-							display:block;
-							font-weight:400;
-							font-size:100%;
-							line-height:1.4em;
-						}
-					}
-				}
-				
-						.mission{
-							width:80%;
-							font-weight:400;
-							margin:20px auto 30px auto;
-							padding:15px 0;
-							color:#fff;
-							font-size:120%;
-							line-height:1.6em;
-							letter-spacing: 1px;
-							border-bottom:2px dashed #fff;
-							border-top:2px dashed #fff;
-							text-align:center;
-						}
-			}
-		}
-		
-	}// end #slideshow
-
-//css text effect for front-page banner slide show
-
-h3.front-page-banner-text{
-	font-size: 1.4em;
-	text-shadow: 1px 1px #000;
-	letter-spacing: 1px; color: #f3b927;
 }

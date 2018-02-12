@@ -88,7 +88,7 @@ ul.nice-menu-left li {
 #main .sidebars .region-sidebar-first ul.nice-menu-right li,
 #main-front .sidebars .region-sidebar-first ul.nice-menu-right li
 {
-  background-color:rgb(34,90,168);
+  background:#1c4884;
   /*border-top:2px solid #fff;*/
 }
 
@@ -96,7 +96,7 @@ ul.nice-menu-left li {
 #main .sidebars .region-sidebar-first ul.nice-menu-right li:hover,
 #main-front .sidebars .region-sidebar-first ul.nice-menu-right li:hover
 {
-	background-color:rgba(34,90,168,0.75);
+	background:#245eac;
 }
 
 #main .sidebars .region-sidebar-first ul.nice-menu-right li a,

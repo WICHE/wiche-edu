@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+.map-wrapper {
+	width: 100%;
+	height:auto;
+}
+.map-page {
+	width: 100%;
+	max-width: 407px;
+	margin: 0 auto;
+}
+h1, h3, h4, p {
+	/*margin: 0;*/
+	padding: 3px 0;
+}
+/* Image map styles */
+.imageMap {
+	width: 100%;
+	position: relative;
+}
+.imageMap img {
+	display: block;
+	width: 100%;
+	border-radius: 20px;
+}
+.imageMap .hotspots {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+}
+.imageMap a {
+	display: block;
+	position: absolute;
+	z-index: 100;
+	border-radius:6px;
+}
+/*hot spots*/
+/*Alaska*/
+.imageMap a.p1 {
+	left: 7.1%;
+	top: 24.5%;
+	width: 4%;
+	height: 6%;
+}
+/*Indiana*/
+.imageMap a.p2 {
+	left: 73.3%;
+	top: 39.6%;
+	width: 4%;
+	height: 6%;
+}
+
+/*Nevada*/
+.imageMap a.p3 {
+	left: 31.8%;
+	top: 38%;
+	width: 4%;
+	height: 6%;
+}
+
+/*Idaho*/
+.imageMap a.p4 {
+	left: 35.3%;
+	top: 22.2%;
+	width: 4%;
+	height: 6%;
+}
+
+/*colorado*/
+.imageMap a.p5 {
+	left: 46.4%;
+	top: 43.8%;
+	width: 4%;
+	height: 6%;
+}
+
+/*Montana*/
+.imageMap a.p6 {
+	left: 43.6%;
+	top: 12.3%;
+	width: 4%;
+	height: 6%;
+}
+
+/*Nebraska*/
+.imageMap a.p7 {
+	left: 54.8%;
+	top: 35%;
+	width: 4%;
+	height: 6%;
+}
+
+/*Alaska*/
+.imageMap a.p8 {
+	left: 7.5%;
+	top: 8.7%;
+	width: 4%;
+	height: 6%;
+}
+
+/*Washington*/
+.imageMap a.p9 {
+	left: 30.1%;
+	top: 5.7%;
+	width: 4%;
+	height: 6%;
+}
+
+/*Louisiana*/
+.imageMap a.p10 {
+	left: 65.6%;
+	top: 73%;
+	width: 4%;
+	height: 6%;
+}
+
+
+/*Virgina*/
+.imageMap a.p11 {
+	left: 84.7%;
+	top: 44.2%;
+	width: 4%;
+	height: 6%;
+}      
+
+/*West Virgina*/
+.imageMap a.p12 {
+	left: 80.8%;
+	top: 42.6%;
+	width: 4%;
+	height: 6%;
+}
+
+/*Arizona*/
+.imageMap a.p13 {
+	left: 36.9%;
+	top: 59.0%;
+	width: 4%;
+	height: 6%;
+}
+
+/*Oregon*/
+.imageMap a.p14 {
+	left: 28.1%;
+	top: 19.0%;
+	width: 4%;
+	height: 6%;
+}
+
+/*South Dakota*/
+.imageMap a.p15 {
+	left: 54.7%;
+	top: 24%;
+	width: 4%;
+	height: 6%;
+}
+
+/*Kansas*/
+.imageMap a.p16 {
+	left: 56.5%;
+	top: 46.1%;
+	width: 4%;
+	height: 6%;
+}
+
+/*Missouri*/
+.imageMap a.p17 {
+	left: 64.4%;
+	top: 47%;
+	width: 4%;
+	height: 6%;
+}
+
+/*New Hampshire*/
+.imageMap a.p18 {
+	left: 96.5%;
+	top: 15%;
+	width: 3%;
+	height: 5%;
+}
+
+
+.imageMap:hover .hotspots {
+	visibility: visible;
+}
+
+.imageMap .hotspots div:hover p {
+	display: block;
+}
+.imageMap .hotspots div:hover a {
+	background: #fff;
+	z-index: 100;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	border: 2px solid #000!important;
+}
+
+

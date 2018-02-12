@@ -234,11 +234,11 @@ body {
  */
 
 a:link, a:visited, a:active, a:focus {
-	color:rgb(34,90,168);
+	color:#1c4884;
 	text-decoration:none;
 	
 	&:hover{
-		color:rgba(34,90,168,0.75);
+		color:#e01c1c;
 		text-decoration:underline;
 	}
 }
@@ -319,7 +319,7 @@ h1 {
   @include leader(1, $h1-font-size);
   @include trailer(1, $h1-font-size);
   line-height:1.1em;
-  color:#225aa8;
+  color:#1c4884;
   text-transform:uppercase;
 }
 
@@ -337,7 +337,7 @@ h2 {
 	font-family: 'humnst777_cn_btbold',sans-serif;
 	line-height:1.2em;
 	font-size:1.4em;
-	color:#225aa8;
+	color:#1c4884;
 	font-weight:400;
 	/*margin:.4em 0 .8em;*/
 	margin:.4em 0;
@@ -345,7 +345,7 @@ h2 {
 }
 
 #main-front #content h2 {
-	border-bottom: 1px solid #225aa8;
+	border-bottom: 1px solid #b75515;
 	padding-bottom:8px;
 }
 
@@ -380,7 +380,7 @@ h3 {
   /*@include trailer(1, $h3-font-size);*/
 	font-size:1.1em;
   line-height:1.2em;
-  color:#225aa8;
+  color:#1c4884;
    /*color:#000;*/
    margin-bottom:0;
 }
