@@ -3349,24 +3349,6 @@ table#physics-lab-activities tr:nth-child(even) {
     border: none;
     margin-bottom: 0;
     position: relative;
-    /*.views-field-field-photo-credit{
-    		width:100%;
-    		background:rgba(0,0,0,.25);
-    		position:absolute;
-    		left:0;
-    		padding-left:10px;
-    		bottom:0;
-    		font-size:.7em;
-    		font-weight:400;
-    		letter-spacing:1px;
-    		line-height:1.2em;
-    		color:#fff;
-    		text-shadow: .5px .5px #000;
-    	
-    	.field-content{
-    		width:95%;
-    	}
-    }*/
   }
   /* line 2667, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action {
@@ -3395,6 +3377,25 @@ table#physics-lab-activities tr:nth-child(even) {
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action p {
     margin: 8px 0 0 0;
     line-height: 1.1em;
+  }
+  /* line 2693, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-photo-credit {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+    bottom: 0;
+    font-size: .7em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    color: #fff;
+    text-shadow: .5px .5px #000;
+  }
+  /* line 2707, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-photo-credit .field-content {
+    width: 95%;
   }
   /* line 2717, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flex-control-nav {
@@ -6823,23 +6824,6 @@ article .field-name-field-state-investment {
     overflow: hidden;
     position: relative;
     border-radius: 0px;
-    /*.views-field-field-photo-credit{
-    	background:rgba(0,0,0,.25);
-    	width:100%;
-    	position:absolute;
-    	padding:0 14px;
-    	bottom:0;
-    	font-size:.7em;
-    	font-weight:400;
-    	letter-spacing:1px;
-    	line-height:1.2em;
-    	color:#fff;
-    	text-shadow: .5px .5px #000;
-    	
-    	.field-content{
-    		width:95%;
-    	}
-    }*/
   }
   /* line 6355, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action {
@@ -6868,6 +6852,24 @@ article .field-name-field-state-investment {
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action p {
     margin: 8px 0 0 0;
     line-height: 1.1em;
+  }
+  /* line 6381, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-photo-credit {
+    background: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    position: absolute;
+    padding: 0 14px;
+    bottom: 0;
+    font-size: .7em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    color: #fff;
+    text-shadow: .5px .5px #000;
+  }
+  /* line 6394, ../sass/_layout-responsive.scss */
+  #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-photo-credit .field-content {
+    width: 95%;
   }
   /* line 6401, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .flex-direction-nav a.flex-next, #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .flex-direction-nav a.flex-prev {
