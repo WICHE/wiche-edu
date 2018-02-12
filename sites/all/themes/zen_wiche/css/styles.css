@@ -3999,7 +3999,7 @@ table#physics-lab-activities tr:nth-child(even) {
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action {
     position: absolute;
     left: 14px;
-    top: -10px;
+    bottom: 380px;
     text-shadow: 1px 1px #000;
     letter-spacing: 1px;
   }
@@ -6829,7 +6829,7 @@ article .field-name-field-state-investment {
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action {
     position: absolute;
     left: 14px;
-    bottom: 10px;
+    bottom: 395px;
   }
   /* line 6360, ../sass/_layout-responsive.scss */
   #slideshow .slide-row .slides .region-slides .block #flexslider_views_slideshow_main_front_page_banner_slides-block_1 .flexslider .views-field-field-call-to-action h3 {
