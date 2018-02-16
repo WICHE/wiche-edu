@@ -1983,31 +1983,31 @@ table#physics-lab-activities tr:nth-child(even) {
 }
 /*Additional Media Query added by Fellers. For some unknown reason the following css will not work under the 'min-width:480px' media query*/
 @media all and (max-width: 480px) {
-  /* line 1208, ../sass/_layout-responsive.scss */
+  /* line 1211, ../sass/_layout-responsive.scss */
   #front-page #header .header--site-name, #page #header .header--site-name {
     font-size: .8em;
     line-height: 1.3em;
     margin-bottom: 8px;
   }
-  /* line 1215, ../sass/_layout-responsive.scss */
+  /* line 1218, ../sass/_layout-responsive.scss */
   #front-page #tag, #page #tag {
     display: none;
   }
-  /* line 1219, ../sass/_layout-responsive.scss */
+  /* line 1222, ../sass/_layout-responsive.scss */
   #front-page #secondary-menu, #page #secondary-menu {
     display: none;
   }
-  /* line 1223, ../sass/_layout-responsive.scss */
+  /* line 1226, ../sass/_layout-responsive.scss */
   #front-page #main-front, #front-page #main, #page #main-front, #page #main {
     /*margin-top:12px;*/
     /*this is begin used for Recent Publications*/
     /*alpha staff page*/
   }
-  /* line 1225, ../sass/_layout-responsive.scss */
+  /* line 1228, ../sass/_layout-responsive.scss */
   #front-page #main-front #navigation, #front-page #main #navigation, #page #main-front #navigation, #page #main #navigation {
     display: none;
   }
-  /* line 1233, ../sass/_layout-responsive.scss */
+  /* line 1236, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-first #block-nice-menus-1,
   #front-page #main-front .sidebars .region-sidebar-first #block-nice-menus-2,
   #front-page #main-front .sidebars .region-sidebar-first #block-nice-menus-8,
@@ -2023,11 +2023,11 @@ table#physics-lab-activities tr:nth-child(even) {
   #page #main .sidebars .region-sidebar-first #block-nice-menu-4 {
     display: none;
   }
-  /* line 1238, ../sass/_layout-responsive.scss */
+  /* line 1241, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars, #front-page #main .sidebars, #page #main-front .sidebars, #page #main .sidebars {
     width: 95%;
   }
-  /* line 1240, ../sass/_layout-responsive.scss */
+  /* line 1243, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-first, #front-page #main .sidebars .region-sidebar-first, #page #main-front .sidebars .region-sidebar-first, #page #main .sidebars .region-sidebar-first {
     clear: both;
     background: transparent;
@@ -2037,11 +2037,11 @@ table#physics-lab-activities tr:nth-child(even) {
     padding: 0% 2%;
     width: 100%;
   }
-  /* line 1249, ../sass/_layout-responsive.scss */
+  /* line 1252, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-first #block-block-253, #front-page #main .sidebars .region-sidebar-first #block-block-253, #page #main-front .sidebars .region-sidebar-first #block-block-253, #page #main .sidebars .region-sidebar-first #block-block-253 {
     display: none;
   }
-  /* line 1254, ../sass/_layout-responsive.scss */
+  /* line 1257, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-second, #front-page #main .sidebars .region-sidebar-second, #page #main-front .sidebars .region-sidebar-second, #page #main .sidebars .region-sidebar-second {
     padding: 0 2%;
     float: none;
@@ -2049,40 +2049,40 @@ table#physics-lab-activities tr:nth-child(even) {
     margin-right: 0px;
     width: 100%;
   }
-  /* line 1262, ../sass/_layout-responsive.scss */
+  /* line 1265, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-second .view-calendar-2 ul, #front-page #main .sidebars .region-sidebar-second .view-calendar-2 ul, #page #main-front .sidebars .region-sidebar-second .view-calendar-2 ul, #page #main .sidebars .region-sidebar-second .view-calendar-2 ul {
     list-style: none;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
   }
-  /* line 1267, ../sass/_layout-responsive.scss */
+  /* line 1270, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-second .view-calendar-2 ul li, #front-page #main .sidebars .region-sidebar-second .view-calendar-2 ul li, #page #main-front .sidebars .region-sidebar-second .view-calendar-2 ul li, #page #main .sidebars .region-sidebar-second .view-calendar-2 ul li {
     margin-top: 12px;
     padding-bottom: 12px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 1271, ../sass/_layout-responsive.scss */
+  /* line 1274, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-second .view-calendar-2 ul li .views-field h3, #front-page #main .sidebars .region-sidebar-second .view-calendar-2 ul li .views-field h3, #page #main-front .sidebars .region-sidebar-second .view-calendar-2 ul li .views-field h3, #page #main .sidebars .region-sidebar-second .view-calendar-2 ul li .views-field h3 {
     margin: 0;
   }
-  /* line 1281, ../sass/_layout-responsive.scss */
+  /* line 1284, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-second #block-nice-menus-8, #front-page #main-front .sidebars .region-sidebar-second #block-nice-menus-9, #front-page #main-front .sidebars .region-sidebar-second #block-views-testimonial-slider-block, #front-page #main .sidebars .region-sidebar-second #block-nice-menus-8, #front-page #main .sidebars .region-sidebar-second #block-nice-menus-9, #front-page #main .sidebars .region-sidebar-second #block-views-testimonial-slider-block, #page #main-front .sidebars .region-sidebar-second #block-nice-menus-8, #page #main-front .sidebars .region-sidebar-second #block-nice-menus-9, #page #main-front .sidebars .region-sidebar-second #block-views-testimonial-slider-block, #page #main .sidebars .region-sidebar-second #block-nice-menus-8, #page #main .sidebars .region-sidebar-second #block-nice-menus-9, #page #main .sidebars .region-sidebar-second #block-views-testimonial-slider-block {
     display: none;
   }
-  /* line 1286, ../sass/_layout-responsive.scss */
+  /* line 1289, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-second .passport-staff .item-list ul, #front-page #main .sidebars .region-sidebar-second .passport-staff .item-list ul, #page #main-front .sidebars .region-sidebar-second .passport-staff .item-list ul, #page #main .sidebars .region-sidebar-second .passport-staff .item-list ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  /* line 1290, ../sass/_layout-responsive.scss */
+  /* line 1293, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-second .passport-staff .item-list ul li, #front-page #main .sidebars .region-sidebar-second .passport-staff .item-list ul li, #page #main-front .sidebars .region-sidebar-second .passport-staff .item-list ul li, #page #main .sidebars .region-sidebar-second .passport-staff .item-list ul li {
     width: 45%;
     float: left;
     display: inline-block;
     padding: 2%;
   }
-  /* line 1299, ../sass/_layout-responsive.scss */
+  /* line 1302, ../sass/_layout-responsive.scss */
   #front-page #main-front .sidebars .region-sidebar-second #block-nice-menus-21, #front-page #main .sidebars .region-sidebar-second #block-nice-menus-21, #page #main-front .sidebars .region-sidebar-second #block-nice-menus-21, #page #main .sidebars .region-sidebar-second #block-nice-menus-21 {
     display: none;
   }
