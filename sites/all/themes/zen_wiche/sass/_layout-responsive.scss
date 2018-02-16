@@ -35,6 +35,7 @@ $zen-auto-include-item-base: false;
  */
 
 
+
 #page,
 .region-bottom {
   background:#fff;
@@ -43,7 +44,7 @@ $zen-auto-include-item-base: false;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  border:1px solid #ccc;
+  /*border:1px solid #ccc;*/
   
   /*copyright*/
 .copyright{
@@ -76,11 +77,11 @@ $zen-auto-include-item-base: false;
 
 
 #page{
-	background: #fff url(../images/page-bg.png) repeat-x 0 0;
+	/*background: #fff url(../images/page-bg.png) repeat-x 0 0;*/
      /*font-size: 0.9em;
    line-height: 1.5em;*/
 	
-	
+	padding-top:4px;
 	/*style unordered lists in views*/
 	
 	.view-wiche-tags{
@@ -724,7 +725,7 @@ table#wiche-table-side-header{
 
 #tag{
     padding-left:10px;
-	margin:6px 0;
+	margin:0px 0px 6px;
 }
 
 #main-menu{
@@ -817,6 +818,7 @@ ul.links{
 	}//end #block-search-form
 
 }//end .header--region
+
 
 //Drupal View & Edit tabs
 
@@ -942,7 +944,7 @@ ul.social-media{
 table.alliance-exec-temp{
 	tbody tr td{
 		vertical-align:top!important;
-		max-width:86px;
+		/*max-width:86px;*/
 		padding:6px 12px 6px 0;
 	}
 }
@@ -1187,6 +1189,7 @@ table#physics-lab-activities{
   }
   
   #navigation {
+	background-color:#225aa8;
     position: absolute;
     top: 0; /* Move the navbar up inside #main's padding. */
     height: 2em;
@@ -1299,15 +1302,20 @@ table#physics-lab-activities{
 				}//region-sidebar-second
 			}//end sidebars
 			
-				#slideshow{
+				#slideshow .slides{
 						display:none;
-				}// end #slideshow
+				}
+			
+			#slideshow .mission{
+						display:none;
+				}
 				
 			/*this is begin used for Recent Publications*/
 			#programs-departments{
 				display:none;
 				
 			}//end programs-departments
+			
 			
 	#content { 
 				  display:block;
@@ -1622,6 +1630,17 @@ article table#psep-support-fees{
 			}
 			
 		}//end .view-wiche-staff
+		
+		
+		.pub-list ul li .pub-image{
+				display:none;
+			}
+		
+		.pub-list ul li .pub-description{
+				display:block;
+				width:100%;
+			    float:none;
+			}
 
 }//end #content
 				
@@ -2106,9 +2125,9 @@ article table#psep-support-fees{
 				}//region-sidebar-second
 			}//end sidebars
 			
-				#slideshow{
+				#slideshow .slides{
 						display:none;
-				}// end #slideshow
+				}
 				
 			/*this is begin used for Recent Publications*/
 			#programs-departments{
@@ -2581,9 +2600,20 @@ article table#psep-support-fees{
 			display:block!important;
 	  		}
 		  
-		   .flexslider .slides > li {
-			overflow: hidden;
-		}
+		  #slideshow{
+			  
+			 .mission {
+					display:none;
+				}
+			  
+			  .slides {
+					max-width:610px;
+				}
+			  
+			  .wiche-mission-self-id{
+				  padding:5px 75px 0 0;
+			  }
+		  }
 		  
 		  .region-highlighted{
 			  #block-menu-menu-interstate-passport{
@@ -2625,154 +2655,7 @@ article table#psep-support-fees{
 				  
 		}
 	
-#slideshow{
-	display:table;
-	background:#245eac;
-	width:100%;
-	
-		.slide-row{
-			display:table-row;
-			
-			.slides{
-				display:table-cell;
-				/*max-width:600px;*/
-				vertical-align:top;
-				
-				.region-slides{
-					.block{
-						margin:0;
-						
-				/*flex slider css*/
-				
-	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
-		.flexslider{
-			border:none;
-			margin-bottom:0;
-			
-			position:relative;
-			
-				.views-field-field-call-to-action{
-					position:absolute;
-					left:14px;
-					top:-10px;
-					color:yellow;
-					font-weight:bold;
-					font-size:.9em;
-					text-shadow: 1px 1px #000;
-					letter-spacing:1px;
-					
-					
-					a:link, a:active, a:visited{
-							color:yellow;
-						
-							&:hover{
-								color:#fff;
-							}
-						}
-					
-					h3{
-						margin-bottom:0;
-					}
-					p{
-						margin:8px 0 0 0;
-						line-height:1.1em;
-					}
-			}
-			
-			.views-field-field-photo-credit{
-					width:100%;
-					background:rgba(0,0,0,.25);
-					position:absolute;
-					left:0;
-					padding-left:10px;
-					bottom:0;
-					font-size:.7em;
-					font-weight:400;
-					letter-spacing:1px;
-					line-height:1.2em;
-					color:#fff;
-					text-shadow: .5px .5px #000;
-				
-				.field-content{
-					width:95%;
-				}
-			}
-			
-			.flex-direction-nav{
-				//display:none;
-			}
-		}
-		
-		.flex-control-nav{
-			display:none;
-		}
-		
-	}
-}			
-		}
-				
-				img{
-					width:100%;
-					max-width:600px;
-					height:auto;
-				}
-		}
-			
-			.wiche-mission-self-id{
-				display:table-cell;
-				max-width:600px;
-				background:#245eac;
-				vertical-align:top;
-				
-				.region-self-id{
-					.block{
-						margin:0;
-					}
-				}
-				
-				h2{
-					color:#fff;
-					margin:8px 0 0 6px;
-					font-size:1em;
-				}
-				
-				ul{
-					margin:6px 0 0 16px;
-					padding:0 0 0 16px;
-					list-style:none;
-					
-					li{
-						background:url(images/white-arrow-bullet.png) 0 5px no-repeat;
-						padding-left:20px;
-						margin:3px 0;
-						a:link,a:visited,a:active{
-							color:#fff;
-							display:block;
-							font-weight:200;
-							font-size:70%;
-						}
-					}
-				}
-				
-				.mission{
-								background:#ccc;
-								width:100%;
-								h2{
-									font-family: 'humnst777_cn_btregular', sans-serif;
-									font-weight:100;
-									margin:0;
-									padding:10px;
-									color:#000;
-									font-size:.8em;
-									line-height:1em;
-								}
-								
-							}
-			}
-		}
-		
-		
-	}// end #slideshow
+
 
 	
 	  /*
@@ -2860,7 +2743,9 @@ article table#psep-support-fees{
 	.Tagline{
 			position:absolute;
 			top:178px;
-			left:50px;
+			width:100%;
+			display:table-cell;
+			text-align:center;
 		
 		h3.newstag{
 			font-family:Verdana, sans-serif;
@@ -2938,6 +2823,7 @@ article table#psep-support-fees{
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
       @include zen-grid-item(1, 1);
 		   font-size:90%;
+		    width:23.5%;
 			h2{
 			 margin:0;
 		 }
@@ -3294,9 +3180,26 @@ article table#psep-support-fees{
 			display:block!important;
 		  }
 		 
-		 .flexslider .slides > li {
-			overflow: hidden;
-		}
+		 
+		  #slideshow{
+			  
+			 .wiche-mission-self-id{
+				  /*padding:5px 75px 0 0;*/
+				  
+					  ul li a{
+						  	/*font-size:80%;*/
+					 	 }
+				.region-self-id{ 
+					 .mission {
+							padding: 8px 0;
+							margin: 10px auto 20px auto;
+							font-size: 1em;
+							line-height:1.2;
+						}
+
+					  }
+				  }
+		     }
 		 
 		 .region-highlighted{
 			  #block-menu-menu-interstate-passport{
@@ -3306,156 +3209,7 @@ article table#psep-support-fees{
 
 	 }
 	 
-	 /*front-page slide show*/
-#slideshow{
-	display:table;
-	width:100%;
 	
-		.slide-row{
-			display:table-row;
-			
-			.slides{
-				background:#245eac;
-				display:table-cell;
-				width:600px;
-				vertical-align:top;
-				
-				.region-slides{
-					.block{
-						margin:0;
-						
-				
-	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
-		.flexslider{
-			border:none;
-			margin-bottom:0;
-			
-			position:relative;
-			
-				.views-field-field-call-to-action{
-					position:absolute;
-					left:14px;
-					top:-10px;
-					color:yellow;
-					font-weight:bold;
-					font-size:1em;
-					text-shadow: 1px 1px #000;
-					letter-spacing:1px;
-					
-					
-					a:link, a:active, a:visited{
-							color:yellow;
-						
-							&:hover{
-								color:#fff;
-							}
-						}
-					
-					h3{
-						margin-bottom:0;
-					}
-					p{
-						margin:8px 0 0 0;
-						line-height:1.1em;
-					}
-				}
-			
-			.flex-direction-nav{
-				//display:none;
-			}
-		}
-		
-		.views-field-field-photo-credit{
-					width:100%;
-					background:rgba(0,0,0,.25);
-					position:absolute;
-					left:0;
-					padding-left:14px;
-					bottom:0;
-					font-size:.7em;
-					font-weight:400;
-					letter-spacing:1px;
-					line-height:1.2em;
-					color:#fff;
-					text-shadow: .5px .5px #000;
-			
-				.field-content{
-					width:95%;
-				}
-			}
-		
-		.flex-control-nav{
-			display:none;
-		}
-		
-	}
-}			
-		}
-				
-				img{
-					width:100%;
-					max-width:600px;
-					height:auto;
-				}
-		}
-			
-			.wiche-mission-self-id{
-				display:table-cell;
-				max-width:600px;
-				background:#245eac;
-				vertical-align:top;
-				
-				.region-self-id{
-					.block{
-						margin:0;
-					}
-				}
-				
-				h2{
-					color:#fff;
-					margin:8px 0 0 16px;
-					font-size:1.9em;
-				}
-				
-			
-				ul{
-					margin:12px 0 0 16px;
-					padding:0 0 0 16px;
-					list-style:none;
-					
-					li{
-						background:url(images/white-arrow-bullet-lg.png) 0 5px no-repeat;
-						padding-left:20px;
-						margin:6px 0;
-						a:link,a:visited,a:active{
-							color:#fff;
-							display:block;
-							font-weight:400;
-							font-size:100%;
-							line-height:1.2em;
-						}
-					}
-				}
-				
-				.mission{
-								background:#ccc;
-								width:100%;
-								h2{
-									font-family: 'humnst777_cn_btregular', sans-serif;
-									font-weight:200;
-									margin:0;
-									padding:15px;
-									color:#000;
-									font-size:.9em;
-									line-height:1.2em;
-								}
-								
-							}
-			}
-		}
-		
-	}// end #slideshow
-
   /*Page Views, Exposed filters custom css*/
 
 #views-exposed-form-Staff-Alpha-View-page-3{
@@ -3577,8 +3331,10 @@ article table#psep-support-fees{
 	
 	.Tagline{
 			position:absolute;
-			top:225px;
-			left:56px;
+			top:226px;
+			width:100%;
+			display:table-cell;
+			text-align:center;
 		
 		h3.newstag{
 			font-family:Verdana, sans-serif;
@@ -3674,13 +3430,13 @@ article table#psep-support-fees{
 					line-height:1.1em;
 				}
 	}
-
 	
 
     }//end .sidebar first #content
 
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
       @include zen-grid-item(1, 1);
+		width:23.5%!important;
 		
 		ul.newscap-menu{
 			position:fixed;
@@ -3932,7 +3688,7 @@ article table#psep-support-fees{
 	  width:72%;
 	  margin-left:26%;
 	  padding:0 1%;	
-	  border-left:1px solid #ccc;
+	 border-left:1px solid #ccc;
 	  
 	  .region-highlighted{
 			#block-multiblock-2, p.passport-phone-header{
@@ -5000,7 +4756,7 @@ table.wiche-table{
 table.wiche-table td{
 	padding:2%;
 	vertical-align:top;
-	width:35%;
+	width:36%;
 }
 
 
@@ -5078,7 +4834,8 @@ div#wiche-home{
 			overflow:hidden;
 			margin-bottom:0;
 				h2{
-					background:#1c4884;
+					/*background:#1c4884;*/
+					background:#225aa8;
 					padding:8px 0 8px 14px;
 					color:#fff;
 					margin:0;
@@ -5512,7 +5269,7 @@ table.cheo-institutions{
 				float:left;
 				margin-right:12px;
 				display:inline-block;
-				width:30%;
+				width:14%;
 			}
 			
 			.pub-description{
@@ -5535,7 +5292,7 @@ table.cheo-institutions{
 				
 				p{
 				margin:0!important;
-				font-weight:normal;
+				/*font-weight:normal;*/
 				a:link, a:visited, a:active{
 					color:#1c4884;
 					text-decoration:none;
@@ -5836,7 +5593,6 @@ ul#wiche-sara-menu  ul.toggle-view span{
 			
 			.testimonial-body{
 				float:left;
-				width:85%;
 			}
 			
 			.field-content{
@@ -6261,16 +6017,15 @@ article .field-name-field-state-investment{
 		  }
 		 
 		 #programs-departments{
-	overflow:hidden;
-	width:100%;
-	clear:both;
+				overflow:hidden;
+				width:100%;
+				clear:both;
 		/*wiche publications block for front page*/
 		#block-views-publications-list-block{
 			background:#ccc;
 			overflow:hidden;
 			margin-bottom:0;
 				h2{
-					background:#1c4884;
 					padding:8px 0 8px 14px;
 					color:#fff;
 					margin:0;
@@ -6282,7 +6037,7 @@ article .field-name-field-state-investment{
 					.view-footer{
 							ul.all-wiche-pubs{
 								list-style:none;
-								background:#1c4884;
+								background:#225aa8;
 								margin:0;
 								padding:8px;
 								overflow:hidden;
@@ -6331,159 +6086,7 @@ article .field-name-field-state-investment{
 }/*end programs departments*/
 	 }
 	 
-	 /*front-page slide show*/
-#slideshow{
-	display:table;
-	width:100%;
 	
-		.slide-row{
-			display:table-row;
-			
-			.slides{
-				/*background:#245eac;*/
-				display:table-cell;
-				/*width:600px;*/
-				vertical-align:top;
-				
-				.region-slides{
-					.block{
-						margin:0;
-						
-				
-				
-	#flexslider_views_slideshow_main_front_page_banner_slides-block_1{
-		.flexslider{
-			border:none;
-			margin-bottom:0;
-			overflow:hidden;
-			position:relative;
-			border-radius:0px;
-			
-				.views-field-field-call-to-action{
-					position:absolute;
-					left:14px;
-					top:-10px;
-	
-					a:link, a:active, a:visited{
-						 font-family:"Arial Black", Gadget, sans-serif;
-						 font-weight:bold;
-						 font-size:1.1em;
-						 text-shadow: 1px 1px #666;
-						 letter-spacing:1px;
-						 color:yellow;
-						
-							&:hover{
-								color:#fff;
-							}
-						}
-					
-					h3{
-						margin-bottom:0;
-					}
-					p{
-						margin:8px 0 0 0;
-						line-height:1.1em;
-					}
-				}
-			
-			.views-field-field-photo-credit{
-				background:rgba(0,0,0,.25);
-				width:100%;
-				position:absolute;
-				padding:0 14px;
-				bottom:0;
-				font-size:.7em;
-				font-weight:400;
-				letter-spacing:1px;
-				line-height:1.2em;
-				color:#fff;
-				text-shadow: .5px .5px #000;
-				
-				.field-content{
-					width:95%;
-				}
-			}
-		
-			
-			.flex-direction-nav{
-				a.flex-next, a.flex-prev {
-					color:#fff;
-				}
-			}
-		}
-		
-		.flex-control-nav{
-			display:none;
-		}
-		
-	}
-}			
-		}
-				
-				img{
-					width:100%;
-					max-width:600px;
-					height:auto;
-				}
-		}
-			
-			.wiche-mission-self-id{
-				display:table-cell;
-				max-width:600px;
-				background:#245eac;
-				vertical-align:top;
-				
-				.region-self-id{
-					.block{
-						margin:0;
-					}
-				}
-				
-				h2{
-					color:#fff;
-					margin:8px 0 0 16px;
-					font-size:2em;
-					border-bottom:none;
-				}
-				
-				
-				ul{
-					margin:12px 0 0 16px;
-					padding:0 0 0 16px;
-					list-style:none;
-					
-					li{
-						background:url(images/white-arrow-bullet-lg.png) 0 8px no-repeat;
-						padding-left:20px;
-						margin:6px 0;
-						a:link,a:visited,a:active{
-							color:#fff;
-							display:block;
-							font-weight:400;
-							font-size:110%;
-							line-height:1.5em;
-						}
-					}
-				}
-				
-				.mission{
-								background:#ccc;
-								width:100%;
-								h2{
-									font-family: 'humnst777_cn_btregular',sans-serif;
-									font-weight:200;
-									margin:0;
-									padding:15px;
-									color:#000;
-									font-size:1em;
-									line-height:1.4em;
-								}
-								
-							}
-			}
-		}
-		
-	}// end #slideshow
 
   /*Page Views, Exposed filters custom css*/
 
@@ -6519,55 +6122,6 @@ article .field-name-field-state-investment{
 	
 }//#views-exposed-form-Staff-Alpha-View-page-3
 
-/*publications list on front page*/ /*redundant*/
-
-/*.wiche-publications{
-		display:table;border-collapse:separate;border-spacing:5px;
-				ul{
-					display:table-row;
-					list-style:none;
-					margin:16px 0 0 0;
-					padding:0;
-					/*overflow:hidden;*/
-					/*li{
-						display:table-cell;
-						width:18%;
-						padding:8px;
-						margin-left:16px;
-						
-						.views-field-title{
-							width:100%;
-							padding-left:0;
-							
-							.field-content{
-								a:link,a:visited{
-									color:#000;
-									text-decoration:none;
-									font-weight:600;
-									line-height:1.2em;
-								}
-								a:hover{
-									text-decoration:underline;
-								}
-							}
-							
-						}
-						
-						figcaption.field-tag{
-									clear:left;
-									font-style:italic;
-									font-size:.8em;
-									line-height:1.2em;
-									padding-top:8px;
-									margin-top:8px;
-								}
-					}
-				}//en li
-				
-				li:first-child{
-						margin-left:0px;
-					}
-			}*///end wiche pubs
 	
 	.header{
 		 .region-phone-nav{
@@ -6606,12 +6160,14 @@ article .field-name-field-state-investment{
 	
 	.Tagline{
 			position:absolute;
-			top:280px;
-			left:100px;
+			top:279px;
+			width:100%;
+			display:table-cell;
+			text-align:center;
+			/*left:100px;*/
 		
 		h3.newstag{
 			font-family:Verdana, sans-serif;
-			text-align:center;
 			color:#666;
 			font-size:1.4em;
 			line-heightL:1.1em;
@@ -6686,11 +6242,12 @@ article .field-name-field-state-investment{
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
       @include zen-grid-item(1, 1);
 		padding-left:16px;
+		width:23.5%;
 		ul.newscap-menu{
 			position:fixed;
 			list-style:none;
 			background:#fff;
-			width:17%;
+			width:100%;
 			max-width:275px;
 			z-index:25;
 			padding:0;
@@ -6713,7 +6270,7 @@ article .field-name-field-state-investment{
 				text-transform: uppercase;
 			}
 		}//end ul.newscap-menu
-     }
+     }//end .region-sidebar-first
 	}
 
 
@@ -8362,7 +7919,7 @@ table.waccal-exec-comm, table.walf-exec-comm{
 				float:left;
 				margin-right:12px;
 				display:inline-block;
-				width:30%;
+				width:14%;
 			}
 			
 			.pub-description{
@@ -8385,10 +7942,11 @@ table.waccal-exec-comm, table.walf-exec-comm{
 				
 				p{
 				margin:0!important;
-				font-weight:normal;
+				/*font-weight:normal;*/
 				a:link, a:visited, a:active{
 					color:#1c4884;
 					text-decoration:none;
+					font-weight:bold;
 				}
 				a:hover{
 					text-decoration:underline;
@@ -8686,7 +8244,6 @@ ul#wiche-sara-menu  ul.toggle-view span{
 			
 			.testimonial-body{
 				float:left;
-				width:85%;
 			}
 			
 			.field-content{
@@ -9533,10 +9090,10 @@ table.passport-blocks{
 
 .flex-direction-nav{
 	li a{
-		color:yellow;
+		/*color:yellow;*/
 		
 		&:hover{
-		 color: #fff;
+		 color:#000!important;
 		}
 	}
 }
@@ -10129,7 +9686,7 @@ ol.sep-by-numbers > li:before {
 			display:table-row;
 			
 			.slides{
-				/*background:#245eac;*/
+				background:#245eac;
 				display:table-cell;
 				overflow:hidden;
 				vertical-align:top;
