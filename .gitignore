@@ -31,4 +31,5 @@ sites/*/private
 /wichestyle-new.css
 *.sql
 /sites/all/themes/zen_wiche/.sass-cache
-exit
+/.sass-cache
+
