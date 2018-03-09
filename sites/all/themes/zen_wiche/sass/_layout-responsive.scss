@@ -901,7 +901,6 @@ ul.social-media{
 
 #tag h2{
     font-family: 'Open Sans', sans-serif;
-	/*font-family: 'Open Sans Condensed', sans-serif;*/
 	font-weight:700;
 	color:#666;
 	text-transform:uppercase;
@@ -3927,7 +3926,9 @@ article table#psep-support-fees{
 				margin-right:9px;
 			}
 			.student-details{
-				font-family:'humnst777_lt_btlight_italic';
+				/*font-family:'humnst777_lt_btlight_italic';*/
+				font-family:$openSans;
+				font-style:italic;
 				float:left;
 				display:inline-block;
 				/*width:65%;*/
@@ -4981,7 +4982,7 @@ a.popup-element-title {
 
 /*custom css for accordion on front page*/
 
-.view-wiche-sep-departments-initiatives{
+/*.view-wiche-sep-departments-initiatives{
 	
 	.views-accordion-header{
 			background:none!important;
@@ -4997,17 +4998,17 @@ a.popup-element-title {
 		
 	}
 	
-}
+}*/
 
-.ui-accordion{
+/*.ui-accordion{
 			.ui-accordion-content[role=tabpanel] {
 				border-top: 1px solid #ccc;
 			}
-		}
+		}*/
 
-.quick-link{
+/*.quick-link{
 	display:block;
-}
+}*/
 
 /*custom table styling for /forum/membership/current*/
 
@@ -5592,7 +5593,11 @@ ul#wiche-sara-menu  ul.toggle-view span{
 			}
 			
 			.testimonial-body{
-				float:left;
+				/*float:left;*/
+				em{
+					display:block;
+					margin-top:8px;
+				}
 			}
 			
 			.field-content{
@@ -6843,7 +6848,9 @@ article table#psep-support-fees{
 				margin-right:9px;
 			}
 			.student-details{
-				font-family:'humnst777_lt_btlight_italic';
+				/*font-family:'humnst777_lt_btlight_italic';*/
+				font-family:$openSans;
+				font-style:italic;
 				float:left;
 				display:inline-block;
 				width:65%;
@@ -7665,7 +7672,9 @@ a.popup-element-title {
 		.field-content{
 			display:block;
 			a:link{
-				font-family: 'humnst777_lt_btlight_italic';
+				/*font-family:'humnst777_lt_btlight_italic';*/
+				font-family:$openSans;
+				font-style:italic;
 				color:#1C4884;
 				line-height:1.2em;
 			}
@@ -8243,7 +8252,11 @@ ul#wiche-sara-menu  ul.toggle-view span{
 			}
 			
 			.testimonial-body{
-				float:left;
+				/*float:left;*/
+				em{
+					display:block;
+					margin-top:8px;
+				}
 			}
 			
 			.field-content{
@@ -9836,3 +9849,16 @@ h3.front-page-banner-text{
 	text-shadow: 1px 1px #000;
 	letter-spacing: 1px; color: #f3b927;
 }
+
+
+.ui-accordion{
+		.ui-accordion-header .field-content a, .ui-accordion-header a .field-content{
+			font-family:$openSans!important;
+			font-size:14px!important;
+		}
+
+		.ui-accordion-content{
+		font-family:$openSans!important;
+		font-size:12px!important;
+	}
+} 
