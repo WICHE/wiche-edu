@@ -35,5 +35,4 @@ sites/*/private
 *.sql
 /sites/all/themes/zen_wiche/.sass-cache
 .sass-cache
-/sites/all/themes/zen_wiche/.sass-cache/
-.sass-cache/
+
