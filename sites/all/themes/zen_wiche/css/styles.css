@@ -4181,7 +4181,7 @@ table#physics-lab-activities tr:nth-child(even) {
   }
   /* line 3512, ../sass/_layout-responsive.scss */
   .two-sidebars #main #content h1#page-title {
-    margin-left: 16px;
+    /*margin-left:16px;*/
   }
   /* line 3523, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-first {
