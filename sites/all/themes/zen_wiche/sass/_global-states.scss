@@ -107,34 +107,38 @@ tr.selected td {
 }
 
 //custom css for WICHE states pages
-
+/*
 .field-name-field-introduction{
-	position:relative;
-	blockquote strong{
-		color:#225aa8;
-		font-size:1.4em;
+	p > img{
+		margin-top:16px;
 	}
 	
-	.sep-roi{
-		position:absolute;
-		right:0;
-		top:165px;
-		width:60%;
-		font-size:1.2em;
-		p{
-			position:relative;
-			top:-3px;
-		}
-		span{
-			float:left;
-			margin-right:12px;
-			font-size:2.5em;
-			font-weight:700;
-			font-weight:bold;
-			display:inline-block;
-		}
+	.pullblurb{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size:2em;
 	}
 }
+
+.field-name-field-introduction table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		float:left;
+		display:inline-block;
+		width:43%;
+		margin:0;
+			
+			th{
+				border:none;
+				width:40%;
+				font-size:3em;
+				font-weight:700;
+				text-align:left;
+			}
+			td{
+				width:60%;
+				font-size:1.1em;
+				text-align:left;
+			}
+		}
 
 .field-name-field-state-tagline,
 .field-name-field-introduction,
@@ -147,7 +151,6 @@ tr.selected td {
 	margin-top:20px;
 }
 
-
 .view-legislative-advisory-committee-block-view{ 
 	.views-field-field-lac-photo{
 		img{
@@ -155,16 +158,6 @@ tr.selected td {
 			max-height:127px;
 			}
 	}
-	
-		span.views-field-field-lac-title,
-		span.views-field-field-lac-fname,
-		span.views-field-field-lac-lname{
-			display:inline-block;
-			padding:0;
-			margin:0;
-			font-size:.8em;
-			font-weight:700;
-		}
 }
 
 .field-name-field-state-former-commissioner .field-items {
@@ -195,8 +188,6 @@ tr.selected td {
 			display:block;
 		}
 	}
-	
-
 	
 }//end field-items
 	ul.states{
@@ -233,7 +224,7 @@ tr.selected td {
 		}//end ul
 
 table.states-sep-data{
-	width:57%;
+	width:55%;
 	float:left;
 	display:inline-block;
 	border:1px solid #ccc;
@@ -253,30 +244,27 @@ table.states-sep-data{
 	}
 }
 
-.field-name-field-state-student-programs .psep-savings{
+.field-name-field-state-student-programs table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
 		float:left;
 		display:inline-block;
 		margin:16px 0 0 12px;
-		width:38%;
-		font-size:1.2em;
-			p{
-				position:relative;
-				top:-6px;
+		width:41%;
+			
+			th{
+				border:none;
+				margin-right:12px;
+				font-size:4em;
+				font-weight:600;
+				padding-right:12px;
+			}
+			td{
 				font-size:1em;
 			}
-			span{
-				float:left;
-				margin-right:12px;
-				font-size:2.2em;
-				font-weight:700;
-				font-weight:bold;
-				display:inline-block;
-			}
 		}
-	 
 
 .field-name-field-printable-pdf-state-factsh{
 	clear:left;
 	text-align:right;
 }
-		
+*/		
