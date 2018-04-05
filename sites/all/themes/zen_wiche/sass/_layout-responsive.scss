@@ -2037,6 +2037,165 @@ article table#psep-support-fees{
 	.ncbanner{
 		display:none;
 	}
+	
+	
+//custom css for WICHE states pages
+
+.field-name-field-introduction{
+	p > img{
+		margin-top:16px;
+	}
+	
+	.pullblurb{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size:2em;
+	}
+}
+
+.field-name-field-introduction table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		float:left;
+		display:inline-block;
+		width:90%;
+		margin:0;
+			
+			th{
+				border:none;
+				width:40%;
+				font-size:3em;
+				font-weight:700;
+				text-align:left;
+			}
+			td{
+				width:60%;
+				font-size:1.1em;
+				text-align:left;
+			}
+		}
+
+.field-name-field-state-tagline,
+.field-name-field-introduction,
+.field-name-field-state-intro,
+.field-name-field-state-investment,
+.field-name-field-state-student-programs,
+.field-name-field-state-former-commissioner{
+	border-top-color:#ccc;
+	border-top-style:dotted;
+	margin-top:20px;
+}
+
+.view-legislative-advisory-committee-block-view{ 
+	.views-field-field-lac-photo{
+		img{
+			max-width:86px;
+			max-height:127px;
+			}
+	}
+}
+
+	ul.states{
+		list-style:none;
+		margin:0;
+		padding:0;
+					
+			li {
+			background:url(images/red-arrow.png) 0 5px no-repeat;
+			padding-left:14px;
+			font-weight:600;
+			font-size:.9em;
+			color:#000;
+			margin:0 0 12px 0;
+				
+				span.normal{
+					font-weight:200;
+				}//end span
+	
+			table.state-colleges{
+				font-weight:normal;
+				margin-top:0;
+				border:none;
+					tr{
+						td{
+							padding:2px 0px 2px;
+							vertical-align:bottom;
+							border-bottom:1px solid #ccc;
+						}//end td
+					}//end tr
+				}//end table
+			}//end li
+		}//end ul
+
+table.states-sep-data{
+	display:inline-block;
+	border:1px solid #ccc;
+		tr{
+			border-bottom:1px solid #999;
+			
+			td{
+				text-align:center;
+			}
+		}
+	th{
+		border:none;
+	}
+	th[scope="row"]{
+		border:none;
+		padding-left:6px;
+	}
+}
+
+.field-name-field-state-student-programs table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		margin:16px 0 0 12px;
+			
+			th{
+				border:none;
+				margin-right:12px;
+				font-size:4em;
+				font-weight:600;
+				padding-right:12px;
+			}
+			td{
+				font-size:1em;
+			}
+		}
+	
+.field-name-field-state-former-commissioner .field-items {
+	
+	p.student-testimonial-pic{
+		background-color:transparent;
+		float:left;
+		width:36%;
+		
+		img{
+			max-width:97px;
+			max-height:auto;
+			box-shadow: 5px 5px 15px #222;
+		}
+	}
+	
+	p.student-testimonial{
+		float:left;
+		width:60%;
+		background-color:rgba(175,169,157,.25);
+		margin-top:12px;
+		padding:8px 6px;
+		font-size:.85em;
+
+		span{
+			text-align:right;
+			margin:6px 0 0 0;
+			display:block;
+		}
+	}
+	
+}//end field-items
+
+.field-name-field-printable-pdf-state-factsh{
+	text-align:center;
+}
+		
+
 
 } /*end max width 480*/
 
@@ -2561,6 +2720,162 @@ article table#psep-support-fees{
 	}//end views-exposed-form
 	
 }//#views-exposed-form-Staff-Alpha-View-page-3
+	
+	//custom css for WICHE states pages
+
+.field-name-field-introduction{
+	p > img{
+		margin-top:16px;
+	}
+	
+	.pullblurb{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size:2em;
+	}
+}
+
+.field-name-field-introduction table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		float:left;
+		display:inline-block;
+		width:90%;
+		margin:0;
+			
+			th{
+				border:none;
+				width:40%;
+				font-size:3em;
+				font-weight:700;
+				text-align:left;
+			}
+			td{
+				width:60%;
+				font-size:1.1em;
+				text-align:left;
+			}
+		}
+
+.field-name-field-state-tagline,
+.field-name-field-introduction,
+.field-name-field-state-intro,
+.field-name-field-state-investment,
+.field-name-field-state-student-programs,
+.field-name-field-state-former-commissioner{
+	border-top-color:#ccc;
+	border-top-style:dotted;
+	margin-top:20px;
+}
+
+.view-legislative-advisory-committee-block-view{ 
+	.views-field-field-lac-photo{
+		img{
+			max-width:86px;
+			max-height:127px;
+			}
+	}
+}
+
+	ul.states{
+		list-style:none;
+		margin:0;
+		padding:0;
+					
+			li {
+			background:url(images/red-arrow.png) 0 5px no-repeat;
+			padding-left:14px;
+			font-weight:600;
+			font-size:.9em;
+			color:#000;
+			margin:0 0 12px 0;
+				
+				span.normal{
+					font-weight:200;
+				}//end span
+	
+			table.state-colleges{
+				font-weight:normal;
+				margin-top:0;
+				border:none;
+					tr{
+						td{
+							padding:2px 0px 2px;
+							vertical-align:bottom;
+							border-bottom:1px solid #ccc;
+						}//end td
+					}//end tr
+				}//end table
+			}//end li
+		}//end ul
+
+table.states-sep-data{
+	display:inline-block;
+	border:1px solid #ccc;
+		tr{
+			border-bottom:1px solid #999;
+			
+			td{
+				text-align:center;
+			}
+		}
+	th{
+		border:none;
+	}
+	th[scope="row"]{
+		border:none;
+		padding-left:6px;
+	}
+}
+
+.field-name-field-state-student-programs table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		margin:16px 0 0 12px;
+			
+			th{
+				border:none;
+				margin-right:12px;
+				font-size:4em;
+				font-weight:600;
+				padding-right:12px;
+			}
+			td{
+				font-size:1em;
+			}
+		}
+	
+.field-name-field-state-former-commissioner .field-items {
+	
+	p.student-testimonial-pic{
+		background-color:transparent;
+		float:left;
+		width:36%;
+		
+		img{
+			max-width:97px;
+			max-height:auto;
+			box-shadow: 5px 5px 15px #222;
+		}
+	}
+	
+	p.student-testimonial{
+		float:left;
+		width:60%;
+		background-color:rgba(175,169,157,.25);
+		margin-top:12px;
+		padding:8px 6px;
+		font-size:.85em;
+
+		span{
+			text-align:right;
+			margin:6px 0 0 0;
+			display:block;
+		}
+	}
+	
+}//end field-items
+
+.field-name-field-printable-pdf-state-factsh{
+	text-align:center;
+}
 
 } /*end max width 480*/
 
@@ -3139,9 +3454,169 @@ article table#psep-support-fees{
 }
     }
   }
-	 
-
+	  
+//custom css for WICHE states pages
+.field-name-field-introduction{
+	p > img{
+		margin-top:16px;
+	}
+	
+	.pullblurb{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size:2em;
+	}
 }
+
+.field-name-field-introduction table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		float:left;
+		display:inline-block;
+		width:43%;
+		margin:0;
+			
+			th{
+				border:none;
+				width:40%;
+				font-size:3em;
+				font-weight:700;
+				text-align:left;
+			}
+			td{
+				width:60%;
+				font-size:1.1em;
+				text-align:left;
+			}
+		}
+
+.field-name-field-state-tagline,
+.field-name-field-introduction,
+.field-name-field-state-intro,
+.field-name-field-state-investment,
+.field-name-field-state-student-programs,
+.field-name-field-state-former-commissioner{
+	border-top-color:#ccc;
+	border-top-style:dotted;
+	margin-top:20px;
+}
+
+.view-legislative-advisory-committee-block-view{ 
+	.views-field-field-lac-photo{
+		img{
+			max-width:86px;
+			max-height:127px;
+			}
+	}
+}
+
+.field-name-field-state-former-commissioner .field-items {
+	
+	p.student-testimonial-pic{
+		background-color:transparent;
+		float:left;
+		width:18%;
+		
+		img{
+			max-width:97px;
+			max-height:auto;
+			box-shadow: 5px 5px 15px #222;
+		}
+	}
+	
+	p.student-testimonial{
+		float:left;
+		width:79%;
+		background-color:rgba(175,169,157,.25);
+		margin-top:12px;
+		padding:8px 6px;
+		font-size:.85em;
+
+		span{
+			text-align:right;
+			margin:6px 0 0 0;
+			display:block;
+		}
+	}
+	
+}//end field-items
+	ul.states{
+		list-style:none;
+		margin:0;
+		padding:0;
+					
+			li {
+			background:url(images/red-arrow.png) 0 5px no-repeat;
+			padding-left:14px;
+			font-weight:600;
+			font-size:.9em;
+			color:#000;
+			margin:0 0 12px 0;
+				
+				span.normal{
+					font-weight:200;
+				}//end span
+	
+			table.state-colleges{
+				font-weight:normal;
+				margin-top:0;
+				width:45%;
+				border:none;
+					tr{
+						td{
+							padding:2px 0px 2px;
+							vertical-align:bottom;
+							border-bottom:1px solid #ccc;
+						}//end td
+					}//end tr
+				}//end table
+			}//end li
+		}//end ul
+
+table.states-sep-data{
+	width:55%;
+	float:left;
+	display:inline-block;
+	border:1px solid #ccc;
+		tr{
+			border-bottom:1px solid #999;
+			
+			td{
+				text-align:center;
+			}
+		}
+	th{
+		border:none;
+	}
+	th[scope="row"]{
+		border:none;
+		padding-left:6px;
+	}
+}
+
+.field-name-field-state-student-programs table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		float:left;
+		display:inline-block;
+		margin:16px 0 0 12px;
+		width:41%;
+			
+			th{
+				border:none;
+				margin-right:12px;
+				font-size:4em;
+				font-weight:600;
+				padding-right:12px;
+			}
+			td{
+				font-size:1em;
+			}
+		}
+
+.field-name-field-printable-pdf-state-factsh{
+	clear:left;
+	text-align:right;
+}
+
+}//end max 979
 
 @media all and (min-width: 980px) and (max-width: 1279px) {
 	
@@ -3156,7 +3631,7 @@ article table#psep-support-fees{
 		}
 	  
 .header{
-		 .phone-nav{
+		 .phone-nav, .region-pnone-nav{
 			 display:none;
 		  }
 	
@@ -3293,13 +3768,6 @@ article table#psep-support-fees{
 					}
 			}
 	
-	.header{
-		 .region-phone-nav{
-			 display:none;
-		  }//end region-phone-nav
-		  
-	 }// end header
- 
  
    /*
    * The layout when there is only one sidebar, the left one.
@@ -4779,8 +5247,169 @@ table#borderless-no_bgColor{
 }
 
   }
-  
+	
+	//custom css for WICHE states pages
+.field-name-field-introduction{
+	p > img{
+		margin-top:16px;
+	}
+	
+	.pullblurb{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size:2em;
+	}
 }
+
+.field-name-field-introduction table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		float:left;
+		display:inline-block;
+		width:43%;
+		margin:0;
+			
+			th{
+				border:none;
+				width:40%;
+				font-size:3em;
+				font-weight:700;
+				text-align:left;
+			}
+			td{
+				width:60%;
+				font-size:1.1em;
+				text-align:left;
+			}
+		}
+
+.field-name-field-state-tagline,
+.field-name-field-introduction,
+.field-name-field-state-intro,
+.field-name-field-state-investment,
+.field-name-field-state-student-programs,
+.field-name-field-state-former-commissioner{
+	border-top-color:#ccc;
+	border-top-style:dotted;
+	margin-top:20px;
+}
+
+.view-legislative-advisory-committee-block-view{ 
+	.views-field-field-lac-photo{
+		img{
+			max-width:86px;
+			max-height:127px;
+			}
+	}
+}
+
+.field-name-field-state-former-commissioner .field-items {
+	
+	p.student-testimonial-pic{
+		background-color:transparent;
+		float:left;
+		width:18%;
+		
+		img{
+			max-width:97px;
+			max-height:auto;
+			box-shadow: 5px 5px 15px #222;
+		}
+	}
+	
+	p.student-testimonial{
+		float:left;
+		width:79%;
+		background-color:rgba(175,169,157,.25);
+		margin-top:12px;
+		padding:8px 6px;
+		font-size:.85em;
+
+		span{
+			text-align:right;
+			margin:6px 0 0 0;
+			display:block;
+		}
+	}
+	
+}//end field-items
+	ul.states{
+		list-style:none;
+		margin:0;
+		padding:0;
+					
+			li {
+			background:url(images/red-arrow.png) 0 5px no-repeat;
+			padding-left:14px;
+			font-weight:600;
+			font-size:.9em;
+			color:#000;
+			margin:0 0 12px 0;
+				
+				span.normal{
+					font-weight:200;
+				}//end span
+	
+			table.state-colleges{
+				font-weight:normal;
+				margin-top:0;
+				width:45%;
+				border:none;
+					tr{
+						td{
+							padding:2px 0px 2px;
+							vertical-align:bottom;
+							border-bottom:1px solid #ccc;
+						}//end td
+					}//end tr
+				}//end table
+			}//end li
+		}//end ul
+
+table.states-sep-data{
+	width:55%;
+	float:left;
+	display:inline-block;
+	border:1px solid #ccc;
+		tr{
+			border-bottom:1px solid #999;
+			
+			td{
+				text-align:center;
+			}
+		}
+	th{
+		border:none;
+	}
+	th[scope="row"]{
+		border:none;
+		padding-left:6px;
+	}
+}
+
+.field-name-field-state-student-programs table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		float:left;
+		display:inline-block;
+		margin:16px 0 0 12px;
+		width:41%;
+			
+			th{
+				border:none;
+				margin-right:12px;
+				font-size:4em;
+				font-weight:600;
+				padding-right:12px;
+			}
+			td{
+				font-size:1em;
+			}
+		}
+
+.field-name-field-printable-pdf-state-factsh{
+	clear:left;
+	text-align:right;
+}
+	 
+}//end max 1279
 
 
 
@@ -4928,10 +5557,6 @@ div#wiche-home{
 }/*end programs departments*/
 
 
-.delicious-posts{
-	padding-right:1%;
-}
-
 
 #content .profile, #content form#user-login {
     padding:0 1%;
@@ -4980,35 +5605,6 @@ a.popup-element-title {
 		
 }
 
-/*custom css for accordion on front page*/
-
-/*.view-wiche-sep-departments-initiatives{
-	
-	.views-accordion-header{
-			background:none!important;
-		.field-content{
-			display:block;
-			a:link{
-				font-family: 'humnst777_lt_btlight_italic';
-				color:#1C4884;
-				line-height:1.2em;
-			}
-		}
-		
-		
-	}
-	
-}*/
-
-/*.ui-accordion{
-			.ui-accordion-content[role=tabpanel] {
-				border-top: 1px solid #ccc;
-			}
-		}*/
-
-/*.quick-link{
-	display:block;
-}*/
 
 /*custom table styling for /forum/membership/current*/
 
@@ -5720,13 +6316,6 @@ ul#wiche-sara-menu  ul.toggle-view span{
 	}
 	
 }
-
-/*some h2s in the 1st and 2nd sidebar need more top margin but not all of them*/
-/*#block-menu-menu-interstate-passport, #block-menu-menu-initiatives-sor, #block-menu-menu-psep-menu, .region-sidebar-first, #block-menu-menu-resources, #block-block-260, #block-block-264, #block-views-210e6048e21942227c4a4d3a48bf8e06, #block-views-publication-blocks-block-3, #block-views-publication-blocks-block-4, #block-menu-menu-statewide-trans, #block-menu-menu-facilitating-de, #block-menu-menu-getting-what-yo, #block-block-27, #block-block-273, .w-sara-menu, #block-menu-menu-lac-menu, #block-menu-menu-non-traditional, #block-menu-menu-factbook{
-	h2{
-		margin-top:16px!important;
-	}
-}*/
 
 /*student testimonial slideshow on front page*/
 #views_slideshow_cycle_main_testimonial_slider-block{
@@ -6597,6 +7186,168 @@ article table#psep-support-fees{
 		}
 	  
 }
+	
+	//custom css for WICHE states pages
+.field-name-field-introduction{
+	p > img{
+		margin-top:16px;
+	}
+	
+	.pullblurb{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size:2em;
+	}
+}
+
+.field-name-field-introduction table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		float:left;
+		display:inline-block;
+		width:43%;
+		margin:0;
+			
+			th{
+				border:none;
+				width:40%;
+				font-size:3em;
+				font-weight:700;
+				text-align:left;
+			}
+			td{
+				width:60%;
+				font-size:1.1em;
+				text-align:left;
+			}
+		}
+
+.field-name-field-state-tagline,
+.field-name-field-introduction,
+.field-name-field-state-intro,
+.field-name-field-state-investment,
+.field-name-field-state-student-programs,
+.field-name-field-state-former-commissioner{
+	border-top-color:#ccc;
+	border-top-style:dotted;
+	margin-top:20px;
+}
+
+.view-legislative-advisory-committee-block-view{ 
+	.views-field-field-lac-photo{
+		img{
+			max-width:86px;
+			max-height:127px;
+			}
+	}
+}
+
+.field-name-field-state-former-commissioner .field-items {
+	
+	p.student-testimonial-pic{
+		background-color:transparent;
+		float:left;
+		width:18%;
+		
+		img{
+			max-width:97px;
+			max-height:auto;
+			box-shadow: 5px 5px 15px #222;
+		}
+	}
+	
+	p.student-testimonial{
+		float:left;
+		width:79%;
+		background-color:rgba(175,169,157,.25);
+		margin-top:12px;
+		padding:8px 6px;
+		font-size:.85em;
+
+		span{
+			text-align:right;
+			margin:6px 0 0 0;
+			display:block;
+		}
+	}
+	
+}//end field-items
+	ul.states{
+		list-style:none;
+		margin:0;
+		padding:0;
+					
+			li {
+			background:url(images/red-arrow.png) 0 5px no-repeat;
+			padding-left:14px;
+			font-weight:600;
+			font-size:.9em;
+			color:#000;
+			margin:0 0 12px 0;
+				
+				span.normal{
+					font-weight:200;
+				}//end span
+	
+			table.state-colleges{
+				font-weight:normal;
+				margin-top:0;
+				width:45%;
+				border:none;
+					tr{
+						td{
+							padding:2px 0px 2px;
+							vertical-align:bottom;
+							border-bottom:1px solid #ccc;
+						}//end td
+					}//end tr
+				}//end table
+			}//end li
+		}//end ul
+
+table.states-sep-data{
+	width:55%;
+	float:left;
+	display:inline-block;
+	border:1px solid #ccc;
+		tr{
+			border-bottom:1px solid #999;
+			
+			td{
+				text-align:center;
+			}
+		}
+	th{
+		border:none;
+	}
+	th[scope="row"]{
+		border:none;
+		padding-left:6px;
+	}
+}
+
+.field-name-field-state-student-programs table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		float:left;
+		display:inline-block;
+		margin:16px 0 0 12px;
+		width:41%;
+			
+			th{
+				border:none;
+				margin-right:12px;
+				font-size:4em;
+				font-weight:600;
+				padding-right:12px;
+			}
+			td{
+				font-size:1em;
+			}
+		}
+
+.field-name-field-printable-pdf-state-factsh{
+	clear:left;
+	text-align:right;
+}	
+
 
 }// end content
 
@@ -6650,39 +7401,7 @@ article table#psep-support-fees{
 						}
 					}
 					
-									  /*passport home faux table*/
-/*.passport-home{	
-	background:url(images/passport-girl.jpg) 0 0 no-repeat;
-	width:100%;
-	height:300px;
-	overflow:hidden;
-	padding:4% 0;
-	display:table;
-	
-		td-cell-30{
-			display:table-cell;
-			width:30%;
-		}
-	
-		.td-cell-60{
-			display:table-cell;
-			width:65%;
-			vertical-align:top;
-			padding:0 2.5%;
-			
-			li{
-				
-				list-style-image:url(images/white-arrow-right.png);
-				h3{
-					color:#fff;
-					text-shadow:1px 1px #000;
-					font-size:1.4em;
-					line-height:1.6em;
-					font-weight:400;
-					}
-			}
-	}
-}*///end passport faux table
+
 
 /*passport banner image*/
 
@@ -7044,53 +7763,6 @@ article table#psep-support-fees{
   }//end tr-row
 }	//end Passport-home	
 		
-		/*Delicious Links on home page*/
-		
-		.view-delicious-home{
-			ul{
-				list-style:none;
-				margin:0;
-				padding:0;
-				li{
-					font-size:12px;
-				}
-			}
-		}
-
-				article{	
-				
-
-					
-					ul{
-						li{
-							margin-bottom:12px;
-							/*font-size:12px;*/
-						}
-					}
-					
-					ul.page-list{
-						border:1px solid #ccc;
-						list-style:none;
-						padding:0;
-						margin:0;
-						width:50%;
-						margin:0 auto;
-						
-						li{
-							border-bottom:1px solid #ccc;
-							padding-right:20px;
-							a{
-								display:block;
-								padding:4px 8px;
-								line-height:2em;
-							}
-						}
-						
-						li:last-child{
-							border:none;
-						}
-					}
-				}
 
 /*tables in ice executive committee view*/		
 		.view-list-ice-exec-committee{
@@ -7370,19 +8042,6 @@ article table#psep-support-fees{
 		
 		.block{
 			
-				/*.front-featured-pub .pubblock-list ul li h2.field-content{
-					background-color:transparent;
-						a:link, a:visited, a:active{
-							color:#1c4884;
-							font-size:1.2em;
-							line-height:1.1em;
-							text-align:left;
-
-							&:hover{
-								text-decoration:underline;
-								}
-							}
-						}*/
 
 		/*2nd Sidebar vertical list of publications for departments, initiatves, interest groups and priority pages*/		
 		.view-publication-blocks, .view-id-PSEP_links, .view-Adult-learner-pubs{
@@ -7468,8 +8127,6 @@ article table#psep-support-fees{
 			width:75%;
 		}
 	}
-	
-	
 	
   }//end two sidebars
   
@@ -7611,9 +8268,9 @@ div#wiche-home{
 
 
 
-.delicious-posts{
+/*.delicious-posts{
 	padding-right:1%;
-}
+}*/
 
 
 #content .profile, #content form#user-login {
@@ -7665,14 +8322,13 @@ a.popup-element-title {
 
 /*custom css for accordion on front page*/
 
-.view-wiche-sep-departments-initiatives{
+/*.view-wiche-sep-departments-initiatives{
 	
 	.views-accordion-header{
 			background:none!important;
 		.field-content{
 			display:block;
 			a:link{
-				/*font-family:'humnst777_lt_btlight_italic';*/
 				font-family:$openSans;
 				font-style:italic;
 				color:#1C4884;
@@ -7693,7 +8349,7 @@ a.popup-element-title {
 
 .quick-link{
 	display:block;
-}
+}*/
 
 /*custom table styling for /forum/membership/current*/
 
@@ -8278,27 +8934,6 @@ ul#wiche-sara-menu  ul.toggle-view span{
 		padding:0;
 		list-style:none;
 		
-		/*li{
-			/*padding-bottom:12px;*/
-			/*border-bottom:1px solid #ccc;*/
-			/*margin-top:16px;*/
-			
-			
-			
-			/*a:link, a:visited, a:active {
-				color: #1c4884;
-				display:block;
-				font-size: 1em;
-				text-align:center;
-				text-decoration:underline;
-				line-height:1.3em;
-			}*/
-			
-			/*a:hover{
-				text-decoration:none;
-			}*/
-		/*}*/
-		
 		li:last-child{
 			border-bottom:none;
 		}
@@ -8365,9 +9000,7 @@ ul#wiche-sara-menu  ul.toggle-view span{
 .region-sidebar-second{
 	ul{
 		li{
-			/*border-bottom:1px solid #ccc;*/
-			/*margin-bottom:6px;
-			padding-bottom:6px;*/
+			
 			.views-field-field-date-display{
 				h3.field-content{
 					font-size:1em;
@@ -8375,30 +9008,18 @@ ul#wiche-sara-menu  ul.toggle-view span{
 					margin:0;
 				}
 			}
-			/*.views-field-title{
-				h2.field-content{
-					font-size:1.2em;
-					font-weight:400;
-					margin:8px 0 8px;
-				}
-			}*/
+			
 		}//end li
-		/*li:last-child{
-			border-bottom:none;
-		}*/
+		
 	}//end ul
 	
 }// end region-sidebar-second column sidebar
 
 /*some h2s in the 1st and 2nd sidebar need more top margin but not all of them*/
-/*#block-menu-menu-interstate-passport, #block-menu-menu-initiatives-sor, #block-menu-menu-psep-menu, .region-sidebar-first, #block-menu-menu-resources, #block-block-260, #block-block-264, #block-views-210e6048e21942227c4a4d3a48bf8e06, #block-views-publication-blocks-block-3, #block-views-publication-blocks-block-4, #block-menu-menu-statewide-trans, #block-menu-menu-facilitating-de, #block-menu-menu-getting-what-yo, #block-block-27, #block-block-273, .w-sara-menu, #block-menu-menu-lac-menu, #block-menu-menu-non-traditional, #block-menu-menu-factbook{
-	h2{
-		margin-top:16px!important;
-	}
-}*/
+
 
 /*student testimonial slideshow on front page*/
-#views_slideshow_cycle_main_testimonial_slider-block{
+/*#views_slideshow_cycle_main_testimonial_slider-block{
 		width:auto;
 		height:auto;
 		.testimonial-wrapper{
@@ -8422,7 +9043,7 @@ ul#wiche-sara-menu  ul.toggle-view span{
 				line-height:1.4em;
 				}
 			 }
-		}//end views_slideshow
+		}*///end views_slideshow
 
 /*misc css*/
 .dark_blue{
