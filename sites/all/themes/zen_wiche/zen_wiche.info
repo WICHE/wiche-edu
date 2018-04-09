@@ -69,16 +69,14 @@ stylesheets[all][] = css/state-actions-w-sara.css
 
 ; Optionally add some JavaScripts to your theme.
 
+scripts[] = https://aws.predictiveresponse.net/trac.js
 scripts[] = js/responsive-nav.js
-
 scripts[] = js/utilities.js
 scripts[] = js/js-image-slider.js
 scripts[] = js/policy/js-image-slider.js
-;scripts[] = js/download_ga.js
-	
 
 	
-
+	
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of
 ; the region. The text after the equals sign is a descriptive text used on the

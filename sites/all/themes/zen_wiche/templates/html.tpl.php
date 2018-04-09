@@ -14,6 +14,7 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
 
 <head>
+<!--<script type="text/javascript" src="https://aws.predictiveresponse.net/trac.js"> </script>-->
 	<a name="page-top"></a>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
@@ -26,8 +27,11 @@
   <meta http-equiv="cleartype" content="on">
   <meta name="google-site-verification" content="8zD4FAN372NM_0YaWQZVAtmMtALVI8IuPaINdP5ZSPE" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <script type="text/javascript"> trackPredictive(); </script>
   <?php if ($add_respond_js): ?>
     <!--[if lt IE 9]>
     <script src="<?php print $base_path . $path_to_zen; ?>/js/html5-respond.js"></script>
@@ -60,7 +64,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script>
       var navigation = responsiveNav(".nav-collapse");
 </script> 
-<script type="text/javascript" src="https://aws.predictiveresponse.net/http/trac.js"> </script>
-<script type="text/javascript"> trackPredictive(); </script>
 </body>
 </html>
