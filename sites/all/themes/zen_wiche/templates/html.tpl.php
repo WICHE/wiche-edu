@@ -18,6 +18,8 @@
 	<a name="page-top"></a>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+  <script type="text/javascript" src="https://aws.predictiveresponse.net/trac.js"> </script>
+  <script type="text/javascript"> trackPredictive(); </script>
 
   <?php if ($default_mobile_metatags): ?>
     <meta name="MobileOptimized" content="width">
@@ -31,7 +33,6 @@
 	
   <?php print $styles; ?>
   <?php print $scripts; ?>
-  <script type="text/javascript"> trackPredictive(); </script>
   <?php if ($add_respond_js): ?>
     <!--[if lt IE 9]>
     <script src="<?php print $base_path . $path_to_zen; ?>/js/html5-respond.js"></script>
