@@ -34,8 +34,6 @@ $zen-auto-include-item-base: false;
  * Center the page.
  */
 
-
-
 #page,
 .region-bottom {
   background:#fff;
@@ -2072,16 +2070,11 @@ article table#psep-support-fees{
 				text-align:left;
 			}
 		}
-
-.field-name-field-state-tagline,
-.field-name-field-introduction,
-.field-name-field-state-intro,
-.field-name-field-state-investment,
-.field-name-field-state-student-programs,
-.field-name-field-state-former-commissioner{
-	border-top-color:#ccc;
-	border-top-style:dotted;
-	margin-top:20px;
+	
+.field-name-field-introduction{
+	border-bottom-color:#ccc;
+	border-bottom-style:dotted;
+	margin-bottom:20px;
 }
 
 .view-legislative-advisory-committee-block-view{ 
@@ -2754,16 +2747,11 @@ table.states-sep-data{
 				text-align:left;
 			}
 		}
-
-.field-name-field-state-tagline,
-.field-name-field-introduction,
-.field-name-field-state-intro,
-.field-name-field-state-investment,
-.field-name-field-state-student-programs,
-.field-name-field-state-former-commissioner{
-	border-top-color:#ccc;
-	border-top-style:dotted;
-	margin-top:20px;
+	
+.field-name-field-introduction{
+	border-bottom-color:#ccc;
+	border-bottom-style:dotted;
+	margin-bottom:20px;
 }
 
 .view-legislative-advisory-committee-block-view{ 
@@ -3487,16 +3475,11 @@ table.states-sep-data{
 				text-align:left;
 			}
 		}
-
-.field-name-field-state-tagline,
-.field-name-field-introduction,
-.field-name-field-state-intro,
-.field-name-field-state-investment,
-.field-name-field-state-student-programs,
-.field-name-field-state-former-commissioner{
-	border-top-color:#ccc;
-	border-top-style:dotted;
-	margin-top:20px;
+	  
+.field-name-field-introduction{
+	border-bottom-color:#ccc;
+	border-bottom-style:dotted;
+	margin-bottom:20px;
 }
 
 .view-legislative-advisory-committee-block-view{ 
@@ -5280,17 +5263,6 @@ table#borderless-no_bgColor{
 				text-align:left;
 			}
 		}
-
-.field-name-field-state-tagline,
-.field-name-field-introduction,
-.field-name-field-state-intro,
-.field-name-field-state-investment,
-.field-name-field-state-student-programs,
-.field-name-field-state-former-commissioner{
-	border-top-color:#ccc;
-	border-top-style:dotted;
-	margin-top:20px;
-}
 
 .view-legislative-advisory-committee-block-view{ 
 	.views-field-field-lac-photo{
@@ -7219,16 +7191,15 @@ article table#psep-support-fees{
 				text-align:left;
 			}
 		}
-
-.field-name-field-state-tagline,
+	
 .field-name-field-introduction,
 .field-name-field-state-intro,
-.field-name-field-state-investment,
-.field-name-field-state-student-programs,
-.field-name-field-state-former-commissioner{
-	border-top-color:#ccc;
-	border-top-style:dotted;
-	margin-top:20px;
+.field-name-field-state-feature,
+.field-name-field-state-student-programs{
+	border-bottom-color:#ccc;
+	border-bottom-style:dotted;
+	padding-bottom:20px;
+	margin-bottom:20px;
 }
 
 .view-legislative-advisory-committee-block-view{ 
