@@ -1174,6 +1174,9 @@ table#physics-lab-activities{
 	
 	/*overflow:hidden;*/
 	
+	  .WUE-banner-slide{
+		  display:none;
+	  }
 
   }
   
@@ -1221,6 +1224,28 @@ table#physics-lab-activities{
 			/*margin-top:12px;*/
 			#navigation{
 				display:none;
+			}
+			
+			.WUE-banner-slide{
+				  display:none;
+			  }
+			
+			img[alt="Western Undergraduate Exchange Logo"]{
+				display:none;
+				}
+			
+			ul.sep-menu-four-col{
+				width:100%;
+				li{
+				float:none;
+				display:block;
+				text-align:center;
+					strong > a{
+						display:block;
+						margin:6px 0 6px;
+						width:95%;
+						}
+				}
 			}
 			
 			.sidebars .region-sidebar-first{
@@ -2222,13 +2247,19 @@ table.states-sep-data{
 				display:none;
 			}
 			
+			 .WUE-banner-slide{
+				  display:none;
+			  }
+			
+			article.node-13950{
+				margin-bottom:20px;
+			}
 			
 		.sidebars{
 			
 			.region-sidebar-first{
 				clear:both;
 				background:transparent;
-				
 				float:none;
 				margin-left:0px;
 				margin-right:0px;
@@ -2253,6 +2284,10 @@ table.states-sep-data{
 						#block-nice-menus-9{
 							display:none;
 						}
+					
+					#block-views-publications-block-2{
+						text-align:center;
+					}
 					
 					.view-calendar-2{
 						ul{
@@ -9949,6 +9984,7 @@ ul.wiche-pubs-resources{
 	}
 	
 	.WUE-banner-slide{
+		display:block;
 		.flexslider{
 			height:250px;
 			width:1200px;
