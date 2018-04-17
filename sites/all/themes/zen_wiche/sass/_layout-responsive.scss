@@ -1174,6 +1174,9 @@ table#physics-lab-activities{
 	
 	/*overflow:hidden;*/
 	
+	  .WUE-banner-slide{
+		  display:none;
+	  }
 
   }
   
@@ -1222,6 +1225,30 @@ table#physics-lab-activities{
 			#navigation{
 				display:none;
 			}
+			
+			.WUE-banner-slide{
+				  display:none;
+			  }
+			
+			img[alt="Western Undergraduate Exchange Logo"]{
+				display:none;
+				}
+			
+			ul.sep-menu-four-col{
+				width:100%;
+				li{
+					float:none;
+					display:block;
+					text-align:center;		
+					margin:0 16px 0 16px;
+					width:100%;
+						strong > a{
+							display:block;
+							margin:6px 0 6px;
+							width:95%;
+							}
+						}
+					}
 			
 			.sidebars .region-sidebar-first{
 				#block-nice-menus-1,
@@ -2086,37 +2113,7 @@ article table#psep-support-fees{
 	}
 }
 
-	ul.states{
-		list-style:none;
-		margin:0;
-		padding:0;
-					
-			li {
-			background:url(images/red-arrow.png) 0 5px no-repeat;
-			padding-left:14px;
-			font-weight:600;
-			font-size:.9em;
-			color:#000;
-			margin:0 0 12px 0;
-				
-				span.normal{
-					font-weight:200;
-				}//end span
 	
-			table.state-colleges{
-				font-weight:normal;
-				margin-top:0;
-				border:none;
-					tr{
-						td{
-							padding:2px 0px 2px;
-							vertical-align:bottom;
-							border-bottom:1px solid #ccc;
-						}//end td
-					}//end tr
-				}//end table
-			}//end li
-		}//end ul
 
 table.states-sep-data{
 	display:inline-block;
@@ -2222,13 +2219,19 @@ table.states-sep-data{
 				display:none;
 			}
 			
+			 .WUE-banner-slide{
+				  display:none;
+			  }
+			
+			article.node-13950{
+				margin-bottom:20px;
+			}
 			
 		.sidebars{
 			
 			.region-sidebar-first{
 				clear:both;
 				background:transparent;
-				
 				float:none;
 				margin-left:0px;
 				margin-right:0px;
@@ -2253,6 +2256,10 @@ table.states-sep-data{
 						#block-nice-menus-9{
 							display:none;
 						}
+					
+					#block-views-publications-block-2{
+						text-align:center;
+					}
 					
 					.view-calendar-2{
 						ul{
@@ -2913,7 +2920,7 @@ table.states-sep-data{
 				}
 			  
 			  .wiche-mission-self-id{
-				  padding:5px 75px 0 0;
+				 /* padding:5px 75px 0 0;*/
 			  }
 		  }
 		  
@@ -2922,7 +2929,95 @@ table.states-sep-data{
 				  display:none;
 			  }
 		  }
-	 }
+		  
+#full-rotator .region-slideshow .block{
+	margin-bottom:0;
+
+	.flex-direction-nav li a{
+		color:#fff;
+	}
+	
+	.WUE-banner-slide{
+		display:block;
+		.flexslider{
+			width:100%;
+			height:auto;
+			border:none;
+			border:none;
+			border-radius:0;
+			overflow:hidden;
+			position:relative;
+			margin:0;
+				ul{
+					li{
+						
+						.banner{
+							position:absolute;
+							height:250px;
+							padding:16px 0 0 180px;
+							width:100%;
+							max-width:975px;
+
+							
+									p.quote{
+										width:78%;
+										font-size:1.3em;
+										line-height:1.2em;
+										padding:20px 0 0;
+										margin-top:0;
+										text-shadow: 2px 2px #000;
+										color:#fff;
+										font-weight:700;
+										
+										span.name{
+											font-size:.7em;
+											font-weight:900;
+											line-height:.9em;
+											text-shadow: 1px 1px #000;
+											
+											em{
+											
+											}
+										}
+										
+										
+										
+										a:link, a:active, a:visited{
+											position:absolute;
+											bottom:30px;
+											right:30px;
+											font-size:.8em;
+											line-height:.6em;
+											display:block;
+											background:rgba(0,0,0,.50);
+											border-radius:8px;
+											padding:8px 6px;
+											color:#fff;
+											font-weight:100;
+											text-decoration: none;
+											width:23%;
+											text-align:center;
+
+											&:hover{
+												background:rgba(0,0,0,.75);
+												}
+								      }
+							     }
+							
+							.views-field-field-image .field-content img{
+									position:absolute;
+									top:0;
+									left:0;
+									border:2px solid #000;
+									max-width:1200px;
+								}
+							}//end banner
+					} //end li
+				}//end ul
+		}//end flexslider
+	}
+}// end full rotator
+	 }//end #main
 	 
 	#navigation{
 		ul{
@@ -3348,6 +3443,43 @@ table.states-sep-data{
 		
 		}//end 4-col faux table
 			}
+		
+		
+		ul.sep-menu-four-col{
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:100%;
+	text-align:center;
+	
+	li{
+		padding:0;
+		display:inline-block;
+		margin:0 16px 0 16px!important;
+		padding:0px 8px 0 8px!important;
+		width:40%;
+		
+			a:link, a:visited, a:active{
+				display:block;
+				width:100%;
+				background:#1c4884;
+				vertical-align:middle;
+				font-size:.9em;
+				color:#fff;
+				text-align:center;
+				border-radius:8px;
+				text-decoration:none;
+				line-height:2.2em;
+
+			&:hover{
+				background:#245eac;
+			}
+				
+			/*strong{font-size:1.5em;}*/
+		} // end a
+	} // end li
+}// end sep menu
+		
     }//end content
 
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
@@ -3598,6 +3730,8 @@ table.states-sep-data{
 	clear:left;
 	text-align:right;
 }
+	  
+	  
 
 }//end max 979
 
@@ -3663,6 +3797,94 @@ table.states-sep-data{
 				  display:none;
 			  }
 		  }
+		 
+#full-rotator .region-slideshow .block{
+	margin-bottom:0;
+
+	.flex-direction-nav li a{
+		color:#fff;
+	}
+	
+	.WUE-banner-slide{
+		display:block;
+		.flexslider{
+			width:100%;
+			height:auto;
+			border:none;
+			border:none;
+			border-radius:0;
+			overflow:hidden;
+			position:relative;
+			margin:0;
+				ul{
+					li{
+						
+						.banner{
+							position:absolute;
+							height:250px;
+							padding:16px 0 0 180px;
+							width:100%;
+							max-width:975px;
+
+							
+									p.quote{
+										width:78%;
+										font-size:1.3em;
+										line-height:1.2em;
+										padding:20px 0 0;
+										margin-top:0;
+										text-shadow: 2px 2px #000;
+										color:#fff;
+										font-weight:700;
+										
+										span.name{
+											font-size:.7em;
+											font-weight:900;
+											line-height:.9em;
+											text-shadow: 1px 1px #000;
+											
+											em{
+											
+											}
+										}
+										
+										
+										
+										a:link, a:active, a:visited{
+											position:absolute;
+											bottom:30px;
+											right:30px;
+											font-size:.8em;
+											line-height:.6em;
+											display:block;
+											background:rgba(0,0,0,.50);
+											border-radius:8px;
+											padding:8px 6px;
+											color:#fff;
+											font-weight:100;
+											text-decoration: none;
+											width:23%;
+											text-align:center;
+
+											&:hover{
+												background:rgba(0,0,0,.75);
+												}
+								      }
+							     }
+							
+							.views-field-field-image .field-content img{
+									position:absolute;
+									top:0;
+									left:0;
+									border:2px solid #000;
+									max-width:1200px;
+								}
+							}//end banner
+					} //end li
+				}//end ul
+		}//end flexslider
+	}
+}// end full rotator
 
 	 }
 	 
@@ -9949,6 +10171,7 @@ ul.wiche-pubs-resources{
 	}
 	
 	.WUE-banner-slide{
+		display:block;
 		.flexslider{
 			height:250px;
 			width:1200px;
@@ -10080,21 +10303,21 @@ ul.sep-menu-four-col{
 	list-style:none;
 	padding:0;
 	margin:0;
-	width:90%;
-	margin:0 auto;
+	width:100%;
+	text-align:center;
 	
 	li{
 		padding:0;
-		margin:0 8px!important;
 		display:inline-block;
-		float:left;
-		margin-right:16px;
+		margin:0 16px 0 16px!important;
+		padding:0px 8px 0 8px!important;
+		width:40%;
 		
 			a:link, a:visited, a:active{
 				display:block;
+				width:100%;
 				background:#1c4884;
 				vertical-align:middle;
-				padding:6px 12px;
 				font-size:.9em;
 				color:#fff;
 				text-align:center;
@@ -10106,12 +10329,8 @@ ul.sep-menu-four-col{
 				background:#245eac;
 			}
 				
-				strong{font-size:1.5em;}
+			/*strong{font-size:1.5em;}*/
 		} // end a
-		
-		&:last-child{
-			margin-right:none;
-		}
 	} // end li
 }// end sep menu
 
@@ -10454,3 +10673,35 @@ h3.front-page-banner-text{
 		font-size:12px!important;
 	}
 } 
+
+ul.states{
+		list-style:none;
+		margin:0;
+		padding:0;
+					
+			li {
+			background:url(images/red-arrow.png) 0 5px no-repeat;
+			padding-left:14px;
+			font-weight:600;
+			font-size:.9em;
+			color:#000;
+			margin:0 0 12px 0;
+				
+				span.normal{
+					font-weight:200;
+				}//end span
+	
+			table.state-colleges{
+				font-weight:normal;
+				margin-top:0;
+				border:none;
+					tr{
+						td{
+							padding:2px 0px 2px;
+							vertical-align:bottom;
+							border-bottom:1px solid #ccc;
+						}//end td
+					}//end tr
+				}//end table
+			}//end li
+		}//end ul
