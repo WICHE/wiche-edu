@@ -2755,7 +2755,7 @@ table.states-sep-data{
 			}
 		}
 	
-.field-name-field-introduction{
+.field-name-field-introduction, .field-name-field-state-investment{
 	border-bottom-color:#ccc;
 	border-bottom-style:dotted;
 	margin-bottom:20px;
@@ -3608,7 +3608,7 @@ table.states-sep-data{
 			}
 		}
 	  
-.field-name-field-introduction{
+.field-name-field-introduction, .field-name-field-state-investment{
 	border-bottom-color:#ccc;
 	border-bottom-style:dotted;
 	margin-bottom:20px;
@@ -7415,6 +7415,7 @@ article table#psep-support-fees{
 		}
 	
 .field-name-field-introduction,
+.field-name-field-state-investment,
 .field-name-field-state-intro,
 .field-name-field-state-feature,
 .field-name-field-state-student-programs{
@@ -10705,3 +10706,59 @@ ul.states{
 				}//end table
 			}//end li
 		}//end ul
+
+.sep-blockquote{
+	background-color:#eb5b50;
+	width:50%;
+	margin:0 auto;
+	padding:0 16px;
+	border-radius: 8px;
+		table.sep-pull-quote-center{
+			font-family: 'Open Sans Condensed', sans-serif;
+			display:block;
+			color:#fff;
+			width:95%!important;
+			margin:0 auto;
+				th{
+					border:none;
+					width:38%;
+					font-size:5.5em;
+					font-weight:700;
+					text-align:left;
+				}
+				td{
+					width:62%;
+					font-size:1.1em;
+					text-align:left;
+				}
+			}
+}// end .sep-blockquote
+
+table.states-sep-data-full-width{
+	width:90%;
+	margin:16px auto;
+	display:block;
+	border-top:1px solid #ccc;
+		tr{
+			border-bottom:1px solid #999;
+			
+			td{
+				text-align:center;
+			}
+		}
+	th{
+		border:none;
+	}
+	th[scope="row"]{
+		border:none;
+		padding-left:6px;
+	}
+}
+
+div.dot-dot{
+	width:100%;
+	border-bottom-color:#ccc;
+	border-bottom-style:dotted;
+	height:1px;
+	margin:20px 0;
+}
