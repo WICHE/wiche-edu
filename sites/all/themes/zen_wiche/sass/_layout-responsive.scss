@@ -10707,6 +10707,36 @@ ul.states{
 			}//end li
 		}//end ul
 
+//large SEP pullquote
+
+.sep-blockquote-big{
+	background-color:#eb5b50;
+	width:80%;
+	margin:0 auto;
+	border-radius: 8px;
+		table.sep-pull-quote-center-big{
+			font-family: 'Open Sans Condensed', sans-serif;
+			display:block;
+			color:#fff;
+			width:90%!important;
+			margin:0 auto;
+				th{
+					border:none;
+					width:42%;
+					font-size:5.5em;
+					font-weight:700;
+					text-align:left;
+				}
+				td{
+					font-size:2.2em;
+					text-align:left;
+				}
+			}
+}
+
+// end .sep-blockquote
+
+//small SEP pullquote
 .sep-blockquote{
 	background-color:#eb5b50;
 	width:50%;
