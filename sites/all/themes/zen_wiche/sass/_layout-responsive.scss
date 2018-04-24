@@ -2073,8 +2073,36 @@ article table#psep-support-fees{
 	
 	.pullblurb{
 		font-family: 'Open Sans Condensed', sans-serif;
-		font-size:2em;
-	}
+		display:inline-block;
+			strong{
+				font-size:1em;
+				}
+			.sep-blockquote-big{
+				background-color:#eb5b50;
+				border-radius: 8px;
+				margin:0 auto;
+					table.sep-pull-quote-center-big{
+						color:#fff;
+							th{
+								border:none;
+								width:35%;
+								padding-left:18px;
+								font-size:2.2em;
+								font-weight:700;
+								text-align:left;
+								vertical-align: middle;
+								}								}
+							td{
+								p{
+									font-size:1.4em;
+									line-height:1em;
+									text-align:left;
+									vertical-align: middle;
+									margin:0 0 6px!important;
+								}
+							}
+					}// end .sep-blockquote
+	}//end pull-blurb
 }
 
 .field-name-field-introduction table.sep-pull-quote{
@@ -2730,7 +2758,7 @@ table.states-sep-data{
 	
 	.pullblurb{
 		font-family: 'Open Sans Condensed', sans-serif;
-		font-size:2em;
+		/*font-size:2em;*/
 	}
 }
 
@@ -3576,14 +3604,105 @@ table.states-sep-data{
   }
 	  
 //custom css for WICHE states pages
-.field-name-field-introduction{
-	p > img{
-		margin-top:16px;
+.field-name-field-introduction{ 
+		.sep-chart{
+			width:38%;
+			display:inline-block;
+			float:left;
+			
+			img{
+				max-width:150px;
+				height:auto;
+			}
 	}
+
 	
+	
+	
+	
+	//large SEP pullquote
 	.pullblurb{
 		font-family: 'Open Sans Condensed', sans-serif;
-		font-size:2em;
+		display:inline-block;
+		float:left;
+		width:60%;
+			strong{
+				/*font-size:2em;*/
+				}
+			.sep-blockquote-big{
+				background-color:#eb5b50;
+				border-radius: 8px;
+				margin:0 auto;
+					table.sep-pull-quote-center-big{
+						color:#fff;
+							th{
+								border:none;
+								width:35%;
+								padding-left:18px;
+								font-size:2.2em;
+								font-weight:700;
+								text-align:left;
+								vertical-align: middle;
+								}								}
+							td{
+								p{
+									font-size:1.4em;
+									line-height:1em;
+									text-align:left;
+									vertical-align: middle;
+									margin:0 0 6px!important;
+								}
+							}
+					}// end .sep-blockquote
+	}//end pull-blurb
+}//end field-name-field-introduction
+
+//small SEP pullquote
+.sep-blockquote{
+	background-color:#eb5b50;
+	width:39%;
+	margin:0 auto;
+	padding:0 16px;
+	border-radius: 8px;
+		table.sep-pull-quote-center{
+			font-family: 'Open Sans Condensed', sans-serif;
+			display:block;
+			color:#fff;
+			width:95%;
+			margin:0 auto;
+				th{
+					border:none;
+					width:20%;
+					font-size:3em;
+					font-weight:700;
+					text-align:left;
+				}
+				td{
+					width:62%;
+					line-height:1em;
+					text-align:left;
+				}
+			}
+}// end .sep-blockquote
+
+table.states-sep-data-full-width{
+	width:90%;
+	margin:16px auto;
+	display:block;
+	border-top:1px solid #ccc;
+		tr{
+			border-bottom:1px solid #999;
+			
+			td{
+				text-align:center;
+			}
+		}
+	th{
+		border:none;
+	}
+	th[scope="row"]{
+		border:none;
+		padding-left:6px;
 	}
 }
 
@@ -3653,38 +3772,7 @@ table.states-sep-data{
 	}
 	
 }//end field-items
-	ul.states{
-		list-style:none;
-		margin:0;
-		padding:0;
-					
-			li {
-			background:url(images/red-arrow.png) 0 5px no-repeat;
-			padding-left:14px;
-			font-weight:600;
-			font-size:.9em;
-			color:#000;
-			margin:0 0 12px 0;
-				
-				span.normal{
-					font-weight:200;
-				}//end span
 	
-			table.state-colleges{
-				font-weight:normal;
-				margin-top:0;
-				width:45%;
-				border:none;
-					tr{
-						td{
-							padding:2px 0px 2px;
-							vertical-align:bottom;
-							border-bottom:1px solid #ccc;
-						}//end td
-					}//end tr
-				}//end table
-			}//end li
-		}//end ul
 
 table.states-sep-data{
 	width:55%;
@@ -5454,14 +5542,106 @@ table#borderless-no_bgColor{
   }
 	
 	//custom css for WICHE states pages
-.field-name-field-introduction{
-	p > img{
-		margin-top:16px;
+//custom css for WICHE states pages
+.field-name-field-introduction{ 
+		.sep-chart{
+			width:38%;
+			display:inline-block;
+			float:left;
+			
+			img{
+				max-width:150px;
+				height:auto;
+			}
 	}
+
 	
+	
+	
+	
+	//large SEP pullquote
 	.pullblurb{
 		font-family: 'Open Sans Condensed', sans-serif;
-		font-size:2em;
+		display:inline-block;
+		float:left;
+		width:60%;
+			strong{
+				/*font-size:2em;*/
+				}
+			.sep-blockquote-big{
+				background-color:#eb5b50;
+				border-radius: 8px;
+				margin:0 auto;
+					table.sep-pull-quote-center-big{
+						color:#fff;
+							th{
+								border:none;
+								width:35%;
+								padding-left:18px;
+								font-size:2.2em;
+								font-weight:700;
+								text-align:left;
+								vertical-align: middle;
+								}								}
+							td{
+								p{
+									font-size:1.4em;
+									line-height:1em;
+									text-align:left;
+									vertical-align: middle;
+									margin:0 0 6px!important;
+								}
+							}
+					}// end .sep-blockquote
+	}//end pull-blurb
+}//end field-name-field-introduction
+
+//small SEP pullquote
+.sep-blockquote{
+	background-color:#eb5b50;
+	width:39%;
+	margin:0 auto;
+	padding:0 16px;
+	border-radius: 8px;
+		table.sep-pull-quote-center{
+			font-family: 'Open Sans Condensed', sans-serif;
+			display:block;
+			color:#fff;
+			width:95%;
+			margin:0 auto;
+				th{
+					border:none;
+					width:20%;
+					font-size:3em;
+					font-weight:700;
+					text-align:left;
+				}
+				td{
+					width:62%;
+					line-height:1em;
+					text-align:left;
+				}
+			}
+}// end .sep-blockquote
+
+table.states-sep-data-full-width{
+	width:90%;
+	margin:16px auto;
+	display:block;
+	border-top:1px solid #ccc;
+		tr{
+			border-bottom:1px solid #999;
+			
+			td{
+				text-align:center;
+			}
+		}
+	th{
+		border:none;
+	}
+	th[scope="row"]{
+		border:none;
+		padding-left:6px;
 	}
 }
 
@@ -5485,6 +5665,12 @@ table#borderless-no_bgColor{
 				text-align:left;
 			}
 		}
+	  
+.field-name-field-introduction, .field-name-field-state-investment{
+	border-bottom-color:#ccc;
+	border-bottom-style:dotted;
+	margin-bottom:20px;
+}
 
 .view-legislative-advisory-committee-block-view{ 
 	.views-field-field-lac-photo{
@@ -5525,83 +5711,6 @@ table#borderless-no_bgColor{
 	}
 	
 }//end field-items
-	ul.states{
-		list-style:none;
-		margin:0;
-		padding:0;
-					
-			li {
-			background:url(images/red-arrow.png) 0 5px no-repeat;
-			padding-left:14px;
-			font-weight:600;
-			font-size:.9em;
-			color:#000;
-			margin:0 0 12px 0;
-				
-				span.normal{
-					font-weight:200;
-				}//end span
-	
-			table.state-colleges{
-				font-weight:normal;
-				margin-top:0;
-				width:45%;
-				border:none;
-					tr{
-						td{
-							padding:2px 0px 2px;
-							vertical-align:bottom;
-							border-bottom:1px solid #ccc;
-						}//end td
-					}//end tr
-				}//end table
-			}//end li
-		}//end ul
-
-table.states-sep-data{
-	width:55%;
-	float:left;
-	display:inline-block;
-	border:1px solid #ccc;
-		tr{
-			border-bottom:1px solid #999;
-			
-			td{
-				text-align:center;
-			}
-		}
-	th{
-		border:none;
-	}
-	th[scope="row"]{
-		border:none;
-		padding-left:6px;
-	}
-}
-
-.field-name-field-state-student-programs table.sep-pull-quote{
-		font-family: 'Open Sans Condensed', sans-serif;
-		float:left;
-		display:inline-block;
-		margin:16px 0 0 12px;
-		width:41%;
-			
-			th{
-				border:none;
-				margin-right:12px;
-				font-size:4em;
-				font-weight:600;
-				padding-right:12px;
-			}
-			td{
-				font-size:1em;
-			}
-		}
-
-.field-name-field-printable-pdf-state-factsh{
-	clear:left;
-	text-align:right;
-}
 	 
 }//end max 1279
 
@@ -7389,7 +7498,7 @@ article table#psep-support-fees{
 	
 	.pullblurb{
 		font-family: 'Open Sans Condensed', sans-serif;
-		font-size:2em;
+		/*font-size:2em;*/
 	}
 }
 
@@ -10707,88 +10816,3 @@ ul.states{
 			}//end li
 		}//end ul
 
-//large SEP pullquote
-
-.sep-blockquote-big{
-	background-color:#eb5b50;
-	width:80%;
-	margin:0 auto;
-	border-radius: 8px;
-		table.sep-pull-quote-center-big{
-			font-family: 'Open Sans Condensed', sans-serif;
-			display:block;
-			color:#fff;
-			width:90%!important;
-			margin:0 auto;
-				th{
-					border:none;
-					width:42%;
-					font-size:5.5em;
-					font-weight:700;
-					text-align:left;
-				}
-				td{
-					font-size:2.2em;
-					text-align:left;
-				}
-			}
-}
-
-// end .sep-blockquote
-
-//small SEP pullquote
-.sep-blockquote{
-	background-color:#eb5b50;
-	width:50%;
-	margin:0 auto;
-	padding:0 16px;
-	border-radius: 8px;
-		table.sep-pull-quote-center{
-			font-family: 'Open Sans Condensed', sans-serif;
-			display:block;
-			color:#fff;
-			width:95%!important;
-			margin:0 auto;
-				th{
-					border:none;
-					width:38%;
-					font-size:5.5em;
-					font-weight:700;
-					text-align:left;
-				}
-				td{
-					width:62%;
-					font-size:1.1em;
-					text-align:left;
-				}
-			}
-}// end .sep-blockquote
-
-table.states-sep-data-full-width{
-	width:90%;
-	margin:16px auto;
-	display:block;
-	border-top:1px solid #ccc;
-		tr{
-			border-bottom:1px solid #999;
-			
-			td{
-				text-align:center;
-			}
-		}
-	th{
-		border:none;
-	}
-	th[scope="row"]{
-		border:none;
-		padding-left:6px;
-	}
-}
-
-div.dot-dot{
-	width:100%;
-	border-bottom-color:#ccc;
-	border-bottom-style:dotted;
-	height:1px;
-	margin:20px 0;
-}

@@ -12,7 +12,7 @@ environment = :development
 #environment = :production
 
 # In development, we can turn on the FireCompass-compatible debug_info.
-firecompass = false
+#firecompass = false
 #firecompass = true
 
 
@@ -53,4 +53,4 @@ relative_assets = true
 
 # Pass options to sass. For development, we turn on the FireCompass-compatible
 # line_comments if the firecompass config variable above is true.
-sass_options = (environment == :development && firecompass == true) ? {:line_comments => true} : {}
+sass_options = {:sourcemap => true}
