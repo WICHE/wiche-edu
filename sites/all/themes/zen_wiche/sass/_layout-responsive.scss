@@ -1665,6 +1665,85 @@ article table#psep-support-fees{
 				width:100%;
 			    float:none;
 			}
+		
+//custom css for WICHE states pages
+
+.field-name-field-introduction{
+	
+	.sepchart{
+		float:none;
+		max-width:238px;
+		margin:0 auto;
+		display:block;
+		img{
+			max-width:238px;
+			height:auto;
+			float:none;
+		}
+	}
+	.pullblurb{
+		font-family: 'Open Sans Condensed', sans-serif;
+		display:block;
+		width:85%;
+		margin:0 auto;
+		padding-top:none;
+		float:none;
+			strong{
+				font-size:.9em;
+				line-height:.8em;
+				}
+	}//end pull-blurb
+	.sep-blockquote-big{
+				float:none;
+				display:block;
+				background-color:#eb5b50;
+				border-radius: 8px;
+				padding:0;
+				width:85%;
+				margin:12px auto 0 auto;
+					table.sep-pull-quote-center-big{
+						color:#fff;
+							th{
+								border:none;
+								width:45%;
+								padding-left:6px;
+								font-size:1.9em;
+								font-weight:700;
+								text-align:center;
+								vertical-align: middle;
+								}								}
+							td{
+								font-size:.9em;
+								line-height:1em;
+								text-align:left;
+								vertical-align: middle;
+								margin:0 0 6px!important;
+							}
+					}// end .sep-blockquote
+}
+
+.field-name-field-state-student-programs table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		width:90%;
+		display:block;
+		margin:0 auto;
+	    border-top:1px solid #ccc;
+	    border-bottom:1px solid #ccc;
+			
+			th{
+				border:none;
+				width:30%;
+				font-size:3.2em;
+				font-weight:700;
+				text-align:left;
+			}
+			td{
+				width:70%;
+				font-size:1em;
+				line-height:1em;
+				text-align:left;
+			}
+		}
 
 }//end #content
 				
@@ -1718,11 +1797,11 @@ article table#psep-support-fees{
 			}
 		}//end view-wiche-staff
 			
-			img{
+			/*img{
 				display:block;
 				float:none!important;
 				margin:0 auto!important;
-			}
+			}*/
 		
 	}//end #main	
 				  
@@ -2064,70 +2143,7 @@ article table#psep-support-fees{
 	}
 	
 	
-//custom css for WICHE states pages
 
-.field-name-field-introduction{
-	img{
-		max-width:238px;
-		height:auto;
-		float:none;
-	}
-	.pullblurb{
-		font-family: 'Open Sans Condensed', sans-serif;
-		display:block;
-			strong{
-				font-size:1em;
-				}
-	}//end pull-blurb
-	.sep-blockquote-big{
-				background-color:#eb5b50;
-				border-radius: 8px;
-				margin:0 auto;
-					table.sep-pull-quote-center-big{
-						color:#fff;
-							th{
-								border:none;
-								width:40%;
-								padding-left:6px;
-								font-size:2em;
-								font-weight:700;
-								text-align:left;
-								vertical-align: middle;
-								}								}
-							td{
-								p{
-									font-size:1.4em;
-									line-height:.9em;
-									text-align:left;
-									vertical-align: middle;
-									margin:0 0 6px!important;
-								}
-							}
-					}// end .sep-blockquote
-}
-
-.field-name-field-state-student-programs table.sep-pull-quote{
-		font-family: 'Open Sans Condensed', sans-serif;
-		width:90%;
-		display:block;
-		margin:0 auto;
-	    border-top:1px solid #ccc;
-	    border-bottom:1px solid #ccc;
-			
-			th{
-				border:none;
-				width:30%;
-				font-size:3.2em;
-				font-weight:700;
-				text-align:left;
-			}
-			td{
-				width:70%;
-				font-size:1em;
-				line-height:1em;
-				text-align:left;
-			}
-		}
 
 } /*end max width 480*/
 
@@ -3401,6 +3417,87 @@ table.states-sep-data{
 	} // end li
 }// end sep menu
 		
+		//custom css for WICHE states pages
+.field-name-field-introduction{ 
+	.field-item > .sepchart{
+		display:inline-block;
+		float:left;
+		margin-right:16px;
+			img{
+				max-width:175px;
+				height:auto;
+				}
+			}
+	
+	//large SEP pullquote
+	.pullblurb{
+		font-size:1em;
+		line-height:1em;
+		padding-top:none;
+		display:inline-block;
+		float:left;
+		width:50%;
+		margin-bottom:20px;
+	}//end pull-blurb
+	
+	.sep-blockquote-big{
+		clear:left;
+		float:none;
+		display:block;
+		background-color:#eb5b50;
+		border-radius: 8px;
+		width:75%;
+		margin:0 auto;
+		padding:4px;
+			table.sep-pull-quote-center-big{
+				color:#fff;
+				margin:0;
+					th{
+						border:none;
+						width:38%;
+						padding-left:16px;
+						padding-top:2px;
+						font-size:2.2em;
+						font-weight:700;
+						text-align:left;
+						vertical-align: middle;
+						}
+				}
+					td{
+							font-size:1.2em;
+							line-height:1em;
+							text-align:left;
+							vertical-align: middle;
+							margin:0 0 6px!important;
+					}
+			}// end .sep-blockquote-big
+}//end field-name-field-introduction
+
+	  
+	  
+//small SEP pullquote
+
+.field-name-field-introduction table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		display:block;
+		margin:0;
+			
+			th{
+				border:none;
+				width:40%;
+				font-size:3em;
+				font-weight:700;
+				text-align:left;
+			}
+			td{
+				width:60%;
+				font-size:1.1em;
+				text-align:left;
+			}
+		}
+	
+
+		
     }//end content
 
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
@@ -3496,75 +3593,6 @@ table.states-sep-data{
     }
   }
 	  
-//custom css for WICHE states pages
-.field-name-field-introduction{ 
-		
-		img{
-			max-width:150px;
-			height:auto;
-			display:inline-block;
-			float:left;
-		}	
-	
-	//large SEP pullquote
-	.pullblurb{
-		font-family: 'Open Sans Condensed', sans-serif;
-	}//end pull-blurb
-	
-	.sep-blockquote-big{
-		background-color:#eb5b50;
-		border-radius: 8px;
-		margin:0 auto;
-		width:50%;
-		float:left;
-		display:inline-block;
-			table.sep-pull-quote-center-big{
-				color:#fff;
-					th{
-						border:none;
-						width:35%;
-						padding-left:18px;
-						font-size:2.2em;
-						font-weight:700;
-						text-align:left;
-						vertical-align: middle;
-						}								}
-					td{
-						p{
-							font-size:1.4em;
-							line-height:1em;
-							text-align:left;
-							vertical-align: middle;
-							margin:0 0 6px!important;
-						}
-					}
-				clear:left;
-			}// end .sep-blockquote-bib\g
-}//end field-name-field-introduction
-
-	  
-	  
-//small SEP pullquote
-
-.field-name-field-introduction table.sep-pull-quote{
-		font-family: 'Open Sans Condensed', sans-serif;
-		display:block;
-		margin:0;
-			
-			th{
-				border:none;
-				width:40%;
-				font-size:3em;
-				font-weight:700;
-				text-align:left;
-			}
-			td{
-				width:60%;
-				font-size:1.1em;
-				text-align:left;
-			}
-		}
-	
 
 
 }//end max 979
@@ -5287,95 +5315,68 @@ table#borderless-no_bgColor{
 
   }
 	
-	//custom css for WICHE states pages
 //custom css for WICHE states pages
 .field-name-field-introduction{ 
-		.sep-chart{
-			width:38%;
-			display:inline-block;
-			float:left;
-			
+	.field-item > .sepchart{
+		display:inline-block;
+		float:left;
+		margin-right:16px;
 			img{
-				max-width:150px;
+				max-width:175px;
 				height:auto;
+				}
 			}
-	}
-
-	
-	
-	
 	
 	//large SEP pullquote
 	.pullblurb{
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-size:1.4em;
+		line-height:1.4em;
+		padding-top:30px;
 		display:inline-block;
 		float:left;
-		width:60%;
-			strong{
-				/*font-size:2em;*/
-				}
-			.sep-blockquote-big{
-				background-color:#eb5b50;
-				border-radius: 8px;
-				margin:0 auto;
-					table.sep-pull-quote-center-big{
-						color:#fff;
-							th{
-								border:none;
-								width:35%;
-								padding-left:18px;
-								font-size:2.2em;
-								font-weight:700;
-								text-align:left;
-								vertical-align: middle;
-								}								}
-							td{
-								p{
-									font-size:1.4em;
-									line-height:1em;
-									text-align:left;
-									vertical-align: middle;
-									margin:0 0 6px!important;
-								}
-							}
-					}// end .sep-blockquote
+		width:50%;
+		margin-bottom:20px;
 	}//end pull-blurb
+	
+	.sep-blockquote-big{
+		clear:left;
+		display:block;
+		background-color:#eb5b50;
+		border-radius: 8px;
+		width:75%;
+		margin:0 auto;
+		padding:4px;
+			table.sep-pull-quote-center-big{
+				color:#fff;
+				margin:0;
+					th{
+						border:none;
+						width:38%;
+						padding-left:16px;
+						padding-top:2px;
+						font-size:2.2em;
+						font-weight:700;
+						text-align:left;
+						vertical-align: middle;
+						}
+				}
+					td{
+							font-size:1.2em;
+							line-height:1em;
+							text-align:left;
+							vertical-align: middle;
+							margin:0 0 6px!important;
+					}
+			}// end .sep-blockquote-big
 }//end field-name-field-introduction
 
+	  
+	  
 //small SEP pullquote
-.sep-blockquote{
-	background-color:#eb5b50;
-	width:39%;
-	margin:0 auto;
-	padding:0 16px;
-	border-radius: 8px;
-		table.sep-pull-quote-center{
-			font-family: 'Open Sans Condensed', sans-serif;
-			display:block;
-			color:#fff;
-			width:95%;
-			margin:0 auto;
-				th{
-					border:none;
-					width:20%;
-					font-size:3em;
-					font-weight:700;
-					text-align:left;
-				}
-				td{
-					width:62%;
-					line-height:1em;
-					text-align:left;
-				}
-			}
-}// end .sep-blockquote
-
 
 .field-name-field-introduction table.sep-pull-quote{
 		font-family: 'Open Sans Condensed', sans-serif;
-		float:left;
-		display:inline-block;
-		width:43%;
+		display:block;
 		margin:0;
 			
 			th{
@@ -5391,52 +5392,7 @@ table#borderless-no_bgColor{
 				text-align:left;
 			}
 		}
-	  
-.field-name-field-introduction, .field-name-field-state-investment{
-	border-bottom-color:#ccc;
-	border-bottom-style:dotted;
-	margin-bottom:20px;
-}
-
-.view-legislative-advisory-committee-block-view{ 
-	.views-field-field-lac-photo{
-		img{
-			max-width:86px;
-			max-height:127px;
-			}
-	}
-}
-
-.field-name-field-state-former-commissioner .field-items {
 	
-	p.student-testimonial-pic{
-		background-color:transparent;
-		float:left;
-		width:18%;
-		
-		img{
-			max-width:97px;
-			max-height:auto;
-			box-shadow: 5px 5px 15px #222;
-		}
-	}
-	
-	p.student-testimonial{
-		float:left;
-		width:79%;
-		background-color:rgba(175,169,157,.25);
-		margin-top:12px;
-		padding:8px 6px;
-		font-size:.85em;
-
-		span{
-			text-align:right;
-			margin:6px 0 0 0;
-			display:block;
-		}
-	}
-	
-}//end field-items
 	 
 }//end max 1279
 
@@ -7214,25 +7170,70 @@ article table#psep-support-fees{
 			border-bottom:2px solid #fff;
 		}
 	  
-}
-	
-	//custom css for WICHE states pages
-.field-name-field-introduction{
-	p > img{
-		margin-top:16px;
 	}
 	
+//custom css for WICHE states pages
+.field-name-field-introduction{ 
+	.field-item > .sepchart{
+		display:inline-block;
+		float:left;
+		margin-right:16px;
+			img{
+				/*max-width:225px;
+				height:auto;*/
+				}
+			}
+	//large SEP pullquote
 	.pullblurb{
-		font-family: 'Open Sans Condensed', sans-serif;
-		/*font-size:2em;*/
-	}
-}
+		display:inline-block;
+		float:left;
+		width:50%;
+			strong{
+				font-size:1.4em;
+				line-height:1.4em;
+				}
+	}//end pull-blurb
+	
+	.sep-blockquote-big{
+		display:inline-block;
+		float:left;
+		width:50%;
+		background-color:#eb5b50;
+		border-radius: 8px;
+		width:75%;
+		margin:0 auto;
+		padding:4px;
+			table.sep-pull-quote-center-big{
+				color:#fff;
+				margin:0;
+					th{
+						border:none;
+						width:38%;
+						padding-left:16px;
+						padding-top:2px;
+						font-size:2.2em;
+						font-weight:700;
+						text-align:left;
+						vertical-align: middle;
+						}
+				}
+					td{
+							font-size:1.2em;
+							line-height:1em;
+							text-align:left;
+							vertical-align: middle;
+							margin:0 0 6px!important;
+					}
+			}// end .sep-blockquote-big
+}//end field-name-field-introduction
+
+	  
+	  
+//small SEP pullquote
 
 .field-name-field-introduction table.sep-pull-quote{
 		font-family: 'Open Sans Condensed', sans-serif;
-		float:left;
-		display:inline-block;
-		width:43%;
+		display:block;
 		margin:0;
 			
 			th{
@@ -7249,26 +7250,11 @@ article table#psep-support-fees{
 			}
 		}
 	
-.field-name-field-introduction,
-.field-name-field-state-investment,
-.field-name-field-state-intro,
-.field-name-field-state-feature,
-.field-name-field-state-student-programs{
-	border-bottom-color:#ccc;
-	border-bottom-style:dotted;
-	padding-bottom:20px;
-	margin-bottom:20px;
-}
-
-.view-legislative-advisory-committee-block-view{ 
-	.views-field-field-lac-photo{
-		img{
-			max-width:86px;
-			max-height:127px;
-			}
-	}
-  }
+	
+	
 }// end content
+
+
 
   .sidebar-first {
     #content { /* Span 4 columns, starting in 2nd column from left. */
@@ -10455,28 +10441,34 @@ table.states-sep-data-full-width{
 	}
 }
 
-.field-name-field-introduction{
+.field-name-field-introduction,
+.field-name-field-state-investment,
+.field-name-field-state-intro,
+.field-name-field-state-feature,
+.field-name-field-state-student-programs{
 	border-bottom-color:#ccc;
 	border-bottom-style:dotted;
+	padding-bottom:20px;
 	margin-bottom:20px;
-}
-
-
+	overflow:hidden;
 	
-	p.student-testimonial-pic{
+		h2{
+			clear:left;
+		}
+}
+.student-testimonial-pic{
 		background-color:transparent;
-		float:left;
-		width:18%;
-		
+		max-width:100px;
+		margin:0 auto;
 		img{
 			max-width:97px;
-			max-height:auto;
 			box-shadow: 5px 5px 15px #222;
 		}
-	
-	
-	
-}//end field-items
+}
+
+.student-testimonial{
+
+}
 
 .view-legislative-advisory-committee-block-view{ 
 	.views-field-field-lac-photo{
