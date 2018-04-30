@@ -6153,10 +6153,23 @@ ul#wiche-sara-menu  ul.toggle-view span{
 			border-bottom:1px solid #ccc;
 			margin-top:16px;
 			
-			.small{
-				font-size:.9em;
-				line-height:1em;
+			p{
+				overflow:hidden;
+				img{
+					display:inline-block;
+					float:left;
+					margin-right:12px;
+				}
+
+				.small{
+					display:inline-block;
+					float:left;
+					font-size:.9em;
+					line-height:1em;
+					width:45%;
+				}
 			}
+			clear:left;
 		}
 		
 		li:last-child{
@@ -10365,17 +10378,29 @@ table.states-sep-data-full-width{
 		}
 }
 .student-testimonial-pic{
-		background-color:transparent;
 		max-width:100px;
-		margin:0 auto;
+		/*margin:0 auto;*/
 		img{
-			max-width:97px;
-			box-shadow: 5px 5px 15px #222;
+			max-width:85px;
+			float:left;
+			margin-right:8px;
+			position:relative;
+			top:6px;
 		}
 }
 
-.student-testimonial{
-
+p.student-testimonial{
+	border-bottom:1px solid #ccc;
+	padding-bottom:12px;
+	margin-top:0;
+	span{
+		display:block;
+		font-style:italic;
+		font-size:.9em;
+		line-height:1.1em;
+		padding-left:10px;
+		margin-top:8px;
+	}
 }
 
 .view-legislative-advisory-committee-block-view{ 
