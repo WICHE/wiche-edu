@@ -1302,7 +1302,7 @@ table#physics-lab-activities{
 						}
 					}
 					
-				#block-nice-menus-8, #block-nice-menus-9, #block-views-testimonial-slider-block{
+	#block-nice-menus-8, #block-nice-menus-9, #block-views-testimonial-slider-block{
 					display:none;
 				}
 					
@@ -1341,7 +1341,7 @@ table#physics-lab-activities{
 			}//end programs-departments
 			
 			
-	#content { 
+#content { 
 				  display:block;
 				  float:none;
 				  margin:0;
@@ -1699,15 +1699,15 @@ article table#psep-support-fees{
 				background-color:#eb5b50;
 				border-radius: 8px;
 				padding:0;
-				width:85%;
-				margin:12px auto 0 auto;
+				width:100%;
+				margin:12px 0;
 					table.sep-pull-quote-center-big{
 						color:#fff;
 							th{
 								border:none;
-								width:45%;
+								width:42%;
 								padding-left:6px;
-								font-size:1.9em;
+								font-size:1.5em;
 								font-weight:700;
 								text-align:center;
 								vertical-align: middle;
@@ -1721,29 +1721,6 @@ article table#psep-support-fees{
 							}
 					}// end .sep-blockquote
 }
-
-.field-name-field-state-student-programs table.sep-pull-quote{
-		font-family: 'Open Sans Condensed', sans-serif;
-		width:90%;
-		display:block;
-		margin:0 auto;
-	    border-top:1px solid #ccc;
-	    border-bottom:1px solid #ccc;
-			
-			th{
-				border:none;
-				width:30%;
-				font-size:3.2em;
-				font-weight:700;
-				text-align:left;
-			}
-			td{
-				width:70%;
-				font-size:1em;
-				line-height:1em;
-				text-align:left;
-			}
-		}
 
 }//end #content
 				
@@ -3417,36 +3394,38 @@ table.states-sep-data{
 	} // end li
 }// end sep menu
 		
-		//custom css for WICHE states pages
+//custom css for WICHE states pages
 .field-name-field-introduction{ 
 	.field-item > .sepchart{
 		display:inline-block;
 		float:left;
-		margin-right:16px;
+		margin:10px 16px 20px 0;
 			img{
-				max-width:175px;
+				max-width:125px;
 				height:auto;
 				}
 			}
 	
 	//large SEP pullquote
 	.pullblurb{
-		font-size:1em;
-		line-height:1em;
 		padding-top:none;
 		display:inline-block;
 		float:left;
-		width:50%;
-		margin-bottom:20px;
+		width:63%;
+		margin-bottom:10px;
+		strong{
+			font-weight:300;
+			font-size:1.3em;
+			line-height:1.3em;
+		}
 	}//end pull-blurb
 	
 	.sep-blockquote-big{
-		clear:left;
-		float:none;
-		display:block;
+		display:inline-block;
+		float:left;
 		background-color:#eb5b50;
 		border-radius: 8px;
-		width:75%;
+		width:60%;
 		margin:0 auto;
 		padding:4px;
 			table.sep-pull-quote-center-big{
@@ -3457,15 +3436,15 @@ table.states-sep-data{
 						width:38%;
 						padding-left:16px;
 						padding-top:2px;
-						font-size:2.2em;
+						font-size:1.6em;
 						font-weight:700;
 						text-align:left;
 						vertical-align: middle;
 						}
 				}
 					td{
-							font-size:1.2em;
-							line-height:1em;
+							font-size:1em;
+							line-height:.9em;
 							text-align:left;
 							vertical-align: middle;
 							margin:0 0 6px!important;
@@ -4214,6 +4193,8 @@ table.states-sep-data{
 			
 	  	}
   	}
+	
+	
 }// end content
 
   .sidebar-first {
@@ -5315,83 +5296,7 @@ table#borderless-no_bgColor{
 
   }
 	
-//custom css for WICHE states pages
-.field-name-field-introduction{ 
-	.field-item > .sepchart{
-		display:inline-block;
-		float:left;
-		margin-right:16px;
-			img{
-				max-width:175px;
-				height:auto;
-				}
-			}
-	
-	//large SEP pullquote
-	.pullblurb{
-		font-size:1.4em;
-		line-height:1.4em;
-		padding-top:30px;
-		display:inline-block;
-		float:left;
-		width:50%;
-		margin-bottom:20px;
-	}//end pull-blurb
-	
-	.sep-blockquote-big{
-		clear:left;
-		display:block;
-		background-color:#eb5b50;
-		border-radius: 8px;
-		width:75%;
-		margin:0 auto;
-		padding:4px;
-			table.sep-pull-quote-center-big{
-				color:#fff;
-				margin:0;
-					th{
-						border:none;
-						width:38%;
-						padding-left:16px;
-						padding-top:2px;
-						font-size:2.2em;
-						font-weight:700;
-						text-align:left;
-						vertical-align: middle;
-						}
-				}
-					td{
-							font-size:1.2em;
-							line-height:1em;
-							text-align:left;
-							vertical-align: middle;
-							margin:0 0 6px!important;
-					}
-			}// end .sep-blockquote-big
-}//end field-name-field-introduction
 
-	  
-	  
-//small SEP pullquote
-
-.field-name-field-introduction table.sep-pull-quote{
-		font-family: 'Open Sans Condensed', sans-serif;
-		display:block;
-		margin:0;
-			
-			th{
-				border:none;
-				width:40%;
-				font-size:3em;
-				font-weight:700;
-				text-align:left;
-			}
-			td{
-				width:60%;
-				font-size:1.1em;
-				text-align:left;
-			}
-		}
 	
 	 
 }//end max 1279
@@ -6434,7 +6339,7 @@ ul#wiche-sara-menu  ul.toggle-view span{
 }//end 2-col faux table
 
 
-/*hide this thing*/
+/*hide this thing--old state page css*/
 .node-state-highlights{
 	.node-readmore, .comment-add{
 		display:none;
@@ -7174,51 +7079,55 @@ article table#psep-support-fees{
 	
 //custom css for WICHE states pages
 .field-name-field-introduction{ 
+	overflow:hidden;
 	.field-item > .sepchart{
 		display:inline-block;
 		float:left;
-		margin-right:16px;
+		margin:30px 16px 25px 0;
 			img{
-				/*max-width:225px;
-				height:auto;*/
+				max-width:200px;
+				height:auto;
 				}
 			}
+	
 	//large SEP pullquote
 	.pullblurb{
 		display:inline-block;
 		float:left;
-		width:50%;
-			strong{
-				font-size:1.4em;
-				line-height:1.4em;
-				}
+		width:60%;
+		margin-bottom:20px;
+		
+		strong{
+			font-size:1.5em;
+			line-height:1.4em;
+			font-weight:300;
+		}
 	}//end pull-blurb
 	
 	.sep-blockquote-big{
 		display:inline-block;
 		float:left;
-		width:50%;
+		margin:0;
 		background-color:#eb5b50;
 		border-radius: 8px;
-		width:75%;
-		margin:0 auto;
+		width:55%;
 		padding:4px;
 			table.sep-pull-quote-center-big{
 				color:#fff;
 				margin:0;
+				width:100%;
 					th{
+						width:39%;
 						border:none;
-						width:38%;
-						padding-left:16px;
-						padding-top:2px;
-						font-size:2.2em;
+						padding:2px 8px 0 0;
+						font-size:2em;
 						font-weight:700;
-						text-align:left;
+						text-align:right;
 						vertical-align: middle;
-						}
+					}
 				}
 					td{
-							font-size:1.2em;
+							font-size:1.1em;
 							line-height:1em;
 							text-align:left;
 							vertical-align: middle;
@@ -7227,29 +7136,6 @@ article table#psep-support-fees{
 			}// end .sep-blockquote-big
 }//end field-name-field-introduction
 
-	  
-	  
-//small SEP pullquote
-
-.field-name-field-introduction table.sep-pull-quote{
-		font-family: 'Open Sans Condensed', sans-serif;
-		display:block;
-		margin:0;
-			
-			th{
-				border:none;
-				width:40%;
-				font-size:3em;
-				font-weight:700;
-				text-align:left;
-			}
-			td{
-				width:60%;
-				font-size:1.1em;
-				text-align:left;
-			}
-		}
-	
 	
 	
 }// end content
@@ -10420,6 +10306,28 @@ ul.states{
 				}//end table
 			}//end li
 		}//end ul
+
+.field-name-field-state-student-programs table.sep-pull-quote{
+		font-family: 'Open Sans Condensed', sans-serif;
+		width:90%;
+		display:block;
+		margin:0 auto;
+	    border-top:1px solid #ccc;
+	    border-bottom:1px solid #ccc;
+			
+			th{
+				border:none;
+				font-size:3.2em;
+				font-weight:700;
+				text-align:left;
+				padding-right:16px;
+			}
+			td{
+				font-size:1em;
+				line-height:1em;
+				text-align:left;
+			}
+		}
 
 table.states-sep-data-full-width{
 	width:90%;
