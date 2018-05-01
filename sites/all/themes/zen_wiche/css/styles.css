@@ -7560,14 +7560,14 @@ article .field-name-field-state-investment {
 }
 /* line 7100, ../sass/_layout-responsive.scss */
 #content .field-name-field-introduction .field-item > .sepchart img {
-  max-width: 200px;
+  max-width: 250px;
   height: auto;
 }
 /* line 7107, ../sass/_layout-responsive.scss */
 #content .field-name-field-introduction .pullblurb {
   display: inline-block;
   float: left;
-  width: 60%;
+  width: 50%;
   margin-bottom: 20px;
 }
 /* line 7113, ../sass/_layout-responsive.scss */
@@ -7583,7 +7583,7 @@ article .field-name-field-state-investment {
   margin: 0;
   background-color: #eb5b50;
   border-radius: 8px;
-  width: 55%;
+  width: 50%;
   padding: 4px;
 }
 /* line 7128, ../sass/_layout-responsive.scss */
@@ -7599,7 +7599,7 @@ article .field-name-field-state-investment {
   padding: 2px 8px 0 0;
   font-size: 2em;
   font-weight: 700;
-  text-align: right;
+  text-align: center;
   vertical-align: middle;
 }
 /* line 7142, ../sass/_layout-responsive.scss */
