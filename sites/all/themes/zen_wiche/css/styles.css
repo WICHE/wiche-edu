@@ -10474,29 +10474,28 @@ ul.states {
 ul.states li {
   background: url(images/red-arrow.png) 0 5px no-repeat;
   padding-left: 14px;
-  font-weight: 600;
-  font-size: .9em;
+  font-weight: normal;
   color: #000;
   margin: 0 0 12px 0;
 }
-/* line 10304, ../sass/_layout-responsive.scss */
+/* line 10303, ../sass/_layout-responsive.scss */
 ul.states li span.normal {
   font-weight: 200;
 }
-/* line 10308, ../sass/_layout-responsive.scss */
+/* line 10307, ../sass/_layout-responsive.scss */
 ul.states li table.state-colleges {
   font-weight: normal;
   margin-top: 0;
   border: none;
 }
-/* line 10313, ../sass/_layout-responsive.scss */
+/* line 10312, ../sass/_layout-responsive.scss */
 ul.states li table.state-colleges tr td {
   padding: 2px 0px 2px;
   vertical-align: bottom;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 10323, ../sass/_layout-responsive.scss */
+/* line 10322, ../sass/_layout-responsive.scss */
 .field-name-field-state-student-programs table.sep-pull-quote {
   font-family: 'Open Sans Condensed', sans-serif;
   width: 90%;
@@ -10505,7 +10504,7 @@ ul.states li table.state-colleges tr td {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-/* line 10331, ../sass/_layout-responsive.scss */
+/* line 10330, ../sass/_layout-responsive.scss */
 .field-name-field-state-student-programs table.sep-pull-quote th {
   border: none;
   font-size: 3.2em;
@@ -10513,38 +10512,38 @@ ul.states li table.state-colleges tr td {
   text-align: left;
   padding-right: 16px;
 }
-/* line 10338, ../sass/_layout-responsive.scss */
+/* line 10337, ../sass/_layout-responsive.scss */
 .field-name-field-state-student-programs table.sep-pull-quote td {
   font-size: 1em;
   line-height: 1em;
   text-align: left;
 }
 
-/* line 10345, ../sass/_layout-responsive.scss */
+/* line 10344, ../sass/_layout-responsive.scss */
 table.states-sep-data-full-width {
   width: 90%;
   margin: 16px auto;
   display: block;
 }
-/* line 10349, ../sass/_layout-responsive.scss */
+/* line 10348, ../sass/_layout-responsive.scss */
 table.states-sep-data-full-width tr {
   border-bottom: 1px solid #999;
 }
-/* line 10352, ../sass/_layout-responsive.scss */
+/* line 10351, ../sass/_layout-responsive.scss */
 table.states-sep-data-full-width tr td {
   text-align: center;
 }
-/* line 10356, ../sass/_layout-responsive.scss */
+/* line 10355, ../sass/_layout-responsive.scss */
 table.states-sep-data-full-width th {
   border: none;
 }
-/* line 10359, ../sass/_layout-responsive.scss */
+/* line 10358, ../sass/_layout-responsive.scss */
 table.states-sep-data-full-width th[scope="row"] {
   border: none;
   padding-left: 6px;
 }
 
-/* line 10369, ../sass/_layout-responsive.scss */
+/* line 10368, ../sass/_layout-responsive.scss */
 .field-name-field-introduction,
 .field-name-field-state-investment,
 .field-name-field-state-intro,
@@ -10556,7 +10555,7 @@ table.states-sep-data-full-width th[scope="row"] {
   margin-bottom: 20px;
   overflow: hidden;
 }
-/* line 10376, ../sass/_layout-responsive.scss */
+/* line 10375, ../sass/_layout-responsive.scss */
 .field-name-field-introduction h2,
 .field-name-field-state-investment h2,
 .field-name-field-state-intro h2,
@@ -10565,12 +10564,12 @@ table.states-sep-data-full-width th[scope="row"] {
   clear: left;
 }
 
-/* line 10380, ../sass/_layout-responsive.scss */
+/* line 10379, ../sass/_layout-responsive.scss */
 .student-testimonial-pic {
   max-width: 100px;
   /*margin:0 auto;*/
 }
-/* line 10383, ../sass/_layout-responsive.scss */
+/* line 10382, ../sass/_layout-responsive.scss */
 .student-testimonial-pic img {
   max-width: 85px;
   float: left;
@@ -10579,13 +10578,13 @@ table.states-sep-data-full-width th[scope="row"] {
   top: 6px;
 }
 
-/* line 10392, ../sass/_layout-responsive.scss */
+/* line 10391, ../sass/_layout-responsive.scss */
 p.student-testimonial {
   border-bottom: 1px solid #ccc;
   padding-bottom: 12px;
   margin-top: 0;
 }
-/* line 10396, ../sass/_layout-responsive.scss */
+/* line 10395, ../sass/_layout-responsive.scss */
 p.student-testimonial span {
   display: block;
   font-style: italic;
@@ -10595,7 +10594,7 @@ p.student-testimonial span {
   margin-top: 8px;
 }
 
-/* line 10408, ../sass/_layout-responsive.scss */
+/* line 10407, ../sass/_layout-responsive.scss */
 .view-legislative-advisory-committee-block-view .views-field-field-lac-photo img {
   max-width: 86px;
   max-height: 127px;
