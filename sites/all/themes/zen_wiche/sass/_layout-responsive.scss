@@ -1673,7 +1673,7 @@ article table#psep-support-fees{
 	.sepchart{
 		float:none;
 		max-width:238px;
-		margin:0 auto;
+		margin:12px auto 0 auto;
 		display:block;
 		img{
 			max-width:238px;
@@ -2119,6 +2119,31 @@ article table#psep-support-fees{
 		display:none;
 	}
 	
+	.field-name-field-state-student-programs .sep-blockquote{
+	width:100%;
+	margin: 0;
+	table.sep-pull-quote{
+			font-family: 'Open Sans Condensed', sans-serif;
+			width:90%;
+			display:block;
+			margin:0 auto;
+			border-top:1px solid #ccc;
+			border-bottom:1px solid #ccc;
+
+				th{
+					border:none;
+					font-size:3.2em;
+					font-weight:700;
+					text-align:left;
+					padding-right:16px;
+				}
+				td{
+					font-size:1em;
+					line-height:1em;
+					text-align:left;
+				}
+			}
+	}//end sep-blockquote
 	
 
 
@@ -3268,7 +3293,7 @@ table.states-sep-data{
 		 font-size:1.4em;
 	   }
 	    h2{
-		 font-size:1.1em;
+		 font-size:1.4em;
 	     }
 		 
 		 .view-content .item-list ul{
@@ -3401,7 +3426,7 @@ table.states-sep-data{
 		float:left;
 		margin:10px 16px 20px 0;
 			img{
-				max-width:125px;
+				max-width:150px;
 				height:auto;
 				}
 			}
@@ -3411,7 +3436,7 @@ table.states-sep-data{
 		padding-top:none;
 		display:inline-block;
 		float:left;
-		width:63%;
+		width:60%;
 		margin-bottom:10px;
 		strong{
 			font-weight:300;
@@ -3425,7 +3450,7 @@ table.states-sep-data{
 		float:left;
 		background-color:#eb5b50;
 		border-radius: 8px;
-		width:60%;
+		width:57%;
 		margin:0 auto;
 		padding:4px;
 			table.sep-pull-quote-center-big{
@@ -3475,6 +3500,32 @@ table.states-sep-data{
 			}
 		}
 	
+.field-name-field-state-student-programs .sep-blockquote{
+	width:80%;
+	margin: 0 auto;
+	table.sep-pull-quote{
+			font-family: 'Open Sans Condensed', sans-serif;
+			width:90%;
+			display:block;
+			margin:0 auto;
+			border-top:1px solid #ccc;
+			border-bottom:1px solid #ccc;
+
+				th{
+					border:none;
+					font-size:3.2em;
+					font-weight:700;
+					text-align:left;
+					padding-right:16px;
+				}
+				td{
+					font-size:1.1em;
+					line-height:1.2em;
+					text-align:left;
+				}
+			}
+	}//end sep-blockquote
+		
 
 		
     }//end content
@@ -4193,7 +4244,6 @@ table.states-sep-data{
 			
 	  	}
   	}
-	
 	
 }// end content
 
@@ -5296,7 +5346,32 @@ table#borderless-no_bgColor{
 
   }
 	
+.field-name-field-state-student-programs .sep-blockquote{
+	width:80%;
+	margin: 0 auto;
+	table.sep-pull-quote{
+			font-family: 'Open Sans Condensed', sans-serif;
+			width:90%;
+			display:block;
+			margin:0 auto;
+			border-top:1px solid #ccc;
+			border-bottom:1px solid #ccc;
 
+				th{
+					border:none;
+					font-size:3.2em;
+					font-weight:700;
+					text-align:left;
+					padding-right:16px;
+				}
+				td{
+					font-size:1.1em;
+					line-height:1.2em;
+					text-align:left;
+				}
+			}
+	}//end sep-blockquote
+		
 	
 	 
 }//end max 1279
@@ -6165,7 +6240,7 @@ ul#wiche-sara-menu  ul.toggle-view span{
 					display:inline-block;
 					float:left;
 					font-size:.9em;
-					line-height:1.2em;
+					line-height:1.3em;
 					width:45%;
 				}
 			}
@@ -6824,6 +6899,32 @@ article .field-name-field-state-investment{
 			}
 		}
 			
+.field-name-field-state-student-programs .sep-blockquote{
+	width:75%!important;
+	margin: 0 auto!important;
+	table.sep-pull-quote{
+			font-family: 'Open Sans Condensed', sans-serif;
+			width:90%;
+			display:block;
+			margin:0 auto;
+			border-top:1px solid #ccc;
+			border-bottom:1px solid #ccc;
+
+				th{
+					border:none;
+					font-size:3.3em;
+					font-weight:700;
+					text-align:left;
+					padding-right:16px;
+				}
+				td{
+					font-size:1.2em!important;
+					line-height:1.2em!important;
+					text-align:left;
+				}
+			}
+	}//end sep-blockquote
+		
 		}//end #content
 
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
@@ -7149,7 +7250,7 @@ article table#psep-support-fees{
 			}// end .sep-blockquote-big
 }//end field-name-field-introduction
 
-	
+
 	
 }// end content
 
@@ -10319,28 +10420,6 @@ ul.states{
 			}//end li
 		}//end ul
 
-.field-name-field-state-student-programs table.sep-pull-quote{
-		font-family: 'Open Sans Condensed', sans-serif;
-		width:90%;
-		display:block;
-		margin:0 auto;
-	    border-top:1px solid #ccc;
-	    border-bottom:1px solid #ccc;
-			
-			th{
-				border:none;
-				font-size:3.2em;
-				font-weight:700;
-				text-align:left;
-				padding-right:16px;
-			}
-			td{
-				font-size:1em;
-				line-height:1em;
-				text-align:left;
-			}
-		}
-
 table.states-sep-data-full-width{
 	width:90%;
 	margin:16px auto;
@@ -10410,4 +10489,11 @@ p.student-testimonial{
 			}
 	}
 }
+
+.field-name-field-state-investment blockquote p{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:1.5em;
+	}
+
+
 
