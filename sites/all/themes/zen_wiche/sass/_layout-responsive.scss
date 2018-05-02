@@ -5156,7 +5156,7 @@ table.states-sep-data{
 	  padding-top:16px;
 	 
 		 h2{
-			margin:8px 0;
+			margin:8px 0 0 0;
 		}
 		
 		p{
@@ -7209,11 +7209,11 @@ article table#psep-support-fees{
 		display:inline-block;
 		float:left;
 		width:50%;
-		margin-bottom:20px;
+		margin:0 0 20px 0;
 		
 		strong{
 			font-size:1.5em;
-			line-height:1.4em;
+			line-height:1.2em;
 			font-weight:300;
 		}
 	}//end pull-blurb
@@ -7231,9 +7231,9 @@ article table#psep-support-fees{
 				margin:0;
 				width:100%;
 					th{
-						width:39%;
+						width:42%;
 						border:none;
-						padding:2px 8px 0 0;
+						padding:1px 8px 1px 0;
 						font-size:2em;
 						font-weight:700;
 						text-align:center;
@@ -7241,7 +7241,7 @@ article table#psep-support-fees{
 					}
 				}
 					td{
-							font-size:1.1em;
+							font-size:1em;
 							line-height:1em;
 							text-align:left;
 							vertical-align: middle;
@@ -10457,7 +10457,7 @@ table.states-sep-data-full-width{
 }
 .student-testimonial-pic{
 		max-width:100px;
-		/*margin:0 auto;*/
+		margin:12px 0 0;
 		img{
 			max-width:85px;
 			float:left;
@@ -10467,10 +10467,8 @@ table.states-sep-data-full-width{
 		}
 }
 
-p.student-testimonial{
-	border-bottom:1px solid #ccc;
-	padding-bottom:12px;
-	margin-top:0;
+p.student-testimonial, .exlac{
+	margin:12px 0 0;
 	span{
 		display:block;
 		font-style:italic;

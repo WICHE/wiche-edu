@@ -5723,7 +5723,7 @@ table#physics-lab-activities tr:nth-child(even) {
   }
   /* line 5158, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second h2 {
-    margin: 8px 0;
+    margin: 8px 0 0 0;
   }
   /* line 5162, ../sass/_layout-responsive.scss */
   .two-sidebars .region-sidebar-second p {
@@ -7682,12 +7682,12 @@ article .field-name-field-state-investment {
   display: inline-block;
   float: left;
   width: 50%;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 /* line 7214, ../sass/_layout-responsive.scss */
 #content .field-name-field-introduction .pullblurb strong {
   font-size: 1.5em;
-  line-height: 1.4em;
+  line-height: 1.2em;
   font-weight: 300;
 }
 /* line 7221, ../sass/_layout-responsive.scss */
@@ -7708,9 +7708,9 @@ article .field-name-field-state-investment {
 }
 /* line 7233, ../sass/_layout-responsive.scss */
 #content .field-name-field-introduction .sep-blockquote-big table.sep-pull-quote-center-big th {
-  width: 39%;
+  width: 42%;
   border: none;
-  padding: 2px 8px 0 0;
+  padding: 1px 8px 1px 0;
   font-size: 2em;
   font-weight: 700;
   text-align: center;
@@ -7718,7 +7718,7 @@ article .field-name-field-state-investment {
 }
 /* line 7243, ../sass/_layout-responsive.scss */
 #content .field-name-field-introduction .sep-blockquote-big td {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1em;
   text-align: left;
   vertical-align: middle;
@@ -10657,7 +10657,7 @@ table.states-sep-data-full-width th[scope="row"] {
 /* line 10458, ../sass/_layout-responsive.scss */
 .student-testimonial-pic {
   max-width: 100px;
-  /*margin:0 auto;*/
+  margin: 12px 0 0;
 }
 /* line 10461, ../sass/_layout-responsive.scss */
 .student-testimonial-pic img {
@@ -10669,13 +10669,11 @@ table.states-sep-data-full-width th[scope="row"] {
 }
 
 /* line 10470, ../sass/_layout-responsive.scss */
-p.student-testimonial {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 12px;
-  margin-top: 0;
+p.student-testimonial, .exlac {
+  margin: 12px 0 0;
 }
-/* line 10474, ../sass/_layout-responsive.scss */
-p.student-testimonial span {
+/* line 10472, ../sass/_layout-responsive.scss */
+p.student-testimonial span, .exlac span {
   display: block;
   font-style: italic;
   font-size: .9em;
@@ -10684,13 +10682,13 @@ p.student-testimonial span {
   margin-top: 8px;
 }
 
-/* line 10486, ../sass/_layout-responsive.scss */
+/* line 10484, ../sass/_layout-responsive.scss */
 .view-legislative-advisory-committee-block-view .views-field-field-lac-photo img {
   max-width: 86px;
   max-height: 127px;
 }
 
-/* line 10493, ../sass/_layout-responsive.scss */
+/* line 10491, ../sass/_layout-responsive.scss */
 .field-name-field-state-investment blockquote p {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5em;
