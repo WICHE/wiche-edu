@@ -14,8 +14,7 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
 
 <head>
-<!--<script type="text/javascript" src="https://aws.predictiveresponse.net/trac.js"> </script>-->
-	<a name="page-top"></a>
+<a name="page-top"></a>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <script type="text/javascript" src="https://aws.predictiveresponse.net/trac.js"> </script>
