@@ -5258,60 +5258,6 @@ table#psep-support-fees tr:first-child th{
 	border-bottom:2px solid #fff;
 }
 
-
-
-
-
-
-
-/*generic table*/
-table#wiche-table{
-	width:100%;
-	border-bottom:2px solid #000;
-	margin-bottom:16px;
-	font-size:.8em;
-	
-		th{
-			background-color:#1c4884;
-			color:#fff;
-			text-align:center;
-			border-right:1px solid #fff;
-			border-top:none;
-			border-left:none;
-			padding:1% 0;
-			
-			&:last-child{
-					border-right:none;
-				}
-		}
-		
-		td{
-			padding:2%;
-			border-right:1px solid #000;
-			vertical-align:top;
-			width:50%;
-			
-			&:last-child{
-				border-right:none;
-				}
-				
-				h4{
-					font-size:1.2em;
-					margin:0;
-				}
-				
-				p{
-					margin:4px 0;
-				}
-		}
-		
-		tr:first-child th{
-	border-bottom:2px solid #fff;
-}
-
-
-}//end #wiche-table
-
 /*generic table*/
 table.wiche-table{
 	width:100%;
@@ -10491,6 +10437,54 @@ p.student-testimonial, .exlac{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size:1.5em;
 	}
+
+/*generic table*/
+table#wiche-table{
+	width:100%;
+	border-bottom:2px solid #000;
+	margin-bottom:16px;
+	font-size:.8em;
+	
+		th{
+			background-color:#1c4884;
+			color:#fff;
+			text-align:center;
+			border-right:1px solid #fff;
+			border-top:none;
+			border-left:none;
+			padding:1% 0;
+			
+			&:last-child{
+					border-right:none;
+				}
+		}
+		
+		td{
+			padding:2%;
+			border-right:1px solid #000;
+			vertical-align:top;
+			width:50%;
+			
+			&:last-child{
+				border-right:none;
+				}
+				
+				h4{
+					font-size:1.2em;
+					margin:0;
+				}
+				
+				p{
+					margin:4px 0;
+				}
+		}
+		
+		tr:first-child th{
+	border-bottom:2px solid #fff;
+}
+
+
+}//end #wiche-table
 
 
 
