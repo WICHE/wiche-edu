@@ -25,7 +25,6 @@
     <h1 class="header--site-name" id="site-name"><?php print $site_name; ?></h1>
     <?php endif; ?>
   </div>
-  <!-- end .header--name-and-slogan -->
   <?php endif; ?>
   <div id="secondary-menu" class="header--secondary-menu"> <?php print render($page['log_in']); ?></div>
   
