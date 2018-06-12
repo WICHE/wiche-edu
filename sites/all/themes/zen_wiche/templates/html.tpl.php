@@ -53,6 +53,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <![endif]-->
   <?php endif; ?>
 </head>
+<a name="page-top"></a>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N2ZXGT"

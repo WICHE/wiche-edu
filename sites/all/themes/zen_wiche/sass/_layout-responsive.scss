@@ -10487,4 +10487,34 @@ table#wiche-table{
 }//end #wiche-table
 
 
-
+ul.gold{
+		list-style:none;
+		margin:0;
+		padding:0;
+		clear:left;
+					
+			li {
+			background:url(images/gold-arrow.png) 0 5px no-repeat;
+			padding-left:14px;
+			font-weight:normal;
+			color:#000;
+			margin:0 0 12px 0;
+				
+				span.normal{
+					font-weight:200;
+				}//end span
+	
+			table.state-colleges{
+				font-weight:normal;
+				margin-top:0;
+				border:none;
+					tr{
+						td{
+							padding:2px 0px 2px;
+							vertical-align:bottom;
+							border-bottom:1px solid #ccc;
+						}//end td
+					}//end tr
+				}//end table
+			}//end li
+		}//end ul
