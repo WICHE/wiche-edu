@@ -2301,9 +2301,9 @@ article table#psep-support-fees{
 					font-size:1.5em;
 				}
 				
-				p{
+				/*p{
 					font-size:80%;
-				}
+				}*/
 				
 				.hideme{
 					display:none;
@@ -3030,7 +3030,7 @@ table.states-sep-data{
   .sidebar-first {
     #content { /* Span 3 columns, starting in 2nd column from left. */
      @include zen-grid-item(4, 2);
-	 font-size:90%;
+	 /*font-size:90%;*/
 	 
 	 .region-highlighted{
 			#block-multiblock-2, p.passport-phone-header{

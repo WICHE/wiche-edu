@@ -307,7 +307,7 @@ h1 {
 h2 {
   font-family: 'humnst777_cn_btbold',sans-serif;
   line-height: 1.2em;
-  font-size: 1.4em;
+  /*font-size:1.4em;*/
   color: #225aa8;
   font-weight: 400;
   /*margin:.4em 0 .8em;*/
@@ -3042,6 +3042,9 @@ table#physics-lab-activities tr:nth-child(even) {
     margin: 0;
     padding: 0 4%;
     width: 90%;
+    /*p{
+    	font-size:80%;
+    }*/
     /*passport home faux table*/
   }
   /* line 2294, ../sass/_layout-responsive.scss */
@@ -3052,10 +3055,6 @@ table#physics-lab-activities tr:nth-child(even) {
   /* line 2300, ../sass/_layout-responsive.scss */
   #front-page #main-front #content h1#page-title, #front-page #main #content h1#page-title, #page #main-front #content h1#page-title, #page #main #content h1#page-title {
     font-size: 1.5em;
-  }
-  /* line 2304, ../sass/_layout-responsive.scss */
-  #front-page #main-front #content p, #front-page #main #content p, #page #main-front #content p, #page #main #content p {
-    font-size: 80%;
   }
   /* line 2308, ../sass/_layout-responsive.scss */
   #front-page #main-front #content .hideme, #front-page #main #content .hideme, #page #main-front #content .hideme, #page #main #content .hideme {
@@ -3714,7 +3713,7 @@ table#physics-lab-activities tr:nth-child(even) {
     width: 80%;
     margin-left: 20%;
     margin-right: -100%;
-    font-size: 90%;
+    /*font-size:90%;*/
     /*fix for accordion display on iPad*/
     /*passport home faux table*/
   }
