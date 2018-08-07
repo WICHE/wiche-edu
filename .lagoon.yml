@@ -21,7 +21,8 @@ cronjobs:
     service: cli
 
 environments:
-  prod:
+  master:
     routes:
       - varnish:
-        - "www.wiche.edu" 
+        - "www.wiche.edu"
+        - "wiche.edu"
