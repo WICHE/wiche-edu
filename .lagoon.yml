@@ -24,5 +24,10 @@ environments:
   master:
     routes:
       - varnish:
-        - "www.wiche.edu"
-        - "wiche.edu"
+        - "www.wiche.edu":
+            tls-acme: 'false'
+            insecure: Redirect
+        - "wiche.edu":
+            tls-acme: 'false'
+            insecure: Redirect
+        
