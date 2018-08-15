@@ -2,7 +2,7 @@
 cd $AMAZEEIO_WEBROOT
 
 echo "Dumping database from $1"
-drush $1 ssh drush sql-dump > $AMAZEEIO_TMP_PATH/dump_$1.sql
+drush --alias-path=/app/old-drush $1 ssh drush sql-dump > $AMAZEEIO_TMP_PATH/dump_$1.sql
 
 echo "Removing DEFINER queries from SQL Dump"
 sed -i 's/DEFINER=[^*]*\*/\*/g' $AMAZEEIO_TMP_PATH/dump_$1.sql
