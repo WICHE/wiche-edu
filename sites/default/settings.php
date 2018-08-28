@@ -27,7 +27,7 @@
      'password' => getenv('MARIADB_PASSWORD') ?: 'drupal',
      'host' => getenv('MARIADB_HOST') ?: 'mariadb',
      'port' => $mariadb_port,
-     'prefix' => '',
+     'prefix' => 'wiche_',
    );
  }
 
