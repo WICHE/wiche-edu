@@ -12,3 +12,5 @@ $conf['cache_lifetime'] = 0;
 
 // Pages will be compressed by nginx, no need for Drupal to do that
 $conf['page_compression'] = 0;
+
+$conf['clean_url'] = 1;
