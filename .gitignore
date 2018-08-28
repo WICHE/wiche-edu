@@ -9,7 +9,14 @@ sites/*/private
 
 /.settings
 /CVS
+/files
+/images
 /imports
+/info
+/MentalHealth
+/Policy
+/PPT
+/spd
 /Templates
 /tmp
 .htaccess
