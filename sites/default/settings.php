@@ -1,64 +1,81 @@
 <?php
 
 /**
- * PHP settings:
+ * @file
+ * Lagoon Drupal 7 configuration file.
  *
- * To see what PHP settings are possible, including whether they can
- * be set at runtime (ie., when ini_set() occurs), read the PHP
- * documentation at http://www.php.net/manual/en/ini.php#ini.list
- * and take a look at the .htaccess file to see which non-runtime
- * settings are used there. Settings defined here should not be
- * duplicated there so as to avoid conflict issues.
+ * You should not edit this file, please use environment specific files!
+ * They are loaded in this order:
+ * - settings.all.php
+ *   For settings that should be applied to all environments (dev, prod, staging, docker, etc).
+ * - settings.production.php
+ *   For settings only for the production environment.
+ * - settings.development.php
+ *   For settings only for the development environment (dev servers, docker).
+ * - settings.local.php
+ *   For settings only for the local environment, this file will not be commited in GIT!
+ *
  */
-ini_set('arg_separator.output',     '&amp;');
-ini_set('magic_quotes_runtime',     0);
-ini_set('magic_quotes_sybase',      0);
-ini_set('session.cache_expire',     200000);
-ini_set('session.cache_limiter',    'none');
-ini_set('session.cookie_lifetime',  2000000);
-ini_set('session.gc_maxlifetime',   200000);
-ini_set('session.save_handler',     'user');
-ini_set('session.use_only_cookies', 1);
-ini_set('session.use_trans_sid',    0);
-ini_set('url_rewriter.tags',        '');
 
-# Enables Clean urls
-$conf['clean_url'] = 1; // 1 enables, 0 clears clean_url
+ ### Lagoon Database connection
+ if(getenv('LAGOON')){
+   $mariadb_port = preg_replace('/.*:(\d{2,5})$/', '$1', getenv('MARIADB_PORT') ?: '3306'); // Kubernetes/OpenShift sets `*_PORT` by default as tcp://172.30.221.159:8983, extract the port from it
+   $databases['default']['default'] = array(
+     'driver' => 'mysql',
+     'database' => getenv('MARIADB_DATABASE') ?: 'drupal',
+     'username' => getenv('MARIADB_USERNAME') ?: 'drupal',
+     'password' => getenv('MARIADB_PASSWORD') ?: 'drupal',
+     'host' => getenv('MARIADB_HOST') ?: 'mariadb',
+     'port' => $mariadb_port,
+     'prefix' => 'wiche_',
+   );
+ }
 
-$conf['drupal_http_request_fails'] = FALSE;
+ ### Lagoon Solr connection
+ // WARNING: you have to create a search_api server having "solr" machine name at
+ // /admin/config/search/search-api/add-server to make this work.
+ if(getenv('LAGOON')){
+  // Override search API server settings fetched from default configuration.
+  $conf['search_api_override_mode'] = 'load';
+  $conf['search_api_override_servers']['solr']['name'] = 'Lagoon Solr - Environment:' . getenv('LAGOON_PROJECT');
+  $conf['search_api_override_servers']['solr']['options']['host'] = getenv('SOLR_HOST') ?: 'solr';
+  $conf['search_api_override_servers']['solr']['options']['port'] = 8983;
+  $conf['search_api_override_servers']['solr']['options']['path'] = '/solr/' . getenv('SOLR_CORE') ?: 'drupal';
+  $conf['search_api_override_servers']['solr']['options']['http_user'] = (getenv('SOLR_USER') ?: '');
+  $conf['search_api_override_servers']['solr']['options']['http_pass'] = (getenv('SOLR_PASSWORD') ?: '');
+  $conf['search_api_override_servers']['solr']['options']['excerpt'] = 0;
+  $conf['search_api_override_servers']['solr']['options']['retrieve_data'] = 0;
+  $conf['search_api_override_servers']['solr']['options']['highlight_data'] = 0;
+  $conf['search_api_override_servers']['solr']['options']['http_method'] = 'POST';
 
-if(getenv('AMAZEEIO_SITENAME')) {
-  $databases['default']['default'] = array(
-    'driver' => 'mysql',
-    'database' => getenv('AMAZEEIO_SITENAME'),
-    'username' => getenv('AMAZEEIO_DB_USERNAME'),
-    'password' => getenv('AMAZEEIO_DB_PASSWORD'),
-    'host' => getenv('AMAZEEIO_DB_HOST'),
-    'port' => getenv('AMAZEEIO_DB_PORT'),
-    'prefix' => 'wiche_',
-  );
 }
 
-### amazee.io Varnish & reverse proxy settings
-if (getenv('AMAZEEIO_VARNISH_HOSTS') && getenv('AMAZEEIO_VARNISH_SECRET')) {
-  $varnish_hosts = explode(',', getenv('AMAZEEIO_VARNISH_HOSTS'));
-  array_walk($varnish_hosts, function(&$value, $key) { $value .= ':6082'; });
+### Lagoon Varnish & reverse proxy settings
+if (getenv('LAGOON')) {
+  $varnish_control_port = getenv('VARNISH_CONTROL_PORT') ?: '6082';
+  $varnish_hosts = explode(',', getenv('VARNISH_HOSTS') ?: 'varnish');
+  array_walk($varnish_hosts, function(&$value, $key) use ($varnish_control_port) { $value .= ":$varnish_control_port"; });
 
   $conf['reverse_proxy'] = TRUE;
-  $conf['reverse_proxy_addresses'] = array_merge(explode(',', getenv('AMAZEEIO_VARNISH_HOSTS')), array('127.0.0.1'));
+  $conf['reverse_proxy_addresses'] = array_merge(explode(',', getenv('VARNISH_HOSTS')), array('varnish'));
   $conf['varnish_control_terminal'] = implode($varnish_hosts, " ");
-  $conf['varnish_control_key'] = getenv('AMAZEEIO_VARNISH_SECRET');
+  $conf['varnish_control_key'] = getenv('VARNISH_SECRET') ?: 'lagoon_default_secret';
   $conf['varnish_version'] = 4;
 }
 
 ### Base URL
-if (getenv('AMAZEEIO_BASE_URL')) {
-	$base_url = getenv('AMAZEEIO_BASE_URL');
+if (getenv('LAGOON_ROUTE')) {
+  $base_url = getenv('LAGOON_ROUTE');
 }
 
 ### Temp directory
-if (getenv('AMAZEEIO_TMP_PATH')) {
-  $conf['file_temporary_path'] = getenv('AMAZEEIO_TMP_PATH');
+if (getenv('TMP')) {
+  $conf['file_temporary_path'] = getenv('TMP');
+}
+
+### Hash Salt
+if (getenv('LAGOON')){
+  $drupal_hash_salt = hash('sha256', getenv('LAGOON_PROJECT'));
 }
 
 // Loading settings for all environment types.
@@ -67,9 +84,9 @@ if (file_exists(__DIR__ . '/all.settings.php')) {
 }
 
 // Environment specific settings files.
-if(getenv('AMAZEEIO_SITE_ENVIRONMENT')){
-  if (file_exists(__DIR__ . '/' . getenv('AMAZEEIO_SITE_ENVIRONMENT') . '.settings.php')) {
-    include __DIR__ . '/' . getenv('AMAZEEIO_SITE_ENVIRONMENT') . '.settings.php';
+if(getenv('LAGOON_ENVIRONMENT_TYPE')){
+  if (file_exists(__DIR__ . '/' . getenv('LAGOON_ENVIRONMENT_TYPE') . '.settings.php')) {
+    include __DIR__ . '/' . getenv('LAGOON_ENVIRONMENT_TYPE') . '.settings.php';
   }
 }
 
