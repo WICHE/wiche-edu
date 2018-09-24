@@ -30,6 +30,6 @@ environments:
         - "wiche.edu":
             tls-acme: 'true'
             insecure: Redirect
-         - "wue.wiche.edu":
+        - "wue.wiche.edu":
             tls-acme: 'true'
             insecure: Redirect
