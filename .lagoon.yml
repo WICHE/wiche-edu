@@ -36,3 +36,6 @@ environments:
         - "nanslo.org":
             tls-acme: 'true'
             insecure: Redirect
+        - "wiche-wue.info"
+            tls-acme: 'true'
+            insecure: Redirect
