@@ -33,9 +33,12 @@ environments:
         - "wue.wiche.edu":
             tls-acme: 'true'
             insecure: Redirect
+        - "wrgp.wiche.edu":
+            tls-acme: 'true'
+            insecure: Redirect
         - "nanslo.org":
             tls-acme: 'true'
             insecure: Redirect
-        - "wiche-wue.info"
+        - "wiche-wue.info":
             tls-acme: 'true'
             insecure: Redirect
