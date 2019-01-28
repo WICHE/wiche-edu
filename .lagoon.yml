@@ -42,7 +42,7 @@ environments:
         - "wiche-wue.info":
             tls-acme: 'true'
             insecure: Redirect
-            - "everylearnereverywhere.org":
+        - "everylearnereverywhere.org":
             tls-acme: 'true'
             insecure: Redirect
         - "www.everylearnereverywhere.org":
