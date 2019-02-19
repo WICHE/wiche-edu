@@ -504,7 +504,7 @@ function protected_node_and_attachment($path) {
  */
 function protected_node_invoke($hook, &$param) {
   foreach (module_implements($hook) as $module) {
-    call_user_func($module . '_' . $hook, $param);
+    call_user_func_array($module . '_' . $hook, array(&$param));
   }
 }
 
