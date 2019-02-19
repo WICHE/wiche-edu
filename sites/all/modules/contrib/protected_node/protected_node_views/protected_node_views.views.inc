@@ -90,6 +90,7 @@ function protected_node_views_views_data() {
     'filter' => array(
       'handler' => 'views_handler_filter_boolean_operator',
       'label' => t('Protected node'),
+      'accept_null' => TRUE,
       'type' => 'yes-no',
     ),
     'sort' => array(
