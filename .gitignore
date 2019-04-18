@@ -1,34 +1,6 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
-
-# Ignore WICHE files and directories not directly related to the Drupal site
-
-/.settings
-/CVS
-/files
-/images
-/imports
-/info
-/MentalHealth
-/Policy
-/PPT
-/spd
-/Templates
-/tmp
-.htaccess
-/.htaccess.bak
-/404.html
-/all-ie.css
-/aspfiles.txt
-/filecopy.bat
-/mime.types
-/OneNote Table Of Contents.onetoc2
-/rss.php
-/rss1.php
-/Thumbs.db
-/web.config
-/wichestyle-new.css
-*.sql
-/sites/all/themes/zen_wiche/.sass-cache
-.sass-cache
