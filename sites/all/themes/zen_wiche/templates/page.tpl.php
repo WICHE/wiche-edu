@@ -28,8 +28,8 @@
 
     <div id="secondary-menu" class="header--secondary-menu"> <?php print render($page['log_in']); ?></div>
  <!--social media-->
-    <ul class="social-media">
-    <li class="facebook"><a href="https://www.facebook.com/wiche.edu" target="_blank"><img src="/sites/all/themes/zen_wiche/images/facebook.png" alt="Follow us on Facebook" width="16" height="16" /></a></li>
+    <ul class="social-media" style="width:48px!important;">
+   <!-- <li class="facebook"><a href="https://www.facebook.com/wiche.edu" target="_blank"><img src="/sites/all/themes/zen_wiche/images/facebook.png" alt="Follow us on Facebook" width="16" height="16" /></a></li>-->
     <li class="twitter"><a href="https://twitter.com/wicheEDU" target="_blank"><img src="/sites/all/themes/zen_wiche/images/twitter.png" alt="Follow us on Twitter" width="16" height="16" /></a></li>
     <!--<li class="delicious"><a href="https://delicious.com/wiche_edu" target="_blank"><img src="/sites/all/themes/zen_wiche/images/delicious.png" alt="Our Delicious Links" width="16" height="16" /></a></li>-->
   </ul>
