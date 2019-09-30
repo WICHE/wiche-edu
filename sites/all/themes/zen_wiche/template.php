@@ -141,19 +141,10 @@ function zen_wiche_preprocess_block(&$variables, $hook) {
 
 //updated template.php code
 
- // function zen_wiche_preprocess_page(&$variables) { 
+  function MYTHEME_preprocess_page(&$variables) { //already existed in template.php
+    //...some other code...//
 
-  //  if (isset($variables['node'])) { 
-  //    $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
-  //  }
-
-//  }
-
-function mytheme_preprocess_page(&$variables, $hook) {
-   //some other stuff
-	if (isset($variables['node'])) {  
-    $variables['theme_hook_suggestions'][] = 'page__type__'. $variables['node']->type;
-    $variables['theme_hook_suggestions'][] = "page__node__" . $variables['node']->nid;
+    if (isset($variables['node'])) {  
+      $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
+    }
   }
-}
-  
