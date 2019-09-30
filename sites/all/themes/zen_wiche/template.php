@@ -142,6 +142,10 @@ function zen_wiche_preprocess_block(&$variables, $hook) {
 //updated template.php code
 
   function zen_wiche_preprocess_page(&$variables) { 
-    $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
+
+    if (isset($variables['node'])) { 
+      $variables['theme_hook_suggestions'][] = 'page__'. $variables['node']->type;
+    }
+
   }
   
