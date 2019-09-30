@@ -323,6 +323,38 @@ ul.nice-menu li {
  nice-menu-menu-benchmarks2019
 ******************************/
 
+ul.nice-menu-menu-benchmarks2019,
+ul.nice-menu-menu-benchmarks2019 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #ccc;
+}
+
+ul.nice-menu-menu-benchmarks2019 li {
+  border: 1px solid #ccc;
+  border-top: 0;
+  float: left; /* LTR */
+  background-color: #eee;
+}
+
+ul.nice-menu-menu-benchmarks2019 a {
+  padding: 0.3em 5px 0.3em 5px;
+}
+
+ul.nice-menu-menu-benchmarks2019 ul {
+  top: 1.8em;
+  left: -1px; /* LTR */
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-right: 0; /* LTR */
+}
+
+ul.nice-menu-menu-benchmarks2019 ul li {
+  width: 12.5em;
+}
+
+
 ul.nice-menu-menu-benchmarks2019 {
   float: left; /* LTR */
   border: 0;
