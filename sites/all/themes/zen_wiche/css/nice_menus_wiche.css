@@ -336,7 +336,7 @@ ul.nice-menu-menu-benchmarks2019 li {
   border-top: 0;
   float: left; /* LTR */
   background-color: #eee;
-  padding:8px;
+  padding:8px!important;
 }
 
 ul.nice-menu-menu-benchmarks2019 a {
