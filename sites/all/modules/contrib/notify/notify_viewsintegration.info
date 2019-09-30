@@ -5,9 +5,8 @@ core = 7.x
 dependencies[] = views
 dependencies[] = notify
 
-; Information added by Drupal.org packaging script on 2018-03-17
-version = "7.x-1.5"
+; Information added by Drupal.org packaging script on 2019-09-11
+version = "7.x-1.7"
 core = "7.x"
 project = "notify"
-datestamp = "1521266287"
-
+datestamp = "1568179092"
