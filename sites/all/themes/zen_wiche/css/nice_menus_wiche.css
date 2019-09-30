@@ -332,7 +332,7 @@ ul.nice-menu-menu-benchmarks2019 ul {
 ul.nice-menu-menu-benchmarks2019 li {
   border: 1px solid #ccc;
   border-top: 0;
-  /*float: left; /* LTR */
+  float: left;
   background-color: #eee;
   padding:8px!important;
 }
@@ -397,4 +397,8 @@ ul.nice-menu-menu-benchmarks2019 li li.menuparent {
 
 ul.nice-menu-menu-benchmarks2019 li li.menuparent:hover {
   background: #ccc url("../images/arrow-right.png") right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-menu-benchmarks2019 li {
+	clear:left;
 }
