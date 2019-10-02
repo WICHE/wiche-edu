@@ -141,7 +141,7 @@ function zen_wiche_preprocess_block(&$variables, $hook) {
 
 //updated template.php code
 
-  function MYTHEME_preprocess_page(&$variables) { //already existed in template.php
+  function zen_wiche_preprocess_page(&$variables) { //already existed in template.php
     //...some other code...//
 
     if (isset($variables['node'])) {  

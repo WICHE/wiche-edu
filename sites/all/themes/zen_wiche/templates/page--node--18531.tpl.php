@@ -45,18 +45,19 @@
   </header>
   <div id="main">
     <div id="full-rotator"> <?php print render($page['slideshow']); ?></div>
-    <div id="content" class="column" role="main">
+    <div id="content" class="column" role="main" style="margin-left:20px;margin-right:20px;">
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
-        <h1 class="page--title title" id="page-title" style="margin-left:16px;"><?php print $title; ?></h1>
+        <h1 class="page--title title" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
       <?php print render($page['highlighted']); ?>
+	  <div style="clear:left">&nbsp;</div>
       <?php print render($page['content']); ?>
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
