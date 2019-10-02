@@ -45,6 +45,7 @@
   </header>
   <div id="main">
     <div id="full-rotator"> <?php print render($page['slideshow']); ?></div>
+	  <div style="clear:left">&nbsp;</div>
     <div id="content" class="column" role="main" style="margin-left:20px;margin-right:20px;">
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
@@ -57,7 +58,6 @@
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
       <?php print render($page['highlighted']); ?>
-	  <div style="clear:left">&nbsp;</div>
       <?php print render($page['content']); ?>
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
