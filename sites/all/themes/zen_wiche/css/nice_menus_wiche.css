@@ -26,9 +26,9 @@ ul.nice-menu li {
   /*float: left;*/ /* LTR */
 }
 
-ul.nice-menu li:last-child {
+/*ul.nice-menu li:last-child {
 	border-bottom:none;
-}
+}*/
 
 ul.nice-menu a {
   padding: 0.3em 20px 0.3em 15px;
