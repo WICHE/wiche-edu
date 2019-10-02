@@ -26,9 +26,9 @@ ul.nice-menu li {
   /*float: left;*/ /* LTR */
 }
 
-/*ul.nice-menu li:last-child {
+ul.nice-menu li:last-child {
 	border-bottom:none;
-}*/
+}
 
 ul.nice-menu a {
   padding: 0.3em 20px 0.3em 15px;
@@ -357,6 +357,9 @@ ul.nice-menu-menu-benchmarks2019 ul li {
   width: 14em;
 }
 
+ul.nice-menu-menu-benchmarks2019 li:last-child {
+	border-bottom:1px solid #ccc;
+}
 
 ul.nice-menu-menu-benchmarks2019 {
   float: left; /* LTR */
