@@ -327,7 +327,7 @@ ul.nice-menu-menu-benchmarks2019,
 ul.nice-menu-menu-benchmarks2019 ul {
   list-style: none;
   padding: 0;
-  margin: 4% 0 0 25%;
+  margin: 1% 0 0 28%;
   border-top: 1px solid #ccc;
   position:absolute;
   z-index:1;
@@ -410,17 +410,16 @@ ul.nice-menu-menu-benchmarks2019 li li.menuparent:hover {
 /*benchmarks template css (not menu)*/
 
 .benchmarks2019 #content{
-	margin:30px 20px 0 20px;
+	margin:40px 20px 0 20px;
 }
 
 @media (max-width: 480px){
 		.benchmarks2019 #content{
-		   margin-top:30px!important;
+		   margin-top:40px!important;
 	}
 	
 	ul.nice-menu-menu-benchmarks2019,
 		ul.nice-menu-menu-benchmarks2019 ul {
-		  margin: 4% 0 0 0!important;
-
+		  margin: 2% 0 0 .5%!important;
 		}
 }
