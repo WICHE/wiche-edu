@@ -424,9 +424,20 @@ ul.nice-menu-menu-benchmarks2019 li li.menuparent:hover {
 	ul.nice-menu-menu-benchmarks2019,
 		ul.nice-menu-menu-benchmarks2019 ul {
 		  margin: 2% 0 0 2.2%!important;
+			left: -16.5px!important; /* LTR */
 		}
 	
 		ul.nice-menu-menu-benchmarks2019 ul li {
 		  width: 8em!important;
 		}
+	
+		ul.nice-menu-menu-benchmarks2019 li {
+		  padding:4px!important;
+		  width:8em;
+		}
+
+		ul.nice-menu-menu-benchmarks2019 a {
+		  padding: 0.3em 5px 0.3em 5px;
+		}
+
 }
