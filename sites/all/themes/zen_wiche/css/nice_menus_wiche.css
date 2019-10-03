@@ -412,3 +412,9 @@ ul.nice-menu-menu-benchmarks2019 li li.menuparent:hover {
 .benchmarks2019 #content{
 	margin-top:30px;
 }
+
+@media (max-width: 480px){
+		.benchmarks2019 #content{
+		margin-top:30px;
+	}
+}
