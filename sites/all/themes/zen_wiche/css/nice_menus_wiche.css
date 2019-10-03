@@ -338,6 +338,7 @@ ul.nice-menu-menu-benchmarks2019 li {
   border-top: 0;
   float: left; /* LTR */
   padding:8px!important;
+  width:10em;
 }
 
 ul.nice-menu-menu-benchmarks2019 a {
