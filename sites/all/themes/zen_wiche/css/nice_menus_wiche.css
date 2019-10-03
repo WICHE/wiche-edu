@@ -346,8 +346,8 @@ ul.nice-menu-menu-benchmarks2019 a {
 
 ul.nice-menu-menu-benchmarks2019 ul {
   background-color:#eee;
-  top: 3.2em;
-  left: -1px; /* LTR */
+  top: 3.3em;
+  left: -15px; /* LTR */
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   margin-right: 0; /* LTR */
@@ -420,6 +420,6 @@ ul.nice-menu-menu-benchmarks2019 li li.menuparent:hover {
 	
 	ul.nice-menu-menu-benchmarks2019,
 		ul.nice-menu-menu-benchmarks2019 ul {
-		  margin: 2% 0 0 .5%!important;
+		  margin: 2% 0 0 .1%!important;
 		}
 }
