@@ -46,7 +46,7 @@
   <div id="main">
     <div id="full-rotator"> <?php print render($page['slideshow']); ?></div>
 	  <div style="clear:left">&nbsp;</div>
-    <div id="content" class="column" role="main" style="margin-left:20px;margin-right:20px;">
+    <div id="content" class="column" role="main">
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
