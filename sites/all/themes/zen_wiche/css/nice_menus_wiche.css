@@ -339,6 +339,7 @@ ul.nice-menu-menu-benchmarks2019 li {
   float: left; /* LTR */
   padding:8px!important;
   width:10em;
+  text-align:center;
 }
 
 ul.nice-menu-menu-benchmarks2019 a {
@@ -348,14 +349,15 @@ ul.nice-menu-menu-benchmarks2019 a {
 ul.nice-menu-menu-benchmarks2019 ul {
   background-color:#eee;
   top: 3.2em;
-  left: -28px; /* LTR */
+  left: -36.5px!important; /* LTR */
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   margin-right: 0; /* LTR */
 }
 
 ul.nice-menu-menu-benchmarks2019 ul li {
-  width: 14em;
+  width: 12em;
+  text-align:left;
 }
 
 ul.nice-menu-menu-benchmarks2019 li:last-child {
