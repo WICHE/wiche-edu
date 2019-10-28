@@ -325,6 +325,7 @@ ul.nice-menu li {
 
 ul.nice-menu-menu-benchmarks2019,
 ul.nice-menu-menu-benchmarks2019 ul {
+  background-color:rgb(34,90,168);
   list-style: none;
   padding: 0;
   margin: 1% 0 0 28%;
@@ -347,7 +348,6 @@ ul.nice-menu-menu-benchmarks2019 a {
 }
 
 ul.nice-menu-menu-benchmarks2019 ul {
-  background-color:#eee;
   top: 3.2em;
   left: -36.5px!important; /* LTR */
   border-top: 1px solid #ccc;
