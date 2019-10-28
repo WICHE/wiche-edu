@@ -352,7 +352,7 @@ ul.nice-menu-menu-benchmarks2019 a {
 
 ul.nice-menu-menu-benchmarks2019 ul {
   top: 3.3em;
-  left: -36.5px!important; /* LTR */
+  left: -33px!important; /* LTR */
   border-top:none;
   border-bottom:none;
   margin-right: 0; /* LTR */
@@ -361,6 +361,12 @@ ul.nice-menu-menu-benchmarks2019 ul {
 ul.nice-menu-menu-benchmarks2019 ul li {
   width: 12em;
   text-align:left;
+}
+
+ul.nice-menu-menu-benchmarks2019 ul li a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 
