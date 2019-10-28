@@ -403,7 +403,7 @@ ul.nice-menu-menu-benchmarks2019 li.menuparent {
   background: rgb(34,90,168) ; /* LTR */
 }
 
-ul.nice-menu-menu-benchmarks2019 li.menuparent:hover {
+ul.nice-menu-menu-benchmarks2019 li:hover {
   background: rgba(34, 90, 168, 0.75); /* LTR */
 }
 
