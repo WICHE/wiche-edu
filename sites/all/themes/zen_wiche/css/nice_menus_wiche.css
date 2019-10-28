@@ -343,6 +343,10 @@ ul.nice-menu-menu-benchmarks2019 li {
   text-align:center;
 }
 
+ul.nice-menu-menu-benchmarks2019 li:hover{
+ 
+}
+
 ul.nice-menu-menu-benchmarks2019 a:link,
 ul.nice-menu-menu-benchmarks2019 a:active,
 ul.nice-menu-menu-benchmarks2019 a:hover,
@@ -355,7 +359,7 @@ ul.nice-menu-menu-benchmarks2019 a:visited {
 
 ul.nice-menu-menu-benchmarks2019 ul {
   top: 3.3em;
-  left: -33px!important; /* LTR */
+  left: -28px!important; /* LTR */
   border-top:none;
   border-bottom:none;
   margin-right: 0; /* LTR */
