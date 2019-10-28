@@ -345,6 +345,9 @@ ul.nice-menu-menu-benchmarks2019 li {
 
 ul.nice-menu-menu-benchmarks2019 a {
   padding: 0.3em 5px 0.3em 5px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 ul.nice-menu-menu-benchmarks2019 ul {
@@ -395,19 +398,19 @@ ul.nice-menu-menu-benchmarks2019 .menuparent a {
 }
 
 ul.nice-menu-menu-benchmarks2019 li.menuparent {
-  background: #eee url("../images/arrow-down.png") right center no-repeat; /* LTR */
+  background: rgb(34,90,168) url("../images/arrow-down.png") right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-menu-benchmarks2019 li.menuparent:hover {
-  background: #ccc url("../images/arrow-down.png") right center no-repeat; /* LTR */
+  background: rgba(34, 90, 168, 0.75) url("../images/arrow-down.png") right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-menu-benchmarks2019 li li.menuparent {
-  background: #eee url("../images/arrow-right.png") right center no-repeat; /* LTR */
+  background: rgb(34,90,168) url("../images/arrow-right.png") right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-menu-benchmarks2019 li li.menuparent:hover {
-  background: #ccc url("../images/arrow-right.png") right center no-repeat; /* LTR */
+  background: rgba(34, 90, 168, 0.75) url("../images/arrow-right.png") right center no-repeat; /* LTR */
 }
 
 /*benchmarks template css (not menu)*/
