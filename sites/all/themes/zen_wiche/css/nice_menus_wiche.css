@@ -343,7 +343,10 @@ ul.nice-menu-menu-benchmarks2019 li {
   text-align:center;
 }
 
-ul.nice-menu-menu-benchmarks2019 a {
+ul.nice-menu-menu-benchmarks2019 a:link,
+ul.nice-menu-menu-benchmarks2019 a:active,
+ul.nice-menu-menu-benchmarks2019 a:hover,
+ul.nice-menu-menu-benchmarks2019 a:visited {
   padding: 0.3em 5px 0.3em 5px;
   color:#fff;
   text-decoration:none;
@@ -401,6 +404,16 @@ ul.nice-menu-menu-benchmarks2019 li ul li ul {
   top: -1px;
 }
 
+ul.nice-menu-menu-benchmarks2019 li ul li ul a:link,
+ul.nice-menu-menu-benchmarks2019 li ul li ul a:active,
+ul.nice-menu-menu-benchmarks2019 li ul li ul a:hover,
+ul.nice-menu-menu-benchmarks2019 li ul li ul a:visited {
+  padding: 0.3em 5px 0.3em 5px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
 ul.nice-menu-menu-benchmarks2019 .menuparent a {
   padding-right: 15px; /* LTR */
 }
@@ -409,9 +422,11 @@ ul.nice-menu-menu-benchmarks2019 li.menuparent {
   background: rgb(34,90,168) ; /* LTR */
 }
 
-ul.nice-menu-menu-benchmarks2019 li:hover {
+ul.nice-menu-menu-benchmarks2019 li.menuparent:hover {
   background: rgba(34, 90, 168, 0.75); /* LTR */
 }
+
+
 
 ul.nice-menu-menu-benchmarks2019 li li.menuparent {
   background: rgb(34,90,168); /* LTR */
