@@ -344,7 +344,7 @@ ul.nice-menu-menu-benchmarks2019 li {
 }
 
 ul.nice-menu-menu-benchmarks2019 li:hover{
- 
+  background: rgba(34, 90, 168, 0.75);
 }
 
 ul.nice-menu-menu-benchmarks2019 a:link,
