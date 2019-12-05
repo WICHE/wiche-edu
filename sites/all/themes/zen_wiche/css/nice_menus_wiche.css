@@ -369,7 +369,8 @@ ul.nice-menu-menu-benchmarks2019 ul {
   margin-right: 0; /* LTR */
 }
 
-ul.nice-menu-menu-benchmarks2019 ul li {
+ul.nice-menu-menu-benchmarks2019 ul li,
+ul.nice-menu-menu-benchmarks2019 li:last-child{
   width: 12em;
   text-align:left;
 }
