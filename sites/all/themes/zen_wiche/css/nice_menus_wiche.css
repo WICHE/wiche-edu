@@ -354,12 +354,14 @@ ul.nice-menu-menu-benchmarks2019 li li:hover {
  HORIZONTAL (down) benchmarks
 ******************************/
   ul.nice-menu-menu-benchmarks2019 {
-    /*float: left;*/ /* LTR */
+    float: left; /* LTR */
     border: 0;
+	margin:0;
     font-size: .8em;
   }
-  ul.nice-menu-menu-benchmarks2019 li {
-    /* border-top: 1px solid #ccc;*/
+  ul.nice-menu-menu-benchmarks2019 li,
+  ul.nice-menu-menu-benchmarks2019 li:last-child{
+    width: 32em;
   }
   ul.nice-menu-menu-benchmarks2019 li li {
     border-top: 0;
