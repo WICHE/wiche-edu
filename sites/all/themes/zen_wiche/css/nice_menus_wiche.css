@@ -8,37 +8,29 @@
   See README.txt and the handbook page (http://drupal.org/node/185543)
   for more information on using the CSS.
 */
-
 /******************************
  Global CSS for ALL menu types
 ******************************/
-
-ul.nice-menu,
-ul.nice-menu ul {
+ul.nice-menu, ul.nice-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
   border: 1px solid #ccc;
 }
-
 ul.nice-menu li {
   border-bottom: 1px solid #ccc;
   /*float: left;*/ /* LTR */
 }
-
 ul.nice-menu li:last-child {
-	border-bottom:none;
+  border-bottom: none;
 }
-
 ul.nice-menu a {
   padding: 0.3em 20px 0.3em 15px;
 }
-
-ul.nice-menu a:focus{
-	/*border:1px solid #ccc;
+ul.nice-menu a:focus {
+  /*border:1px solid #ccc;
 	padding:2px;*/
 }
-
 ul.nice-menu ul {
   top: 1.8em;
   left: -1px; /* LTR */
@@ -46,67 +38,43 @@ ul.nice-menu ul {
   border-top: 1px solid #ccc;
   margin-right: 0; /* LTR */
 }
-
 ul.nice-menu ul li {
   width: 12.5em;
-  padding:0 12px!important;
+  padding: 0 12px !important;
 }
-
 .block-nice-menus {
-    line-height: normal;
-    z-index: 20;
+  line-height: normal;
+  z-index: 20;
 }
-
 /******************************
  VERTICAL (left/right) menus
 ******************************/
-
 /* This is the default width of all vertical menus. */
-ul.nice-menu-right,
-ul.nice-menu-left,
-ul.nice-menu-right li,
-ul.nice-menu-left li {
+ul.nice-menu-right, ul.nice-menu-left, ul.nice-menu-right li, ul.nice-menu-left li {
   width: 100%;
 }
-
 /* VERTICAL menus where submenus pop RIGHT (default). */
-
-
-.region-sidebar-first ul.nice-menu-right{
-	border:none;
+.region-sidebar-first ul.nice-menu-right {
+  border: none;
 }
-
 /*Quicklinks Menu*/
-#main .sidebars .region-sidebar-first  ul.nice-menu-right ul,
-#main-front .sidebars .region-sidebar-first  ul.nice-menu-right ul
-{
+#main .sidebars .region-sidebar-first ul.nice-menu-right ul, #main-front .sidebars .region-sidebar-first ul.nice-menu-right ul {
   left: 12.7em;
   top: -2px;
-  border:none;
+  border: none;
 }
-
-#main .sidebars .region-sidebar-first ul.nice-menu-right li,
-#main-front .sidebars .region-sidebar-first ul.nice-menu-right li
-{
-  background-color:rgb(34,90,168);
+#main .sidebars .region-sidebar-first ul.nice-menu-right li, #main-front .sidebars .region-sidebar-first ul.nice-menu-right li {
+  background-color: rgb(34, 90, 168);
   /*border-top:2px solid #fff;*/
 }
-
-
-#main .sidebars .region-sidebar-first ul.nice-menu-right li:hover,
-#main-front .sidebars .region-sidebar-first ul.nice-menu-right li:hover
-{
-	background-color:rgba(34,90,168,0.75);
+#main .sidebars .region-sidebar-first ul.nice-menu-right li:hover, #main-front .sidebars .region-sidebar-first ul.nice-menu-right li:hover {
+  background-color: rgba(34, 90, 168, 0.75);
 }
-
-#main .sidebars .region-sidebar-first ul.nice-menu-right li a,
-#main-front .sidebars .region-sidebar-first ul.nice-menu-right li a
-{
- 	color:#fff;
- 	font-size:.8em;
-	text-decoration:none;
+#main .sidebars .region-sidebar-first ul.nice-menu-right li a, #main-front .sidebars .region-sidebar-first ul.nice-menu-right li a {
+  color: #fff;
+  font-size: .8em;
+  text-decoration: none;
 }
-
 /*SEP Menu*/
 /*#main-front .region-sidebar-first ul#nice-menu-4 li,
 #main .region-sidebar-first ul#nice-menu-4 li{
@@ -117,163 +85,114 @@ ul.nice-menu-left li {
 	  margin-bottom:8px;
 	  text-align: center;
 }*/
-
-
-
-#main-front .region-sidebar-first ul#nice-menu-4 li a,
-#main .region-sidebar-first ul#nice-menu-4 li a{
- 	/*color:#1c4884;
+#main-front .region-sidebar-first ul#nice-menu-4 li a, #main .region-sidebar-first ul#nice-menu-4 li a {
+  /*color:#1c4884;
  	font-size:.8em;*/
-	text-decoration:none;
+  text-decoration: none;
 }
-
-
-
-#main-front .region-sidebar-first ul#nice-menu-4 li a:hover,
-#main .region-sidebar-first ul#nice-menu-4 li a:hover{
-	/*text-decoration:underline;*/
+#main-front .region-sidebar-first ul#nice-menu-4 li a:hover, #main .region-sidebar-first ul#nice-menu-4 li a:hover {
+  /*text-decoration:underline;*/
 }
-
 /*end SEP menu*/
-
-.region-sidebar-first ul.nice-menu-right li ul{
-	 border:2px solid #000!important;
+.region-sidebar-first ul.nice-menu-right li ul {
+  border: 2px solid #000 !important;
 }
-
-.region-sidebar-first ul.nice-menu-right li ul li{
-	background:#158386;
+.region-sidebar-first ul.nice-menu-right li ul li {
+  background: #158386;
 }
-
-.region-sidebar-first ul.nice-menu-right li ul li:hover{
-	background:#15797c;
+.region-sidebar-first ul.nice-menu-right li ul li:hover {
+  background: #15797c;
 }
-
-.region-sidebar-first ul.nice-menu-right li ul li a:link,
-.region-sidebar-first ul.nice-menu-right li ul li a:active{
-	
-}
-
-
+.region-sidebar-first ul.nice-menu-right li ul li a:link, .region-sidebar-first ul.nice-menu-right li ul li a:active {}
 .region-sidebar-first ul.nice-menu-right ul li ul {
-  border:2px solid #000!important;
-  left:14em!important;
+  border: 2px solid #000 !important;
+  left: 14em !important;
 }
-
-.region-sidebar-first ul.nice-menu-right ul li ul li{
-	background:#1d7f49;
+.region-sidebar-first ul.nice-menu-right ul li ul li {
+  background: #1d7f49;
 }
-
-.region-sidebar-first ul.nice-menu-right ul ul li:hover{
-	background:#1a7543;
+.region-sidebar-first ul.nice-menu-right ul ul li:hover {
+  background: #1a7543;
 }
-
-
 /* VERTICAL menus where submenus pop LEFT. */
 ul.nice-menu-left li ul {
-  background:#fff;
+  background: #fff;
   width: 14.2em;
   left: -14.3em;
   top: -1px;
-  border:1px solid #ccc;
+  border: 1px solid #ccc;
 }
-
 ul.nice-menu-left li ul li ul {
   width: 14em;
   left: -14em;
   top: -1px;
-  border-right:1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
-
-ul.nice-menu-left li.menuparent,
-ul.nice-menu-left li li.menuparent {
+ul.nice-menu-left li.menuparent, ul.nice-menu-left li li.menuparent {
   background: #fff url("images/arrow-left.png") left center no-repeat;
 }
-
-ul.nice-menu-left li.menuparent:hover,
-ul.nice-menu-left li li.menuparent:hover {
+ul.nice-menu-left li.menuparent:hover, ul.nice-menu-left li li.menuparent:hover {
   background: #fff url("images/arrow-left.png") left center no-repeat;
 }
-
-ul.nice-menu-left a,
-ul.nice-menu-left ul li.active-trail a {
-  
+ul.nice-menu-left a, ul.nice-menu-left ul li.active-trail a {}
+ul.nice-menu-left a:hover, ul.nice-menu-left ul a:hover, ul.nice-menu-left ul a:focus {
+  /* padding-left: 16px;*/
+  text-decoration: underline;
+  color: #1c4884;
 }
-
-ul.nice-menu-left a:hover,
-ul.nice-menu-left ul a:hover,
-ul.nice-menu-left ul a:focus {
- /* padding-left: 16px;*/
-  text-decoration:underline;
-  color:#1c4884;
-}
-
 /******************************
  HORIZONTAL (down) menus
 ******************************/
-
 ul.nice-menu-down {
   /*float: left;*/ /* LTR */
   border: 0;
-  font-size:.8em;
+  font-size: .8em;
 }
-
 ul.nice-menu-down li {
- /* border-top: 1px solid #ccc;*/
+  /* border-top: 1px solid #ccc;*/
 }
-
 ul.nice-menu-down li li {
   border-top: 0;
 }
-
 ul.nice-menu-down ul {
-  position:relative;
-  clear:both;
-  top:0;
+  position: relative;
+  clear: both;
+  top: 0;
 }
-
 ul.nice-menu-down ul li {
-  clear:both;
+  clear: both;
 }
-
 ul.nice-menu-down li ul li ul {
   left: 25px; /* LTR */
   /*top: -1px;*/
-  position:relative;
+  position: relative;
 }
-
 ul.nice-menu-down .menuparent a {
   padding-right: 15px; /* LTR */
 }
-
 ul.nice-menu-down li.menuparent {
   background: #fff url("../images/arrow-down.png") right center no-repeat; /* LTR */
 }
-
 ul.nice-menu-down li.menuparent:hover {
   background: #fff url("../images/arrow-down.png") right center no-repeat; /* LTR */
 }
-
 ul.nice-menu-down li li.menuparent {
   background: #eee url("../images/arrow-right.png") right center no-repeat; /* LTR */
 }
-
 ul.nice-menu-down li li.menuparent:hover {
   background: #ccc url("../images/arrow-right.png") right center no-repeat; /* LTR */
 }
-
 /******************************
  Garland-specific CSS
 ******************************/
-
 /**
  * Global CSS for ALL menu types
  */
 ul.nice-menu li {
   margin: 0;
-  padding: 0!important; /* LTR */
+  padding: 0 !important; /* LTR */
   background-image: none;
 }
-
 #header-region ul.nice-menu li {
   margin: 0;
   /* Padding rules are needed to deal with Garland's header line-height. */
@@ -281,7 +200,6 @@ ul.nice-menu li {
   padding-bottom: 0;
   background: #fff;
 }
-
 #header-region ul.nice-menu ul {
   top: 1.8em;
   left: -1px; /* LTR */
@@ -289,172 +207,129 @@ ul.nice-menu li {
   border-top: 1px solid #ccc;
   margin-right: 0; /* LTR */
 }
-
 #header-region ul.nice-menu ul {
   top: 1.7em;
 }
-
 /**
  * HORIZONTAL (down) menus
  */
 /*#header-region ul.nice-menu-down li ul li ul {
   left: 12.5em; /* LTR */
- /* top: -1px;
+/* top: -1px;
 }*/
-
 /*#header-region ul.nice-menu-down li.menuparent {
   background: #fff url("../images/arrow-down.png") right center no-repeat; /* LTR */
 /*}*/
-
 /*#header-region ul.nice-menu-down li.menuparent:hover {
   background: #fff url("../images/arrow-down.png") right center no-repeat; /* LTR */
 /*}*/
-
 /*#header-region ul.nice-menu-down li li.menuparent {
   background: #fff url("../images/arrow-right.png") right center no-repeat; /* LTR */
 /*}*/
-
 /*#header-region ul.nice-menu-down li li.menuparent:hover {
   background: #fff url("../images/arrow-right.png") right center no-repeat; /* LTR */
 /*}*/
-
-
 /******************************
  nice-menu-menu-benchmarks2019
 ******************************/
-
-ul.nice-menu-menu-benchmarks2019,
-ul.nice-menu-menu-benchmarks2019 ul {
+ul.nice-menu-menu-benchmarks2019, ul.nice-menu-menu-benchmarks2019 ul {
   list-style: none;
   padding: 0;
   margin: 1% 0 0 13%;
   border-top: 1px solid #ccc;
-  position:absolute;
-  z-index:1;
+  position: absolute;
+  z-index: 1;
 }
-
 ul.nice-menu-menu-benchmarks2019 li {
-  background-color:rgb(34,90,168);
+  background-color: rgb(34, 90, 168);
   border: 1px solid #ccc;
-  border-top:none;
+  border-top: none;
   float: left; /* LTR */
-  padding:8px!important;
-  width:12em;
-  text-align:center;
+  padding: 8px !important;
+  width: 12em;
+  text-align: center;
 }
-
 ul.nice-menu-menu-benchmarks2019 li:last-child {
-	width:14em;
+  width: 14em;
 }
-
-ul.nice-menu-menu-benchmarks2019 li:hover{
+ul.nice-menu-menu-benchmarks2019 li:hover {
   background: rgba(34, 90, 168, 0.75);
 }
-
-ul.nice-menu-menu-benchmarks2019 a:link,
-ul.nice-menu-menu-benchmarks2019 a:active,
-ul.nice-menu-menu-benchmarks2019 a:hover,
-ul.nice-menu-menu-benchmarks2019 a:visited {
+ul.nice-menu-menu-benchmarks2019 a:link, ul.nice-menu-menu-benchmarks2019 a:active, ul.nice-menu-menu-benchmarks2019 a:hover, ul.nice-menu-menu-benchmarks2019 a:visited {
   padding: 0.3em 5px 0.3em 5px;
-  color:#fff;
-  text-decoration:none;
-  font-weight:bold;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
-
 ul.nice-menu-menu-benchmarks2019 ul {
   top: 3.0em;
-  left: -20px!important; /* LTR */
-  border-top:none;
-  border-bottom:none;
+  left: -20px !important; /* LTR */
+  border-top: none;
+  border-bottom: none;
   margin-right: 0; /* LTR */
 }
-
-ul.nice-menu-menu-benchmarks2019 ul li,
-ul.nice-menu-menu-benchmarks2019 ul li:last-child{
+ul.nice-menu-menu-benchmarks2019 ul li, ul.nice-menu-menu-benchmarks2019 ul li:last-child {
   width: 12em;
-  text-align:left;
+  text-align: left;
 }
-
-ul.nice-menu-menu-benchmarks2019 ul li a{
-  color:#fff;
-  text-decoration:none;
-  font-weight:bold;
+ul.nice-menu-menu-benchmarks2019 ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
-
-
-
 ul.nice-menu-menu-benchmarks2019 li:last-child {
-	border-bottom:none;
+  border-bottom: none;
 }
-
 ul.nice-menu-menu-benchmarks2019 {
   float: left; /* LTR */
   border: 0;
 }
-
 ul.nice-menu-menu-benchmarks2019 li {
-  border-top:none;
+  border-top: none;
 }
-
 ul.nice-menu-menu-benchmarks2019 li li {
-  border-top:none;
+  border-top: none;
 }
-
 ul.nice-menu-menu-benchmarks2019 ul {
   left: 0; /* LTR */
 }
-
 ul.nice-menu-menu-benchmarks2019 ul li {
   clear: both;
 }
-
 ul.nice-menu-menu-benchmarks2019 li ul li ul {
   left: 12.5em; /* LTR */
   top: -1px;
 }
-
-ul.nice-menu-menu-benchmarks2019 li ul li ul a:link,
-ul.nice-menu-menu-benchmarks2019 li ul li ul a:active,
-ul.nice-menu-menu-benchmarks2019 li ul li ul a:hover,
-ul.nice-menu-menu-benchmarks2019 li ul li ul a:visited {
+ul.nice-menu-menu-benchmarks2019 li ul li ul a:link, ul.nice-menu-menu-benchmarks2019 li ul li ul a:active, ul.nice-menu-menu-benchmarks2019 li ul li ul a:hover, ul.nice-menu-menu-benchmarks2019 li ul li ul a:visited {
   padding: 0.3em 5px 0.3em 5px;
-  color:#fff;
-  text-decoration:none;
-  font-weight:bold;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
-
 ul.nice-menu-menu-benchmarks2019 .menuparent a {
   padding-right: 15px; /* LTR */
 }
-
 ul.nice-menu-menu-benchmarks2019 li.menuparent {
-  background: rgb(34,90,168) ; /* LTR */
+  background: rgb(34, 90, 168); /* LTR */
 }
-
 ul.nice-menu-menu-benchmarks2019 li.menuparent:hover {
   background: rgba(34, 90, 168, 0.75); /* LTR */
 }
-
-
 ul.nice-menu-menu-benchmarks2019 li li {
-  background: rgb(34,90,168); /* LTR */
+  background: rgb(34, 90, 168); /* LTR */
 }
-
 ul.nice-menu-menu-benchmarks2019 li li:hover {
   background: rgba(34, 90, 168, 0.75); /* LTR */
 }
-
 /*benchmarks template css (not menu)*/
-
-.benchmarks2019 #content{
-	margin:40px 20px 0 20px;
+.benchmarks2019 #content {
+  margin: 40px 20px 0 20px;
 }
-
-@media (max-width: 480px){
-		.benchmarks2019 #content{
-		   margin-top:40px!important;
-	}
-	
+@media (max-width: 480px) {
+  .benchmarks2019 #content {
+    margin-top: 40px !important;
+  }
+  /*
 		ul.nice-menu-menu-benchmarks2019{
 		   margin: 4% 0 0 4%!important;
 		}
@@ -474,6 +349,47 @@ ul.nice-menu-menu-benchmarks2019 li li:hover {
 
 		ul.nice-menu-menu-benchmarks2019 a {
 		  padding: 0.3em 5px 0.3em 5px;
-		}
-
+		}*/
+  /******************************
+ HORIZONTAL (down) benchmarks
+******************************/
+  ul.nice-menu-menu-benchmarks2019 {
+    /*float: left;*/ /* LTR */
+    border: 0;
+    font-size: .8em;
+  }
+  ul.nice-menu-menu-benchmarks2019 li {
+    /* border-top: 1px solid #ccc;*/
+  }
+  ul.nice-menu-menu-benchmarks2019 li li {
+    border-top: 0;
+  }
+  ul.nice-menu-menu-benchmarks2019 ul {
+    position: relative;
+    clear: both;
+    top: 0;
+  }
+  ul.nice-menu-menu-benchmarks2019 ul li {
+    clear: both;
+  }
+  ul.nice-menu-menu-benchmarks2019 li ul li ul {
+    left: 25px; /* LTR */
+    /*top: -1px;*/
+    position: relative;
+  }
+  ul.nice-menu-menu-benchmarks2019 a {
+    padding-right: 15px; /* LTR */
+  }
+  ul.nice-menu-menu-benchmarks2019 {
+    background: #fff url("../images/arrow-down.png") right center no-repeat; /* LTR */
+  }
+  ul.nice-menu-menu-benchmarks2019 li.menuparent:hover {
+    background: #fff url("../images/arrow-down.png") right center no-repeat; /* LTR */
+  }
+  ul.nice-menu-menu-benchmarks2019 li li.menuparent {
+    background: #eee url("../images/arrow-right.png") right center no-repeat; /* LTR */
+  }
+  ul.nice-menu-menu-benchmarks2019 li li.menuparent:hover {
+    background: #ccc url("../images/arrow-right.png") right center no-repeat; /* LTR */
+  }
 }
