@@ -451,31 +451,9 @@ ul.nice-menu-menu-benchmarks2019 li li:hover {
 }
 
 @media (max-width: 480px){
-		/*.benchmarks2019 #content{
-		   margin-top:40px!important;
-	
-	
+		
 		ul.nice-menu-menu-benchmarks2019{
 		   margin: 4% 0 0 4%!important;
 			display:none;
 		}
-		ul.nice-menu-menu-benchmarks2019 ul {
-		   top:25px;
-		   left:-23px!important;
-		}
-	
-		ul.nice-menu-menu-benchmarks2019 ul li,
-	    ul.nice-menu-menu-benchmarks2019 ul li:last-child{
-		  width: 10em;
-		}
-	
-		ul.nice-menu-menu-benchmarks2019 li {
-		  padding:2px!important;
-		  width:7em;
-		}
-
-		ul.nice-menu-menu-benchmarks2019 a {
-		  padding: 0.3em 5px 0.3em 5px;
-		}*/
-
 }
