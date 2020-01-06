@@ -450,20 +450,23 @@ ul.nice-menu-menu-benchmarks2019 li li:hover {
 	margin:40px 20px 0 20px;
 }
 
-
-.responsive-menus.responsified span.toggler{
-	background: #555!important;
-	
+#block-menu-menu-benchmarks2019-phone{
+	display:none;
 }
 
-.responsive-menus.responsified .responsive-menus-simple {
-background: #666!important;
-}
 
 @media (max-width: 480px){
 		
 		ul.nice-menu-menu-benchmarks2019{
-		   margin: 4% 0 0 4%!important;
-			display:none;
+		   /*margin: 4% 0 0 4%!important;*/
+		   display:none;
+		}
+	
+	    .responsive-menus.responsified span.toggler{
+			background: #555!important;
+		}
+
+       .responsive-menus.responsified .responsive-menus-simple {
+			background: #666!important;
 		}
 }
