@@ -450,6 +450,16 @@ ul.nice-menu-menu-benchmarks2019 li li:hover {
 	margin:40px 20px 0 20px;
 }
 
+
+.responsive-menus.responsified span.toggler{
+	background: #555!important;
+	
+}
+
+.responsive-menus.responsified .responsive-menus-simple {
+background: #666!important;
+}
+
 @media (max-width: 480px){
 		
 		ul.nice-menu-menu-benchmarks2019{
