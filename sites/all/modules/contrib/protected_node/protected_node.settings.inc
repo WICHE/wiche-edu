@@ -115,7 +115,7 @@ function protected_node_node_form_alter(&$form) {
 
   // Turn off the auto-complete feature on this form since it could otherwise
   // pre-fill the password with the wrong parameter.
-  $form['#attributes']['autocomplete'] = 'off';
+  $form['#attributes']['autocomplete'] = 'new-password';
 
   $node_type = node_type_get_type($form['type']['#value']);
   $fieldset_mode = variable_get('protected_node_fieldset_' . $node_type->type, PROTECTED_NODE_FIELDSET_SMART);

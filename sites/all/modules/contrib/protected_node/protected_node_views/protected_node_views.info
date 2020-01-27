@@ -6,8 +6,8 @@ core = 7.x
 dependencies[] = protected_node
 dependencies[] = views
 
-; Information added by Drupal.org packaging script on 2019-02-02
-version = "7.x-1.5"
+; Information added by Drupal.org packaging script on 2020-01-08
+version = "7.x-1.6"
 core = "7.x"
 project = "protected_node"
-datestamp = "1549138085"
+datestamp = "1578511692"

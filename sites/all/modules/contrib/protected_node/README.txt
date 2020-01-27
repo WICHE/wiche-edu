@@ -4,7 +4,6 @@ CONTENTS OF THIS FILE
  * Introduction
  * Requirements
  * Similar modules
- * Known conflicts
  * Installation
  * Configuration
  * Documentation
@@ -57,12 +56,6 @@ SIMILAR MODULES
    configuration page.
 
 
-KNOWN CONFLICTS
----------------
-
- * Login Destination (https://www.drupal.org/project/login_destination)
-
-
 INSTALLATION
 ------------
 
@@ -111,7 +104,7 @@ DOCUMENTATION
 -------------
 
  * Original:   http://www.m2osw.com/doc-protected-node
- * Drupal.org: https://drupal.org/node/2176627
+ * Drupal.org: https://www.drupal.org/docs/7/modules/protected-node
 
 
 MAINTAINERS
