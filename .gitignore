@@ -6,7 +6,8 @@ sites/*/files
 sites/*/private
 sites/*/.sass-cache
 sites/all/themes/zen_wiche/.sass-cache
-
+sites/*/.html
+sites/all/themes/zen_wiche/.html
 
 files
 info
